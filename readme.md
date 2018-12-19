@@ -7,9 +7,17 @@ Fleio backend is created with Django and Fleio fronted is created with AngularJS
 
 ### Adding a translation for a new language to backend
 
+Before running the commands below activate fleio virtual enviroment by executing:
+
+`source /var/webapps/fleio/env/bin/activate`
+
+and then change directory to:
+
+`/var/webapps/fleio/project`
+
 Run the following command for the language you want to add from Fleio backend installation directory:
 
-`./manage.py makemessages -l <language_code>`
+`python manage.py makemessages -l <language_code>`
 
 replace `<language_code>` with the code for your new language (e.g. `ro`, `en`, `fr` ...)
 
@@ -18,7 +26,7 @@ locale directory - you can use `Poedit` tool to edit the django.po file for your
 
 Once you are done editing the `django.po` file run the following command: 
 
-`djanngo compilemessages`
+`python manage.py compilemessages`
 
 to generate the `django.mo` file.
 
