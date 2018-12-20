@@ -7,7 +7,9 @@ Fleio backend is created with Django and Fleio fronted is created with AngularJS
 
 ### Adding a translation for a new language to backend
 
-Before running the commands below activate fleio virtual enviroment by executing:
+Before running the commands below activate fleio virtual environment by executing:
+
+`source /opt/rh/rh-python35/enable` - this command is needed only on centos
 
 `source /var/webapps/fleio/env/bin/activate`
 
@@ -37,10 +39,22 @@ to generate the `django.mo` file.
 The `template.pot` file needed is supplied in this repository 
 in `translations/frontend/po directory`.
 
-Create a new `<language_code>.po` file for your language. The `<language_code`
+Prepare a directory where you will work on frontend translations - this directory should have the same structure and 
+contents as `https://github.com/fleio/fleio-i18n/tree/master/translations/frontend` directory.
+
+Change into this directory and install `gulp` and `gulp-angular-gettext` npm packages using the following commands:
+
+`npm install gulp`
+
+`npm install gulp-angular-gettext`
+
+If `npm` is not present on your system you should install it using yum or apt, depending on your distro.
+
+Inside `po` subdirectory create a new `<language_code>.po` file for your language. The `<language_code`
 should be replaced with the code for your new language (e.g. `ro`, `en`, `fr` ...)
 
-After you edit the translation file use `gulp translations` to generate `.js` files from `.po` files.
+After you edit the translation file with `Poedit` use `gulp translations` to generate `.js` files from `.po` files.
+
 The new language file should be placed somewhere in the frontend installation file and use **Frontend customization** 
 feature available in fleio staff panel at **Settings/General** section to include you `.js` file `index.html` for both
 staff and end-user:
