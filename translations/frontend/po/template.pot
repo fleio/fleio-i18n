@@ -4,8 +4,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:9
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:10
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:14
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:15
 msgid "#{{ $ctrl.ticket.id }} - {{ $ctrl.ticket.title }}"
 msgstr ""
 
@@ -17,7 +17,14 @@ msgstr ""
 msgid "(All paid)"
 msgstr ""
 
+#: staff/apps/osbilling/plans/flbillingplandetails.html:78
+msgid "(Tiered)"
+msgstr ""
+
 #: domains/staff/frontend/components/pricing_cycles/pricingcycles.html:5
+#: staff/apps/clientgroups/flclientgroups.html:60
+#: staff/apps/osflavorgroups/flflavorgroups.html:60
+#: staff/apps/settings/configurations/configurations.html:71
 msgid "(default)"
 msgstr ""
 
@@ -37,7 +44,7 @@ msgstr ""
 msgid "*abc* -> {{$ctrl.item.display}} contains \"abc\""
 msgstr ""
 
-#: staff/apps/osbilling/plans/flbillingplandetails.html:67
+#: staff/apps/osbilling/plans/flbillingplandetails.html:82
 msgid "+ 1 modifier"
 msgid_plural "+ {{priceRule.modifiers_count}} modifiers"
 msgstr[0] ""
@@ -47,7 +54,7 @@ msgstr[1] ""
 msgid "+others"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:250
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:270
 msgid ""
 "- Last edited by\n"
 "                                        <a class=\"md-primary\" ui-sref=\"user({id: item.last_edited_by.id})\">\n"
@@ -107,7 +114,7 @@ msgid "1 invoice"
 msgstr ""
 
 #: staff/apps/osbilling/plans/flbillingplans.html:21
-#: staff/apps/osbilling/plans/flbillingplans.html:89
+#: staff/apps/osbilling/plans/flbillingplans.html:92
 msgid "1 pricing rule"
 msgid_plural "{{plan.pricing_rules.length}} pricing rules"
 msgstr[0] ""
@@ -119,8 +126,8 @@ msgid_plural "{{usergroup.users_count}} users in this group"
 msgstr[0] ""
 msgstr[1] ""
 
+#: staff/apps/osflavors/flflavors.html:100
 #: staff/apps/osflavors/flflavors.html:29
-#: staff/apps/osflavors/flflavors.html:94
 msgid "1 vCPU"
 msgid_plural "{{::flavor.vcpus}} vCPUs"
 msgstr[0] ""
@@ -195,13 +202,9 @@ msgstr ""
 
 #: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:45
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:45
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:54
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:57
 #: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:54
 msgid "<br>No valid department was selected"
-msgstr ""
-
-#: commons/ui/flupload/flupload.html:8
-msgid "<md-icon class=\"fl-icons material-icons\" role=\"img\" aria-label=\"{{'Remove selected file' | translate}}\">delete</md-icon>"
 msgstr ""
 
 #: staff/apps/settings/general/generalsettings.html:16
@@ -218,13 +221,13 @@ msgid ""
 "        <span hide-gt-xs translate>No {{ $ctrl.objectsNamePlural }}</span>"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:73
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:76
 #: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:73
 msgid "<span id=\"no_internal_status_option_text\">None</span>"
 msgstr ""
 
+#: staff/apps/billing/journal/journal.html:105
 #: staff/apps/billing/journal/journal.html:11
-#: staff/apps/billing/journal/journal.html:89
 msgid "<span>Amount</span>"
 msgstr ""
 
@@ -242,8 +245,8 @@ msgid ""
 "                  How many seconds to wait for OpenStack API to reply.<br>"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:191
-#: staff/apps/osimages/create/flimagecreate.html:186
+#: site/apps/osimages/create/flimagecreate.html:199
+#: staff/apps/osimages/create/flimagecreate.html:194
 msgid ""
 "<strong>Access permissions</strong><br>\n"
 "              The access permission for the image. <strong>Public</strong> or <strong>Private</strong>.\n"
@@ -369,8 +372,8 @@ msgid ""
 "                  API users for these projects will be also hidden"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:176
-#: staff/apps/osimages/create/flimagecreate.html:171
+#: site/apps/osimages/create/flimagecreate.html:184
+#: staff/apps/osimages/create/flimagecreate.html:179
 msgid ""
 "<strong>Image details</strong><br>\n"
 "              Select the <strong>region</strong> where this image should be created, give the image a name\n"
@@ -379,16 +382,16 @@ msgid ""
 "              with this image."
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.html:137
-#: staff/apps/osimages/update/flimageupdate.html:141
+#: site/apps/osimages/update/flimageupdate.html:145
+#: staff/apps/osimages/update/flimageupdate.html:150
 msgid ""
 "<strong>Image name</strong><br>\n"
 "                    Set an image display name that will reflect what the image contains, like it's operating system\n"
 "                    or snapshot of an instance."
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:183
-#: staff/apps/osimages/create/flimagecreate.html:178
+#: site/apps/osimages/create/flimagecreate.html:191
+#: staff/apps/osimages/create/flimagecreate.html:186
 msgid ""
 "<strong>Image properties</strong><br>\n"
 "              Select the format of the Image disk from the <strong>Disk format</strong> dropdown.\n"
@@ -398,8 +401,8 @@ msgid ""
 "              to take different actions based on the information provided."
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:198
-#: staff/apps/osimages/create/flimagecreate.html:193
+#: site/apps/osimages/create/flimagecreate.html:206
+#: staff/apps/osimages/create/flimagecreate.html:201
 msgid ""
 "<strong>Image source</strong><br>\n"
 "              Select the source for the actual image data from the <strong>Image source</strong> dropdown.\n"
@@ -415,8 +418,8 @@ msgid ""
 "                  The URL has the following form: https://keystone.url:5000/v3"
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.html:142
-#: staff/apps/osimages/update/flimageupdate.html:146
+#: site/apps/osimages/update/flimageupdate.html:150
+#: staff/apps/osimages/update/flimageupdate.html:155
 msgid ""
 "<strong>Minimum disk size (GB)</strong><br>\n"
 "                    This property will tell OpenStack Compute what the minimum required disk size is for this image.\n"
@@ -425,8 +428,8 @@ msgid ""
 "                    a lower disk size than the installed software on that image."
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.html:149
-#: staff/apps/osimages/update/flimageupdate.html:153
+#: site/apps/osimages/update/flimageupdate.html:157
+#: staff/apps/osimages/update/flimageupdate.html:162
 msgid ""
 "<strong>Minimum required RAM (MB)</strong><br>\n"
 "                    Like the minimum required disk size, this option allows you to set a limit for the minimum required\n"
@@ -505,8 +508,8 @@ msgid ""
 "                  If the fleio-collector service is used, the default topic is 'fleio'."
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.html:162
-#: staff/apps/osimages/update/flimageupdate.html:166
+#: site/apps/osimages/update/flimageupdate.html:170
+#: staff/apps/osimages/update/flimageupdate.html:175
 msgid ""
 "<strong>OS distro, OS version and Architecture</strong><br>\n"
 "                    These special attributes allows Fleio to show the distro icon next to each instance created from\n"
@@ -540,8 +543,8 @@ msgid ""
 "                  Do note that this is the domain ID, not it's name"
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.html:169
-#: staff/apps/osimages/update/flimageupdate.html:173
+#: site/apps/osimages/update/flimageupdate.html:177
+#: staff/apps/osimages/update/flimageupdate.html:182
 msgid ""
 "<strong>Protected</strong><br>\n"
 "                    Set this option in order to protect the image from accidental deletion"
@@ -605,8 +608,8 @@ msgid ""
 "                  We recommend that you install valid SSL certificates for your APIs.<br>"
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.html:154
-#: staff/apps/osimages/update/flimageupdate.html:158
+#: site/apps/osimages/update/flimageupdate.html:162
+#: staff/apps/osimages/update/flimageupdate.html:167
 msgid ""
 "<strong>Visibility</strong><br>\n"
 "                    An image can be set as <strong>private</strong>, makeing it only available to it's owner, or\n"
@@ -654,8 +657,8 @@ msgid ""
 "                  termination."
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:150
-#: staff/apps/osinstances/create/flinstancecreate.html:184
+#: site/apps/osinstances/create/flinstancecreate.html:153
+#: staff/apps/osinstances/create/flinstancecreate.html:187
 msgid "A network is required to create a new Instance."
 msgstr ""
 
@@ -752,6 +755,7 @@ msgstr ""
 msgid "Acccess IP"
 msgstr ""
 
+#: site/apps/osimages/memberstatus/memberstatusdialog.template.html:13
 #: staff/apps/billing/orders/florderactions.html:8
 msgid "Accept"
 msgstr ""
@@ -790,7 +794,7 @@ msgstr ""
 #: site/apps/networks/flnetworks.html:64
 #: site/apps/osapiusers/flapiusers.html:63
 #: site/apps/osimages/flimages.html:92
-#: site/apps/osinstances/flinstancedetail.html:387
+#: site/apps/osinstances/flinstancedetail.html:393
 #: site/apps/osinstances/flinstances.html:66
 #: site/apps/ossecuritygroups/flsecuritygroups.html:69
 #: site/apps/osvolumes/flvolumes.html:62
@@ -798,14 +802,14 @@ msgstr ""
 #: site/apps/oszones/flzones.html:66
 #: site/apps/pkm/flpkmkeys.html:55
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:179
-#: staff/apps/billing/journal/journal.html:93
+#: staff/apps/billing/journal/journal.html:109
 #: staff/apps/billing/orders/orders.html:44
 #: staff/apps/billing/products/productdetails.html:164
 #: staff/apps/billing/products/productdetails.html:194
 #: staff/apps/billing/products/productdetails.html:97
 #: staff/apps/billing/products/products.html:10
 #: staff/apps/billing/products/products.html:11
-#: staff/apps/billing/services/services.html:50
+#: staff/apps/billing/services/services.html:51
 #: staff/apps/billing/taxrules/taxrules.html:13
 #: staff/apps/billing/taxrules/taxrules.html:14
 #: staff/apps/clientgroups/flclientgroupdetails.html:25
@@ -813,14 +817,15 @@ msgstr ""
 #: staff/apps/clients/flclients.html:72
 #: staff/apps/networks/flnetworks.html:61
 #: staff/apps/osapiusers/flapiusers.html:65
-#: staff/apps/osbilling/plans/flbillingplans.html:66
+#: staff/apps/osbilling/plans/flbillingplans.html:69
 #: staff/apps/osflavorgroups/flflavorgroupdetails.html:25
 #: staff/apps/osflavorgroups/flflavorgroups.html:52
-#: staff/apps/osflavors/flflavors.html:76
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:23
+#: staff/apps/osflavors/flflavors.html:80
 #: staff/apps/osimages/flimagedetails.html:181
 #: staff/apps/osimages/flimagedetails.html:96
 #: staff/apps/osimages/flimages.html:89
-#: staff/apps/osinstances/flinstancedetail.html:516
+#: staff/apps/osinstances/flinstancedetail.html:534
 #: staff/apps/osinstances/flinstances.html:69
 #: staff/apps/osprojects/flprojects.html:69
 #: staff/apps/osrouters/flrouters.html:71
@@ -832,14 +837,15 @@ msgstr ""
 #: staff/apps/settings/configurations/configurations.html:61
 #: staff/apps/settings/configurations/configurations.html:62
 #: staff/apps/settings/notifications/flnotification-templates.template.html:50
-#: staff/apps/subnetpools/flsubnetpools.html:63
+#: staff/apps/subnetpools/flsubnetpools.html:69
 #: staff/apps/tasklog/tasks.html:15
 #: staff/apps/usergroups/flusergroupdetails.html:28
 #: staff/apps/usergroups/flusergroups.html:53
 #: staff/apps/users/flusers.html:62
 #: tickets/enduser/frontend/components/tickets/tickets.html:52
+#: tickets/staff/frontend/components/departments/departments.html:48
 #: tickets/staff/frontend/components/tickets/tickets.html:58
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:207
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:226
 msgid "Actions"
 msgstr ""
 
@@ -848,7 +854,7 @@ msgstr ""
 msgid "Activate"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:448
+#: staff/apps/clients/flclientdetails.html:464
 msgid "Activated"
 msgstr ""
 
@@ -880,7 +886,7 @@ msgid "Activity log"
 msgstr ""
 
 #: staff/apps/osbilling/plans/flbillingplandetails.html:29
-#: staff/apps/osbilling/plans/flbillingplandetails.html:31
+#: staff/apps/osbilling/plans/flbillingplandetails.html:32
 #: staff/apps/settings/notifications/create/select-template-language.template.html:21
 #: staff/apps/settings/notifications/create/select-template-language.template.html:22
 #: staff/apps/users/usertogroupmanager.html:38
@@ -915,8 +921,8 @@ msgstr ""
 #: site/apps/networks/flnetworkadd.html:199
 #: site/apps/networks/flnetworksubnetadd.html:148
 #: site/apps/networks/flnetworksubnetadd.html:152
-#: staff/apps/networks/flnetworkadd.html:270
-#: staff/apps/networks/flnetworkadd.html:274
+#: staff/apps/networks/flnetworkadd.html:276
+#: staff/apps/networks/flnetworkadd.html:280
 #: staff/apps/networks/flnetworksubnetadd.html:154
 #: staff/apps/networks/flnetworksubnetadd.html:158
 msgid "Add DNS name server"
@@ -924,14 +930,14 @@ msgstr ""
 
 #: staff/apps/osinstances/addip/flinstanceaddip.html:55
 #: staff/apps/osinstances/addip/flinstanceaddip.html:66
-#: staff/apps/osinstances/flinstancedetail.html:380
-#: staff/apps/osinstances/flinstancedetail.html:411
+#: staff/apps/osinstances/flinstancedetail.html:398
+#: staff/apps/osinstances/flinstancedetail.html:429
 msgid "Add IP"
 msgstr ""
 
 #: staff/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:43
-#: staff/apps/osinstances/flinstancedetail.html:387
-#: staff/apps/osinstances/flinstancedetail.html:418
+#: staff/apps/osinstances/flinstancedetail.html:405
+#: staff/apps/osinstances/flinstancedetail.html:436
 msgid "Add IP automatically"
 msgstr ""
 
@@ -976,7 +982,7 @@ msgstr ""
 #: todo/staff/frontend/components/todo_actions/dialogs/todo_edit/todoedit.html:39
 #: todo/staff/frontend/components/todo_actions/dialogs/todo_edit/todoedit.html:4
 #: todo/staff/frontend/components/todo_actions/todoactions.html:9
-#: todo/staff/frontend/components/todos/todos.html:90
+#: todo/staff/frontend/components/todos/todos.html:100
 msgid "Add TODO"
 msgstr ""
 
@@ -990,16 +996,19 @@ msgstr ""
 #: site/apps/networks/flnetworkadd.html:174
 #: site/apps/networks/flnetworksubnetadd.html:123
 #: site/apps/networks/flnetworksubnetadd.html:127
-#: staff/apps/networks/flnetworkadd.html:245
-#: staff/apps/networks/flnetworkadd.html:249
+#: staff/apps/networks/flnetworkadd.html:251
+#: staff/apps/networks/flnetworkadd.html:255
 #: staff/apps/networks/flnetworksubnetadd.html:129
 #: staff/apps/networks/flnetworksubnetadd.html:133
 msgid "Add allocation pool"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:86
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:117
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:120
 msgid "Add attachment"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:86
+msgid "Add attachments"
 msgstr ""
 
 #: staff/apps/billing/configurable_options/choices/choice.dialog.html:4
@@ -1015,8 +1024,8 @@ msgstr ""
 
 #: staff/apps/clientgroups/flclientgroupedit.html:32
 #: staff/apps/clientgroups/flclientgroupedit.html:4
-#: staff/apps/clientgroups/flclientgroups.html:95
-#: staff/apps/clientgroups/flclientgroups.html:99
+#: staff/apps/clientgroups/flclientgroups.html:100
+#: staff/apps/clientgroups/flclientgroups.html:96
 msgid "Add client group"
 msgstr ""
 
@@ -1025,7 +1034,7 @@ msgstr ""
 msgid "Add client to group"
 msgstr ""
 
-#: staff/apps/osbilling/pricing/flpricerule.html:143
+#: staff/apps/osbilling/pricing/flpricerule.html:144
 msgid "Add condition"
 msgstr ""
 
@@ -1053,7 +1062,7 @@ msgstr ""
 msgid "Add cycle to product {{ $ctrl.pack.name }}"
 msgstr ""
 
-#: tickets/staff/frontend/components/departments/departments.html:78
+#: tickets/staff/frontend/components/departments/departments.html:90
 #: tickets/staff/frontend/components/departments_actions/departmentsactions.html:9
 msgid "Add department"
 msgstr ""
@@ -1071,14 +1080,14 @@ msgstr ""
 #: commons/ui/filter/flfilter.html:246
 #: commons/ui/filter/flfilter.html:53
 #: commons/ui/filter/flfilter.html:80
-#: staff/apps/osbilling/pricing/flpricerule.html:140
+#: staff/apps/osbilling/pricing/flpricerule.component.js:59
 msgid "Add filter"
 msgstr ""
 
 #: staff/apps/osflavorgroups/flflavorgroupedit.html:32
 #: staff/apps/osflavorgroups/flflavorgroupedit.html:4
-#: staff/apps/osflavorgroups/flflavorgroups.html:95
-#: staff/apps/osflavorgroups/flflavorgroups.html:99
+#: staff/apps/osflavorgroups/flflavorgroups.html:100
+#: staff/apps/osflavorgroups/flflavorgroups.html:96
 msgid "Add flavor group"
 msgstr ""
 
@@ -1100,11 +1109,11 @@ msgstr ""
 #: site/apps/floatingips/flfloatingipadd.html:3
 #: site/apps/floatingips/flfloatingipadd.html:42
 #: site/apps/floatingips/flfloatingips.component.js:37
-#: site/apps/floatingips/flfloatingips.html:104
+#: site/apps/floatingips/flfloatingips.html:111
 #: staff/apps/floatingips/flfloatingipadd.html:3
-#: staff/apps/floatingips/flfloatingipadd.html:63
+#: staff/apps/floatingips/flfloatingipadd.html:65
 #: staff/apps/floatingips/flfloatingips.component.js:39
-#: staff/apps/floatingips/flfloatingips.html:106
+#: staff/apps/floatingips/flfloatingips.html:124
 msgid "Add floating IP"
 msgstr ""
 
@@ -1116,26 +1125,26 @@ msgstr ""
 #: site/apps/networks/flnetworkadd.html:228
 #: site/apps/networks/flnetworksubnetadd.html:177
 #: site/apps/networks/flnetworksubnetadd.html:181
-#: staff/apps/networks/flnetworkadd.html:299
-#: staff/apps/networks/flnetworkadd.html:303
+#: staff/apps/networks/flnetworkadd.html:305
+#: staff/apps/networks/flnetworkadd.html:309
 #: staff/apps/networks/flnetworksubnetadd.html:183
 #: staff/apps/networks/flnetworksubnetadd.html:187
 msgid "Add host route"
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.html:205
 #: site/apps/osimages/update/flimageupdate.html:213
-#: staff/apps/osimages/update/flimageupdate.html:209
-#: staff/apps/osimages/update/flimageupdate.html:217
+#: site/apps/osimages/update/flimageupdate.html:221
+#: staff/apps/osimages/update/flimageupdate.html:218
+#: staff/apps/osimages/update/flimageupdate.html:226
 msgid "Add image property"
 msgstr ""
 
 #: site/apps/osrouters/flrouterdetails.html:16
+#: site/apps/osrouters/flrouters.html:102
 #: site/apps/osrouters/flrouters.html:46
-#: site/apps/osrouters/flrouters.html:90
 #: staff/apps/osrouters/flrouterdetails.component.js:36
 #: staff/apps/osrouters/flrouters.component.js:43
-#: staff/apps/osrouters/flrouters.html:134
+#: staff/apps/osrouters/flrouters.html:138
 msgid "Add interface"
 msgstr ""
 
@@ -1149,8 +1158,8 @@ msgstr ""
 msgid "Add interface to router {{ $ctrl.router.name }}"
 msgstr ""
 
-#: staff/apps/billing/invoicing/flinvoicing.html:87
-#: staff/apps/billing/invoicing/flinvoicing.html:91
+#: staff/apps/billing/invoicing/flinvoicing.html:90
+#: staff/apps/billing/invoicing/flinvoicing.html:94
 msgid "Add invoice"
 msgstr ""
 
@@ -1186,8 +1195,8 @@ msgstr ""
 msgid "Add metric pricing rule"
 msgstr ""
 
-#: staff/apps/osbilling/pricing/flpricerule.html:177
-#: staff/apps/osbilling/pricing/flpricerule.html:180
+#: staff/apps/osbilling/pricing/flpricerule.component.js:58
+#: staff/apps/osbilling/pricing/flpricerule.html:182
 msgid "Add modifier"
 msgstr ""
 
@@ -1207,16 +1216,16 @@ msgstr ""
 msgid "Add new domain contact"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:181
+#: site/apps/osinstances/create/flinstancecreate.html:184
 msgid "Add new key"
 msgstr ""
 
-#: staff/apps/osbilling/plans/flbillingplans.html:103
-#: staff/apps/osbilling/plans/flbillingplans.html:104
-#: staff/apps/osbilling/plans/flbillingplans.html:126
-#: staff/apps/osbilling/plans/flbillingplans.html:128
-#: staff/apps/osbilling/plans/flbillingplans.html:39
+#: staff/apps/osbilling/plans/flbillingplans.html:106
+#: staff/apps/osbilling/plans/flbillingplans.html:108
+#: staff/apps/osbilling/plans/flbillingplans.html:130
+#: staff/apps/osbilling/plans/flbillingplans.html:132
 #: staff/apps/osbilling/plans/flbillingplans.html:40
+#: staff/apps/osbilling/plans/flbillingplans.html:42
 msgid "Add new pricing rule"
 msgstr ""
 
@@ -1224,7 +1233,7 @@ msgstr ""
 msgid "Add new template"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:353
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:373
 msgid "Add note"
 msgstr ""
 
@@ -1234,8 +1243,8 @@ msgid "Add payment"
 msgstr ""
 
 #: staff/apps/osinstances/addport/flinstanceaddport.html:58
-#: staff/apps/osinstances/flinstancedetail.html:373
-#: staff/apps/osinstances/flinstancedetail.html:404
+#: staff/apps/osinstances/flinstancedetail.html:391
+#: staff/apps/osinstances/flinstancedetail.html:422
 msgid "Add port"
 msgstr ""
 
@@ -1309,19 +1318,19 @@ msgid "Add signature for department"
 msgstr ""
 
 #: site/apps/networks/flnetworkdetails.html:21
-#: site/apps/networks/flnetworks.html:128
+#: site/apps/networks/flnetworks.html:100
+#: site/apps/networks/flnetworks.html:132
 #: site/apps/networks/flnetworks.html:35
-#: site/apps/networks/flnetworks.html:96
 #: staff/apps/networks/flnetworkdetails.html:20
 #: staff/apps/networks/flnetworks.html:34
-#: staff/apps/networks/flnetworks.html:94
+#: staff/apps/networks/flnetworks.html:96
 msgid "Add subnet"
 msgstr ""
 
 #: staff/apps/networks/flnetworkautocreateconfigure.html:65
 #: staff/apps/networks/flnetworkautocreateconfigure.html:89
 #: staff/apps/subnetpools/flsubnetpools.component.js:38
-#: staff/apps/subnetpools/flsubnetpools.html:147
+#: staff/apps/subnetpools/flsubnetpools.html:164
 msgid "Add subnet pool"
 msgstr ""
 
@@ -1391,7 +1400,7 @@ msgstr ""
 
 #: staff/apps/usergroups/flusergroupedit.html:32
 #: staff/apps/usergroups/flusergroupedit.html:4
-#: staff/apps/usergroups/flusergroups.html:93
+#: staff/apps/usergroups/flusergroups.html:101
 #: staff/apps/usergroups/flusergroups.html:97
 msgid "Add user group"
 msgstr ""
@@ -1517,14 +1526,14 @@ msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:159
 #: site/apps/networks/flnetworksubnetadd.html:112
-#: staff/apps/networks/flnetworkadd.html:234
+#: staff/apps/networks/flnetworkadd.html:240
 #: staff/apps/networks/flnetworksubnetadd.html:118
 msgid "Allocation pool end"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:153
 #: site/apps/networks/flnetworksubnetadd.html:106
-#: staff/apps/networks/flnetworkadd.html:228
+#: staff/apps/networks/flnetworkadd.html:234
 #: staff/apps/networks/flnetworksubnetadd.html:112
 msgid "Allocation pool start"
 msgstr ""
@@ -1554,8 +1563,8 @@ msgstr ""
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:175
 #: staff/apps/billing/invoicing/payments/paymentcreate.html:40
 #: staff/apps/clients/changecredit/flclientchangecredit.html:19
-#: staff/apps/clients/flclientdetails.html:167
-#: staff/apps/clients/flclientdetails.html:226
+#: staff/apps/clients/flclientdetails.html:174
+#: staff/apps/clients/flclientdetails.html:237
 msgid "Amount"
 msgstr ""
 
@@ -1589,10 +1598,10 @@ msgstr ""
 msgid "Any"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:130
-#: site/apps/osimages/update/flimageupdate.html:99
-#: staff/apps/osimages/create/flimagecreate.html:125
-#: staff/apps/osimages/update/flimageupdate.html:99
+#: site/apps/osimages/create/flimagecreate.html:138
+#: site/apps/osimages/update/flimageupdate.html:107
+#: staff/apps/osimages/create/flimagecreate.html:133
+#: staff/apps/osimages/update/flimageupdate.html:108
 msgid "Any hypervisor"
 msgstr ""
 
@@ -1658,7 +1667,7 @@ msgstr ""
 msgid "Are you sure you want to delete invoice?"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:228
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:320
 msgid "Are you sure you want to delete the attachment?"
 msgstr ""
 
@@ -1715,8 +1724,8 @@ msgstr ""
 #: site/apps/osimages/flimages.component.js:50
 #: site/apps/osinstances/flinstancedetail.component.js:294
 #: site/apps/osinstances/flinstancedetail.component.js:341
-#: site/apps/osrouters/flrouterdetails.component.js:109
-#: site/apps/osrouters/flrouterdetails.component.js:119
+#: site/apps/osrouters/flrouterdetails.component.js:108
+#: site/apps/osrouters/flrouterdetails.component.js:118
 #: site/apps/osrouters/flrouters.component.js:115
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:112
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:123
@@ -1753,6 +1762,7 @@ msgstr ""
 #: staff/apps/osapiusers/flapiusers.component.js:73
 #: staff/apps/osflavorgroups/flflavorgroupdetails.component.js:106
 #: staff/apps/osflavorgroups/flflavorgroupsactions.component.js:51
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.js:106
 #: staff/apps/osflavors/flflavordetails.component.js:48
 #: staff/apps/osflavors/flflavors.component.js:40
 #: staff/apps/osimages/flimagedetails.component.js:120
@@ -1787,20 +1797,25 @@ msgstr ""
 msgid "Are you sure?"
 msgstr ""
 
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:85
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:88
+msgid "Assign client group to flavor"
+msgstr ""
+
 #: domains/staff/frontend/components/client_info/clientinfo.html:10
 #: tickets/enduser/frontend/components/states.config.js:52
 #: tickets/staff/frontend/components/states.config.js:53
 #: tickets/staff/frontend/components/tickets/tickets.html:32
 #: tickets/staff/frontend/components/tickets/tickets.html:56
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:110
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:113
 #: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:110
 #: todo/staff/frontend/components/states.config.js:52
 #: todo/staff/frontend/components/todos/todos.html:24
 msgid "Assigned to"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:342
-#: staff/apps/osinstances/flinstancedetail.html:472
+#: site/apps/osinstances/flinstancedetail.html:348
+#: staff/apps/osinstances/flinstancedetail.html:490
 msgid "Associate"
 msgstr ""
 
@@ -1808,8 +1823,8 @@ msgstr ""
 #: site/apps/osinstances/actions/flxsinstanceactions.html:124
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:39
 #: staff/apps/osinstances/associateip/flinstanceassociateip.html:39
-#: staff/apps/osinstances/flinstancedetail.html:394
-#: staff/apps/osinstances/flinstancedetail.html:425
+#: staff/apps/osinstances/flinstancedetail.html:412
+#: staff/apps/osinstances/flinstancedetail.html:443
 msgid "Associate IP"
 msgstr ""
 
@@ -1849,7 +1864,7 @@ msgstr ""
 msgid "Associate security group to {{::$ctrl.instance.name }}"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:338
+#: staff/apps/clients/flclientdetails.html:354
 msgid "Associate user"
 msgstr ""
 
@@ -1907,9 +1922,9 @@ msgstr ""
 msgid "Attach"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:233
+#: site/apps/osinstances/flinstancedetail.html:239
 #: site/apps/osvolumes/attach/flvolumeattach.html:31
-#: staff/apps/osinstances/flinstancedetail.html:202
+#: staff/apps/osinstances/flinstancedetail.html:220
 msgid "Attach volume"
 msgstr ""
 
@@ -1923,25 +1938,37 @@ msgstr ""
 msgid "Attaching volume to instance"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:128
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:216
-msgid "Attachment added"
-msgstr ""
-
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:235
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:327
 msgid "Attachment deleted"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:58
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.component.js:70
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:66
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:66
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.component.js:77
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:173
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:71
 msgid "Attachment file size is too big."
 msgstr ""
 
 #: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:13
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:13
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:13
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:14
 #: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:13
 msgid "Attachment upload in progress..."
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:4
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:4
+msgid "Attachments upload in progress..."
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:156
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:45
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:93
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:102
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:157
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:251
+msgid "Attachments:"
 msgstr ""
 
 #: staff/apps/osbilling/resources/fladdresourcefield.html:12
@@ -1980,7 +2007,7 @@ msgstr ""
 msgid "Auto creating network..."
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:137
+#: site/apps/osinstances/create/flbootsourceselect.html:154
 #: staff/apps/osinstances/create/flbootsourceselect.html:171
 msgid "Auto delete volume when instance is terminated"
 msgstr ""
@@ -2123,8 +2150,8 @@ msgstr ""
 msgid "Backup schedule type"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:378
-#: staff/apps/osinstances/flinstancedetail.html:507
+#: site/apps/osinstances/flinstancedetail.html:384
+#: staff/apps/osinstances/flinstancedetail.html:525
 msgid "Backup schedules"
 msgstr ""
 
@@ -2136,8 +2163,8 @@ msgstr ""
 msgid "Backup was scheduled for creation"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:380
-#: staff/apps/osinstances/flinstancedetail.html:509
+#: site/apps/osinstances/flinstancedetail.html:386
+#: staff/apps/osinstances/flinstancedetail.html:527
 msgid "Backups will be created every time the scheduler is being run. It will take into account all schedules that have the 'run at' field value set earlier than the moment when the script is being run."
 msgstr ""
 
@@ -2195,10 +2222,10 @@ msgstr ""
 
 #: site/apps/osinstances/actions/flinstanceactions.html:75
 #: site/apps/osinstances/actions/flxsinstanceactions.html:77
-#: site/apps/osinstances/states.config.js:239
+#: site/apps/osinstances/states.config.js:250
 #: staff/apps/osinstances/actions/flinstanceactions.html:143
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:153
-#: staff/apps/osinstances/states.config.js:345
+#: staff/apps/osinstances/states.config.js:351
 msgid "Boot from ISO"
 msgstr ""
 
@@ -2220,20 +2247,20 @@ msgstr ""
 msgid "But your license includes {{$ctrl.max_cores}} cores."
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:176
-#: staff/apps/osinstances/flinstancedetail.html:146
+#: site/apps/osinstances/flinstancedetail.html:182
+#: staff/apps/osinstances/flinstancedetail.html:164
 msgid "Bytes in/out"
 msgstr ""
 
 #: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:47
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:47
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:86
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:89
 #: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:86
 msgid "CC recipients (comma separated)"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:38
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:71
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:43
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:76
 msgid "CC recipients: {{$ctrl.ticket.cc_recipients}}"
 msgstr ""
 
@@ -2242,13 +2269,13 @@ msgstr ""
 msgid "CIDR"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:127
-#: staff/apps/osinstances/flinstancedetail.html:99
+#: site/apps/osinstances/flinstancedetail.html:133
+#: staff/apps/osinstances/flinstancedetail.html:117
 msgid "CPU metrics"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:150
-#: staff/apps/osinstances/flinstancedetail.html:121
+#: site/apps/osinstances/flinstancedetail.html:156
+#: staff/apps/osinstances/flinstancedetail.html:139
 msgid "CPU utilization"
 msgstr ""
 
@@ -2294,14 +2321,15 @@ msgstr ""
 #: site/apps/networks/flnetworkedit.html:48
 #: site/apps/networks/flnetworksubnetadd.html:190
 #: site/apps/osapiusers/flapiuseredit.html:36
-#: site/apps/osimages/create/flimagecreate.html:213
+#: site/apps/osimages/create/flimagecreate.html:221
+#: site/apps/osimages/memberstatus/memberstatusdialog.template.html:21
 #: site/apps/osimages/snapshot/flinstancesnapshot.html:17
-#: site/apps/osimages/update/flimageupdate.html:131
-#: site/apps/osimages/update/flimageupdate.html:224
+#: site/apps/osimages/update/flimageupdate.html:139
+#: site/apps/osimages/update/flimageupdate.html:232
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:36
 #: site/apps/osinstances/associatesecuritygroup/flassociatesecuritygroup.html:32
 #: site/apps/osinstances/bootfromiso/flinstancebootfromiso.html:82
-#: site/apps/osinstances/create/flinstancecreate.html:227
+#: site/apps/osinstances/create/flinstancecreate.html:230
 #: site/apps/osinstances/dissociateip/flinstancedissociateip.html:24
 #: site/apps/osinstances/editptr/fleditptr.html:20
 #: site/apps/osinstances/password/flinstancechangepassword.html:29
@@ -2344,29 +2372,29 @@ msgstr ""
 #: staff/apps/clients/delete/flclientdelete.html:22
 #: staff/apps/clients/deleteopenstackservice/fldeleteopenstackservice.html:20
 #: staff/apps/clients/flclientedit.html:150
-#: staff/apps/floatingips/flfloatingipadd.html:60
-#: staff/apps/networks/flnetworkadd.html:313
+#: staff/apps/floatingips/flfloatingipadd.html:62
+#: staff/apps/networks/flnetworkadd.html:319
 #: staff/apps/networks/flnetworkautocreate.html:52
 #: staff/apps/networks/flnetworkedit.html:124
 #: staff/apps/networks/flnetworksubnetadd.html:196
 #: staff/apps/osapiusers/flapiuseredit.html:56
 #: staff/apps/osbilling/plans/create/flplancreate.html:61
 #: staff/apps/osbilling/plans/flbillingplandelete.html:25
-#: staff/apps/osbilling/pricing/flpricerule.html:226
+#: staff/apps/osbilling/pricing/flpricerule.html:228
 #: staff/apps/osbilling/resources/fladdresourcefield.html:129
 #: staff/apps/osbilling/resources/flmetric.html:94
 #: staff/apps/osflavorgroups/flflavorgroupedit.html:30
 #: staff/apps/osflavors/edit/flflavoredit.html:92
-#: staff/apps/osimages/create/flimagecreate.html:208
-#: staff/apps/osimages/update/flimageupdate.html:135
-#: staff/apps/osimages/update/flimageupdate.html:228
+#: staff/apps/osimages/create/flimagecreate.html:216
+#: staff/apps/osimages/update/flimageupdate.html:144
+#: staff/apps/osimages/update/flimageupdate.html:237
 #: staff/apps/osinstances/addip/flinstanceaddip.html:63
 #: staff/apps/osinstances/addport/flinstanceaddport.html:55
 #: staff/apps/osinstances/associateip/flinstanceassociateip.html:36
 #: staff/apps/osinstances/associatesecuritygroup/flassociatesecuritygroup.html:32
 #: staff/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:40
 #: staff/apps/osinstances/bootfromiso/flinstancebootfromiso.html:83
-#: staff/apps/osinstances/create/flinstancecreate.html:252
+#: staff/apps/osinstances/create/flinstancecreate.html:255
 #: staff/apps/osinstances/dissociateip/flinstancedissociateip.html:24
 #: staff/apps/osinstances/migrate/flinstancemigrate.html:56
 #: staff/apps/osinstances/move/flinstancemove.html:34
@@ -2377,7 +2405,7 @@ msgstr ""
 #: staff/apps/osinstances/rename/flinstancerename.html:21
 #: staff/apps/osinstances/rescue/flinstancerescue.html:97
 #: staff/apps/osinstances/resize/flinstanceresize.html:64
-#: staff/apps/osinstances/snapshot/flinstancesnapshot.html:18
+#: staff/apps/osinstances/snapshot/flinstancesnapshot.html:25
 #: staff/apps/osprojects/flprojectdelete.html:19
 #: staff/apps/osprojects/flprojectedit.html:31
 #: staff/apps/osrouters/flinterfaceadd.html:27
@@ -2402,13 +2430,13 @@ msgstr ""
 #: staff/apps/usergroups/flusergroupedit.html:30
 #: staff/apps/users/fluseredit.html:78
 #: staff/apps/users/usertogroupmanager.html:36
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:98
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:99
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:89
 #: tickets/staff/frontend/components/department_create/departmentcreate.html:190
 #: tickets/staff/frontend/components/department_details/departmentdetails.html:194
 #: tickets/staff/frontend/components/signatures/signatures.html:66
 #: tickets/staff/frontend/components/tickets_actions/dialogs/ticket_linking/ticketlinking.html:37
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:128
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:132
 #: tickets/staff/frontend/components/tickets_details/dialogs/remove_linking/removelinking.html:21
 #: tickets/staff/frontend/components/tickets_details/dialogs/tickets_updates_edit/ticketsupdatesedit.html:13
 #: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:120
@@ -2419,7 +2447,7 @@ msgstr ""
 
 #: site/apps/billing/services/servicedetails.html:16
 #: site/apps/billing/services/services.html:30
-#: site/apps/billing/services/services.html:79
+#: site/apps/billing/services/services.html:83
 msgid "Cancel service"
 msgstr ""
 
@@ -2505,7 +2533,7 @@ msgid "Change client's configuration"
 msgstr ""
 
 #: staff/apps/clients/changeconfiguration/flclientchangeconfiguration.html:40
-#: staff/apps/clients/flclientdetails.html:361
+#: staff/apps/clients/flclientdetails.html:377
 msgid "Change configuration"
 msgstr ""
 
@@ -2531,7 +2559,7 @@ msgstr ""
 msgid "Change password"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:270
+#: staff/apps/clients/flclientdetails.html:281
 msgid "Change plan"
 msgstr ""
 
@@ -2586,6 +2614,10 @@ msgstr ""
 msgid "Check your email account and click on the link to confirm the email address."
 msgstr ""
 
+#: site/apps/osimages/memberstatus/memberstatusdialog.template.html:3
+msgid "Check your image member status"
+msgstr ""
+
 #: staff/apps/billing/configurable_options/option.component.js:65
 msgid "Choice  deleted"
 msgstr ""
@@ -2610,8 +2642,12 @@ msgstr ""
 msgid "Choose another default plan"
 msgstr ""
 
-#: commons/ui/flupload/flupload.html:2
+#: commons/ui/flupload/flupload.html:5
 msgid "Choose file"
+msgstr ""
+
+#: commons/ui/flupload/flupload.html:6
+msgid "Choose files"
 msgstr ""
 
 #: site/apps/osinstances/create/flbootsourceselect.html:3
@@ -2654,7 +2690,7 @@ msgstr ""
 msgid "Clear all filters"
 msgstr ""
 
-#: staff/apps/osbilling/plans/flbillingplandetails.html:65
+#: staff/apps/osbilling/plans/flbillingplandetails.html:80
 msgid "Click for details"
 msgstr ""
 
@@ -2684,7 +2720,7 @@ msgstr ""
 #: staff/apps/billing/orders/orders.html:39
 #: staff/apps/billing/services/details/servicedetails.html:96
 #: staff/apps/billing/services/services.html:19
-#: staff/apps/billing/services/services.html:46
+#: staff/apps/billing/services/services.html:47
 #: staff/apps/billing/states.config.js:168
 #: staff/apps/billing/states.config.js:240
 #: staff/apps/billing/states.config.js:340
@@ -2692,17 +2728,17 @@ msgstr ""
 #: staff/apps/billing/states.config.js:40
 #: staff/apps/clients/flclients.html:1
 #: staff/apps/floatingips/flfloatingipadd.html:9
-#: staff/apps/floatingips/flfloatingips.html:22
-#: staff/apps/floatingips/flfloatingips.html:61
+#: staff/apps/floatingips/flfloatingips.html:24
+#: staff/apps/floatingips/flfloatingips.html:68
 #: staff/apps/floatingips/states.config.js:49
 #: staff/apps/networks/flnetworkautocreate.html:7
 #: staff/apps/networks/flnetworkedit.html:11
 #: staff/apps/osimages/flimages.html:31
 #: staff/apps/osimages/flimages.html:88
 #: staff/apps/osimages/states.config.js:63
-#: staff/apps/osinstances/flinstancedetail.html:55
+#: staff/apps/osinstances/flinstancedetail.html:64
 #: staff/apps/osinstances/flinstances.html:40
-#: staff/apps/osinstances/states.config.js:68
+#: staff/apps/osinstances/states.config.js:74
 #: staff/apps/osrouters/flrouteredit.html:11
 #: staff/apps/ossecuritygroups/flsecuritygroupedit.html:10
 #: staff/apps/osvolumes/flvolumedetails.html:21
@@ -2753,11 +2789,16 @@ msgid "Client details"
 msgstr ""
 
 #: staff/apps/clientgroups/flclientgroups.html:1
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:22
 msgid "Client group"
 msgstr ""
 
 #: staff/apps/clientgroups/flclientgroups.component.js:40
 msgid "Client group added"
+msgstr ""
+
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.js:94
+msgid "Client group assigned to flavor"
 msgstr ""
 
 #: staff/apps/clientgroups/flclientgroupsactions.component.js:58
@@ -2766,6 +2807,10 @@ msgstr ""
 
 #: staff/apps/clientgroups/states.config.js:79
 msgid "Client group details"
+msgstr ""
+
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.js:116
+msgid "Client group removed from flavor"
 msgstr ""
 
 #: staff/apps/clientgroups/flclientgroupsactions.component.js:46
@@ -2790,7 +2835,7 @@ msgstr ""
 #: commons/ui/filter/flfilter.html:39
 #: staff/apps/billing/invoicing/create/flinvoicecreate.html:37
 #: staff/apps/clients/flclients.html:22
-#: staff/apps/clients/flclients.html:83
+#: staff/apps/clients/flclients.html:84
 #: staff/apps/floatingips/flfloatingipadd.html:25
 #: staff/apps/networks/flnetworkadd.html:28
 #: staff/apps/networks/flnetworkautocreate.html:23
@@ -2842,7 +2887,7 @@ msgstr ""
 msgid "Client {{fname}} {{lname}} modified"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:60
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:65
 msgid ""
 "Client:\n"
 "                            <a ng-if=\"$ctrl.ticket.client\" class=\"md-primary\" ui-sref=\"client({id: $ctrl.ticket.client})\">\n"
@@ -2851,7 +2896,7 @@ msgid ""
 "                            <span ng-if=\"!$ctrl.ticket.client\">{{$ctrl.ticket.client_display}}</span>"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:36
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:41
 msgid "Client: {{$ctrl.ticket.client_display}}"
 msgstr ""
 
@@ -2879,9 +2924,9 @@ msgid "Close impersonation"
 msgstr ""
 
 #: tickets/enduser/frontend/components/tickets_actions/ticketsactions.html:9
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:257
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:276
 #: tickets/staff/frontend/components/tickets_actions/ticketsactions.html:14
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:356
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:376
 msgid "Close ticket"
 msgstr ""
 
@@ -2890,7 +2935,7 @@ msgstr ""
 msgid "Cloud"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:366
+#: staff/apps/clients/flclientdetails.html:382
 msgid "Cloud resources"
 msgstr ""
 
@@ -2914,7 +2959,7 @@ msgstr ""
 msgid "Comment added"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:49
+#: site/apps/osinstances/create/flbootsourceselect.html:66
 #: staff/apps/osinstances/create/flbootsourceselect.html:49
 msgid "Community Images"
 msgstr ""
@@ -2976,7 +3021,7 @@ msgid "Configurable options:"
 msgstr ""
 
 #: hypanel/staff/frontend/components/product_settings/productsettings.html:28
-#: staff/apps/clients/flclientdetails.html:353
+#: staff/apps/clients/flclientdetails.html:369
 #: staff/apps/clients/flclients.html:69
 #: staff/apps/settings/configurations/configurations.html:1
 msgid "Configuration"
@@ -3005,14 +3050,14 @@ msgstr ""
 
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:101
 #: staff/apps/clients/changeconfiguration/flclientchangeconfiguration.html:24
-#: staff/apps/clients/flclientdetails.html:344
+#: staff/apps/clients/flclientdetails.html:360
 #: staff/apps/settings/configurations/configurations.html:1
 #: staff/apps/settings/states.config.js:27
 msgid "Configurations"
 msgstr ""
 
 #: staff/apps/networks/flnetworks.component.js:41
-#: staff/apps/networks/flnetworks.html:169
+#: staff/apps/networks/flnetworks.html:171
 #: staff/apps/networks/states.config.js:90
 msgid "Configure get me a network"
 msgstr ""
@@ -3135,7 +3180,7 @@ msgstr ""
 msgid "Could not delete floating IP"
 msgstr ""
 
-#: site/apps/osrouters/flrouterdetails.component.js:129
+#: site/apps/osrouters/flrouterdetails.component.js:128
 #: staff/apps/osrouters/flrouterdetails.component.js:137
 msgid "Could not delete interface"
 msgstr ""
@@ -3213,7 +3258,7 @@ msgstr ""
 #: staff/apps/billing/products/flbillingproductgroupedit.html:30
 #: staff/apps/billing/taxrules/flbillingtaxruleedit.html:84
 #: staff/apps/clients/flclientedit.html:146
-#: staff/apps/networks/flnetworkadd.html:319
+#: staff/apps/networks/flnetworkadd.html:325
 #: staff/apps/networks/flnetworkautocreate.html:56
 #: staff/apps/networks/flnetworkedit.html:128
 #: staff/apps/networks/flnetworksubnetadd.html:200
@@ -3229,8 +3274,8 @@ msgstr ""
 msgid "Create"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:223
-#: staff/apps/osinstances/create/flinstancecreate.html:248
+#: site/apps/osinstances/create/flinstancecreate.html:226
+#: staff/apps/osinstances/create/flinstancecreate.html:251
 msgid "Create & Boot from ISO"
 msgstr ""
 
@@ -3291,13 +3336,13 @@ msgid "Create backup schedule for instance {{ $ctrl.instance.name }}"
 msgstr ""
 
 #: staff/apps/clients/flclientedit.html:8
-#: staff/apps/clients/flclients.html:133
+#: staff/apps/clients/flclients.html:148
 #: staff/apps/clients/states.config.js:133
 msgid "Create client"
 msgstr ""
 
 #: staff/apps/settings/configurations/configurationedit.html:6
-#: staff/apps/settings/configurations/configurations.html:130
+#: staff/apps/settings/configurations/configurations.html:131
 msgid "Create configuration"
 msgstr ""
 
@@ -3325,26 +3370,26 @@ msgstr ""
 
 #: site/apps/dashboard/fldashboard.html:87
 #: site/apps/osimages/create/flimagecreate.html:14
-#: site/apps/osimages/create/flimagecreate.html:210
+#: site/apps/osimages/create/flimagecreate.html:218
 #: site/apps/osimages/flimages.component.js:35
 #: site/apps/osimages/states.config.js:136
 #: staff/apps/osimages/create/flimagecreate.html:14
-#: staff/apps/osimages/create/flimagecreate.html:205
+#: staff/apps/osimages/create/flimagecreate.html:213
 #: staff/apps/osimages/flimages.component.js:32
 #: staff/apps/osimages/states.config.js:157
 msgid "Create image"
 msgstr ""
 
 #: site/apps/dashboard/fldashboard.html:73
-#: site/apps/osinstances/create/flinstancecreate.html:224
+#: site/apps/osinstances/create/flinstancecreate.html:227
 #: site/apps/osinstances/flinstances.component.js:28
-#: site/apps/osinstances/states.config.js:104
-#: staff/apps/osinstances/create/flinstancecreate.html:249
-#: staff/apps/osinstances/states.config.js:210
+#: site/apps/osinstances/states.config.js:115
+#: staff/apps/osinstances/create/flinstancecreate.html:252
+#: staff/apps/osinstances/states.config.js:216
 msgid "Create instance"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:358
+#: site/apps/osinstances/flinstancedetail.html:364
 msgid "Create instant backups for your instance."
 msgstr ""
 
@@ -3359,12 +3404,12 @@ msgstr ""
 #: site/apps/networks/flnetworkadd.html:3
 #: site/apps/networks/flnetworkedit.html:3
 #: site/apps/networks/flnetworks.component.js:38
-#: site/apps/networks/flnetworks.html:166
+#: site/apps/networks/flnetworks.html:170
 #: staff/apps/networks/flnetworkadd.html:3
 #: staff/apps/networks/flnetworkautocreateconfigure.html:41
 #: staff/apps/networks/flnetworkedit.html:3
 #: staff/apps/networks/flnetworks.component.js:39
-#: staff/apps/networks/flnetworks.html:153
+#: staff/apps/networks/flnetworks.html:155
 msgid "Create network"
 msgstr ""
 
@@ -3372,13 +3417,13 @@ msgstr ""
 msgid "Create new account"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:372
-#: staff/apps/osinstances/flinstancedetail.html:501
+#: site/apps/osinstances/flinstancedetail.html:378
+#: staff/apps/osinstances/flinstancedetail.html:519
 msgid "Create new backup"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:412
-#: staff/apps/osinstances/flinstancedetail.html:541
+#: site/apps/osinstances/flinstancedetail.html:418
+#: staff/apps/osinstances/flinstancedetail.html:559
 msgid "Create new backup schedule"
 msgstr ""
 
@@ -3400,7 +3445,7 @@ msgid "Create option"
 msgstr ""
 
 #: staff/apps/osbilling/plans/create/flplancreate.html:3
-#: staff/apps/osbilling/plans/flbillingplans.html:156
+#: staff/apps/osbilling/plans/flbillingplans.html:160
 msgid "Create plan"
 msgstr ""
 
@@ -3418,19 +3463,19 @@ msgid "Create product group"
 msgstr ""
 
 #: site/apps/osrouters/flrouteredit.html:3
-#: site/apps/osrouters/flrouters.html:113
-#: site/apps/osrouters/flrouters.html:114
+#: site/apps/osrouters/flrouters.html:128
+#: site/apps/osrouters/flrouters.html:129
 #: staff/apps/osrouters/flrouteredit.html:3
-#: staff/apps/osrouters/flrouters.html:164
+#: staff/apps/osrouters/flrouters.html:168
 msgid "Create router"
 msgstr ""
 
 #: site/apps/ossecuritygroups/flsecuritygroupedit.html:3
 #: site/apps/ossecuritygroups/flsecuritygroups.component.js:41
-#: site/apps/ossecuritygroups/flsecuritygroups.html:130
+#: site/apps/ossecuritygroups/flsecuritygroups.html:134
 #: staff/apps/ossecuritygroups/flsecuritygroupedit.html:3
 #: staff/apps/ossecuritygroups/flsecuritygroups.component.js:44
-#: staff/apps/ossecuritygroups/flsecuritygroups.html:134
+#: staff/apps/ossecuritygroups/flsecuritygroups.html:138
 msgid "Create security group"
 msgstr ""
 
@@ -3439,14 +3484,14 @@ msgid "Create server"
 msgstr ""
 
 #: staff/apps/clients/createopenstackservice/flcreateopenstackservice.html:90
-#: staff/apps/clients/flclientdetails.html:247
+#: staff/apps/clients/flclientdetails.html:258
 msgid "Create service"
 msgstr ""
 
 #: site/apps/osimages/snapshot/flinstancesnapshot.html:18
-#: site/apps/osinstances/flinstancedetail.html:199
-#: staff/apps/osinstances/flinstancedetail.html:169
-#: staff/apps/osinstances/snapshot/flinstancesnapshot.html:21
+#: site/apps/osinstances/flinstancedetail.html:205
+#: staff/apps/osinstances/flinstancedetail.html:187
+#: staff/apps/osinstances/snapshot/flinstancesnapshot.html:28
 msgid "Create snapshot"
 msgstr ""
 
@@ -3490,11 +3535,11 @@ msgstr ""
 msgid "Create zone"
 msgstr ""
 
-#: site/apps/networks/flnetworks.html:156
-#: site/apps/networks/flnetworks.html:157
+#: site/apps/networks/flnetworks.html:160
+#: site/apps/networks/flnetworks.html:161
 #: staff/apps/billing/products/products.html:122
 #: staff/apps/billing/products/products.html:123
-#: staff/apps/networks/flnetworks.html:144
+#: staff/apps/networks/flnetworks.html:146
 msgid "Create..."
 msgstr ""
 
@@ -3574,6 +3619,7 @@ msgstr ""
 #: tickets/enduser/frontend/components/tickets/tickets.html:50
 #: tickets/staff/frontend/components/client_info/clientinfo.html:6
 #: tickets/staff/frontend/components/departments/departments.html:22
+#: tickets/staff/frontend/components/departments/departments.html:46
 #: tickets/staff/frontend/components/states.config.js:197
 #: tickets/staff/frontend/components/states.config.js:54
 #: tickets/staff/frontend/components/tickets/tickets.html:55
@@ -3590,7 +3636,7 @@ msgid ""
 "                Region: {{ network.region }}"
 msgstr ""
 
-#: staff/apps/subnetpools/flsubnetpools.html:22
+#: staff/apps/subnetpools/flsubnetpools.html:28
 msgid ""
 "Created at : {{ ::subnetpool.created_at }}<br>\n"
 "                Region: {{ subnetpool.region }}<br>\n"
@@ -3638,13 +3684,13 @@ msgstr ""
 msgid "Created at: {{::$ctrl.instance.created | date : 'medium' }}"
 msgstr ""
 
-#: staff/apps/osinstances/flinstancedetail.html:53
+#: staff/apps/osinstances/flinstancedetail.html:62
 msgid "Created at: {{::$ctrl.instance.created | date : 'medium'}}"
 msgstr ""
 
 #: tickets/enduser/frontend/components/states.config.js:54
 #: tickets/staff/frontend/components/states.config.js:55
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:50
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:55
 #: todo/staff/frontend/components/states.config.js:54
 #: todo/staff/frontend/components/todo_details/tododetails.html:43
 msgid "Created by"
@@ -3655,7 +3701,7 @@ msgstr ""
 #: staff/apps/clients/flclientdetails.html:63
 #: staff/apps/osinstances/flinstances.html:38
 #: staff/apps/pkm/flpkmkeys.html:19
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:33
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:38
 msgid "Created on"
 msgstr ""
 
@@ -3732,7 +3778,7 @@ msgstr ""
 #: staff/apps/clients/clienteditdlg/clientedit.html:106
 #: staff/apps/clients/flclientedit.html:125
 #: staff/apps/osbilling/plans/create/flplancreate.html:18
-#: staff/apps/osbilling/plans/flbillingplans.html:63
+#: staff/apps/osbilling/plans/flbillingplans.html:66
 #: staff/apps/osbilling/states.config.js:20
 msgid "Currency"
 msgstr ""
@@ -3765,9 +3811,19 @@ msgstr ""
 msgid "Current credit"
 msgstr ""
 
+#: site/apps/osinstances/states.config.js:48
+#: staff/apps/osinstances/states.config.js:52
+msgid "Current cycle traffic"
+msgstr ""
+
 #: site/apps/billing/services/upgrade/flserviceupgrade.component.html:19
 #: staff/apps/billing/services/upgrade/flserviceupgrade.component.html:19
 msgid "Current cycle:"
+msgstr ""
+
+#: site/apps/osinstances/states.config.js:49
+#: staff/apps/osinstances/states.config.js:53
+msgid "Current month traffic"
 msgstr ""
 
 #: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:16
@@ -3800,7 +3856,7 @@ msgstr ""
 #: staff/apps/billing/products/productdetails.html:138
 #: staff/apps/billing/products/productdetails.html:91
 #: staff/apps/billing/services/edit/flserviceedit.html:54
-#: staff/apps/clients/flclientdetails.html:445
+#: staff/apps/clients/flclientdetails.html:461
 msgid "Cycle"
 msgstr ""
 
@@ -3820,7 +3876,7 @@ msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:183
 #: site/apps/networks/flnetworksubnetadd.html:136
-#: staff/apps/networks/flnetworkadd.html:258
+#: staff/apps/networks/flnetworkadd.html:264
 #: staff/apps/networks/flnetworksubnetadd.html:142
 msgid "DNS name server"
 msgstr ""
@@ -3846,12 +3902,12 @@ msgstr ""
 #: site/apps/billing/invoicing/flinvoicingdetails.html:85
 #: staff/apps/activitylog/log.html:12
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:137
-#: staff/apps/billing/journal/journal.html:76
 #: staff/apps/billing/journal/journal.html:8
+#: staff/apps/billing/journal/journal.html:92
 #: staff/apps/billing/journal/journaldetail.html:28
 #: staff/apps/billing/orders/orders.html:41
-#: staff/apps/clients/flclientdetails.html:164
-#: staff/apps/clients/flclientdetails.html:213
+#: staff/apps/clients/flclientdetails.html:171
+#: staff/apps/clients/flclientdetails.html:224
 msgid "Date"
 msgstr ""
 
@@ -3864,16 +3920,16 @@ msgstr ""
 #: site/apps/billing/services/services.html:22
 #: site/apps/billing/services/services.html:45
 #: site/apps/osimages/states.config.js:47
-#: site/apps/osinstances/states.config.js:56
+#: site/apps/osinstances/states.config.js:66
 #: site/apps/osvolumes/states.config.js:60
 #: site/apps/pkm/states.config.js:46
 #: staff/apps/activitylog/states.config.js:45
 #: staff/apps/billing/services/services.html:20
-#: staff/apps/billing/services/services.html:47
+#: staff/apps/billing/services/services.html:48
 #: staff/apps/clients/states.config.js:46
 #: staff/apps/clients/states.config.js:53
 #: staff/apps/osimages/states.config.js:55
-#: staff/apps/osinstances/states.config.js:64
+#: staff/apps/osinstances/states.config.js:70
 #: staff/apps/osvolumes/states.config.js:60
 #: staff/apps/pkm/states.config.js:46
 #: staff/apps/tasklog/states.config.js:42
@@ -3886,8 +3942,8 @@ msgstr ""
 msgid "Date joined"
 msgstr ""
 
-#: site/apps/osinstances/states.config.js:59
-#: staff/apps/osinstances/states.config.js:73
+#: site/apps/osinstances/states.config.js:70
+#: staff/apps/osinstances/states.config.js:79
 msgid "Date of creation"
 msgstr ""
 
@@ -3896,8 +3952,8 @@ msgstr ""
 msgid "Day"
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.html:122
-#: staff/apps/osimages/update/flimageupdate.html:124
+#: site/apps/osimages/update/flimageupdate.html:130
+#: staff/apps/osimages/update/flimageupdate.html:133
 msgid "Deactivate image"
 msgstr ""
 
@@ -4008,16 +4064,16 @@ msgstr ""
 #: site/apps/floatingips/flfloatingipdetails.component.js:27
 #: site/apps/floatingips/flfloatingips.component.js:38
 #: site/apps/networks/flnetworkdetails.component.js:27
-#: site/apps/networks/flnetworkdetails.html:105
+#: site/apps/networks/flnetworkdetails.html:108
 #: site/apps/networks/flnetworkdetails.html:60
 #: site/apps/networks/flnetworks.component.js:36
-#: site/apps/networks/flnetworks.html:134
+#: site/apps/networks/flnetworks.html:138
 #: site/apps/osapiusers/flapiusers.component.js:23
 #: site/apps/osapiusers/flapiusers.html:107
 #: site/apps/osimages/flimagedetails.component.js:28
 #: site/apps/osimages/flimages.component.js:33
-#: site/apps/osimages/flimages.html:193
-#: site/apps/osimages/update/flimageupdate.html:203
+#: site/apps/osimages/flimages.html:199
+#: site/apps/osimages/update/flimageupdate.html:211
 #: site/apps/osinstances/actions/flinstanceactions.directive.js:30
 #: site/apps/osinstances/actions/flinstanceactions.html:136
 #: site/apps/osinstances/actions/flxsinstanceactions.html:138
@@ -4025,8 +4081,8 @@ msgstr ""
 #: site/apps/osinstances/flinstancedetail.component.js:344
 #: site/apps/osrouters/flrouterdetails.html:19
 #: site/apps/osrouters/flrouterdetails.html:71
+#: site/apps/osrouters/flrouters.html:106
 #: site/apps/osrouters/flrouters.html:49
-#: site/apps/osrouters/flrouters.html:93
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:32
 #: site/apps/ossecuritygroups/flsecuritygroups.component.js:42
 #: site/apps/osvolumes/actions/flvolumeactions.directive.js:26
@@ -4046,10 +4102,10 @@ msgstr ""
 #: staff/apps/floatingips/flfloatingipdetails.component.js:27
 #: staff/apps/floatingips/flfloatingips.component.js:38
 #: staff/apps/networks/flnetworkdetails.component.js:28
-#: staff/apps/networks/flnetworkdetails.html:113
+#: staff/apps/networks/flnetworkdetails.html:116
 #: staff/apps/networks/flnetworkdetails.html:68
 #: staff/apps/networks/flnetworks.component.js:37
-#: staff/apps/networks/flnetworks.html:122
+#: staff/apps/networks/flnetworks.html:124
 #: staff/apps/osapiusers/flapiusers.component.js:22
 #: staff/apps/osapiusers/flapiusers.html:109
 #: staff/apps/osbilling/plans/flbillingplandelete.html:28
@@ -4058,11 +4114,11 @@ msgstr ""
 #: staff/apps/osflavorgroups/flflavorgroupsactions.html:5
 #: staff/apps/osflavors/flflavordetails.component.js:26
 #: staff/apps/osflavors/flflavors.component.js:28
-#: staff/apps/osflavors/flflavors.html:142
+#: staff/apps/osflavors/flflavors.html:166
 #: staff/apps/osimages/flimagedetails.component.js:30
 #: staff/apps/osimages/flimages.component.js:30
-#: staff/apps/osimages/flimages.html:187
-#: staff/apps/osimages/update/flimageupdate.html:207
+#: staff/apps/osimages/flimages.html:202
+#: staff/apps/osimages/update/flimageupdate.html:216
 #: staff/apps/osinstances/actions/flinstanceactions.directive.js:41
 #: staff/apps/osinstances/actions/flinstanceactions.html:184
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:194
@@ -4074,7 +4130,7 @@ msgstr ""
 #: staff/apps/osrouters/flrouterdetails.component.js:33
 #: staff/apps/osrouters/flrouterdetails.html:82
 #: staff/apps/osrouters/flrouters.component.js:40
-#: staff/apps/osrouters/flrouters.html:140
+#: staff/apps/osrouters/flrouters.html:144
 #: staff/apps/ossecuritygroups/flsecuritygroupdetails.component.js:33
 #: staff/apps/ossecuritygroups/flsecuritygroups.component.js:41
 #: staff/apps/osvolumes/actions/flvolumeactions.directive.js:25
@@ -4084,20 +4140,20 @@ msgstr ""
 #: staff/apps/pkm/flpkmkeys.component.js:27
 #: staff/apps/pkm/flpkmkeys.html:104
 #: staff/apps/settings/configurations/configurationdetails.html:12
-#: staff/apps/settings/configurations/configurations.html:107
+#: staff/apps/settings/configurations/configurations.html:108
 #: staff/apps/settings/configurations/configurations.html:38
-#: staff/apps/settings/configurations/configurations.html:85
+#: staff/apps/settings/configurations/configurations.html:86
 #: staff/apps/settings/general/currency/flcurrencies.component.js:57
 #: staff/apps/settings/general/currency/flcurrencies.html:18
 #: staff/apps/subnetpools/flsubnetpooldetails.component.js:27
 #: staff/apps/subnetpools/flsubnetpools.component.js:36
-#: staff/apps/subnetpools/flsubnetpools.html:122
+#: staff/apps/subnetpools/flsubnetpools.html:139
 #: staff/apps/usergroups/flusergroupsactions.html:24
 #: staff/apps/usergroups/flusergroupsactions.html:5
 #: staff/apps/users/actions/fluseractions.component.js:53
 #: staff/apps/users/actions/flxsuseractions.component.js:53
 #: tickets/staff/frontend/components/departments_actions/departmentsactions.html:5
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:129
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:257
 #: todo/staff/frontend/components/todo_actions/todoactions.html:5
 msgid "Delete"
 msgstr ""
@@ -4135,8 +4191,8 @@ msgstr ""
 msgid "Delete associated openstack project"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:229
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:230
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:321
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:322
 msgid "Delete attachment"
 msgstr ""
 
@@ -4258,7 +4314,7 @@ msgstr ""
 msgid "Delete instance {{name}}"
 msgstr ""
 
-#: site/apps/osrouters/flrouterdetails.component.js:120
+#: site/apps/osrouters/flrouterdetails.component.js:119
 #: staff/apps/osrouters/flrouterdetails.component.js:128
 msgid "Delete interface"
 msgstr ""
@@ -4285,7 +4341,7 @@ msgstr ""
 msgid "Delete key {{name}}"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:128
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:256
 msgid "Delete message?"
 msgstr ""
 
@@ -4329,10 +4385,10 @@ msgstr ""
 msgid "Delete order"
 msgstr ""
 
-#: staff/apps/osbilling/plans/flbillingplandetails.html:37
-#: staff/apps/osbilling/plans/flbillingplans.html:107
-#: staff/apps/osbilling/plans/flbillingplans.html:134
-#: staff/apps/osbilling/plans/flbillingplans.html:43
+#: staff/apps/osbilling/plans/flbillingplandetails.html:39
+#: staff/apps/osbilling/plans/flbillingplans.html:111
+#: staff/apps/osbilling/plans/flbillingplans.html:138
+#: staff/apps/osbilling/plans/flbillingplans.html:45
 msgid "Delete plan"
 msgstr ""
 
@@ -4386,14 +4442,14 @@ msgstr ""
 msgid "Delete registrar"
 msgstr ""
 
-#: site/apps/osrouters/flrouterdetails.component.js:111
+#: site/apps/osrouters/flrouterdetails.component.js:110
 #: site/apps/osrouters/flrouters.component.js:117
 #: staff/apps/osrouters/flrouterdetails.component.js:119
 #: staff/apps/osrouters/flrouters.component.js:123
 msgid "Delete router"
 msgstr ""
 
-#: site/apps/osrouters/flrouterdetails.component.js:110
+#: site/apps/osrouters/flrouterdetails.component.js:109
 #: site/apps/osrouters/flrouters.component.js:116
 #: staff/apps/osrouters/flrouterdetails.component.js:118
 #: staff/apps/osrouters/flrouters.component.js:122
@@ -4412,8 +4468,8 @@ msgstr ""
 msgid "Delete rule {{rule}}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:403
-#: staff/apps/osinstances/flinstancedetail.html:532
+#: site/apps/osinstances/flinstancedetail.html:409
+#: staff/apps/osinstances/flinstancedetail.html:550
 msgid "Delete schedule"
 msgstr ""
 
@@ -4446,7 +4502,7 @@ msgstr ""
 
 #: staff/apps/billing/services/flserviceactions.component.js:32
 #: staff/apps/clients/deleteopenstackservice/fldeleteopenstackservice.html:22
-#: staff/apps/clients/flclientdetails.html:305
+#: staff/apps/clients/flclientdetails.html:316
 msgid "Delete service"
 msgstr ""
 
@@ -4510,7 +4566,7 @@ msgstr ""
 
 #: site/apps/osapiusers/flapiusers.component.js:75
 #: staff/apps/osapiusers/flapiusers.component.js:75
-#: staff/apps/users/actions/fluseractions.html:8
+#: staff/apps/users/actions/fluseractions.html:9
 #: staff/apps/users/actions/flxsuseractions.html:21
 msgid "Delete user"
 msgstr ""
@@ -4614,11 +4670,11 @@ msgstr ""
 msgid "Department {:name}"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:56
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:61
 msgid "Department: <a ui-sref=\"pluginsTicketsDepartments({search: $ctrl.ticket.department_display})\" class=\"md-primary\">{{$ctrl.ticket.department_display}}</a>"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:35
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:40
 msgid "Department: {{$ctrl.ticket.department_display}}"
 msgstr ""
 
@@ -4635,6 +4691,7 @@ msgstr ""
 #: site/apps/osapiusers/flapiuseredit.html:27
 #: site/apps/osrouters/flrouteredit.html:32
 #: site/apps/osrouters/flrouters.html:37
+#: site/apps/osrouters/flrouters.html:69
 #: site/apps/ossecuritygroups/flsecuritygroupedit.html:32
 #: site/apps/ossecuritygroups/flsecuritygrouprulecreate.html:20
 #: site/apps/ossecuritygroups/flsecuritygroups.html:67
@@ -4651,7 +4708,7 @@ msgstr ""
 #: staff/apps/clientgroups/flclientgroupedit.html:16
 #: staff/apps/clientgroups/flclientgroups.html:29
 #: staff/apps/clientgroups/flclientgroups.html:51
-#: staff/apps/floatingips/flfloatingipadd.html:51
+#: staff/apps/floatingips/flfloatingipadd.html:53
 #: staff/apps/networks/flnetworkadd.html:46
 #: staff/apps/networks/flnetworkdetails.html:46
 #: staff/apps/networks/flnetworkedit.html:45
@@ -4664,8 +4721,8 @@ msgstr ""
 #: staff/apps/osflavors/edit/flflavoredit.html:67
 #: staff/apps/osflavors/edit/flflavoredit.html:70
 #: staff/apps/osflavors/edit/flflavoredit.html:72
-#: staff/apps/osflavors/flflavordetails.html:38
-#: staff/apps/osflavors/flflavors.html:74
+#: staff/apps/osflavors/flflavordetails.html:42
+#: staff/apps/osflavors/flflavors.html:78
 #: staff/apps/osprojects/flprojectedit.html:16
 #: staff/apps/osprojects/flprojects.html:68
 #: staff/apps/osrouters/flrouteredit.html:61
@@ -4680,14 +4737,14 @@ msgstr ""
 #: staff/apps/settings/configurations/configurationedit.html:16
 #: staff/apps/settings/configurations/configurations.html:60
 #: staff/apps/subnetpools/edit/flsubnetpooledit.html:66
-#: staff/apps/subnetpools/flsubnetpools.html:62
+#: staff/apps/subnetpools/flsubnetpools.html:68
 #: staff/apps/tasklog/tasks.html:13
 #: staff/apps/usergroups/flusergroupdetails.html:19
 #: staff/apps/usergroups/flusergroupedit.html:16
 #: staff/apps/usergroups/flusergroups.html:52
 #: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:82
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:82
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:113
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:116
 #: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:113
 #: todo/staff/frontend/components/todo_actions/dialogs/todo_edit/todoedit.html:28
 #: todo/staff/frontend/components/todo_details/tododetails.html:39
@@ -4735,17 +4792,17 @@ msgstr ""
 #: site/apps/billing/invoicing/flinvoicingdetails.html:175
 #: site/apps/billing/invoicing/flinvoicingdetails.html:97
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:171
-#: staff/apps/billing/journal/journal.html:85
+#: staff/apps/billing/journal/journal.html:101
 #: staff/apps/billing/journal/journaldetail.html:24
 #: staff/apps/billing/states.config.js:642
 #: staff/apps/billing/states.config.js:704
-#: staff/apps/clients/flclientdetails.html:222
+#: staff/apps/clients/flclientdetails.html:233
 msgid "Destination"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:207
 #: site/apps/networks/flnetworksubnetadd.html:160
-#: staff/apps/networks/flnetworkadd.html:282
+#: staff/apps/networks/flnetworkadd.html:288
 #: staff/apps/networks/flnetworksubnetadd.html:166
 msgid "Destination (CIDR)"
 msgstr ""
@@ -4769,7 +4826,7 @@ msgstr ""
 msgid "Detail"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.html:104
+#: site/apps/billing/history/billinghistory.html:106
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:30
 msgid "Details"
 msgstr ""
@@ -4781,14 +4838,14 @@ msgstr ""
 msgid "Direction"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:286
-#: staff/apps/osflavors/flflavordetails.html:35
+#: staff/apps/clients/flclientdetails.html:297
+#: staff/apps/osflavors/flflavordetails.html:39
 #: staff/apps/osprojects/states.config.js:45
 #: staff/apps/osprojects/states.config.js:62
 msgid "Disabled"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:293
+#: staff/apps/clients/flclientdetails.html:304
 msgid "Disabled reason"
 msgstr ""
 
@@ -4829,12 +4886,12 @@ msgstr ""
 msgid "Disk size (GB)"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:132
+#: site/apps/osinstances/create/flbootsourceselect.html:149
 #: staff/apps/osinstances/create/flbootsourceselect.html:166
 msgid "Disk size is determined by flavor"
 msgstr ""
 
-#: staff/apps/osflavors/flflavordetails.html:32
+#: staff/apps/osflavors/flflavordetails.html:36
 msgid "Disk space"
 msgstr ""
 
@@ -4844,7 +4901,7 @@ msgid ""
 "                  {{$ctrl.instance.flavor.root_gb }} GB"
 msgstr ""
 
-#: staff/apps/osinstances/flinstancedetail.html:46
+#: staff/apps/osinstances/flinstancedetail.html:51
 msgid "Disk space: {{$ctrl.instance.flavor.root_gb }} GB"
 msgstr ""
 
@@ -4900,6 +4957,7 @@ msgid "Dissociate security group {{sec_group}} from instance {{instance}}"
 msgstr ""
 
 #: staff/apps/clients/flclientdetails.component.js:230
+#: staff/apps/clients/flclientdetails.html:340
 msgid "Dissociate user"
 msgstr ""
 
@@ -5021,12 +5079,12 @@ msgstr ""
 msgid "Download PDF"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:150
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:48
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:92
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:104
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:153
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:240
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:102
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:165
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:53
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:110
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:166
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:260
 msgid "Download attachment"
 msgstr ""
 
@@ -5088,22 +5146,22 @@ msgstr ""
 #: staff/apps/clientgroups/flclientgroupsactions.html:18
 #: staff/apps/osapiusers/flapiusers.component.js:23
 #: staff/apps/osapiusers/flapiusers.html:103
-#: staff/apps/osbilling/plans/flbillingplandetails.html:33
 #: staff/apps/osbilling/plans/flbillingplandetails.html:35
 #: staff/apps/osbilling/plans/flbillingplandetails.html:37
-#: staff/apps/osbilling/plans/flbillingplandetails.html:39
+#: staff/apps/osbilling/plans/flbillingplandetails.html:40
+#: staff/apps/osbilling/plans/flbillingplandetails.html:42
 #: staff/apps/osflavorgroups/flflavorgroupsactions.html:1
 #: staff/apps/osflavorgroups/flflavorgroupsactions.html:18
 #: staff/apps/osflavors/flflavordetails.component.js:27
 #: staff/apps/osflavors/flflavors.component.js:29
-#: staff/apps/osflavors/flflavors.html:136
+#: staff/apps/osflavors/flflavors.html:154
 #: staff/apps/osprojects/flprojects.component.js:35
 #: staff/apps/osprojects/flprojects.html:121
 #: staff/apps/pkm/flpkmkeys.component.js:28
 #: staff/apps/pkm/flpkmkeys.html:98
-#: staff/apps/settings/configurations/configurations.html:101
+#: staff/apps/settings/configurations/configurations.html:102
 #: staff/apps/settings/configurations/configurations.html:34
-#: staff/apps/settings/configurations/configurations.html:81
+#: staff/apps/settings/configurations/configurations.html:82
 #: staff/apps/settings/general/currency/flcurrencies.html:14
 #: staff/apps/usergroups/flusergroupsactions.html:1
 #: staff/apps/usergroups/flusergroupsactions.html:18
@@ -5217,11 +5275,11 @@ msgstr ""
 #: site/apps/networks/flnetworkdetails.component.js:28
 #: site/apps/networks/flnetworkedit.html:4
 #: site/apps/networks/flnetworks.component.js:37
-#: site/apps/networks/flnetworks.html:122
+#: site/apps/networks/flnetworks.html:126
 #: staff/apps/networks/flnetworkdetails.component.js:29
 #: staff/apps/networks/flnetworkedit.html:4
 #: staff/apps/networks/flnetworks.component.js:38
-#: staff/apps/networks/flnetworks.html:116
+#: staff/apps/networks/flnetworks.html:118
 msgid "Edit network"
 msgstr ""
 
@@ -5234,9 +5292,9 @@ msgid "Edit pacakge"
 msgstr ""
 
 #: staff/apps/osbilling/plans/create/flplancreate.html:4
-#: staff/apps/osbilling/plans/flbillingplandetails.html:33
-#: staff/apps/osbilling/plans/flbillingplans.html:100
-#: staff/apps/osbilling/plans/flbillingplans.html:122
+#: staff/apps/osbilling/plans/flbillingplandetails.html:34
+#: staff/apps/osbilling/plans/flbillingplans.html:103
+#: staff/apps/osbilling/plans/flbillingplans.html:126
 #: staff/apps/osbilling/plans/flbillingplans.html:36
 msgid "Edit plan"
 msgstr ""
@@ -5271,11 +5329,11 @@ msgstr ""
 #: site/apps/osrouters/flrouterdetails.html:13
 #: site/apps/osrouters/flrouteredit.html:4
 #: site/apps/osrouters/flrouters.html:43
-#: site/apps/osrouters/flrouters.html:87
+#: site/apps/osrouters/flrouters.html:98
 #: staff/apps/osrouters/flrouterdetails.component.js:34
 #: staff/apps/osrouters/flrouteredit.html:4
 #: staff/apps/osrouters/flrouters.component.js:41
-#: staff/apps/osrouters/flrouters.html:128
+#: staff/apps/osrouters/flrouters.html:132
 msgid "Edit router"
 msgstr ""
 
@@ -5309,7 +5367,7 @@ msgstr ""
 
 #: staff/apps/subnetpools/flsubnetpooldetails.component.js:28
 #: staff/apps/subnetpools/flsubnetpools.component.js:37
-#: staff/apps/subnetpools/flsubnetpools.html:116
+#: staff/apps/subnetpools/flsubnetpools.html:133
 #: staff/apps/subnetpools/states.config.js:124
 msgid "Edit subnet pool"
 msgstr ""
@@ -5325,7 +5383,7 @@ msgid "Edit tax rule"
 msgstr ""
 
 #: staff/apps/settings/notifications/flnotification-templates.template.html:29
-#: staff/apps/settings/notifications/flnotification-templates.template.html:70
+#: staff/apps/settings/notifications/flnotification-templates.template.html:72
 msgid "Edit templates"
 msgstr ""
 
@@ -5441,6 +5499,7 @@ msgstr ""
 #: tickets/staff/frontend/components/department_create/departmentcreate.html:35
 #: tickets/staff/frontend/components/department_details/departmentdetails.html:39
 #: tickets/staff/frontend/components/departments/departments.html:23
+#: tickets/staff/frontend/components/departments/departments.html:47
 msgid "Email"
 msgstr ""
 
@@ -5487,7 +5546,7 @@ msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:144
 #: site/apps/networks/flnetworksubnetadd.html:97
-#: staff/apps/networks/flnetworkadd.html:219
+#: staff/apps/networks/flnetworkadd.html:225
 #: staff/apps/networks/flnetworksubnetadd.html:103
 msgid "Enable DHCP"
 msgstr ""
@@ -5590,6 +5649,10 @@ msgstr ""
 msgid "End-user index.html customization"
 msgstr ""
 
+#: staff/apps/osinstances/snapshot/flinstancesnapshot.html:15
+msgid "End-user will NOT see this snapshot and NO storage cost will incur"
+msgstr ""
+
 #: staff/apps/settings/general/signup_settings/signupsettings.component.html:89
 msgid ""
 "End-users signing up with email addresses from these domains are always ALLOWED to\n"
@@ -5686,7 +5749,7 @@ msgstr ""
 msgid "Ephemeral disk space (GB)"
 msgstr ""
 
-#: staff/apps/osflavors/flflavordetails.html:34
+#: staff/apps/osflavors/flflavordetails.html:38
 msgid "Ephemeral storage"
 msgstr ""
 
@@ -5832,8 +5895,8 @@ msgstr ""
 msgid "Field is required"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:156
-#: staff/apps/osimages/create/flimagecreate.html:151
+#: site/apps/osimages/create/flimagecreate.html:164
+#: staff/apps/osimages/create/flimagecreate.html:159
 msgid "File"
 msgstr ""
 
@@ -5847,6 +5910,10 @@ msgstr ""
 
 #: commons/messages/ngmessages.html:2
 msgid "Fill in a number"
+msgstr ""
+
+#: staff/apps/osbilling/pricing/flpricerule.component.js:60
+msgid "Fill in name, time unit and price first"
 msgstr ""
 
 #: domains/staff/frontend/components/tld_details/tlddetails.html:83
@@ -6042,19 +6109,19 @@ msgstr ""
 #: staff/apps/osflavors/edit/flflavoredit.html:11
 #: staff/apps/osflavors/edit/flflavoredit.html:13
 #: staff/apps/osimages/flimagedetails.html:95
-#: staff/apps/osinstances/states.config.js:104
+#: staff/apps/osinstances/states.config.js:110
 msgid "Flavor name"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:118
+#: staff/apps/osinstances/states.config.js:124
 msgid "Flavor name contains"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:110
+#: staff/apps/osinstances/states.config.js:116
 msgid "Flavor name ends with"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:114
+#: staff/apps/osinstances/states.config.js:120
 msgid "Flavor name starts with"
 msgstr ""
 
@@ -6127,15 +6194,15 @@ msgstr ""
 #: staff/apps/floatingips/flfloatingips.html:1
 #: staff/apps/floatingips/states.config.js:32
 #: staff/apps/osinstances/associateip/flinstanceassociateip.html:11
-#: staff/apps/osinstances/flinstancedetail.html:345
+#: staff/apps/osinstances/flinstancedetail.html:363
 msgid "Floating IPs"
 msgstr ""
 
-#: site/apps/floatingips/flfloatingips.html:58
+#: site/apps/floatingips/flfloatingips.html:60
 msgid "Floating network name"
 msgstr ""
 
-#: site/apps/floatingips/flfloatingips.html:59
+#: site/apps/floatingips/flfloatingips.html:61
 msgid "Floating network region"
 msgstr ""
 
@@ -6213,9 +6280,9 @@ msgstr ""
 msgid "Gateway"
 msgstr ""
 
-#: site/apps/networks/flnetworkdetails.html:101
+#: site/apps/networks/flnetworkdetails.html:104
 #: site/apps/networks/flnetworkdetails.html:59
-#: staff/apps/networks/flnetworkdetails.html:109
+#: staff/apps/networks/flnetworkdetails.html:112
 #: staff/apps/networks/flnetworkdetails.html:67
 msgid "Gateway IP"
 msgstr ""
@@ -6226,7 +6293,7 @@ msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:105
 #: site/apps/networks/flnetworksubnetadd.html:58
-#: staff/apps/networks/flnetworkadd.html:180
+#: staff/apps/networks/flnetworkadd.html:186
 #: staff/apps/networks/flnetworksubnetadd.html:64
 msgid "Gateway ip"
 msgstr ""
@@ -6285,10 +6352,10 @@ msgstr ""
 
 #: site/apps/networks/flnetworkautocreate.html:2
 #: site/apps/networks/flnetworks.component.js:39
-#: site/apps/networks/flnetworks.html:174
+#: site/apps/networks/flnetworks.html:178
 #: staff/apps/networks/flnetworkautocreate.html:2
 #: staff/apps/networks/flnetworks.component.js:40
-#: staff/apps/networks/flnetworks.html:161
+#: staff/apps/networks/flnetworks.html:163
 msgid "Get me a network"
 msgstr ""
 
@@ -6322,7 +6389,7 @@ msgstr ""
 
 #: staff/apps/billing/products/flbillingproductedit.html:43
 #: staff/apps/clients/flclients.html:70
-#: staff/apps/osflavors/flflavordetails.html:40
+#: staff/apps/osflavors/flflavordetails.html:44
 #: staff/apps/osflavors/flflavors.html:35
 #: staff/apps/servers/flserver-list/flserver-list.component.html:54
 #: staff/apps/servers/flservers.states.js:22
@@ -6366,8 +6433,8 @@ msgstr ""
 msgid "Group:"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:312
-#: staff/apps/osinstances/flinstancedetail.html:441
+#: site/apps/osinstances/flinstancedetail.html:318
+#: staff/apps/osinstances/flinstancedetail.html:459
 msgid "Group: {{::security_group.name }}"
 msgstr ""
 
@@ -6375,7 +6442,7 @@ msgstr ""
 msgid "Groups"
 msgstr ""
 
-#: staff/apps/osflavors/flflavors.html:108
+#: staff/apps/osflavors/flflavors.html:121
 #: staff/apps/osflavors/flflavors.html:21
 msgid "HIDDEN"
 msgstr ""
@@ -6421,7 +6488,7 @@ msgstr ""
 msgid "Hide"
 msgstr ""
 
-#: staff/apps/osflavors/flflavordetails.html:48
+#: staff/apps/osflavors/flflavordetails.html:52
 msgid "Hide in end-user panel"
 msgstr ""
 
@@ -6448,15 +6515,15 @@ msgstr ""
 msgid "High priority"
 msgstr ""
 
-#: staff/apps/osinstances/flinstancedetail.html:237
+#: staff/apps/osinstances/flinstancedetail.html:255
 msgid "History log"
 msgstr ""
 
 #: commons/customfields/flfieldinput.html:31
 #: commons/userprofile/fledituserprofile.html:61
 #: commons/userprofile/fledituserprofile.html:83
-#: site/apps/osinstances/create/flinstancecreate.html:200
-#: staff/apps/osinstances/create/flinstancecreate.html:224
+#: site/apps/osinstances/create/flinstancecreate.html:203
+#: staff/apps/osinstances/create/flinstancecreate.html:227
 msgid "Hold button to reveal password"
 msgstr ""
 
@@ -6469,19 +6536,19 @@ msgstr ""
 msgid "Host IP"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:122
+#: staff/apps/osinstances/states.config.js:128
 msgid "Host name"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:136
+#: staff/apps/osinstances/states.config.js:142
 msgid "Host name contains"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:128
+#: staff/apps/osinstances/states.config.js:134
 msgid "Host name ends with"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:132
+#: staff/apps/osinstances/states.config.js:138
 msgid "Host name starts with"
 msgstr ""
 
@@ -6528,11 +6595,11 @@ msgstr ""
 msgid "Hypervisor memory"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:128
-#: site/apps/osimages/update/flimageupdate.html:97
-#: staff/apps/osimages/create/flimagecreate.html:123
+#: site/apps/osimages/create/flimagecreate.html:136
+#: site/apps/osimages/update/flimageupdate.html:105
+#: staff/apps/osimages/create/flimagecreate.html:131
 #: staff/apps/osimages/states.config.js:81
-#: staff/apps/osimages/update/flimageupdate.html:97
+#: staff/apps/osimages/update/flimageupdate.html:106
 msgid "Hypervisor type"
 msgstr ""
 
@@ -6628,9 +6695,9 @@ msgid "IP Addresses"
 msgstr ""
 
 #: cpanel/enduser/frontend/components/order_product/orderproduct.html:5
-#: site/apps/floatingips/flfloatingips.html:56
+#: site/apps/floatingips/flfloatingips.html:58
 #: site/apps/floatingips/states.config.js:40
-#: staff/apps/floatingips/flfloatingips.html:57
+#: staff/apps/floatingips/flfloatingips.html:64
 #: staff/apps/floatingips/states.config.js:36
 #: staff/apps/osinstances/addport/flinstanceaddport.html:31
 msgid "IP address"
@@ -6672,14 +6739,14 @@ msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:129
 #: site/apps/networks/flnetworksubnetadd.html:82
-#: staff/apps/networks/flnetworkadd.html:204
+#: staff/apps/networks/flnetworkadd.html:210
 #: staff/apps/networks/flnetworksubnetadd.html:88
 msgid "IPv6 address mode"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:118
 #: site/apps/networks/flnetworksubnetadd.html:71
-#: staff/apps/networks/flnetworkadd.html:193
+#: staff/apps/networks/flnetworkadd.html:199
 #: staff/apps/networks/flnetworksubnetadd.html:77
 msgid "IPv6 ra mode"
 msgstr ""
@@ -6764,19 +6831,19 @@ msgstr ""
 msgid "Image name"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:150
+#: staff/apps/osinstances/states.config.js:156
 msgid "Image os distro name"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:164
+#: staff/apps/osinstances/states.config.js:170
 msgid "Image os distro name contains"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:156
+#: staff/apps/osinstances/states.config.js:162
 msgid "Image os distro name ends with"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:160
+#: staff/apps/osinstances/states.config.js:166
 msgid "Image os distro name starts with"
 msgstr ""
 
@@ -6784,15 +6851,15 @@ msgstr ""
 msgid "Image sharing required"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:154
-#: staff/apps/osimages/create/flimagecreate.html:149
+#: site/apps/osimages/create/flimagecreate.html:162
+#: staff/apps/osimages/create/flimagecreate.html:157
 msgid "Image source"
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.component.js:105
-#: site/apps/osimages/update/flimageupdate.component.js:132
-#: staff/apps/osimages/update/flimageupdate.component.js:111
-#: staff/apps/osimages/update/flimageupdate.component.js:138
+#: site/apps/osimages/update/flimageupdate.component.js:106
+#: site/apps/osimages/update/flimageupdate.component.js:133
+#: staff/apps/osimages/update/flimageupdate.component.js:112
+#: staff/apps/osimages/update/flimageupdate.component.js:139
 msgid "Image update scheduled"
 msgstr ""
 
@@ -6821,8 +6888,14 @@ msgstr ""
 msgid "Impersonate"
 msgstr ""
 
+#: staff/apps/clients/flclientdetails.html:344
 #: staff/apps/users/actions/fluseractions.html:4
+#: staff/apps/users/states.config.js:131
 msgid "Impersonate user"
+msgstr ""
+
+#: staff/apps/users/states.config.js:132
+msgid "Impersonate user {:id}"
 msgstr ""
 
 #: staff/apps/servers/flservergroup-list/flservergroup-list.component.js:23
@@ -6858,15 +6931,15 @@ msgstr ""
 msgid "Insert code at {{ $ctrl.customCode.custom_code[insertion_point].display_name }}"
 msgstr ""
 
-#: site/apps/floatingips/flfloatingips.html:23
+#: site/apps/floatingips/flfloatingips.html:25
 #: site/apps/osinstances/flinstances.html:1
-#: staff/apps/floatingips/flfloatingips.html:25
+#: staff/apps/floatingips/flfloatingips.html:30
 #: staff/apps/osinstances/flinstances.html:1
 msgid "Instance"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.html:86
-#: staff/apps/osinstances/flinstancedetail.html:51
+#: staff/apps/osinstances/flinstancedetail.html:59
 msgid "Instance UUID: {{::$ctrl.instance.uuid }}"
 msgstr ""
 
@@ -6875,18 +6948,22 @@ msgstr ""
 msgid "Instance boot from ISO scheduled"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.component.js:271
-#: staff/apps/osinstances/create/flinstancecreate.component.js:359
+#: site/apps/osinstances/create/flinstancecreate.component.js:292
+#: staff/apps/osinstances/create/flinstancecreate.component.js:372
 msgid "Instance create scheduled"
 msgstr ""
 
-#: site/apps/osinstances/states.config.js:140
-#: staff/apps/osinstances/states.config.js:245
+#: site/apps/osinstances/states.config.js:151
+#: staff/apps/osinstances/states.config.js:251
 msgid "Instance details"
 msgstr ""
 
-#: staff/apps/osinstances/flinstancedetail.html:52
+#: staff/apps/osinstances/flinstancedetail.html:61
 msgid "Instance hypervisor: {{$ctrl.instance.host_name || $ctrl.instance.hostId }}"
+msgstr ""
+
+#: staff/apps/osinstances/flinstancedetail.html:71
+msgid "Instance is locked"
 msgstr ""
 
 #: staff/apps/osinstances/actions/flinstanceactions.directive.js:136
@@ -6939,17 +7016,17 @@ msgstr ""
 msgid "Instance state distribution"
 msgstr ""
 
-#: site/apps/osinstances/states.config.js:138
-#: staff/apps/osinstances/states.config.js:243
+#: site/apps/osinstances/states.config.js:149
+#: staff/apps/osinstances/states.config.js:249
 msgid "Instance {:name}"
 msgstr ""
 
 #: site/apps/baseconfig/fleio.baseconfig.module.js:40
 #: site/apps/osinstances/flinstances.html:1
-#: site/apps/osinstances/states.config.js:52
+#: site/apps/osinstances/states.config.js:58
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:38
 #: staff/apps/osinstances/flinstances.html:1
-#: staff/apps/osinstances/states.config.js:56
+#: staff/apps/osinstances/states.config.js:62
 msgid "Instances"
 msgstr ""
 
@@ -6957,7 +7034,7 @@ msgstr ""
 msgid "Instances:"
 msgstr ""
 
-#: site/apps/osrouters/flrouterdetails.component.js:126
+#: site/apps/osrouters/flrouterdetails.component.js:120
 #: staff/apps/osrouters/flrouterdetails.component.js:134
 msgid "Interface delete scheduled"
 msgstr ""
@@ -6975,16 +7052,16 @@ msgstr ""
 #: tickets/staff/frontend/components/states.config.js:56
 #: tickets/staff/frontend/components/tickets/tickets.html:33
 #: tickets/staff/frontend/components/tickets/tickets.html:57
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:70
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:73
 #: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:70
 msgid "Internal status"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:117
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:245
 msgid "Internal status successfully updated."
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:74
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:79
 msgid ""
 "Internal status: {{$ctrl.ticket.internal_status_display}}\n"
 "                            <md-menu>\n"
@@ -7016,6 +7093,10 @@ msgstr ""
 msgid "Invalid input for client"
 msgstr ""
 
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.js:81
+msgid "Invalid input for client group"
+msgstr ""
+
 #: staff/apps/osflavorgroups/flflavorgroupdetails.component.js:81
 #: staff/apps/osimages/flimagedetails.component.js:95
 msgid "Invalid input for flavor"
@@ -7029,7 +7110,7 @@ msgstr ""
 msgid "Invalid input for user"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:129
+#: site/apps/osinstances/create/flbootsourceselect.html:146
 #: staff/apps/osinstances/create/flbootsourceselect.html:163
 msgid "Invalid volume size"
 msgstr ""
@@ -7092,13 +7173,13 @@ msgstr ""
 msgid "Invoice {:id}"
 msgstr ""
 
-#: staff/apps/billing/journal/journal.html:40
-#: staff/apps/clients/flclientdetails.html:185
-#: staff/apps/clients/flclientdetails.html:195
+#: staff/apps/billing/journal/journal.html:46
+#: staff/apps/clients/flclientdetails.html:192
+#: staff/apps/clients/flclientdetails.html:206
 msgid "Invoice {{::journal.destination_info.invoice}}"
 msgstr ""
 
-#: staff/apps/billing/journal/journal.html:30
+#: staff/apps/billing/journal/journal.html:31
 msgid "Invoice {{::journal.source_info.invoice}}"
 msgstr ""
 
@@ -7124,9 +7205,9 @@ msgstr ""
 msgid "Invoicing feature is disabled"
 msgstr ""
 
+#: site/apps/networks/flnetworkdetails.html:100
 #: site/apps/networks/flnetworkdetails.html:58
-#: site/apps/networks/flnetworkdetails.html:97
-#: staff/apps/networks/flnetworkdetails.html:105
+#: staff/apps/networks/flnetworkdetails.html:108
 #: staff/apps/networks/flnetworkdetails.html:66
 msgid "Ip version"
 msgstr ""
@@ -7141,7 +7222,7 @@ msgstr ""
 #: staff/apps/clientgroups/states.config.js:54
 #: staff/apps/networks/flnetworkdetails.html:41
 #: staff/apps/networks/states.config.js:53
-#: staff/apps/osbilling/plans/flbillingplans.html:64
+#: staff/apps/osbilling/plans/flbillingplans.html:67
 #: staff/apps/osflavorgroups/flflavorgroupedit.html:23
 #: staff/apps/subnetpools/states.config.js:49
 #: staff/apps/usergroups/flusergroupedit.html:23
@@ -7157,7 +7238,7 @@ msgstr ""
 msgid "Is domain"
 msgstr ""
 
-#: staff/apps/osflavors/flflavors.html:75
+#: staff/apps/osflavors/flflavors.html:79
 msgid "Is hidden"
 msgstr ""
 
@@ -7172,7 +7253,7 @@ msgstr ""
 msgid "Is public"
 msgstr ""
 
-#: staff/apps/subnetpools/flsubnetpools.html:59
+#: staff/apps/subnetpools/flsubnetpools.html:65
 msgid "Is shared"
 msgstr ""
 
@@ -7227,7 +7308,7 @@ msgstr ""
 #: site/apps/billing/invoicing/flinvoicingdetails.html:79
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:58
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:88
-#: staff/apps/clients/flclientdetails.html:150
+#: staff/apps/clients/flclientdetails.html:157
 msgid "Journal"
 msgstr ""
 
@@ -7326,12 +7407,12 @@ msgid "Last updated"
 msgstr ""
 
 #: site/apps/osimages/flimagedetails.html:17
-#: site/apps/osimages/flimages.html:144
-#: site/apps/osimages/flimages.html:178
+#: site/apps/osimages/flimages.html:150
+#: site/apps/osimages/flimages.html:184
 #: site/apps/osimages/flimages.html:49
 #: staff/apps/osimages/flimagedetails.html:17
-#: staff/apps/osimages/flimages.html:145
-#: staff/apps/osimages/flimages.html:175
+#: staff/apps/osimages/flimages.html:160
+#: staff/apps/osimages/flimages.html:190
 #: staff/apps/osimages/flimages.html:47
 msgid "Launch"
 msgstr ""
@@ -7396,7 +7477,7 @@ msgstr ""
 msgid "Limits for clients with agreements"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:104
+#: site/apps/osinstances/flinstancedetail.html:110
 msgid "Lines"
 msgstr ""
 
@@ -7413,7 +7494,7 @@ msgstr ""
 msgid "Linking created"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:263
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:355
 msgid "Linking removed"
 msgstr ""
 
@@ -7430,66 +7511,66 @@ msgstr ""
 #: domains/staff/frontend/components/contacts/contacts.html:46
 #: domains/staff/frontend/components/contacts/contacts.html:90
 #: site/apps/billing/invoicing/flinvoicing.html:31
-#: site/apps/billing/invoicing/flinvoicing.html:79
-#: site/apps/floatingips/flfloatingips.html:48
-#: site/apps/floatingips/flfloatingips.html:95
-#: site/apps/networks/flnetworks.html:150
+#: site/apps/billing/invoicing/flinvoicing.html:85
+#: site/apps/floatingips/flfloatingips.html:102
+#: site/apps/floatingips/flfloatingips.html:50
+#: site/apps/networks/flnetworks.html:154
 #: site/apps/networks/flnetworks.html:52
-#: site/apps/osimages/flimages.html:209
+#: site/apps/osimages/flimages.html:215
 #: site/apps/osimages/flimages.html:76
-#: site/apps/osinstances/flinstances.html:131
+#: site/apps/osinstances/flinstances.html:145
 #: site/apps/osinstances/flinstances.html:49
-#: site/apps/osrouters/flrouters.html:107
+#: site/apps/osrouters/flrouters.html:122
 #: site/apps/osrouters/flrouters.html:59
-#: site/apps/ossecuritygroups/flsecuritygroups.html:121
+#: site/apps/ossecuritygroups/flsecuritygroups.html:125
 #: site/apps/ossecuritygroups/flsecuritygroups.html:57
-#: site/apps/osvolumes/flvolumes.html:117
+#: site/apps/osvolumes/flvolumes.html:127
 #: site/apps/osvolumes/flvolumes.html:48
 #: site/apps/oszones/flzones.html:118
 #: site/apps/oszones/flzones.html:55
 #: site/apps/pkm/flpkmkeys.html:116
 #: site/apps/pkm/flpkmkeys.html:44
 #: staff/apps/activitylog/log.html:47
-#: staff/apps/clientgroups/flclientgroups.html:91
-#: staff/apps/clients/flclients.html:128
+#: staff/apps/clientgroups/flclientgroups.html:92
+#: staff/apps/clients/flclients.html:143
 #: staff/apps/clients/flclients.html:55
-#: staff/apps/floatingips/flfloatingips.html:49
-#: staff/apps/floatingips/flfloatingips.html:97
-#: staff/apps/networks/flnetworks.html:137
+#: staff/apps/floatingips/flfloatingips.html:115
+#: staff/apps/floatingips/flfloatingips.html:56
+#: staff/apps/networks/flnetworks.html:139
 #: staff/apps/networks/flnetworks.html:49
-#: staff/apps/osbilling/plans/flbillingplans.html:149
-#: staff/apps/osbilling/plans/flbillingplans.html:54
-#: staff/apps/osflavorgroups/flflavorgroups.html:91
-#: staff/apps/osflavors/flflavors.html:158
-#: staff/apps/osflavors/flflavors.html:61
-#: staff/apps/osimages/flimages.html:203
+#: staff/apps/osbilling/plans/flbillingplans.html:153
+#: staff/apps/osbilling/plans/flbillingplans.html:57
+#: staff/apps/osflavorgroups/flflavorgroups.html:92
+#: staff/apps/osflavors/flflavors.html:182
+#: staff/apps/osflavors/flflavors.html:65
+#: staff/apps/osimages/flimages.html:218
 #: staff/apps/osimages/flimages.html:71
-#: staff/apps/osinstances/flinstances.html:142
+#: staff/apps/osinstances/flinstances.html:155
 #: staff/apps/osinstances/flinstances.html:54
 #: staff/apps/osprojects/flprojects.html:144
 #: staff/apps/osprojects/flprojects.html:57
-#: staff/apps/osrouters/flrouters.html:155
+#: staff/apps/osrouters/flrouters.html:159
 #: staff/apps/osrouters/flrouters.html:58
-#: staff/apps/ossecuritygroups/flsecuritygroups.html:125
+#: staff/apps/ossecuritygroups/flsecuritygroups.html:129
 #: staff/apps/ossecuritygroups/flsecuritygroups.html:58
-#: staff/apps/osvolumes/flvolumes.html:132
+#: staff/apps/osvolumes/flvolumes.html:131
 #: staff/apps/osvolumes/flvolumes.html:46
 #: staff/apps/oszones/flzones.html:106
 #: staff/apps/oszones/flzones.html:43
 #: staff/apps/pkm/flpkmkeys.html:119
 #: staff/apps/pkm/flpkmkeys.html:45
-#: staff/apps/settings/configurations/configurations.html:123
+#: staff/apps/settings/configurations/configurations.html:124
 #: staff/apps/settings/configurations/configurations.html:49
-#: staff/apps/subnetpools/flsubnetpools.html:138
-#: staff/apps/subnetpools/flsubnetpools.html:50
+#: staff/apps/subnetpools/flsubnetpools.html:155
+#: staff/apps/subnetpools/flsubnetpools.html:56
 #: staff/apps/tasklog/tasks.html:55
-#: staff/apps/usergroups/flusergroups.html:89
+#: staff/apps/usergroups/flusergroups.html:93
 #: staff/apps/users/flusers.html:115
 #: staff/apps/users/flusers.html:49
 msgid "Load more"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:116
+#: site/apps/osinstances/create/flbootsourceselect.html:133
 #: staff/apps/osinstances/create/flbootsourceselect.html:150
 msgid "Local compute storage"
 msgstr ""
@@ -7594,15 +7675,19 @@ msgstr ""
 msgid "Medium"
 msgstr ""
 
+#: site/apps/osimages/memberstatus/memberstatusdialog.template.html:6
+msgid "Member status is: {{$ctrl.memberStatus}}"
+msgstr ""
+
 #: hypanel/staff/frontend/components/product_settings/productsettings.html:52
 #: staff/apps/dashboard/widgets/hypervisors/flhypervisors.widget.html:29
-#: staff/apps/osflavors/flflavors.html:72
+#: staff/apps/osflavors/flflavors.html:76
 #: staff/apps/osflavors/states.config.js:55
 msgid "Memory"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.html:36
-#: staff/apps/osinstances/flinstancedetail.html:42
+#: staff/apps/osinstances/flinstancedetail.html:43
 msgid "Memory (RAM): {{$ctrl.instance.flavor.memory_mb }} MB"
 msgstr ""
 
@@ -7614,7 +7699,7 @@ msgstr ""
 msgid "Message"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:169
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:297
 msgid "Message updated"
 msgstr ""
 
@@ -7627,8 +7712,8 @@ msgstr ""
 msgid "Metric unit"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.html:66
-#: staff/apps/osinstances/flinstancedetail.html:90
+#: site/apps/billing/history/billinghistory.html:68
+#: staff/apps/osinstances/flinstancedetail.html:108
 msgid "Metrics"
 msgstr ""
 
@@ -7731,9 +7816,9 @@ msgstr ""
 #: domains/enduser/frontend/components/domains_actions/domainsactions.html:3
 #: domains/staff/frontend/components/domains_actions/domainsactions.html:12
 #: site/apps/dashboard/fldashboard.html:51
-#: site/apps/networks/flnetworks.html:116
+#: site/apps/networks/flnetworks.html:120
 #: site/apps/osapiusers/flapiusers.html:92
-#: site/apps/osimages/flimages.html:169
+#: site/apps/osimages/flimages.html:175
 #: site/apps/osinstances/actions/flinstanceactions.html:46
 #: site/apps/osinstances/actions/flxsinstanceactions.html:4
 #: site/apps/osvolumes/actions/flxsvolumeactions.html:3
@@ -7745,21 +7830,21 @@ msgstr ""
 #: staff/apps/billing/taxrules/taxrules.html:40
 #: staff/apps/clientgroups/flclientgroupsactions.html:9
 #: staff/apps/clients/actions/flxsclientactions.html:1
-#: staff/apps/networks/flnetworks.html:108
+#: staff/apps/networks/flnetworks.html:110
 #: staff/apps/osapiusers/flapiusers.html:94
 #: staff/apps/osbilling/plans/flbillingplandetails.html:24
-#: staff/apps/osbilling/plans/flbillingplans.html:113
+#: staff/apps/osbilling/plans/flbillingplans.html:117
 #: staff/apps/osflavorgroups/flflavorgroupsactions.html:9
-#: staff/apps/osflavors/flflavors.html:127
-#: staff/apps/osimages/flimages.html:166
+#: staff/apps/osflavors/flflavors.html:145
+#: staff/apps/osimages/flimages.html:181
 #: staff/apps/osinstances/actions/flinstanceactions.html:83
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:2
 #: staff/apps/osprojects/flprojects.html:111
-#: staff/apps/osrouters/flrouters.html:118
+#: staff/apps/osrouters/flrouters.html:122
 #: staff/apps/osvolumes/actions/flxsvolumeactions.html:1
 #: staff/apps/pkm/flpkmkeys.html:89
-#: staff/apps/settings/configurations/configurations.html:92
-#: staff/apps/subnetpools/flsubnetpools.html:107
+#: staff/apps/settings/configurations/configurations.html:93
+#: staff/apps/subnetpools/flsubnetpools.html:124
 #: staff/apps/usergroups/flusergroupsactions.html:9
 #: staff/apps/users/actions/flxsuseractions.html:1
 msgid "More"
@@ -7833,7 +7918,7 @@ msgstr ""
 #: site/apps/billing/services/services.html:44
 #: site/apps/billing/services/states.config.js:37
 #: site/apps/networks/flnetworkdetails.html:56
-#: site/apps/networks/flnetworkdetails.html:89
+#: site/apps/networks/flnetworkdetails.html:92
 #: site/apps/networks/flnetworkedit.html:11
 #: site/apps/networks/flnetworks.html:60
 #: site/apps/networks/flnetworksubnetadd.html:12
@@ -7842,11 +7927,12 @@ msgstr ""
 #: site/apps/osapiusers/flapiusers.html:61
 #: site/apps/osimages/flimages.html:85
 #: site/apps/osimages/states.config.js:47
-#: site/apps/osinstances/flinstancedetail.html:384
+#: site/apps/osinstances/flinstancedetail.html:390
 #: site/apps/osinstances/flinstances.html:60
 #: site/apps/osinstances/rename/flinstancerename.html:11
-#: site/apps/osinstances/states.config.js:56
+#: site/apps/osinstances/states.config.js:63
 #: site/apps/osrouters/flrouteredit.html:26
+#: site/apps/osrouters/flrouters.html:66
 #: site/apps/osrouters/states.config.js:32
 #: site/apps/ossecuritygroups/flsecuritygroupedit.html:26
 #: site/apps/ossecuritygroups/flsecuritygroups.html:65
@@ -7867,18 +7953,18 @@ msgstr ""
 #: staff/apps/billing/products/flbillingproductgroupedit.html:10
 #: staff/apps/billing/products/productdetails.html:191
 #: staff/apps/billing/products/products.html:5
-#: staff/apps/billing/services/services.html:45
+#: staff/apps/billing/services/services.html:46
 #: staff/apps/billing/states.config.js:765
 #: staff/apps/billing/taxrules/flbillingtaxruleedit.html:44
 #: staff/apps/billing/taxrules/taxrules.html:6
 #: staff/apps/clientgroups/flclientgroupedit.html:10
 #: staff/apps/clientgroups/flclientgroups.html:49
 #: staff/apps/clientgroups/states.config.js:44
-#: staff/apps/clients/flclientdetails.html:442
+#: staff/apps/clients/flclientdetails.html:458
 #: staff/apps/clients/flclients.html:66
-#: staff/apps/floatingips/flfloatingips.html:59
+#: staff/apps/floatingips/flfloatingips.html:66
+#: staff/apps/networks/flnetworkdetails.html:100
 #: staff/apps/networks/flnetworkdetails.html:64
-#: staff/apps/networks/flnetworkdetails.html:97
 #: staff/apps/networks/flnetworkedit.html:39
 #: staff/apps/networks/flnetworks.html:57
 #: staff/apps/networks/flnetworksubnetadd.html:12
@@ -7887,20 +7973,20 @@ msgstr ""
 #: staff/apps/osapiusers/flapiusers.html:62
 #: staff/apps/osbilling/plans/create/flplancreate.html:10
 #: staff/apps/osbilling/plans/create/flplancreate.html:12
-#: staff/apps/osbilling/plans/flbillingplans.html:62
+#: staff/apps/osbilling/plans/flbillingplans.html:65
 #: staff/apps/osbilling/pricing/flpricerule.html:31
 #: staff/apps/osbilling/states.config.js:20
 #: staff/apps/osflavorgroups/flflavorgroupedit.html:10
 #: staff/apps/osflavorgroups/flflavorgroups.html:49
 #: staff/apps/osflavorgroups/states.config.js:44
-#: staff/apps/osflavors/flflavordetails.html:29
-#: staff/apps/osflavors/flflavors.html:69
+#: staff/apps/osflavors/flflavordetails.html:33
+#: staff/apps/osflavors/flflavors.html:73
 #: staff/apps/osflavors/states.config.js:55
 #: staff/apps/osimages/flimages.html:81
 #: staff/apps/osimages/states.config.js:55
-#: staff/apps/osinstances/flinstancedetail.html:513
+#: staff/apps/osinstances/flinstancedetail.html:531
 #: staff/apps/osinstances/flinstances.html:63
-#: staff/apps/osinstances/states.config.js:61
+#: staff/apps/osinstances/states.config.js:67
 #: staff/apps/osprojects/flprojectedit.html:10
 #: staff/apps/osprojects/flprojects.html:65
 #: staff/apps/osprojects/states.config.js:46
@@ -7929,7 +8015,7 @@ msgstr ""
 #: staff/apps/settings/states.config.js:134
 #: staff/apps/settings/states.config.js:31
 #: staff/apps/subnetpools/edit/flsubnetpooledit.html:60
-#: staff/apps/subnetpools/flsubnetpools.html:58
+#: staff/apps/subnetpools/flsubnetpools.html:64
 #: staff/apps/subnetpools/states.config.js:36
 #: staff/apps/usergroups/flusergroupedit.html:10
 #: staff/apps/usergroups/flusergroups.html:50
@@ -7938,6 +8024,7 @@ msgstr ""
 #: staff/apps/users/fluserdetails.html:85
 #: tickets/staff/frontend/components/department_create/departmentcreate.html:27
 #: tickets/staff/frontend/components/department_details/departmentdetails.html:31
+#: tickets/staff/frontend/components/departments/departments.html:45
 #: tickets/staff/frontend/components/states.config.js:199
 msgid "Name"
 msgstr ""
@@ -7973,10 +8060,10 @@ msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:69
 #: site/apps/networks/flnetworkdetails.html:57
-#: site/apps/networks/flnetworkdetails.html:93
+#: site/apps/networks/flnetworkdetails.html:96
 #: site/apps/networks/flnetworksubnetadd.html:25
 #: staff/apps/networks/flnetworkadd.html:144
-#: staff/apps/networks/flnetworkdetails.html:101
+#: staff/apps/networks/flnetworkdetails.html:104
 #: staff/apps/networks/flnetworkdetails.html:65
 #: staff/apps/networks/flnetworksubnetadd.html:25
 msgid "Network address"
@@ -8008,19 +8095,20 @@ msgstr ""
 #: site/apps/networks/flnetworkadd.html:96
 #: site/apps/networks/flnetworksubnetadd.html:46
 #: site/apps/networks/flnetworksubnetadd.html:49
-#: staff/apps/networks/flnetworkadd.html:169
-#: staff/apps/networks/flnetworkadd.html:171
+#: staff/apps/networks/flnetworkadd.html:175
+#: staff/apps/networks/flnetworkadd.html:177
 #: staff/apps/networks/flnetworksubnetadd.html:52
 #: staff/apps/networks/flnetworksubnetadd.html:55
 msgid "Network mask"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:130
-#: staff/apps/osinstances/flinstancedetail.html:102
+#: site/apps/osinstances/flinstancedetail.html:136
+#: staff/apps/osinstances/flinstancedetail.html:120
 msgid "Network metrics"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:12
+#: site/apps/osrouters/flrouters.html:68
 #: staff/apps/networks/flnetworkadd.html:40
 #: staff/apps/osrouters/flrouters.html:68
 msgid "Network name"
@@ -8032,9 +8120,9 @@ msgid "Network name: {{::$ctrl.floatingIp.floating_network.name }}"
 msgstr ""
 
 #: site/apps/floatingips/flfloatingipadd.html:17
-#: site/apps/osinstances/create/flinstancecreate.html:137
+#: site/apps/osinstances/create/flinstancecreate.html:140
 #: staff/apps/floatingips/flfloatingipadd.html:38
-#: staff/apps/osinstances/create/flinstancecreate.html:166
+#: staff/apps/osinstances/create/flinstancecreate.html:169
 msgid "Network selection"
 msgstr ""
 
@@ -8048,7 +8136,7 @@ msgstr ""
 msgid "Network {:network}"
 msgstr ""
 
-#: staff/apps/osinstances/flinstancedetail.html:299
+#: staff/apps/osinstances/flinstancedetail.html:317
 msgid "Networking"
 msgstr ""
 
@@ -8101,7 +8189,7 @@ msgstr ""
 #: site/apps/networks/flnetworkadd.html:248
 #: site/apps/networks/flnetworksubnetadd.html:200
 #: staff/apps/billing/services/upgrade/flserviceupgrade.component.html:41
-#: staff/apps/networks/flnetworkadd.html:323
+#: staff/apps/networks/flnetworkadd.html:329
 #: staff/apps/networks/flnetworksubnetadd.html:206
 msgid "Next"
 msgstr ""
@@ -8109,8 +8197,8 @@ msgstr ""
 #: site/apps/billing/services/services.html:23
 #: site/apps/billing/services/services.html:46
 #: staff/apps/billing/services/services.html:21
-#: staff/apps/billing/services/services.html:48
-#: staff/apps/clients/flclientdetails.html:451
+#: staff/apps/billing/services/services.html:49
+#: staff/apps/clients/flclientdetails.html:467
 msgid "Next due"
 msgstr ""
 
@@ -8154,6 +8242,7 @@ msgstr ""
 #: domains/staff/frontend/components/client_info/clientinfo.html:71
 #: staff/apps/clientgroups/flclientgroupdetails.html:53
 #: staff/apps/osflavorgroups/flflavorgroupdetails.html:53
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:52
 #: staff/apps/osimages/flimagedetails.html:130
 #: staff/apps/osimages/flimagedetails.html:215
 #: staff/apps/usergroups/flusergroupdetails.html:59
@@ -8174,7 +8263,7 @@ msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:213
 #: site/apps/networks/flnetworksubnetadd.html:166
-#: staff/apps/networks/flnetworkadd.html:288
+#: staff/apps/networks/flnetworkadd.html:294
 #: staff/apps/networks/flnetworksubnetadd.html:172
 msgid "Nexthop (IP)"
 msgstr ""
@@ -8203,7 +8292,7 @@ msgstr ""
 msgid "No API users"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:244
+#: staff/apps/clients/flclientdetails.html:255
 msgid "No OpenStack service exists for this client"
 msgstr ""
 
@@ -8211,7 +8300,7 @@ msgstr ""
 msgid "No SSH keys"
 msgstr ""
 
-#: site/apps/networks/flnetworks.html:115
+#: site/apps/networks/flnetworks.html:119
 msgid "No actions available"
 msgstr ""
 
@@ -8233,13 +8322,13 @@ msgstr ""
 msgid "No available resources"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:379
-#: staff/apps/osinstances/flinstancedetail.html:508
+#: site/apps/osinstances/flinstancedetail.html:385
+#: staff/apps/osinstances/flinstancedetail.html:526
 msgid "No backup schedules for this instance"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:357
-#: staff/apps/osinstances/flinstancedetail.html:487
+#: site/apps/osinstances/flinstancedetail.html:363
+#: staff/apps/osinstances/flinstancedetail.html:505
 msgid "No backups for this instance"
 msgstr ""
 
@@ -8259,6 +8348,7 @@ msgid "No client matching \"{{$ctrl.clientSearchText}}\" found"
 msgstr ""
 
 #: staff/apps/clientgroups/flclientgroupdetails.html:79
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:78
 msgid "No client matching \"{{$ctrl.clientsSearchText}}\" found"
 msgstr ""
 
@@ -8279,7 +8369,7 @@ msgstr ""
 #: staff/apps/oszones/flzoneedit.html:31
 #: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:68
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:68
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:107
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:110
 #: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:107
 msgid "No clients matching \"{{$ctrl.clientSearchText}}\" found"
 msgstr ""
@@ -8292,18 +8382,18 @@ msgstr ""
 msgid "No clients on this plan"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:152
-#: site/apps/osinstances/flinstancedetail.html:169
-#: site/apps/osinstances/flinstancedetail.html:178
-#: staff/apps/osinstances/flinstancedetail.html:123
-#: staff/apps/osinstances/flinstancedetail.html:140
-#: staff/apps/osinstances/flinstancedetail.html:148
+#: site/apps/osinstances/flinstancedetail.html:158
+#: site/apps/osinstances/flinstancedetail.html:175
+#: site/apps/osinstances/flinstancedetail.html:184
+#: staff/apps/osinstances/flinstancedetail.html:141
+#: staff/apps/osinstances/flinstancedetail.html:158
+#: staff/apps/osinstances/flinstancedetail.html:166
 msgid "No data available"
 msgstr ""
 
 #: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:40
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:40
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:49
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:52
 #: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:49
 msgid "No departments matching \"{{$ctrl.departmentSearchText}}\" found"
 msgstr ""
@@ -8325,6 +8415,11 @@ msgstr ""
 msgid "No external networks available"
 msgstr ""
 
+#: commons/ui/flupload/flupload.html:12
+#: commons/ui/flupload/flupload.html:9
+msgid "No file chosen"
+msgstr ""
+
 #: staff/apps/osimages/flimagedetails.html:243
 msgid "No flavor group matching \"{{$ctrl.flavorGroupsSearchText}}\" found"
 msgstr ""
@@ -8334,13 +8429,13 @@ msgstr ""
 msgid "No flavor matching \"{{$ctrl.flavorsSearchText}}\" found"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:120
-#: staff/apps/osinstances/create/flinstancecreate.html:150
+#: site/apps/osinstances/create/flinstancecreate.html:123
+#: staff/apps/osinstances/create/flinstancecreate.html:153
 msgid "No flavor selected"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:123
-#: staff/apps/osinstances/create/flinstancecreate.html:153
+#: site/apps/osinstances/create/flinstancecreate.html:126
+#: staff/apps/osinstances/create/flinstancecreate.html:156
 msgid "No flavors available in this region"
 msgstr ""
 
@@ -8348,13 +8443,13 @@ msgstr ""
 msgid "No groups matching \"{{$ctrl.entitySearchText}}\" found"
 msgstr ""
 
-#: staff/apps/osinstances/flinstancedetail.html:244
+#: staff/apps/osinstances/flinstancedetail.html:262
 msgid ""
 "No history\n"
 "                                                                                                         log"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:276
+#: site/apps/osinstances/flinstancedetail.html:282
 msgid "No history log"
 msgstr ""
 
@@ -8380,21 +8475,24 @@ msgstr ""
 msgid "No items matching \"{{$ctrl.customModelSearchText}}\" found"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:155
+#: staff/apps/clients/flclientdetails.html:162
 msgid "No journal entries"
 msgstr ""
 
 #: site/apps/floatingips/flfloatingipadd.html:26
-#: staff/apps/floatingips/flfloatingipadd.html:47
 msgid "No networks available"
 msgstr ""
 
-#: staff/apps/osinstances/create/flinstancecreate.html:181
+#: staff/apps/osinstances/create/flinstancecreate.html:184
 msgid "No networks available in this region"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:147
+#: site/apps/osinstances/create/flinstancecreate.html:150
 msgid "No networks available in this region!"
+msgstr ""
+
+#: staff/apps/floatingips/flfloatingipadd.html:47
+msgid "No networks available."
 msgstr ""
 
 #: staff/apps/networks/flnetworkautocreateconfigure.html:28
@@ -8422,9 +8520,9 @@ msgstr ""
 msgid "No other hosts available"
 msgstr ""
 
-#: staff/apps/osbilling/plans/flbillingplandetails.html:49
+#: staff/apps/osbilling/plans/flbillingplandetails.html:52
 #: staff/apps/osbilling/plans/flbillingplans.html:23
-#: staff/apps/osbilling/plans/flbillingplans.html:92
+#: staff/apps/osbilling/plans/flbillingplans.html:95
 msgid "No pricing rules"
 msgstr ""
 
@@ -8492,7 +8590,7 @@ msgid "No servers found"
 msgstr ""
 
 #: site/apps/dashboard/fldashboard.html:161
-#: staff/apps/clients/flclientdetails.html:432
+#: staff/apps/clients/flclientdetails.html:448
 msgid "No services"
 msgstr ""
 
@@ -8504,13 +8602,13 @@ msgstr ""
 msgid "No shared IPv6 subnet pool available. Create one by pressing the add button"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:219
-#: staff/apps/osinstances/flinstancedetail.html:188
+#: site/apps/osinstances/flinstancedetail.html:225
+#: staff/apps/osinstances/flinstancedetail.html:206
 msgid "No snapshots"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:88
-#: staff/apps/networks/flnetworkadd.html:163
+#: staff/apps/networks/flnetworkadd.html:169
 #: staff/apps/networks/flnetworksubnetadd.html:46
 msgid "No subnet pools in this region available"
 msgstr ""
@@ -8554,8 +8652,8 @@ msgstr ""
 msgid "No volumes"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:263
-#: staff/apps/osinstances/flinstancedetail.html:232
+#: site/apps/osinstances/flinstancedetail.html:269
+#: staff/apps/osinstances/flinstancedetail.html:250
 msgid "No volumes attached"
 msgstr ""
 
@@ -8577,22 +8675,30 @@ msgstr ""
 msgid "No {{ $ctrl.objectsNamePlural }} found"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:168
-#: staff/apps/osinstances/create/flinstancecreate.html:202
+#: site/apps/osinstances/create/flinstancecreate.html:171
+#: staff/apps/osinstances/create/flinstancecreate.html:205
 #: tickets/staff/frontend/components/states.config.js:80
 msgid "None"
 msgstr ""
 
+#: site/apps/osinstances/create/flinstancecreate.component.js:71
+#: staff/apps/osinstances/create/flinstancecreate.component.js:54
+msgid ""
+"Not compatible with\n"
+"selected boot source"
+msgstr ""
+
 #: staff/apps/subnetpools/flsubnetpooldetails.html:9
-#: staff/apps/subnetpools/flsubnetpools.html:78
+#: staff/apps/subnetpools/flsubnetpools.html:88
 msgid "Not shared"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:101
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:200
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:230
 msgid "Note added"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:141
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:269
 msgid "Note deleted"
 msgstr ""
 
@@ -8608,12 +8714,19 @@ msgid ""
 "                    order for Fleio to work."
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:153
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:281
 msgid "Note updated"
 msgstr ""
 
 #: staff/apps/settings/authorization/authorization.html:19
 msgid "Note!"
+msgstr ""
+
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:15
+msgid ""
+"Note: <span class=\"fl-detail\">if you assign a client group to this flavor,\n"
+"          only clients from that client group will be able to see the flavor. If no client group is assigned to the\n"
+"          flavor, it means that the end-user can see it regardless of its groups.</span>"
 msgstr ""
 
 #: staff/apps/billing/services/details/servicedetails.html:131
@@ -8732,9 +8845,9 @@ msgstr ""
 msgid "Number of flavors in this group"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:102
-#: staff/apps/osinstances/flinstancedetail.html:73
-#: staff/apps/osinstances/flinstancedetail.html:77
+#: site/apps/osinstances/flinstancedetail.html:108
+#: staff/apps/osinstances/flinstancedetail.html:91
+#: staff/apps/osinstances/flinstancedetail.html:95
 msgid "Number of lines to show"
 msgstr ""
 
@@ -8751,10 +8864,10 @@ msgstr ""
 msgid "OS"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:92
-#: site/apps/osimages/update/flimageupdate.html:62
-#: staff/apps/osimages/create/flimagecreate.html:87
-#: staff/apps/osimages/update/flimageupdate.html:62
+#: site/apps/osimages/create/flimagecreate.html:103
+#: site/apps/osimages/update/flimageupdate.html:73
+#: staff/apps/osimages/create/flimagecreate.html:98
+#: staff/apps/osimages/update/flimageupdate.html:74
 msgid "OS distro"
 msgstr ""
 
@@ -8763,10 +8876,10 @@ msgstr ""
 msgid "OS distro: {{ $ctrl.image.os_distro }}"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:103
-#: site/apps/osimages/update/flimageupdate.html:73
-#: staff/apps/osimages/create/flimagecreate.html:98
-#: staff/apps/osimages/update/flimageupdate.html:73
+#: site/apps/osimages/create/flimagecreate.html:111
+#: site/apps/osimages/update/flimageupdate.html:81
+#: staff/apps/osimages/create/flimagecreate.html:106
+#: staff/apps/osimages/update/flimageupdate.html:82
 msgid "OS version"
 msgstr ""
 
@@ -8775,7 +8888,8 @@ msgstr ""
 msgid "OS version: {{ $ctrl.image.os_version }}"
 msgstr ""
 
-#: site/apps/floatingips/flfloatingips.html:26
+#: site/apps/floatingips/flfloatingips.html:28
+#: staff/apps/floatingips/flfloatingips.html:33
 msgid "Object"
 msgstr ""
 
@@ -8828,12 +8942,12 @@ msgstr ""
 msgid "Open a new ticket"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:153
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:51
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:95
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:107
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:156
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:243
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:107
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:170
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:58
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:115
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:171
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:263
 msgid "Open attachment"
 msgstr ""
 
@@ -8845,9 +8959,9 @@ msgid "Open new ticket"
 msgstr ""
 
 #: tickets/enduser/frontend/components/states.config.js:150
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:96
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:97
 #: tickets/staff/frontend/components/states.config.js:336
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:126
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:130
 msgid "Open ticket"
 msgstr ""
 
@@ -8864,7 +8978,7 @@ msgstr ""
 msgid "OpenStack settings"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:235
+#: staff/apps/clients/flclientdetails.html:246
 msgid "Openstack service"
 msgstr ""
 
@@ -8962,7 +9076,7 @@ msgid "Orders"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.html:85
-#: staff/apps/osinstances/flinstancedetail.html:50
+#: staff/apps/osinstances/flinstancedetail.html:58
 msgid "Other details"
 msgstr ""
 
@@ -8986,7 +9100,7 @@ msgstr ""
 #: site/apps/osimages/flimagedetails.html:41
 #: site/apps/osvolumes/flvolumedetails.html:18
 #: staff/apps/clients/flclientdetails.html:24
-#: staff/apps/osflavors/flflavordetails.html:27
+#: staff/apps/osflavors/flflavordetails.html:31
 #: staff/apps/osimages/flimagedetails.html:38
 #: staff/apps/osvolumes/flvolumedetails.html:18
 #: staff/apps/users/fluserdetails.html:21
@@ -9001,8 +9115,8 @@ msgstr ""
 msgid "PTR"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:167
-#: staff/apps/osinstances/flinstancedetail.html:138
+#: site/apps/osinstances/flinstancedetail.html:173
+#: staff/apps/osinstances/flinstancedetail.html:156
 msgid "Packets in/out"
 msgstr ""
 
@@ -9186,11 +9300,6 @@ msgstr ""
 msgid "Please select a domain contact"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:106
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:194
-msgid "Please select a file"
-msgstr ""
-
 #: site/apps/osinstances/resize/flinstanceresize.html:35
 msgid "Please select a flavor"
 msgstr ""
@@ -9268,7 +9377,7 @@ msgstr ""
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:22
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:59
 #: staff/apps/osinstances/associateip/flinstanceassociateip.html:22
-#: staff/apps/osinstances/flinstancedetail.html:304
+#: staff/apps/osinstances/flinstancedetail.html:322
 #: staff/apps/ossecuritygroups/flsecuritygroupdetails.html:61
 msgid "Ports"
 msgstr ""
@@ -9306,7 +9415,7 @@ msgid_plural "Prefixes: <span ng-repeat=\"prefix in $ctrl.subnetpool.prefixes\">
 msgstr[0] ""
 msgstr[1] ""
 
-#: staff/apps/subnetpools/flsubnetpools.html:61
+#: staff/apps/subnetpools/flsubnetpools.html:67
 #: staff/apps/subnetpools/states.config.js:36
 msgid "Prefixes"
 msgstr ""
@@ -9319,6 +9428,7 @@ msgstr ""
 #: domains/staff/frontend/components/client_info/clientinfo.html:68
 #: staff/apps/clientgroups/flclientgroupdetails.html:48
 #: staff/apps/osflavorgroups/flflavorgroupdetails.html:48
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:47
 #: staff/apps/osimages/flimagedetails.html:122
 #: staff/apps/osimages/flimagedetails.html:207
 #: staff/apps/usergroups/flusergroupdetails.html:54
@@ -9359,7 +9469,7 @@ msgstr ""
 msgid "Price model: {{ $ctrl.productDetails.price_model_display }}"
 msgstr ""
 
-#: staff/apps/osbilling/pricing/flpricerule.html:176
+#: staff/apps/osbilling/pricing/flpricerule.html:177
 msgid "Price modifiers"
 msgstr ""
 
@@ -9387,18 +9497,18 @@ msgstr ""
 msgid "Pricing plan"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:269
+#: staff/apps/clients/flclientdetails.html:280
 msgid "Pricing plan: {{$ctrl.getClientBillingPlanName()}}"
 msgstr ""
 
-#: staff/apps/osbilling/plans/flbillingplandetails.html:51
-#: staff/apps/osbilling/plans/flbillingplans.html:65
+#: staff/apps/osbilling/plans/flbillingplandetails.html:54
+#: staff/apps/osbilling/plans/flbillingplans.html:68
 msgid "Pricing rules"
 msgstr ""
 
 #: tickets/enduser/frontend/components/states.config.js:59
 #: tickets/staff/frontend/components/states.config.js:60
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:24
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:27
 #: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:24
 msgid "Priority"
 msgstr ""
@@ -9430,7 +9540,7 @@ msgid "Product configuration"
 msgstr ""
 
 #: staff/apps/clients/createopenstackservice/flcreateopenstackservice.html:33
-#: staff/apps/clients/flclientdetails.html:264
+#: staff/apps/clients/flclientdetails.html:275
 msgid "Product cycle"
 msgstr ""
 
@@ -9463,7 +9573,7 @@ msgstr ""
 msgid "Product modified"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:259
+#: staff/apps/clients/flclientdetails.html:270
 msgid "Product name"
 msgstr ""
 
@@ -9500,6 +9610,10 @@ msgstr ""
 msgid "Project ID: {{ ::$ctrl.subnetpool.project_id }}"
 msgstr ""
 
+#: staff/apps/osinstances/flinstancedetail.html:60
+msgid "Project ID: {{::$ctrl.instance.project }}"
+msgstr ""
+
 #: staff/apps/osprojects/flprojects.component.js:86
 msgid "Project added"
 msgstr ""
@@ -9512,7 +9626,7 @@ msgstr ""
 msgid "Project disabled"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:298
+#: staff/apps/clients/flclientdetails.html:309
 msgid "Project domain ID"
 msgstr ""
 
@@ -9540,7 +9654,7 @@ msgstr ""
 msgid "Project updated"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:278
+#: staff/apps/clients/flclientdetails.html:289
 msgid "Project:"
 msgstr ""
 
@@ -9572,29 +9686,29 @@ msgstr ""
 msgid "Projects default domain"
 msgstr ""
 
-#: site/apps/osimages/flimagedetails.html:64
-#: site/apps/osimages/update/flimageupdate.html:178
+#: site/apps/osimages/flimagedetails.html:68
+#: site/apps/osimages/update/flimageupdate.html:186
 #: staff/apps/osimages/flimagedetails.html:66
-#: staff/apps/osimages/update/flimageupdate.html:182
+#: staff/apps/osimages/update/flimageupdate.html:191
 msgid "Properties"
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.html:196
-#: staff/apps/osimages/update/flimageupdate.html:200
+#: site/apps/osimages/update/flimageupdate.html:204
+#: staff/apps/osimages/update/flimageupdate.html:209
 msgid "Property"
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.html:188
-#: staff/apps/osimages/update/flimageupdate.html:192
+#: site/apps/osimages/update/flimageupdate.html:196
+#: staff/apps/osimages/update/flimageupdate.html:201
 msgid "Property key"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:150
+#: site/apps/osimages/create/flimagecreate.html:158
 #: site/apps/osimages/states.config.js:83
-#: site/apps/osimages/update/flimageupdate.html:109
-#: staff/apps/osimages/create/flimagecreate.html:145
+#: site/apps/osimages/update/flimageupdate.html:117
+#: staff/apps/osimages/create/flimagecreate.html:153
 #: staff/apps/osimages/states.config.js:104
-#: staff/apps/osimages/update/flimageupdate.html:109
+#: staff/apps/osimages/update/flimageupdate.html:118
 msgid "Protected"
 msgstr ""
 
@@ -9621,7 +9735,7 @@ msgid "Provider segmentation id"
 msgstr ""
 
 #: site/apps/osimages/states.config.js:77
-#: staff/apps/osflavors/flflavordetails.html:36
+#: staff/apps/osflavors/flflavordetails.html:40
 #: staff/apps/osimages/states.config.js:98
 msgid "Public"
 msgstr ""
@@ -9635,12 +9749,12 @@ msgstr ""
 msgid "Quick actions"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:77
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:82
 msgid "Quick edit"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:96
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:184
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:161
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:312
 msgid "Quoted from"
 msgstr ""
 
@@ -9649,7 +9763,7 @@ msgstr ""
 msgid "RAM"
 msgstr ""
 
-#: staff/apps/osflavors/flflavordetails.html:30
+#: staff/apps/osflavors/flflavordetails.html:34
 msgid "Ram"
 msgstr ""
 
@@ -9684,8 +9798,8 @@ msgstr ""
 msgid "Rate type"
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.html:128
-#: staff/apps/osimages/update/flimageupdate.html:132
+#: site/apps/osimages/update/flimageupdate.html:136
+#: staff/apps/osimages/update/flimageupdate.html:141
 msgid "Reactivate image"
 msgstr ""
 
@@ -9712,10 +9826,10 @@ msgstr ""
 
 #: site/apps/osinstances/actions/flinstanceactions.html:62
 #: site/apps/osinstances/actions/flxsinstanceactions.html:64
-#: site/apps/osinstances/states.config.js:164
+#: site/apps/osinstances/states.config.js:175
 #: staff/apps/osinstances/actions/flinstanceactions.html:164
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:174
-#: staff/apps/osinstances/states.config.js:270
+#: staff/apps/osinstances/states.config.js:276
 msgid "Rebuild"
 msgstr ""
 
@@ -9809,8 +9923,8 @@ msgstr ""
 #: site/apps/osimages/flimages.html:33
 #: site/apps/osinstances/flinstances.html:33
 #: site/apps/osinstances/flinstances.html:65
-#: site/apps/osinstances/states.config.js:56
-#: site/apps/osinstances/states.config.js:72
+#: site/apps/osinstances/states.config.js:65
+#: site/apps/osinstances/states.config.js:83
 #: site/apps/ossecuritygroups/flsecuritygroups.html:68
 #: site/apps/ossecuritygroups/states.config.js:36
 #: site/apps/ossecuritygroups/states.config.js:49
@@ -9819,21 +9933,21 @@ msgstr ""
 #: site/apps/osvolumes/flvolumes.html:60
 #: site/apps/osvolumes/states.config.js:86
 #: staff/apps/dashboard/widgets/instances/flinstances.widget.html:6
-#: staff/apps/floatingips/flfloatingips.html:60
+#: staff/apps/floatingips/flfloatingips.html:67
 #: staff/apps/networks/flnetworkdetails.html:37
 #: staff/apps/networks/flnetworks.html:59
 #: staff/apps/networks/states.config.js:37
 #: staff/apps/networks/states.config.js:45
 #: staff/apps/osflavors/edit/flflavoredit.html:19
-#: staff/apps/osflavors/flflavordetails.html:37
-#: staff/apps/osflavors/flflavors.html:70
+#: staff/apps/osflavors/flflavordetails.html:41
+#: staff/apps/osflavors/flflavors.html:74
 #: staff/apps/osflavors/states.config.js:58
 #: staff/apps/osimages/create/flimagecreate.html:25
 #: staff/apps/osimages/flimages.html:84
 #: staff/apps/osinstances/create/flinstancecreate.html:59
 #: staff/apps/osinstances/flinstances.html:68
-#: staff/apps/osinstances/states.config.js:168
-#: staff/apps/osinstances/states.config.js:63
+#: staff/apps/osinstances/states.config.js:174
+#: staff/apps/osinstances/states.config.js:69
 #: staff/apps/osrouters/flrouters.html:29
 #: staff/apps/osrouters/flrouters.html:69
 #: staff/apps/osrouters/states.config.js:39
@@ -9843,7 +9957,7 @@ msgstr ""
 #: staff/apps/ossecuritygroups/states.config.js:49
 #: staff/apps/osvolumes/create/flvolumecreate.html:47
 #: staff/apps/osvolumes/states.config.js:86
-#: staff/apps/subnetpools/flsubnetpools.html:60
+#: staff/apps/subnetpools/flsubnetpools.html:66
 #: staff/apps/subnetpools/states.config.js:36
 msgid "Region"
 msgstr ""
@@ -9885,7 +9999,7 @@ msgid "Region: {{ ::securityGroup.region }}<br>"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.html:90
-#: staff/apps/osinstances/flinstancedetail.html:60
+#: staff/apps/osinstances/flinstancedetail.html:69
 msgid "Region: {{::$ctrl.instance.flavor.region }}"
 msgstr ""
 
@@ -9970,6 +10084,10 @@ msgstr ""
 msgid "Reinstall instance"
 msgstr ""
 
+#: site/apps/osimages/memberstatus/memberstatusdialog.template.html:19
+msgid "Reject"
+msgstr ""
+
 #: staff/apps/billing/services/details/servicedetails.html:56
 msgid "Related invoices"
 msgstr ""
@@ -9985,8 +10103,8 @@ msgstr ""
 msgid "Related service"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:37
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:67
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:42
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:72
 msgid "Related service: <a ui-sref=\"billingServicesDetails({'id': $ctrl.ticket.service})\" class=\"md-primary\">{{$ctrl.ticket.service}}</a>"
 msgstr ""
 
@@ -10056,6 +10174,11 @@ msgstr ""
 msgid "Remove client from group"
 msgstr ""
 
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:35
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.js:107
+msgid "Remove client group from flavor"
+msgstr ""
+
 #: staff/apps/osflavorgroups/flflavorgroupdetails.component.js:107
 #: staff/apps/osflavorgroups/flflavorgroupdetails.html:37
 msgid "Remove flavor from group"
@@ -10099,9 +10222,9 @@ msgstr ""
 msgid "Remove reversed link if it exists"
 msgstr ""
 
-#: commons/ui/flupload/flupload.html:8
-#: commons/ui/flupload/flupload.html:9
-msgid "Remove selected file"
+#: commons/ui/flupload/flupload.html:17
+#: commons/ui/flupload/flupload.html:21
+msgid "Remove selected files"
 msgstr ""
 
 #: tickets/staff/frontend/components/tickets_details/dialogs/remove_linking/removelinking.html:2
@@ -10152,26 +10275,28 @@ msgid "Renew"
 msgstr ""
 
 #: tickets/enduser/frontend/components/tickets_actions/ticketsactions.html:5
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:261
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:280
 #: tickets/staff/frontend/components/tickets_actions/ticketsactions.html:20
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:359
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:379
 msgid "Reopen ticket"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:136
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:253
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:78
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:139
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:350
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:150
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:272
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:87
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:151
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:370
 msgid "Reply"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:57
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:62
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:122
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:93
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:127
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:98
 msgid "Reply added"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:134
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:262
 msgid "Reply deleted"
 msgstr ""
 
@@ -10227,10 +10352,10 @@ msgstr ""
 
 #: site/apps/osinstances/actions/flinstanceactions.html:55
 #: site/apps/osinstances/actions/flxsinstanceactions.html:57
-#: site/apps/osinstances/states.config.js:214
+#: site/apps/osinstances/states.config.js:225
 #: staff/apps/osinstances/actions/flinstanceactions.html:136
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:146
-#: staff/apps/osinstances/states.config.js:320
+#: staff/apps/osinstances/states.config.js:326
 msgid "Rescue"
 msgstr ""
 
@@ -10268,10 +10393,10 @@ msgstr ""
 
 #: site/apps/osinstances/actions/flinstanceactions.html:95
 #: site/apps/osinstances/actions/flxsinstanceactions.html:97
-#: site/apps/osinstances/states.config.js:189
+#: site/apps/osinstances/states.config.js:200
 #: staff/apps/osinstances/actions/flinstanceactions.html:115
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:125
-#: staff/apps/osinstances/states.config.js:295
+#: staff/apps/osinstances/states.config.js:301
 msgid "Resize"
 msgstr ""
 
@@ -10287,7 +10412,7 @@ msgstr ""
 msgid "Resize instance?"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.html:103
+#: site/apps/billing/history/billinghistory.html:105
 msgid "Resource name"
 msgstr ""
 
@@ -10351,7 +10476,7 @@ msgstr ""
 msgid "Revert resize"
 msgstr ""
 
-#: staff/apps/osflavors/flflavors.html:73
+#: staff/apps/osflavors/flflavors.html:77
 msgid "Root"
 msgstr ""
 
@@ -10359,19 +10484,19 @@ msgstr ""
 msgid "Root gb"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:196
+#: site/apps/osinstances/create/flinstancecreate.html:199
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:69
 #: site/apps/osinstances/rescue/flinstancerescue.html:74
 #: site/apps/osinstances/rescue/flinstancerescue.html:81
-#: staff/apps/osinstances/create/flinstancecreate.html:220
+#: staff/apps/osinstances/create/flinstancecreate.html:223
 #: staff/apps/osinstances/rebuild/flinstancerebuild.html:70
 #: staff/apps/osinstances/rescue/flinstancerescue.html:74
 #: staff/apps/osinstances/rescue/flinstancerescue.html:82
 msgid "Root password"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:385
-#: staff/apps/osinstances/flinstancedetail.html:514
+#: site/apps/osinstances/flinstancedetail.html:391
+#: staff/apps/osinstances/flinstancedetail.html:532
 msgid "Rotation"
 msgstr ""
 
@@ -10448,14 +10573,14 @@ msgid "Rules"
 msgstr ""
 
 #: commons/osbackup/fl-backupschedules-create-dialog.html:27
-#: site/apps/osinstances/flinstancedetail.html:386
-#: staff/apps/osinstances/flinstancedetail.html:515
+#: site/apps/osinstances/flinstancedetail.html:392
+#: staff/apps/osinstances/flinstancedetail.html:533
 msgid "Run at"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:166
+#: site/apps/osinstances/create/flinstancecreate.html:169
 #: site/apps/pkm/flpkmkeys.html:1
-#: staff/apps/osinstances/create/flinstancecreate.html:199
+#: staff/apps/osinstances/create/flinstancecreate.html:202
 #: staff/apps/pkm/flpkmkeys.html:1
 msgid "SSH key"
 msgstr ""
@@ -10545,8 +10670,8 @@ msgstr ""
 msgid "Save PTR"
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.html:221
-#: staff/apps/osimages/update/flimageupdate.html:225
+#: site/apps/osimages/update/flimageupdate.html:229
+#: staff/apps/osimages/update/flimageupdate.html:234
 msgid "Save Properties"
 msgstr ""
 
@@ -10621,7 +10746,7 @@ msgstr ""
 msgid "Save registrars"
 msgstr ""
 
-#: staff/apps/osbilling/pricing/flpricerule.html:223
+#: staff/apps/osbilling/pricing/flpricerule.html:225
 msgid "Save rule"
 msgstr ""
 
@@ -10876,15 +11001,23 @@ msgstr ""
 #: site/apps/ossecuritygroups/flsecuritygroups.html:1
 #: site/apps/ossecuritygroups/states.config.js:32
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:42
-#: staff/apps/osinstances/flinstancedetail.html:431
+#: staff/apps/osinstances/flinstancedetail.html:449
 #: staff/apps/ossecuritygroups/flsecuritygroups.html:1
 #: staff/apps/ossecuritygroups/states.config.js:32
 msgid "Security groups"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:144
+#: site/apps/osinstances/create/flbootsourceselect.html:161
 #: staff/apps/osinstances/create/flbootsourceselect.html:178
 msgid "Select"
+msgstr ""
+
+#: staff/apps/floatingips/flfloatingipadd.html:47
+msgid "Select a client first."
+msgstr ""
+
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:70
+msgid "Select a client group to assign to flavor"
 msgstr ""
 
 #: staff/apps/clientgroups/flclientgroupdetails.html:71
@@ -11049,8 +11182,8 @@ msgstr ""
 msgid "Select metric unit"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:124
-#: staff/apps/osinstances/flinstancedetail.html:96
+#: site/apps/osinstances/flinstancedetail.html:130
+#: staff/apps/osinstances/flinstancedetail.html:114
 msgid "Select metrics type"
 msgstr ""
 
@@ -11137,7 +11270,7 @@ msgstr ""
 msgid "Select source type"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:114
+#: site/apps/osinstances/create/flbootsourceselect.html:131
 #: staff/apps/osinstances/create/flbootsourceselect.html:148
 msgid "Select storage type"
 msgstr ""
@@ -11402,7 +11535,7 @@ msgstr ""
 msgid "Service details"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:254
+#: staff/apps/clients/flclientdetails.html:265
 msgid "Service status"
 msgstr ""
 
@@ -11411,7 +11544,7 @@ msgstr ""
 msgid "Service updated"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:275
+#: staff/apps/clients/flclientdetails.html:286
 msgid "Service:"
 msgstr ""
 
@@ -11422,7 +11555,7 @@ msgstr ""
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:61
 #: staff/apps/billing/services/services.html:1
 #: staff/apps/billing/states.config.js:162
-#: staff/apps/clients/flclientdetails.html:427
+#: staff/apps/clients/flclientdetails.html:443
 #: staff/apps/reports/revenue_reports/revenue_report_details.template.html:41
 #: staff/apps/reports/revenue_reports/revenue_report_details.template.html:81
 msgid "Services"
@@ -11436,6 +11569,7 @@ msgstr ""
 msgid "Set as verified"
 msgstr ""
 
+#: site/apps/osimages/memberstatus/memberstatusdialog.template.html:16
 #: staff/apps/billing/orders/florderactions.html:23
 msgid "Set back to pending"
 msgstr ""
@@ -11457,24 +11591,24 @@ msgstr ""
 msgid "Set new plan"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:213
-#: staff/apps/osinstances/create/flinstancecreate.html:236
+#: site/apps/osinstances/create/flinstancecreate.html:216
+#: staff/apps/osinstances/create/flinstancecreate.html:239
 msgid "Set the Administrator password on first boot through the web console."
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:81
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:86
 msgid "Set to \"N/A\""
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:87
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:92
 msgid "Set to \"done\""
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:90
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:95
 msgid "Set to \"in progress\""
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:84
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:89
 msgid "Set to \"open\""
 msgstr ""
 
@@ -11530,9 +11664,13 @@ msgstr ""
 #: staff/apps/networks/states.config.js:58
 #: staff/apps/subnetpools/edit/flsubnetpooledit.html:102
 #: staff/apps/subnetpools/flsubnetpooldetails.html:7
-#: staff/apps/subnetpools/flsubnetpools.html:77
+#: staff/apps/subnetpools/flsubnetpools.html:87
 #: staff/apps/subnetpools/states.config.js:54
 msgid "Shared"
+msgstr ""
+
+#: site/apps/osinstances/create/flbootsourceselect.html:49
+msgid "Shared Images"
 msgstr ""
 
 #: site/apps/osinstances/bootfromiso/flinstancebootfromiso.html:39
@@ -11555,13 +11693,25 @@ msgstr ""
 msgid "Shopping cart"
 msgstr ""
 
-#: staff/apps/billing/journal/journal.html:54
-#: staff/apps/billing/journal/journal.html:97
+#: staff/apps/billing/journal/journal.html:113
+#: staff/apps/billing/journal/journal.html:66
 msgid "Show actions"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:421
+#: staff/apps/clients/flclientdetails.html:437
 msgid "Show all"
+msgstr ""
+
+#: staff/apps/osflavors/states.config.js:186
+msgid "Show flavor to client groups"
+msgstr ""
+
+#: staff/apps/osflavors/states.config.js:185
+msgid "Show flavor {:name} to client groups"
+msgstr ""
+
+#: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:6
+msgid "Show flavor {{$ctrl.flavor.name || $ctrl.flavor.id}} to client groups"
 msgstr ""
 
 #: staff/apps/osflavors/edit/flflavoredit.html:82
@@ -11569,9 +11719,16 @@ msgid "Show in end user panel"
 msgstr ""
 
 #: staff/apps/osflavors/edit/flflavoredit.html:81
-#: staff/apps/osflavors/flflavordetails.html:46
-#: staff/apps/osflavors/flflavordetails.html:47
+#: staff/apps/osflavors/flflavordetails.html:50
+#: staff/apps/osflavors/flflavordetails.html:51
 msgid "Show in end-user panel"
+msgstr ""
+
+#: staff/apps/osflavors/flflavordetails.html:17
+#: staff/apps/osflavors/flflavors.html:132
+#: staff/apps/osflavors/flflavors.html:160
+#: staff/apps/osflavors/flflavors.html:49
+msgid "Show to client groups"
 msgstr ""
 
 #: staff/apps/billing/gateways/gateways.html:22
@@ -11733,8 +11890,8 @@ msgstr ""
 msgid "Snapshot {:name}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:190
-#: staff/apps/osinstances/flinstancedetail.html:160
+#: site/apps/osinstances/flinstancedetail.html:196
+#: staff/apps/osinstances/flinstancedetail.html:178
 msgid "Snapshots"
 msgstr ""
 
@@ -11745,11 +11902,11 @@ msgstr ""
 #: site/apps/billing/invoicing/flinvoicingdetails.html:153
 #: site/apps/billing/invoicing/flinvoicingdetails.html:91
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:148
-#: staff/apps/billing/journal/journal.html:81
+#: staff/apps/billing/journal/journal.html:97
 #: staff/apps/billing/journal/journaldetail.html:20
 #: staff/apps/billing/states.config.js:611
 #: staff/apps/billing/states.config.js:703
-#: staff/apps/clients/flclientdetails.html:218
+#: staff/apps/clients/flclientdetails.html:229
 msgid "Source"
 msgstr ""
 
@@ -11781,7 +11938,7 @@ msgstr ""
 msgid "Standard images"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:117
+#: site/apps/osinstances/create/flbootsourceselect.html:134
 #: staff/apps/osinstances/create/flbootsourceselect.html:151
 msgid "Standard volume"
 msgstr ""
@@ -11839,15 +11996,16 @@ msgstr ""
 #: site/apps/billing/services/services.html:47
 #: site/apps/billing/services/states.config.js:40
 #: site/apps/billing/services/states.config.js:69
-#: site/apps/floatingips/flfloatingips.html:57
+#: site/apps/floatingips/flfloatingips.html:59
 #: site/apps/floatingips/states.config.js:40
 #: site/apps/floatingips/states.config.js:53
 #: site/apps/osimages/flimages.html:86
 #: site/apps/osimages/states.config.js:47
 #: site/apps/osimages/states.config.js:60
 #: site/apps/osinstances/flinstances.html:62
-#: site/apps/osinstances/states.config.js:56
 #: site/apps/osinstances/states.config.js:64
+#: site/apps/osinstances/states.config.js:75
+#: site/apps/osrouters/flrouters.html:67
 #: site/apps/osvolumes/flvolumes.html:58
 #: site/apps/osvolumes/states.config.js:60
 #: site/apps/osvolumes/states.config.js:73
@@ -11863,17 +12021,17 @@ msgstr ""
 #: staff/apps/billing/products/productdetails.html:160
 #: staff/apps/billing/products/productdetails.html:96
 #: staff/apps/billing/products/products.html:7
-#: staff/apps/billing/services/services.html:49
+#: staff/apps/billing/services/services.html:50
 #: staff/apps/billing/states.config.js:171
 #: staff/apps/billing/states.config.js:200
 #: staff/apps/billing/states.config.js:343
 #: staff/apps/billing/states.config.js:362
 #: staff/apps/billing/states.config.js:37
 #: staff/apps/billing/states.config.js:54
-#: staff/apps/clients/flclientdetails.html:454
+#: staff/apps/clients/flclientdetails.html:470
 #: staff/apps/clients/flclients.html:40
 #: staff/apps/clients/states.config.js:64
-#: staff/apps/floatingips/flfloatingips.html:58
+#: staff/apps/floatingips/flfloatingips.html:65
 #: staff/apps/floatingips/states.config.js:36
 #: staff/apps/floatingips/states.config.js:54
 #: staff/apps/networks/flnetworkdetails.html:44
@@ -11881,8 +12039,8 @@ msgstr ""
 #: staff/apps/osimages/states.config.js:55
 #: staff/apps/osimages/states.config.js:73
 #: staff/apps/osinstances/flinstances.html:65
-#: staff/apps/osinstances/states.config.js:62
-#: staff/apps/osinstances/states.config.js:78
+#: staff/apps/osinstances/states.config.js:68
+#: staff/apps/osinstances/states.config.js:84
 #: staff/apps/osrouters/flrouters.html:67
 #: staff/apps/osrouters/states.config.js:43
 #: staff/apps/osvolumes/flvolumes.html:55
@@ -11898,7 +12056,7 @@ msgstr ""
 #: tickets/enduser/frontend/components/tickets/tickets.html:27
 #: tickets/enduser/frontend/components/tickets/tickets.html:51
 #: tickets/staff/frontend/components/states.config.js:57
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:59
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:62
 #: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:59
 #: todo/staff/frontend/components/states.config.js:55
 #: todo/staff/frontend/components/todo_actions/dialogs/todo_edit/todoedit.html:16
@@ -12103,7 +12261,7 @@ msgstr ""
 msgid "Suspension"
 msgstr ""
 
-#: staff/apps/osflavors/flflavordetails.html:33
+#: staff/apps/osflavors/flflavordetails.html:37
 msgid "Swap"
 msgstr ""
 
@@ -12119,7 +12277,7 @@ msgstr ""
 msgid "Switch view"
 msgstr ""
 
-#: staff/apps/osinstances/flinstancedetail.html:65
+#: staff/apps/osinstances/flinstancedetail.html:83
 msgid "System log"
 msgstr ""
 
@@ -12191,7 +12349,7 @@ msgstr ""
 msgid "Task log"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:86
+#: staff/apps/osinstances/states.config.js:92
 msgid "Task state"
 msgstr ""
 
@@ -12313,12 +12471,7 @@ msgstr ""
 msgid "The e-mail address the notifications are sent from."
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:114
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:202
-msgid "The file size is bigger than the maximum allowed size"
-msgstr ""
-
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:127
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:255
 msgid "The message will permanently be deleted"
 msgstr ""
 
@@ -12339,8 +12492,9 @@ msgid "The selected image is not available to {{::$ctrl.client.name}}"
 msgstr ""
 
 #: oscommons/flavorsascards/flavorsascards.component.js:26
-#: site/apps/osinstances/create/flinstancecreate.component.js:67
-#: staff/apps/osinstances/create/flinstancecreate.component.js:56
+#: site/apps/osinstances/create/flinstancecreate.component.js:68
+#: site/apps/osinstances/create/flinstancecreate.component.js:72
+#: staff/apps/osinstances/create/flinstancecreate.component.js:55
 msgid ""
 "The selected image source requires\n"
 "a flavor with more resources.\n"
@@ -12397,6 +12551,10 @@ msgstr ""
 
 #: staff/apps/billing/gateways/gatewaydetails.html:37
 msgid "This gateway returns fee information, fees will automatically be added to transactions."
+msgstr ""
+
+#: site/apps/osimages/flimagedetails.html:61
+msgid "This image is shared with you: <md-button ng-click=\"$ctrl.checkMemberStatus($event);\" class=\"md-primary\">Check member status</md-button>"
 msgstr ""
 
 #: site/apps/osimages/create/flimagecreate.html:73
@@ -12495,10 +12653,10 @@ msgstr ""
 msgid "Ticket reopened."
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:76
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:93
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.component.js:103
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.component.js:86
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:114
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:97
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.component.js:106
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.component.js:122
 msgid "Ticket successfully opened."
 msgstr ""
 
@@ -12556,7 +12714,7 @@ msgstr ""
 #: tickets/staff/frontend/components/client_info/clientinfo.html:5
 #: tickets/staff/frontend/components/states.config.js:58
 #: tickets/staff/frontend/components/tickets/tickets.html:54
-#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:18
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:21
 #: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:18
 #: tickets/staff/frontend/components/user_info/userinfo.html:6
 #: todo/staff/frontend/components/states.config.js:56
@@ -12584,7 +12742,7 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.html:83
+#: site/apps/billing/history/billinghistory.html:85
 msgid ""
 "Total cost:\n"
 "                  <span>{{$ctrl.usage.usage.price | number : 2}} {{$ctrl.billing_currency}}</span>"
@@ -12599,13 +12757,23 @@ msgstr ""
 msgid "Total revenue"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.html:149
+#: site/apps/osinstances/flinstancedetail.html:91
+#: staff/apps/osinstances/flinstancedetail.html:73
+msgid "Total traffic this billing cycle: {{::$ctrl.instance.current_cycle_traffic }} GB"
+msgstr ""
+
+#: site/apps/osinstances/flinstancedetail.html:94
+#: staff/apps/osinstances/flinstancedetail.html:76
+msgid "Total traffic this month: {{::$ctrl.instance.current_month_traffic }} GB"
+msgstr ""
+
+#: site/apps/billing/history/billinghistory.html:150
 msgid ""
 "Total {{resource_usage.resource_name}} Cost:\n"
 "                    <span>{{resource_usage.price | number : 2}} {{$ctrl.billing_currency}}</span>"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.html:57
+#: site/apps/billing/history/billinghistory.html:59
 msgid ""
 "Total {{resource_usage.resource_name}} cost:\n"
 "                    <span>{{resource_usage.price | number : 2}}</span>\n"
@@ -12656,13 +12824,13 @@ msgstr ""
 msgid "Transaction refund initiated."
 msgstr ""
 
-#: staff/apps/billing/journal/journal.html:41
-#: staff/apps/clients/flclientdetails.html:187
-#: staff/apps/clients/flclientdetails.html:197
+#: staff/apps/billing/journal/journal.html:50
+#: staff/apps/clients/flclientdetails.html:196
+#: staff/apps/clients/flclientdetails.html:208
 msgid "Transaction {{::journal.destination_info.transaction}}"
 msgstr ""
 
-#: staff/apps/billing/journal/journal.html:31
+#: staff/apps/billing/journal/journal.html:35
 msgid "Transaction {{::journal.source_info.transaction}}"
 msgstr ""
 
@@ -12726,10 +12894,10 @@ msgstr ""
 msgid "Type: {{ $ctrl.zone.type }}"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:157
-#: site/apps/osimages/create/flimagecreate.html:168
-#: staff/apps/osimages/create/flimagecreate.html:152
-#: staff/apps/osimages/create/flimagecreate.html:163
+#: site/apps/osimages/create/flimagecreate.html:165
+#: site/apps/osimages/create/flimagecreate.html:176
+#: staff/apps/osimages/create/flimagecreate.html:160
+#: staff/apps/osimages/create/flimagecreate.html:171
 msgid "URL"
 msgstr ""
 
@@ -12820,12 +12988,12 @@ msgstr ""
 
 #: site/apps/clients/flclientedit.html:122
 #: site/apps/osimages/flimages.component.js:34
-#: site/apps/osimages/flimages.html:186
+#: site/apps/osimages/flimages.html:192
 #: staff/apps/billing/gateways/gatewaydetails.html:72
 #: staff/apps/clients/flclientedit.html:147
 #: staff/apps/osimages/flimagedetails.component.js:31
 #: staff/apps/osimages/flimages.component.js:31
-#: staff/apps/osimages/flimages.html:181
+#: staff/apps/osimages/flimages.html:196
 msgid "Update"
 msgstr ""
 
@@ -12860,8 +13028,8 @@ msgstr ""
 msgid "Update frontend"
 msgstr ""
 
-#: site/apps/osimages/update/flimageupdate.html:116
-#: staff/apps/osimages/update/flimageupdate.html:116
+#: site/apps/osimages/update/flimageupdate.html:124
+#: staff/apps/osimages/update/flimageupdate.html:125
 msgid "Update image"
 msgstr ""
 
@@ -12945,7 +13113,7 @@ msgstr ""
 msgid "Upgrades"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:108
+#: site/apps/osinstances/create/flbootsourceselect.html:125
 #: staff/apps/osinstances/create/flbootsourceselect.html:142
 msgid "Upload new image"
 msgstr ""
@@ -13101,10 +13269,10 @@ msgstr ""
 #: commons/userprofile/fluserprofile.html:10
 #: staff/apps/users/flusers.html:21
 #: staff/apps/users/flusers.html:73
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:125
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:66
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:126
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:191
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:139
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:75
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:138
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:210
 msgid "User image"
 msgstr ""
 
@@ -13156,7 +13324,7 @@ msgid "Username or email"
 msgstr ""
 
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:28
-#: staff/apps/clients/flclientdetails.html:313
+#: staff/apps/clients/flclientdetails.html:324
 #: staff/apps/settings/authorization/authorization.html:15
 #: staff/apps/users/flusers.html:1
 #: staff/apps/users/states.config.js:39
@@ -13204,20 +13372,20 @@ msgstr ""
 
 #: staff/apps/osflavors/edit/flflavoredit.html:38
 #: staff/apps/osflavors/edit/flflavoredit.html:40
-#: staff/apps/osflavors/flflavordetails.html:31
+#: staff/apps/osflavors/flflavordetails.html:35
 #: staff/apps/osflavors/states.config.js:55
 msgid "Virtual CPUs"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.html:37
-#: staff/apps/osinstances/flinstancedetail.html:44
+#: staff/apps/osinstances/flinstancedetail.html:47
 msgid "Virtual CPUs: {{$ctrl.instance.flavor.vcpus }}"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:140
+#: site/apps/osimages/create/flimagecreate.html:148
 #: site/apps/osimages/states.config.js:68
 #: site/apps/osimages/update/flimageupdate.html:50
-#: staff/apps/osimages/create/flimagecreate.html:135
+#: staff/apps/osimages/create/flimagecreate.html:143
 #: staff/apps/osimages/states.config.js:89
 #: staff/apps/osimages/update/flimageupdate.html:50
 msgid "Visibility"
@@ -13248,7 +13416,7 @@ msgstr ""
 msgid "Volume Size Increments"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:85
+#: site/apps/osinstances/create/flbootsourceselect.html:102
 #: staff/apps/osinstances/create/flbootsourceselect.html:85
 msgid "Volume Snapshots"
 msgstr ""
@@ -13282,12 +13450,12 @@ msgid "Volume {:volumeTitle}"
 msgstr ""
 
 #: site/apps/baseconfig/fleio.baseconfig.module.js:47
-#: site/apps/osinstances/create/flbootsourceselect.html:66
+#: site/apps/osinstances/create/flbootsourceselect.html:83
 #: site/apps/osvolumes/flvolumes.html:1
 #: site/apps/osvolumes/states.config.js:56
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:48
 #: staff/apps/osinstances/create/flbootsourceselect.html:66
-#: staff/apps/osinstances/flinstancedetail.html:193
+#: staff/apps/osinstances/flinstancedetail.html:211
 #: staff/apps/osvolumes/flvolumes.html:1
 #: staff/apps/osvolumes/states.config.js:56
 msgid "Volumes"
@@ -13412,7 +13580,7 @@ msgstr ""
 #: staff/apps/osflavors/flflavors.component.js:31
 #: staff/apps/osimages/flimagedetails.component.js:32
 #: staff/apps/osimages/flimages.component.js:33
-#: staff/apps/osimages/update/flimageupdate.component.js:32
+#: staff/apps/osimages/update/flimageupdate.component.js:33
 #: staff/apps/osinstances/actions/flinstanceactions.directive.js:43
 #: staff/apps/osinstances/flinstancedetails.component.js:37
 #: staff/apps/osinstances/flinstances.component.js:29
@@ -13435,6 +13603,10 @@ msgstr ""
 
 #: commons/ui/licensewarning/fllicensewarning.html:8
 msgid "You are using more CPU cores than your license allows. Click for more info."
+msgstr ""
+
+#: site/apps/osimages/memberstatus/memberstatusdialog.template.html:7
+msgid "You can accept or reject this image."
 msgstr ""
 
 #: staff/apps/settings/general/license/flsetlicense.html:16
@@ -13489,6 +13661,10 @@ msgstr[1] ""
 
 #: commons/ui/licensewarning/fllicensewarningdialog.html:33
 msgid "Your license expires today. Please renew your Fleio license."
+msgstr ""
+
+#: site/apps/osimages/flimagedetails.component.js:75
+msgid "Your request was sent."
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:80
@@ -13548,11 +13724,11 @@ msgstr ""
 msgid "abc* -> {{$ctrl.item.display}} starts with \"abc\""
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:318
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:338
 msgid "added the following CC recipients"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:201
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:220
 msgid "added the following cc recipients:"
 msgstr ""
 
@@ -13564,12 +13740,12 @@ msgstr ""
 msgid "assigned this TODO to"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:176
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:195
 msgid "assigned this ticket to"
 msgstr ""
 
 #: tickets/staff/frontend/components/states.config.js:64
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:17
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:22
 #: todo/staff/frontend/components/states.config.js:60
 #: todo/staff/frontend/components/todo_details/tododetails.html:14
 msgid "assigned to"
@@ -13618,43 +13794,43 @@ msgstr ""
 msgid "change"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:304
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:324
 msgid "changed assignee to"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:217
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:325
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:236
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:345
 msgid "changed client to"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:193
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:311
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:212
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:331
 msgid "changed department to"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:225
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:338
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:244
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:358
 #: todo/staff/frontend/components/todo_details/tododetails.html:80
 msgid "changed description on"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:283
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:303
 msgid "changed internal status to {{item.new_internal_status}}"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:209
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:297
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:228
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:317
 msgid "changed priority to"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:185
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:276
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:204
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:296
 #: todo/staff/frontend/components/todo_details/tododetails.html:72
 msgid "changed status to"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:232
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:332
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:251
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:352
 #: todo/staff/frontend/components/todo_details/tododetails.html:87
 msgid "changed title on"
 msgstr ""
@@ -13696,16 +13872,15 @@ msgid "created at"
 msgstr ""
 
 #: staff/apps/clientgroups/flclientgroups.html:23
-#: staff/apps/clientgroups/flclientgroups.html:62
+#: staff/apps/networks/flnetworkadd.html:161
 #: staff/apps/osbilling/plans/flbillingplandetails.html:9
 #: staff/apps/osbilling/plans/flbillingplans.html:30
-#: staff/apps/osbilling/plans/flbillingplans.html:84
+#: staff/apps/osbilling/plans/flbillingplans.html:87
 #: staff/apps/osflavorgroups/flflavorgroups.html:23
-#: staff/apps/osflavorgroups/flflavorgroups.html:62
 #: staff/apps/settings/configurations/configurationdetails.html:8
 #: staff/apps/settings/configurations/configurations.html:19
-#: staff/apps/settings/configurations/configurations.html:72
 #: staff/apps/settings/general/currency/flcurrencies.html:8
+#: staff/apps/subnetpools/flsubnetpools.html:21
 msgid "default"
 msgstr ""
 
@@ -13780,10 +13955,10 @@ msgstr ""
 
 #: site/apps/networks/flnetworkdetails.html:8
 #: site/apps/networks/flnetworks.html:15
-#: site/apps/networks/flnetworks.html:78
+#: site/apps/networks/flnetworks.html:77
 #: staff/apps/networks/flnetworkdetails.html:8
 #: staff/apps/networks/flnetworks.html:15
-#: staff/apps/networks/flnetworks.html:76
+#: staff/apps/networks/flnetworks.html:74
 msgid "external"
 msgstr ""
 
@@ -13791,7 +13966,7 @@ msgstr ""
 msgid "filter"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:94
+#: staff/apps/osinstances/states.config.js:100
 msgid "flavor"
 msgstr ""
 
@@ -13799,7 +13974,7 @@ msgstr ""
 msgid "flavor group"
 msgstr ""
 
-#: staff/apps/osinstances/states.config.js:140
+#: staff/apps/osinstances/states.config.js:146
 msgid "image"
 msgstr ""
 
@@ -13820,10 +13995,10 @@ msgstr ""
 
 #: site/apps/networks/flnetworkdetails.html:10
 #: site/apps/networks/flnetworks.html:16
-#: site/apps/networks/flnetworks.html:79
+#: site/apps/networks/flnetworks.html:78
 #: staff/apps/networks/flnetworkdetails.html:10
 #: staff/apps/networks/flnetworks.html:16
-#: staff/apps/networks/flnetworks.html:77
+#: staff/apps/networks/flnetworks.html:75
 msgid "internal"
 msgstr ""
 
@@ -13858,10 +14033,10 @@ msgstr ""
 #: staff/apps/billing/journal/journaldetail.html:42
 #: staff/apps/billing/services/details/servicedetails.html:77
 #: staff/apps/billing/services/details/servicedetails.html:86
-#: staff/apps/clients/flclientdetails.html:283
-#: staff/apps/clients/flclientdetails.html:289
-#: staff/apps/clients/flclientdetails.html:301
-#: staff/apps/osflavors/flflavordetails.html:42
+#: staff/apps/clients/flclientdetails.html:294
+#: staff/apps/clients/flclientdetails.html:300
+#: staff/apps/clients/flclientdetails.html:312
+#: staff/apps/osflavors/flflavordetails.html:46
 #: staff/apps/osflavors/flflavors.html:37
 msgid "n/a"
 msgstr ""
@@ -13887,7 +14062,7 @@ msgstr ""
 msgid "none"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.html:113
+#: site/apps/billing/history/billinghistory.html:114
 msgid "not charged"
 msgstr ""
 
@@ -13895,28 +14070,28 @@ msgstr ""
 msgid "not running"
 msgstr ""
 
-#: staff/apps/subnetpools/flsubnetpools.html:17
+#: staff/apps/subnetpools/flsubnetpools.html:18
 msgid "not shared"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:269
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:289
 msgid "note from"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:178
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:186
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:194
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:202
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:210
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:218
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:277
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:283
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:298
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:305
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:312
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:319
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:326
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:54
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:197
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:205
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:213
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:221
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:229
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:237
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:297
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:303
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:318
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:325
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:332
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:339
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:346
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:59
 #: todo/staff/frontend/components/todo_details/tododetails.html:44
 #: todo/staff/frontend/components/todo_details/tododetails.html:65
 #: todo/staff/frontend/components/todo_details/tododetails.html:73
@@ -13947,10 +14122,10 @@ msgid "product configuration"
 msgstr ""
 
 #: site/apps/osimages/flimagedetails.html:9
-#: site/apps/osimages/flimages.html:117
+#: site/apps/osimages/flimages.html:123
 #: site/apps/osimages/flimages.html:20
 #: staff/apps/osimages/flimagedetails.html:9
-#: staff/apps/osimages/flimages.html:112
+#: staff/apps/osimages/flimages.html:120
 #: staff/apps/osimages/flimages.html:20
 msgid "protected"
 msgstr ""
@@ -13960,8 +14135,8 @@ msgstr ""
 msgid "registration date"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:239
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:291
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:258
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:311
 msgid "reopened ticket because of email reply on"
 msgstr ""
 
@@ -13973,7 +14148,7 @@ msgstr ""
 msgid "running"
 msgstr ""
 
-#: staff/apps/subnetpools/flsubnetpools.html:16
+#: staff/apps/subnetpools/flsubnetpools.html:17
 msgid "shared"
 msgstr ""
 
@@ -14003,7 +14178,7 @@ msgstr ""
 msgid "top level domain"
 msgstr ""
 
-#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:23
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:28
 #: todo/staff/frontend/components/todo_details/tododetails.html:20
 msgid "unassigned"
 msgstr ""
@@ -14028,7 +14203,7 @@ msgstr ""
 msgid "vCPU"
 msgstr ""
 
-#: staff/apps/osflavors/flflavors.html:71
+#: staff/apps/osflavors/flflavors.html:75
 #: staff/apps/osflavors/states.config.js:76
 msgid "vCPUs"
 msgstr ""
@@ -14107,7 +14282,7 @@ msgstr ""
 msgid "{{ cycle.setup_fee_entire_quantity?'yes':'no' }}"
 msgstr ""
 
-#: site/apps/osvolumes/flvolumes.html:89
+#: site/apps/osvolumes/flvolumes.html:99
 msgid "{{ volume.type }}"
 msgstr ""
 
@@ -14125,13 +14300,13 @@ msgstr ""
 msgid "{{$ctrl.bootSource.type}}"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:117
-#: staff/apps/osinstances/create/flinstancecreate.html:147
+#: site/apps/osinstances/create/flinstancecreate.html:120
+#: staff/apps/osinstances/create/flinstancecreate.html:150
 msgid "{{$ctrl.flavor.memory_gb}} GB memory"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:118
-#: staff/apps/osinstances/create/flinstancecreate.html:148
+#: site/apps/osinstances/create/flinstancecreate.html:121
+#: staff/apps/osinstances/create/flinstancecreate.html:151
 msgid "{{$ctrl.flavor.vcpus}} virtual CPUs"
 msgstr ""
 
@@ -14180,6 +14355,7 @@ msgstr ""
 
 #: site/apps/osinstances/create/flbootsourceselect.html:18
 #: site/apps/osinstances/create/flbootsourceselect.html:58
+#: site/apps/osinstances/create/flbootsourceselect.html:75
 #: staff/apps/osinstances/create/flbootsourceselect.html:18
 #: staff/apps/osinstances/create/flbootsourceselect.html:58
 msgid "{{::image.os_distro}} {{::image.os_version}} {{::image.architecture}} {{::image.created_at | date}}"
@@ -14203,16 +14379,16 @@ msgstr ""
 msgid "{{::reqVolume.size}} GB created on {{::reqVolume.created_at | date }}"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:479
+#: staff/apps/clients/flclientdetails.html:495
 msgid "{{::service.status}}"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:96
+#: site/apps/osinstances/create/flbootsourceselect.html:113
 #: staff/apps/osinstances/create/flbootsourceselect.html:96
 msgid "{{::volsnap.size}} GB created on {{::volsnap.created_at | date}}"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:77
+#: site/apps/osinstances/create/flbootsourceselect.html:94
 #: staff/apps/osinstances/create/flbootsourceselect.html:77
 msgid "{{::volume.size}} GB created on {{::volume.created_at | date }}"
 msgstr ""
@@ -14239,7 +14415,7 @@ msgstr ""
 msgid "{{order.status | translate | uppercase }} - {{ order.invoice.status | translate | uppercase }}"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.html:93
+#: site/apps/billing/history/billinghistory.html:95
 msgid "{{resource_usage.resource_name | translate}} details"
 msgstr ""
 
