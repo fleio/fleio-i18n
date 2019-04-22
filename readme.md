@@ -50,12 +50,11 @@ Change into this directory and install `gulp` and `gulp-angular-gettext` npm pac
 
 If `npm` is not present on your system you should install it using yum or apt, depending on your distro.
 
-Inside `po` subdirectory create a new `<language_code>.po` file for your language. The `<language_code`
-should be replaced with the code for your new language (e.g. `ro`, `en`, `fr` ...)
+Open the latest version of `Poedit` and click on `File -> New from POT/PO File...`, selecting the `template.pot` file found in this repository. Choose the language of translation (e.g.: 'en', 'ru', 'fa', ...) and you will be able to start translating strings. Make sure you save your `.po` translation file.
 
 After you edit the translation file with `Poedit` use `gulp translations` to generate `.js` files from `.po` files.
 
-The new language file should be placed somewhere in the frontend installation file and use **Frontend customization** 
+The new language file should be placed somewhere in the Fleio frontend installation directory and use **Frontend customization** 
 feature available in fleio staff panel at **Settings/General** section to include you `.js` file `index.html` for both
 staff and end-user:
 
