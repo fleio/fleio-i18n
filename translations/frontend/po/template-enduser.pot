@@ -12,6 +12,10 @@ msgstr ""
 msgid "(All paid)"
 msgstr ""
 
+#: site/apps/osinstances/create/flinstancecreate.html:113
+msgid "(OUT OF STOCK)"
+msgstr ""
+
 #: site/apps/dashboard/fldashboard.html:69
 msgid "({{$ctrl.openstackSummary.stopped_instances}} stopped)"
 msgstr ""
@@ -60,11 +64,11 @@ msgid_plural "{{$ctrl.openstackSummary.volumes}} volumes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:58
+#: site/apps/osinstances/flinstancedetail.component.js:62
 msgid "24 hours"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:64
+#: site/apps/osinstances/flinstancedetail.component.js:68
 msgid "30 days"
 msgstr ""
 
@@ -76,7 +80,7 @@ msgstr ""
 msgid "404: Not found :("
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:61
+#: site/apps/osinstances/flinstancedetail.component.js:65
 msgid "7 days"
 msgstr ""
 
@@ -98,7 +102,7 @@ msgid ""
 "              <translate>Associated SSH Keys will be set again on the new instance.</translate><br>"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:199
+#: site/apps/osimages/create/flimagecreate.html:200
 msgid ""
 "<strong>Access permissions</strong><br>\n"
 "              The access permission for the image. <strong>Public</strong> or <strong>Private</strong>.\n"
@@ -107,7 +111,7 @@ msgid ""
 "              <strong>Protected</strong> ensures that only users with permissions can delete the image."
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:184
+#: site/apps/osimages/create/flimagecreate.html:185
 msgid ""
 "<strong>Image details</strong><br>\n"
 "              Select the <strong>region</strong> where this image should be created, give the image a name\n"
@@ -123,7 +127,7 @@ msgid ""
 "                    or snapshot of an instance."
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:191
+#: site/apps/osimages/create/flimagecreate.html:192
 msgid ""
 "<strong>Image properties</strong><br>\n"
 "              Select the format of the Image disk from the <strong>Disk format</strong> dropdown.\n"
@@ -133,7 +137,7 @@ msgid ""
 "              to take different actions based on the information provided."
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:206
+#: site/apps/osimages/create/flimagecreate.html:207
 msgid ""
 "<strong>Image source</strong><br>\n"
 "              Select the source for the actual image data from the <strong>Image source</strong> dropdown.\n"
@@ -158,7 +162,7 @@ msgid ""
 "                    RAM an instance created from this image will required in order to run properly."
 msgstr ""
 
-#: site/apps/osvolumes/create/flvolumecreate.html:106
+#: site/apps/osvolumes/create/flvolumecreate.html:109
 msgid ""
 "<strong>New OpenStack Volume</strong><br>\n"
 "            You can create a new Volume by first selecting the region<br>\n"
@@ -180,7 +184,7 @@ msgid ""
 "                    Set this option in order to protect the image from accidental deletion"
 msgstr ""
 
-#: site/apps/osvolumes/create/flvolumecreate.html:118
+#: site/apps/osvolumes/create/flvolumecreate.html:121
 msgid ""
 "<strong>Size</strong><br>\n"
 "            Enter the size of the new volume. This size must be equal of higher than the source size if <br>\n"
@@ -188,7 +192,7 @@ msgid ""
 "            must be at least 3GB."
 msgstr ""
 
-#: site/apps/osvolumes/create/flvolumecreate.html:111
+#: site/apps/osvolumes/create/flvolumecreate.html:114
 msgid ""
 "<strong>Source Selection</strong><br>\n"
 "            You can create an empty volume or use an image or an existing volume as a source.<br>\n"
@@ -197,7 +201,7 @@ msgid ""
 "            and you will be able to boot directly from that volume. <br>"
 msgstr ""
 
-#: site/apps/osvolumes/create/flvolumecreate.html:124
+#: site/apps/osvolumes/create/flvolumecreate.html:127
 msgid ""
 "<strong>Type</strong><br>\n"
 "            A volume type can also be set while creating the volume. <br>\n"
@@ -220,7 +224,8 @@ msgid ""
 "                <translate>Description</translate>:&nbsp;{{ router.description ? (router.description) : \"-\" }}"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:153
+#: site/apps/osinstances/create/flinstancecreate.html:164
+#: site/apps/osinstances/create/flinstancecreate.html:167
 msgid "A network is required to create a new Instance."
 msgstr ""
 
@@ -239,6 +244,10 @@ msgstr ""
 msgid "A valid domain in required"
 msgstr ""
 
+#: oscommons/osfilters/flinstancestatus.filter.js:32
+msgid "ACTIVE"
+msgstr ""
+
 #: site/apps/osapiusers/flapiusers.component.js:80
 msgid "API user deleted"
 msgstr ""
@@ -252,7 +261,7 @@ msgstr ""
 msgid "API users"
 msgstr ""
 
-#: site/apps/osinstances/flinstances.html:63
+#: site/apps/osinstances/flinstances.html:65
 msgid "Acccess IP"
 msgstr ""
 
@@ -281,8 +290,8 @@ msgstr ""
 #: site/apps/networks/flnetworks.html:64
 #: site/apps/osapiusers/flapiusers.html:63
 #: site/apps/osimages/flimages.html:92
-#: site/apps/osinstances/flinstancedetail.html:393
-#: site/apps/osinstances/flinstances.html:66
+#: site/apps/osinstances/flinstancedetail.html:399
+#: site/apps/osinstances/flinstances.html:68
 #: site/apps/ossecuritygroups/flsecuritygroups.html:69
 #: site/apps/osvolumes/flvolumes.html:62
 #: site/apps/oszones/flzonedetails.html:54
@@ -314,7 +323,7 @@ msgstr ""
 msgid "Add API User"
 msgstr ""
 
-#: site/apps/osapiusers/flapiuseredit.html:38
+#: site/apps/osapiusers/flapiuseredit.html:43
 #: site/apps/osapiusers/flapiusers.component.js:24
 #: site/apps/osapiusers/flapiusers.html:126
 msgid "Add API user"
@@ -326,8 +335,8 @@ msgstr ""
 msgid "Add Contact"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:195
-#: site/apps/networks/flnetworkadd.html:199
+#: site/apps/networks/flnetworkadd.html:203
+#: site/apps/networks/flnetworkadd.html:207
 #: site/apps/networks/flnetworksubnetadd.html:148
 #: site/apps/networks/flnetworksubnetadd.html:152
 msgid "Add DNS name server"
@@ -345,14 +354,14 @@ msgstr ""
 msgid "Add a new domain contact"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:170
-#: site/apps/networks/flnetworkadd.html:174
+#: site/apps/networks/flnetworkadd.html:178
+#: site/apps/networks/flnetworkadd.html:182
 #: site/apps/networks/flnetworksubnetadd.html:123
 #: site/apps/networks/flnetworksubnetadd.html:127
 msgid "Add allocation pool"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:86
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:87
 msgid "Add attachments"
 msgstr ""
 
@@ -391,14 +400,14 @@ msgid "Add filter"
 msgstr ""
 
 #: site/apps/floatingips/flfloatingipadd.html:3
-#: site/apps/floatingips/flfloatingipadd.html:42
+#: site/apps/floatingips/flfloatingipadd.html:46
 #: site/apps/floatingips/flfloatingips.component.js:37
 #: site/apps/floatingips/flfloatingips.html:111
 msgid "Add floating IP"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:224
-#: site/apps/networks/flnetworkadd.html:228
+#: site/apps/networks/flnetworkadd.html:232
+#: site/apps/networks/flnetworkadd.html:236
 #: site/apps/networks/flnetworksubnetadd.html:177
 #: site/apps/networks/flnetworksubnetadd.html:181
 msgid "Add host route"
@@ -436,7 +445,7 @@ msgstr ""
 msgid "Add new domain contact"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:184
+#: site/apps/osinstances/create/flinstancecreate.html:199
 msgid "Add new key"
 msgstr ""
 
@@ -508,6 +517,8 @@ msgstr ""
 msgid "Admin state"
 msgstr ""
 
+#: site/apps/networks/flnetworkadd.html:46
+#: site/apps/networks/flnetworkedit.html:41
 #: site/apps/osrouters/flrouterdetails.html:69
 msgid "Admin state up"
 msgstr ""
@@ -536,12 +547,12 @@ msgstr ""
 msgid "All ports"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:159
+#: site/apps/networks/flnetworkadd.html:167
 #: site/apps/networks/flnetworksubnetadd.html:112
 msgid "Allocation pool end"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:153
+#: site/apps/networks/flnetworkadd.html:161
 #: site/apps/networks/flnetworksubnetadd.html:106
 msgid "Allocation pool start"
 msgstr ""
@@ -570,7 +581,7 @@ msgstr ""
 msgid "Any"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:138
+#: site/apps/osimages/create/flimagecreate.html:139
 #: site/apps/osimages/update/flimageupdate.html:107
 msgid "Any hypervisor"
 msgstr ""
@@ -614,24 +625,24 @@ msgstr ""
 #: domains/enduser/frontend/components/contacts_actions/contactsactions.component.js:26
 #: site/apps/baseconfig/fleio.baseconfig.module.js:21
 #: site/apps/floatingips/flfloatingipdetails.component.js:38
-#: site/apps/floatingips/flfloatingips.component.js:74
+#: site/apps/floatingips/flfloatingips.component.js:75
 #: site/apps/networks/flnetworkdetails.component.js:118
 #: site/apps/networks/flnetworkdetails.component.js:70
-#: site/apps/networks/flnetworks.component.js:168
+#: site/apps/networks/flnetworks.component.js:170
 #: site/apps/osapiusers/flapiusers.component.js:73
 #: site/apps/osimages/flimagedetails.component.js:43
 #: site/apps/osimages/flimages.component.js:50
-#: site/apps/osinstances/flinstancedetail.component.js:294
-#: site/apps/osinstances/flinstancedetail.component.js:341
+#: site/apps/osinstances/flinstancedetail.component.js:298
+#: site/apps/osinstances/flinstancedetail.component.js:345
 #: site/apps/osrouters/flrouterdetails.component.js:108
 #: site/apps/osrouters/flrouterdetails.component.js:118
-#: site/apps/osrouters/flrouters.component.js:115
+#: site/apps/osrouters/flrouters.component.js:116
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:112
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:123
-#: site/apps/ossecuritygroups/flsecuritygroups.component.js:88
+#: site/apps/ossecuritygroups/flsecuritygroups.component.js:89
 #: site/apps/oszones/flzonedetails.component.js:102
 #: site/apps/oszones/flzonedetails.component.js:164
-#: site/apps/oszones/flzones.component.js:90
+#: site/apps/oszones/flzones.component.js:91
 #: site/apps/pkm/flpkmkeys.component.js:75
 msgid "Are you sure?"
 msgstr ""
@@ -640,7 +651,7 @@ msgstr ""
 msgid "Assigned to"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:348
+#: site/apps/osinstances/flinstancedetail.html:353
 msgid "Associate"
 msgstr ""
 
@@ -691,7 +702,7 @@ msgid ""
 "                {{ $ctrl.floatingIp.associated_object.id }}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:239
+#: site/apps/osinstances/flinstancedetail.html:244
 #: site/apps/osvolumes/attach/flvolumeattach.html:31
 msgid "Attach volume"
 msgstr ""
@@ -700,12 +711,12 @@ msgstr ""
 msgid "Attach volume to instance {{ $ctrl.instance.name }}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:192
+#: site/apps/osinstances/flinstancedetail.component.js:196
 msgid "Attaching volume to instance"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:66
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:66
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:114
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:77
 msgid "Attachment file size is too big."
 msgstr ""
 
@@ -772,6 +783,18 @@ msgstr ""
 msgid "Available products"
 msgstr ""
 
+#: oscommons/osfilters/flinstancestatus.filter.js:27
+msgid "BOOTED FROM ISO"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:26
+msgid "BOOTING FROM ISO"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:36
+msgid "BUILDING"
+msgstr ""
+
 #: site/apps/osinstances/resize/flinstanceresize.html:73
 msgid "Back"
 msgstr ""
@@ -789,7 +812,7 @@ msgstr ""
 msgid "Backup rotation"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:349
+#: site/apps/osinstances/flinstancedetail.component.js:353
 msgid "Backup schedule deleted"
 msgstr ""
 
@@ -809,7 +832,7 @@ msgstr ""
 msgid "Backup schedule type"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:384
+#: site/apps/osinstances/flinstancedetail.html:390
 msgid "Backup schedules"
 msgstr ""
 
@@ -821,7 +844,11 @@ msgstr ""
 msgid "Backup was scheduled for creation"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:386
+#: site/apps/osinstances/flinstancedetail.html:360
+msgid "Backups"
+msgstr ""
+
+#: site/apps/osinstances/flinstancedetail.html:392
 msgid "Backups will be created every time the scheduler is being run. It will take into account all schedules that have the 'run at' field value set earlier than the moment when the script is being run."
 msgstr ""
 
@@ -829,7 +856,7 @@ msgstr ""
 msgid "Balance {{$ctrl.invoice.balance}} {{::$ctrl.invoice.currency }}"
 msgstr ""
 
-#: site/apps/dashboard/states.config.js:51
+#: site/apps/dashboard/states.config.js:61
 msgid "Before you continue, please fill in your information"
 msgstr ""
 
@@ -856,7 +883,7 @@ msgstr ""
 msgid "But your license includes {{$ctrl.max_cores}} cores."
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:182
+#: site/apps/osinstances/flinstancedetail.html:187
 msgid "Bytes in/out"
 msgstr ""
 
@@ -873,11 +900,11 @@ msgstr ""
 msgid "CIDR"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:133
+#: site/apps/osinstances/flinstancedetail.html:138
 msgid "CPU metrics"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:156
+#: site/apps/osinstances/flinstancedetail.html:161
 msgid "CPU utilization"
 msgstr ""
 
@@ -895,13 +922,13 @@ msgstr ""
 #: site/apps/billing/services/upgrade/flservicechangeproduct.component.html:49
 #: site/apps/billing/services/upgrade/flservicechangeproduct.component.html:69
 #: site/apps/clients/clienteditdlg/clientedit.html:123
-#: site/apps/floatingips/flfloatingipadd.html:39
-#: site/apps/networks/flnetworkadd.html:238
-#: site/apps/networks/flnetworkautocreate.html:26
+#: site/apps/floatingips/flfloatingipadd.html:42
+#: site/apps/networks/flnetworkadd.html:246
+#: site/apps/networks/flnetworkautocreate.html:29
 #: site/apps/networks/flnetworkedit.html:48
 #: site/apps/networks/flnetworksubnetadd.html:190
-#: site/apps/osapiusers/flapiuseredit.html:36
-#: site/apps/osimages/create/flimagecreate.html:221
+#: site/apps/osapiusers/flapiuseredit.html:39
+#: site/apps/osimages/create/flimagecreate.html:222
 #: site/apps/osimages/memberstatus/memberstatusdialog.template.html:21
 #: site/apps/osimages/snapshot/flinstancesnapshot.html:17
 #: site/apps/osimages/update/flimageupdate.html:139
@@ -909,7 +936,8 @@ msgstr ""
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:36
 #: site/apps/osinstances/associatesecuritygroup/flassociatesecuritygroup.html:32
 #: site/apps/osinstances/bootfromiso/flinstancebootfromiso.html:82
-#: site/apps/osinstances/create/flinstancecreate.html:230
+#: site/apps/osinstances/create/flbootsourceselect.html:164
+#: site/apps/osinstances/create/flinstancecreate.html:247
 #: site/apps/osinstances/dissociateip/flinstancedissociateip.html:24
 #: site/apps/osinstances/editptr/fleditptr.html:20
 #: site/apps/osinstances/password/flinstancechangepassword.html:29
@@ -918,16 +946,16 @@ msgstr ""
 #: site/apps/osinstances/rescue/flinstancerescue.html:96
 #: site/apps/osinstances/resize/flinstanceresize.html:66
 #: site/apps/osrouters/flinterfaceadd.html:27
-#: site/apps/osrouters/flrouteredit.html:62
-#: site/apps/ossecuritygroups/flsecuritygroupedit.html:42
+#: site/apps/osrouters/flrouteredit.html:65
+#: site/apps/ossecuritygroups/flsecuritygroupedit.html:45
 #: site/apps/ossecuritygroups/flsecuritygrouprulecreate.html:131
 #: site/apps/osvolumes/attach/flvolumeattach.html:28
-#: site/apps/osvolumes/create/flvolumecreate.html:99
+#: site/apps/osvolumes/create/flvolumecreate.html:102
 #: site/apps/osvolumes/extend/flvolumeextend.html:22
 #: site/apps/osvolumes/rename/flvolumerename.html:20
-#: site/apps/oszones/flzoneedit.html:55
+#: site/apps/oszones/flzoneedit.html:58
 #: site/apps/pkm/flpkmkeyedit.html:36
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:99
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:100
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:89
 msgid "Cancel"
 msgstr ""
@@ -1016,6 +1044,16 @@ msgstr ""
 msgid "Check if domain is available"
 msgstr ""
 
+#: site/apps/osinstances/flinstancedetail.component.js:36
+#: site/apps/osinstances/flinstances.component.js:31
+msgid ""
+"Check if files have been successfully\n"
+"migrated to the new instance disk. \n"
+"Choose Verify resize from the instance menu\n"
+"to confirm migration was successful, otherwise\n"
+"choose Revert resize to revert back to the initial disk."
+msgstr ""
+
 #: site/apps/signup/flconfirmemail.component.html:12
 msgid "Check your email account and click on the link to confirm the email address."
 msgstr ""
@@ -1078,7 +1116,7 @@ msgstr ""
 msgid "Click here to edit domain contact"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:58
+#: commons/userprofile/fluserprofile.html:59
 msgid "Client accounts"
 msgstr ""
 
@@ -1100,12 +1138,17 @@ msgid "Close impersonation"
 msgstr ""
 
 #: tickets/enduser/frontend/components/tickets_actions/ticketsactions.html:9
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:276
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:277
 msgid "Close ticket"
 msgstr ""
 
 #: site/apps/baseconfig/fleio.baseconfig.module.js:37
 msgid "Cloud"
+msgstr ""
+
+#: site/apps/osinstances/create/flinstancecreate.html:138
+#: site/apps/osinstances/create/flinstancecreate.html:141
+msgid "Cloud-init user data"
 msgstr ""
 
 #: site/apps/osinstances/create/flbootsourceselect.html:66
@@ -1193,7 +1236,7 @@ msgstr ""
 msgid "Could not delete API User"
 msgstr ""
 
-#: site/apps/floatingips/flfloatingips.component.js:82
+#: site/apps/floatingips/flfloatingips.component.js:83
 msgid "Could not delete floating IP"
 msgstr ""
 
@@ -1201,11 +1244,11 @@ msgstr ""
 msgid "Could not delete interface"
 msgstr ""
 
-#: site/apps/networks/flnetworks.component.js:174
+#: site/apps/networks/flnetworks.component.js:176
 msgid "Could not delete network"
 msgstr ""
 
-#: site/apps/osrouters/flrouters.component.js:122
+#: site/apps/osrouters/flrouters.component.js:123
 msgid "Could not delete router"
 msgstr ""
 
@@ -1213,8 +1256,12 @@ msgstr ""
 msgid "Could not delete subnet"
 msgstr ""
 
-#: site/apps/oszones/flzones.component.js:98
+#: site/apps/oszones/flzones.component.js:99
 msgid "Could not delete zone"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:76
+msgid "Could not preselect department"
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:72
@@ -1230,25 +1277,29 @@ msgstr ""
 msgid "Country / state"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:244
-#: site/apps/networks/flnetworkautocreate.html:30
+#: site/apps/networks/flnetworkadd.html:253
+#: site/apps/networks/flnetworkautocreate.html:36
 #: site/apps/networks/flnetworkedit.html:52
 #: site/apps/networks/flnetworksubnetadd.html:194
 #: site/apps/osrouters/flinterfaceadd.html:31
-#: site/apps/osrouters/flrouteredit.html:66
-#: site/apps/ossecuritygroups/flsecuritygroupedit.html:46
+#: site/apps/osrouters/flrouteredit.html:70
+#: site/apps/ossecuritygroups/flsecuritygroupedit.html:50
 #: site/apps/ossecuritygroups/flsecuritygrouprulecreate.html:134
 #: site/apps/osvolumes/states.config.js:114
-#: site/apps/oszones/flzoneedit.html:59
+#: site/apps/oszones/flzoneedit.html:65
 msgid "Create"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:226
+#: site/apps/osinstances/create/flinstancecreate.html:243
 msgid "Create & Boot from ISO"
 msgstr ""
 
 #: site/apps/osinstances/editptr/fleditptr.html:3
 msgid "Create PTR record"
+msgstr ""
+
+#: site/apps/osvolumes/create/flvolumecreate.component.js:50
+msgid "Create a new empty volume"
 msgstr ""
 
 #: site/apps/osinstances/create/flinstancecreate.html:5
@@ -1277,20 +1328,20 @@ msgstr ""
 
 #: site/apps/dashboard/fldashboard.html:87
 #: site/apps/osimages/create/flimagecreate.html:14
-#: site/apps/osimages/create/flimagecreate.html:218
+#: site/apps/osimages/create/flimagecreate.html:219
 #: site/apps/osimages/flimages.component.js:35
 #: site/apps/osimages/states.config.js:136
 msgid "Create image"
 msgstr ""
 
 #: site/apps/dashboard/fldashboard.html:73
-#: site/apps/osinstances/create/flinstancecreate.html:227
-#: site/apps/osinstances/flinstances.component.js:28
+#: site/apps/osinstances/create/flinstancecreate.html:244
+#: site/apps/osinstances/flinstances.component.js:29
 #: site/apps/osinstances/states.config.js:115
 msgid "Create instance"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:364
+#: site/apps/osinstances/flinstancedetail.html:370
 msgid "Create instant backups for your instance."
 msgstr ""
 
@@ -1305,11 +1356,11 @@ msgstr ""
 msgid "Create new account"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:378
+#: site/apps/osinstances/flinstancedetail.html:384
 msgid "Create new backup"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:418
+#: site/apps/osinstances/flinstancedetail.html:424
 msgid "Create new backup schedule"
 msgstr ""
 
@@ -1326,12 +1377,16 @@ msgid "Create security group"
 msgstr ""
 
 #: site/apps/osimages/snapshot/flinstancesnapshot.html:18
-#: site/apps/osinstances/flinstancedetail.html:205
+#: site/apps/osinstances/flinstancedetail.html:210
 msgid "Create snapshot"
 msgstr ""
 
+#: site/apps/networks/flnetworkadd.html:52
+msgid "Create subnet"
+msgstr ""
+
 #: site/apps/dashboard/fldashboard.html:100
-#: site/apps/osvolumes/create/flvolumecreate.html:96
+#: site/apps/osvolumes/create/flvolumecreate.html:99
 #: site/apps/osvolumes/flvolumes.component.js:29
 msgid "Create volume"
 msgstr ""
@@ -1357,7 +1412,7 @@ msgstr ""
 #: site/apps/networks/states.config.js:40
 #: site/apps/osimages/flimages.html:88
 #: site/apps/osimages/states.config.js:50
-#: site/apps/osinstances/flinstances.html:61
+#: site/apps/osinstances/flinstances.html:63
 #: site/apps/ossecuritygroups/flsecuritygroups.html:66
 #: site/apps/ossecuritygroups/states.config.js:36
 #: site/apps/ossecuritygroups/states.config.js:39
@@ -1400,7 +1455,7 @@ msgid ""
 "                Email: {{ zone.email }}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:88
+#: site/apps/osinstances/flinstancedetail.html:92
 msgid "Created at: {{::$ctrl.instance.created | date : 'medium' }}"
 msgstr ""
 
@@ -1409,7 +1464,7 @@ msgid "Created by"
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:83
-#: site/apps/osinstances/flinstances.html:34
+#: site/apps/osinstances/flinstances.html:36
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:38
 msgid "Created on"
 msgstr ""
@@ -1466,7 +1521,11 @@ msgstr ""
 msgid "Custom UDP rule"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:183
+#: oscommons/osfilters/flinstancestatus.filter.js:31
+msgid "DELETED"
+msgstr ""
+
+#: site/apps/networks/flnetworkadd.html:191
 #: site/apps/networks/flnetworksubnetadd.html:136
 msgid "DNS name server"
 msgstr ""
@@ -1505,7 +1564,7 @@ msgstr ""
 msgid "Deactivate image"
 msgstr ""
 
-#: site/apps/osvolumes/create/flvolumecreate.html:86
+#: site/apps/osvolumes/create/flvolumecreate.html:89
 msgid "Default"
 msgstr ""
 
@@ -1529,7 +1588,7 @@ msgstr ""
 #: site/apps/osinstances/actions/flinstanceactions.html:136
 #: site/apps/osinstances/actions/flxsinstanceactions.html:138
 #: site/apps/osinstances/actions/flxsinstanceactions.html:49
-#: site/apps/osinstances/flinstancedetail.component.js:344
+#: site/apps/osinstances/flinstancedetail.component.js:348
 #: site/apps/osrouters/flrouterdetails.html:19
 #: site/apps/osrouters/flrouterdetails.html:71
 #: site/apps/osrouters/flrouters.html:106
@@ -1549,17 +1608,17 @@ msgstr ""
 msgid "Delete Contact"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:342
+#: site/apps/osinstances/flinstancedetail.component.js:346
 msgid "Delete backup schedule {{name}}"
 msgstr ""
 
 #: site/apps/floatingips/flfloatingipdetails.component.js:40
-#: site/apps/floatingips/flfloatingips.component.js:76
+#: site/apps/floatingips/flfloatingips.component.js:77
 msgid "Delete floating IP"
 msgstr ""
 
 #: site/apps/floatingips/flfloatingipdetails.component.js:39
-#: site/apps/floatingips/flfloatingips.component.js:75
+#: site/apps/floatingips/flfloatingips.component.js:76
 msgid "Delete floating IP {{ip_address}}"
 msgstr ""
 
@@ -1596,12 +1655,12 @@ msgid "Delete key {{name}}"
 msgstr ""
 
 #: site/apps/networks/flnetworkdetails.component.js:72
-#: site/apps/networks/flnetworks.component.js:170
+#: site/apps/networks/flnetworks.component.js:172
 msgid "Delete network"
 msgstr ""
 
 #: site/apps/networks/flnetworkdetails.component.js:71
-#: site/apps/networks/flnetworks.component.js:169
+#: site/apps/networks/flnetworks.component.js:171
 msgid "Delete network {{name}}"
 msgstr ""
 
@@ -1615,12 +1674,12 @@ msgid "Delete recordset {{recordset}}"
 msgstr ""
 
 #: site/apps/osrouters/flrouterdetails.component.js:110
-#: site/apps/osrouters/flrouters.component.js:117
+#: site/apps/osrouters/flrouters.component.js:118
 msgid "Delete router"
 msgstr ""
 
 #: site/apps/osrouters/flrouterdetails.component.js:109
-#: site/apps/osrouters/flrouters.component.js:116
+#: site/apps/osrouters/flrouters.component.js:117
 msgid "Delete router {{name}}"
 msgstr ""
 
@@ -1633,17 +1692,17 @@ msgstr ""
 msgid "Delete rule {{rule}}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:409
+#: site/apps/osinstances/flinstancedetail.html:415
 msgid "Delete schedule"
 msgstr ""
 
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:114
-#: site/apps/ossecuritygroups/flsecuritygroups.component.js:90
+#: site/apps/ossecuritygroups/flsecuritygroups.component.js:91
 msgid "Delete security group"
 msgstr ""
 
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:113
-#: site/apps/ossecuritygroups/flsecuritygroups.component.js:89
+#: site/apps/ossecuritygroups/flsecuritygroups.component.js:90
 msgid "Delete security group {{name}}"
 msgstr ""
 
@@ -1674,12 +1733,12 @@ msgid "Delete volume {{name}}"
 msgstr ""
 
 #: site/apps/oszones/flzonedetails.component.js:104
-#: site/apps/oszones/flzones.component.js:92
+#: site/apps/oszones/flzones.component.js:93
 msgid "Delete zone"
 msgstr ""
 
 #: site/apps/oszones/flzonedetails.component.js:103
-#: site/apps/oszones/flzones.component.js:91
+#: site/apps/oszones/flzones.component.js:92
 msgid "Delete zone {{name}}"
 msgstr ""
 
@@ -1693,20 +1752,20 @@ msgid "Department: {{$ctrl.ticket.department_display}}"
 msgstr ""
 
 #: site/apps/billing/cart/cart.html:61
-#: site/apps/floatingips/flfloatingipadd.html:30
-#: site/apps/networks/flnetworkadd.html:18
+#: site/apps/floatingips/flfloatingipadd.html:33
+#: site/apps/networks/flnetworkadd.html:21
 #: site/apps/networks/flnetworkedit.html:17
 #: site/apps/networks/flnetworks.html:63
-#: site/apps/osapiusers/flapiuseredit.html:27
-#: site/apps/osrouters/flrouteredit.html:32
+#: site/apps/osapiusers/flapiuseredit.html:30
+#: site/apps/osrouters/flrouteredit.html:35
 #: site/apps/osrouters/flrouters.html:37
 #: site/apps/osrouters/flrouters.html:69
-#: site/apps/ossecuritygroups/flsecuritygroupedit.html:32
+#: site/apps/ossecuritygroups/flsecuritygroupedit.html:35
 #: site/apps/ossecuritygroups/flsecuritygrouprulecreate.html:20
 #: site/apps/ossecuritygroups/flsecuritygroups.html:67
-#: site/apps/osvolumes/create/flvolumecreate.html:38
-#: site/apps/oszones/flzoneedit.html:39
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:82
+#: site/apps/osvolumes/create/flvolumecreate.html:41
+#: site/apps/oszones/flzoneedit.html:42
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:83
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:82
 msgid "Description"
 msgstr ""
@@ -1742,16 +1801,16 @@ msgstr ""
 msgid "Destination"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:207
+#: site/apps/networks/flnetworkadd.html:215
 #: site/apps/networks/flnetworksubnetadd.html:160
 msgid "Destination (CIDR)"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:32
+#: site/apps/osinstances/flinstancedetail.component.js:33
 msgid "Detach volume"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:197
+#: site/apps/osinstances/flinstancedetail.component.js:201
 msgid "Detaching volume from instance"
 msgstr ""
 
@@ -1764,7 +1823,7 @@ msgstr ""
 msgid "Direction"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:63
+#: site/apps/osimages/create/flimagecreate.html:64
 msgid "Disk format"
 msgstr ""
 
@@ -1776,7 +1835,7 @@ msgstr ""
 msgid "Disk size is determined by flavor"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:38
+#: site/apps/osinstances/flinstancedetail.html:42
 msgid ""
 "Disk space:\n"
 "                  {{$ctrl.instance.flavor.root_gb }} GB"
@@ -1792,16 +1851,16 @@ msgstr ""
 msgid "Dissociate IP from instance {{ $ctrl.instance.name }}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:297
-#: site/apps/osinstances/flinstancedetail.component.js:33
+#: site/apps/osinstances/flinstancedetail.component.js:301
+#: site/apps/osinstances/flinstancedetail.component.js:34
 msgid "Dissociate security group"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:303
+#: site/apps/osinstances/flinstancedetail.component.js:307
 msgid "Dissociate security group scheduled"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:295
+#: site/apps/osinstances/flinstancedetail.component.js:299
 msgid "Dissociate security group {{sec_group}} from instance {{instance}}"
 msgstr ""
 
@@ -1840,7 +1899,7 @@ msgstr ""
 #: domains/enduser/frontend/components/transfer_domain_form/transferdomainform.html:5
 #: site/apps/billing/cart/cartitem.html:32
 #: site/apps/billing/cart/cartitem.html:34
-#: site/apps/oszones/flzoneedit.html:27
+#: site/apps/oszones/flzoneedit.html:30
 msgid "Domain name"
 msgstr ""
 
@@ -1899,6 +1958,10 @@ msgstr ""
 msgid "EPP code"
 msgstr ""
 
+#: oscommons/osfilters/flinstancestatus.filter.js:13
+msgid "ERROR"
+msgstr ""
+
 #: domains/enduser/frontend/components/contacts_actions/contactsactions.html:1
 #: site/apps/billing/cart/cart.html:39
 #: site/apps/billing/cart/cart.html:74
@@ -1952,14 +2015,14 @@ msgid "Edit profile"
 msgstr ""
 
 #: site/apps/osrouters/flrouterdetails.html:13
-#: site/apps/osrouters/flrouteredit.html:4
+#: site/apps/osrouters/flrouteredit.html:7
 #: site/apps/osrouters/flrouters.html:43
 #: site/apps/osrouters/flrouters.html:98
 msgid "Edit router"
 msgstr ""
 
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:34
-#: site/apps/ossecuritygroups/flsecuritygroupedit.html:4
+#: site/apps/ossecuritygroups/flsecuritygroupedit.html:7
 #: site/apps/ossecuritygroups/flsecuritygroups.component.js:43
 msgid "Edit security group"
 msgstr ""
@@ -1977,7 +2040,7 @@ msgid "Edit user profile"
 msgstr ""
 
 #: site/apps/oszones/flzonedetails.component.js:45
-#: site/apps/oszones/flzoneedit.html:4
+#: site/apps/oszones/flzoneedit.html:7
 #: site/apps/oszones/flzones.component.js:46
 msgid "Edit zone"
 msgstr ""
@@ -2001,7 +2064,7 @@ msgstr ""
 #: commons/userprofile/fluserprofile.html:71
 #: domains/enduser/frontend/components/contacts/contacts.html:26
 #: domains/enduser/frontend/components/states.config.js:194
-#: site/apps/oszones/flzoneedit.html:33
+#: site/apps/oszones/flzoneedit.html:36
 #: site/apps/oszones/flzones.html:65
 #: site/apps/signup/flsignup.html:34
 msgid "Email"
@@ -2031,7 +2094,7 @@ msgstr ""
 msgid "Email: {{ $ctrl.zone.email }}"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:144
+#: site/apps/networks/flnetworkadd.html:152
 #: site/apps/networks/flnetworksubnetadd.html:97
 msgid "Enable DHCP"
 msgstr ""
@@ -2064,9 +2127,13 @@ msgstr ""
 msgid "Enter a valid value"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:67
+#: site/apps/networks/flnetworkadd.html:75
 #: site/apps/networks/flnetworksubnetadd.html:23
 msgid "Enter address in CIDR format"
+msgstr ""
+
+#: site/apps/networks/flnetworkadd.html:68
+msgid "Enter address manually"
 msgstr ""
 
 #: domains/enduser/frontend/components/select_domain/selectdomain.html:34
@@ -2098,7 +2165,7 @@ msgstr ""
 msgid "Error when checking if domain is available."
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:205
+#: site/apps/osinstances/flinstancedetail.component.js:209
 msgid "Error while detaching"
 msgstr ""
 
@@ -2135,7 +2202,7 @@ msgstr ""
 msgid "Extend {{::$ctrl.volume.name }}'s disk size"
 msgstr ""
 
-#: site/apps/osrouters/flrouteredit.html:40
+#: site/apps/osrouters/flrouteredit.html:43
 msgid "External network selection"
 msgstr ""
 
@@ -2147,7 +2214,7 @@ msgstr ""
 msgid "Field is required"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:164
+#: site/apps/osimages/create/flimagecreate.html:165
 msgid "File"
 msgstr ""
 
@@ -2222,11 +2289,16 @@ msgstr ""
 msgid "Fixed ip address: {{ $ctrl.floatingIp.fixed_ip_address }}"
 msgstr ""
 
-#: site/apps/osinstances/flinstances.html:64
+#: site/apps/osinstances/flinstances.html:66
 msgid "Flavor"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:35
+#: oscommons/flavorsascards/flavorsascards.component.html:39
+#: oscommons/flavorsascards/flavorsascards.component.html:80
+msgid "Flavor is out of stock"
+msgstr ""
+
+#: site/apps/osinstances/flinstancedetail.html:39
 msgid "Flavor: {{$ctrl.instance.flavor.name }}"
 msgstr ""
 
@@ -2235,7 +2307,7 @@ msgid "Floating IP"
 msgstr ""
 
 #: site/apps/floatingips/flfloatingipdetails.component.js:42
-#: site/apps/floatingips/flfloatingips.component.js:79
+#: site/apps/floatingips/flfloatingips.component.js:80
 msgid "Floating IP delete scheduled"
 msgstr ""
 
@@ -2289,7 +2361,7 @@ msgstr ""
 msgid "Gateway IP"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:105
+#: site/apps/networks/flnetworkadd.html:113
 #: site/apps/networks/flnetworksubnetadd.html:58
 msgid "Gateway ip"
 msgstr ""
@@ -2306,7 +2378,7 @@ msgstr ""
 msgid "Generated at"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:51
+#: site/apps/osinstances/flinstancedetail.html:55
 msgid "Get PTR"
 msgstr ""
 
@@ -2318,6 +2390,10 @@ msgstr ""
 
 #: site/apps/signup/flsignup.html:56
 msgid "Go back to login"
+msgstr ""
+
+#: commons/credit_required_message/fl-credit-required-message.template.html:4
+msgid "Go to"
 msgstr ""
 
 #: commons/resolvehandler/errordialog.html:6
@@ -2336,8 +2412,12 @@ msgstr ""
 msgid "Greater than"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:318
+#: site/apps/osinstances/flinstancedetail.html:323
 msgid "Group: {{::security_group.name }}"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:16
+msgid "HARD REBOOT"
 msgstr ""
 
 #: commons/ui/currentuser/currentuser.html:24
@@ -2358,10 +2438,14 @@ msgstr ""
 msgid "High availability: {{ $ctrl.router.ha }}"
 msgstr ""
 
+#: site/apps/osinstances/flinstancedetail.html:280
+msgid "History log"
+msgstr ""
+
 #: commons/customfields/flfieldinput.html:31
 #: commons/userprofile/fledituserprofile.html:61
 #: commons/userprofile/fledituserprofile.html:83
-#: site/apps/osinstances/create/flinstancecreate.html:203
+#: site/apps/osinstances/create/flinstancecreate.html:219
 msgid "Hold button to reveal password"
 msgstr ""
 
@@ -2370,7 +2454,7 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:136
+#: site/apps/osimages/create/flimagecreate.html:137
 #: site/apps/osimages/update/flimageupdate.html:105
 msgid "Hypervisor type"
 msgstr ""
@@ -2456,12 +2540,12 @@ msgstr ""
 msgid "IPv6"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:129
+#: site/apps/networks/flnetworkadd.html:137
 #: site/apps/networks/flnetworksubnetadd.html:82
 msgid "IPv6 address mode"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:118
+#: site/apps/networks/flnetworkadd.html:126
 #: site/apps/networks/flnetworksubnetadd.html:71
 msgid "IPv6 ra mode"
 msgstr ""
@@ -2488,12 +2572,19 @@ msgstr ""
 msgid "Image delete scheduled"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:34
+#: site/apps/osimages/create/flimagecreate.html:35
 #: site/apps/osimages/update/flimageupdate.html:22
 msgid "Image name"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:162
+#: oscommons/flavorsascards/flavorsascards.component.js:26
+msgid ""
+"Image requires a flavor with more resources.\n"
+"Select a flavor with more resources\n"
+"or use a different image source."
+msgstr ""
+
+#: site/apps/osimages/create/flimagecreate.html:163
 msgid "Image source"
 msgstr ""
 
@@ -2502,7 +2593,7 @@ msgstr ""
 msgid "Image update scheduled"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:33
+#: site/apps/osinstances/flinstancedetail.html:37
 msgid ""
 "Image:\n"
 "                  {{::$ctrl.instance.image.name}}"
@@ -2524,6 +2615,10 @@ msgstr ""
 msgid "Incorrect format"
 msgstr ""
 
+#: site/apps/osinstances/flinstancedetail.html:31
+msgid "Info"
+msgstr ""
+
 #: site/apps/ossecuritygroups/flsecuritygrouprulecreate.html:29
 msgid "Ingress - Incoming"
 msgstr ""
@@ -2533,7 +2628,7 @@ msgstr ""
 msgid "Instance"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:86
+#: site/apps/osinstances/flinstancedetail.html:90
 msgid "Instance UUID: {{::$ctrl.instance.uuid }}"
 msgstr ""
 
@@ -2541,7 +2636,7 @@ msgstr ""
 msgid "Instance boot from ISO scheduled"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.component.js:292
+#: site/apps/osinstances/create/flinstancecreate.component.js:304
 msgid "Instance create scheduled"
 msgstr ""
 
@@ -2549,7 +2644,7 @@ msgstr ""
 msgid "Instance details"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:22
+#: site/apps/osinstances/create/flinstancecreate.html:21
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:31
 msgid "Instance name"
 msgstr ""
@@ -2570,7 +2665,7 @@ msgstr ""
 msgid "Instance resize will cause downtime. The instance will shutdown and the disk image will be copied to a new disk. This may take a while, depending on the disk size."
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:32
+#: site/apps/osinstances/flinstancedetail.html:36
 msgid "Instance specifications"
 msgstr ""
 
@@ -2673,7 +2768,7 @@ msgstr ""
 msgid "Last Name"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:55
+#: site/apps/osinstances/flinstancedetail.component.js:59
 msgid "Last hour"
 msgstr ""
 
@@ -2694,7 +2789,7 @@ msgstr ""
 msgid "Less than"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:110
+#: site/apps/osinstances/flinstancedetail.html:115
 msgid "Lines"
 msgstr ""
 
@@ -2712,8 +2807,8 @@ msgstr ""
 #: site/apps/networks/flnetworks.html:52
 #: site/apps/osimages/flimages.html:215
 #: site/apps/osimages/flimages.html:76
-#: site/apps/osinstances/flinstances.html:145
-#: site/apps/osinstances/flinstances.html:49
+#: site/apps/osinstances/flinstances.html:147
+#: site/apps/osinstances/flinstances.html:51
 #: site/apps/osrouters/flrouters.html:122
 #: site/apps/osrouters/flrouters.html:59
 #: site/apps/ossecuritygroups/flsecuritygroups.html:125
@@ -2746,6 +2841,10 @@ msgstr ""
 msgid "Login page"
 msgstr ""
 
+#: oscommons/osfilters/flinstancestatus.filter.js:19
+msgid "MIGRATING"
+msgstr ""
+
 #: commons/ui/useralerts/detail/fluseralertdialog.html:23
 msgid "Mark as read"
 msgstr ""
@@ -2758,11 +2857,12 @@ msgstr ""
 msgid "Member status is: {{$ctrl.memberStatus}}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:36
+#: site/apps/osinstances/flinstancedetail.html:40
 msgid "Memory (RAM): {{$ctrl.instance.flavor.memory_mb }} MB"
 msgstr ""
 
 #: site/apps/billing/history/billinghistory.html:68
+#: site/apps/osinstances/flinstancedetail.html:129
 msgid "Metrics"
 msgstr ""
 
@@ -2779,7 +2879,7 @@ msgstr ""
 msgid "Min ram"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:44
+#: site/apps/osimages/create/flimagecreate.html:45
 #: site/apps/osimages/update/flimageupdate.html:33
 msgid "Minimum disk size (GB)"
 msgstr ""
@@ -2792,7 +2892,7 @@ msgstr ""
 msgid "Minimum memory: {{ $ctrl.image.min_ram / 1024 }} GB"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:53
+#: site/apps/osimages/create/flimagecreate.html:54
 #: site/apps/osimages/update/flimageupdate.html:41
 msgid "Minimum required RAM (MB)"
 msgstr ""
@@ -2847,21 +2947,21 @@ msgstr ""
 #: site/apps/networks/flnetworks.html:60
 #: site/apps/networks/flnetworksubnetadd.html:12
 #: site/apps/networks/states.config.js:37
-#: site/apps/osapiusers/flapiuseredit.html:13
+#: site/apps/osapiusers/flapiuseredit.html:16
 #: site/apps/osapiusers/flapiusers.html:61
 #: site/apps/osimages/flimages.html:85
 #: site/apps/osimages/states.config.js:47
-#: site/apps/osinstances/flinstancedetail.html:390
-#: site/apps/osinstances/flinstances.html:60
+#: site/apps/osinstances/flinstancedetail.html:396
+#: site/apps/osinstances/flinstances.html:62
 #: site/apps/osinstances/rename/flinstancerename.html:11
 #: site/apps/osinstances/states.config.js:63
-#: site/apps/osrouters/flrouteredit.html:26
+#: site/apps/osrouters/flrouteredit.html:29
 #: site/apps/osrouters/flrouters.html:66
 #: site/apps/osrouters/states.config.js:32
-#: site/apps/ossecuritygroups/flsecuritygroupedit.html:26
+#: site/apps/ossecuritygroups/flsecuritygroupedit.html:29
 #: site/apps/ossecuritygroups/flsecuritygroups.html:65
 #: site/apps/ossecuritygroups/states.config.js:36
-#: site/apps/osvolumes/create/flvolumecreate.html:31
+#: site/apps/osvolumes/create/flvolumecreate.html:34
 #: site/apps/osvolumes/flvolumes.html:57
 #: site/apps/osvolumes/rename/flvolumerename.html:11
 #: site/apps/osvolumes/rename/flvolumerename.html:9
@@ -2883,15 +2983,16 @@ msgstr ""
 msgid "Nameservers"
 msgstr ""
 
-#: site/apps/floatingips/flfloatingipadd.html:14
+#: site/apps/floatingips/flfloatingipadd.html:17
 #: site/apps/floatingips/flfloatingips.html:19
 #: site/apps/floatingips/states.config.js:40
+#: site/apps/networks/flnetworkadd.html:13
 #: site/apps/networks/flnetworks.html:1
 #: site/apps/osrouters/flrouterdetails.html:70
 msgid "Network"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:69
+#: site/apps/networks/flnetworkadd.html:77
 #: site/apps/networks/flnetworkdetails.html:57
 #: site/apps/networks/flnetworkdetails.html:96
 #: site/apps/networks/flnetworksubnetadd.html:25
@@ -2904,7 +3005,7 @@ msgid "Network create scheduled"
 msgstr ""
 
 #: site/apps/networks/states.config.js:111
-#: site/apps/osinstances/flinstancedetail.html:42
+#: site/apps/osinstances/flinstancedetail.html:46
 msgid "Network details"
 msgstr ""
 
@@ -2912,18 +3013,18 @@ msgstr ""
 msgid "Network id: {{::$ctrl.floatingIp.floating_network.id }}"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:94
-#: site/apps/networks/flnetworkadd.html:96
+#: site/apps/networks/flnetworkadd.html:102
+#: site/apps/networks/flnetworkadd.html:104
 #: site/apps/networks/flnetworksubnetadd.html:46
 #: site/apps/networks/flnetworksubnetadd.html:49
 msgid "Network mask"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:136
+#: site/apps/osinstances/flinstancedetail.html:141
 msgid "Network metrics"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:12
+#: site/apps/networks/flnetworkadd.html:15
 #: site/apps/osrouters/flrouters.html:68
 msgid "Network name"
 msgstr ""
@@ -2932,8 +3033,8 @@ msgstr ""
 msgid "Network name: {{::$ctrl.floatingIp.floating_network.name }}"
 msgstr ""
 
-#: site/apps/floatingips/flfloatingipadd.html:17
-#: site/apps/osinstances/create/flinstancecreate.html:140
+#: site/apps/floatingips/flfloatingipadd.html:20
+#: site/apps/osinstances/create/flinstancecreate.html:152
 msgid "Network selection"
 msgstr ""
 
@@ -2964,7 +3065,7 @@ msgid "New password"
 msgstr ""
 
 #: site/apps/billing/services/upgrade/flserviceupgrade.component.html:41
-#: site/apps/networks/flnetworkadd.html:248
+#: site/apps/networks/flnetworkadd.html:257
 #: site/apps/networks/flnetworksubnetadd.html:200
 msgid "Next"
 msgstr ""
@@ -2997,7 +3098,7 @@ msgid ""
 "              : {{$ctrl.serviceDetails.next_invoice_date | date:'medium'}}"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:213
+#: site/apps/networks/flnetworkadd.html:221
 #: site/apps/networks/flnetworksubnetadd.html:166
 msgid "Nexthop (IP)"
 msgstr ""
@@ -3033,29 +3134,29 @@ msgstr ""
 msgid "No associated object"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:385
+#: site/apps/osinstances/flinstancedetail.html:391
 msgid "No backup schedules for this instance"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:363
+#: site/apps/osinstances/flinstancedetail.html:369
 msgid "No backups for this instance"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:78
+#: site/apps/osinstances/create/flinstancecreate.html:77
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:53
 msgid "No boot source selected"
 msgstr ""
 
 #: commons/ui/filter/flfilter.html:133
 #: commons/ui/filter/flfilter.html:44
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:68
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:69
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:68
 msgid "No clients matching \"{{$ctrl.clientSearchText}}\" found"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:158
-#: site/apps/osinstances/flinstancedetail.html:175
-#: site/apps/osinstances/flinstancedetail.html:184
+#: site/apps/osinstances/flinstancedetail.html:163
+#: site/apps/osinstances/flinstancedetail.html:180
+#: site/apps/osinstances/flinstancedetail.html:189
 msgid "No data available"
 msgstr ""
 
@@ -3068,7 +3169,7 @@ msgstr ""
 msgid "No domains"
 msgstr ""
 
-#: site/apps/osrouters/flrouteredit.html:52
+#: site/apps/osrouters/flrouteredit.html:55
 msgid "No external networks available"
 msgstr ""
 
@@ -3077,15 +3178,15 @@ msgstr ""
 msgid "No file chosen"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:123
+#: site/apps/osinstances/create/flinstancecreate.html:127
 msgid "No flavor selected"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:126
+#: site/apps/osinstances/create/flinstancecreate.html:130
 msgid "No flavors available in this region"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:282
+#: site/apps/osinstances/flinstancedetail.html:287
 msgid "No history log"
 msgstr ""
 
@@ -3107,12 +3208,8 @@ msgstr ""
 msgid "No items matching \"{{$ctrl.customModelSearchText}}\" found"
 msgstr ""
 
-#: site/apps/floatingips/flfloatingipadd.html:26
+#: site/apps/floatingips/flfloatingipadd.html:29
 msgid "No networks available"
-msgstr ""
-
-#: site/apps/osinstances/create/flinstancecreate.html:150
-msgid "No networks available in this region!"
 msgstr ""
 
 #: commons/ui/useralerts/list/fluseralerts.html:9
@@ -3123,11 +3220,11 @@ msgstr ""
 msgid "No product has been selected yet"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:38
-#: site/apps/networks/flnetworkautocreate.html:20
+#: site/apps/networks/flnetworkadd.html:41
+#: site/apps/networks/flnetworkautocreate.html:23
 #: site/apps/networks/flnetworkedit.html:36
-#: site/apps/osrouters/flrouteredit.html:22
-#: site/apps/ossecuritygroups/flsecuritygroupedit.html:22
+#: site/apps/osrouters/flrouteredit.html:25
+#: site/apps/ossecuritygroups/flsecuritygroupedit.html:25
 msgid "No regions available"
 msgstr ""
 
@@ -3144,11 +3241,11 @@ msgstr ""
 msgid "No services"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:225
+#: site/apps/osinstances/flinstancedetail.html:230
 msgid "No snapshots"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:88
+#: site/apps/networks/flnetworkadd.html:96
 msgid "No subnet pools in this region available"
 msgstr ""
 
@@ -3165,7 +3262,7 @@ msgstr ""
 msgid "No volumes"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:269
+#: site/apps/osinstances/flinstancedetail.html:274
 msgid "No volumes attached"
 msgstr ""
 
@@ -3187,11 +3284,11 @@ msgstr ""
 msgid "No {{ $ctrl.objectsNamePlural }} found"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:171
+#: site/apps/osinstances/create/flinstancecreate.html:186
 msgid "None"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.component.js:71
+#: site/apps/osinstances/create/flinstancecreate.component.js:78
 msgid ""
 "Not compatible with\n"
 "selected boot source"
@@ -3222,7 +3319,7 @@ msgstr ""
 msgid "Notify on ticket opened"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:108
+#: site/apps/osinstances/flinstancedetail.html:113
 msgid "Number of lines to show"
 msgstr ""
 
@@ -3230,7 +3327,7 @@ msgstr ""
 msgid "OK"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:103
+#: site/apps/osimages/create/flimagecreate.html:104
 #: site/apps/osimages/update/flimageupdate.html:73
 msgid "OS distro"
 msgstr ""
@@ -3239,7 +3336,7 @@ msgstr ""
 msgid "OS distro: {{ $ctrl.image.os_distro }}"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:111
+#: site/apps/osimages/create/flimagecreate.html:112
 #: site/apps/osimages/update/flimageupdate.html:81
 msgid "OS version"
 msgstr ""
@@ -3281,7 +3378,7 @@ msgid "Open new ticket"
 msgstr ""
 
 #: tickets/enduser/frontend/components/states.config.js:150
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:97
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:98
 msgid "Open ticket"
 msgstr ""
 
@@ -3318,7 +3415,7 @@ msgstr ""
 msgid "Order services"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:85
+#: site/apps/osinstances/flinstancedetail.html:89
 msgid "Other details"
 msgstr ""
 
@@ -3331,11 +3428,19 @@ msgstr ""
 msgid "Overview"
 msgstr ""
 
+#: oscommons/osfilters/flinstancestatus.filter.js:17
+msgid "PASSWORD"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:14
+msgid "PAUSED"
+msgstr ""
+
 #: site/apps/osinstances/editptr/fleditptr.html:12
 msgid "PTR"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:173
+#: site/apps/osinstances/flinstancedetail.html:178
 msgid "Packets in/out"
 msgstr ""
 
@@ -3348,7 +3453,7 @@ msgid "Paid"
 msgstr ""
 
 #: commons/auth/login.html:33
-#: site/apps/osapiusers/flapiuseredit.html:19
+#: site/apps/osapiusers/flapiuseredit.html:22
 #: site/apps/osinstances/password/flinstancechangepassword.html:14
 #: site/apps/signup/flsignup.html:43
 msgid "Password"
@@ -3510,7 +3615,7 @@ msgstr ""
 msgid "Property key"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:158
+#: site/apps/osimages/create/flimagecreate.html:159
 #: site/apps/osimages/states.config.js:83
 #: site/apps/osimages/update/flimageupdate.html:117
 msgid "Protected"
@@ -3529,8 +3634,36 @@ msgstr ""
 msgid "Public Images"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:161
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:170
 msgid "Quoted from"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:33
+msgid "REBOOT"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:18
+msgid "REBUILD"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:37
+msgid "RESCUE"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:25
+msgid "RESCUED"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:20
+msgid "RESIZE"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:24
+msgid "REVERT RESIZE"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:12
+msgid "RUNNING"
 msgstr ""
 
 #: site/apps/osimages/update/flimageupdate.html:136
@@ -3600,27 +3733,27 @@ msgstr ""
 #: site/apps/networks/flnetworks.html:62
 #: site/apps/networks/states.config.js:37
 #: site/apps/networks/states.config.js:45
-#: site/apps/osimages/create/flimagecreate.html:25
+#: site/apps/osimages/create/flimagecreate.html:26
 #: site/apps/osimages/flimages.html:33
-#: site/apps/osinstances/flinstances.html:33
-#: site/apps/osinstances/flinstances.html:65
+#: site/apps/osinstances/flinstances.html:35
+#: site/apps/osinstances/flinstances.html:67
 #: site/apps/osinstances/states.config.js:65
 #: site/apps/osinstances/states.config.js:83
 #: site/apps/ossecuritygroups/flsecuritygroups.html:68
 #: site/apps/ossecuritygroups/states.config.js:36
 #: site/apps/ossecuritygroups/states.config.js:49
-#: site/apps/osvolumes/create/flvolumecreate.html:17
+#: site/apps/osvolumes/create/flvolumecreate.html:20
 #: site/apps/osvolumes/flvolumes.html:31
 #: site/apps/osvolumes/flvolumes.html:60
 #: site/apps/osvolumes/states.config.js:86
 msgid "Region"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:26
-#: site/apps/networks/flnetworkautocreate.html:9
+#: site/apps/networks/flnetworkadd.html:29
+#: site/apps/networks/flnetworkautocreate.html:12
 #: site/apps/networks/flnetworkedit.html:25
-#: site/apps/osrouters/flrouteredit.html:11
-#: site/apps/ossecuritygroups/flsecuritygroupedit.html:11
+#: site/apps/osrouters/flrouteredit.html:14
+#: site/apps/ossecuritygroups/flsecuritygroupedit.html:14
 msgid "Region selection"
 msgstr ""
 
@@ -3636,7 +3769,7 @@ msgstr ""
 msgid "Region: {{ ::securityGroup.region }}<br>"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:90
+#: site/apps/osinstances/flinstancedetail.html:94
 msgid "Region: {{::$ctrl.instance.flavor.region }}"
 msgstr ""
 
@@ -3676,7 +3809,7 @@ msgstr ""
 msgid "Reject"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:73
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:74
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:73
 msgid "Related service"
 msgstr ""
@@ -3730,18 +3863,18 @@ msgid "Rename volume {{ $ctrl.volume.name }}"
 msgstr ""
 
 #: tickets/enduser/frontend/components/tickets_actions/ticketsactions.html:5
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:280
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:281
 msgid "Reopen ticket"
 msgstr ""
 
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:150
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:272
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:273
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:87
 msgid "Reply"
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:122
-#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:93
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:104
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:130
 msgid "Reply added"
 msgstr ""
 
@@ -3810,14 +3943,14 @@ msgstr ""
 msgid "Revert resize"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:199
+#: site/apps/osinstances/create/flinstancecreate.html:215
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:69
 #: site/apps/osinstances/rescue/flinstancerescue.html:74
 #: site/apps/osinstances/rescue/flinstancerescue.html:81
 msgid "Root password"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:391
+#: site/apps/osinstances/flinstancedetail.html:397
 msgid "Rotation"
 msgstr ""
 
@@ -3829,7 +3962,7 @@ msgstr ""
 msgid "Router create scheduled"
 msgstr ""
 
-#: site/apps/osrouters/flrouters.component.js:119
+#: site/apps/osrouters/flrouters.component.js:120
 msgid "Router delete scheduled"
 msgstr ""
 
@@ -3875,11 +4008,23 @@ msgid "Rules"
 msgstr ""
 
 #: commons/osbackup/fl-backupschedules-create-dialog.html:27
-#: site/apps/osinstances/flinstancedetail.html:392
+#: site/apps/osinstances/flinstancedetail.html:398
 msgid "Run at"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:169
+#: oscommons/osfilters/flinstancestatus.filter.js:29
+msgid "SHELVED"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:30
+msgid "SHELVED OFFLOADED"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:28
+msgid "SOFT DELETE"
+msgstr ""
+
+#: site/apps/osinstances/create/flinstancecreate.html:184
 #: site/apps/pkm/flpkmkeys.html:1
 msgid "SSH key"
 msgstr ""
@@ -3898,17 +4043,33 @@ msgstr ""
 msgid "SSH keys"
 msgstr ""
 
+#: oscommons/osfilters/flinstancestatus.filter.js:22
+msgid "STARTING"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:35
+msgid "STOPPED"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:21
+msgid "STOPPING"
+msgstr ""
+
+#: oscommons/osfilters/flinstancestatus.filter.js:15
+msgid "SUSPENDED"
+msgstr ""
+
 #: commons/userprofile/fledituserprofile.html:129
-#: site/apps/networks/flnetworkautocreate.html:31
+#: site/apps/networks/flnetworkautocreate.html:37
 #: site/apps/networks/flnetworkedit.html:53
 #: site/apps/networks/flnetworksubnetadd.html:195
-#: site/apps/osrouters/flrouteredit.html:67
-#: site/apps/ossecuritygroups/flsecuritygroupedit.html:47
-#: site/apps/oszones/flzoneedit.html:60
+#: site/apps/osrouters/flrouteredit.html:73
+#: site/apps/ossecuritygroups/flsecuritygroupedit.html:53
+#: site/apps/oszones/flzoneedit.html:66
 msgid "Save"
 msgstr ""
 
-#: site/apps/osapiusers/flapiuseredit.html:39
+#: site/apps/osapiusers/flapiuseredit.html:45
 msgid "Save API user"
 msgstr ""
 
@@ -3961,7 +4122,7 @@ msgstr ""
 msgid "Search images"
 msgstr ""
 
-#: site/apps/osinstances/flinstances.component.js:21
+#: site/apps/osinstances/flinstances.component.js:22
 msgid "Search instances"
 msgstr ""
 
@@ -4017,7 +4178,7 @@ msgid "Security group create scheduled"
 msgstr ""
 
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:116
-#: site/apps/ossecuritygroups/flsecuritygroups.component.js:92
+#: site/apps/ossecuritygroups/flsecuritygroups.component.js:93
 msgid "Security group delete scheduled"
 msgstr ""
 
@@ -4034,6 +4195,7 @@ msgid "Security group {:securityGroup}"
 msgstr ""
 
 #: site/apps/baseconfig/fleio.baseconfig.module.js:44
+#: site/apps/osinstances/flinstancedetail.html:313
 #: site/apps/ossecuritygroups/flsecuritygroups.html:1
 #: site/apps/ossecuritygroups/states.config.js:32
 msgid "Security groups"
@@ -4043,7 +4205,7 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:93
+#: site/apps/osinstances/create/flinstancecreate.html:92
 msgid "Select a configuration"
 msgstr ""
 
@@ -4052,7 +4214,7 @@ msgstr ""
 msgid "Select a domain contact"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:100
+#: site/apps/osinstances/create/flinstancecreate.html:99
 msgid "Select a flavor"
 msgstr ""
 
@@ -4064,7 +4226,7 @@ msgstr ""
 msgid "Select a product"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:30
+#: site/apps/osinstances/create/flinstancecreate.html:29
 msgid "Select a region"
 msgstr ""
 
@@ -4077,7 +4239,7 @@ msgid "Select an existing value"
 msgstr ""
 
 #: site/apps/osinstances/create/flbootsourceselect.html:2
-#: site/apps/osinstances/create/flinstancecreate.html:62
+#: site/apps/osinstances/create/flinstancecreate.html:61
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:37
 msgid "Select boot source"
 msgstr ""
@@ -4100,11 +4262,15 @@ msgstr ""
 msgid "Select flavor"
 msgstr ""
 
+#: site/apps/networks/flnetworkadd.html:71
+msgid "Select from subnet pool"
+msgstr ""
+
 #: commons/ui/filter/flfilter.html:226
 msgid "Select item"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:130
+#: site/apps/osinstances/flinstancedetail.html:135
 msgid "Select metrics type"
 msgstr ""
 
@@ -4128,11 +4294,11 @@ msgstr ""
 msgid "Select security group"
 msgstr ""
 
-#: site/apps/osvolumes/create/flvolumecreate.html:61
+#: site/apps/osvolumes/create/flvolumecreate.html:64
 msgid "Select source"
 msgstr ""
 
-#: site/apps/osvolumes/create/flvolumecreate.html:46
+#: site/apps/osvolumes/create/flvolumecreate.html:49
 msgid "Select source type"
 msgstr ""
 
@@ -4197,7 +4363,7 @@ msgstr ""
 msgid "Set new password"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:216
+#: site/apps/osinstances/create/flinstancecreate.html:232
 msgid "Set the Administrator password on first boot through the web console."
 msgstr ""
 
@@ -4300,7 +4466,7 @@ msgstr ""
 msgid "Size"
 msgstr ""
 
-#: site/apps/osvolumes/create/flvolumecreate.html:73
+#: site/apps/osvolumes/create/flvolumecreate.html:76
 #: site/apps/osvolumes/extend/flvolumeextend.html:9
 msgid "Size (GB)"
 msgstr ""
@@ -4313,7 +4479,7 @@ msgstr ""
 msgid "Size: {{ $ctrl.volume.size | number }} GB"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:175
+#: site/apps/osinstances/flinstancedetail.component.js:179
 msgid "Snapshot  create scheduled"
 msgstr ""
 
@@ -4325,7 +4491,7 @@ msgstr ""
 msgid "Snapshot {:name}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:196
+#: site/apps/osinstances/flinstancedetail.html:201
 msgid "Snapshots"
 msgstr ""
 
@@ -4379,7 +4545,7 @@ msgstr ""
 #: site/apps/osimages/flimages.html:86
 #: site/apps/osimages/states.config.js:47
 #: site/apps/osimages/states.config.js:60
-#: site/apps/osinstances/flinstances.html:62
+#: site/apps/osinstances/flinstances.html:64
 #: site/apps/osinstances/states.config.js:64
 #: site/apps/osinstances/states.config.js:75
 #: site/apps/osrouters/flrouters.html:67
@@ -4428,11 +4594,12 @@ msgstr ""
 msgid "Subdomain"
 msgstr ""
 
+#: site/apps/networks/flnetworkadd.html:57
 #: site/apps/osrouters/flinterfaceadd.html:9
 msgid "Subnet"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:77
+#: site/apps/networks/flnetworkadd.html:85
 #: site/apps/networks/flnetworksubnetadd.html:33
 msgid "Subnet address pool"
 msgstr ""
@@ -4441,7 +4608,11 @@ msgstr ""
 msgid "Subnet delete scheduled"
 msgstr ""
 
-#: site/apps/networks/flnetworkadd.html:56
+#: site/apps/networks/flnetworkadd.html:149
+msgid "Subnet details"
+msgstr ""
+
+#: site/apps/networks/flnetworkadd.html:60
 msgid "Subnet name"
 msgstr ""
 
@@ -4480,10 +4651,14 @@ msgstr ""
 msgid "Switch view"
 msgstr ""
 
+#: site/apps/osinstances/flinstancedetail.html:105
+msgid "System log"
+msgstr ""
+
 #: site/apps/oszones/flzonedetails.html:182
 #: site/apps/oszones/flzonedetails.html:51
 #: site/apps/oszones/flzonedetails.html:91
-#: site/apps/oszones/flzoneedit.html:46
+#: site/apps/oszones/flzoneedit.html:49
 msgid "TTL"
 msgstr ""
 
@@ -4505,13 +4680,12 @@ msgid ""
 "              $ctrl.serviceDetails.terminated_at | date:'medium'}}"
 msgstr ""
 
-#: site/apps/osapiusers/flapiuseredit.html:9
+#: site/apps/osapiusers/flapiuseredit.html:12
 msgid "The API user name will be prefixed with {{ $ctrl.createOptions.prefix }}"
 msgstr ""
 
-#: oscommons/flavorsascards/flavorsascards.component.js:26
-#: site/apps/osinstances/create/flinstancecreate.component.js:68
-#: site/apps/osinstances/create/flinstancecreate.component.js:72
+#: site/apps/osinstances/create/flinstancecreate.component.js:75
+#: site/apps/osinstances/create/flinstancecreate.component.js:79
 msgid ""
 "The selected image source requires\n"
 "a flavor with more resources.\n"
@@ -4546,7 +4720,7 @@ msgstr ""
 msgid "This image is shared with you: <md-button ng-click=\"$ctrl.checkMemberStatus($event);\" class=\"md-primary\">Check member status</md-button>"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:73
+#: site/apps/osimages/create/flimagecreate.html:74
 msgid "This image will expire in {{$ctrl.createOptions.cleanup_days}} days and will be automatically deleted."
 msgstr ""
 
@@ -4571,8 +4745,8 @@ msgstr ""
 msgid "Ticket reopened."
 msgstr ""
 
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:114
-#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:97
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:146
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:164
 msgid "Ticket successfully opened."
 msgstr ""
 
@@ -4617,11 +4791,11 @@ msgid ""
 "                  <span>{{$ctrl.usage.usage.price | number : 2}} {{$ctrl.billing_currency}}</span>"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:91
+#: site/apps/osinstances/flinstancedetail.html:95
 msgid "Total traffic this billing cycle: {{::$ctrl.instance.current_cycle_traffic }} GB"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:94
+#: site/apps/osinstances/flinstancedetail.html:98
 msgid "Total traffic this month: {{::$ctrl.instance.current_month_traffic }} GB"
 msgstr ""
 
@@ -4678,12 +4852,16 @@ msgstr ""
 msgid "Type: {{ $ctrl.zone.type }}"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:165
-#: site/apps/osimages/create/flimagecreate.html:176
+#: oscommons/osfilters/flinstancestatus.filter.js:34
+msgid "UNKNOWN"
+msgstr ""
+
+#: site/apps/osimages/create/flimagecreate.html:166
+#: site/apps/osimages/create/flimagecreate.html:177
 msgid "URL"
 msgstr ""
 
-#: commons/auth/flauthdialog.directive.js:137
+#: commons/auth/flauthdialog.directive.js:135
 msgid "Unable to authenticate"
 msgstr ""
 
@@ -4768,6 +4946,10 @@ msgstr ""
 msgid "Use an existing domain"
 msgstr ""
 
+#: site/apps/osvolumes/create/flvolumecreate.component.js:56
+msgid "Use an existing volume"
+msgstr ""
+
 #: domains/enduser/frontend/components/select_domain/selectdomain.html:51
 #: domains/enduser/frontend/components/select_domain/selectdomain.html:80
 msgid "Use an external domain"
@@ -4792,6 +4974,10 @@ msgstr ""
 
 #: domains/enduser/frontend/components/select_domain/selectdomain.html:8
 msgid "Use existing domain"
+msgstr ""
+
+#: site/apps/osvolumes/create/flvolumecreate.component.js:53
+msgid "Use image as a source"
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:10
@@ -4819,15 +5005,19 @@ msgstr ""
 msgid "VAT ID"
 msgstr ""
 
+#: oscommons/osfilters/flinstancestatus.filter.js:23
+msgid "VERIFY RESIZE"
+msgstr ""
+
 #: site/apps/dashboard/fldashboard.html:52
 msgid "View all services"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:37
+#: site/apps/osinstances/flinstancedetail.html:41
 msgid "Virtual CPUs: {{$ctrl.instance.flavor.vcpus }}"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:148
+#: site/apps/osimages/create/flimagecreate.html:149
 #: site/apps/osimages/states.config.js:68
 #: site/apps/osimages/update/flimageupdate.html:50
 msgid "Visibility"
@@ -4859,7 +5049,7 @@ msgstr ""
 msgid "Volume extend scheduled"
 msgstr ""
 
-#: site/apps/osvolumes/create/flvolumecreate.html:84
+#: site/apps/osvolumes/create/flvolumecreate.html:87
 msgid "Volume type"
 msgstr ""
 
@@ -4869,6 +5059,7 @@ msgstr ""
 
 #: site/apps/baseconfig/fleio.baseconfig.module.js:47
 #: site/apps/osinstances/create/flbootsourceselect.html:83
+#: site/apps/osinstances/flinstancedetail.html:235
 #: site/apps/osvolumes/flvolumes.html:1
 #: site/apps/osvolumes/states.config.js:56
 msgid "Volumes"
@@ -4920,8 +5111,8 @@ msgstr ""
 #: site/apps/osimages/flimagedetails.component.js:29
 #: site/apps/osimages/flimages.component.js:36
 #: site/apps/osinstances/actions/flinstanceactions.directive.js:31
-#: site/apps/osinstances/flinstancedetail.component.js:34
-#: site/apps/osinstances/flinstances.component.js:29
+#: site/apps/osinstances/flinstancedetail.component.js:35
+#: site/apps/osinstances/flinstances.component.js:30
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:36
 #: site/apps/ossecuritygroups/flsecuritygroups.component.js:45
 #: site/apps/osvolumes/actions/flvolumeactions.directive.js:28
@@ -4934,19 +5125,27 @@ msgid ""
 "allowed to do this"
 msgstr ""
 
-#: commons/ui/licensewarning/fllicensewarning.html:8
-msgid "You are using more CPU cores than your license allows. Click for more info."
+#: commons/ui/licensewarning/fllicensewarning.component.js:22
+msgid ""
+"You are using more CPU cores than your license allows.\n"
+"Click for more info."
 msgstr ""
 
 #: site/apps/osimages/memberstatus/memberstatusdialog.template.html:7
 msgid "You can accept or reject this image."
 msgstr ""
 
-#: commons/ui/licensewarning/fllicensewarning.html:5
+#: commons/credit_required_message/fl-credit-required-message.template.html:2
+msgid "You do not have enough credit to create new resources."
+msgstr ""
+
+#: commons/ui/licensewarning/fllicensewarning.component.js:21
 msgid "You have 1 day left from your license."
-msgid_plural "You have {{$ctrl.licenseDaysLeft}} days left from your license."
-msgstr[0] ""
-msgstr[1] ""
+msgstr ""
+
+#: commons/ui/licensewarning/fllicensewarning.component.js:20
+msgid "You have {{$ctrl.licenseDaysLeft}} days left from your license."
+msgstr ""
 
 #: domains/enduser/frontend/components/order_product/orderproduct.html:99
 #: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:154
@@ -4995,7 +5194,7 @@ msgstr ""
 msgid "Zone create scheduled"
 msgstr ""
 
-#: site/apps/oszones/flzones.component.js:95
+#: site/apps/oszones/flzones.component.js:96
 msgid "Zone delete scheduled"
 msgstr ""
 
@@ -5024,6 +5223,11 @@ msgstr ""
 msgid "abc* -> {{$ctrl.item.display}} starts with \"abc\""
 msgstr ""
 
+#: commons/credit_required_message/fl-credit-required-message.template.html:7
+#: commons/credit_required_message/fl-credit-required-message.template.html:9
+msgid "add credit page"
+msgstr ""
+
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:220
 msgid "added the following cc recipients:"
 msgstr ""
@@ -5042,7 +5246,7 @@ msgstr ""
 msgid "cancel"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:81
+#: site/apps/osinstances/create/flinstancecreate.html:80
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:56
 msgid "change"
 msgstr ""
@@ -5075,7 +5279,7 @@ msgstr ""
 msgid "create new volume"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:74
+#: site/apps/osinstances/create/flinstancecreate.html:73
 msgid "create {{$ctrl.bootSource.options.volume_size}} GB volume"
 msgstr ""
 
@@ -5276,11 +5480,11 @@ msgstr ""
 msgid "{{$ctrl.bootSource.type}}"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:120
+#: site/apps/osinstances/create/flinstancecreate.html:124
 msgid "{{$ctrl.flavor.memory_gb}} GB memory"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:121
+#: site/apps/osinstances/create/flinstancecreate.html:125
 msgid "{{$ctrl.flavor.vcpus}} virtual CPUs"
 msgstr ""
 
