@@ -12,7 +12,7 @@ msgstr ""
 msgid "(All paid)"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:113
+#: site/apps/osinstances/create/flinstancecreate.html:112
 msgid "(OUT OF STOCK)"
 msgstr ""
 
@@ -64,6 +64,12 @@ msgid_plural "{{$ctrl.openstackSummary.volumes}} volumes"
 msgstr[0] ""
 msgstr[1] ""
 
+#: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:10
+#: commons/SFA/sfa_confirm_options/fl-sfa-confirm-options.template.html:10
+#: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:10
+msgid "2-Step Verification"
+msgstr ""
+
 #: site/apps/osinstances/flinstancedetail.component.js:62
 msgid "24 hours"
 msgstr ""
@@ -95,7 +101,7 @@ msgid ""
 "        <span hide-gt-xs translate>No {{ $ctrl.objectsNamePlural }}</span>"
 msgstr ""
 
-#: site/apps/osinstances/rebuild/flinstancerebuild.html:82
+#: site/apps/osinstances/rebuild/flinstancerebuild.html:101
 msgid ""
 "<strong><translate>Reinstall instance</translate></strong><br>\n"
 "              <translate>All data currently on the instance disk will be permanently deleted.</translate><br>\n"
@@ -244,6 +250,14 @@ msgstr ""
 msgid "A valid domain in required"
 msgstr ""
 
+#: site/apps/osvolumebackups/create/fl-volumebackups-create.template.html:27
+msgid "A valid volume is required"
+msgstr ""
+
+#: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:15
+msgid "A verification code was sent to {{$ctrl.receiver}}"
+msgstr ""
+
 #: oscommons/osfilters/flinstancestatus.filter.js:32
 msgid "ACTIVE"
 msgstr ""
@@ -256,7 +270,7 @@ msgstr ""
 msgid "API user edited"
 msgstr ""
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:49
+#: site/apps/baseconfig/fleio.baseconfig.module.js:50
 #: site/apps/osapiusers/states.config.js:33
 msgid "API users"
 msgstr ""
@@ -287,12 +301,15 @@ msgid "Action not allowed"
 msgstr ""
 
 #: site/apps/billing/services/services.html:48
+#: site/apps/networks/flnetworkdetails.html:113
+#: site/apps/networks/flnetworkdetails.html:60
 #: site/apps/networks/flnetworks.html:64
 #: site/apps/osapiusers/flapiusers.html:63
 #: site/apps/osimages/flimages.html:92
 #: site/apps/osinstances/flinstancedetail.html:399
 #: site/apps/osinstances/flinstances.html:68
 #: site/apps/ossecuritygroups/flsecuritygroups.html:69
+#: site/apps/osvolumebackups/flvolumebackups.html:66
 #: site/apps/osvolumes/flvolumes.html:62
 #: site/apps/oszones/flzonedetails.html:54
 #: site/apps/oszones/flzones.html:66
@@ -337,8 +354,8 @@ msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:203
 #: site/apps/networks/flnetworkadd.html:207
-#: site/apps/networks/flnetworksubnetadd.html:148
-#: site/apps/networks/flnetworksubnetadd.html:152
+#: site/apps/networks/flnetworksubnetedit.html:149
+#: site/apps/networks/flnetworksubnetedit.html:153
 msgid "Add DNS name server"
 msgstr ""
 
@@ -356,8 +373,8 @@ msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:178
 #: site/apps/networks/flnetworkadd.html:182
-#: site/apps/networks/flnetworksubnetadd.html:123
-#: site/apps/networks/flnetworksubnetadd.html:127
+#: site/apps/networks/flnetworksubnetedit.html:124
+#: site/apps/networks/flnetworksubnetedit.html:128
 msgid "Add allocation pool"
 msgstr ""
 
@@ -408,8 +425,8 @@ msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:232
 #: site/apps/networks/flnetworkadd.html:236
-#: site/apps/networks/flnetworksubnetadd.html:177
-#: site/apps/networks/flnetworksubnetadd.html:181
+#: site/apps/networks/flnetworksubnetedit.html:178
+#: site/apps/networks/flnetworksubnetedit.html:182
 msgid "Add host route"
 msgstr ""
 
@@ -462,7 +479,7 @@ msgstr ""
 msgid "Add rule"
 msgstr ""
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:99
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:158
 msgid "Add rule scheduled"
 msgstr ""
 
@@ -477,11 +494,11 @@ msgstr ""
 msgid "Add subnet"
 msgstr ""
 
-#: site/apps/networks/flnetworksubnetadd.controller.js:75
+#: site/apps/networks/flnetworksubnetedit.controller.js:93
 msgid "Add subnet scheduled"
 msgstr ""
 
-#: site/apps/networks/flnetworksubnetadd.html:3
+#: site/apps/networks/flnetworksubnetedit.html:3
 msgid "Add subnet to network {{ $ctrl.network.name }}"
 msgstr ""
 
@@ -490,7 +507,7 @@ msgstr ""
 msgid "Add to cart"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:76
+#: commons/userprofile/fluserprofile.html:79
 #: domains/enduser/frontend/components/contacts/contacts.html:29
 msgid "Address"
 msgstr ""
@@ -527,19 +544,19 @@ msgstr ""
 msgid "Admin state up: {{ $ctrl.network.admin_state_up }}"
 msgstr ""
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:20
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:22
 msgid "All ICMP"
 msgstr ""
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:18
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:20
 msgid "All TCP"
 msgstr ""
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:19
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:21
 msgid "All UDP"
 msgstr ""
 
-#: site/apps/osinstances/rebuild/flinstancerebuild.html:84
+#: site/apps/osinstances/rebuild/flinstancerebuild.html:103
 msgid "All data currently on the instance disk will be permanently deleted."
 msgstr ""
 
@@ -548,12 +565,12 @@ msgid "All ports"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:167
-#: site/apps/networks/flnetworksubnetadd.html:112
+#: site/apps/networks/flnetworksubnetedit.html:113
 msgid "Allocation pool end"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:161
-#: site/apps/networks/flnetworksubnetadd.html:106
+#: site/apps/networks/flnetworksubnetedit.html:107
 msgid "Allocation pool start"
 msgstr ""
 
@@ -598,7 +615,7 @@ msgstr ""
 msgid "Archived"
 msgstr ""
 
-#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:164
+#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:166
 msgid "Are you sure to start the instance?"
 msgstr ""
 
@@ -607,26 +624,36 @@ msgstr ""
 msgid "Are you sure you want to delete the instance? Files will be permanently lost."
 msgstr ""
 
+#: site/apps/osvolumebackups/actions/flvolumebackupactions.directive.js:31
+#: site/apps/osvolumebackups/actions/flxsvolumebackupactions.directive.js:30
+msgid "Are you sure you want to delete the volume backup?"
+msgstr ""
+
 #: site/apps/osvolumes/actions/flvolumeactions.directive.js:32
 #: site/apps/osvolumes/actions/flxsvolumeactions.directive.js:24
 msgid "Are you sure you want to delete the volume?"
 msgstr ""
 
-#: site/apps/osinstances/actions/flinstanceactions.directive.js:167
-#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:159
+#: site/apps/osinstances/actions/flinstanceactions.directive.js:169
+#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:161
 msgid "Are you sure you want to reboot the instance?"
 msgstr ""
 
-#: site/apps/osinstances/actions/flinstanceactions.directive.js:174
-#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:169
+#: site/apps/osinstances/actions/flinstanceactions.directive.js:176
+#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:171
 msgid "Are you sure you want to shut down the instance?"
 msgstr ""
 
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.component.js:29
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.component.js:42
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.component.js:60
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:46
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:64
 #: domains/enduser/frontend/components/contacts_actions/contactsactions.component.js:26
 #: site/apps/baseconfig/fleio.baseconfig.module.js:21
 #: site/apps/floatingips/flfloatingipdetails.component.js:38
 #: site/apps/floatingips/flfloatingips.component.js:75
-#: site/apps/networks/flnetworkdetails.component.js:118
+#: site/apps/networks/flnetworkdetails.component.js:149
 #: site/apps/networks/flnetworkdetails.component.js:70
 #: site/apps/networks/flnetworks.component.js:170
 #: site/apps/osapiusers/flapiusers.component.js:73
@@ -677,7 +704,7 @@ msgstr ""
 msgid "Associate security group to {{::$ctrl.instance.name }}"
 msgstr ""
 
-#: site/apps/osinstances/rebuild/flinstancerebuild.html:85
+#: site/apps/osinstances/rebuild/flinstancerebuild.html:104
 msgid "Associated SSH Keys will be set again on the new instance."
 msgstr ""
 
@@ -743,7 +770,7 @@ msgstr ""
 msgid "Auto creating network..."
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:154
+#: site/apps/osinstances/create/flbootsourceselect.html:158
 msgid "Auto delete volume when instance is terminated"
 msgstr ""
 
@@ -804,7 +831,14 @@ msgstr ""
 msgid "Back to login"
 msgstr ""
 
+#: site/apps/osvolumebackups/create/fl-volumebackups-create.template.html:46
+#: site/apps/osvolumebackups/edit/fl-volumebackups-edit.template.html:16
+msgid "Backup description"
+msgstr ""
+
 #: commons/osbackup/fl-osbackups-create-dialog.html:11
+#: site/apps/osvolumebackups/create/fl-volumebackups-create.template.html:33
+#: site/apps/osvolumebackups/edit/fl-volumebackups-edit.template.html:11
 msgid "Backup name"
 msgstr ""
 
@@ -841,10 +875,20 @@ msgid "Backup type"
 msgstr ""
 
 #: commons/osbackup/fl-osbackups-create-dialog.controller.js:31
+#: site/apps/osvolumebackups/create/fl-volumebackups-create-dialog.controller.js:46
 msgid "Backup was scheduled for creation"
 msgstr ""
 
+#: site/apps/osvolumebackups/restore/fl-volumebackups-restore.controller.js:39
+msgid "Backup was scheduled for restoration"
+msgstr ""
+
+#: site/apps/osvolumebackups/edit/fl-volumebackups-edit-dialog.controller.js:34
+msgid "Backup was scheduled for updating"
+msgstr ""
+
 #: site/apps/osinstances/flinstancedetail.html:360
+#: site/apps/osvolumes/flvolumedetails.html:32
 msgid "Backups"
 msgstr ""
 
@@ -908,13 +952,15 @@ msgstr ""
 msgid "CPU utilization"
 msgstr ""
 
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:69
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:74
 #: commons/osbackup/fl-backupschedules-create-dialog.html:41
 #: commons/osbackup/fl-osbackups-create-dialog.html:31
 #: commons/ui/licensewarning/fllicensewarningdialog.html:55
 #: commons/ui/useralerts/detail/fluseralertdialog.html:20
 #: commons/ui/utils/fluiutils.service.js:55
 #: commons/ui/utils/fluiutils.service.js:93
-#: commons/userprofile/fledituserprofile.html:130
+#: commons/userprofile/fledituserprofile.html:140
 #: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:112
 #: site/apps/billing/cart/cartitem.html:65
 #: site/apps/billing/invoicing/fladdcredit.html:32
@@ -926,7 +972,7 @@ msgstr ""
 #: site/apps/networks/flnetworkadd.html:246
 #: site/apps/networks/flnetworkautocreate.html:29
 #: site/apps/networks/flnetworkedit.html:48
-#: site/apps/networks/flnetworksubnetadd.html:190
+#: site/apps/networks/flnetworksubnetedit.html:191
 #: site/apps/osapiusers/flapiuseredit.html:39
 #: site/apps/osimages/create/flimagecreate.html:222
 #: site/apps/osimages/memberstatus/memberstatusdialog.template.html:21
@@ -936,12 +982,12 @@ msgstr ""
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:36
 #: site/apps/osinstances/associatesecuritygroup/flassociatesecuritygroup.html:32
 #: site/apps/osinstances/bootfromiso/flinstancebootfromiso.html:82
-#: site/apps/osinstances/create/flbootsourceselect.html:164
+#: site/apps/osinstances/create/flbootsourceselect.html:168
 #: site/apps/osinstances/create/flinstancecreate.html:247
 #: site/apps/osinstances/dissociateip/flinstancedissociateip.html:24
 #: site/apps/osinstances/editptr/fleditptr.html:20
 #: site/apps/osinstances/password/flinstancechangepassword.html:29
-#: site/apps/osinstances/rebuild/flinstancerebuild.html:93
+#: site/apps/osinstances/rebuild/flinstancerebuild.html:112
 #: site/apps/osinstances/rename/flinstancerename.html:20
 #: site/apps/osinstances/rescue/flinstancerescue.html:96
 #: site/apps/osinstances/resize/flinstanceresize.html:66
@@ -949,6 +995,9 @@ msgstr ""
 #: site/apps/osrouters/flrouteredit.html:65
 #: site/apps/ossecuritygroups/flsecuritygroupedit.html:45
 #: site/apps/ossecuritygroups/flsecuritygrouprulecreate.html:131
+#: site/apps/osvolumebackups/create/fl-volumebackups-create.template.html:54
+#: site/apps/osvolumebackups/edit/fl-volumebackups-edit.template.html:24
+#: site/apps/osvolumebackups/restore/fl-volumebackups-restore.template.html:52
 #: site/apps/osvolumes/attach/flvolumeattach.html:28
 #: site/apps/osvolumes/create/flvolumecreate.html:102
 #: site/apps/osvolumes/extend/flvolumeextend.html:22
@@ -1066,6 +1115,10 @@ msgstr ""
 msgid "Choices select"
 msgstr ""
 
+#: commons/SFA/sfa_confirm_options/fl-sfa-confirm-options.template.html:11
+msgid "Choose a second factor authentication method"
+msgstr ""
+
 #: commons/ui/flupload/flupload.html:5
 msgid "Choose file"
 msgstr ""
@@ -1082,7 +1135,7 @@ msgstr ""
 msgid "Choose period"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:73
+#: commons/userprofile/fluserprofile.html:76
 #: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:88
 #: domains/enduser/frontend/components/states.config.js:196
 #: site/apps/clients/clienteditdlg/clientedit.html:88
@@ -1116,7 +1169,11 @@ msgstr ""
 msgid "Click here to edit domain contact"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:59
+#: site/apps/osvolumebackups/flvolumebackups.html:65
+msgid "Client"
+msgstr ""
+
+#: commons/userprofile/fluserprofile.html:62
 msgid "Client accounts"
 msgstr ""
 
@@ -1129,8 +1186,20 @@ msgstr ""
 msgid "Client {{fname}} {{lname}} modified"
 msgstr ""
 
+#: site/apps/osvolumebackups/flvolumebackupdetails.html:30
+msgid ""
+"Client:\n"
+"                  <a ui-sref=\"userprofile\" class=\"md-primary\">\n"
+"                    {{ ::$ctrl.volumeBackup.client.name }}\n"
+"                  </a>"
+msgstr ""
+
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:41
 msgid "Client: {{$ctrl.ticket.client_display}}"
+msgstr ""
+
+#: site/apps/osvolumebackups/flvolumebackups.html:38
+msgid "Client: {{backup.client.name}}"
 msgstr ""
 
 #: commons/ui/currentuser/currentuser.html:31
@@ -1148,14 +1217,21 @@ msgstr ""
 
 #: site/apps/osinstances/create/flinstancecreate.html:138
 #: site/apps/osinstances/create/flinstancecreate.html:141
+#: site/apps/osinstances/rebuild/flinstancerebuild.html:67
+#: site/apps/osinstances/rebuild/flinstancerebuild.html:70
 msgid "Cloud-init user data"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:66
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:47
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:55
+msgid "Code"
+msgstr ""
+
+#: site/apps/osinstances/create/flbootsourceselect.html:69
 msgid "Community Images"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:70
+#: commons/userprofile/fluserprofile.html:73
 #: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:56
 #: domains/enduser/frontend/components/states.config.js:195
 #: site/apps/clients/clienteditdlg/clientedit.html:55
@@ -1224,6 +1300,7 @@ msgstr ""
 msgid "Container format: {{ $ctrl.image.container_format }}"
 msgstr ""
 
+#: commons/SFA/confirm_password/fl-sfa-confirm-password.template.html:33
 #: domains/enduser/frontend/components/select_domain/selectdomain.html:105
 msgid "Continue"
 msgstr ""
@@ -1252,7 +1329,7 @@ msgstr ""
 msgid "Could not delete router"
 msgstr ""
 
-#: site/apps/networks/flnetworkdetails.component.js:127
+#: site/apps/networks/flnetworkdetails.component.js:158
 msgid "Could not delete subnet"
 msgstr ""
 
@@ -1264,7 +1341,7 @@ msgstr ""
 msgid "Could not preselect department"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:72
+#: commons/userprofile/fluserprofile.html:75
 #: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:43
 #: domains/enduser/frontend/components/states.config.js:197
 #: site/apps/clients/clienteditdlg/clientedit.html:42
@@ -1280,7 +1357,7 @@ msgstr ""
 #: site/apps/networks/flnetworkadd.html:253
 #: site/apps/networks/flnetworkautocreate.html:36
 #: site/apps/networks/flnetworkedit.html:52
-#: site/apps/networks/flnetworksubnetadd.html:194
+#: site/apps/networks/flnetworksubnetedit.html:195
 #: site/apps/osrouters/flinterfaceadd.html:31
 #: site/apps/osrouters/flrouteredit.html:70
 #: site/apps/ossecuritygroups/flsecuritygroupedit.html:50
@@ -1311,11 +1388,17 @@ msgid "Create a new volume"
 msgstr ""
 
 #: commons/osbackup/fl-osbackups-create-dialog.html:34
+#: site/apps/osvolumebackups/create/fl-volumebackups-create.template.html:57
 msgid "Create backup"
 msgstr ""
 
 #: commons/osbackup/fl-osbackups-create-dialog.html:3
 msgid "Create backup for instance {{ $ctrl.instance.name }}"
+msgstr ""
+
+#: site/apps/osvolumebackups/create/fl-volumebackups-create.template.html:1
+#: site/apps/osvolumebackups/create/fl-volumebackups-create.template.html:3
+msgid "Create backup for volume"
 msgstr ""
 
 #: commons/osbackup/fl-backupschedules-create-dialog.html:44
@@ -1357,6 +1440,7 @@ msgid "Create new account"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.html:384
+#: site/apps/osvolumes/backups/flvolumebackups.template.html:4
 msgid "Create new backup"
 msgstr ""
 
@@ -1391,6 +1475,10 @@ msgstr ""
 msgid "Create volume"
 msgstr ""
 
+#: site/apps/osvolumebackups/flvolumebackups.component.js:28
+msgid "Create volume backup"
+msgstr ""
+
 #: site/apps/oszones/flzoneedit.html:3
 #: site/apps/oszones/flzones.component.js:44
 #: site/apps/oszones/flzones.html:127
@@ -1416,6 +1504,8 @@ msgstr ""
 #: site/apps/ossecuritygroups/flsecuritygroups.html:66
 #: site/apps/ossecuritygroups/states.config.js:36
 #: site/apps/ossecuritygroups/states.config.js:39
+#: site/apps/osvolumebackups/states.config.js:50
+#: site/apps/osvolumes/backups/flvolumebackups.template.html:14
 #: site/apps/osvolumes/states.config.js:63
 #: site/apps/oszones/flzones.html:64
 #: site/apps/oszones/states.config.js:42
@@ -1441,8 +1531,12 @@ msgstr ""
 msgid "Created at: {{ $ctrl.serviceDetails.created_at | date:'medium'}}"
 msgstr ""
 
-#: site/apps/osvolumes/flvolumedetails.html:22
+#: site/apps/osvolumes/flvolumedetails.html:27
 msgid "Created at: {{ $ctrl.volume.created_at | date:'mediumDate' }}"
+msgstr ""
+
+#: site/apps/osvolumebackups/flvolumebackupdetails.html:26
+msgid "Created at: {{ ::$ctrl.volumeBackup.created_at | date:'medium' }}"
 msgstr ""
 
 #: site/apps/oszones/flzonedetails.html:31
@@ -1463,7 +1557,7 @@ msgstr ""
 msgid "Created by"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:83
+#: commons/userprofile/fluserprofile.html:86
 #: site/apps/osinstances/flinstances.html:36
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:38
 msgid "Created on"
@@ -1483,6 +1577,10 @@ msgstr ""
 
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:36
 msgid "Created: {{::$ctrl.securityGroup.created_at | date:'medium'}}"
+msgstr ""
+
+#: site/apps/osvolumebackups/restore/fl-volumebackups-restore.template.html:12
+msgid "Creates a new volume from this backup"
 msgstr ""
 
 #: site/apps/billing/invoicing/flinvoicingdetails.html:18
@@ -1509,15 +1607,15 @@ msgstr ""
 msgid "Current month traffic"
 msgstr ""
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:16
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:18
 msgid "Custom ICMP rule"
 msgstr ""
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:14
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:16
 msgid "Custom TCP rule"
 msgstr ""
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:15
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:17
 msgid "Custom UDP rule"
 msgstr ""
 
@@ -1525,8 +1623,13 @@ msgstr ""
 msgid "DELETED"
 msgstr ""
 
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:16
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:16
+msgid "DISABLED"
+msgstr ""
+
 #: site/apps/networks/flnetworkadd.html:191
-#: site/apps/networks/flnetworksubnetadd.html:136
+#: site/apps/networks/flnetworksubnetedit.html:137
 msgid "DNS name server"
 msgstr ""
 
@@ -1551,6 +1654,7 @@ msgstr ""
 #: site/apps/billing/services/services.html:45
 #: site/apps/osimages/states.config.js:47
 #: site/apps/osinstances/states.config.js:66
+#: site/apps/osvolumebackups/states.config.js:47
 #: site/apps/osvolumes/states.config.js:60
 #: site/apps/pkm/states.config.js:46
 msgid "Date created"
@@ -1574,8 +1678,6 @@ msgstr ""
 #: site/apps/floatingips/flfloatingipdetails.component.js:27
 #: site/apps/floatingips/flfloatingips.component.js:38
 #: site/apps/networks/flnetworkdetails.component.js:27
-#: site/apps/networks/flnetworkdetails.html:108
-#: site/apps/networks/flnetworkdetails.html:60
 #: site/apps/networks/flnetworks.component.js:36
 #: site/apps/networks/flnetworks.html:138
 #: site/apps/osapiusers/flapiusers.component.js:23
@@ -1595,6 +1697,9 @@ msgstr ""
 #: site/apps/osrouters/flrouters.html:49
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:32
 #: site/apps/ossecuritygroups/flsecuritygroups.component.js:42
+#: site/apps/osvolumebackups/actions/flvolumebackupactions.directive.js:24
+#: site/apps/osvolumebackups/actions/flxsvolumebackupactions.directive.js:24
+#: site/apps/osvolumebackups/actions/flxsvolumebackupactions.html:22
 #: site/apps/osvolumes/actions/flvolumeactions.directive.js:26
 #: site/apps/osvolumes/actions/flxsvolumeactions.html:23
 #: site/apps/oszones/flzonedetails.component.js:44
@@ -1706,11 +1811,11 @@ msgstr ""
 msgid "Delete security group {{name}}"
 msgstr ""
 
-#: site/apps/networks/flnetworkdetails.component.js:120
+#: site/apps/networks/flnetworkdetails.component.js:151
 msgid "Delete subnet"
 msgstr ""
 
-#: site/apps/networks/flnetworkdetails.component.js:119
+#: site/apps/networks/flnetworkdetails.component.js:150
 msgid "Delete subnet {{subnet}}"
 msgstr ""
 
@@ -1725,6 +1830,16 @@ msgstr ""
 #: site/apps/osvolumes/actions/flvolumeactions.directive.js:34
 #: site/apps/osvolumes/actions/flxsvolumeactions.directive.js:26
 msgid "Delete volume"
+msgstr ""
+
+#: site/apps/osvolumebackups/actions/flvolumebackupactions.directive.js:33
+#: site/apps/osvolumebackups/actions/flxsvolumebackupactions.directive.js:32
+msgid "Delete volume backup"
+msgstr ""
+
+#: site/apps/osvolumebackups/actions/flvolumebackupactions.directive.js:32
+#: site/apps/osvolumebackups/actions/flxsvolumebackupactions.directive.js:31
+msgid "Delete volume backup {{name}}"
 msgstr ""
 
 #: site/apps/osvolumes/actions/flvolumeactions.directive.js:33
@@ -1788,6 +1903,10 @@ msgstr ""
 msgid "Description: {{ ::$ctrl.router.description }}"
 msgstr ""
 
+#: site/apps/osvolumebackups/flvolumebackupdetails.html:41
+msgid "Description: {{ ::$ctrl.volumeBackup.description }}"
+msgstr ""
+
 #: site/apps/ossecuritygroups/flsecuritygroups.html:21
 msgid "Description: {{ securityGroup.description ? (securityGroup.description):\"-\" }}<br>"
 msgstr ""
@@ -1802,7 +1921,7 @@ msgid "Destination"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:215
-#: site/apps/networks/flnetworksubnetadd.html:160
+#: site/apps/networks/flnetworksubnetedit.html:161
 msgid "Destination (CIDR)"
 msgstr ""
 
@@ -1823,6 +1942,16 @@ msgstr ""
 msgid "Direction"
 msgstr ""
 
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:47
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:65
+msgid "Disable SMS authenticator"
+msgstr ""
+
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.component.js:43
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:57
+msgid "Disable google authenticator"
+msgstr ""
+
 #: site/apps/osimages/create/flimagecreate.html:64
 msgid "Disk format"
 msgstr ""
@@ -1831,7 +1960,7 @@ msgstr ""
 msgid "Disk format: {{ $ctrl.image.disk_format }}"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:149
+#: site/apps/osinstances/create/flbootsourceselect.html:153
 msgid "Disk size is determined by flavor"
 msgstr ""
 
@@ -1921,6 +2050,10 @@ msgstr ""
 msgid "Domains"
 msgstr ""
 
+#: commons/SFA/remember_sfa/fl-remember-sfa.template.html:4
+msgid "Don't ask again on this computer"
+msgstr ""
+
 #: tickets/enduser/frontend/components/states.config.js:77
 msgid "Done"
 msgstr ""
@@ -1954,6 +2087,11 @@ msgstr ""
 msgid "Duplicate filter entries are not allowed!"
 msgstr ""
 
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:14
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:14
+msgid "ENABLED<span ng-if=\"$ctrl.status.default\"> - DEFAULT</span>"
+msgstr ""
+
 #: domains/enduser/frontend/components/transfer_domain_form/transferdomainform.html:26
 msgid "EPP code"
 msgstr ""
@@ -1967,6 +2105,8 @@ msgstr ""
 #: site/apps/billing/cart/cart.html:74
 #: site/apps/osapiusers/flapiusers.component.js:25
 #: site/apps/osapiusers/flapiusers.html:101
+#: site/apps/osvolumebackups/actions/flvolumebackupactions.directive.js:25
+#: site/apps/osvolumebackups/actions/flxsvolumebackupactions.html:10
 #: site/apps/pkm/flpkmkeys.component.js:28
 #: site/apps/pkm/flpkmkeys.html:95
 #: tickets/enduser/frontend/components/tickets_actions/ticketsactions.html:1
@@ -1977,7 +2117,7 @@ msgstr ""
 msgid "Edit SSH key"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:89
+#: commons/userprofile/fluserprofile.html:92
 #: commons/userprofile/states.config.js:71
 #: site/apps/clients/flclientedit.html:8
 msgid "Edit client"
@@ -2027,6 +2167,14 @@ msgstr ""
 msgid "Edit security group"
 msgstr ""
 
+#: site/apps/networks/flnetworksubnetedit.controller.js:103
+msgid "Edit subnet scheduled"
+msgstr ""
+
+#: site/apps/networks/flnetworksubnetedit.html:4
+msgid "Edit subnet {{ $ctrl.subnet.name }}"
+msgstr ""
+
 #: tickets/enduser/frontend/components/states.config.js:186
 msgid "Edit ticket"
 msgstr ""
@@ -2035,7 +2183,7 @@ msgstr ""
 msgid "Edit ticket {{$ctrl.ticket.id}}"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:41
+#: commons/userprofile/fluserprofile.html:44
 msgid "Edit user profile"
 msgstr ""
 
@@ -2061,7 +2209,7 @@ msgstr ""
 msgid "Egress - Outgoing"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:71
+#: commons/userprofile/fluserprofile.html:74
 #: domains/enduser/frontend/components/contacts/contacts.html:26
 #: domains/enduser/frontend/components/states.config.js:194
 #: site/apps/oszones/flzoneedit.html:36
@@ -2070,7 +2218,7 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-#: commons/userprofile/fledituserprofile.html:40
+#: commons/userprofile/fledituserprofile.html:42
 msgid "Email address"
 msgstr ""
 
@@ -2095,12 +2243,16 @@ msgid "Email: {{ $ctrl.zone.email }}"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:152
-#: site/apps/networks/flnetworksubnetadd.html:97
+#: site/apps/networks/flnetworksubnetedit.html:98
 msgid "Enable DHCP"
 msgstr ""
 
 #: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:57
 msgid "Enable ID protection for this domain"
+msgstr ""
+
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:72
+msgid "Enable SMS authenticator"
 msgstr ""
 
 #: site/apps/osrouters/flrouterdetails.html:35
@@ -2113,6 +2265,10 @@ msgstr ""
 
 #: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:49
 msgid "Enable email forwarding for this domain"
+msgstr ""
+
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:64
+msgid "Enable google authenticator"
 msgstr ""
 
 #: site/apps/osvolumes/extend/flvolumeextend.html:11
@@ -2128,12 +2284,17 @@ msgid "Enter a valid value"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:75
-#: site/apps/networks/flnetworksubnetadd.html:23
+#: site/apps/networks/flnetworksubnetedit.html:24
 msgid "Enter address in CIDR format"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:68
 msgid "Enter address manually"
+msgstr ""
+
+#: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:27
+#: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:29
+msgid "Enter code"
 msgstr ""
 
 #: domains/enduser/frontend/components/select_domain/selectdomain.html:34
@@ -2145,8 +2306,16 @@ msgstr ""
 msgid "Enter domain name"
 msgstr ""
 
+#: commons/SFA/confirm_password/fl-sfa-confirm-password.template.html:27
+msgid "Enter password"
+msgstr ""
+
 #: commons/ui/filter/flfilter.html:195
 msgid "Enter search value"
+msgstr ""
+
+#: commons/SFA/confirm_password/fl-sfa-confirm-password.template.html:8
+msgid "Enter your password again"
 msgstr ""
 
 #: commons/ui/flcopy/flcopy.directive.js:23
@@ -2293,8 +2462,8 @@ msgstr ""
 msgid "Flavor"
 msgstr ""
 
-#: oscommons/flavorsascards/flavorsascards.component.html:39
-#: oscommons/flavorsascards/flavorsascards.component.html:80
+#: oscommons/flavorsascards/flavorsascards.component.html:38
+#: oscommons/flavorsascards/flavorsascards.component.html:76
 msgid "Flavor is out of stock"
 msgstr ""
 
@@ -2334,6 +2503,10 @@ msgstr ""
 msgid "Floating network region"
 msgstr ""
 
+#: site/apps/osvolumebackups/create/fl-volumebackups-create.template.html:42
+msgid "Force (indicates whether to backup, even if the volume is attached)"
+msgstr ""
+
 #: commons/auth/login.html:55
 msgid "Forgot password"
 msgstr ""
@@ -2356,13 +2529,13 @@ msgstr ""
 msgid "Gateway"
 msgstr ""
 
-#: site/apps/networks/flnetworkdetails.html:104
+#: site/apps/networks/flnetworkdetails.html:109
 #: site/apps/networks/flnetworkdetails.html:59
 msgid "Gateway IP"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:113
-#: site/apps/networks/flnetworksubnetadd.html:58
+#: site/apps/networks/flnetworksubnetedit.html:59
 msgid "Gateway ip"
 msgstr ""
 
@@ -2380,6 +2553,10 @@ msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.html:55
 msgid "Get PTR"
+msgstr ""
+
+#: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:13
+msgid "Get a verification code from the Google Authenticator"
 msgstr ""
 
 #: site/apps/networks/flnetworkautocreate.html:2
@@ -2408,6 +2585,25 @@ msgstr ""
 msgid "Go to login"
 msgstr ""
 
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:10
+msgid "Google authenticator"
+msgstr ""
+
+#: commons/SFA/google_authenticator/states.config.js:46
+msgid "Google authenticator confirm"
+msgstr ""
+
+#: commons/SFA/google_authenticator/states.config.js:15
+msgid "Google authenticator details"
+msgstr ""
+
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:37
+msgid ""
+"Google authenticator is enabled. You can disable it or regenerate the secret key. If you\n"
+"            regenerate the key, you will need to re-enable google authenticator by scanning again the new QR code or\n"
+"          manually entering the secret key."
+msgstr ""
+
 #: commons/ui/filter/flfilter.html:65
 msgid "Greater than"
 msgstr ""
@@ -2418,6 +2614,14 @@ msgstr ""
 
 #: oscommons/osfilters/flinstancestatus.filter.js:16
 msgid "HARD REBOOT"
+msgstr ""
+
+#: site/apps/osvolumebackups/states.config.js:93
+msgid "Has dependent backups"
+msgstr ""
+
+#: site/apps/osvolumebackups/flvolumebackupdetails.html:29
+msgid "Has dependent backups: {{ ::$ctrl.volumeBackup.has_dependent_backups }}"
 msgstr ""
 
 #: commons/ui/currentuser/currentuser.html:24
@@ -2443,9 +2647,10 @@ msgid "History log"
 msgstr ""
 
 #: commons/customfields/flfieldinput.html:31
-#: commons/userprofile/fledituserprofile.html:61
-#: commons/userprofile/fledituserprofile.html:83
+#: commons/userprofile/fledituserprofile.html:71
+#: commons/userprofile/fledituserprofile.html:93
 #: site/apps/osinstances/create/flinstancecreate.html:219
+#: site/apps/osinstances/rebuild/flinstancerebuild.html:88
 msgid "Hold button to reveal password"
 msgstr ""
 
@@ -2471,10 +2676,11 @@ msgstr ""
 msgid "ICMP type"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:82
+#: commons/userprofile/fluserprofile.html:85
 #: domains/enduser/frontend/components/states.config.js:193
 #: site/apps/osapiusers/flapiusers.html:29
 #: site/apps/osapiusers/flapiusers.html:62
+#: site/apps/osvolumes/backups/flvolumebackups.template.html:12
 msgid "ID"
 msgstr ""
 
@@ -2490,7 +2696,7 @@ msgstr ""
 msgid "ID: {{ $ctrl.image.id }}"
 msgstr ""
 
-#: site/apps/osvolumes/flvolumedetails.html:19
+#: site/apps/osvolumes/flvolumedetails.html:24
 msgid "ID: {{ $ctrl.volume.id }}"
 msgstr ""
 
@@ -2500,6 +2706,10 @@ msgstr ""
 
 #: site/apps/osrouters/flrouterdetails.html:29
 msgid "ID: {{ ::$ctrl.router.id }}"
+msgstr ""
+
+#: site/apps/osvolumebackups/flvolumebackupdetails.html:24
+msgid "ID: {{ ::$ctrl.volumeBackup.id }}"
 msgstr ""
 
 #: site/apps/oszones/flzonedetails.html:29
@@ -2541,12 +2751,12 @@ msgid "IPv6"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:137
-#: site/apps/networks/flnetworksubnetadd.html:82
+#: site/apps/networks/flnetworksubnetedit.html:83
 msgid "IPv6 address mode"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:126
-#: site/apps/networks/flnetworksubnetadd.html:71
+#: site/apps/networks/flnetworksubnetedit.html:72
 msgid "IPv6 ra mode"
 msgstr ""
 
@@ -2607,6 +2817,11 @@ msgstr ""
 msgid "Immediate"
 msgstr ""
 
+#: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:16
+#: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:18
+msgid "In demo mode, any input will log you in."
+msgstr ""
+
 #: tickets/enduser/frontend/components/states.config.js:81
 msgid "In progress"
 msgstr ""
@@ -2615,7 +2830,18 @@ msgstr ""
 msgid "Incorrect format"
 msgstr ""
 
+#: site/apps/osvolumebackups/flvolumebackups.html:30
+#: site/apps/osvolumebackups/flvolumebackups.html:64
+#: site/apps/osvolumes/backups/flvolumebackups.template.html:13
+msgid "Incremental"
+msgstr ""
+
+#: site/apps/osvolumebackups/create/fl-volumebackups-create.template.html:38
+msgid "Incremental (the first backup of a volume has to be a full backup)"
+msgstr ""
+
 #: site/apps/osinstances/flinstancedetail.html:31
+#: site/apps/osvolumes/flvolumedetails.html:18
 msgid "Info"
 msgstr ""
 
@@ -2636,7 +2862,7 @@ msgstr ""
 msgid "Instance boot from ISO scheduled"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.component.js:304
+#: site/apps/osinstances/create/flinstancecreate.component.js:375
 msgid "Instance create scheduled"
 msgstr ""
 
@@ -2649,7 +2875,7 @@ msgstr ""
 msgid "Instance name"
 msgstr ""
 
-#: site/apps/osinstances/rebuild/flinstancerebuild.component.js:48
+#: site/apps/osinstances/rebuild/flinstancerebuild.component.js:55
 msgid "Instance rebuild scheduled"
 msgstr ""
 
@@ -2695,7 +2921,7 @@ msgstr ""
 msgid "Invalid URL"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:146
+#: site/apps/osinstances/create/flbootsourceselect.html:150
 msgid "Invalid volume size"
 msgstr ""
 
@@ -2721,13 +2947,21 @@ msgstr ""
 msgid "Invoicing feature is disabled"
 msgstr ""
 
-#: site/apps/networks/flnetworkdetails.html:100
+#: site/apps/networks/flnetworkdetails.html:105
 #: site/apps/networks/flnetworkdetails.html:58
 msgid "Ip version"
 msgstr ""
 
 #: site/apps/networks/states.config.js:53
 msgid "Is default"
+msgstr ""
+
+#: site/apps/osvolumebackups/states.config.js:70
+msgid "Is incremental"
+msgstr ""
+
+#: site/apps/osvolumebackups/flvolumebackupdetails.html:27
+msgid "Is incremental: {{ ::$ctrl.volumeBackup.is_incremental }}"
 msgstr ""
 
 #: site/apps/osimages/flimages.html:87
@@ -2756,7 +2990,7 @@ msgstr ""
 msgid "Key content"
 msgstr ""
 
-#: commons/userprofile/fledituserprofile.html:94
+#: commons/userprofile/fledituserprofile.html:104
 #: commons/userprofile/fluserprofile.html:27
 msgid "Language"
 msgstr ""
@@ -2813,6 +3047,8 @@ msgstr ""
 #: site/apps/osrouters/flrouters.html:59
 #: site/apps/ossecuritygroups/flsecuritygroups.html:125
 #: site/apps/ossecuritygroups/flsecuritygroups.html:57
+#: site/apps/osvolumebackups/flvolumebackups.html:144
+#: site/apps/osvolumebackups/flvolumebackups.html:51
 #: site/apps/osvolumes/flvolumes.html:127
 #: site/apps/osvolumes/flvolumes.html:48
 #: site/apps/oszones/flzones.html:118
@@ -2822,7 +3058,7 @@ msgstr ""
 msgid "Load more"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:133
+#: site/apps/osinstances/create/flbootsourceselect.html:137
 msgid "Local compute storage"
 msgstr ""
 
@@ -2905,12 +3141,13 @@ msgstr ""
 #: site/apps/osimages/flimages.html:175
 #: site/apps/osinstances/actions/flinstanceactions.html:46
 #: site/apps/osinstances/actions/flxsinstanceactions.html:4
+#: site/apps/osvolumebackups/actions/flxsvolumebackupactions.html:1
 #: site/apps/osvolumes/actions/flxsvolumeactions.html:3
 #: site/apps/pkm/flpkmkeys.html:88
 msgid "More"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:25
+#: site/apps/osinstances/create/flbootsourceselect.html:26
 msgid "My Images"
 msgstr ""
 
@@ -2920,7 +3157,7 @@ msgstr ""
 msgid "My account"
 msgstr ""
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:48
+#: site/apps/baseconfig/fleio.baseconfig.module.js:49
 #: site/apps/osimages/states.config.js:43
 #: site/apps/osinstances/bootfromiso/flinstancebootfromiso.html:36
 #: site/apps/osinstances/rescue/flinstancerescue.html:36
@@ -2942,10 +3179,10 @@ msgstr ""
 #: site/apps/billing/services/services.html:44
 #: site/apps/billing/services/states.config.js:37
 #: site/apps/networks/flnetworkdetails.html:56
-#: site/apps/networks/flnetworkdetails.html:92
+#: site/apps/networks/flnetworkdetails.html:97
 #: site/apps/networks/flnetworkedit.html:11
 #: site/apps/networks/flnetworks.html:60
-#: site/apps/networks/flnetworksubnetadd.html:12
+#: site/apps/networks/flnetworksubnetedit.html:13
 #: site/apps/networks/states.config.js:37
 #: site/apps/osapiusers/flapiuseredit.html:16
 #: site/apps/osapiusers/flapiusers.html:61
@@ -2961,6 +3198,9 @@ msgstr ""
 #: site/apps/ossecuritygroups/flsecuritygroupedit.html:29
 #: site/apps/ossecuritygroups/flsecuritygroups.html:65
 #: site/apps/ossecuritygroups/states.config.js:36
+#: site/apps/osvolumebackups/flvolumebackups.html:60
+#: site/apps/osvolumebackups/states.config.js:47
+#: site/apps/osvolumes/backups/flvolumebackups.template.html:11
 #: site/apps/osvolumes/create/flvolumecreate.html:34
 #: site/apps/osvolumes/flvolumes.html:57
 #: site/apps/osvolumes/rename/flvolumerename.html:11
@@ -2993,9 +3233,9 @@ msgid "Network"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:77
+#: site/apps/networks/flnetworkdetails.html:101
 #: site/apps/networks/flnetworkdetails.html:57
-#: site/apps/networks/flnetworkdetails.html:96
-#: site/apps/networks/flnetworksubnetadd.html:25
+#: site/apps/networks/flnetworksubnetedit.html:26
 msgid "Network address"
 msgstr ""
 
@@ -3015,8 +3255,8 @@ msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:102
 #: site/apps/networks/flnetworkadd.html:104
-#: site/apps/networks/flnetworksubnetadd.html:46
-#: site/apps/networks/flnetworksubnetadd.html:49
+#: site/apps/networks/flnetworksubnetedit.html:47
+#: site/apps/networks/flnetworksubnetedit.html:50
 msgid "Network mask"
 msgstr ""
 
@@ -3060,13 +3300,17 @@ msgstr ""
 msgid "New cycle"
 msgstr ""
 
-#: commons/userprofile/fledituserprofile.html:71
+#: commons/userprofile/fledituserprofile.html:81
 msgid "New password"
+msgstr ""
+
+#: site/apps/osvolumebackups/restore/fl-volumebackups-restore.template.html:18
+msgid "New volume name"
 msgstr ""
 
 #: site/apps/billing/services/upgrade/flserviceupgrade.component.html:41
 #: site/apps/networks/flnetworkadd.html:257
-#: site/apps/networks/flnetworksubnetadd.html:200
+#: site/apps/networks/flnetworksubnetedit.html:201
 msgid "Next"
 msgstr ""
 
@@ -3098,8 +3342,12 @@ msgid ""
 "              : {{$ctrl.serviceDetails.next_invoice_date | date:'medium'}}"
 msgstr ""
 
+#: site/apps/osvolumes/backups/flvolumebackups.template.html:62
+msgid "Next page"
+msgstr ""
+
 #: site/apps/networks/flnetworkadd.html:221
-#: site/apps/networks/flnetworksubnetadd.html:166
+#: site/apps/networks/flnetworksubnetedit.html:167
 msgid "Nexthop (IP)"
 msgstr ""
 
@@ -3142,7 +3390,7 @@ msgstr ""
 msgid "No backups for this instance"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:77
+#: site/apps/osinstances/create/flinstancecreate.html:76
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:53
 msgid "No boot source selected"
 msgstr ""
@@ -3178,11 +3426,11 @@ msgstr ""
 msgid "No file chosen"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:127
+#: site/apps/osinstances/create/flinstancecreate.html:126
 msgid "No flavor selected"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:130
+#: site/apps/osinstances/create/flinstancecreate.html:129
 msgid "No flavors available in this region"
 msgstr ""
 
@@ -3196,7 +3444,7 @@ msgstr ""
 msgid "No images"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:31
+#: site/apps/osinstances/create/flbootsourceselect.html:32
 msgid "No images to display"
 msgstr ""
 
@@ -3228,6 +3476,10 @@ msgstr ""
 msgid "No regions available"
 msgstr ""
 
+#: site/apps/osvolumes/backups/flvolumebackups.template.html:55
+msgid "No related volume backups were found."
+msgstr ""
+
 #: site/apps/osrouters/flrouters.html:13
 #: site/apps/osrouters/flrouters.html:6
 msgid "No routers"
@@ -3255,6 +3507,10 @@ msgstr ""
 
 #: site/apps/billing/history/billinghistory.html:34
 msgid "No usage recorded yet"
+msgstr ""
+
+#: site/apps/osvolumebackups/restore/fl-volumebackups-restore.template.html:42
+msgid "No volume found"
 msgstr ""
 
 #: site/apps/dashboard/fldashboard.html:96
@@ -3288,7 +3544,7 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.component.js:78
+#: site/apps/osinstances/create/flinstancecreate.component.js:102
 msgid ""
 "Not compatible with\n"
 "selected boot source"
@@ -3349,8 +3605,16 @@ msgstr ""
 msgid "Object"
 msgstr ""
 
-#: commons/userprofile/fledituserprofile.html:49
-#: commons/userprofile/fledituserprofile.html:53
+#: site/apps/osvolumebackups/states.config.js:88
+msgid "Object count"
+msgstr ""
+
+#: site/apps/osvolumebackups/flvolumebackupdetails.html:28
+msgid "Object count: {{ ::$ctrl.volumeBackup.object_count }}"
+msgstr ""
+
+#: commons/userprofile/fledituserprofile.html:59
+#: commons/userprofile/fledituserprofile.html:63
 msgid "Old password"
 msgstr ""
 
@@ -3419,12 +3683,13 @@ msgstr ""
 msgid "Other details"
 msgstr ""
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:17
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:19
 msgid "Other protocol"
 msgstr ""
 
 #: site/apps/osimages/flimagedetails.html:41
-#: site/apps/osvolumes/flvolumedetails.html:18
+#: site/apps/osvolumebackups/flvolumebackupdetails.html:23
+#: site/apps/osvolumes/flvolumedetails.html:23
 msgid "Overview"
 msgstr ""
 
@@ -3504,12 +3769,25 @@ msgstr ""
 msgid "Permanently hide"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:81
+#: commons/userprofile/fluserprofile.html:84
 #: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:101
 #: site/apps/clients/clienteditdlg/clientedit.html:101
 #: site/apps/clients/fladdclient.html:113
 #: site/apps/clients/flclientedit.html:113
 msgid "Phone"
+msgstr ""
+
+#: commons/ui/flphoneinput/flphoneinput.component.html:2
+msgid "Phone country code"
+msgstr ""
+
+#: commons/ui/flphoneinput/flphoneinput.component.html:13
+#: commons/ui/flphoneinput/flphoneinput.component.html:9
+msgid "Phone number"
+msgstr ""
+
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:99
+msgid "Phone number set"
 msgstr ""
 
 #: site/apps/billing/cart/cart.html:116
@@ -3572,6 +3850,10 @@ msgstr ""
 #: commons/ui/sidenav/flsidenav.html:16
 #: commons/ui/sidenav/flsidenav.html:45
 msgid "Powered by Fleio v"
+msgstr ""
+
+#: site/apps/osvolumes/backups/flvolumebackups.template.html:59
+msgid "Previous page"
 msgstr ""
 
 #: tickets/enduser/frontend/components/states.config.js:59
@@ -3675,13 +3957,13 @@ msgstr ""
 msgid "Reboot"
 msgstr ""
 
-#: site/apps/osinstances/actions/flinstanceactions.directive.js:168
-#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:160
+#: site/apps/osinstances/actions/flinstanceactions.directive.js:170
+#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:162
 msgid "Reboot instance"
 msgstr ""
 
-#: site/apps/osinstances/actions/flinstanceactions.directive.js:166
-#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:158
+#: site/apps/osinstances/actions/flinstanceactions.directive.js:168
+#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:160
 msgid "Reboot instance {{name}}"
 msgstr ""
 
@@ -3691,7 +3973,7 @@ msgstr ""
 msgid "Rebuild"
 msgstr ""
 
-#: site/apps/osinstances/rebuild/flinstancerebuild.html:90
+#: site/apps/osinstances/rebuild/flinstancerebuild.html:109
 msgid "Rebuild instance"
 msgstr ""
 
@@ -3727,6 +4009,14 @@ msgstr ""
 
 #: site/apps/billing/invoicing/states.config.js:71
 msgid "Refunded"
+msgstr ""
+
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.component.js:29
+msgid "Regenerate"
+msgstr ""
+
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:67
+msgid "Regenerate key"
 msgstr ""
 
 #: site/apps/floatingips/flfloatingips.html:20
@@ -3801,7 +4091,7 @@ msgstr ""
 msgid "Registration period: {{ $ctrl.domain.registration_period }} years"
 msgstr ""
 
-#: site/apps/osinstances/rebuild/flinstancerebuild.html:83
+#: site/apps/osinstances/rebuild/flinstancerebuild.html:102
 msgid "Reinstall instance"
 msgstr ""
 
@@ -3816,6 +4106,12 @@ msgstr ""
 
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:42
 msgid "Related service: <a ui-sref=\"billingServicesDetails({'id': $ctrl.ticket.service})\" class=\"md-primary\">{{$ctrl.ticket.service}}</a>"
+msgstr ""
+
+#: site/apps/osvolumebackups/flvolumebackupdetails.html:36
+msgid ""
+"Related volume:\n"
+"                  <a ui-sref=\"openstackVolumeDetails({'id': $ctrl.volumeBackup.volume})\" class=\"md-primary\">{{ $ctrl.volumeBackup.related_volume_name || $ctrl.volumeBackup.volume }}</a>"
 msgstr ""
 
 #: commons/auth/login.html:44
@@ -3882,6 +4178,10 @@ msgstr ""
 msgid "Request cancellation"
 msgstr ""
 
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:31
+msgid "Request code"
+msgstr ""
+
 #: commons/auth/reset/flreset.html:10
 msgid "Request password reset"
 msgstr ""
@@ -3902,6 +4202,10 @@ msgstr ""
 
 #: site/apps/signup/flconfirmemail.component.html:35
 msgid "Resend code"
+msgstr ""
+
+#: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:45
+msgid "Resend verification code"
 msgstr ""
 
 #: commons/auth/reset/flreset.html:32
@@ -3938,13 +4242,31 @@ msgstr ""
 msgid "Resource name"
 msgstr ""
 
+#: site/apps/osvolumebackups/actions/flvolumebackupactions.directive.js:26
+#: site/apps/osvolumebackups/actions/flxsvolumebackupactions.directive.js:25
+#: site/apps/osvolumebackups/actions/flxsvolumebackupactions.html:16
+msgid "Restore"
+msgstr ""
+
+#: site/apps/osvolumebackups/restore/fl-volumebackups-restore.template.html:55
+msgid "Restore backup"
+msgstr ""
+
+#: site/apps/osvolumebackups/restore/fl-volumebackups-restore.template.html:3
+msgid "Restore backup {{ $ctrl.backup.name }}"
+msgstr ""
+
+#: site/apps/osvolumebackups/restore/fl-volumebackups-restore.template.html:13
+msgid "Restore to a new volume"
+msgstr ""
+
 #: site/apps/osinstances/actions/flinstanceactions.html:108
 #: site/apps/osinstances/actions/flxsinstanceactions.html:110
 msgid "Revert resize"
 msgstr ""
 
 #: site/apps/osinstances/create/flinstancecreate.html:215
-#: site/apps/osinstances/rebuild/flinstancerebuild.html:69
+#: site/apps/osinstances/rebuild/flinstancerebuild.html:84
 #: site/apps/osinstances/rescue/flinstancerescue.html:74
 #: site/apps/osinstances/rescue/flinstancerescue.html:81
 msgid "Root password"
@@ -4020,6 +4342,25 @@ msgstr ""
 msgid "SHELVED OFFLOADED"
 msgstr ""
 
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:10
+msgid "SMS authenticator"
+msgstr ""
+
+#: commons/SFA/sms_authenticator/states.config.js:51
+msgid "SMS authenticator confirm"
+msgstr ""
+
+#: commons/SFA/sms_authenticator/states.config.js:15
+msgid "SMS authenticator details"
+msgstr ""
+
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:45
+msgid ""
+"SMS authenticator is enabled. You can disable it or change your phone number.\n"
+"            If you change the number, you will need to re-enable SMS authenticator by requesting another code and\n"
+"          re-submitting the enable authenticator form."
+msgstr ""
+
 #: oscommons/osfilters/flinstancestatus.filter.js:28
 msgid "SOFT DELETE"
 msgstr ""
@@ -4059,10 +4400,10 @@ msgstr ""
 msgid "SUSPENDED"
 msgstr ""
 
-#: commons/userprofile/fledituserprofile.html:129
+#: commons/userprofile/fledituserprofile.html:139
 #: site/apps/networks/flnetworkautocreate.html:37
 #: site/apps/networks/flnetworkedit.html:53
-#: site/apps/networks/flnetworksubnetadd.html:195
+#: site/apps/networks/flnetworksubnetedit.html:196
 #: site/apps/osrouters/flrouteredit.html:73
 #: site/apps/ossecuritygroups/flsecuritygroupedit.html:53
 #: site/apps/oszones/flzoneedit.html:66
@@ -4154,6 +4495,10 @@ msgstr ""
 msgid "Search tickets"
 msgstr ""
 
+#: site/apps/osvolumebackups/flvolumebackups.component.js:22
+msgid "Search volume backups"
+msgstr ""
+
 #: site/apps/osvolumes/flvolumes.component.js:23
 msgid "Search volumes"
 msgstr ""
@@ -4162,10 +4507,27 @@ msgstr ""
 msgid "Search zones"
 msgstr ""
 
+#: commons/SFA/states.config.js:15
+#: commons/SFA/states.config.js:41
+msgid "Second factor authentication"
+msgstr ""
+
+#: commons/SFA/states.config.js:67
+msgid "Second factor authentication confirm options"
+msgstr ""
+
 #: domains/enduser/frontend/components/domain_details/domaindetails.html:104
 #: domains/enduser/frontend/components/order_product/orderproduct.html:26
 #: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:85
 msgid "Second nameserver"
+msgstr ""
+
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:33
+msgid "Secret key: {{$ctrl.secret_key}}"
+msgstr ""
+
+#: commons/userprofile/fluserprofile.html:42
+msgid "Secure your account"
 msgstr ""
 
 #: site/apps/ossecuritygroups/flsecuritygrouprulecreate.html:90
@@ -4201,11 +4563,11 @@ msgstr ""
 msgid "Security groups"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:161
+#: site/apps/osinstances/create/flbootsourceselect.html:165
 msgid "Select"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:92
+#: site/apps/osinstances/create/flinstancecreate.html:91
 msgid "Select a configuration"
 msgstr ""
 
@@ -4214,7 +4576,7 @@ msgstr ""
 msgid "Select a domain contact"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:99
+#: site/apps/osinstances/create/flinstancecreate.html:98
 msgid "Select a flavor"
 msgstr ""
 
@@ -4239,7 +4601,7 @@ msgid "Select an existing value"
 msgstr ""
 
 #: site/apps/osinstances/create/flbootsourceselect.html:2
-#: site/apps/osinstances/create/flinstancecreate.html:61
+#: site/apps/osinstances/create/flinstancecreate.html:60
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:37
 msgid "Select boot source"
 msgstr ""
@@ -4302,7 +4664,7 @@ msgstr ""
 msgid "Select source type"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:131
+#: site/apps/osinstances/create/flbootsourceselect.html:135
 msgid "Select storage type"
 msgstr ""
 
@@ -4332,6 +4694,14 @@ msgstr ""
 msgid "Select user"
 msgstr ""
 
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:29
+msgid "Send code"
+msgstr ""
+
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:28
+msgid "Send code to ?"
+msgstr ""
+
 #: site/apps/oszones/states.config.js:40
 msgid "Serial Number"
 msgstr ""
@@ -4355,12 +4725,29 @@ msgstr ""
 msgid "Services"
 msgstr ""
 
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:65
+msgid "Set SMS authenticator as default"
+msgstr ""
+
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:61
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:69
+msgid "Set as default"
+msgstr ""
+
 #: site/apps/osimages/memberstatus/memberstatusdialog.template.html:16
 msgid "Set back to pending"
 msgstr ""
 
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.component.js:61
+msgid "Set google authenticator as default"
+msgstr ""
+
 #: commons/auth/states.config.js:100
 msgid "Set new password"
+msgstr ""
+
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:40
+msgid "Set phone number"
 msgstr ""
 
 #: site/apps/osinstances/create/flinstancecreate.html:232
@@ -4383,7 +4770,7 @@ msgstr ""
 msgid "Shared"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:49
+#: site/apps/osinstances/create/flbootsourceselect.html:51
 msgid "Shared Images"
 msgstr ""
 
@@ -4440,16 +4827,18 @@ msgstr ""
 msgid "Shut down"
 msgstr ""
 
-#: site/apps/osinstances/actions/flinstanceactions.directive.js:175
-#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:170
+#: site/apps/osinstances/actions/flinstanceactions.directive.js:177
+#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:172
 msgid "Shut down instance"
 msgstr ""
 
-#: site/apps/osinstances/actions/flinstanceactions.directive.js:173
-#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:168
+#: site/apps/osinstances/actions/flinstanceactions.directive.js:175
+#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:170
 msgid "Shut down instance {{name}}"
 msgstr ""
 
+#: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:37
+#: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:39
 #: commons/auth/login.html:50
 msgid "Sign in"
 msgstr ""
@@ -4459,6 +4848,9 @@ msgstr ""
 msgid "Sign up"
 msgstr ""
 
+#: site/apps/osvolumebackups/flvolumebackups.html:62
+#: site/apps/osvolumebackups/states.config.js:47
+#: site/apps/osvolumebackups/states.config.js:83
 #: site/apps/osvolumes/flvolumes.html:28
 #: site/apps/osvolumes/flvolumes.html:59
 #: site/apps/osvolumes/states.config.js:60
@@ -4475,8 +4867,12 @@ msgstr ""
 msgid "Size: {{ $ctrl.image.size/1073741824 | number:2 }} GB"
 msgstr ""
 
-#: site/apps/osvolumes/flvolumedetails.html:20
+#: site/apps/osvolumes/flvolumedetails.html:25
 msgid "Size: {{ $ctrl.volume.size | number }} GB"
+msgstr ""
+
+#: site/apps/osvolumebackups/flvolumebackupdetails.html:25
+msgid "Size: {{ $ctrl.volumeBackup.size | number }} GB"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.component.js:179
@@ -4505,7 +4901,7 @@ msgstr ""
 msgid "Standard images"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:134
+#: site/apps/osinstances/create/flbootsourceselect.html:138
 msgid "Standard volume"
 msgstr ""
 
@@ -4514,11 +4910,11 @@ msgstr ""
 msgid "Start"
 msgstr ""
 
-#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:165
+#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:167
 msgid "Start instance"
 msgstr ""
 
-#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:163
+#: site/apps/osinstances/actions/flxsinstanceactions.directive.js:165
 msgid "Start instance {{name}}"
 msgstr ""
 
@@ -4549,6 +4945,9 @@ msgstr ""
 #: site/apps/osinstances/states.config.js:64
 #: site/apps/osinstances/states.config.js:75
 #: site/apps/osrouters/flrouters.html:67
+#: site/apps/osvolumebackups/flvolumebackups.html:61
+#: site/apps/osvolumebackups/states.config.js:47
+#: site/apps/osvolumebackups/states.config.js:75
 #: site/apps/osvolumes/flvolumes.html:58
 #: site/apps/osvolumes/states.config.js:60
 #: site/apps/osvolumes/states.config.js:73
@@ -4600,11 +4999,11 @@ msgid "Subnet"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:85
-#: site/apps/networks/flnetworksubnetadd.html:33
+#: site/apps/networks/flnetworksubnetedit.html:34
 msgid "Subnet address pool"
 msgstr ""
 
-#: site/apps/networks/flnetworkdetails.component.js:124
+#: site/apps/networks/flnetworkdetails.component.js:155
 msgid "Subnet delete scheduled"
 msgstr ""
 
@@ -4684,8 +5083,8 @@ msgstr ""
 msgid "The API user name will be prefixed with {{ $ctrl.createOptions.prefix }}"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.component.js:75
-#: site/apps/osinstances/create/flinstancecreate.component.js:79
+#: site/apps/osinstances/create/flinstancecreate.component.js:103
+#: site/apps/osinstances/create/flinstancecreate.component.js:99
 msgid ""
 "The selected image source requires\n"
 "a flavor with more resources.\n"
@@ -4701,15 +5100,24 @@ msgstr ""
 msgid "The value is lower than minimum"
 msgstr ""
 
-#: commons/userprofile/fledituserprofile.html:105
+#: commons/userprofile/fledituserprofile.html:115
 #: commons/userprofile/fluserprofile.html:32
 msgid "Theme"
+msgstr ""
+
+#: commons/SFA/sfa_options/fl-sfa-options.template.html:7
+msgid "There are no available second factor authentication methods."
 msgstr ""
 
 #: domains/enduser/frontend/components/domain_details/domaindetails.html:112
 #: domains/enduser/frontend/components/order_product/orderproduct.html:35
 #: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:94
 msgid "Third nameserver"
+msgstr ""
+
+#: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:11
+#: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:12
+msgid "This extra step shows it’s really you trying to sign in"
 msgstr ""
 
 #: commons/auth/reset/flreset.html:25
@@ -4779,6 +5187,20 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:28
+msgid ""
+"To enable SMS authenticator on your profile, request a code to be sent to your mobile phone\n"
+"            number, enter it in the input below and submit the form."
+msgstr ""
+
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:29
+msgid ""
+"To enable google authenticator on your profile, scan the above QR into google authenticator\n"
+"              app or another compatible app on your mobile or just add the following code using the\n"
+"              \"Enter a provided key\" option in google authenticator app. If you use the last option,\n"
+"              in the \"Account name\" field add your email."
+msgstr ""
+
 #: site/apps/billing/invoicing/flinvoicing.html:43
 #: site/apps/billing/invoicing/flinvoicingdetails.html:75
 #: site/apps/billing/invoicing/states.config.js:77
@@ -4834,6 +5256,11 @@ msgstr ""
 msgid "Transfer domain from another provider"
 msgstr ""
 
+#: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:43
+#: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:53
+msgid "Try another way"
+msgstr ""
+
 #: site/apps/billing/invoicing/flinvoicingdetails.html:146
 #: site/apps/billing/invoicing/flinvoicingdetails.html:88
 #: site/apps/osimages/states.config.js:47
@@ -4844,7 +5271,7 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: site/apps/osvolumes/flvolumedetails.html:21
+#: site/apps/osvolumes/flvolumedetails.html:26
 msgid "Type: {{ $ctrl.volume.type }}"
 msgstr ""
 
@@ -4861,7 +5288,7 @@ msgstr ""
 msgid "URL"
 msgstr ""
 
-#: commons/auth/flauthdialog.directive.js:135
+#: commons/auth/flauthdialog.directive.js:169
 msgid "Unable to authenticate"
 msgstr ""
 
@@ -4901,6 +5328,14 @@ msgstr ""
 msgid "Update PTR record"
 msgstr ""
 
+#: site/apps/osvolumebackups/edit/fl-volumebackups-edit.template.html:27
+msgid "Update backup"
+msgstr ""
+
+#: site/apps/osvolumebackups/edit/fl-volumebackups-edit.template.html:3
+msgid "Update backup {{::$ctrl.backup.name}}"
+msgstr ""
+
 #: site/apps/oszones/flzonedetails.html:250
 msgid "Update changes"
 msgstr ""
@@ -4917,6 +5352,7 @@ msgstr ""
 #: site/apps/floatingips/states.config.js:48
 #: site/apps/osimages/states.config.js:55
 #: site/apps/ossecuritygroups/states.config.js:44
+#: site/apps/osvolumebackups/states.config.js:55
 #: site/apps/osvolumes/states.config.js:68
 #: site/apps/oszones/states.config.js:43
 msgid "Updated at"
@@ -4934,7 +5370,7 @@ msgstr ""
 msgid "Updated: {{ $ctrl.image.updated_at | date:'medium' }}"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:125
+#: site/apps/osinstances/create/flbootsourceselect.html:129
 msgid "Upload new image"
 msgstr ""
 
@@ -5027,13 +5463,42 @@ msgstr ""
 msgid "Visibility: {{ $ctrl.image.visibility }}"
 msgstr ""
 
+#: site/apps/osvolumebackups/create/fl-volumebackups-create.template.html:22
+#: site/apps/osvolumebackups/flvolumebackups.html:63
+#: site/apps/osvolumebackups/restore/fl-volumebackups-restore.template.html:37
 #: site/apps/osvolumes/attach/flvolumeattach.html:9
 #: site/apps/osvolumes/flvolumes.html:1
 msgid "Volume"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:102
+#: site/apps/osvolumebackups/flvolumebackups.html:1
+msgid "Volume Backups"
+msgstr ""
+
+#: site/apps/osinstances/create/flbootsourceselect.html:106
 msgid "Volume Snapshots"
+msgstr ""
+
+#: site/apps/osvolumebackups/flvolumebackups.html:1
+msgid "Volume backup"
+msgstr ""
+
+#: site/apps/osvolumebackups/actions/flvolumebackupactions.directive.js:35
+#: site/apps/osvolumebackups/actions/flxsvolumebackupactions.directive.js:34
+msgid "Volume backup delete scheduled"
+msgstr ""
+
+#: site/apps/osvolumebackups/states.config.js:132
+msgid "Volume backup details"
+msgstr ""
+
+#: site/apps/osvolumebackups/states.config.js:130
+msgid "Volume backup {:volumeBackupTitle}"
+msgstr ""
+
+#: site/apps/baseconfig/fleio.baseconfig.module.js:48
+#: site/apps/osvolumebackups/states.config.js:43
+msgid "Volume backups"
 msgstr ""
 
 #: site/apps/osvolumes/create/flvolumecreate.component.js:101
@@ -5057,8 +5522,12 @@ msgstr ""
 msgid "Volume {:volumeTitle}"
 msgstr ""
 
+#: site/apps/osvolumebackups/flvolumebackups.html:35
+msgid "Volume:"
+msgstr ""
+
 #: site/apps/baseconfig/fleio.baseconfig.module.js:47
-#: site/apps/osinstances/create/flbootsourceselect.html:83
+#: site/apps/osinstances/create/flbootsourceselect.html:87
 #: site/apps/osinstances/flinstancedetail.html:235
 #: site/apps/osvolumes/flvolumes.html:1
 #: site/apps/osvolumes/states.config.js:56
@@ -5115,6 +5584,9 @@ msgstr ""
 #: site/apps/osinstances/flinstances.component.js:30
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:36
 #: site/apps/ossecuritygroups/flsecuritygroups.component.js:45
+#: site/apps/osvolumebackups/actions/flvolumebackupactions.directive.js:27
+#: site/apps/osvolumebackups/actions/flxsvolumebackupactions.directive.js:26
+#: site/apps/osvolumebackups/flvolumebackups.component.js:29
 #: site/apps/osvolumes/actions/flvolumeactions.directive.js:28
 #: site/apps/osvolumes/flvolumes.component.js:30
 #: site/apps/oszones/flzonedetails.component.js:46
@@ -5147,12 +5619,24 @@ msgstr ""
 msgid "You have {{$ctrl.licenseDaysLeft}} days left from your license."
 msgstr ""
 
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:36
+msgid "You must first set a valid phone number."
+msgstr ""
+
 #: domains/enduser/frontend/components/order_product/orderproduct.html:99
 #: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:154
 msgid "You need to fill the following custom fields in order to register the domain"
 msgstr ""
 
-#: commons/userprofile/fledituserprofile.html:123
+#: commons/SFA/google_authenticator/fl-google-authenticator-details.component.js:30
+msgid "You will need to re-enable google authenticator"
+msgstr ""
+
+#: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:30
+msgid "You will receive a new code on your mobile phone number (). Go to your profile to change your phone number."
+msgstr ""
+
+#: commons/userprofile/fledituserprofile.html:133
 msgid ""
 "Your email address is not confirmed. Go to\n"
 "          <a ui-sref=\"confirmEmail({'token': null})\" class=\"md-primary\">\n"
@@ -5182,7 +5666,7 @@ msgstr ""
 msgid "Your request was sent."
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:80
+#: commons/userprofile/fluserprofile.html:83
 #: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:94
 #: site/apps/clients/clienteditdlg/clientedit.html:94
 #: site/apps/clients/fladdclient.html:106
@@ -5246,7 +5730,7 @@ msgstr ""
 msgid "cancel"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:80
+#: site/apps/osinstances/create/flinstancecreate.html:79
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:56
 msgid "change"
 msgstr ""
@@ -5279,13 +5763,17 @@ msgstr ""
 msgid "create new volume"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:73
+#: site/apps/osinstances/create/flinstancecreate.html:72
 msgid "create {{$ctrl.bootSource.options.volume_size}} GB volume"
 msgstr ""
 
 #: domains/enduser/frontend/components/states.config.js:49
 #: tickets/enduser/frontend/components/states.config.js:63
 msgid "created at"
+msgstr ""
+
+#: commons/SFA/sfa_options/fl-sfa-options.template.html:17
+msgid "default"
 msgstr ""
 
 #: site/apps/osapi/flosapi.service.js:76
@@ -5296,6 +5784,10 @@ msgstr ""
 msgid "department"
 msgstr ""
 
+#: commons/SFA/sfa_options/fl-sfa-options.template.html:16
+msgid "disabled"
+msgstr ""
+
 #: site/apps/osrouters/flrouterdetails.html:8
 #: site/apps/osrouters/flrouters.html:30
 msgid "down"
@@ -5303,6 +5795,10 @@ msgstr ""
 
 #: commons/ui/filter/flfilter.service.js:137
 msgid "earlier than"
+msgstr ""
+
+#: commons/SFA/sfa_options/fl-sfa-options.template.html:15
+msgid "enabled"
 msgstr ""
 
 #: commons/userprofile/fledituserprofile.component.js:29
@@ -5430,6 +5926,10 @@ msgstr ""
 msgid "registration date"
 msgstr ""
 
+#: site/apps/osvolumebackups/states.config.js:60
+msgid "related volume"
+msgstr ""
+
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:258
 msgid "reopened ticket because of email reply on"
 msgstr ""
@@ -5480,11 +5980,11 @@ msgstr ""
 msgid "{{$ctrl.bootSource.type}}"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:124
+#: site/apps/osinstances/create/flinstancecreate.html:123
 msgid "{{$ctrl.flavor.memory_gb}} GB memory"
 msgstr ""
 
-#: site/apps/osinstances/create/flinstancecreate.html:125
+#: site/apps/osinstances/create/flinstancecreate.html:124
 msgid "{{$ctrl.flavor.vcpus}} virtual CPUs"
 msgstr ""
 
@@ -5524,21 +6024,21 @@ msgstr ""
 msgid "{{::$ctrl.summary.services.length}} services"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:40
+#: site/apps/osinstances/create/flbootsourceselect.html:42
 msgid "{{::image.architecture}} created on {{::image.created_at | date}}"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:18
-#: site/apps/osinstances/create/flbootsourceselect.html:58
-#: site/apps/osinstances/create/flbootsourceselect.html:75
+#: site/apps/osinstances/create/flbootsourceselect.html:19
+#: site/apps/osinstances/create/flbootsourceselect.html:61
+#: site/apps/osinstances/create/flbootsourceselect.html:79
 msgid "{{::image.os_distro}} {{::image.os_version}} {{::image.architecture}} {{::image.created_at | date}}"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:113
+#: site/apps/osinstances/create/flbootsourceselect.html:117
 msgid "{{::volsnap.size}} GB created on {{::volsnap.created_at | date}}"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:94
+#: site/apps/osinstances/create/flbootsourceselect.html:98
 msgid "{{::volume.size}} GB created on {{::volume.created_at | date }}"
 msgstr ""
 
