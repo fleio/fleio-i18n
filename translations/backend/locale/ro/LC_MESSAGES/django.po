@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-08 10:06+0300\n"
+"POT-Creation-Date: 2019-08-05 15:14+0300\n"
 "PO-Revision-Date: 2018-10-11 16:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -144,7 +144,7 @@ msgid "Value must be greater or equal to 0"
 msgstr "Valoarea trebuie să fie mai mare decât 0"
 
 #: fleio/billing/cart/serializers.py:280 fleio/billing/cart/serializers.py:339
-#: fleio/openstack/instances/views.py:833
+#: fleio/openstack/instances/views.py:842
 #: plugins/domains/registrars_connectors/openprovider_connector.py:156
 msgid "Invalid request"
 msgstr "Cerere invalidă"
@@ -308,31 +308,31 @@ msgstr ""
 "Nu se poate continua din cauza unei erori. Contactați personalul pentru "
 "asistență"
 
-#: fleio/billing/invoicing/pdf.py:111
+#: fleio/billing/invoicing/pdf.py:143
 msgid "Issue Date: {}"
 msgstr "Data emiterii: {}"
 
-#: fleio/billing/invoicing/pdf.py:113
+#: fleio/billing/invoicing/pdf.py:145
 msgid "Due Date: {}"
 msgstr "Data scadentei: {}"
 
-#: fleio/billing/invoicing/pdf.py:115
+#: fleio/billing/invoicing/pdf.py:147
 msgid "Invoiced to:"
 msgstr "Emis către:"
 
-#: fleio/billing/invoicing/pdf.py:141
+#: fleio/billing/invoicing/pdf.py:173
 msgid "Description"
 msgstr "Descriere"
 
-#: fleio/billing/invoicing/pdf.py:141
+#: fleio/billing/invoicing/pdf.py:173
 msgid "Quantity"
 msgstr "Cantitate"
 
-#: fleio/billing/invoicing/pdf.py:141
+#: fleio/billing/invoicing/pdf.py:173
 msgid "Unit Price"
 msgstr "Pret unitate"
 
-#: fleio/billing/invoicing/pdf.py:141
+#: fleio/billing/invoicing/pdf.py:173
 msgid "Cost"
 msgstr "Cost"
 
@@ -365,7 +365,7 @@ msgstr ""
 "Utilizatorul {username} ({user_id}) nu poate fi autentificat din cauză ca "
 "licența este invalidă"
 
-#: fleio/billing/invoicing/views.py:65 fleio/openstack/instances/views.py:138
+#: fleio/billing/invoicing/views.py:65 fleio/openstack/instances/views.py:142
 #: plugins/domains/staff/views/domains.py:75
 msgid "Client not found"
 msgstr "Clientul nu a fost găsit"
@@ -602,7 +602,7 @@ msgstr ""
 
 #: fleio/billing/services/serializers.py:68
 #: fleio/openstack/models/project.py:160
-#: fleiostaff/core/clients/serializers.py:123
+#: fleiostaff/core/clients/serializers.py:126
 #: fleiostaff/openstack/networks/serializers.py:38
 #: fleiostaff/openstack/subnetpools/serializers.py:25
 #: fleiostaff/openstack/subnets/serializers.py:34
@@ -704,7 +704,7 @@ msgstr "Domeniu"
 msgid "Pending"
 msgstr "În așteptare"
 
-#: fleio/billing/settings.py:98 fleio/core/models/models.py:468
+#: fleio/billing/settings.py:98 fleio/core/models/models.py:498
 #: fleio/notifications/models.py:46 fleio/openstack/dns/serializers.py:36
 #: fleio/openstack/dns/serializers.py:80
 #: fleio/openstack/instances/instance_status.py:62
@@ -715,7 +715,7 @@ msgstr "În așteptare"
 msgid "Active"
 msgstr "Activ"
 
-#: fleio/billing/settings.py:99 fleio/core/models/models.py:470
+#: fleio/billing/settings.py:99 fleio/core/models/models.py:500
 #: fleio/openstack/instances/instance_status.py:65
 msgid "Suspended"
 msgstr "Suspendat"
@@ -1053,7 +1053,7 @@ msgstr "Comanda {} ar putea fi frauduloasă. Verificarea manuală este necesară
 msgid "Order {} rejected"
 msgstr "Comanda {} respinsă"
 
-#: fleio/core/clients/serializers.py:95
+#: fleio/core/clients/serializers.py:102
 #, fuzzy
 #| msgid "Unable to create record sets. Please contact support for more info"
 msgid "Unable to create client, please contact support."
@@ -1103,20 +1103,20 @@ msgstr "Format cod fiscal invalid"
 msgid "Unable to perform the requested action"
 msgstr "Acțiunea solicitată nu a putut fi efectuată"
 
-#: fleio/core/drf.py:212
+#: fleio/core/drf.py:215
 msgid "Invalid version in URL path"
 msgstr "Versiune invalidă în calea URL"
 
-#: fleio/core/drf.py:213
+#: fleio/core/drf.py:216
 msgid "Invalid version in \"Accept\" header"
 msgstr "Versiune invalidă în header-ul \"Accept\""
 
-#: fleio/core/drf.py:265
+#: fleio/core/drf.py:268
 #, python-brace-format
 msgid "\"{input}\" is not a valid choice."
 msgstr "\"{input}\" nu este o alegere valida."
 
-#: fleio/core/drf.py:268
+#: fleio/core/drf.py:271
 #, python-brace-format
 msgid "More than {count} items..."
 msgstr "Mai mult de {count} articole..."
@@ -1125,41 +1125,41 @@ msgstr "Mai mult de {count} articole..."
 msgid "Unable to execute task"
 msgstr "Task-ul nu se poate executa"
 
-#: fleio/core/exceptions.py:10 fleio/core/exceptions.py:42
+#: fleio/core/exceptions.py:10 fleio/core/exceptions.py:52
 #: fleio/openstack/exceptions.py:105 fleio/openstack/exceptions.py:115
 msgid "Unable to perform the requested operation"
 msgstr "Nu se poate efectua operațiunea solicitată"
 
-#: fleio/core/exceptions.py:15 fleio/core/exceptions.py:19
+#: fleio/core/exceptions.py:16 fleio/core/exceptions.py:21
 msgid "You must activate the software using a license key"
 msgstr "Trebuie să activați software-ul cu ajutorul unei chei de licență"
 
-#: fleio/core/exceptions.py:23
+#: fleio/core/exceptions.py:26
 msgid "Login not allowed. Please contact support"
 msgstr "Autentificarea interzisă. Va rugam contactati personalul"
 
-#: fleio/core/exceptions.py:27
+#: fleio/core/exceptions.py:31
 msgid "License is invalid"
 msgstr "Licența este invalidă"
 
-#: fleio/core/exceptions.py:32
+#: fleio/core/exceptions.py:42
 msgid "Cannot get or create token for inactive user"
 msgstr "Nu se poate obține sau crea token-ul pentru utilizator inactiv"
 
-#: fleio/core/exceptions.py:37 fleio/openstack/exceptions.py:120
+#: fleio/core/exceptions.py:47 fleio/openstack/exceptions.py:120
 msgid "A required object was not found"
 msgstr "Un obiect solicitat nu a fost găsit"
 
-#: fleio/core/exceptions.py:48
+#: fleio/core/exceptions.py:58
 msgid "An unexpected error prevented the server from fulfilling your request"
 msgstr ""
 "O eroare neașteptată a împiedicat serverul să îndeplinească solicitarea ta"
 
-#: fleio/core/exceptions.py:53
+#: fleio/core/exceptions.py:63
 msgid "Could not connect"
 msgstr "Nu mă pot conecta"
 
-#: fleio/core/exceptions.py:58
+#: fleio/core/exceptions.py:68
 msgid "Invalid SSL certificate on OpenStack identity service"
 msgstr "Certificatul SSL este invalid pentru serviciu OpenStack identity"
 
@@ -1246,976 +1246,1087 @@ msgstr ""
 msgid "staff index"
 msgstr ""
 
-#: fleio/core/models/models.py:128
+#: fleio/core/models/models.py:138
 msgid "API Users - Create"
 msgstr ""
 
-#: fleio/core/models/models.py:129
+#: fleio/core/models/models.py:139
 #, fuzzy
 #| msgid "Image - Update"
 msgid "API Users - Update"
 msgstr "Imagine - Actualizare"
 
-#: fleio/core/models/models.py:130
+#: fleio/core/models/models.py:140
 #, fuzzy
 #| msgid "Image - Destroy"
 msgid "API Users - Destroy"
 msgstr "Imagine - Distruge"
 
-#: fleio/core/models/models.py:131
+#: fleio/core/models/models.py:141
 #, fuzzy
 #| msgid "Router - Update"
 msgid "Clusters - Create"
 msgstr "Router - Actualizare"
 
-#: fleio/core/models/models.py:132
+#: fleio/core/models/models.py:142
 #, fuzzy
 #| msgid "Router - Update"
 msgid "Clusters - Update"
 msgstr "Router - Actualizare"
 
-#: fleio/core/models/models.py:133
+#: fleio/core/models/models.py:143
 #, fuzzy
 #| msgid "Router - Destroy"
 msgid "Clusters - Destroy"
 msgstr "Router - Distruge"
 
-#: fleio/core/models/models.py:134
+#: fleio/core/models/models.py:144
 #, fuzzy
 #| msgid "Instance - Resize"
 msgid "Clusters - Resize"
 msgstr "Instanță - Redimensionare"
 
-#: fleio/core/models/models.py:135
+#: fleio/core/models/models.py:145
 msgid "Clusters - Get certificate"
 msgstr ""
 
-#: fleio/core/models/models.py:136
+#: fleio/core/models/models.py:146
 #, fuzzy
 #| msgid "Router - Update"
 msgid "Cluster templates - Create"
 msgstr "Router - Actualizare"
 
-#: fleio/core/models/models.py:137
+#: fleio/core/models/models.py:147
 #, fuzzy
 #| msgid "Network - Update"
 msgid "Cluster templates - Update"
 msgstr "Rețea - Actualizare"
 
-#: fleio/core/models/models.py:138
+#: fleio/core/models/models.py:148
 #, fuzzy
 #| msgid "Network - Destroy"
 msgid "Cluster templates - Destroy"
 msgstr "Rețea - Distruge"
 
-#: fleio/core/models/models.py:139
+#: fleio/core/models/models.py:149
 #, fuzzy
 #| msgid "Zone deleted"
 msgid "Zones - Create"
 msgstr "Zona a fost ștearsă"
 
-#: fleio/core/models/models.py:140
+#: fleio/core/models/models.py:150
 #, fuzzy
 #| msgid "Router - Update"
 msgid "Zones - Update"
 msgstr "Router - Actualizare"
 
-#: fleio/core/models/models.py:141
+#: fleio/core/models/models.py:151
 #, fuzzy
 #| msgid "Volume - Destroy"
 msgid "Zones - Destroy"
 msgstr "Volum - Distruge"
 
-#: fleio/core/models/models.py:142
+#: fleio/core/models/models.py:152
 msgid "Zones - Update zone records"
 msgstr ""
 
-#: fleio/core/models/models.py:143
+#: fleio/core/models/models.py:153
 msgid "Zones - Create or update PTR"
 msgstr ""
 
-#: fleio/core/models/models.py:144
+#: fleio/core/models/models.py:154
 #, fuzzy
 #| msgid "Instance - Migrate"
 msgid "Instance - Create"
 msgstr "Instanță - Migrează"
 
-#: fleio/core/models/models.py:145
+#: fleio/core/models/models.py:155
 msgid "Instance - Abort migrate"
 msgstr "Instanță - Anulează migrarea"
 
-#: fleio/core/models/models.py:146
+#: fleio/core/models/models.py:156
 msgid "Instance - Attach volume"
 msgstr "Instanță - Atașează volum"
 
-#: fleio/core/models/models.py:147
+#: fleio/core/models/models.py:157
 msgid "Instance - Change password"
 msgstr "Instanță - Schimbare parolă"
 
-#: fleio/core/models/models.py:148
+#: fleio/core/models/models.py:158
 msgid "Instance - Confirm resize"
 msgstr "Instanță - Confirmă redimensionarea"
 
-#: fleio/core/models/models.py:149
+#: fleio/core/models/models.py:159
 msgid "Instance - Create snapshot"
 msgstr "Instanță - Crează snapshoot"
 
-#: fleio/core/models/models.py:150
+#: fleio/core/models/models.py:160
 msgid "Instance - Detach volume"
 msgstr "Instanță - Detașează volumul"
 
-#: fleio/core/models/models.py:151
+#: fleio/core/models/models.py:161
 msgid "Instance - Destroy"
 msgstr "Instanță - Distruge"
 
-#: fleio/core/models/models.py:152
+#: fleio/core/models/models.py:162
 msgid "Instance - Lock"
 msgstr "Instanță - Blochează"
 
-#: fleio/core/models/models.py:153
+#: fleio/core/models/models.py:163
 msgid "Instance - Migrate"
 msgstr "Instanță - Migrează"
 
-#: fleio/core/models/models.py:154
+#: fleio/core/models/models.py:164
 #, fuzzy
 #| msgid "Instance - Lock"
 msgid "Instance - Move"
 msgstr "Instanță - Blochează"
 
-#: fleio/core/models/models.py:155
+#: fleio/core/models/models.py:165
 msgid "Instance - Reboot"
 msgstr "Instanță - Repornire"
 
-#: fleio/core/models/models.py:156
+#: fleio/core/models/models.py:166
 msgid "Instance - Rebuild"
 msgstr "Instanță - Refacere"
 
-#: fleio/core/models/models.py:157
+#: fleio/core/models/models.py:167
 msgid "Instance - Rename"
 msgstr "Instanță - Redenumire"
 
-#: fleio/core/models/models.py:158
+#: fleio/core/models/models.py:168
 msgid "Instance - Rescue"
 msgstr "Instanță - Recuperare"
 
-#: fleio/core/models/models.py:159
+#: fleio/core/models/models.py:169
 #, fuzzy
 #| msgid "Instance - Reboot"
 msgid "Instance - Boot from ISO"
 msgstr "Instanță - Repornire"
 
-#: fleio/core/models/models.py:160
+#: fleio/core/models/models.py:170
 msgid "Instance - Reset state"
 msgstr "Instanță - Resetare stare"
 
-#: fleio/core/models/models.py:161
+#: fleio/core/models/models.py:171
 msgid "Instance - Resize"
 msgstr "Instanță - Redimensionare"
 
-#: fleio/core/models/models.py:162
+#: fleio/core/models/models.py:172
 msgid "Instance - Resume"
 msgstr "Instanță - Continuă"
 
-#: fleio/core/models/models.py:163
+#: fleio/core/models/models.py:173
 msgid "Instance - Revert resize"
 msgstr "Instanță - Anulează redimensionarea"
 
-#: fleio/core/models/models.py:164
+#: fleio/core/models/models.py:174
 msgid "Instance - Start"
 msgstr "Instanță - Pornește"
 
-#: fleio/core/models/models.py:165
+#: fleio/core/models/models.py:175
 msgid "Instance - Stop"
 msgstr "Instanță - Oprește"
 
-#: fleio/core/models/models.py:166
+#: fleio/core/models/models.py:176
 msgid "Instance - Suspend"
 msgstr "Instanță - Suspendă"
 
-#: fleio/core/models/models.py:167
+#: fleio/core/models/models.py:177
 msgid "Instance - Unlock"
 msgstr "Instanță - Deblochează"
 
-#: fleio/core/models/models.py:168
+#: fleio/core/models/models.py:178
 msgid "Instance - Unrescue"
 msgstr "Instanță - Anulează recuperarea"
 
-#: fleio/core/models/models.py:169
+#: fleio/core/models/models.py:179
 #, fuzzy
 #| msgid "Unable to create security group"
 msgid "Instance - Dissociate security group"
 msgstr "Grupul de securitate nu poate fi creat"
 
-#: fleio/core/models/models.py:170
+#: fleio/core/models/models.py:180
 #, fuzzy
 #| msgid "Unable to create security group"
 msgid "Instance - Associate security group"
 msgstr "Grupul de securitate nu poate fi creat"
 
-#: fleio/core/models/models.py:171
+#: fleio/core/models/models.py:181
 #, fuzzy
 #| msgid "Instance - Create snapshot"
 msgid "Instance - Create backup"
 msgstr "Instanță - Crează snapshoot"
 
-#: fleio/core/models/models.py:172
+#: fleio/core/models/models.py:182
 #, fuzzy
 #| msgid "Instance is starting"
 msgid "Instance - Associate floating IP"
 msgstr "Instanța pornește"
 
-#: fleio/core/models/models.py:173
+#: fleio/core/models/models.py:183
 #, fuzzy
 #| msgid "Instance is starting"
 msgid "Instance - Dissociate floating IP"
 msgstr "Instanța pornește"
 
-#: fleio/core/models/models.py:174
+#: fleio/core/models/models.py:184
 #, fuzzy
 #| msgid "Volume - Rename"
 msgid "Volume - Create"
 msgstr "Volum - Redenumire"
 
-#: fleio/core/models/models.py:175
+#: fleio/core/models/models.py:185
 msgid "Volume - Destroy"
 msgstr "Volum - Distruge"
 
-#: fleio/core/models/models.py:176
+#: fleio/core/models/models.py:186
 msgid "Volume - Extend"
 msgstr "Volum - Extins"
 
-#: fleio/core/models/models.py:177
+#: fleio/core/models/models.py:187
 msgid "Volume - Rename"
 msgstr "Volum - Redenumire"
 
-#: fleio/core/models/models.py:178
+#: fleio/core/models/models.py:188
+#, fuzzy
+#| msgid "Volume Snapshot"
+msgid "Volume - Revert to snapshot"
+msgstr "Snapshot Volum"
+
+#: fleio/core/models/models.py:189
 #, fuzzy
 #| msgid "Router - Update"
 msgid "Volume backup - Update"
 msgstr "Router - Actualizare"
 
-#: fleio/core/models/models.py:179
+#: fleio/core/models/models.py:190
 #, fuzzy
 #| msgid "Volume - Rename"
 msgid "Volume backup - Create"
 msgstr "Volum - Redenumire"
 
-#: fleio/core/models/models.py:180
+#: fleio/core/models/models.py:191
 #, fuzzy
 #| msgid "Volume - Destroy"
 msgid "Volume backup - Restore"
 msgstr "Volum - Distruge"
 
-#: fleio/core/models/models.py:181
+#: fleio/core/models/models.py:192
 #, fuzzy
 #| msgid "Volume - Destroy"
 msgid "Volume backup - Destroy"
 msgstr "Volum - Distruge"
 
-#: fleio/core/models/models.py:182
+#: fleio/core/models/models.py:193
+#, fuzzy
+#| msgid "Volume - Rename"
+msgid "Volume snapshot - Create"
+msgstr "Volum - Redenumire"
+
+#: fleio/core/models/models.py:194
+#, fuzzy
+#| msgid "Router - Update"
+msgid "Volume snapshot - Update"
+msgstr "Router - Actualizare"
+
+#: fleio/core/models/models.py:195
+#, fuzzy
+#| msgid "Volume - Destroy"
+msgid "Volume snapshot - Destroy"
+msgstr "Volum - Distruge"
+
+#: fleio/core/models/models.py:196
+#, fuzzy
+#| msgid "Instance - Reset state"
+msgid "Volume snapshot - Reset state"
+msgstr "Instanță - Resetare stare"
+
+#: fleio/core/models/models.py:197
 #, fuzzy
 #| msgid "Image - Update"
 msgid "Image - Create"
 msgstr "Imagine - Actualizare"
 
-#: fleio/core/models/models.py:183
+#: fleio/core/models/models.py:198
 msgid "Image - Destroy"
 msgstr "Imagine - Distruge"
 
-#: fleio/core/models/models.py:184
+#: fleio/core/models/models.py:199
 #, fuzzy
 #| msgid "Image - Destroy"
 msgid "Image - Download"
 msgstr "Imagine - Distruge"
 
-#: fleio/core/models/models.py:185
+#: fleio/core/models/models.py:200
 msgid "Image - Update"
 msgstr "Imagine - Actualizare"
 
-#: fleio/core/models/models.py:186
+#: fleio/core/models/models.py:201
 #, fuzzy
 #| msgid "Image - Update"
 msgid "Image - Deactivate"
 msgstr "Imagine - Actualizare"
 
-#: fleio/core/models/models.py:187
+#: fleio/core/models/models.py:202
 #, fuzzy
 #| msgid "Image - Update"
 msgid "Image - Reactivate"
 msgstr "Imagine - Actualizare"
 
-#: fleio/core/models/models.py:188
+#: fleio/core/models/models.py:203
 #, fuzzy
 #| msgid "Flavor - Update"
 msgid "Flavor - Create"
 msgstr "Configurație - Actualizare"
 
-#: fleio/core/models/models.py:189
+#: fleio/core/models/models.py:204
 msgid "Flavor - Destroy"
 msgstr "Configurare - Distruge"
 
-#: fleio/core/models/models.py:190
+#: fleio/core/models/models.py:205
 msgid "Flavor - Update"
 msgstr "Configurație - Actualizare"
 
-#: fleio/core/models/models.py:191
+#: fleio/core/models/models.py:206
 #, fuzzy
 #| msgid "Project - Delete"
 msgid "Project - Create"
 msgstr "Proiect - Șterge"
 
-#: fleio/core/models/models.py:192
+#: fleio/core/models/models.py:207
 msgid "Project - Delete"
 msgstr "Proiect - Șterge"
 
-#: fleio/core/models/models.py:193
+#: fleio/core/models/models.py:208
 msgid "Project - Update"
 msgstr "Proiect - Actualizat"
 
-#: fleio/core/models/models.py:194
+#: fleio/core/models/models.py:209
 #, fuzzy
 #| msgid "Router - Update"
 msgid "Router - Create"
 msgstr "Router - Actualizare"
 
-#: fleio/core/models/models.py:195
+#: fleio/core/models/models.py:210
 msgid "Router - Update"
 msgstr "Router - Actualizare"
 
-#: fleio/core/models/models.py:196
+#: fleio/core/models/models.py:211
 msgid "Router - Destroy"
 msgstr "Router - Distruge"
 
-#: fleio/core/models/models.py:197
+#: fleio/core/models/models.py:212
 msgid "Router - Add interface"
 msgstr "Router - Aduagă interfață"
 
-#: fleio/core/models/models.py:198
+#: fleio/core/models/models.py:213
 msgid "Router - Remove interface"
 msgstr "Router - Șterge interfață"
 
-#: fleio/core/models/models.py:199
+#: fleio/core/models/models.py:214
 #, fuzzy
 #| msgid "Network - Update"
 msgid "Network - Create"
 msgstr "Rețea - Actualizare"
 
-#: fleio/core/models/models.py:200
+#: fleio/core/models/models.py:215
 msgid "Network - Destroy"
 msgstr "Rețea - Distruge"
 
-#: fleio/core/models/models.py:201
+#: fleio/core/models/models.py:216
 msgid "Network - Auto create network"
 msgstr "Rețea - Autocrează rețea"
 
-#: fleio/core/models/models.py:202
+#: fleio/core/models/models.py:217
 msgid "Network - Update"
 msgstr "Rețea - Actualizare"
 
-#: fleio/core/models/models.py:203
+#: fleio/core/models/models.py:218
 #, fuzzy
 #| msgid "Network - Auto create network"
 msgid "Network - Change auto create options"
 msgstr "Rețea - Autocrează rețea"
 
-#: fleio/core/models/models.py:204
+#: fleio/core/models/models.py:219
 #, fuzzy
 #| msgid "Floating ip associated"
 msgid "Floating IPs - Create"
 msgstr "IP dinamic asociat"
 
-#: fleio/core/models/models.py:205
+#: fleio/core/models/models.py:220
 #, fuzzy
 #| msgid "Flavor - Destroy"
 msgid "Floating IPs - Destroy"
 msgstr "Configurare - Distruge"
 
-#: fleio/core/models/models.py:206
+#: fleio/core/models/models.py:221
 #, fuzzy
 #| msgid "Security groups limit reached"
 msgid "Security group - Create"
 msgstr "A fost atinsa limita pentru grupuri de securitate"
 
-#: fleio/core/models/models.py:207
+#: fleio/core/models/models.py:222
 #, fuzzy
 #| msgid "Security group associated"
 msgid "Security group - Update"
 msgstr "Grupul de securitate a fost asociat"
 
-#: fleio/core/models/models.py:208
+#: fleio/core/models/models.py:223
 #, fuzzy
 #| msgid "Security groups limit reached"
 msgid "Security group - Add rule"
 msgstr "A fost atinsa limita pentru grupuri de securitate"
 
-#: fleio/core/models/models.py:209
+#: fleio/core/models/models.py:224
 #, fuzzy
 #| msgid "Security groups limit reached"
 msgid "Security group - Delete rule"
 msgstr "A fost atinsa limita pentru grupuri de securitate"
 
-#: fleio/core/models/models.py:210
+#: fleio/core/models/models.py:225
 #, fuzzy
 #| msgid "Can not delete security group"
 msgid "Security group - Delete security group"
 msgstr "Grupul de securitate nu poate fi șters"
 
-#: fleio/core/models/models.py:211
+#: fleio/core/models/models.py:226
 msgid "Subnet pools - Create"
 msgstr ""
 
-#: fleio/core/models/models.py:212
+#: fleio/core/models/models.py:227
 #, fuzzy
 #| msgid "Network - Update"
 msgid "Subnet pools - Update"
 msgstr "Rețea - Actualizare"
 
-#: fleio/core/models/models.py:213
+#: fleio/core/models/models.py:228
 #, fuzzy
 #| msgid "Network - Destroy"
 msgid "Subnet pools - Destroy"
 msgstr "Rețea - Distruge"
 
-#: fleio/core/models/models.py:214
+#: fleio/core/models/models.py:229
 #, fuzzy
 #| msgid "SSH keys"
 msgid "SSH keys - Create"
 msgstr "Chei SSH"
 
-#: fleio/core/models/models.py:215
+#: fleio/core/models/models.py:230
 #, fuzzy
 #| msgid "Image - Update"
 msgid "SSH keys - Update"
 msgstr "Imagine - Actualizare"
 
-#: fleio/core/models/models.py:216
+#: fleio/core/models/models.py:231
 #, fuzzy
 #| msgid "Image - Destroy"
 msgid "SSH keys - Destroy"
 msgstr "Imagine - Distruge"
 
-#: fleio/core/models/models.py:217
+#: fleio/core/models/models.py:232
 msgid "Ports - Create"
 msgstr ""
 
-#: fleio/core/models/models.py:218
+#: fleio/core/models/models.py:233
 msgid "Ports - Add IP"
 msgstr ""
 
-#: fleio/core/models/models.py:219
+#: fleio/core/models/models.py:234
 msgid "Ports - Automatically add IP"
 msgstr ""
 
-#: fleio/core/models/models.py:220
+#: fleio/core/models/models.py:235
 msgid "Ports - Remove IP"
 msgstr ""
 
-#: fleio/core/models/models.py:221
+#: fleio/core/models/models.py:236
 #, fuzzy
 #| msgid "Flavor - Destroy"
 msgid "Ports - Destroy"
 msgstr "Configurare - Distruge"
 
-#: fleio/core/models/models.py:225
+#: fleio/core/models/models.py:237
+msgid "Revenue reports - See the revenue reports list"
+msgstr ""
+
+#: fleio/core/models/models.py:238
+msgid "Revenue reports - See a revenue report details"
+msgstr ""
+
+#: fleio/core/models/models.py:239
+msgid "Revenue reports - Generate revenue report"
+msgstr ""
+
+#: fleio/core/models/models.py:240
+msgid "Revenue reports - Update a revenue report"
+msgstr ""
+
+#: fleio/core/models/models.py:241
+msgid "Revenue reports - Delete a revenue report"
+msgstr ""
+
+#: fleio/core/models/models.py:245
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to create API users"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:226
+#: fleio/core/models/models.py:246
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to update API users"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:227
+#: fleio/core/models/models.py:247
 #, fuzzy
 #| msgid "Allows users to delete a router"
 msgid "Allows users to delete API users"
 msgstr "Permite utilizatorilor să șteargă un router"
 
-#: fleio/core/models/models.py:228
+#: fleio/core/models/models.py:248
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to create clusters"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:229
+#: fleio/core/models/models.py:249
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to update clusters"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:230
+#: fleio/core/models/models.py:250
 #, fuzzy
 #| msgid "Allows users to delete a router"
 msgid "Allows users to delete clusters"
 msgstr "Permite utilizatorilor să șteargă un router"
 
-#: fleio/core/models/models.py:231
+#: fleio/core/models/models.py:251
 #, fuzzy
 #| msgid "Allows users to resize an instance"
 msgid "Allows users to resize a cluster"
 msgstr "Permite utilizatorilor să redomensioneze o instanță"
 
-#: fleio/core/models/models.py:232
+#: fleio/core/models/models.py:252
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to get a cluster certificate"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:233
+#: fleio/core/models/models.py:253
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to create cluster templates"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:234
+#: fleio/core/models/models.py:254
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to update cluster templates"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:235
+#: fleio/core/models/models.py:255
 #, fuzzy
 #| msgid "Allows users to delete a router"
 msgid "Allows users to delete cluster templates"
 msgstr "Permite utilizatorilor să șteargă un router"
 
-#: fleio/core/models/models.py:236
+#: fleio/core/models/models.py:256
 #, fuzzy
 #| msgid "Allows users to rename a volume"
 msgid "Allows users to create zones"
 msgstr "Permite utilizatorilor să redenumească un volum"
 
-#: fleio/core/models/models.py:237
+#: fleio/core/models/models.py:257
 #, fuzzy
 #| msgid "Allows users to update an image"
 msgid "Allows users to update zones"
 msgstr "Permite utilizatorilor să actualizeze o imagine"
 
-#: fleio/core/models/models.py:238
+#: fleio/core/models/models.py:258
 #, fuzzy
 #| msgid "Allows users to delete a volume"
 msgid "Allows users to delete a zone"
 msgstr "Permite utilizatorilor să șteargă un volum"
 
-#: fleio/core/models/models.py:239
+#: fleio/core/models/models.py:259
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to update zone records"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:240
+#: fleio/core/models/models.py:260
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to create or update PTR"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:241
+#: fleio/core/models/models.py:261
 #, fuzzy
 #| msgid "Allows users to rename an instance"
 msgid "Allows users to create an instance"
 msgstr "Permite utilizatorilor să redenumească o instanță"
 
-#: fleio/core/models/models.py:242 fleio/core/models/models.py:250
+#: fleio/core/models/models.py:262 fleio/core/models/models.py:270
 msgid "Allows users to migrate an instance"
 msgstr "Permite utilizatorilor să migreze o instanță"
 
-#: fleio/core/models/models.py:243
+#: fleio/core/models/models.py:263
 msgid "Allows users to attach a volume to an instance"
 msgstr "Permite utilizatorilor să atașeze un volum la o instanță"
 
-#: fleio/core/models/models.py:244
+#: fleio/core/models/models.py:264
 msgid "Allows users to change an instance password"
 msgstr "Permite utilizatorilor să schimbe parola unei instanțe"
 
-#: fleio/core/models/models.py:245
+#: fleio/core/models/models.py:265
 msgid "Allows users to confirm resize of an instance"
 msgstr "Permite utilizatorilor să confirme redimensionarea unei instanțe"
 
-#: fleio/core/models/models.py:246
+#: fleio/core/models/models.py:266
 msgid "Allows users to create a snapshot of an instance"
 msgstr "Permite utilizatorilor să creeze un spanshot al unei instanțe"
 
-#: fleio/core/models/models.py:247
+#: fleio/core/models/models.py:267
 msgid "Allows users to detach a volume from an instance"
 msgstr "Permite utilizatorilor să detașeze un volum de la o instanță"
 
-#: fleio/core/models/models.py:248
+#: fleio/core/models/models.py:268
 msgid "Allows users to delete an instance"
 msgstr "Permite utilizatorilor să șteargă o instanță"
 
-#: fleio/core/models/models.py:249
+#: fleio/core/models/models.py:269
 msgid "Allows users to lock an instance"
 msgstr "Permite utilizatorilor să încuie o instanță"
 
-#: fleio/core/models/models.py:251
+#: fleio/core/models/models.py:271
 #, fuzzy
 #| msgid "Allows users to rename an instance"
 msgid "Allows staff users to move an instance"
 msgstr "Permite utilizatorilor să redenumească o instanță"
 
-#: fleio/core/models/models.py:252
+#: fleio/core/models/models.py:272
 msgid "Allows users to reboot an instance"
 msgstr "Permite utilizatorilor să rebooteze o instanță"
 
-#: fleio/core/models/models.py:253
+#: fleio/core/models/models.py:273
 msgid "Allows users to rebuild an instance"
 msgstr "Permite utilizatorilor să reconstruiască o instanță"
 
-#: fleio/core/models/models.py:254
+#: fleio/core/models/models.py:274
 msgid "Allows users to rename an instance"
 msgstr "Permite utilizatorilor să redenumească o instanță"
 
-#: fleio/core/models/models.py:255
+#: fleio/core/models/models.py:275
 msgid "Allows users to rescue an instance"
 msgstr "Permite utilizatorilor să salveze o instanță"
 
-#: fleio/core/models/models.py:256
+#: fleio/core/models/models.py:276
 msgid "Allows users to reset state of an instance"
 msgstr "Permite utilizatorilor să restaureze starea unei instanțe"
 
-#: fleio/core/models/models.py:257
+#: fleio/core/models/models.py:277
 msgid "Allows users to resize an instance"
 msgstr "Permite utilizatorilor să redomensioneze o instanță"
 
-#: fleio/core/models/models.py:258
+#: fleio/core/models/models.py:278
 msgid "Allows users to resume an instance"
 msgstr "Permite utilizatorilor să rezume o instanță"
 
-#: fleio/core/models/models.py:259
+#: fleio/core/models/models.py:279
 msgid "Allows users to revert resize of an instance"
 msgstr "Permite utilizatorilor să redimensioneze o instanță"
 
-#: fleio/core/models/models.py:260
+#: fleio/core/models/models.py:280
 msgid "Allows users to start an instance"
 msgstr "Permite utilizatorilor să pornească o instanță"
 
-#: fleio/core/models/models.py:261
+#: fleio/core/models/models.py:281
 msgid "Allows users to stop an instance"
 msgstr "Permite utilizatorilor să oprească o instanță"
 
-#: fleio/core/models/models.py:262
+#: fleio/core/models/models.py:282
 msgid "Allows users to suspend an instance"
 msgstr "Permite utilizatorilor să suspende o instanță"
 
-#: fleio/core/models/models.py:263
+#: fleio/core/models/models.py:283
 msgid "Allows users to unlock an instance"
 msgstr "Permite utilizatorilor să descuie o instanță"
 
-#: fleio/core/models/models.py:264
+#: fleio/core/models/models.py:284
 msgid "Allows users to unrescue an instance"
 msgstr "Permite utilizatorilor să facă \"unrescue\" la o instanță"
 
-#: fleio/core/models/models.py:265
+#: fleio/core/models/models.py:285
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to dissociate a security group"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:266
+#: fleio/core/models/models.py:286
 #, fuzzy
 #| msgid "Allows users to auto create a network"
 msgid "Allows users to associate a security group"
 msgstr "Permite utilizatorilor să creeze automat o rețea"
 
-#: fleio/core/models/models.py:267
+#: fleio/core/models/models.py:287
 #, fuzzy
 #| msgid "Allows users to rename an instance"
 msgid "Allows users to create an instance backup"
 msgstr "Permite utilizatorilor să redenumească o instanță"
 
-#: fleio/core/models/models.py:268
+#: fleio/core/models/models.py:288
 #, fuzzy
 #| msgid "Allows users to update a flavor"
 msgid "Allows users to associate a floating IP"
 msgstr "Permite utilizatorilor să șteargă o configurație"
 
-#: fleio/core/models/models.py:269
+#: fleio/core/models/models.py:289
 #, fuzzy
 #| msgid "Allows users to update a flavor"
 msgid "Allows users to dissociate a floating IP"
 msgstr "Permite utilizatorilor să șteargă o configurație"
 
-#: fleio/core/models/models.py:270
+#: fleio/core/models/models.py:290
 #, fuzzy
 #| msgid "Allows users to rename a volume"
 msgid "Allows users to create a volume"
 msgstr "Permite utilizatorilor să redenumească un volum"
 
-#: fleio/core/models/models.py:271
+#: fleio/core/models/models.py:291
 msgid "Allows users to delete a volume"
 msgstr "Permite utilizatorilor să șteargă un volum"
 
-#: fleio/core/models/models.py:272
+#: fleio/core/models/models.py:292
 msgid "Allows users to extend a volume"
 msgstr "Permite utilizatorilor să extindă un volum"
 
-#: fleio/core/models/models.py:273
+#: fleio/core/models/models.py:293
 msgid "Allows users to rename a volume"
 msgstr "Permite utilizatorilor să redenumească un volum"
 
-#: fleio/core/models/models.py:274
+#: fleio/core/models/models.py:294
+#, fuzzy
+#| msgid "Allows users to rename a volume"
+msgid "Allows users to revert volume to snapshot"
+msgstr "Permite utilizatorilor să redenumească un volum"
+
+#: fleio/core/models/models.py:295
 #, fuzzy
 #| msgid "Allows users to rename a volume"
 msgid "Allows users to update a volume backup"
 msgstr "Permite utilizatorilor să redenumească un volum"
 
-#: fleio/core/models/models.py:275
+#: fleio/core/models/models.py:296
 #, fuzzy
 #| msgid "Allows users to rename a volume"
-msgid "Allow users to create a volume backup"
+msgid "Allows users to create a volume backup"
 msgstr "Permite utilizatorilor să redenumească un volum"
 
-#: fleio/core/models/models.py:276
+#: fleio/core/models/models.py:297
 #, fuzzy
 #| msgid "Allows users to rename a volume"
-msgid "Allow users to restore a volume backup"
+msgid "Allows users to restore a volume backup"
 msgstr "Permite utilizatorilor să redenumească un volum"
 
-#: fleio/core/models/models.py:277
+#: fleio/core/models/models.py:298
 #, fuzzy
 #| msgid "Allows users to delete a volume"
-msgid "Allow users to delete a volume backup"
+msgid "Allows users to delete a volume backup"
 msgstr "Permite utilizatorilor să șteargă un volum"
 
-#: fleio/core/models/models.py:278
+#: fleio/core/models/models.py:299
+#, fuzzy
+#| msgid "Allows users to rename a volume"
+msgid "Allows users to create a volume snapshot"
+msgstr "Permite utilizatorilor să redenumească un volum"
+
+#: fleio/core/models/models.py:300
+#, fuzzy
+#| msgid "Allows users to rename a volume"
+msgid "Allows users to update a volume snapshot"
+msgstr "Permite utilizatorilor să redenumească un volum"
+
+#: fleio/core/models/models.py:301
+#, fuzzy
+#| msgid "Allows users to delete a volume"
+msgid "Allows users to delete a volume snapshot"
+msgstr "Permite utilizatorilor să șteargă un volum"
+
+#: fleio/core/models/models.py:302
+#, fuzzy
+#| msgid "Allows users to reset state of an instance"
+msgid "Allows users to reset state of a volume snapshot"
+msgstr "Permite utilizatorilor să restaureze starea unei instanțe"
+
+#: fleio/core/models/models.py:303
 #, fuzzy
 #| msgid "Allows users to update an image"
 msgid "Allows users to create an image"
 msgstr "Permite utilizatorilor să actualizeze o imagine"
 
-#: fleio/core/models/models.py:279
+#: fleio/core/models/models.py:304
 msgid "Allows users to delete an image"
 msgstr "Permite utilizatorilor să șteargă o imagine"
 
-#: fleio/core/models/models.py:280
+#: fleio/core/models/models.py:305
 #, fuzzy
 #| msgid "Allows users to delete an image"
 msgid "Allows users to download an image"
 msgstr "Permite utilizatorilor să șteargă o imagine"
 
-#: fleio/core/models/models.py:281
+#: fleio/core/models/models.py:306
 msgid "Allows users to update an image"
 msgstr "Permite utilizatorilor să actualizeze o imagine"
 
-#: fleio/core/models/models.py:282
+#: fleio/core/models/models.py:307
 #, fuzzy
 #| msgid "Allows users to delete an image"
 msgid "Allows users to deactivate an image"
 msgstr "Permite utilizatorilor să șteargă o imagine"
 
-#: fleio/core/models/models.py:283
+#: fleio/core/models/models.py:308
 #, fuzzy
 #| msgid "Allows users to update an image"
 msgid "Allows users to reactivate an image"
 msgstr "Permite utilizatorilor să actualizeze o imagine"
 
-#: fleio/core/models/models.py:284
+#: fleio/core/models/models.py:309
 #, fuzzy
 #| msgid "Allows users to update a flavor"
 msgid "Allows users to create a flavor"
 msgstr "Permite utilizatorilor să șteargă o configurație"
 
-#: fleio/core/models/models.py:285
+#: fleio/core/models/models.py:310
 msgid "Allows users to delete a flavor"
 msgstr "Permite utilizatorilor să șteargă o configurație"
 
-#: fleio/core/models/models.py:286
+#: fleio/core/models/models.py:311
 msgid "Allows users to update a flavor"
 msgstr "Permite utilizatorilor să șteargă o configurație"
 
-#: fleio/core/models/models.py:287
+#: fleio/core/models/models.py:312
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to create a project"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:288
+#: fleio/core/models/models.py:313
 msgid "Allows users to delete an openstack project"
 msgstr "Permite utilizatorilor să șteargă un proiect OpenStack"
 
-#: fleio/core/models/models.py:289
+#: fleio/core/models/models.py:314
 msgid "Allows users to update an openstack project"
 msgstr "Permite utilizatorilor să actualizeze un proiect OpenStack"
 
-#: fleio/core/models/models.py:290
+#: fleio/core/models/models.py:315
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to create a router"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:291
+#: fleio/core/models/models.py:316
 msgid "Allows users to update a router"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:292
+#: fleio/core/models/models.py:317
 msgid "Allows users to delete a router"
 msgstr "Permite utilizatorilor să șteargă un router"
 
-#: fleio/core/models/models.py:293
+#: fleio/core/models/models.py:318
 msgid "Allows users to add an interface to a router"
 msgstr "Permite utilizatorilor să adauge o interfață la un router"
 
-#: fleio/core/models/models.py:294
+#: fleio/core/models/models.py:319
 msgid "Allows users to remove an interface from a router"
 msgstr "Permite utilizatorilor să șteargă o interfață de la un router"
 
-#: fleio/core/models/models.py:295
+#: fleio/core/models/models.py:320
 #, fuzzy
 #| msgid "Allows users to auto create a network"
 msgid "Allows users to create a network"
 msgstr "Permite utilizatorilor să creeze automat o rețea"
 
-#: fleio/core/models/models.py:296
+#: fleio/core/models/models.py:321
 msgid "Allows users to delete a network"
 msgstr "Permite utilizatorilor să șteargă o rețea"
 
-#: fleio/core/models/models.py:297
+#: fleio/core/models/models.py:322
 msgid "Allows users to auto create a network"
 msgstr "Permite utilizatorilor să creeze automat o rețea"
 
-#: fleio/core/models/models.py:298
+#: fleio/core/models/models.py:323
 msgid "Allows users to update a network"
 msgstr "Permite utilizatorilor să actualizeze o rețea"
 
-#: fleio/core/models/models.py:299
+#: fleio/core/models/models.py:324
 #, fuzzy
 #| msgid "Allows users to auto create a network"
 msgid "Allows staff users to change auto create network options"
 msgstr "Permite utilizatorilor să creeze automat o rețea"
 
-#: fleio/core/models/models.py:300
+#: fleio/core/models/models.py:325
 #, fuzzy
 #| msgid "Allows users to rename an instance"
 msgid "Allows users to create floating IPs"
 msgstr "Permite utilizatorilor să redenumească o instanță"
 
-#: fleio/core/models/models.py:301
+#: fleio/core/models/models.py:326
 #, fuzzy
 #| msgid "Allows users to delete an image"
 msgid "Allows users to delete floating IPs"
 msgstr "Permite utilizatorilor să șteargă o imagine"
 
-#: fleio/core/models/models.py:302
+#: fleio/core/models/models.py:327
 #, fuzzy
 #| msgid "Unable to create security group"
 msgid "Allows users to create a security group"
 msgstr "Grupul de securitate nu poate fi creat"
 
-#: fleio/core/models/models.py:303
+#: fleio/core/models/models.py:328
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to update a security group"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:304
+#: fleio/core/models/models.py:329
 #, fuzzy
 #| msgid "Allows users to add an interface to a router"
 msgid "Allows users to add rules to a security group"
 msgstr "Permite utilizatorilor să adauge o interfață la un router"
 
-#: fleio/core/models/models.py:305
+#: fleio/core/models/models.py:330
 #, fuzzy
 #| msgid "Allows users to delete a router"
 msgid "Allows users to delete rules from a security group"
 msgstr "Permite utilizatorilor să șteargă un router"
 
-#: fleio/core/models/models.py:306
+#: fleio/core/models/models.py:331
 #, fuzzy
 #| msgid "Allows users to delete a router"
 msgid "Allows users to delete a security group"
 msgstr "Permite utilizatorilor să șteargă un router"
 
-#: fleio/core/models/models.py:307
+#: fleio/core/models/models.py:332
 #, fuzzy
 #| msgid "Allows users to auto create a network"
 msgid "Allows users to create a subnet pool"
 msgstr "Permite utilizatorilor să creeze automat o rețea"
 
-#: fleio/core/models/models.py:308
+#: fleio/core/models/models.py:333
 #, fuzzy
 #| msgid "Allows users to update a network"
 msgid "Allows users to update a subnet pool"
 msgstr "Permite utilizatorilor să actualizeze o rețea"
 
-#: fleio/core/models/models.py:309
+#: fleio/core/models/models.py:334
 #, fuzzy
 #| msgid "Allows users to delete a network"
 msgid "Allows users to delete a subnet pool"
 msgstr "Permite utilizatorilor să șteargă o rețea"
 
-#: fleio/core/models/models.py:310
+#: fleio/core/models/models.py:335
 #, fuzzy
 #| msgid "Allows users to rename a volume"
 msgid "Allows users to create a SSH key"
 msgstr "Permite utilizatorilor să redenumească un volum"
 
-#: fleio/core/models/models.py:311
+#: fleio/core/models/models.py:336
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Allows users to update a SSH key"
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: fleio/core/models/models.py:312
+#: fleio/core/models/models.py:337
 #, fuzzy
 #| msgid "Allows users to delete a volume"
 msgid "Allows users to delete a SSH key"
 msgstr "Permite utilizatorilor să șteargă un volum"
 
-#: fleio/core/models/models.py:313
+#: fleio/core/models/models.py:338
 #, fuzzy
 #| msgid "Allows users to auto create a network"
 msgid "Allows users to create a port"
 msgstr "Permite utilizatorilor să creeze automat o rețea"
 
-#: fleio/core/models/models.py:314
+#: fleio/core/models/models.py:339
 #, fuzzy
 #| msgid "Allows users to lock an instance"
 msgid "Allows users to add IPs"
 msgstr "Permite utilizatorilor să încuie o instanță"
 
-#: fleio/core/models/models.py:315
+#: fleio/core/models/models.py:340
 #, fuzzy
 #| msgid "Allows users to auto create a network"
 msgid "Allows users to automatically add IPs"
 msgstr "Permite utilizatorilor să creeze automat o rețea"
 
-#: fleio/core/models/models.py:316
+#: fleio/core/models/models.py:341
 #, fuzzy
 #| msgid "Allows users to rename an instance"
 msgid "Allows users to remove an ip"
 msgstr "Permite utilizatorilor să redenumească o instanță"
 
-#: fleio/core/models/models.py:317
+#: fleio/core/models/models.py:342
 #, fuzzy
 #| msgid "Allows users to delete a flavor"
 msgid "Allows users to delete a port"
 msgstr "Permite utilizatorilor să șteargă o configurație"
 
-#: fleio/core/models/models.py:469
+#: fleio/core/models/models.py:343
+#, fuzzy
+#| msgid "Allows users to delete a router"
+msgid "Allows users to see the list of revenue reports"
+msgstr "Permite utilizatorilor să șteargă un router"
+
+#: fleio/core/models/models.py:344
+#, fuzzy
+#| msgid "Allows users to delete a flavor"
+msgid "Allows users to see the details of a revenue report"
+msgstr "Permite utilizatorilor să șteargă o configurație"
+
+#: fleio/core/models/models.py:345
+#, fuzzy
+#| msgid "Allows users to auto create a network"
+msgid "Allows users to generate revenue reports"
+msgstr "Permite utilizatorilor să creeze automat o rețea"
+
+#: fleio/core/models/models.py:346
+#, fuzzy
+#| msgid "Allows users to update a router"
+msgid "Allows users to update revenue reports"
+msgstr "Permite utilizatorilor să șteargă actualizeze un router"
+
+#: fleio/core/models/models.py:347
+#, fuzzy
+#| msgid "Allows users to delete a flavor"
+msgid "Allows users to delete revenue reports"
+msgstr "Permite utilizatorilor să șteargă o configurație"
+
+#: fleio/core/models/models.py:499
 #, fuzzy
 #| msgid "Active"
 msgid "Inactive"
 msgstr "Activ"
 
-#: fleio/core/models/models.py:471
+#: fleio/core/models/models.py:501
 msgid "Closed"
 msgstr ""
 
-#: fleio/core/models/models.py:472
+#: fleio/core/models/models.py:502
 #: fleio/openstack/instances/instance_status.py:213
-#: fleio/openstack/volumes/volume_status.py:22
-#: fleio/openstack/volumes/volume_status.py:42
+#: fleio/openstack/models/volume_snapshot.py:46
+#: fleio/openstack/volumes/volume_status.py:23
+#: fleio/openstack/volumes/volume_status.py:44
 msgid "Deleting"
 msgstr "Se șterge"
 
-#: fleio/core/models/models.py:479
+#: fleio/core/models/models.py:509
 msgid "user action"
 msgstr "actiune utilizator"
 
-#: fleio/core/models/models.py:480
+#: fleio/core/models/models.py:510
 msgid "automatic action"
 msgstr "actiune automatica"
 
@@ -2325,7 +2436,7 @@ msgstr "Ar trebuie să conțină cel puțin o cifră sau simbol."
 msgid "Logged out"
 msgstr "Deconectat"
 
-#: fleio/core/views.py:156 fleio/core/views.py:324
+#: fleio/core/views.py:156 fleio/core/views.py:326
 #, fuzzy
 #| msgid "Login not allowed. Please contact support"
 msgid "Changing password is disabled. Please contact support."
@@ -2371,17 +2482,17 @@ msgstr ""
 msgid "An email with the confirmation token was sent to {}"
 msgstr ""
 
-#: fleio/core/views.py:322
+#: fleio/core/views.py:324
 #, fuzzy
 #| msgid "Operation not allowed in demo mode"
 msgid "Changing password not allowed in demo mode"
 msgstr "Operațiunea nu este permisă in modul demo"
 
-#: fleio/core/views.py:330 fleiostaff/core/views.py:373
+#: fleio/core/views.py:332 fleiostaff/core/views.py:375
 msgid "Please enter the correct current password."
 msgstr "Introdu corect parola curenta"
 
-#: fleio/core/views.py:349 fleiostaff/core/views.py:384
+#: fleio/core/views.py:351 fleiostaff/core/views.py:386
 msgid "User profile updated"
 msgstr "Profilul utilizatorului actualizat"
 
@@ -2424,8 +2535,9 @@ msgstr "Trimis..."
 #: fleio/notifications/models.py:47 fleio/notifications/models.py:138
 #: fleio/openstack/dns/serializers.py:37 fleio/openstack/dns/serializers.py:81
 #: fleio/openstack/instances/instance_status.py:72
-#: fleio/openstack/volumes/volume_status.py:19
-#: fleio/openstack/volumes/volume_status.py:43
+#: fleio/openstack/models/volume_snapshot.py:47
+#: fleio/openstack/volumes/volume_status.py:20
+#: fleio/openstack/volumes/volume_status.py:45
 #: fleiostaff/openstack/dns/serializers.py:34
 #: fleiostaff/openstack/dns/serializers.py:123
 msgid "Error"
@@ -2604,46 +2716,51 @@ msgstr ""
 "Utilizatorul {username} ({user_id}) a șters un IP dinamic {floating_ip} "
 "({floating_ip_id})"
 
-#: fleio/openstack/apps.py:30
+#: fleio/openstack/apps.py:38
 msgid "Openstack"
 msgstr "Openstack"
 
-#: fleio/openstack/apps.py:71
+#: fleio/openstack/apps.py:79
 #, fuzzy, python-brace-format
 #| msgid "Staff user {username} ({user_id}) logged out"
 msgid "Staff user {username} ({user_id}) updated openstack credentials."
 msgstr "Administratorul {username} ({user_id}) s-a deconectat"
 
-#: fleio/openstack/apps.py:75
+#: fleio/openstack/apps.py:83
 #, python-brace-format
 msgid "Volume {volume_id} extra details synchronization."
 msgstr ""
 
-#: fleio/openstack/billing_module.py:284
+#: fleio/openstack/apps.py:87
+#, python-brace-format
+msgid "Volume backup {backup_id} extra details synchronization."
+msgstr ""
+
+#: fleio/openstack/billing_module.py:278
 msgid "Instances"
 msgstr "Instanțe"
 
-#: fleio/openstack/billing_module.py:293
+#: fleio/openstack/billing_module.py:287
 msgid "Volumes"
 msgstr "Volume"
 
-#: fleio/openstack/billing_module.py:301
+#: fleio/openstack/billing_module.py:295
 msgid "SSH keys"
 msgstr "Chei SSH"
 
-#: fleio/openstack/billing_module.py:312
+#: fleio/openstack/billing_module.py:306
 msgid "Networks"
 msgstr "Rețele"
 
-#: fleio/openstack/billing_module.py:320
+#: fleio/openstack/billing_module.py:314
 msgid "Images"
 msgstr "Imagini"
 
-#: fleio/openstack/billing_module.py:329
+#: fleio/openstack/billing_module.py:323
 msgid "Routers"
 msgstr "Routere"
 
-#: fleio/openstack/billing_module.py:338
+#: fleio/openstack/billing_module.py:332
 msgid "Ports"
 msgstr "Porturi"
 
@@ -2762,8 +2879,9 @@ msgstr "Secundar"
 #: fleio/openstack/dns/utils.py:30 fleio/openstack/networking/views.py:54
 #: fleio/openstack/networking/views.py:127
 #: fleio/openstack/networking/views.py:419
-#: fleio/openstack/networking/views.py:511 fleio/openstack/osapi.py:45
-#: fleio/openstack/users/views.py:33 fleio/openstack/volume_backups/views.py:98
+#: fleio/openstack/networking/views.py:511 fleio/openstack/osapi.py:46
+#: fleio/openstack/users/views.py:33
+#: fleio/openstack/volume_backups/views.py:102
 msgid "No client with an OpenStack project found"
 msgstr "Nici un client cu un proiect OpenStack găsit"
 
@@ -2908,8 +3026,8 @@ msgstr "Obiectul nu este disponibil"
 msgid "Only ASCII characters are allowed for properties and values"
 msgstr "Numai caractere ASCII sunt permise la proprietăți și valori."
 
-#: fleio/openstack/images/serializers.py:135
-#: fleio/openstack/images/serializers.py:167
+#: fleio/openstack/images/serializers.py:148
+#: fleio/openstack/images/serializers.py:180
 #: fleiostaff/openstack/images/serializers.py:106
 #: fleiostaff/openstack/images/serializers.py:133
 #, fuzzy
@@ -2917,98 +3035,112 @@ msgstr "Numai caractere ASCII sunt permise la proprietăți și valori."
 msgid "Invalid hypervisor type selected"
 msgstr "Opțiune invalidă selectată"
 
-#: fleio/openstack/images/views.py:107 fleio/openstack/images/views.py:131
+#: fleio/openstack/images/views.py:108 fleio/openstack/images/views.py:132
 #, fuzzy
 #| msgid "Unable to find a client with an OpenStack project associated"
 msgid "Could not find related client OpenStack project."
 msgstr "Nici un client cu un proiect OpenStack asociat găsit"
 
-#: fleio/openstack/images/views.py:111
+#: fleio/openstack/images/views.py:112
 msgid "Could not find details about image member."
 msgstr ""
 
-#: fleio/openstack/images/views.py:125
+#: fleio/openstack/images/views.py:126
 #, fuzzy
 #| msgid "Not a valid status"
 msgid "Invalid member status received."
 msgstr "Status invalid"
 
-#: fleio/openstack/images/views.py:142
+#: fleio/openstack/images/views.py:143
 msgid "Image member status update sent."
 msgstr ""
 
-#: fleio/openstack/images/views.py:148 fleio/openstack/networking/views.py:381
-#: fleio/openstack/volume_backups/views.py:89
+#: fleio/openstack/images/views.py:149 fleio/openstack/networking/views.py:381
+#: fleio/openstack/volume_backups/views.py:93
+#: fleio/openstack/volume_snapshots/views.py:52
 #: fleiostaff/openstack/dns/views.py:200
-#: fleiostaff/openstack/images/views.py:100
+#: fleiostaff/openstack/images/views.py:104
 #: fleiostaff/openstack/instances/views.py:156
 #: fleiostaff/openstack/routers/views.py:64
-#: fleiostaff/openstack/volume_backups/views.py:72
-#: fleiostaff/openstack/volumes/views.py:121
+#: fleiostaff/openstack/volume_backups/views.py:76
+#: fleiostaff/openstack/volume_snapshots/views.py:53
+#: fleiostaff/openstack/volumes/views.py:124
 #, fuzzy
 #| msgid "License file not intact. Please reactivate license"
 msgid "Licence cloud objects limit reached. Please check your license."
 msgstr "Fișierul de licență nu este intact. Vă rugăm să reactivați licență"
 
-#: fleio/openstack/images/views.py:150
+#: fleio/openstack/images/views.py:151
 #, fuzzy
 #| msgid "Operation not allowed"
 msgid "Image creation not allowed"
 msgstr "Operațiunea nu este permisă"
 
-#: fleio/openstack/images/views.py:166 fleiostaff/openstack/images/views.py:133
+#: fleio/openstack/images/views.py:167 fleiostaff/openstack/images/views.py:137
 msgid "Can't delete protected image"
 msgstr "Nu pot șterge imaginea protejată"
 
-#: fleio/openstack/images/views.py:181
+#: fleio/openstack/images/views.py:182
 #, fuzzy
 #| msgid "Operation not allowed"
 msgid "Image editing not allowed"
 msgstr "Operațiunea nu este permisă"
 
-#: fleio/openstack/images/views.py:186
+#: fleio/openstack/images/views.py:187
 #, fuzzy
 #| msgid "Usage updated"
 msgid "Image update forbidden"
 msgstr "Consumul a fost actualizat"
 
-#: fleio/openstack/images/views.py:189
+#: fleio/openstack/images/views.py:190
 #, fuzzy
 #| msgid "Usage updated"
 msgid "Image update failed"
 msgstr "Consumul a fost actualizat"
 
-#: fleio/openstack/images/views.py:220
+#: fleio/openstack/images/views.py:221
 #, fuzzy
 #| msgid "Operation not allowed"
 msgid "Image deactivation not allowed"
 msgstr "Operațiunea nu este permisă"
 
-#: fleio/openstack/images/views.py:228 fleiostaff/openstack/images/views.py:160
+#: fleio/openstack/images/views.py:229 fleiostaff/openstack/images/views.py:164
 #, fuzzy
 #| msgid "Image - Update"
 msgid "Image {} deactivated"
 msgstr "Imagine - Actualizare"
 
-#: fleio/openstack/images/views.py:236
+#: fleio/openstack/images/views.py:237
 #, fuzzy
 #| msgid "Operation not allowed"
 msgid "Image reactivation not allowed"
 msgstr "Operațiunea nu este permisă"
 
-#: fleio/openstack/images/views.py:244 fleiostaff/openstack/images/views.py:174
+#: fleio/openstack/images/views.py:245 fleiostaff/openstack/images/views.py:178
 #, fuzzy
 #| msgid "Image is required"
 msgid "Image {} reactivated"
 msgstr "Imagine necesară"
 
-#: fleio/openstack/images/views.py:251 fleiostaff/openstack/images/views.py:211
+#: fleio/openstack/images/views.py:252 fleiostaff/openstack/images/views.py:215
 #, fuzzy
 #| msgid "Operation not allowed"
 msgid "Image download not allowed"
 msgstr "Operațiunea nu este permisă"
 
-#: fleio/openstack/instances/api.py:511
+#: fleio/openstack/images/views.py:274
+#, fuzzy
+#| msgid "Cannot add attachment to non existing ticket"
+msgid "Cannot get snapshots for non existing instance."
+msgstr "Nu pot adăuga attachment-ul la un ticket care nu există."
+
+#: fleio/openstack/images/views.py:277
+#, fuzzy
+#| msgid "No client found with an OpenStack project associated"
+msgid "Client does not have any project."
+msgstr "Nici un client cu un proiect asociat OpenStack găsit"
+
+#: fleio/openstack/instances/api.py:518
 msgid "Migration not found"
 msgstr "Migrarea nu a fost găsită"
 
@@ -3042,6 +3174,7 @@ msgstr "Ștergere soft"
 
 #: fleio/openstack/instances/instance_status.py:71
 #: fleio/openstack/models/image.py:22 fleio/openstack/models/image.py:65
+#: fleio/openstack/models/volume_snapshot.py:45
 #: plugins/domains/models/domain.py:44
 msgid "Deleted"
 msgstr "Șters"
@@ -3137,7 +3270,7 @@ msgid "Resize confirming"
 msgstr "Redimensionare confirmată"
 
 #: fleio/openstack/instances/instance_status.py:193
-#: fleio/openstack/instances/views.py:1082
+#: fleio/openstack/instances/views.py:1091
 msgid "Rebooting"
 msgstr "Se resetează"
 
@@ -3244,7 +3377,8 @@ msgid "Soft deleting"
 msgstr "Ștergere soft"
 
 #: fleio/openstack/instances/instance_status.py:215
-#: fleio/openstack/volumes/volume_status.py:44
+#: fleio/openstack/models/volume_snapshot.py:48
+#: fleio/openstack/volumes/volume_status.py:46
 msgid "Restoring"
 msgstr ""
 
@@ -3273,8 +3407,8 @@ msgid "Unshelving"
 msgstr ""
 
 #: fleio/openstack/instances/serializers.py:274
-#: fleio/openstack/volumes/serializers.py:61
-#: fleiostaff/openstack/volumes/serializers.py:35
+#: fleio/openstack/volumes/serializers.py:73
+#: fleiostaff/openstack/volumes/serializers.py:40
 msgid "Image"
 msgstr "Imagine"
 
@@ -3295,8 +3429,8 @@ msgid "Community Image"
 msgstr "Community Image"
 
 #: fleio/openstack/instances/serializers.py:278
-#: fleio/openstack/volumes/serializers.py:62
-#: fleiostaff/openstack/volumes/serializers.py:36
+#: fleio/openstack/volumes/serializers.py:74
+#: fleiostaff/openstack/volumes/serializers.py:41
 msgid "Volume"
 msgstr "Volum"
 
@@ -3321,7 +3455,7 @@ msgid "Booting from a volume is disabled"
 msgstr ""
 
 #: fleio/openstack/instances/serializers.py:316
-#: fleio/openstack/instances/views.py:408
+#: fleio/openstack/instances/views.py:415
 #: fleiostaff/openstack/instances/serializers.py:204
 #: fleiostaff/openstack/instances/serializers.py:220
 #: fleiostaff/openstack/instances/views.py:127
@@ -3334,7 +3468,7 @@ msgid "Volume size is not valid"
 msgstr "Dimensiunea volumului nu este validă."
 
 #: fleio/openstack/instances/serializers.py:337
-#: fleio/openstack/instances/views.py:424
+#: fleio/openstack/instances/views.py:431
 #: fleiostaff/openstack/instances/views.py:138
 msgid "Volume not found"
 msgstr "Volumul nu a fost găsit"
@@ -3392,17 +3526,17 @@ msgstr "Status invalid"
 msgid "Must select hypervisor with live migration"
 msgstr "Trebuie sa selectați un hypervisor pentru a efectua migrarea"
 
-#: fleio/openstack/instances/views.py:141
+#: fleio/openstack/instances/views.py:145
 msgid "Client not available"
 msgstr "Clientul nu este disponibil"
 
-#: fleio/openstack/instances/views.py:143
+#: fleio/openstack/instances/views.py:147
 #, fuzzy
 #| msgid "No client with an OpenStack project found"
 msgid "No client with an enabled OpenStack project found"
 msgstr "Nici un client cu un proiect OpenStack găsit"
 
-#: fleio/openstack/instances/views.py:248
+#: fleio/openstack/instances/views.py:253
 #, fuzzy
 #| msgid "Unable to continue due to an error. Please contact support"
 msgid "Failed to create instance, please contact support"
@@ -3410,111 +3544,111 @@ msgstr ""
 "Nu se poate continua din cauza unei erori. Contactați personalul pentru "
 "asistență"
 
-#: fleio/openstack/instances/views.py:352
+#: fleio/openstack/instances/views.py:359
 msgid "Permission denied"
 msgstr "Acces respins"
 
-#: fleio/openstack/instances/views.py:360
-#: fleio/openstack/instances/views.py:364
+#: fleio/openstack/instances/views.py:367
+#: fleio/openstack/instances/views.py:371
 msgid "Unable to create the instance"
 msgstr "Nu se poate crea instanța"
 
-#: fleio/openstack/instances/views.py:369
+#: fleio/openstack/instances/views.py:376
 #, fuzzy
 #| msgid "Can not migrate instance."
 msgid "Cannot delete a locked instance"
 msgstr "Nu se poate migra instanța."
 
-#: fleio/openstack/instances/views.py:375
-#: fleiostaff/openstack/instances/views.py:270
+#: fleio/openstack/instances/views.py:382
+#: fleiostaff/openstack/instances/views.py:272
 #, python-format
 msgid "Unable to destroy instance %s"
 msgstr "Nu se poate distruge instanța %s"
 
-#: fleio/openstack/instances/views.py:427
+#: fleio/openstack/instances/views.py:434
 #, fuzzy
 #| msgid "Volume size is not valid"
 msgid "Volume is not bootable"
 msgstr "Dimensiunea volumului nu este validă."
 
-#: fleio/openstack/instances/views.py:429
+#: fleio/openstack/instances/views.py:436
 #, fuzzy
 #| msgid "No subnets available"
 msgid "Volume status must be available"
 msgstr "Nu exista sub-rețele disponibile"
 
-#: fleio/openstack/instances/views.py:598
+#: fleio/openstack/instances/views.py:605
 msgid "Request an image or a volume, not both"
 msgstr ""
 
-#: fleio/openstack/instances/views.py:605
+#: fleio/openstack/instances/views.py:612
 #, fuzzy
 #| msgid "Invalid request"
 msgid "Invalid image requested"
 msgstr "Cerere invalidă"
 
-#: fleio/openstack/instances/views.py:610
+#: fleio/openstack/instances/views.py:617
 #, fuzzy
 #| msgid "Invalid request"
 msgid "Invalid volume requested"
 msgstr "Cerere invalidă"
 
-#: fleio/openstack/instances/views.py:615
+#: fleio/openstack/instances/views.py:622
 #, fuzzy
 #| msgid "Domain not available for registration"
 msgid "Image not available in region {}"
 msgstr "Domeniul nu este disponibil pentru înregistrare"
 
-#: fleio/openstack/instances/views.py:622
+#: fleio/openstack/instances/views.py:629
 #, fuzzy
 #| msgid "Domain not available for registration"
 msgid "Volume not available in region {}"
 msgstr "Domeniul nu este disponibil pentru înregistrare"
 
-#: fleio/openstack/instances/views.py:640
+#: fleio/openstack/instances/views.py:647
 #: fleiostaff/openstack/flavorgroups/views.py:37
 #: fleiostaff/openstack/flavorgroups/views.py:53
 #: fleiostaff/openstack/flavorgroups/views.py:76
 #: fleiostaff/openstack/flavorgroups/views.py:95
-#: fleiostaff/openstack/flavors/views.py:241
-#: fleiostaff/openstack/flavors/views.py:257
-#: fleiostaff/openstack/flavors/views.py:280
-#: fleiostaff/openstack/flavors/views.py:299
+#: fleiostaff/openstack/flavors/views.py:251
+#: fleiostaff/openstack/flavors/views.py:267
+#: fleiostaff/openstack/flavors/views.py:290
+#: fleiostaff/openstack/flavors/views.py:309
 #, fuzzy
 #| msgid "No group to filter against"
 msgid "No image to filter against"
 msgstr "Nici un grup după care sa filtrez"
 
-#: fleio/openstack/instances/views.py:648
+#: fleio/openstack/instances/views.py:655
 msgid "Select a client"
 msgstr ""
 
-#: fleio/openstack/instances/views.py:680
+#: fleio/openstack/instances/views.py:687
 #, fuzzy
 #| msgid "No group to filter against"
 msgid "No region to filter against"
 msgstr "Nici un grup după care sa filtrez"
 
-#: fleio/openstack/instances/views.py:687
+#: fleio/openstack/instances/views.py:694
 #, fuzzy
 #| msgid "No group to filter against"
 msgid "No flavor to filter against"
 msgstr "Nici un grup după care sa filtrez"
 
-#: fleio/openstack/instances/views.py:696
+#: fleio/openstack/instances/views.py:703
 #, fuzzy
 #| msgid "It should be at least 8 characters long."
 msgid "You need to select a client"
 msgstr "Ar trebuie să conțină cel puțin 8 caractere."
 
-#: fleio/openstack/instances/views.py:704
+#: fleio/openstack/instances/views.py:711
 #, fuzzy
 #| msgid "Client has no project."
 msgid "Related client has no project"
 msgstr "Clientul nu are nici un proiect."
 
-#: fleio/openstack/instances/views.py:739
-#: fleio/openstack/instances/views.py:754
+#: fleio/openstack/instances/views.py:746
+#: fleio/openstack/instances/views.py:761
 msgid ""
 "Project id not found or suspended or does not have the permission for the "
 "operation."
@@ -3522,259 +3656,259 @@ msgstr ""
 "Nu există id proiect pentru client sau nu are permisiunea pentru această "
 "operație."
 
-#: fleio/openstack/instances/views.py:743
+#: fleio/openstack/instances/views.py:750
 #, python-format
 msgid "Unable to start the instance %s"
 msgstr "Nu pot porni instanța %s"
 
-#: fleio/openstack/instances/views.py:745
+#: fleio/openstack/instances/views.py:752
 msgid "Instance is starting"
 msgstr "Instanța pornește"
 
-#: fleio/openstack/instances/views.py:758
+#: fleio/openstack/instances/views.py:765
 #, python-format
 msgid "Unable to stop instance %s"
 msgstr "Nu pot opri instanța %s"
 
-#: fleio/openstack/instances/views.py:760
+#: fleio/openstack/instances/views.py:767
 msgid "Instance is stopping"
 msgstr "Instanța se oprește"
 
-#: fleio/openstack/instances/views.py:829
+#: fleio/openstack/instances/views.py:838
 msgid "Unable to rebuild the instance {}"
 msgstr "Nu pot reconstrui instanța {}"
 
-#: fleio/openstack/instances/views.py:831
+#: fleio/openstack/instances/views.py:840
 msgid "Instance rebuild started successfully"
 msgstr "Reconstrucția instanței a început cu succes"
 
-#: fleio/openstack/instances/views.py:839
+#: fleio/openstack/instances/views.py:848
 msgid "Instance must be RUNNING or STOPPED in order to rescue"
 msgstr ""
 
-#: fleio/openstack/instances/views.py:858
+#: fleio/openstack/instances/views.py:867
 #, python-format
 msgid "Unable to rescue instance %s"
 msgstr "Nu pot salva instanța %s"
 
-#: fleio/openstack/instances/views.py:861
+#: fleio/openstack/instances/views.py:870
 msgid "Instance rescue started successfully"
 msgstr "Restaurarea instanței a început cu succes"
 
-#: fleio/openstack/instances/views.py:867
+#: fleio/openstack/instances/views.py:876
 msgid "Instance must be RUNNING or STOPPED in order to boot from ISO"
 msgstr ""
 
-#: fleio/openstack/instances/views.py:887
+#: fleio/openstack/instances/views.py:896
 #, fuzzy, python-format
 #| msgid "Unable to stop instance %s"
 msgid "Unable to boot instance %s from ISO"
 msgstr "Nu pot opri instanța %s"
 
-#: fleio/openstack/instances/views.py:889
+#: fleio/openstack/instances/views.py:898
 #, fuzzy
 #| msgid "Instance rescue started successfully"
 msgid "Instance boot form ISO started successfully"
 msgstr "Restaurarea instanței a început cu succes"
 
-#: fleio/openstack/instances/views.py:898
+#: fleio/openstack/instances/views.py:907
 #, python-brace-format
 msgid "Unable exit rescue mode for instance {0}"
 msgstr "Nu se poate părăsi modul de restaurare pentru instanța {0}"
 
-#: fleio/openstack/instances/views.py:900
+#: fleio/openstack/instances/views.py:909
 msgid "Leaving rescue mode"
 msgstr "Părăsiți modul de restaurare"
 
-#: fleio/openstack/instances/views.py:909
+#: fleio/openstack/instances/views.py:918
 #, python-brace-format
 msgid "Unable to confirm the resize of instance {0}"
 msgstr "Nu se poate confirma redimensionarea instanței {0}"
 
-#: fleio/openstack/instances/views.py:911
+#: fleio/openstack/instances/views.py:920
 msgid "Resize confirmed"
 msgstr "Redimensionare confirmată"
 
-#: fleio/openstack/instances/views.py:920
+#: fleio/openstack/instances/views.py:929
 #, python-brace-format
 msgid "Unable to revert the resize of instance {0}"
 msgstr "Nu se poate inversa redimensionarea instanței {0}"
 
-#: fleio/openstack/instances/views.py:922
+#: fleio/openstack/instances/views.py:931
 msgid "Reverting size"
 msgstr "Mărime inversare"
 
-#: fleio/openstack/instances/views.py:940
-#: fleiostaff/openstack/instances/views.py:350
+#: fleio/openstack/instances/views.py:949
+#: fleiostaff/openstack/instances/views.py:352
 #, python-format
 msgid "Unable to resize instance %s"
 msgstr "Nu pot redimensiona instanța %s"
 
-#: fleio/openstack/instances/views.py:944
-#: fleiostaff/openstack/instances/views.py:354
+#: fleio/openstack/instances/views.py:953
+#: fleiostaff/openstack/instances/views.py:356
 msgid "Instance resize started successfully"
 msgstr "Redimensionarea instanței a început cu succes"
 
-#: fleio/openstack/instances/views.py:958
+#: fleio/openstack/instances/views.py:967
 #, python-brace-format
 msgid "Unable to retrieve system log for instance {0}"
 msgstr "Nu pot obține jurnalul sistem pentru instanța {0}"
 
-#: fleio/openstack/instances/views.py:1041
+#: fleio/openstack/instances/views.py:1050
 #, fuzzy, python-brace-format
 #| msgid "Unable to get actions for instance {0}"
 msgid "LXC console is disabled. Unable to open console for instance {0}"
 msgstr "Nu pot obține acțiunile pentru instanța {0}"
 
-#: fleio/openstack/instances/views.py:1065
+#: fleio/openstack/instances/views.py:1074
 #, fuzzy
 #| msgid "Unable to connect to VNC for instance {0}"
 msgid "Unable to connect to VNC or Spice console for instance {}."
 msgstr "Nu mă pot conecta la VNC pentru instanța {0}"
 
-#: fleio/openstack/instances/views.py:1080
+#: fleio/openstack/instances/views.py:1089
 #, python-brace-format
 msgid "Unable to reboot instance {0}"
 msgstr "Nu poate reporni instanța {0}"
 
-#: fleio/openstack/instances/views.py:1093
+#: fleio/openstack/instances/views.py:1102
 #, python-brace-format
 msgid "Unable to rename instance {0}"
 msgstr "Nu pot redenumi instanța {0}"
 
-#: fleio/openstack/instances/views.py:1095
+#: fleio/openstack/instances/views.py:1104
 msgid "Renamed"
 msgstr "Redenumită"
 
-#: fleio/openstack/instances/views.py:1107
-#: fleiostaff/openstack/instances/views.py:461
-#: fleiostaff/openstack/instances/views.py:470
+#: fleio/openstack/instances/views.py:1156
+#: fleiostaff/openstack/instances/views.py:463
+#: fleiostaff/openstack/instances/views.py:472
 #, python-brace-format
 msgid "Unable to create snapshot for instance {0}"
 msgstr "Nu se poate crea snapshot pentru instanța {0}"
 
-#: fleio/openstack/instances/views.py:1145
+#: fleio/openstack/instances/views.py:1194
 #, python-brace-format
 msgid "Unable to get actions for instance {0}"
 msgstr "Nu pot obține acțiunile pentru instanța {0}"
 
-#: fleio/openstack/instances/views.py:1165
+#: fleio/openstack/instances/views.py:1214
 msgid "Change instance password feature is disabled."
 msgstr ""
 
-#: fleio/openstack/instances/views.py:1174
+#: fleio/openstack/instances/views.py:1223
 #, python-brace-format
 msgid "Unable to change password for instance {0}"
 msgstr "Nu pot schimba parola pentru instanța {0}"
 
-#: fleio/openstack/instances/views.py:1180
+#: fleio/openstack/instances/views.py:1229
 msgid "Changing password"
 msgstr "Schimbare parolă"
 
-#: fleio/openstack/instances/views.py:1182
+#: fleio/openstack/instances/views.py:1231
 msgid "Can only change password for instance with status ACTIVE"
 msgstr "Parola se poate schimba doar pentru instanțele cu status ACTIV"
 
-#: fleio/openstack/instances/views.py:1192
+#: fleio/openstack/instances/views.py:1241
 #, python-brace-format
 msgid "Unable to reset state of instance {0}"
 msgstr "Nu pot reseta starea instanței {0}"
 
-#: fleio/openstack/instances/views.py:1206
+#: fleio/openstack/instances/views.py:1255
 #, python-brace-format
 msgid "Unable to attach the volume {0}"
 msgstr "Nu pot atașa volumul {0}"
 
-#: fleio/openstack/instances/views.py:1208
+#: fleio/openstack/instances/views.py:1257
 msgid "Volume attaching"
 msgstr "Atașare volum"
 
-#: fleio/openstack/instances/views.py:1220
+#: fleio/openstack/instances/views.py:1269
 #, python-brace-format
 msgid "Unable to detach the volume {0}"
 msgstr "Nu se poate detașa volumul {0}"
 
-#: fleio/openstack/instances/views.py:1222
+#: fleio/openstack/instances/views.py:1271
 msgid "Volume detaching"
 msgstr "Detașare volum"
 
-#: fleio/openstack/instances/views.py:1236
+#: fleio/openstack/instances/views.py:1285
 #, python-brace-format
 msgid "Unable to add floating ip {ip} to instance {instance_name}"
 msgstr "Nu se poate adauga IP-ul dinamic {ip} la instanța {instance_name}"
 
-#: fleio/openstack/instances/views.py:1239
+#: fleio/openstack/instances/views.py:1288
 msgid "Floating ip associated"
 msgstr "IP dinamic asociat"
 
-#: fleio/openstack/instances/views.py:1252
+#: fleio/openstack/instances/views.py:1301
 #, python-brace-format
 msgid "Unable to remove floating ip {ip} from instance {instance_name}"
 msgstr "Nu se poate sterge IP-ul dinamic {ip} de la instanța {instance_name}"
 
-#: fleio/openstack/instances/views.py:1255
+#: fleio/openstack/instances/views.py:1304
 msgid "Floating ip dissociated"
 msgstr "IP dinamic disociat"
 
-#: fleio/openstack/instances/views.py:1273
+#: fleio/openstack/instances/views.py:1322
 msgid "No free ports available"
 msgstr "Nu exista porturi disponibile"
 
-#: fleio/openstack/instances/views.py:1275
+#: fleio/openstack/instances/views.py:1324
 msgid "No free floating IPs available"
 msgstr "Nu exista IP-uri dinamice disponibile"
 
-#: fleio/openstack/instances/views.py:1284
+#: fleio/openstack/instances/views.py:1333
 msgid "No ports are associated"
 msgstr "Nu exista porturi disponibile"
 
-#: fleio/openstack/instances/views.py:1344
+#: fleio/openstack/instances/views.py:1393
 #, python-brace-format
 msgid "Allow {ethertype} {proto_port} {direction} {remote}"
 msgstr ""
 "Permite {ethertype} trafic de la portul {proto_port} in directia {direction} "
 "spre {remote}"
 
-#: fleio/openstack/instances/views.py:1352
-#: fleio/openstack/instances/views.py:1388
-#: fleiostaff/openstack/instances/views.py:605
+#: fleio/openstack/instances/views.py:1401
+#: fleio/openstack/instances/views.py:1437
+#: fleiostaff/openstack/instances/views.py:607
 msgid "Parameter \"group\" required"
 msgstr "Parametrul \"group\" este obligatoriu"
 
-#: fleio/openstack/instances/views.py:1359
-#: fleiostaff/openstack/instances/views.py:612
+#: fleio/openstack/instances/views.py:1408
+#: fleiostaff/openstack/instances/views.py:614
 #, python-brace-format
 msgid "Unable to associate security group {group} to instance {instance_name}"
 msgstr ""
 "Nu se poate asocia grupul de securitate {group} la instanța {instance_name}"
 
-#: fleio/openstack/instances/views.py:1362
-#: fleio/openstack/instances/views.py:1398
-#: fleiostaff/openstack/instances/views.py:615
+#: fleio/openstack/instances/views.py:1411
+#: fleio/openstack/instances/views.py:1447
+#: fleiostaff/openstack/instances/views.py:617
 msgid "Security group associated"
 msgstr "Grupul de securitate a fost asociat"
 
-#: fleio/openstack/instances/views.py:1395
+#: fleio/openstack/instances/views.py:1444
 #, python-brace-format
 msgid "Unable to dissociate security group {group} to instance {instance_name}"
 msgstr ""
 "Nu se poate dezasocia grupul de securitate {group} de la instanța "
 "{instance_name}"
 
-#: fleio/openstack/instances/views.py:1403
-#: fleio/openstack/instances/views.py:1429
-#: fleiostaff/openstack/instances/views.py:620
-#: fleiostaff/openstack/instances/views.py:646
+#: fleio/openstack/instances/views.py:1452
+#: fleio/openstack/instances/views.py:1478
+#: fleiostaff/openstack/instances/views.py:622
+#: fleiostaff/openstack/instances/views.py:648
 msgid "Backup feature is disabled."
 msgstr ""
 
-#: fleio/openstack/instances/views.py:1418
-#: fleiostaff/openstack/instances/views.py:635
+#: fleio/openstack/instances/views.py:1467
+#: fleiostaff/openstack/instances/views.py:637
 msgid "Backup for instance {} was scheduled for creation"
 msgstr "Copia de rezervă pentru instanța {} a fost programată"
 
-#: fleio/openstack/instances/views.py:1423
-#: fleiostaff/openstack/instances/views.py:640
+#: fleio/openstack/instances/views.py:1472
+#: fleiostaff/openstack/instances/views.py:642
 #, python-brace-format
 msgid "Unable to create backup for instance {0}"
 msgstr "Nu se poate crea copia de rezervă pentru instanța{0}"
@@ -3944,6 +4078,36 @@ msgstr "Intrare"
 msgid "Egress"
 msgstr "Ieşire"
 
+#: fleio/openstack/models/volume_snapshot.py:42
+#: fleio/openstack/volumes/volume_status.py:22
+#: fleio/openstack/volumes/volume_status.py:42
+msgid "Creating"
+msgstr "Se creează"
+
+#: fleio/openstack/models/volume_snapshot.py:43
+#: fleio/openstack/volumes/volume_status.py:19
+#: fleio/openstack/volumes/volume_status.py:43
+msgid "Available"
+msgstr "Disponibil"
+
+#: fleio/openstack/models/volume_snapshot.py:44
+#, fuzzy
+#| msgid "Backup"
+msgid "Backing up"
+msgstr "Copie de rezervă"
+
+#: fleio/openstack/models/volume_snapshot.py:49
+#: fleio/openstack/volumes/volume_status.py:27
+#: fleio/openstack/volumes/volume_status.py:47
+msgid "Error deleting"
+msgstr "Eroare la ștergere"
+
+#: fleio/openstack/models/volume_snapshot.py:50
+#, fuzzy
+#| msgid "Unmanaged"
+msgid "Unmanaging"
+msgstr "Neadministrat"
+
 #: fleio/openstack/networking/api.py:576
 msgid ""
 "Could not add ip. Possibly subnet configuration is incorrect for automatic "
@@ -4103,16 +4267,16 @@ msgstr "Ștergerea regulei a fost programată"
 msgid "CPU Utilization"
 msgstr "Utilizare CPU"
 
-#: fleio/openstack/tasks.py:676
+#: fleio/openstack/tasks.py:679
 msgid "Move instance: failed to stop source instance"
 msgstr ""
 
-#: fleio/openstack/tasks.py:684 fleio/openstack/tasks.py:689
+#: fleio/openstack/tasks.py:687 fleio/openstack/tasks.py:692
 msgid "Move instance: failed to create source instance snapshot"
 msgstr ""
 
-#: fleio/openstack/tasks.py:733 fleio/openstack/tasks.py:736
-#: fleio/openstack/tasks.py:739
+#: fleio/openstack/tasks.py:736 fleio/openstack/tasks.py:739
+#: fleio/openstack/tasks.py:742
 #, fuzzy
 #| msgid "Unable to continue due to an error. Please contact support"
 msgid "Move instance: failed to create instance from snapshot"
@@ -4120,16 +4284,16 @@ msgstr ""
 "Nu se poate continua din cauza unei erori. Contactați personalul pentru "
 "asistență"
 
-#: fleio/openstack/tasks.py:766
+#: fleio/openstack/tasks.py:769
 msgid "MOVED"
 msgstr ""
 
-#: fleio/openstack/tasks.py:781
+#: fleio/openstack/tasks.py:784
 msgid "Upload image failed "
 msgstr ""
 
-#: fleio/openstack/tasks.py:816 fleio/openstack/tasks.py:819
-#: fleio/openstack/tasks.py:822
+#: fleio/openstack/tasks.py:841 fleio/openstack/tasks.py:844
+#: fleio/openstack/tasks.py:847
 #, fuzzy
 #| msgid "Unable to create the instance"
 msgid "Failed to create instance"
@@ -4196,209 +4360,264 @@ msgstr "Status invalid"
 msgid "No available regions found"
 msgstr "Nici o zonă disponibila nu a fost gasită"
 
-#: fleio/openstack/volume_backups/api.py:93
+#: fleio/openstack/volume_backups/api.py:94
 msgid "Volume update is not found in this volume api version"
 msgstr ""
 
-#: fleio/openstack/volume_backups/views.py:72
+#: fleio/openstack/volume_backups/views.py:76
 msgid "Maximum number of backups allowed exceeded"
 msgstr ""
 
-#: fleio/openstack/volume_backups/views.py:76
+#: fleio/openstack/volume_backups/views.py:80
 msgid "Cannot delete full backup if incremental backup exists"
 msgstr ""
 
-#: fleio/openstack/volume_backups/views.py:78
-#: fleio/openstack/volume_backups/views.py:102
+#: fleio/openstack/volume_backups/views.py:82
+#: fleio/openstack/volume_backups/views.py:106
 msgid "Cannot create incremental backup without having a full backup first"
 msgstr ""
 
-#: fleio/openstack/volume_backups/views.py:80
+#: fleio/openstack/volume_backups/views.py:84
 #, fuzzy
 #| msgid "No subnets available"
 msgid "Cannot delete volume backup as status must be available or error"
 msgstr "Nu exista sub-rețele disponibile"
 
-#: fleio/openstack/volume_backups/views.py:82
+#: fleio/openstack/volume_backups/views.py:86
 #, fuzzy
 #| msgid "No subnets available"
 msgid "Status must be available"
 msgstr "Nu exista sub-rețele disponibile"
 
-#: fleio/openstack/volume_backups/views.py:84
+#: fleio/openstack/volume_backups/views.py:88
 #, fuzzy
 #| msgid "No subnets available"
 msgid "Volume to be backed up must be available or in-use"
 msgstr "Nu exista sub-rețele disponibile"
 
-#: fleio/openstack/volume_backups/views.py:112
-#: fleiostaff/openstack/volume_backups/views.py:102
+#: fleio/openstack/volume_backups/views.py:116
+#: fleiostaff/openstack/volume_backups/views.py:106
 #, fuzzy
 #| msgid "Unable to rename volume"
 msgid "Unable to create volume backup"
 msgstr "Nu se poate redenumi volumul"
 
-#: fleio/openstack/volume_backups/views.py:113
-#: fleiostaff/openstack/volume_backups/views.py:103
+#: fleio/openstack/volume_backups/views.py:117
+#: fleiostaff/openstack/volume_backups/views.py:107
 #, fuzzy
 #| msgid "Create in progress"
 msgid "Volume backup creation in progress"
 msgstr "Creare în progres"
 
-#: fleio/openstack/volume_backups/views.py:115
-#: fleiostaff/openstack/volume_backups/views.py:105
+#: fleio/openstack/volume_backups/views.py:119
+#: fleiostaff/openstack/volume_backups/views.py:109
 msgid "Cannot create volume backup as related volume does not exist"
 msgstr ""
 
-#: fleio/openstack/volume_backups/views.py:139
-#: fleiostaff/openstack/volume_backups/views.py:129
+#: fleio/openstack/volume_backups/views.py:156
+#: fleiostaff/openstack/volume_backups/views.py:146
 #, fuzzy
 #| msgid "Unable to rename volume"
 msgid "Unable to restore volume backup"
 msgstr "Nu se poate redenumi volumul"
 
-#: fleio/openstack/volume_backups/views.py:140
-#: fleiostaff/openstack/volume_backups/views.py:130
+#: fleio/openstack/volume_backups/views.py:157
+#: fleiostaff/openstack/volume_backups/views.py:147
 #, fuzzy
 #| msgid "Registration pending"
 msgid "Restoration started"
 msgstr "Se așteaptă înregistrarea"
 
-#: fleio/openstack/volume_backups/views.py:151
-#: fleiostaff/openstack/volume_backups/views.py:141
+#: fleio/openstack/volume_backups/views.py:168
+#: fleiostaff/openstack/volume_backups/views.py:158
 #, fuzzy
 #| msgid "Unable to update router"
 msgid "Unable to update volume backup"
 msgstr "Nu se poate actualiza router-ul"
 
-#: fleio/openstack/volume_backups/views.py:160
-#: fleiostaff/openstack/volume_backups/views.py:150
+#: fleio/openstack/volume_backups/views.py:182
+#: fleiostaff/openstack/volume_backups/views.py:172
 #, fuzzy
 #| msgid "Changing password"
 msgid "Updating started"
 msgstr "Schimbare parolă"
 
-#: fleio/openstack/volume_backups/views.py:170
-#: fleiostaff/openstack/volume_backups/views.py:160
+#: fleio/openstack/volume_backups/views.py:192
+#: fleiostaff/openstack/volume_backups/views.py:182
 #, fuzzy
 #| msgid "Missing ticket id to filter against."
 msgid "Missing backup id to filter against."
 msgstr "Lipsește id-ul de ticket după care să filtrez"
 
-#: fleio/openstack/volume_backups/views.py:177
+#: fleio/openstack/volume_backups/views.py:199
 msgid "Provided backup to filter against cannot be found"
 msgstr ""
 
-#: fleio/openstack/volume_backups/views.py:197
-#: fleiostaff/openstack/volume_backups/views.py:186
+#: fleio/openstack/volume_backups/views.py:219
+#: fleiostaff/openstack/volume_backups/views.py:208
 #, fuzzy
 #| msgid "Unable to delete volume"
 msgid "Unable to delete volume backup"
 msgstr "Nu pot șterge volumul"
 
-#: fleio/openstack/volumes/serializers.py:63
-#: fleiostaff/openstack/volumes/serializers.py:37
+#: fleio/openstack/volume_snapshots/api.py:25
+#, fuzzy
+#| msgid "Unable to create snapshot for instance {0}"
+msgid "Volume to create snapshot for does not exist."
+msgstr "Nu se poate crea snapshot pentru instanța {0}"
+
+#: fleio/openstack/volume_snapshots/views.py:65
+#: fleiostaff/openstack/volume_snapshots/views.py:75
+#, fuzzy
+#| msgid "Create in progress"
+msgid "Volume snapshot creation in progress"
+msgstr "Creare în progres"
+
+#: fleio/openstack/volume_snapshots/views.py:67
+#: fleiostaff/openstack/volume_snapshots/views.py:77
+#, fuzzy
+#| msgid "Cannot create volume without a project"
+msgid "Cannot create volume snapshot as related volume does not exist"
+msgstr "Nu se poate crea un volum fără un proiect"
+
+#: fleio/openstack/volume_snapshots/views.py:88
+#: fleiostaff/openstack/volume_snapshots/views.py:98
+#, fuzzy
+#| msgid "Cannot create a network without a project."
+msgid "Cannot reset state because new state was not provided."
+msgstr "Nu se poate crea  o rețea fără un proiect."
+
+#: fleio/openstack/volume_snapshots/views.py:93
+#: fleiostaff/openstack/volume_snapshots/views.py:103
+#, fuzzy
+#| msgid "Rule create scheduled"
+msgid "State reset scheduled."
+msgstr "Creerea regulei a fost programată"
+
+#: fleio/openstack/volume_snapshots/views.py:104
+#: fleiostaff/openstack/volume_snapshots/views.py:119
+#, fuzzy
+#| msgid "Unable to update router"
+msgid "Unable to update volume snapshot: {}"
+msgstr "Nu se poate actualiza router-ul"
+
+#: fleio/openstack/volume_snapshots/views.py:116
+#: fleiostaff/openstack/volume_snapshots/views.py:126
+#, fuzzy
+#| msgid "Unable to delete volume"
+msgid "Unable to delete volume snapshot: {}"
+msgstr "Nu pot șterge volumul"
+
+#: fleio/openstack/volumes/serializers.py:75
+#: fleiostaff/openstack/volumes/serializers.py:42
 msgid "Empty volume"
 msgstr "Volum nou"
 
-#: fleio/openstack/volumes/serializers.py:103
-#: fleio/openstack/volumes/serializers.py:186
+#: fleio/openstack/volumes/serializers.py:115
+#: fleio/openstack/volumes/serializers.py:208
 msgid "Size must be a multiple of {}"
 msgstr "Dimensiunea trebuie sa fie un multiplu de {}"
 
-#: fleio/openstack/volumes/serializers.py:118
+#: fleio/openstack/volumes/serializers.py:130
 msgid "Unable to find a client for the current user"
 msgstr "Nu am găsit un client pentru utilizatorul curent"
 
-#: fleio/openstack/volumes/serializers.py:122
+#: fleio/openstack/volumes/serializers.py:134
 msgid "Cannot create volume without a project"
 msgstr "Nu se poate crea un volum fără un proiect"
 
-#: fleio/openstack/volumes/serializers.py:135
-#: fleio/openstack/volumes/serializers.py:148
+#: fleio/openstack/volumes/serializers.py:147
+#: fleio/openstack/volumes/serializers.py:160
 msgid "Unable to find the instance"
 msgstr "Nu pot găsi instanța"
 
-#: fleio/openstack/volumes/serializers.py:150
+#: fleio/openstack/volumes/serializers.py:162
 msgid "Unable to find the attachment"
 msgstr "Nu se poate găsi atașamentul"
 
-#: fleio/openstack/volumes/serializers.py:172
+#: fleio/openstack/volumes/serializers.py:194
 msgid "Volumes cannot be shrinked, only extended"
 msgstr "Volumele nu pot fi micșorate, doar extinse"
 
-#: fleio/openstack/volumes/views.py:89
+#: fleio/openstack/volumes/views.py:91
 msgid "No client with an OpenStack project associated found"
 msgstr "Nici un client cu un proiect OpenStack găsit"
 
-#: fleio/openstack/volumes/views.py:136
+#: fleio/openstack/volumes/views.py:138
 #, fuzzy
 #| msgid "Unable to create record. Please contact support for more info"
 msgid "Failed to create volume, please contact support"
 msgstr "Înregistrarea nu poate fi creată. Vă rugăm contactati personalul"
 
-#: fleio/openstack/volumes/views.py:156
-#: fleiostaff/openstack/volumes/views.py:144
+#: fleio/openstack/volumes/views.py:160
+#: fleiostaff/openstack/volumes/views.py:154
 msgid "Volume cannot be deleted now"
 msgstr "Volumul nu poate fi șters acum"
 
-#: fleio/openstack/volumes/views.py:161
-#: fleiostaff/openstack/volumes/views.py:153
+#: fleio/openstack/volumes/views.py:165
+#: fleiostaff/openstack/volumes/views.py:163
 msgid "Unable to delete volume"
 msgstr "Nu pot șterge volumul"
 
-#: fleio/openstack/volumes/views.py:177
+#: fleio/openstack/volumes/views.py:181
 msgid "Unable to rename volume"
 msgstr "Nu se poate redenumi volumul"
 
-#: fleio/openstack/volumes/views.py:178
+#: fleio/openstack/volumes/views.py:182
 msgid "Renaming volume in progress"
 msgstr "Redenumire volum în desfășurare"
 
-#: fleio/openstack/volumes/views.py:189
+#: fleio/openstack/volumes/views.py:193
 msgid "Unable to extend volume"
 msgstr "Nu se poate extinde volumul"
 
-#: fleio/openstack/volumes/views.py:190
+#: fleio/openstack/volumes/views.py:194
 msgid "Extending volume in progress"
 msgstr "Extindere volum în desfășurare"
 
-#: fleio/openstack/volumes/volume_status.py:18
-#: fleio/openstack/volumes/volume_status.py:41
-msgid "Available"
-msgstr "Disponibil"
+#: fleio/openstack/volumes/views.py:200
+#, fuzzy
+#| msgid "No subnets available"
+msgid "Cannot revert volume to snapshot only when it's status is available."
+msgstr "Nu exista sub-rețele disponibile"
 
-#: fleio/openstack/volumes/volume_status.py:20
+#: fleio/openstack/volumes/views.py:207
+#, fuzzy
+#| msgid "Unable to rename volume"
+msgid "Unable to revert volume to snapshot"
+msgstr "Nu se poate redenumi volumul"
+
+#: fleio/openstack/volumes/views.py:208
+#, fuzzy
+#| msgid "Rule create scheduled"
+msgid "Volume revert to snapshot scheduled"
+msgstr "Creerea regulei a fost programată"
+
+#: fleio/openstack/volumes/volume_status.py:21
 #, fuzzy
 #| msgid "Pending"
 msgid "Extending"
 msgstr "În așteptare"
 
-#: fleio/openstack/volumes/volume_status.py:21
-#: fleio/openstack/volumes/volume_status.py:40
-msgid "Creating"
-msgstr "Se creează"
-
-#: fleio/openstack/volumes/volume_status.py:23
+#: fleio/openstack/volumes/volume_status.py:24
 msgid "In use"
 msgstr "În uz"
 
-#: fleio/openstack/volumes/volume_status.py:24
+#: fleio/openstack/volumes/volume_status.py:25
 msgid "Attaching"
 msgstr "Se atașează"
 
-#: fleio/openstack/volumes/volume_status.py:25
+#: fleio/openstack/volumes/volume_status.py:26
 msgid "Detaching"
 msgstr "De detașează"
 
-#: fleio/openstack/volumes/volume_status.py:26
-#: fleio/openstack/volumes/volume_status.py:45
-msgid "Error deleting"
-msgstr "Eroare la ștergere"
-
-#: fleio/openstack/volumes/volume_status.py:27
+#: fleio/openstack/volumes/volume_status.py:28
 msgid "Maintenance"
 msgstr "Mentenanță"
+
+#: fleio/openstack/volumes/volume_status.py:29
+msgid "Restoring backup"
+msgstr ""
 
 #: fleio/osbackup/bin/backup.py:113
 #, python-brace-format
@@ -4773,7 +4992,15 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters o rețea {network_name} "
 "({network_id})"
 
-#: fleiostaff/billing/productcycles/serializers.py:31
+#: fleiostaff/billing/productcycles/serializers.py:30
+msgid "Cannot add one time cycle if the product has a recurring cycle."
+msgstr ""
+
+#: fleiostaff/billing/productcycles/serializers.py:36
+msgid "Cannot add recurring cycle if the product has a one time cycle."
+msgstr ""
+
+#: fleiostaff/billing/productcycles/serializers.py:47
 msgid "A cycle with {} currency is required to auto calculate price"
 msgstr "Un ciclu cu moneda {} este necesar pentru auto calcularea prețului"
 
@@ -4909,7 +5136,7 @@ msgstr ""
 "rambursare"
 
 #: fleiostaff/billing/transactions/views.py:32
-#: fleiostaff/core/clients/views.py:420 fleiostaff/openstack/core/views.py:168
+#: fleiostaff/core/clients/views.py:443 fleiostaff/openstack/core/views.py:168
 msgid "Ok"
 msgstr "Ok"
 
@@ -4918,13 +5145,13 @@ msgstr "Ok"
 msgid "Settings updated"
 msgstr "Setări actualizate"
 
-#: fleiostaff/core/clients/serializers.py:185
+#: fleiostaff/core/clients/serializers.py:188
 #, fuzzy
 #| msgid "License file not intact. Please reactivate license"
 msgid "License client limit reached. Please check your license"
 msgstr "Fișierul de licență nu este intact. Vă rugăm să reactivați licență"
 
-#: fleiostaff/core/clients/views.py:121
+#: fleiostaff/core/clients/views.py:129
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "User {username} ({user_id}) deleted a client {client_name} ({client_id})"
@@ -4935,7 +5162,7 @@ msgstr ""
 "Utilizatorul {username} ({user_id}) a șters clientul {client_name} "
 "({client_id})"
 
-#: fleiostaff/core/clients/views.py:122
+#: fleiostaff/core/clients/views.py:130
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "User {username} ({user_id}) deleted a client {client_name} ({client_id})"
@@ -4945,7 +5172,7 @@ msgstr ""
 "Utilizatorul {username} ({user_id}) a șters clientul {client_name} "
 "({client_id})"
 
-#: fleiostaff/core/clients/views.py:123
+#: fleiostaff/core/clients/views.py:131
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -4956,7 +5183,7 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/core/clients/views.py:124
+#: fleiostaff/core/clients/views.py:132
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -4967,7 +5194,7 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/core/clients/views.py:125
+#: fleiostaff/core/clients/views.py:133
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -4977,7 +5204,7 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/core/clients/views.py:126
+#: fleiostaff/core/clients/views.py:134
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -4988,7 +5215,7 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/core/clients/views.py:127
+#: fleiostaff/core/clients/views.py:135
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -4999,7 +5226,7 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/core/clients/views.py:128
+#: fleiostaff/core/clients/views.py:136
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -5011,7 +5238,7 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/core/clients/views.py:130
+#: fleiostaff/core/clients/views.py:138
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted an instance {instance_name} "
@@ -5023,135 +5250,147 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters o instanță {instance_name} "
 "({instance_id})"
 
-#: fleiostaff/core/clients/views.py:132
+#: fleiostaff/core/clients/views.py:140
 #, fuzzy, python-brace-format
 #| msgid "Staff user {username} ({user_id}) logged out"
 msgid ""
 "Staff user {username} ({user_id}) added client ({object_id}) to a group."
 msgstr "Administratorul {username} ({user_id}) s-a deconectat"
 
-#: fleiostaff/core/clients/views.py:133
+#: fleiostaff/core/clients/views.py:141
 #, fuzzy, python-brace-format
 #| msgid "Staff user {username} ({user_id}) logged out"
 msgid ""
 "Staff user {username} ({user_id}) removed client ({object_id}) from a group."
 msgstr "Administratorul {username} ({user_id}) s-a deconectat"
 
-#: fleiostaff/core/clients/views.py:135
+#: fleiostaff/core/clients/views.py:143
 #, fuzzy, python-brace-format
 #| msgid "Staff user {username} ({user_id}) logged in"
 msgid "Staff user {username} ({user_id}) set billing agreements."
 msgstr "Administratorul {username} ({user_id}) s-a conectat"
 
-#: fleiostaff/core/clients/views.py:197
+#: fleiostaff/core/clients/views.py:145
+#, fuzzy, python-brace-format
+#| msgid "Staff user {username} ({user_id}) logged in"
+msgid "Staff user {username} ({user_id}) sent mass email to clients."
+msgstr "Administratorul {username} ({user_id}) s-a conectat"
+
+#: fleiostaff/core/clients/views.py:220
 msgid "Client already suspended"
 msgstr "Clientul este deja suspendat"
 
-#: fleiostaff/core/clients/views.py:209
+#: fleiostaff/core/clients/views.py:232
 msgid "Suspend scheduled"
 msgstr "Suspendare programată"
 
-#: fleiostaff/core/clients/views.py:218
+#: fleiostaff/core/clients/views.py:241
 msgid "Client is not suspended"
 msgstr "Clientul nu este suspendat"
 
-#: fleiostaff/core/clients/views.py:229
+#: fleiostaff/core/clients/views.py:252
 msgid "Resume scheduled"
 msgstr "Reluarea programată"
 
-#: fleiostaff/core/clients/views.py:279 fleiostaff/core/clients/views.py:287
+#: fleiostaff/core/clients/views.py:302 fleiostaff/core/clients/views.py:310
 msgid "Usage updated"
 msgstr "Consumul a fost actualizat"
 
-#: fleiostaff/core/clients/views.py:328
+#: fleiostaff/core/clients/views.py:351
 msgid "Client delete scheduled"
 msgstr "Ștergerea clientului a fost programată"
 
-#: fleiostaff/core/clients/views.py:340 fleiostaff/core/clients/views.py:369
+#: fleiostaff/core/clients/views.py:363 fleiostaff/core/clients/views.py:392
 msgid "User not found"
 msgstr "Utilizatorul nu a fost găsit"
 
-#: fleiostaff/core/clients/views.py:342
+#: fleiostaff/core/clients/views.py:365
 msgid "User associated"
 msgstr "Utilizatorul a fost asociat"
 
-#: fleiostaff/core/clients/views.py:348
+#: fleiostaff/core/clients/views.py:371
 #: fleiostaff/core/frontend_customization/index_manager.py:119
 #: fleiostaff/core/frontend_customization/views.py:29
 #: fleiostaff/core/frontend_customization/views.py:90
-#: fleiostaff/core/users/views.py:79 fleiostaff/core/users/views.py:87
-#: fleiostaff/core/users/views.py:157 fleiostaff/core/views.py:364
-#: fleiostaff/openstack/flavors/views.py:115
-#: fleiostaff/openstack/images/views.py:129
+#: fleiostaff/core/users/views.py:85 fleiostaff/core/users/views.py:93
+#: fleiostaff/core/users/views.py:163 fleiostaff/core/views.py:366
+#: fleiostaff/openstack/flavors/views.py:125
+#: fleiostaff/openstack/images/views.py:133
 #: fleiostaff/openstack/projects/views.py:115
 #: fleiostaff/openstack/users/views.py:155
 msgid "Operation not allowed in demo mode"
 msgstr "Operațiunea nu este permisă in modul demo"
 
-#: fleiostaff/core/clients/views.py:371
+#: fleiostaff/core/clients/views.py:394
 msgid "User dissociated"
 msgstr "Utilizatorul a fost disociat"
 
-#: fleiostaff/core/clients/views.py:415
+#: fleiostaff/core/clients/views.py:438
 msgid "Configuration does not exist"
 msgstr "Configurarea nu există"
 
-#: fleiostaff/core/clients/views.py:487
+#: fleiostaff/core/clients/views.py:510
 msgid "Cannot update os plan because openstack plans feature is disabled"
 msgstr ""
 
-#: fleiostaff/core/clients/views.py:490
+#: fleiostaff/core/clients/views.py:513
 #, fuzzy
 #| msgid "No client found with an OpenStack project associated"
 msgid "Client does not have an OpenStack project or pricing plan"
 msgstr "Nici un client cu un proiect asociat OpenStack găsit"
 
-#: fleiostaff/core/clients/views.py:493
+#: fleiostaff/core/clients/views.py:516
 #, fuzzy
 #| msgid "OpenStack user password is required"
 msgid "An OpenStack pricing plan is required"
 msgstr "Parola pentru utilizatorul de OpensStack este necesara"
 
-#: fleiostaff/core/clients/views.py:498
+#: fleiostaff/core/clients/views.py:521
 #, fuzzy
 #| msgid "Option does not exist"
 msgid "Pricing plan does not exist"
 msgstr "Optiunea nu există"
 
-#: fleiostaff/core/clients/views.py:509 fleiostaff/core/clients/views.py:525
+#: fleiostaff/core/clients/views.py:532 fleiostaff/core/clients/views.py:548
 #, fuzzy
 #| msgid "Missing group id to filter users against it"
 msgid "Missing group id to filter clients against it"
 msgstr "Lipsește id-ul grupului după care să filtrez"
 
-#: fleiostaff/core/clients/views.py:513 fleiostaff/core/clients/views.py:529
-#: fleiostaff/core/users/views.py:292 fleiostaff/core/users/views.py:315
-#: fleiostaff/openstack/flavors/views.py:165
-#: fleiostaff/openstack/flavors/views.py:181
-#: fleiostaff/openstack/flavors/views.py:204
-#: fleiostaff/openstack/flavors/views.py:224
+#: fleiostaff/core/clients/views.py:536 fleiostaff/core/clients/views.py:552
+#: fleiostaff/core/users/views.py:311 fleiostaff/core/users/views.py:334
+#: fleiostaff/openstack/flavors/views.py:175
+#: fleiostaff/openstack/flavors/views.py:191
+#: fleiostaff/openstack/flavors/views.py:214
+#: fleiostaff/openstack/flavors/views.py:234
 msgid "No group to filter against"
 msgstr "Nici un grup după care sa filtrez"
 
-#: fleiostaff/core/clients/views.py:548 fleiostaff/core/clients/views.py:566
-#: fleiostaff/core/users/views.py:332 fleiostaff/core/users/views.py:349
+#: fleiostaff/core/clients/views.py:571 fleiostaff/core/clients/views.py:589
+#: fleiostaff/core/users/views.py:353 fleiostaff/core/users/views.py:371
 msgid "Missing group id"
 msgstr ""
 
-#: fleiostaff/core/clients/views.py:552 fleiostaff/core/clients/views.py:570
-#: fleiostaff/core/users/views.py:336 fleiostaff/core/users/views.py:353
+#: fleiostaff/core/clients/views.py:575 fleiostaff/core/clients/views.py:593
+#: fleiostaff/core/users/views.py:357 fleiostaff/core/users/views.py:375
 msgid "No group with the provided id found"
 msgstr ""
 
-#: fleiostaff/core/clients/views.py:556
+#: fleiostaff/core/clients/views.py:579
 #, fuzzy
 #| msgid "Client has no OpenStack project"
 msgid "Client added to group"
 msgstr "Clientul nu are nici un proiect OpenStack"
 
-#: fleiostaff/core/clients/views.py:574
+#: fleiostaff/core/clients/views.py:597
 msgid "Client removed from group"
 msgstr ""
+
+#: fleiostaff/core/clients/views.py:635
+#, fuzzy
+#| msgid "Resume scheduled"
+msgid "Mass email scheduled"
+msgstr "Reluarea programată"
 
 #: fleiostaff/core/frontend_customization/index_manager.py:122
 #, fuzzy
@@ -5405,90 +5644,90 @@ msgstr "Nu se pot salva setările OpenStack în modul demo"
 msgid "user group"
 msgstr ""
 
-#: fleiostaff/core/usergroups/views.py:112
+#: fleiostaff/core/usergroups/views.py:123
 msgid "Permission set {} for user group {} created and updated successfully."
 msgstr ""
 "Setul de permisiuni {} pentru grupul utilizatorului {} creat și actualizat "
 "cu succes."
 
-#: fleiostaff/core/usergroups/views.py:119 fleiostaff/core/users/views.py:221
+#: fleiostaff/core/usergroups/views.py:130 fleiostaff/core/users/views.py:232
 msgid "Invalid data provided"
 msgstr "Date furnizate invalide"
 
-#: fleiostaff/core/usergroups/views.py:121
+#: fleiostaff/core/usergroups/views.py:132
 msgid "User group already has a permission set assigned"
 msgstr "Grupul de utilizatori are deja un set de permisiuni asignat"
 
-#: fleiostaff/core/usergroups/views.py:133
+#: fleiostaff/core/usergroups/views.py:144
 #, fuzzy
 #| msgid "Missing ticket id to filter against."
 msgid "Missing user id to get groups for."
 msgstr "Lipsește id-ul de ticket după care să filtrez"
 
-#: fleiostaff/core/usergroups/views.py:137
+#: fleiostaff/core/usergroups/views.py:148
 #, fuzzy
 #| msgid "Domain with ID {} not found"
 msgid "User with provided id not found."
 msgstr "Domeniul cu ID {} nu a fost găsit"
 
-#: fleiostaff/core/users/views.py:59
+#: fleiostaff/core/users/views.py:60
 msgid "User account is inactive"
 msgstr "Contul de utilizator este inactiv"
 
-#: fleiostaff/core/users/views.py:70
+#: fleiostaff/core/users/views.py:73
 #, python-brace-format
 msgid "No token associated with user: {0} ({1})"
 msgstr "Nu exista nici un token asociat cu utilizatorul: {0} ({1})"
 
-#: fleiostaff/core/users/views.py:72
+#: fleiostaff/core/users/views.py:77
 #, python-brace-format
 msgid "Token associated with user: {0} ({1}) deleted."
 msgstr "Token-ul asociat cu utilizatorul: {0} ({1}) a fost șters."
 
-#: fleiostaff/core/users/views.py:117
+#: fleiostaff/core/users/views.py:123
 msgid "Cannot remove own superuser status"
 msgstr "Nu puteți șterge propriul statut de superutilizator"
 
-#: fleiostaff/core/users/views.py:163
+#: fleiostaff/core/users/views.py:169
 msgid "Cannot delete the user you are logged in with."
 msgstr ""
 
-#: fleiostaff/core/users/views.py:180
+#: fleiostaff/core/users/views.py:186
 msgid "User {} impersonated"
 msgstr "Utilizatorul {} a fost impersonat"
 
-#: fleiostaff/core/users/views.py:186
+#: fleiostaff/core/users/views.py:192
 msgid "User is no longer impersonated"
 msgstr "Utilizatorul nu mai este impersonat"
 
-#: fleiostaff/core/users/views.py:188
+#: fleiostaff/core/users/views.py:195
 msgid "No user is impersonated"
 msgstr "Nu este nici un utilizator impersonat"
 
-#: fleiostaff/core/users/views.py:214
+#: fleiostaff/core/users/views.py:225
 msgid "Permission set {} for user {} created and updated successfully."
 msgstr ""
 "Setul de permisiuni {} pentru utilizatorul {} creat și actualizat cu succes."
 
-#: fleiostaff/core/users/views.py:223
+#: fleiostaff/core/users/views.py:234
 msgid "User already has a permission set assigned"
 msgstr "Utilizatorul are deja un set de permisiuni asignat"
 
-#: fleiostaff/core/users/views.py:232 fleiostaff/core/users/views.py:239
+#: fleiostaff/core/users/views.py:244 fleiostaff/core/users/views.py:251
 msgid "Effective permissions fetched successfully"
 msgstr "Permisiunile efective aduse cu succes"
 
-#: fleiostaff/core/users/views.py:288 fleiostaff/core/users/views.py:311
+#: fleiostaff/core/users/views.py:307 fleiostaff/core/users/views.py:330
 msgid "Missing group id to filter users against it"
 msgstr "Lipsește id-ul grupului după care să filtrez"
 
-#: fleiostaff/core/users/views.py:320
+#: fleiostaff/core/users/views.py:340
 #, fuzzy
 #| msgid "Invalid action for domain"
 msgid "Invalid page"
 msgstr "Acțiune invalidă pentru domeniu"
 
-#: fleiostaff/core/users/views.py:342 fleiostaff/core/users/views.py:359
+#: fleiostaff/core/users/views.py:363 fleiostaff/core/users/views.py:381
 msgid "Successfully added user to group"
 msgstr ""
 
@@ -5510,7 +5749,7 @@ msgstr "euid necesar"
 msgid "User does not exist"
 msgstr "Utilizatorul nu exista"
 
-#: fleiostaff/core/views.py:411
+#: fleiostaff/core/views.py:413
 #, fuzzy
 #| msgid "Can't delete cycle. It is referenced by another object"
 msgid "Currency cannot be deleted because it is used by other objects"
@@ -5650,88 +5889,88 @@ msgstr ""
 msgid "Cannot delete flavor group while it has flavors associated with it."
 msgstr "Nu se poate șterge o factură asociată cu tranzacții"
 
-#: fleiostaff/openstack/flavors/views.py:107
+#: fleiostaff/openstack/flavors/views.py:117
 msgid "Unable to create the flavor"
 msgstr "Nu se poate crea flavor"
 
-#: fleiostaff/openstack/flavors/views.py:161
-#: fleiostaff/openstack/flavors/views.py:177
-#: fleiostaff/openstack/flavors/views.py:200
-#: fleiostaff/openstack/flavors/views.py:219
+#: fleiostaff/openstack/flavors/views.py:171
+#: fleiostaff/openstack/flavors/views.py:187
+#: fleiostaff/openstack/flavors/views.py:210
+#: fleiostaff/openstack/flavors/views.py:229
 #, fuzzy
 #| msgid "Missing group id to filter users against it"
 msgid "Missing group id to filter flavors against it"
 msgstr "Lipsește id-ul grupului după care să filtrez"
 
-#: fleiostaff/openstack/flavors/views.py:209
+#: fleiostaff/openstack/flavors/views.py:219
 #, fuzzy
 #| msgid "Client has no OpenStack project"
 msgid "Flavor added to group"
 msgstr "Clientul nu are nici un proiect OpenStack"
 
-#: fleiostaff/openstack/flavors/views.py:229
+#: fleiostaff/openstack/flavors/views.py:239
 msgid "Flavor removed from group"
 msgstr ""
 
-#: fleiostaff/openstack/flavors/views.py:236
-#: fleiostaff/openstack/flavors/views.py:253
-#: fleiostaff/openstack/flavors/views.py:276
-#: fleiostaff/openstack/flavors/views.py:295
+#: fleiostaff/openstack/flavors/views.py:246
+#: fleiostaff/openstack/flavors/views.py:263
+#: fleiostaff/openstack/flavors/views.py:286
+#: fleiostaff/openstack/flavors/views.py:305
 #, fuzzy
 #| msgid "Missing group id to filter users against it"
 msgid "Missing image id to filter flavors against it"
 msgstr "Lipsește id-ul grupului după care să filtrez"
 
-#: fleiostaff/openstack/flavors/views.py:285
+#: fleiostaff/openstack/flavors/views.py:295
 msgid "Flavor added to image"
 msgstr ""
 
-#: fleiostaff/openstack/flavors/views.py:304
+#: fleiostaff/openstack/flavors/views.py:314
 msgid "Flavor removed from image"
 msgstr ""
 
-#: fleiostaff/openstack/flavors/views.py:311
+#: fleiostaff/openstack/flavors/views.py:321
 #, fuzzy
 #| msgid "Field is required"
 msgid "Flavor id required."
 msgstr "Câmpul este obligatoriu"
 
-#: fleiostaff/openstack/flavors/views.py:314
+#: fleiostaff/openstack/flavors/views.py:324
 #, fuzzy
 #| msgid "No ports found for instance"
 msgid "No flavor found for given id."
 msgstr "Nu exista porturi pentru instanță"
 
-#: fleiostaff/openstack/flavors/views.py:344
-#: fleiostaff/openstack/flavors/views.py:359
+#: fleiostaff/openstack/flavors/views.py:354
+#: fleiostaff/openstack/flavors/views.py:369
 msgid "No client group id specified."
 msgstr ""
 
-#: fleiostaff/openstack/flavors/views.py:347
+#: fleiostaff/openstack/flavors/views.py:357
 #, fuzzy
 #| msgid "Client not found"
 msgid "No client group found for assignment."
 msgstr "Clientul nu a fost găsit"
 
-#: fleiostaff/openstack/flavors/views.py:349
+#: fleiostaff/openstack/flavors/views.py:359
 msgid "Client group already assigned to this flavor."
 msgstr ""
 
-#: fleiostaff/openstack/flavors/views.py:351
+#: fleiostaff/openstack/flavors/views.py:361
 msgid "Successfully assigned client group to flavor."
 msgstr ""
 
-#: fleiostaff/openstack/flavors/views.py:362
+#: fleiostaff/openstack/flavors/views.py:372
 #, fuzzy
 #| msgid "Client not found"
 msgid "No client group found from given id."
 msgstr "Clientul nu a fost găsit"
 
-#: fleiostaff/openstack/flavors/views.py:365
+#: fleiostaff/openstack/flavors/views.py:375
 msgid "Successfully removed client group from flavor."
 msgstr ""
 
-#: fleiostaff/openstack/flavors/views.py:367
+#: fleiostaff/openstack/flavors/views.py:377
 msgid "Cannot remove client group from flavor as it is not assigned to it."
 msgstr ""
 
@@ -5750,7 +5989,7 @@ msgstr "Nu se poate crea un ip dinamic fără un proiect."
 msgid "Client has no project"
 msgstr "Clientul nu are nici un proiect."
 
-#: fleiostaff/openstack/images/views.py:40
+#: fleiostaff/openstack/images/views.py:44
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -5761,7 +6000,7 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/openstack/images/views.py:41
+#: fleiostaff/openstack/images/views.py:45
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -5772,22 +6011,22 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/openstack/images/views.py:183
+#: fleiostaff/openstack/images/views.py:187
 #, fuzzy
 #| msgid "Client is required."
 msgid "Client ID required"
 msgstr "Clientul este obligatoriu."
 
-#: fleiostaff/openstack/images/views.py:187
-#: fleiostaff/openstack/volumes/serializers.py:86
+#: fleiostaff/openstack/images/views.py:191
+#: fleiostaff/openstack/volumes/serializers.py:91
 msgid "Client does not exist"
 msgstr "Clientul nu există"
 
-#: fleiostaff/openstack/images/views.py:197
+#: fleiostaff/openstack/images/views.py:201
 msgid "Image is private and owned by another project"
 msgstr ""
 
-#: fleiostaff/openstack/images/views.py:202
+#: fleiostaff/openstack/images/views.py:206
 msgid "Image is owned by another project"
 msgstr ""
 
@@ -5827,7 +6066,7 @@ msgstr "Clientul nu este disponibil"
 msgid "Staff user {username} ({user_id}) moved instance ({object_id})."
 msgstr "Administratorul {username} ({user_id}) s-a conectat"
 
-#: fleiostaff/openstack/instances/views.py:255
+#: fleiostaff/openstack/instances/views.py:257
 msgid ""
 "Project id for client does not exist, or does not have the permission for "
 "the operation"
@@ -5835,99 +6074,99 @@ msgstr ""
 "Nu există id proiect pentru client sau nu are permisiunea pentru această "
 "operație"
 
-#: fleiostaff/openstack/instances/views.py:285
+#: fleiostaff/openstack/instances/views.py:287
 msgid "Lock sent"
 msgstr "Blocare trimisă"
 
-#: fleiostaff/openstack/instances/views.py:299
+#: fleiostaff/openstack/instances/views.py:301
 msgid "Unlock sent"
 msgstr "Deblocare trimisă"
 
-#: fleiostaff/openstack/instances/views.py:308
+#: fleiostaff/openstack/instances/views.py:310
 msgid "Suspend sent"
 msgstr "Suspendare trimisă"
 
-#: fleiostaff/openstack/instances/views.py:317
+#: fleiostaff/openstack/instances/views.py:319
 msgid "Resume sent"
 msgstr "Reluare trimisă"
 
-#: fleiostaff/openstack/instances/views.py:375
-#: fleiostaff/openstack/instances/views.py:391
+#: fleiostaff/openstack/instances/views.py:377
+#: fleiostaff/openstack/instances/views.py:393
 msgid "No networks found for project"
 msgstr "Nu exista rețele pentru proiect"
 
-#: fleiostaff/openstack/instances/views.py:377
-#: fleiostaff/openstack/instances/views.py:393
+#: fleiostaff/openstack/instances/views.py:379
+#: fleiostaff/openstack/instances/views.py:395
 msgid "Instance has no project"
 msgstr "Instanta nu are nici un proiect"
 
-#: fleiostaff/openstack/instances/views.py:395
+#: fleiostaff/openstack/instances/views.py:397
 msgid "No ports found for instance"
 msgstr "Nu exista porturi pentru instanță"
 
-#: fleiostaff/openstack/instances/views.py:407
+#: fleiostaff/openstack/instances/views.py:409
 #, fuzzy
 #| msgid "Region {} does not exist in Openstack"
 msgid "Instance does not exist in OpenStack anymore."
 msgstr "Regiunea {} nu exista in OpenStack"
 
-#: fleiostaff/openstack/instances/views.py:411
+#: fleiostaff/openstack/instances/views.py:413
 msgid "Can not get current hypervisor"
 msgstr "Hypervisor-ul curent nu poate fi obținut"
 
-#: fleiostaff/openstack/instances/views.py:435
+#: fleiostaff/openstack/instances/views.py:437
 msgid "Can not migrate instance."
 msgstr "Nu se poate migra instanța."
 
-#: fleiostaff/openstack/instances/views.py:436
+#: fleiostaff/openstack/instances/views.py:438
 msgid "Migrate in progress"
 msgstr "Migrare in desfășurare"
 
-#: fleiostaff/openstack/instances/views.py:448
+#: fleiostaff/openstack/instances/views.py:450
 msgid "Instance is not related to any project. Aborting."
 msgstr ""
 
-#: fleiostaff/openstack/instances/views.py:476
+#: fleiostaff/openstack/instances/views.py:478
 msgid "Instance already belongs to selected client"
 msgstr ""
 
-#: fleiostaff/openstack/instances/views.py:485
+#: fleiostaff/openstack/instances/views.py:487
 msgid "Moving LXD or Ironic instances is not supported"
 msgstr ""
 
-#: fleiostaff/openstack/instances/views.py:488
+#: fleiostaff/openstack/instances/views.py:490
 #, fuzzy
 #| msgid "Instance - Reset state"
 msgid "Instance is in error state"
 msgstr "Instanță - Resetare stare"
 
-#: fleiostaff/openstack/instances/views.py:491
+#: fleiostaff/openstack/instances/views.py:493
 #, fuzzy
 #| msgid "Instance - Attach volume"
 msgid "Instance has volumes attached"
 msgstr "Instanță - Atașează volum"
 
-#: fleiostaff/openstack/instances/views.py:512
+#: fleiostaff/openstack/instances/views.py:514
 #, fuzzy
 #| msgid "Can not migrate instance."
 msgid "Cannot move instance."
 msgstr "Nu se poate migra instanța."
 
-#: fleiostaff/openstack/instances/views.py:513
+#: fleiostaff/openstack/instances/views.py:515
 #, fuzzy
 #| msgid "Migrate in progress"
 msgid "Move in progress"
 msgstr "Migrare in desfășurare"
 
-#: fleiostaff/openstack/instances/views.py:522
+#: fleiostaff/openstack/instances/views.py:524
 msgid "Can not abort migrate."
 msgstr "Migrarea nu poate fi anulată."
 
-#: fleiostaff/openstack/instances/views.py:523
+#: fleiostaff/openstack/instances/views.py:525
 msgid "Abort migrate in progress"
 msgstr "Anulează migrarea in desfășurare"
 
-#: fleiostaff/openstack/instances/views.py:560
+#: fleiostaff/openstack/instances/views.py:562
 msgid "No data available yet, please wait a few more minutes"
 msgstr ""
 "Nu există date disponibile înca, te rugăm să mai astepti câteva minute."
@@ -6194,6 +6433,42 @@ msgstr ""
 msgid "Unable to find the network."
 msgstr "Rețeaua nu poate fi gasită."
 
+#: fleiostaff/openstack/summary_views.py:79
+msgid "Used vCPUs"
+msgstr ""
+
+#: fleiostaff/openstack/summary_views.py:79
+msgid "Not used vCPUs"
+msgstr ""
+
+#: fleiostaff/openstack/summary_views.py:81
+msgid "Used disk (GB)"
+msgstr ""
+
+#: fleiostaff/openstack/summary_views.py:81
+msgid "Free disk (GB)"
+msgstr ""
+
+#: fleiostaff/openstack/summary_views.py:83
+msgid "Used memory (MB)"
+msgstr ""
+
+#: fleiostaff/openstack/summary_views.py:83
+msgid "Free memory (MB)"
+msgstr ""
+
+#: fleiostaff/openstack/summary_views.py:86
+msgid "All Hypervisors..."
+msgstr ""
+
+#: fleiostaff/openstack/summary_views.py:98
+msgid "All {} hypervisors"
+msgstr ""
+
+#: fleiostaff/openstack/summary_views.py:101
+msgid "Hypervisor {} - {} - {}"
+msgstr ""
+
 #: fleiostaff/openstack/users/views.py:114
 msgid "Unable to create the user in OpenStack. Check logs for more info"
 msgstr ""
@@ -6219,33 +6494,49 @@ msgstr ""
 "Nu se poate șterge utilizatorul din OpenStack. Verifică log-urile pentru mai "
 "multe informații"
 
-#: fleiostaff/openstack/volume_backups/views.py:80
+#: fleiostaff/openstack/volume_backups/views.py:84
 msgid ""
 "Cannot create volume backup for client because related volume has not client "
 "project associated"
 msgstr ""
 
-#: fleiostaff/openstack/volume_backups/views.py:92
+#: fleiostaff/openstack/volume_backups/views.py:96
 msgid ""
 "Cannot create incremental backup without having a full backup first in your "
 "os project"
 msgstr ""
 
-#: fleiostaff/openstack/volume_backups/views.py:163
+#: fleiostaff/openstack/volume_backups/views.py:185
 #, fuzzy
 #| msgid "Option does not exist"
 msgid "Provided backup to filter against does not exist"
 msgstr "Optiunea nu există"
 
-#: fleiostaff/openstack/volumes/serializers.py:78
+#: fleiostaff/openstack/volume_snapshots/views.py:61
+msgid ""
+"Cannot create snapshot for client as volume does not have a related project "
+"in the database."
+msgstr ""
+
+#: fleiostaff/openstack/volume_snapshots/views.py:64
+msgid "The volume is in the admin project. No client found."
+msgstr ""
+
+#: fleiostaff/openstack/volumes/serializers.py:83
 msgid "Size must be a multiple of {} GB"
 msgstr "Dimensiunea trebuie sa fie un multiplu de {} GB"
 
-#: fleiostaff/openstack/volumes/serializers.py:99
+#: fleiostaff/openstack/volumes/serializers.py:104
 msgid "Unable to find a project for the specified client"
 msgstr "Nu am găsit un proiect pentru clientul specificat"
 
-#: fleiostaff/openstack/volumes/views.py:136
+#: fleiostaff/openstack/volumes/views.py:139
+#, fuzzy
+#| msgid "Client not found"
+msgid "Cinder endpoint not found for region {}"
+msgstr "Clientul nu a fost găsit"
+
+#: fleiostaff/openstack/volumes/views.py:144
 msgid "Operation not allowed"
 msgstr "Operațiunea nu este permisă"
 
@@ -7798,9 +8089,6 @@ msgstr "TODO-ul {} asignat dumneavoastră a fost schimbat"
 #~ msgstr ""
 #~ "Configurarile au fost salvate cu succes. Nu am putut rula fisierul de "
 #~ "actualizare a datelor: fiser lipsa."
-
-#~ msgid "Cannot add attachment to non existing ticket"
-#~ msgstr "Nu pot adăuga attachment-ul la un ticket care nu există."
 
 #~ msgid "Cannot add attachment to non existing ticket note"
 #~ msgstr "Nu pot adăuga attachment-ul la o notă-ticket care nu există."
