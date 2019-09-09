@@ -92,3 +92,8 @@ On CentOS you will need to run
 ## License information
 
 fleio-i18n is licensed under BSD License. See the "LICENSE" file for more information.
+
+## Thanks
+
+* Thanks to [Hopla](https://hopla.cloud) for the French translation
+
