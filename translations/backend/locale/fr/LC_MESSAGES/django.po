@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-20 14:47+0200\n"
+"POT-Creation-Date: 2019-09-10 16:26+0300\n"
 "PO-Revision-Date: 2019-08-21 19:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -99,15 +99,39 @@ msgstr ""
 "Un remboursement de la facture {invoice_id} à été fait en utilisant romcard."
 
 #: fleio/billing/apps.py:18
+#, fuzzy, python-brace-format
+#| msgid "Invoice {invoice_id} was paid using paypal."
+msgid "Invoice {invoice_id} was paid using payU."
+msgstr "La facture {invoice_id} a été payé en utilisant paypal."
+
+#: fleio/billing/apps.py:19
+#, fuzzy, python-brace-format
+#| msgid "A refund was made for {invoice_id} using paypal."
+msgid "A refund was made for {invoice_id} using payU."
+msgstr "Un remboursement a été effectué pour {invoice_id} avec Paypal."
+
+#: fleio/billing/apps.py:21
 #, python-brace-format
 msgid "Invoice {invoice_id} was paid using stripe."
 msgstr "La facture {invoice_id} à été payé avec stripe."
 
-#: fleio/billing/apps.py:19
+#: fleio/billing/apps.py:22
 #, python-brace-format
 msgid "A refund was made for {invoice_id} using stripe."
 msgstr ""
 "Un remboursement de la facture {invoice_id} à été fait en utilisant stripe."
+
+#: fleio/billing/apps.py:24
+#, fuzzy, python-brace-format
+#| msgid "Invoice {invoice_id} was paid using paypal."
+msgid "Invoice {invoice_id} was paid using PayU RO."
+msgstr "La facture {invoice_id} a été payé en utilisant paypal."
+
+#: fleio/billing/apps.py:25
+#, fuzzy, python-brace-format
+#| msgid "A refund was made for {invoice_id} using paypal."
+msgid "A refund was made for {invoice_id} using PayU RO."
+msgstr "Un remboursement a été effectué pour {invoice_id} avec Paypal."
 
 #: fleio/billing/cart/serializers.py:115
 msgid "Option not available"
@@ -122,7 +146,7 @@ msgid "Value must be greater or equal to 0"
 msgstr "La valeur doit être supérieure ou égale à 0"
 
 #: fleio/billing/cart/serializers.py:280 fleio/billing/cart/serializers.py:339
-#: fleio/openstack/instances/views.py:846
+#: fleio/openstack/instances/views.py:864
 #: plugins/domains/registrars_connectors/openprovider_connector.py:156
 msgid "Invalid request"
 msgstr "Requête invalide"
@@ -162,11 +186,11 @@ msgstr "La valeur est requise pour {}"
 msgid "Invalid option selected"
 msgstr "Option invalide sélectionnée"
 
-#: fleio/billing/cart/utils.py:44
+#: fleio/billing/cart/utils.py:55
 msgid "Failed to create service, please contact support"
 msgstr "Impossible de créer le service, veuillez contacter le support"
 
-#: fleio/billing/cart/utils.py:66
+#: fleio/billing/cart/utils.py:77
 msgid "Failed to initialize service"
 msgstr "Échec d'initialisation du service"
 
@@ -198,27 +222,107 @@ msgstr "Paiement introuvable."
 msgid "Refund"
 msgstr "Remboursement"
 
-#: fleio/billing/gateways/romcard/apps.py:7
-msgid "Romcard"
-msgstr "Romcard"
+#: fleio/billing/gateways/payu/apps.py:7
+msgid "PayU"
+msgstr ""
 
-#: fleio/billing/gateways/romcard/romcard.py:85
-#: fleio/billing/gateways/romcard/romcard.py:146
-#: fleio/billing/gateways/romcard/romcard.py:207
-msgid "Redirecting to RomCard"
+#: fleio/billing/gateways/payuro/apps.py:7
+msgid "PayU Ro"
+msgstr ""
+
+#: fleio/billing/gateways/payuro/payuro.py:48
+msgid "Missing invoice parameter."
+msgstr ""
+
+#: fleio/billing/gateways/payuro/payuro.py:52
+#, fuzzy
+#| msgid "Role {} does not exist"
+msgid "Invoice {} does not exist"
+msgstr "Le rôle {} n'existe pas"
+
+#: fleio/billing/gateways/payuro/payuro.py:54
+#, fuzzy
+#| msgid "Ticket is already opened."
+msgid "Invoice {} is already paid"
+msgstr "Le ticket est déjà ouvert."
+
+#: fleio/billing/gateways/payuro/payuro.py:93
+#, fuzzy
+#| msgid "Redirecting to RomCard"
+msgid "Redirecting to PayU"
 msgstr "Redirigé vers Romcard"
 
-#: fleio/billing/gateways/romcard/romcard.py:86
+#: fleio/billing/gateways/payuro/payuro.py:94
+#: fleio/billing/gateways/romcard/romcard.py:114
 #: fleiostaff/billing/journal/serializers.py:86
 #: fleiostaff/billing/journal/serializers.py:109
 msgid "Invoice payment"
 msgstr "Paiement de la facture"
 
-#: fleio/billing/gateways/romcard/romcard.py:147
+#: fleio/billing/gateways/payuro/payuro.py:163
+#: fleio/billing/gateways/payuro/payuro.py:248
+msgid "Could not find existing transaction to mark as captured in db."
+msgstr ""
+
+#: fleio/billing/gateways/payuro/payuro.py:167
+#: fleio/billing/gateways/payuro/payuro.py:252
+msgid "Could not perform capture action. Details: {}"
+msgstr ""
+
+#: fleio/billing/gateways/payuro/payuro.py:172
+#: fleio/billing/gateways/payuro/payuro.py:255
+msgid "Error when making request to capture transaction."
+msgstr ""
+
+#: fleio/billing/gateways/payuro/payuro.py:173
+#: fleio/billing/gateways/payuro/payuro.py:256
+#: fleio/billing/gateways/views.py:56 fleio/billing/gateways/views.py:75
+#: fleio/billing/gateways/views.py:134
+#: fleiostaff/billing/transactions/views.py:32
+#: fleiostaff/core/clients/views.py:444 fleiostaff/openstack/core/views.py:164
+msgid "Ok"
+msgstr "Ok"
+
+#: fleio/billing/gateways/payuro/payuro.py:241
+#: fleio/billing/gateways/payuro/payuro.py:301
+msgid "PayU Ro transaction error: {}"
+msgstr ""
+
+#: fleio/billing/gateways/payuro/payuro.py:243
+#, fuzzy
+#| msgid "Transaction"
+msgid "Transaction error {}"
+msgstr "Transaction"
+
+#: fleio/billing/gateways/payuro/payuro.py:263
+msgid "Did not receive or received invalid signature."
+msgstr ""
+
+#: fleio/billing/gateways/payuro/payuro.py:267
+msgid "Missing fleio invoice id."
+msgstr ""
+
+#: fleio/billing/gateways/romcard/apps.py:7
+msgid "Romcard"
+msgstr "Romcard"
+
+#: fleio/billing/gateways/romcard/romcard.py:55
+#, fuzzy
+#| msgid "Could not find SMS provider."
+msgid "Could not find the gateway."
+msgstr "Impossible de trouver le fournisseur de SMS."
+
+#: fleio/billing/gateways/romcard/romcard.py:113
+#: fleio/billing/gateways/romcard/romcard.py:165
+#: fleio/billing/gateways/romcard/romcard.py:287
+msgid "Redirecting to RomCard"
+msgstr "Redirigé vers Romcard"
+
+#: fleio/billing/gateways/romcard/romcard.py:166
 msgid "Capture payment"
 msgstr "Capturer le paiement"
 
-#: fleio/billing/gateways/romcard/romcard.py:208
+#: fleio/billing/gateways/romcard/romcard.py:288
 msgid "Refund payment"
 msgstr "Remboursement"
 
@@ -258,52 +362,83 @@ msgstr "Echec du remboursement"
 msgid "Enter your credit or debit card details below"
 msgstr "Entrez votre crédit ou les détails de votre carte de débit ci-dessous"
 
-#: fleio/billing/gateways/views.py:44
+#: fleio/billing/gateways/views.py:44 fleio/billing/gateways/views.py:63
+#, fuzzy
+#| msgid "No token associated with user: {0} ({1})"
+msgid "No client is associated with your user."
+msgstr "Aucun jeton associé à l'utilisateur: {0} ({1})"
+
+#: fleio/billing/gateways/views.py:50 fleio/billing/gateways/views.py:53
+#: fleio/billing/gateways/views.py:69 fleio/billing/gateways/views.py:72
+#, fuzzy
+#| msgid "Could not find generation method for {}."
+msgid "Could not find recurring payment options record for this gateway."
+msgstr "Impossible de trouver la méthode de génération pour {}."
+
+#: fleio/billing/gateways/views.py:82 fleio/billing/gateways/views.py:111
+msgid "No client to get recurring payment options for."
+msgstr ""
+
+#: fleio/billing/gateways/views.py:108
+msgid "No new order to change the old one with"
+msgstr ""
+
+#: fleio/billing/gateways/views.py:113 fleio/billing/gateways/views.py:126
+#, fuzzy
+#| msgid "Cannot get snapshots for non existing instance."
+msgid "Cannot change order for non existing recurring payments option."
+msgstr "Impossible de créer un snapshot pour une instance inexistante."
+
+#: fleio/billing/gateways/views.py:120
+msgid "Cannot change order with non existing recurring payments option."
+msgstr ""
+
+#: fleio/billing/gateways/views.py:145
 msgid "Callback error"
 msgstr "Erreur de rappel"
 
-#: fleio/billing/gateways/views.py:81
+#: fleio/billing/gateways/views.py:182
 msgid "Unable to continue due to a gateway error"
 msgstr "Impossible de continuer du à une erreur de passerelle"
 
-#: fleio/billing/gateways/views.py:95 fleiostaff/billing/gateways/views.py:65
+#: fleio/billing/gateways/views.py:196 fleiostaff/billing/gateways/views.py:65
 msgid "Gateway not available"
 msgstr "Passerelle indisponible"
 
-#: fleio/billing/gateways/views.py:96
+#: fleio/billing/gateways/views.py:197
 msgid "Action not available"
 msgstr "Action indisponible"
 
-#: fleio/billing/gateways/views.py:97
+#: fleio/billing/gateways/views.py:198
 msgid "Unable to continue due to an error. Please contact support"
 msgstr ""
 "Impossible de continuer à cause d'une erreur. Veuillez contacter le support"
 
-#: fleio/billing/invoicing/pdf.py:143
+#: fleio/billing/invoicing/pdf.py:159
 msgid "Issue Date: {}"
 msgstr "Date d'émission: {}"
 
-#: fleio/billing/invoicing/pdf.py:145
+#: fleio/billing/invoicing/pdf.py:161
 msgid "Due Date: {}"
 msgstr "Date d'échéance: {}"
 
-#: fleio/billing/invoicing/pdf.py:147
+#: fleio/billing/invoicing/pdf.py:163
 msgid "Invoiced to:"
 msgstr "Facturé à:"
 
-#: fleio/billing/invoicing/pdf.py:173
+#: fleio/billing/invoicing/pdf.py:189
 msgid "Description"
 msgstr "Description"
 
-#: fleio/billing/invoicing/pdf.py:173
+#: fleio/billing/invoicing/pdf.py:189
 msgid "Quantity"
 msgstr "Quantité"
 
-#: fleio/billing/invoicing/pdf.py:173
+#: fleio/billing/invoicing/pdf.py:189
 msgid "Unit Price"
 msgstr "Prix unitaire"
 
-#: fleio/billing/invoicing/pdf.py:173
+#: fleio/billing/invoicing/pdf.py:189
 msgid "Cost"
 msgstr "Coût"
 
@@ -315,60 +450,65 @@ msgstr "La facture doit avoir au moins un article"
 msgid "Invoice total is bigger than maximum allowed"
 msgstr "Le total de la facture est supérieur au maximum autorisé"
 
-#: fleio/billing/invoicing/tasks.py:123
+#: fleio/billing/invoicing/tasks.py:124
 msgid "Invoice {} payment added"
 msgstr "Paiement de la facture {} ajouté"
 
-#: fleio/billing/invoicing/tasks.py:124
+#: fleio/billing/invoicing/tasks.py:125
 msgid "Invoice {} for client {} has been paid."
 msgstr "La facture {} pour le client {} a été payé."
 
-#: fleio/billing/invoicing/views.py:37
+#: fleio/billing/invoicing/views.py:38
 #, python-brace-format
 msgid "User {username} ({user_id}) paid invoice {object_id} using credit."
 msgstr ""
 "L'utilisateur {username} ({user_id}) a payé la facture {object_id} en "
 "utilisant son crédit."
 
-#: fleio/billing/invoicing/views.py:65 fleio/openstack/instances/views.py:142
+#: fleio/billing/invoicing/views.py:66 fleio/openstack/instances/views.py:147
 #: plugins/domains/staff/views/domains.py:75
 msgid "Client not found"
 msgstr "Client introuvable"
 
-#: fleio/billing/invoicing/views.py:71
+#: fleio/billing/invoicing/views.py:72
 msgid "Add {} {} to credit balance"
 msgstr "Ajout de {} {} au crédit"
 
-#: fleio/billing/invoicing/views.py:91
+#: fleio/billing/invoicing/views.py:92
 msgid "Unable to pay a credit invoice with credit"
 msgstr "Impossible de payer une facture avec le crédit"
 
-#: fleio/billing/invoicing/views.py:94
+#: fleio/billing/invoicing/views.py:95
 msgid "Only unpaid invoices can be paid from credit"
 msgstr "Seules les factures impayées peuvent être payées avec du crédit"
 
-#: fleio/billing/invoicing/views.py:106
+#: fleio/billing/invoicing/views.py:107
 msgid "Not enough credit"
 msgstr "Pas assez de crédit"
 
-#: fleio/billing/invoicing/views.py:114
+#: fleio/billing/invoicing/views.py:115
 msgid "You should have at least {} {} credit left after making a payment"
 msgstr ""
 "Vous devez avoir au moins {} {} crédit après avoir effectué un paiement"
 
-#: fleio/billing/invoicing/views.py:141
+#: fleio/billing/invoicing/views.py:142
 msgid "Adding {} {} to invoice"
 msgstr "Ajout de {} {} à la facture"
 
-#: fleio/billing/invoicing/views.py:154
-#: fleiostaff/billing/invoicing/views.py:208
+#: fleio/billing/invoicing/views.py:155
+#: fleiostaff/billing/invoicing/views.py:212
 msgid "Subtotal ({})"
 msgstr "Sous-total ({})"
 
-#: fleio/billing/invoicing/views.py:157
-#: fleiostaff/billing/invoicing/views.py:211
+#: fleio/billing/invoicing/views.py:158
+#: fleiostaff/billing/invoicing/views.py:215
 msgid "Total ({})"
 msgstr "Total ({})"
+
+#: fleio/billing/invoicing/views.py:172
+#: fleiostaff/billing/invoicing/views.py:229
+msgid "INVOICE {}"
+msgstr ""
 
 #: fleio/billing/models/calcelation_request.py:13
 msgid "Immediate"
@@ -481,7 +621,7 @@ msgid "User who placed the order. Can be a staff user."
 msgstr ""
 "Utilisateur ayant passé la commande. Peut être un utilisateur du staff."
 
-#: fleio/billing/models/order_item.py:25 fleio/billing/models/service.py:91
+#: fleio/billing/models/order_item.py:25 fleio/billing/models/service.py:92
 #: fleio/billing/settings.py:253
 msgid "Service"
 msgstr "Service"
@@ -558,7 +698,7 @@ msgid "Canceled"
 msgstr "Annulé"
 
 #: fleio/billing/models/transaction.py:35 fleio/billing/settings.py:172
-#: fleiostaff/core/views.py:329 fleiostaff/openstack/summary_views.py:58
+#: fleiostaff/core/views.py:338 fleiostaff/openstack/summary_views.py:58
 msgid "Unknown"
 msgstr "InconnuInconnu"
 
@@ -568,7 +708,7 @@ msgstr "Impossible d'effectuer cette action"
 
 #: fleio/billing/services/serializers.py:68
 #: fleio/openstack/models/project.py:160
-#: fleiostaff/core/clients/serializers.py:126
+#: fleiostaff/core/clients/serializers.py:144
 #: fleiostaff/openstack/networks/serializers.py:38
 #: fleiostaff/openstack/subnetpools/serializers.py:25
 #: fleiostaff/openstack/subnets/serializers.py:34
@@ -659,8 +799,8 @@ msgstr "Domaine"
 msgid "Pending"
 msgstr "En attente"
 
-#: fleio/billing/settings.py:98 fleio/core/models/models.py:498
-#: fleio/notifications/models.py:46 fleio/openstack/dns/serializers.py:36
+#: fleio/billing/settings.py:98 fleio/core/models/models.py:504
+#: fleio/notifications/models.py:45 fleio/openstack/dns/serializers.py:36
 #: fleio/openstack/dns/serializers.py:80
 #: fleio/openstack/instances/instance_status.py:62
 #: fleio/openstack/models/image.py:63
@@ -670,7 +810,7 @@ msgstr "En attente"
 msgid "Active"
 msgstr "Actif"
 
-#: fleio/billing/settings.py:99 fleio/core/models/models.py:500
+#: fleio/billing/settings.py:99 fleio/core/models/models.py:506
 #: fleio/openstack/instances/instance_status.py:65
 msgid "Suspended"
 msgstr "Suspendu"
@@ -1114,6 +1254,19 @@ msgstr "N'a pas pu se connecter"
 msgid "Invalid SSL certificate on OpenStack identity service"
 msgstr "Certificat SSL non valide sur le service d'identité OpenStack"
 
+#: fleio/core/loginview.py:66 fleiostaff/core/views.py:202
+msgid "Incorrect user name or password"
+msgstr "Identifiant ou mot de passe incorrect"
+
+#: fleio/core/loginview.py:70 fleio/core/views.py:238
+#: fleiostaff/core/views.py:206
+msgid "This account is inactive"
+msgstr "Ce compte est inactif"
+
+#: fleio/core/loginview.py:88
+msgid "Authentication succeeded"
+msgstr ""
+
 #: fleio/core/middleware/check_clients.py:26
 msgid "Client billing information is required to fulfill the request"
 msgstr ""
@@ -1185,846 +1338,870 @@ msgstr "index utilisateur final"
 msgid "staff index"
 msgstr "index du staff"
 
-#: fleio/core/models/models.py:138
+#: fleio/core/models/models.py:140
 msgid "API Users - Create"
 msgstr "API utilisateurs - Créer"
 
-#: fleio/core/models/models.py:139
+#: fleio/core/models/models.py:141
 msgid "API Users - Update"
 msgstr "API utilisateurs - Mise à jour"
 
-#: fleio/core/models/models.py:140
+#: fleio/core/models/models.py:142
 msgid "API Users - Destroy"
 msgstr "API utilisateurs - Détruire"
 
-#: fleio/core/models/models.py:141
-msgid "Clusters - Create"
-msgstr "Clusters - Créer"
-
-#: fleio/core/models/models.py:142
-msgid "Clusters - Update"
-msgstr "Clusters - Mettre à jour"
-
 #: fleio/core/models/models.py:143
-msgid "Clusters - Destroy"
+#, fuzzy
+#| msgid "Clusters - Destroy"
+msgid "Clients - Destroy"
 msgstr "Clusters - Détruire"
 
 #: fleio/core/models/models.py:144
+msgid "Clusters - Create"
+msgstr "Clusters - Créer"
+
+#: fleio/core/models/models.py:145
+msgid "Clusters - Update"
+msgstr "Clusters - Mettre à jour"
+
+#: fleio/core/models/models.py:146
+msgid "Clusters - Destroy"
+msgstr "Clusters - Détruire"
+
+#: fleio/core/models/models.py:147
 msgid "Clusters - Resize"
 msgstr "Clusters - Redimensionner"
 
-#: fleio/core/models/models.py:145
+#: fleio/core/models/models.py:148
 msgid "Clusters - Get certificate"
 msgstr "Clusters - Obtenir le certificat"
 
-#: fleio/core/models/models.py:146
+#: fleio/core/models/models.py:149
 msgid "Cluster templates - Create"
 msgstr "Modèle de cluster - Créer"
 
-#: fleio/core/models/models.py:147
+#: fleio/core/models/models.py:150
 msgid "Cluster templates - Update"
 msgstr "Modèle de cluster - Mettre à jour"
 
-#: fleio/core/models/models.py:148
+#: fleio/core/models/models.py:151
 msgid "Cluster templates - Destroy"
 msgstr "Modèle de cluster - Détruire"
 
-#: fleio/core/models/models.py:149
+#: fleio/core/models/models.py:152
 msgid "Zones - Create"
 msgstr "Zones - Créer"
 
-#: fleio/core/models/models.py:150
+#: fleio/core/models/models.py:153
 msgid "Zones - Update"
 msgstr "Zones - Mise à jour"
 
-#: fleio/core/models/models.py:151
+#: fleio/core/models/models.py:154
 msgid "Zones - Destroy"
 msgstr "Zones - Détruire"
 
-#: fleio/core/models/models.py:152
+#: fleio/core/models/models.py:155
 msgid "Zones - Update zone records"
 msgstr "Zones - Mise à jour des enregistrements de zone"
 
-#: fleio/core/models/models.py:153
+#: fleio/core/models/models.py:156
 msgid "Zones - Create or update PTR"
 msgstr "Zones - Créer ou mettre à jour le PTR"
 
-#: fleio/core/models/models.py:154
+#: fleio/core/models/models.py:157
 msgid "Instance - Create"
 msgstr "Instance - Créer"
 
-#: fleio/core/models/models.py:155
+#: fleio/core/models/models.py:158
 msgid "Instance - Abort migrate"
 msgstr "Instance - Abandonner la migration"
 
-#: fleio/core/models/models.py:156
+#: fleio/core/models/models.py:159
 msgid "Instance - Attach volume"
 msgstr "Instance - Attaché un volume"
 
-#: fleio/core/models/models.py:157
+#: fleio/core/models/models.py:160
 msgid "Instance - Change password"
 msgstr "Instance - Changer le mot de passe"
 
-#: fleio/core/models/models.py:158
+#: fleio/core/models/models.py:161
 msgid "Instance - Confirm resize"
 msgstr "Instance - Confirmer le redimensionnement"
 
-#: fleio/core/models/models.py:159
+#: fleio/core/models/models.py:162
 msgid "Instance - Create snapshot"
 msgstr "Instance - Créer un instantané"
 
-#: fleio/core/models/models.py:160
+#: fleio/core/models/models.py:163
 msgid "Instance - Detach volume"
 msgstr "Instance - Détacher le volume"
 
-#: fleio/core/models/models.py:161
+#: fleio/core/models/models.py:164
 msgid "Instance - Destroy"
 msgstr "Instance - Détruire"
 
-#: fleio/core/models/models.py:162
+#: fleio/core/models/models.py:165
 msgid "Instance - Lock"
 msgstr "Instance - Verrouiller"
 
-#: fleio/core/models/models.py:163
+#: fleio/core/models/models.py:166
 msgid "Instance - Migrate"
 msgstr "Instance - Migrer"
 
-#: fleio/core/models/models.py:164
+#: fleio/core/models/models.py:167
 msgid "Instance - Move"
 msgstr "Instance - Déplacer"
 
-#: fleio/core/models/models.py:165
+#: fleio/core/models/models.py:168
 msgid "Instance - Reboot"
 msgstr "Instance - Redémarrage"
 
-#: fleio/core/models/models.py:166
+#: fleio/core/models/models.py:169
 msgid "Instance - Rebuild"
 msgstr "Instance - Reconstruire"
 
-#: fleio/core/models/models.py:167
+#: fleio/core/models/models.py:170
 msgid "Instance - Rename"
 msgstr "Instance - Renommer"
 
-#: fleio/core/models/models.py:168
+#: fleio/core/models/models.py:171
 msgid "Instance - Rescue"
 msgstr "Instance - Sauver"
 
-#: fleio/core/models/models.py:169
+#: fleio/core/models/models.py:172
 msgid "Instance - Boot from ISO"
 msgstr "Instance - Démarrer à partir de l'ISO"
 
-#: fleio/core/models/models.py:170
+#: fleio/core/models/models.py:173
 msgid "Instance - Reset state"
 msgstr "Instance - Réinitialiser l'état"
 
-#: fleio/core/models/models.py:171
+#: fleio/core/models/models.py:174
 msgid "Instance - Resize"
 msgstr "Instance - Redimensionner"
 
-#: fleio/core/models/models.py:172
+#: fleio/core/models/models.py:175
 msgid "Instance - Resume"
 msgstr "Instance - Reprendre"
 
-#: fleio/core/models/models.py:173
+#: fleio/core/models/models.py:176
 msgid "Instance - Revert resize"
 msgstr "Instance - Annuler le redimensionnement"
 
-#: fleio/core/models/models.py:174
+#: fleio/core/models/models.py:177
 msgid "Instance - Start"
 msgstr "Instance - Démarrer"
 
-#: fleio/core/models/models.py:175
+#: fleio/core/models/models.py:178
 msgid "Instance - Stop"
 msgstr "Instance - Arrêter"
 
-#: fleio/core/models/models.py:176
+#: fleio/core/models/models.py:179
 msgid "Instance - Suspend"
 msgstr "Instance - Suspendre"
 
-#: fleio/core/models/models.py:177
+#: fleio/core/models/models.py:180
 msgid "Instance - Unlock"
 msgstr "Instance - Déverrouiller"
 
-#: fleio/core/models/models.py:178
+#: fleio/core/models/models.py:181
 msgid "Instance - Unrescue"
 msgstr "Instance - Unrescue"
 
-#: fleio/core/models/models.py:179
+#: fleio/core/models/models.py:182
 msgid "Instance - Dissociate security group"
 msgstr "Instance - Dissocier le groupe de sécurité"
 
-#: fleio/core/models/models.py:180
+#: fleio/core/models/models.py:183
 msgid "Instance - Associate security group"
 msgstr "Instance - Groupe de sécurité associé"
 
-#: fleio/core/models/models.py:181
+#: fleio/core/models/models.py:184
 msgid "Instance - Create backup"
 msgstr "Instance - Créer une sauvegarde"
 
-#: fleio/core/models/models.py:182
+#: fleio/core/models/models.py:185
 msgid "Instance - Associate floating IP"
 msgstr "Instance - Associer une adresse IP flottante"
 
-#: fleio/core/models/models.py:183
+#: fleio/core/models/models.py:186
 msgid "Instance - Dissociate floating IP"
 msgstr "Instance - Dissocier une adresse IP flottante"
 
-#: fleio/core/models/models.py:184
+#: fleio/core/models/models.py:187
 msgid "Volume - Create"
 msgstr "Volume - Créer"
 
-#: fleio/core/models/models.py:185
+#: fleio/core/models/models.py:188
 msgid "Volume - Destroy"
 msgstr "Volume - Détruire"
 
-#: fleio/core/models/models.py:186
+#: fleio/core/models/models.py:189
 msgid "Volume - Extend"
 msgstr "Volume - Étendre"
 
-#: fleio/core/models/models.py:187
+#: fleio/core/models/models.py:190
 msgid "Volume - Rename"
 msgstr "Volume - Renommer"
 
-#: fleio/core/models/models.py:188
+#: fleio/core/models/models.py:191
 msgid "Volume - Revert to snapshot"
 msgstr "Volume - Retour arrière sur un snapshot"
 
-#: fleio/core/models/models.py:189
+#: fleio/core/models/models.py:192
 msgid "Volume backup - Update"
 msgstr "Sauvegarde du volume - Mise à jour"
 
-#: fleio/core/models/models.py:190
+#: fleio/core/models/models.py:193
 msgid "Volume backup - Create"
 msgstr "Sauvegarde du volume - Créer"
 
-#: fleio/core/models/models.py:191
+#: fleio/core/models/models.py:194
 msgid "Volume backup - Restore"
 msgstr "Sauvegarde du volume - Restauration"
 
-#: fleio/core/models/models.py:192
+#: fleio/core/models/models.py:195
 msgid "Volume backup - Destroy"
 msgstr "Sauvegarde du volume - Détruire"
 
-#: fleio/core/models/models.py:193
+#: fleio/core/models/models.py:196
 msgid "Volume snapshot - Create"
 msgstr "Snapshot de volume - Créer"
 
-#: fleio/core/models/models.py:194
+#: fleio/core/models/models.py:197
 msgid "Volume snapshot - Update"
 msgstr "Snapshot de volume - Mettre à jour"
 
-#: fleio/core/models/models.py:195
+#: fleio/core/models/models.py:198
 msgid "Volume snapshot - Destroy"
 msgstr "Snapshot de volume - Détruire"
 
-#: fleio/core/models/models.py:196
+#: fleio/core/models/models.py:199
 msgid "Volume snapshot - Reset state"
 msgstr "Snapshot de volume - Etat réinitialisé"
 
-#: fleio/core/models/models.py:197
+#: fleio/core/models/models.py:200
 msgid "Image - Create"
 msgstr "Image - Créer"
 
-#: fleio/core/models/models.py:198
+#: fleio/core/models/models.py:201
 msgid "Image - Destroy"
 msgstr "Image - Détruire"
 
-#: fleio/core/models/models.py:199
+#: fleio/core/models/models.py:202
 msgid "Image - Download"
 msgstr "Image - Téléchargement"
 
-#: fleio/core/models/models.py:200
+#: fleio/core/models/models.py:203
 msgid "Image - Update"
 msgstr "Image - Mise à jour"
 
-#: fleio/core/models/models.py:201
+#: fleio/core/models/models.py:204
 msgid "Image - Deactivate"
 msgstr "Image - Désactiver"
 
-#: fleio/core/models/models.py:202
+#: fleio/core/models/models.py:205
 msgid "Image - Reactivate"
 msgstr "Image - Réactiver"
 
-#: fleio/core/models/models.py:203
+#: fleio/core/models/models.py:206
 msgid "Flavor - Create"
 msgstr "Flavor - Créer"
 
-#: fleio/core/models/models.py:204
+#: fleio/core/models/models.py:207
 msgid "Flavor - Destroy"
 msgstr "Flavor - Détruire"
 
-#: fleio/core/models/models.py:205
+#: fleio/core/models/models.py:208
 msgid "Flavor - Update"
 msgstr "Flavor - Mise à jour"
 
-#: fleio/core/models/models.py:206
+#: fleio/core/models/models.py:209
 msgid "Project - Create"
 msgstr "Projet - Créer"
 
-#: fleio/core/models/models.py:207
+#: fleio/core/models/models.py:210
 msgid "Project - Delete"
 msgstr "Projet - Supprimer"
 
-#: fleio/core/models/models.py:208
+#: fleio/core/models/models.py:211
 msgid "Project - Update"
 msgstr "Projet - Mise à jour"
 
-#: fleio/core/models/models.py:209
+#: fleio/core/models/models.py:212
 msgid "Router - Create"
 msgstr "Routeur - Créer"
 
-#: fleio/core/models/models.py:210
+#: fleio/core/models/models.py:213
 msgid "Router - Update"
 msgstr "Routeur - Mise à jour"
 
-#: fleio/core/models/models.py:211
+#: fleio/core/models/models.py:214
 msgid "Router - Destroy"
 msgstr "Routeur - Détruire"
 
-#: fleio/core/models/models.py:212
+#: fleio/core/models/models.py:215
 msgid "Router - Add interface"
 msgstr "Routeur - Ajouter une interface"
 
-#: fleio/core/models/models.py:213
+#: fleio/core/models/models.py:216
 msgid "Router - Remove interface"
 msgstr "Routeur - Supprimer une interface"
 
-#: fleio/core/models/models.py:214
+#: fleio/core/models/models.py:217
+#, fuzzy
+#| msgid "Service deleted"
+msgid "Service - Delete a service"
+msgstr "Service supprimé"
+
+#: fleio/core/models/models.py:218
 msgid "Network - Create"
 msgstr "Réseau - Créer"
 
-#: fleio/core/models/models.py:215
+#: fleio/core/models/models.py:219
 msgid "Network - Destroy"
 msgstr "Réseau - Détruire"
 
-#: fleio/core/models/models.py:216
+#: fleio/core/models/models.py:220
 msgid "Network - Auto create network"
 msgstr "Réseau - Créer automatiquement un réseau"
 
-#: fleio/core/models/models.py:217
+#: fleio/core/models/models.py:221
 msgid "Network - Update"
 msgstr "Réseau - Mise à jour"
 
-#: fleio/core/models/models.py:218
+#: fleio/core/models/models.py:222
 msgid "Network - Change auto create options"
 msgstr "Réseau - Modifier les options de création automatique"
 
-#: fleio/core/models/models.py:219
+#: fleio/core/models/models.py:223
 msgid "Floating IPs - Create"
 msgstr "IP flottantes - Créer"
 
-#: fleio/core/models/models.py:220
+#: fleio/core/models/models.py:224
 msgid "Floating IPs - Destroy"
 msgstr "IP flottantes - Détruire"
 
-#: fleio/core/models/models.py:221
+#: fleio/core/models/models.py:225
 msgid "Security group - Create"
 msgstr "Groupe de sécurité - Créer"
 
-#: fleio/core/models/models.py:222
+#: fleio/core/models/models.py:226
 msgid "Security group - Update"
 msgstr "Groupe de sécurité - Mise à jour"
 
-#: fleio/core/models/models.py:223
+#: fleio/core/models/models.py:227
 msgid "Security group - Add rule"
 msgstr "Groupe de sécurité - Ajouter une règle"
 
-#: fleio/core/models/models.py:224
+#: fleio/core/models/models.py:228
 msgid "Security group - Delete rule"
 msgstr "Groupe de sécurité - Supprimer une règle"
 
-#: fleio/core/models/models.py:225
+#: fleio/core/models/models.py:229
 msgid "Security group - Delete security group"
 msgstr "Groupe de sécurité - Supprimer le groupe de sécurité"
 
-#: fleio/core/models/models.py:226
+#: fleio/core/models/models.py:230
 msgid "Subnet pools - Create"
 msgstr "Pools de sous-réseaux - Créer"
 
-#: fleio/core/models/models.py:227
+#: fleio/core/models/models.py:231
 msgid "Subnet pools - Update"
 msgstr "Pools de sous-réseaux - Mise à jour"
 
-#: fleio/core/models/models.py:228
+#: fleio/core/models/models.py:232
 msgid "Subnet pools - Destroy"
 msgstr "Pools de sous-réseaux - Détruire"
 
-#: fleio/core/models/models.py:229
+#: fleio/core/models/models.py:233
 msgid "SSH keys - Create"
 msgstr "Clés SSH - Créer"
 
-#: fleio/core/models/models.py:230
+#: fleio/core/models/models.py:234
 msgid "SSH keys - Update"
 msgstr "Clés SSH - Mise à jour"
 
-#: fleio/core/models/models.py:231
+#: fleio/core/models/models.py:235
 msgid "SSH keys - Destroy"
 msgstr "Clés SSH - Détruire"
 
-#: fleio/core/models/models.py:232
+#: fleio/core/models/models.py:236
 msgid "Ports - Create"
 msgstr "Ports - Créer"
 
-#: fleio/core/models/models.py:233
+#: fleio/core/models/models.py:237
 msgid "Ports - Add IP"
 msgstr "Ports - Ajouter une IP"
 
-#: fleio/core/models/models.py:234
+#: fleio/core/models/models.py:238
 msgid "Ports - Automatically add IP"
 msgstr "Ports - Ajouter automatiquement une IP"
 
-#: fleio/core/models/models.py:235
+#: fleio/core/models/models.py:239
 msgid "Ports - Remove IP"
 msgstr "Ports - Supprimer une IP"
 
-#: fleio/core/models/models.py:236
+#: fleio/core/models/models.py:240
 msgid "Ports - Destroy"
 msgstr "Ports - Détruire"
 
-#: fleio/core/models/models.py:237
+#: fleio/core/models/models.py:241
 msgid "Revenue reports - See the revenue reports list"
 msgstr "Rapport de revenu - Voir la liste des rapports de revenu"
 
-#: fleio/core/models/models.py:238
+#: fleio/core/models/models.py:242
 msgid "Revenue reports - See a revenue report details"
 msgstr "Rapport de revenu - Voir un rapport de revenu"
 
-#: fleio/core/models/models.py:239
+#: fleio/core/models/models.py:243
 msgid "Revenue reports - Generate revenue report"
 msgstr "Rapport de revenu - Générer un rapport de revenu"
 
-#: fleio/core/models/models.py:240
+#: fleio/core/models/models.py:244
 msgid "Revenue reports - Update a revenue report"
 msgstr "Rapport de revenu - Mettre à jour un rapport de revenu"
 
-#: fleio/core/models/models.py:241
+#: fleio/core/models/models.py:245
 msgid "Revenue reports - Delete a revenue report"
 msgstr "Rapport de revenu - Supprimer un rapport de revenu"
 
-#: fleio/core/models/models.py:245
+#: fleio/core/models/models.py:249
 msgid "Allows users to create API users"
 msgstr "Permet aux utilisateurs de créer des API utilisateur"
 
-#: fleio/core/models/models.py:246
+#: fleio/core/models/models.py:250
 msgid "Allows users to update API users"
 msgstr "Permet aux utilisateurs de mettre à jour des API utilisateur"
 
-#: fleio/core/models/models.py:247
+#: fleio/core/models/models.py:251
 msgid "Allows users to delete API users"
 msgstr "Permet aux utilisateurs de supprimer des API utilisateur"
 
-#: fleio/core/models/models.py:248
+#: fleio/core/models/models.py:252
+#, fuzzy
+#| msgid "Allows users to delete an instance"
+msgid "Allows users to delete a client and his resources."
+msgstr "Permet aux utilisateurs de supprimer une instance"
+
+#: fleio/core/models/models.py:253
 msgid "Allows users to create clusters"
 msgstr "Autorise les utilisateurs à créer des clusters"
 
-#: fleio/core/models/models.py:249
+#: fleio/core/models/models.py:254
 msgid "Allows users to update clusters"
 msgstr "Autorise les utilisateurs à mettre à jour des clusters"
 
-#: fleio/core/models/models.py:250
+#: fleio/core/models/models.py:255
 msgid "Allows users to delete clusters"
 msgstr "Autorise les utilisateurs à supprimer des clusters"
 
-#: fleio/core/models/models.py:251
+#: fleio/core/models/models.py:256
 msgid "Allows users to resize a cluster"
 msgstr "Autorise les utilisateurs à redimensionner de cluster"
 
-#: fleio/core/models/models.py:252
+#: fleio/core/models/models.py:257
 msgid "Allows users to get a cluster certificate"
 msgstr "Autorise les utilisateurs à obtenir un certificat de cluster"
 
-#: fleio/core/models/models.py:253
+#: fleio/core/models/models.py:258
 msgid "Allows users to create cluster templates"
 msgstr "Autorise les utilisateurs à créer les modèles de cluster"
 
-#: fleio/core/models/models.py:254
+#: fleio/core/models/models.py:259
 msgid "Allows users to update cluster templates"
 msgstr "Autorise les utilisateurs à mettre à jour les modèles de cluster"
 
-#: fleio/core/models/models.py:255
+#: fleio/core/models/models.py:260
 msgid "Allows users to delete cluster templates"
 msgstr "Autorise les utilisateurs à supprimer les modèles de cluster"
 
-#: fleio/core/models/models.py:256
+#: fleio/core/models/models.py:261
 msgid "Allows users to create zones"
 msgstr "Permet aux utilisateurs de créer des zones"
 
-#: fleio/core/models/models.py:257
+#: fleio/core/models/models.py:262
 msgid "Allows users to update zones"
 msgstr "Permet aux utilisateurs de mettre à jour des zones"
 
-#: fleio/core/models/models.py:258
+#: fleio/core/models/models.py:263
 msgid "Allows users to delete a zone"
 msgstr "Permet aux utilisateurs de supprimer une zone"
 
-#: fleio/core/models/models.py:259
+#: fleio/core/models/models.py:264
 msgid "Allows users to update zone records"
 msgstr "Permet aux utilisateurs de mettre à jour les enregistrements de zone"
 
-#: fleio/core/models/models.py:260
+#: fleio/core/models/models.py:265
 msgid "Allows users to create or update PTR"
 msgstr "Permet aux utilisateurs de créer ou mettre à jour le PTR"
 
-#: fleio/core/models/models.py:261
+#: fleio/core/models/models.py:266
 msgid "Allows users to create an instance"
 msgstr "Permet aux utilisateurs de créer une instance"
 
-#: fleio/core/models/models.py:262 fleio/core/models/models.py:270
+#: fleio/core/models/models.py:267 fleio/core/models/models.py:275
 msgid "Allows users to migrate an instance"
 msgstr "Permet aux utilisateurs de migrer un instance"
 
-#: fleio/core/models/models.py:263
+#: fleio/core/models/models.py:268
 msgid "Allows users to attach a volume to an instance"
 msgstr "Permet aux utilisateurs d'attacher un volume à une instance"
 
-#: fleio/core/models/models.py:264
+#: fleio/core/models/models.py:269
 msgid "Allows users to change an instance password"
 msgstr "Permet aux utilisateurs de modifier le mot de passe d'une instance"
 
-#: fleio/core/models/models.py:265
+#: fleio/core/models/models.py:270
 msgid "Allows users to confirm resize of an instance"
 msgstr "Permet aux utilisateurs de confirmer le redimensionner une instance"
 
-#: fleio/core/models/models.py:266
+#: fleio/core/models/models.py:271
 msgid "Allows users to create a snapshot of an instance"
 msgstr "Permet aux utilisateurs de créer un instantané d'une instance"
 
-#: fleio/core/models/models.py:267
+#: fleio/core/models/models.py:272
 msgid "Allows users to detach a volume from an instance"
 msgstr "Permet aux utilisateurs de détacher un volume d'une instance"
 
-#: fleio/core/models/models.py:268
+#: fleio/core/models/models.py:273
 msgid "Allows users to delete an instance"
 msgstr "Permet aux utilisateurs de supprimer une instance"
 
-#: fleio/core/models/models.py:269
+#: fleio/core/models/models.py:274
 msgid "Allows users to lock an instance"
 msgstr "Permet aux utilisateurs de verrouiller une instance"
 
-#: fleio/core/models/models.py:271
+#: fleio/core/models/models.py:276
 msgid "Allows staff users to move an instance"
 msgstr "Permet aux utilisateurs du staff de déplacer une instance"
 
-#: fleio/core/models/models.py:272
+#: fleio/core/models/models.py:277
 msgid "Allows users to reboot an instance"
 msgstr "Permet aux utilisateurs de redémarrer une instance"
 
-#: fleio/core/models/models.py:273
+#: fleio/core/models/models.py:278
 msgid "Allows users to rebuild an instance"
 msgstr "Permet aux utilisateurs de reconstruire une instance"
 
-#: fleio/core/models/models.py:274
+#: fleio/core/models/models.py:279
 msgid "Allows users to rename an instance"
 msgstr "Permet aux utilisateurs de renommer une instance"
 
-#: fleio/core/models/models.py:275
+#: fleio/core/models/models.py:280
 msgid "Allows users to rescue an instance"
 msgstr "Permet aux utilisateurs de sauver une instance"
 
-#: fleio/core/models/models.py:276
+#: fleio/core/models/models.py:281
 msgid "Allows users to reset state of an instance"
 msgstr "Permet aux utilisateurs de réinitialiser l'état d'une instance"
 
-#: fleio/core/models/models.py:277
+#: fleio/core/models/models.py:282
 msgid "Allows users to resize an instance"
 msgstr "Permet aux utilisateurs de redimensionner une instance"
 
-#: fleio/core/models/models.py:278
+#: fleio/core/models/models.py:283
 msgid "Allows users to resume an instance"
 msgstr "Permet aux utilisateurs de reprendre une instance"
 
-#: fleio/core/models/models.py:279
+#: fleio/core/models/models.py:284
 msgid "Allows users to revert resize of an instance"
 msgstr ""
 "Permet aux utilisateurs de rétablir le redimensionnement d'une instance"
 
-#: fleio/core/models/models.py:280
+#: fleio/core/models/models.py:285
 msgid "Allows users to start an instance"
 msgstr "Permet aux utilisateurs de démarrer une instance"
 
-#: fleio/core/models/models.py:281
+#: fleio/core/models/models.py:286
 msgid "Allows users to stop an instance"
 msgstr "Permet aux utilisateurs d'arrêter une instance"
 
-#: fleio/core/models/models.py:282
+#: fleio/core/models/models.py:287
 msgid "Allows users to suspend an instance"
 msgstr "Permet aux utilisateurs de suspendre une instance"
 
-#: fleio/core/models/models.py:283
+#: fleio/core/models/models.py:288
 msgid "Allows users to unlock an instance"
 msgstr "Permet aux utilisateurs de déverouiller une instance"
 
-#: fleio/core/models/models.py:284
+#: fleio/core/models/models.py:289
 msgid "Allows users to unrescue an instance"
 msgstr "Autoriser les utilisateurs à ne pas sauver une instance"
 
-#: fleio/core/models/models.py:285
+#: fleio/core/models/models.py:290
 msgid "Allows users to dissociate a security group"
 msgstr "Permet aux utilisateurs de dissocier un groupe de sécurité"
 
-#: fleio/core/models/models.py:286
+#: fleio/core/models/models.py:291
 msgid "Allows users to associate a security group"
 msgstr "Permet aux utilisateurs d'associer un groupe de sécurité"
 
-#: fleio/core/models/models.py:287
+#: fleio/core/models/models.py:292
 msgid "Allows users to create an instance backup"
 msgstr "Permet aux utilisateurs de créer une sauvegarde de l'instance"
 
-#: fleio/core/models/models.py:288
+#: fleio/core/models/models.py:293
 msgid "Allows users to associate a floating IP"
 msgstr "Permet aux utilisateurs d'associer une IP flottante"
 
-#: fleio/core/models/models.py:289
+#: fleio/core/models/models.py:294
 msgid "Allows users to dissociate a floating IP"
 msgstr "Permet aux utilisateurs de dissocier une IP flottante"
 
-#: fleio/core/models/models.py:290
+#: fleio/core/models/models.py:295
 msgid "Allows users to create a volume"
 msgstr "Permet aux utilisateurs de créer un volume"
 
-#: fleio/core/models/models.py:291
+#: fleio/core/models/models.py:296
 msgid "Allows users to delete a volume"
 msgstr "Permet aux utilisateurs de supprimer un volume"
 
-#: fleio/core/models/models.py:292
+#: fleio/core/models/models.py:297
 msgid "Allows users to extend a volume"
 msgstr "Permet aux utilisateurs d'étendre un volume"
 
-#: fleio/core/models/models.py:293
+#: fleio/core/models/models.py:298
 msgid "Allows users to rename a volume"
 msgstr "Permet aux utilisateurs de renommer un volume"
 
-#: fleio/core/models/models.py:294
+#: fleio/core/models/models.py:299
 msgid "Allows users to revert volume to snapshot"
 msgstr ""
 "Autorise les utilisateurs à faire un retour arrière sur snapshot de volume"
 
-#: fleio/core/models/models.py:295
+#: fleio/core/models/models.py:300
 msgid "Allows users to update a volume backup"
 msgstr "Permet aux utilisateurs de mettre à jour une sauvegarde de volume"
 
-#: fleio/core/models/models.py:296
+#: fleio/core/models/models.py:301
 msgid "Allows users to create a volume backup"
 msgstr "Autorise les utilisateurs à créer une sauvegarde de volume"
 
-#: fleio/core/models/models.py:297
+#: fleio/core/models/models.py:302
 msgid "Allows users to restore a volume backup"
 msgstr "Autorise les utilisateurs à restaurer une sauvegarde de volume"
 
-#: fleio/core/models/models.py:298
+#: fleio/core/models/models.py:303
 msgid "Allows users to delete a volume backup"
 msgstr "Autorise les utilisateurs à supprimer une sauvegarde de volume"
 
-#: fleio/core/models/models.py:299
+#: fleio/core/models/models.py:304
 msgid "Allows users to create a volume snapshot"
 msgstr "Autorise les utilisateurs à créer un snapshot de volume"
 
-#: fleio/core/models/models.py:300
+#: fleio/core/models/models.py:305
 msgid "Allows users to update a volume snapshot"
 msgstr "Autorise les utilisateurs à mettre à jour un snapshot de volume"
 
-#: fleio/core/models/models.py:301
+#: fleio/core/models/models.py:306
 msgid "Allows users to delete a volume snapshot"
 msgstr "Autorise les utilisateurs à supprimer un snapshot de volume"
 
-#: fleio/core/models/models.py:302
+#: fleio/core/models/models.py:307
 msgid "Allows users to reset state of a volume snapshot"
 msgstr ""
 "Autorise les utilisateurs à réinitialiser l'état d'un snapshot de volume"
 
-#: fleio/core/models/models.py:303
+#: fleio/core/models/models.py:308
 msgid "Allows users to create an image"
 msgstr "Permet aux utilisateurs de créer une image"
 
-#: fleio/core/models/models.py:304
+#: fleio/core/models/models.py:309
 msgid "Allows users to delete an image"
 msgstr "Permet aux utilisateurs de supprimer une image"
 
-#: fleio/core/models/models.py:305
+#: fleio/core/models/models.py:310
 msgid "Allows users to download an image"
 msgstr "Autorise les utilisateurs a télécharger une image"
 
-#: fleio/core/models/models.py:306
+#: fleio/core/models/models.py:311
 msgid "Allows users to update an image"
 msgstr "Permet aux utilisateurs de mettre à jour une image"
 
-#: fleio/core/models/models.py:307
+#: fleio/core/models/models.py:312
 msgid "Allows users to deactivate an image"
 msgstr "Permet aux utilisateurs de désactiver une image"
 
-#: fleio/core/models/models.py:308
+#: fleio/core/models/models.py:313
 msgid "Allows users to reactivate an image"
 msgstr "Permet aux utilisateurs de réactiver une image"
 
-#: fleio/core/models/models.py:309
+#: fleio/core/models/models.py:314
 msgid "Allows users to create a flavor"
 msgstr "Permet aux utilisateurs de créer un flavor"
 
-#: fleio/core/models/models.py:310
+#: fleio/core/models/models.py:315
 msgid "Allows users to delete a flavor"
 msgstr "Permet aux utilisateur de supprimer un flavor"
 
-#: fleio/core/models/models.py:311
+#: fleio/core/models/models.py:316
 msgid "Allows users to update a flavor"
 msgstr "Permet aux utilisateur de mettre à jour un flavor"
 
-#: fleio/core/models/models.py:312
+#: fleio/core/models/models.py:317
 msgid "Allows users to create a project"
 msgstr "Permet aux utilisateurs de créer un projet"
 
-#: fleio/core/models/models.py:313
+#: fleio/core/models/models.py:318
 msgid "Allows users to delete an openstack project"
 msgstr "Permet aux utilisateurs de supprimer un projet openstack"
 
-#: fleio/core/models/models.py:314
+#: fleio/core/models/models.py:319
 msgid "Allows users to update an openstack project"
 msgstr "Permet aux utilisateur de mettre à jour un projet openstack"
 
-#: fleio/core/models/models.py:315
+#: fleio/core/models/models.py:320
 msgid "Allows users to create a router"
 msgstr "Permet aux utilisateurs de créer un routeur"
 
-#: fleio/core/models/models.py:316
+#: fleio/core/models/models.py:321
 msgid "Allows users to update a router"
 msgstr "Permet aux utilisateurs de mettre à jour un routeur"
 
-#: fleio/core/models/models.py:317
+#: fleio/core/models/models.py:322
 msgid "Allows users to delete a router"
 msgstr "Permet aux utilisateurs de supprimer un routeur"
 
-#: fleio/core/models/models.py:318
+#: fleio/core/models/models.py:323
 msgid "Allows users to add an interface to a router"
 msgstr "Permet aux utilisateurs d'ajouter une interface à un routeur"
 
-#: fleio/core/models/models.py:319
+#: fleio/core/models/models.py:324
 msgid "Allows users to remove an interface from a router"
 msgstr "Permet aux utilisateurs de supprimer une interface d'un routeur"
 
-#: fleio/core/models/models.py:320
+#: fleio/core/models/models.py:325
+#, fuzzy
+#| msgid "Allows users to delete revenue reports"
+msgid "Allows a user to delete a service and its related resources"
+msgstr "Autorise les utilisateurs à supprimer les rapports de revenu"
+
+#: fleio/core/models/models.py:326
 msgid "Allows users to create a network"
 msgstr "Permet aux utilisateurs de créer un réseau"
 
-#: fleio/core/models/models.py:321
+#: fleio/core/models/models.py:327
 msgid "Allows users to delete a network"
 msgstr "Permet aux utilisateurs de supprimer un réseau"
 
-#: fleio/core/models/models.py:322
+#: fleio/core/models/models.py:328
 msgid "Allows users to auto create a network"
 msgstr "Permet aux utilisateurs de créer automatiquement un réseau"
 
-#: fleio/core/models/models.py:323
+#: fleio/core/models/models.py:329
 msgid "Allows users to update a network"
 msgstr "Permet aux utilisateurs de mettre à jour un réseau"
 
-#: fleio/core/models/models.py:324
+#: fleio/core/models/models.py:330
 msgid "Allows staff users to change auto create network options"
 msgstr ""
 "Permet aux utilisateurs du staff de changer les options pour la création "
 "automatique de réseau"
 
-#: fleio/core/models/models.py:325
+#: fleio/core/models/models.py:331
 msgid "Allows users to create floating IPs"
 msgstr "Permet aux utilisateurs de créer des IP flottantes"
 
-#: fleio/core/models/models.py:326
+#: fleio/core/models/models.py:332
 msgid "Allows users to delete floating IPs"
 msgstr "Permet aux utilisateurs de supprimer des IP flottantes"
 
-#: fleio/core/models/models.py:327
+#: fleio/core/models/models.py:333
 msgid "Allows users to create a security group"
 msgstr "Permet aux utilisateurs de créer un groupe de sécurité"
 
-#: fleio/core/models/models.py:328
+#: fleio/core/models/models.py:334
 msgid "Allows users to update a security group"
 msgstr "Permet aux utilisateurs de mettre à jour un groupe de sécurité"
 
-#: fleio/core/models/models.py:329
+#: fleio/core/models/models.py:335
 msgid "Allows users to add rules to a security group"
 msgstr ""
 "Permet aux utilisateurs d'ajouter des règles pour un groupe de sécurité"
 
-#: fleio/core/models/models.py:330
+#: fleio/core/models/models.py:336
 msgid "Allows users to delete rules from a security group"
 msgstr ""
 "Permet aux utilisateurs d'ajouter des règles pour un groupe de sécurité"
 
-#: fleio/core/models/models.py:331
+#: fleio/core/models/models.py:337
 msgid "Allows users to delete a security group"
 msgstr "Permet aux utilisateurs de supprimer un groupe de sécurité"
 
-#: fleio/core/models/models.py:332
+#: fleio/core/models/models.py:338
 msgid "Allows users to create a subnet pool"
 msgstr "Permet aux utilisateurs de créer un pool de sous-réseaux"
 
-#: fleio/core/models/models.py:333
+#: fleio/core/models/models.py:339
 msgid "Allows users to update a subnet pool"
 msgstr "Permet aux utilisateurs de mettre à jour un pool de sous-réseaux"
 
-#: fleio/core/models/models.py:334
+#: fleio/core/models/models.py:340
 msgid "Allows users to delete a subnet pool"
 msgstr "Permet aux utilisateurs de supprimer un pool de sous-réseaux"
 
-#: fleio/core/models/models.py:335
+#: fleio/core/models/models.py:341
 msgid "Allows users to create a SSH key"
 msgstr "Permet aux utilisateurs de créer une clé SSH"
 
-#: fleio/core/models/models.py:336
+#: fleio/core/models/models.py:342
 msgid "Allows users to update a SSH key"
 msgstr "Permet aux utilisateurs de mettre à jour une clé SSH"
 
-#: fleio/core/models/models.py:337
+#: fleio/core/models/models.py:343
 msgid "Allows users to delete a SSH key"
 msgstr "Permet aux utilisateurs de supprimer une clé SSH"
 
-#: fleio/core/models/models.py:338
+#: fleio/core/models/models.py:344
 msgid "Allows users to create a port"
 msgstr "Permet aux utilisateurs de créer un port"
 
-#: fleio/core/models/models.py:339
+#: fleio/core/models/models.py:345
 msgid "Allows users to add IPs"
 msgstr "Permet aux utilisateur d'ajouter des addresses IP"
 
-#: fleio/core/models/models.py:340
+#: fleio/core/models/models.py:346
 msgid "Allows users to automatically add IPs"
 msgstr "Permet aux utilisateurs d'ajouter automatiquement des addresses IP"
 
-#: fleio/core/models/models.py:341
+#: fleio/core/models/models.py:347
 msgid "Allows users to remove an ip"
 msgstr "Permet aux utilisateurs de supprimer une IP"
 
-#: fleio/core/models/models.py:342
+#: fleio/core/models/models.py:348
 msgid "Allows users to delete a port"
 msgstr "Permet aux utilisateurs de supprimer un port"
 
-#: fleio/core/models/models.py:343
+#: fleio/core/models/models.py:349
 msgid "Allows users to see the list of revenue reports"
 msgstr "Autorise les utilisateurs à voir la liste des rapports de revenu"
 
-#: fleio/core/models/models.py:344
+#: fleio/core/models/models.py:350
 msgid "Allows users to see the details of a revenue report"
 msgstr "Autorise les utilisateurs à voir les rapports de revenu"
 
-#: fleio/core/models/models.py:345
+#: fleio/core/models/models.py:351
 msgid "Allows users to generate revenue reports"
 msgstr "Autorise les utilisateurs à générer les rapports de revenu"
 
-#: fleio/core/models/models.py:346
+#: fleio/core/models/models.py:352
 msgid "Allows users to update revenue reports"
 msgstr "Autorise les utilisateurs à mettre à jour les rapports de revenu"
 
-#: fleio/core/models/models.py:347
+#: fleio/core/models/models.py:353
 msgid "Allows users to delete revenue reports"
 msgstr "Autorise les utilisateurs à supprimer les rapports de revenu"
 
-#: fleio/core/models/models.py:499
+#: fleio/core/models/models.py:505
 msgid "Inactive"
 msgstr "Inactive"
 
-#: fleio/core/models/models.py:501
+#: fleio/core/models/models.py:507
 msgid "Closed"
 msgstr "Fermé"
 
-#: fleio/core/models/models.py:502
+#: fleio/core/models/models.py:508
 #: fleio/openstack/instances/instance_status.py:213
 #: fleio/openstack/models/volume_snapshot.py:46
 #: fleio/openstack/volumes/volume_status.py:23
@@ -2032,11 +2209,11 @@ msgstr "Fermé"
 msgid "Deleting"
 msgstr "Suppression"
 
-#: fleio/core/models/models.py:509
+#: fleio/core/models/models.py:515
 msgid "user action"
 msgstr "action de l'utilisateur"
 
-#: fleio/core/models/models.py:510
+#: fleio/core/models/models.py:516
 msgid "automatic action"
 msgstr "action automatique"
 
@@ -2134,7 +2311,7 @@ msgstr "Il devrait contenir au moins 8 caractères."
 msgid "It should contain at least one digit or symbol."
 msgstr "Il devrait contenir au moins un chiffre ou un symbole."
 
-#: fleio/core/views.py:112 fleiostaff/core/views.py:292
+#: fleio/core/views.py:112 fleiostaff/core/views.py:301
 msgid "Logged out"
 msgstr "Déconnecté"
 
@@ -2160,10 +2337,6 @@ msgstr ""
 msgid "Unable to authenticate"
 msgstr "Impossible à authentifier"
 
-#: fleio/core/views.py:238 fleiostaff/core/views.py:205
-msgid "This account is inactive"
-msgstr "Ce compte est inactif"
-
 #: fleio/core/views.py:248
 msgid "Confirmation token is missing"
 msgstr "Le jeton de confirmation est manquant"
@@ -2188,11 +2361,11 @@ msgstr "Un email avec le jeton de confirmation a été envoyé à {}."
 msgid "Changing password not allowed in demo mode"
 msgstr "Changer le mot de passe n'est pas autorisé en mode démo"
 
-#: fleio/core/views.py:332 fleiostaff/core/views.py:375
+#: fleio/core/views.py:332 fleiostaff/core/views.py:384
 msgid "Please enter the correct current password."
 msgstr "Veuillez saisir le mot de passe actuel correct."
 
-#: fleio/core/views.py:351 fleiostaff/core/views.py:386
+#: fleio/core/views.py:351 fleiostaff/core/views.py:395
 msgid "User profile updated"
 msgstr "Profil utilisateur mis à jour"
 
@@ -2232,7 +2405,69 @@ msgstr "Impossible d'envoyer un email: {error}"
 msgid "Sent..."
 msgstr "Envoyé..."
 
-#: fleio/notifications/models.py:47 fleio/notifications/models.py:138
+#: fleio/notifications/formatting.py:4
+msgid "Account credit low"
+msgstr ""
+
+#: fleio/notifications/formatting.py:5
+msgid "Account reset password"
+msgstr ""
+
+#: fleio/notifications/formatting.py:6
+#, fuzzy
+#| msgid "Could not find confirmation method"
+msgid "Account signup confirmation"
+msgstr "Impossible de trouver la méthode de confirmation"
+
+#: fleio/notifications/formatting.py:7
+#, fuzzy
+#| msgid "Service suspended"
+msgid "Account suspended"
+msgstr "Service suspendu"
+
+#: fleio/notifications/formatting.py:9
+#, fuzzy
+#| msgid "Billing cycle"
+msgid "Billing new invoice"
+msgstr "Cycle de facturation"
+
+#: fleio/notifications/formatting.py:11 fleio/notifications/formatting.py:15
+#, fuzzy
+#| msgid "Ticket is already opened."
+msgid "Ticket opened"
+msgstr "Le ticket est déjà ouvert."
+
+#: fleio/notifications/formatting.py:12 fleio/notifications/formatting.py:16
+#, fuzzy
+#| msgid "Ticket is already opened."
+msgid "Ticket reply added"
+msgstr "Le ticket est déjà ouvert."
+
+#: fleio/notifications/formatting.py:13 fleio/notifications/formatting.py:17
+#, fuzzy
+#| msgid "Tickets"
+msgid "Ticket closed"
+msgstr "Tickets"
+
+#: fleio/notifications/formatting.py:19
+#, fuzzy
+#| msgid "Openstack"
+msgid "Openstack error"
+msgstr "Openstack"
+
+#: fleio/notifications/formatting.py:21
+#, fuzzy
+#| msgid "When order is placed"
+msgid "New order placed"
+msgstr "Quand la commande est passée"
+
+#: fleio/notifications/formatting.py:22
+#, fuzzy
+#| msgid "Payment added"
+msgid "New payment added"
+msgstr "Paiement ajouté"
+
+#: fleio/notifications/models.py:46 fleio/notifications/models.py:138
 #: fleio/openstack/dns/serializers.py:37 fleio/openstack/dns/serializers.py:81
 #: fleio/openstack/instances/instance_status.py:72
 #: fleio/openstack/models/volume_snapshot.py:47
@@ -2243,23 +2478,23 @@ msgstr "Envoyé..."
 msgid "Error"
 msgstr "Erreur"
 
-#: fleio/notifications/models.py:48 plugins/domains/models/domain.py:41
+#: fleio/notifications/models.py:47 plugins/domains/models/domain.py:41
 msgid "Expired"
 msgstr "Expiré"
 
-#: fleio/notifications/models.py:54 plugins/tickets/models/ticket.py:47
+#: fleio/notifications/models.py:53 plugins/tickets/models/ticket.py:47
 msgid "Low"
 msgstr "Faible"
 
-#: fleio/notifications/models.py:55
+#: fleio/notifications/models.py:54
 msgid "Normal"
 msgstr "Normal"
 
-#: fleio/notifications/models.py:56 plugins/tickets/models/ticket.py:45
+#: fleio/notifications/models.py:55 plugins/tickets/models/ticket.py:45
 msgid "High"
 msgstr "Haut"
 
-#: fleio/notifications/models.py:57
+#: fleio/notifications/models.py:56
 msgid "Critical"
 msgstr "Critique"
 
@@ -2270,6 +2505,10 @@ msgstr "Envoyé"
 #: fleio/notifications/models.py:137
 msgid "Seen"
 msgstr "Vue"
+
+#: fleio/notifications/views.py:59 fleiostaff/notifications/views.py:57
+msgid "All notifications were marked as read."
+msgstr ""
 
 #: fleio/openstack/activitylog.py:11
 #, python-brace-format
@@ -2434,31 +2673,31 @@ msgstr ""
 "Synchronisation des détails supplémentaire de la sauvegarde de volume "
 "{backup_id}"
 
-#: fleio/openstack/billing_module.py:278
+#: fleio/openstack/billing_module.py:286
 msgid "Instances"
 msgstr "Instances"
 
-#: fleio/openstack/billing_module.py:287
+#: fleio/openstack/billing_module.py:295
 msgid "Volumes"
 msgstr "Volumes"
 
-#: fleio/openstack/billing_module.py:295
+#: fleio/openstack/billing_module.py:303
 msgid "SSH keys"
 msgstr "Clés SSH"
 
-#: fleio/openstack/billing_module.py:306
+#: fleio/openstack/billing_module.py:314
 msgid "Networks"
 msgstr "Réseaux"
 
-#: fleio/openstack/billing_module.py:314
+#: fleio/openstack/billing_module.py:322
 msgid "Images"
 msgstr "Images"
 
-#: fleio/openstack/billing_module.py:323
+#: fleio/openstack/billing_module.py:331
 msgid "Routers"
 msgstr "Routeurs"
 
-#: fleio/openstack/billing_module.py:332
+#: fleio/openstack/billing_module.py:340
 msgid "Ports"
 msgstr "Ports"
 
@@ -2566,7 +2805,7 @@ msgstr "Primaire"
 msgid "Secondary"
 msgstr "Secondaire"
 
-#: fleio/openstack/dns/utils.py:30 fleio/openstack/networking/views.py:54
+#: fleio/openstack/dns/utils.py:31 fleio/openstack/networking/views.py:54
 #: fleio/openstack/networking/views.py:127
 #: fleio/openstack/networking/views.py:419
 #: fleio/openstack/networking/views.py:511 fleio/openstack/osapi.py:46
@@ -2721,16 +2960,16 @@ msgstr "L'authentification OpenStack a échoué"
 msgid "Object not available"
 msgstr "Objet indisponible"
 
-#: fleio/openstack/images/serializers.py:25
-#: fleiostaff/openstack/images/serializers.py:24
+#: fleio/openstack/images/serializers.py:26
+#: fleiostaff/openstack/images/serializers.py:25
 msgid "Only ASCII characters are allowed for properties and values"
 msgstr ""
 "Seul les caractères ASCII sont autorisés pour les propriétés et les valeurs"
 
-#: fleio/openstack/images/serializers.py:148
-#: fleio/openstack/images/serializers.py:180
-#: fleiostaff/openstack/images/serializers.py:106
-#: fleiostaff/openstack/images/serializers.py:133
+#: fleio/openstack/images/serializers.py:149
+#: fleio/openstack/images/serializers.py:183
+#: fleiostaff/openstack/images/serializers.py:107
+#: fleiostaff/openstack/images/serializers.py:134
 msgid "Invalid hypervisor type selected"
 msgstr "Type d'hyperviseur invalide sélectionné"
 
@@ -2755,7 +2994,7 @@ msgstr "Mise à jour du statut de l'image membre envoyé."
 #: fleio/openstack/volume_snapshots/views.py:52
 #: fleiostaff/openstack/dns/views.py:200
 #: fleiostaff/openstack/images/views.py:104
-#: fleiostaff/openstack/instances/views.py:156
+#: fleiostaff/openstack/instances/views.py:157
 #: fleiostaff/openstack/routers/views.py:64
 #: fleiostaff/openstack/volume_backups/views.py:76
 #: fleiostaff/openstack/volume_snapshots/views.py:53
@@ -2924,7 +3163,7 @@ msgid "Resize confirming"
 msgstr "Confirmation du redimensionnement"
 
 #: fleio/openstack/instances/instance_status.py:193
-#: fleio/openstack/instances/views.py:1095
+#: fleio/openstack/instances/views.py:1114
 msgid "Rebooting"
 msgstr "Redémarrage"
 
@@ -3034,176 +3273,188 @@ msgstr "Déchargement de la suspension"
 msgid "Unshelving"
 msgstr "Reprise"
 
-#: fleio/openstack/instances/serializers.py:274
-#: fleio/openstack/volumes/serializers.py:73
-#: fleiostaff/openstack/volumes/serializers.py:40
+#: fleio/openstack/instances/serializers.py:284
+#: fleio/openstack/volumes/serializers.py:79
+#: fleiostaff/openstack/volumes/serializers.py:46
 msgid "Image"
 msgstr "Image"
 
-#: fleio/openstack/instances/serializers.py:275
+#: fleio/openstack/instances/serializers.py:285
 msgid "Owned Image"
 msgstr "Image possédée"
 
-#: fleio/openstack/instances/serializers.py:276
+#: fleio/openstack/instances/serializers.py:286
 msgid "Shared Image"
 msgstr "Image partagée"
 
-#: fleio/openstack/instances/serializers.py:277
+#: fleio/openstack/instances/serializers.py:287
 msgid "Community Image"
 msgstr "Image communautaire"
 
-#: fleio/openstack/instances/serializers.py:278
-#: fleio/openstack/volumes/serializers.py:74
-#: fleiostaff/openstack/volumes/serializers.py:41
+#: fleio/openstack/instances/serializers.py:288
+#: fleio/openstack/volumes/serializers.py:80
+#: fleiostaff/openstack/volumes/serializers.py:47
 msgid "Volume"
 msgstr "Volume"
 
-#: fleio/openstack/instances/serializers.py:279
+#: fleio/openstack/instances/serializers.py:289
 msgid "Volume Snapshot"
 msgstr "Instantané de volume"
 
-#: fleio/openstack/instances/serializers.py:280
+#: fleio/openstack/instances/serializers.py:290
 msgid "Requested Image"
 msgstr "Image demandée"
 
-#: fleio/openstack/instances/serializers.py:281
+#: fleio/openstack/instances/serializers.py:291
 msgid "Requested Volume"
 msgstr "Volume demandé"
 
-#: fleio/openstack/instances/serializers.py:309
+#: fleio/openstack/instances/serializers.py:320
 msgid "Booting from a volume is disabled"
 msgstr "Le démarrage depuis un volume est désactivé"
 
-#: fleio/openstack/instances/serializers.py:325
-#: fleio/openstack/instances/views.py:415
+#: fleio/openstack/instances/serializers.py:336
+#: fleio/openstack/instances/views.py:427
 #: fleiostaff/openstack/instances/serializers.py:204
 #: fleiostaff/openstack/instances/serializers.py:220
-#: fleiostaff/openstack/instances/views.py:127
+#: fleiostaff/openstack/instances/views.py:128
 msgid "Image not found"
 msgstr "Image introuvable"
 
-#: fleio/openstack/instances/serializers.py:329
-#: fleio/openstack/instances/serializers.py:350
+#: fleio/openstack/instances/serializers.py:340
+#: fleio/openstack/instances/serializers.py:365
 msgid "Volume size is not valid"
 msgstr "La taille du volume n'est pas valide"
 
-#: fleio/openstack/instances/serializers.py:346
-#: fleio/openstack/instances/views.py:431
-#: fleiostaff/openstack/instances/views.py:138
+#: fleio/openstack/instances/serializers.py:359
+#: fleio/openstack/instances/views.py:443
+#: fleiostaff/openstack/instances/views.py:139
 msgid "Volume not found"
 msgstr "Volume introuvable"
 
-#: fleio/openstack/instances/serializers.py:430
+#: fleio/openstack/instances/serializers.py:361
+#, fuzzy
+#| msgid "Volume not found"
+msgid "Volume snapshot not found"
+msgstr "Volume introuvable"
+
+#: fleio/openstack/instances/serializers.py:452
 #: fleiostaff/openstack/instances/serializers.py:163
 msgid "A client with id {} does not exist"
 msgstr "Le client avec l'id {} n'existe pas"
 
-#: fleio/openstack/instances/serializers.py:432
+#: fleio/openstack/instances/serializers.py:454
 #: fleiostaff/openstack/instances/serializers.py:165
 msgid "Invalid client id provided: {}"
 msgstr "L'identifiant client fourni n'est pas valide: {}"
 
-#: fleio/openstack/instances/serializers.py:435
+#: fleio/openstack/instances/serializers.py:457
 msgid "Unable retrieve the client associated with your account"
 msgstr "Impossible de récupérer le client associé à votre compte"
 
-#: fleio/openstack/instances/serializers.py:437
+#: fleio/openstack/instances/serializers.py:459
 msgid "Unable to find a client account"
 msgstr "Impossible de trouver un compte client"
 
-#: fleio/openstack/instances/serializers.py:460
+#: fleio/openstack/instances/serializers.py:482
 #: fleiostaff/openstack/instances/serializers.py:189
 msgid "Unable to find a client with an OpenStack project associated"
 msgstr "Impossible de trouver un client avec un projet OpenStack associé"
 
-#: fleio/openstack/instances/serializers.py:469
+#: fleio/openstack/instances/serializers.py:491
 msgid "Boot source image not found"
 msgstr "Image source de démarrage introuvable"
 
-#: fleio/openstack/instances/serializers.py:478
+#: fleio/openstack/instances/serializers.py:504
 msgid "Boot source volume not found"
 msgstr "Volume source de démarrage introuvable"
 
-#: fleio/openstack/instances/serializers.py:501
-#: fleio/openstack/instances/serializers.py:550
-#: fleio/openstack/instances/serializers.py:562
-#: fleiostaff/openstack/instances/serializers.py:253
+#: fleio/openstack/instances/serializers.py:506
+#, fuzzy
+#| msgid "Boot source volume not found"
+msgid "Boot source volume snapshot not found"
+msgstr "Volume source de démarrage introuvable"
+
+#: fleio/openstack/instances/serializers.py:529
+#: fleio/openstack/instances/serializers.py:578
+#: fleio/openstack/instances/serializers.py:590
+#: fleiostaff/openstack/instances/serializers.py:258
 msgid "SSH Key not found"
 msgstr "Clé SSH introuvable"
 
-#: fleio/openstack/instances/serializers.py:505
-#: fleiostaff/openstack/instances/serializers.py:258
+#: fleio/openstack/instances/serializers.py:533
+#: fleiostaff/openstack/instances/serializers.py:263
 msgid "Flavor not in {}"
 msgstr "Le flavor n'est pas dans {}"
 
-#: fleio/openstack/instances/serializers.py:643
+#: fleio/openstack/instances/serializers.py:671
 msgid "Not a valid status"
 msgstr "Statut invalide"
 
-#: fleio/openstack/instances/serializers.py:656
+#: fleio/openstack/instances/serializers.py:684
 msgid "Must select hypervisor with live migration"
 msgstr "Vous devez sélectionner un hyperviseur pour effectuer la migration"
 
-#: fleio/openstack/instances/views.py:145
+#: fleio/openstack/instances/views.py:150
 msgid "Client not available"
 msgstr "Client indisponible"
 
-#: fleio/openstack/instances/views.py:147
+#: fleio/openstack/instances/views.py:152
 msgid "No client with an enabled OpenStack project found"
 msgstr "Aucun client avec un projet OpenStack valide trouvé"
 
-#: fleio/openstack/instances/views.py:253
+#: fleio/openstack/instances/views.py:258
 msgid "Failed to create instance, please contact support"
 msgstr "Echec lors de la création de l'instance, veuillez contacter le support"
 
-#: fleio/openstack/instances/views.py:359
+#: fleio/openstack/instances/views.py:364
 msgid "Permission denied"
 msgstr "Permission refusée"
 
-#: fleio/openstack/instances/views.py:367
-#: fleio/openstack/instances/views.py:371
+#: fleio/openstack/instances/views.py:372
+#: fleio/openstack/instances/views.py:376
 msgid "Unable to create the instance"
 msgstr "Impossible de créer l'instance"
 
-#: fleio/openstack/instances/views.py:376
+#: fleio/openstack/instances/views.py:381
 msgid "Cannot delete a locked instance"
 msgstr "Impossible de supprimer une instance verrouillée"
 
-#: fleio/openstack/instances/views.py:382
-#: fleiostaff/openstack/instances/views.py:272
+#: fleio/openstack/instances/views.py:387
+#: fleiostaff/openstack/instances/views.py:280
 #, python-format
 msgid "Unable to destroy instance %s"
 msgstr "Impossible de supprimer l'instance %s"
 
-#: fleio/openstack/instances/views.py:434
+#: fleio/openstack/instances/views.py:446
 msgid "Volume is not bootable"
 msgstr "Le volume n'est pas bootable"
 
-#: fleio/openstack/instances/views.py:436
+#: fleio/openstack/instances/views.py:448
 msgid "Volume status must be available"
 msgstr "Le statut du volume doit être disponible"
 
-#: fleio/openstack/instances/views.py:609
+#: fleio/openstack/instances/views.py:627
 msgid "Request an image or a volume, not both"
 msgstr "Demander une image ou un volume, pas les deux"
 
-#: fleio/openstack/instances/views.py:616
+#: fleio/openstack/instances/views.py:634
 msgid "Invalid image requested"
 msgstr "Image invalide demandée"
 
-#: fleio/openstack/instances/views.py:621
+#: fleio/openstack/instances/views.py:639
 msgid "Invalid volume requested"
 msgstr "Volume invalide demandé"
 
-#: fleio/openstack/instances/views.py:626
+#: fleio/openstack/instances/views.py:644
 msgid "Image not available in region {}"
 msgstr "Image indisponible dans la région {}"
 
-#: fleio/openstack/instances/views.py:633
+#: fleio/openstack/instances/views.py:651
 msgid "Volume not available in region {}"
 msgstr "Volume indisponible dans la région {}"
 
-#: fleio/openstack/instances/views.py:651
+#: fleio/openstack/instances/views.py:669
 #: fleiostaff/openstack/flavorgroups/views.py:37
 #: fleiostaff/openstack/flavorgroups/views.py:53
 #: fleiostaff/openstack/flavorgroups/views.py:76
@@ -3215,28 +3466,28 @@ msgstr "Volume indisponible dans la région {}"
 msgid "No image to filter against"
 msgstr "Aucune image à filtrer"
 
-#: fleio/openstack/instances/views.py:659
+#: fleio/openstack/instances/views.py:677
 msgid "Select a client"
 msgstr "Sélectionner un client"
 
-#: fleio/openstack/instances/views.py:691
+#: fleio/openstack/instances/views.py:709
 msgid "No region to filter against"
 msgstr "Aucune région à filtrer"
 
-#: fleio/openstack/instances/views.py:698
+#: fleio/openstack/instances/views.py:716
 msgid "No flavor to filter against"
 msgstr "Aucun flavor à filtrer"
 
-#: fleio/openstack/instances/views.py:707
+#: fleio/openstack/instances/views.py:725
 msgid "You need to select a client"
 msgstr "Vous devez sélectionner un client"
 
-#: fleio/openstack/instances/views.py:715
+#: fleio/openstack/instances/views.py:733
 msgid "Related client has no project"
 msgstr "Le client concerné n'a pas de projet"
 
-#: fleio/openstack/instances/views.py:750
-#: fleio/openstack/instances/views.py:765
+#: fleio/openstack/instances/views.py:768
+#: fleio/openstack/instances/views.py:783
 msgid ""
 "Project id not found or suspended or does not have the permission for the "
 "operation."
@@ -3244,263 +3495,282 @@ msgstr ""
 "Identifiant de projet introuvable ou suspendu ou ne disposant pas de "
 "l'autorisation pour l'opération."
 
-#: fleio/openstack/instances/views.py:754
+#: fleio/openstack/instances/views.py:772
 #, python-format
 msgid "Unable to start the instance %s"
 msgstr "Impossible de démarrer l'instance %s"
 
-#: fleio/openstack/instances/views.py:756
+#: fleio/openstack/instances/views.py:774
 msgid "Instance is starting"
 msgstr "L'instance démarre"
 
-#: fleio/openstack/instances/views.py:769
+#: fleio/openstack/instances/views.py:787
 #, python-format
 msgid "Unable to stop instance %s"
 msgstr "Impossible d'arrêter l'instance %s"
 
-#: fleio/openstack/instances/views.py:771
+#: fleio/openstack/instances/views.py:789
 msgid "Instance is stopping"
 msgstr "L'instance s'arrête"
 
-#: fleio/openstack/instances/views.py:842
+#: fleio/openstack/instances/views.py:860
 msgid "Unable to rebuild the instance {}"
 msgstr "Impossible de reconstruire l'instance {}"
 
-#: fleio/openstack/instances/views.py:844
+#: fleio/openstack/instances/views.py:862
 msgid "Instance rebuild started successfully"
 msgstr "La reconstruction de l'instance a démarré avec succès"
 
-#: fleio/openstack/instances/views.py:852
+#: fleio/openstack/instances/views.py:870
 msgid "Instance must be RUNNING or STOPPED in order to rescue"
 msgstr "L'instance doit être en MARCHE ou STOPPER pour pouvoir la sauver"
 
-#: fleio/openstack/instances/views.py:871
+#: fleio/openstack/instances/views.py:889
 #, python-format
 msgid "Unable to rescue instance %s"
 msgstr "Impossible de rétablir l'instance %s"
 
-#: fleio/openstack/instances/views.py:874
+#: fleio/openstack/instances/views.py:892
 msgid "Instance rescue started successfully"
 msgstr "Sauvetage de l'instance démarrer avec succès"
 
-#: fleio/openstack/instances/views.py:880
+#: fleio/openstack/instances/views.py:898
 msgid "Instance must be RUNNING or STOPPED in order to boot from ISO"
 msgstr ""
 "L'instance doit être MARCHE ou STOPPER pour pouvoir démarrer à partir d'ISO"
 
-#: fleio/openstack/instances/views.py:900
+#: fleio/openstack/instances/views.py:919
 #, python-format
 msgid "Unable to boot instance %s from ISO"
 msgstr "Impossible de démarrer l'instance %s depuis l'ISO"
 
-#: fleio/openstack/instances/views.py:902
+#: fleio/openstack/instances/views.py:921
 msgid "Instance boot form ISO started successfully"
 msgstr "Le démarrage de l'instance à partir de l'ISO a démarré avec succès"
 
-#: fleio/openstack/instances/views.py:911
+#: fleio/openstack/instances/views.py:930
 #, python-brace-format
 msgid "Unable exit rescue mode for instance {0}"
 msgstr "Impossible de quitter le mode de secours pour l'instance {0}"
 
-#: fleio/openstack/instances/views.py:913
+#: fleio/openstack/instances/views.py:932
 msgid "Leaving rescue mode"
 msgstr "Quitter le mode de secours"
 
-#: fleio/openstack/instances/views.py:922
+#: fleio/openstack/instances/views.py:941
 #, python-brace-format
 msgid "Unable to confirm the resize of instance {0}"
 msgstr "Impossible de confirmer le redimensionnement de l'instance {0}"
 
-#: fleio/openstack/instances/views.py:924
+#: fleio/openstack/instances/views.py:943
 msgid "Resize confirmed"
 msgstr "Redimensionnement confirmé"
 
-#: fleio/openstack/instances/views.py:933
+#: fleio/openstack/instances/views.py:952
 #, python-brace-format
 msgid "Unable to revert the resize of instance {0}"
 msgstr "Impossible de rétablir le redimensionnement de l'instance {0}"
 
-#: fleio/openstack/instances/views.py:935
+#: fleio/openstack/instances/views.py:954
 msgid "Reverting size"
 msgstr "Annuler le redimensionnement"
 
-#: fleio/openstack/instances/views.py:953
-#: fleiostaff/openstack/instances/views.py:352
+#: fleio/openstack/instances/views.py:972
+#: fleiostaff/openstack/instances/views.py:360
 #, python-format
 msgid "Unable to resize instance %s"
 msgstr "Impossible de redimensionner l'instance %s"
 
-#: fleio/openstack/instances/views.py:957
-#: fleiostaff/openstack/instances/views.py:356
+#: fleio/openstack/instances/views.py:976
+#: fleiostaff/openstack/instances/views.py:364
 msgid "Instance resize started successfully"
 msgstr "Le redimensionnement de l'instance a démarré avec succès"
 
-#: fleio/openstack/instances/views.py:971
+#: fleio/openstack/instances/views.py:990
 #, python-brace-format
 msgid "Unable to retrieve system log for instance {0}"
 msgstr "Impossible de récupérer le journal système pour l'instance {0}"
 
-#: fleio/openstack/instances/views.py:1054
+#: fleio/openstack/instances/views.py:1073
 #, python-brace-format
 msgid "LXC console is disabled. Unable to open console for instance {0}"
 msgstr ""
 "La console LXC est désactivée. Impossible d'ouvrir la console pour "
 "l'instance {0}"
 
-#: fleio/openstack/instances/views.py:1078
+#: fleio/openstack/instances/views.py:1097
 msgid "Unable to connect to VNC or Spice console for instance {}."
 msgstr ""
 "Impossible de se connecter à la console VNC ou Spice pour l'instance {}."
 
-#: fleio/openstack/instances/views.py:1093
+#: fleio/openstack/instances/views.py:1112
 #, python-brace-format
 msgid "Unable to reboot instance {0}"
 msgstr "Impossible de redémarrer l'instance {0}"
 
-#: fleio/openstack/instances/views.py:1106
+#: fleio/openstack/instances/views.py:1125
 #, python-brace-format
 msgid "Unable to rename instance {0}"
 msgstr "Impossible de renommer l'instance {0}"
 
-#: fleio/openstack/instances/views.py:1108
+#: fleio/openstack/instances/views.py:1127
 msgid "Renamed"
 msgstr "Renommé"
 
-#: fleio/openstack/instances/views.py:1160
-#: fleiostaff/openstack/instances/views.py:463
-#: fleiostaff/openstack/instances/views.py:472
+#: fleio/openstack/instances/views.py:1179
+#: fleiostaff/openstack/instances/views.py:471
+#: fleiostaff/openstack/instances/views.py:480
 #, python-brace-format
 msgid "Unable to create snapshot for instance {0}"
 msgstr "Impossible de créer un instantané pour l'instance {0}"
 
-#: fleio/openstack/instances/views.py:1198
+#: fleio/openstack/instances/views.py:1217
 #, python-brace-format
 msgid "Unable to get actions for instance {0}"
 msgstr "Impossible d'obtenir des actions pour l'instance {0}"
 
-#: fleio/openstack/instances/views.py:1218
+#: fleio/openstack/instances/views.py:1237
 msgid "Change instance password feature is disabled."
 msgstr ""
 "La fonctionnalité de modification du mot de passe de l'instance est "
 "désactivée."
 
-#: fleio/openstack/instances/views.py:1227
+#: fleio/openstack/instances/views.py:1246
 #, python-brace-format
 msgid "Unable to change password for instance {0}"
 msgstr "Impossible de changer le mot de passe de l'instance {0}"
 
-#: fleio/openstack/instances/views.py:1233
+#: fleio/openstack/instances/views.py:1252
 msgid "Changing password"
 msgstr "Changer le mot de passe"
 
-#: fleio/openstack/instances/views.py:1235
+#: fleio/openstack/instances/views.py:1254
 msgid "Can only change password for instance with status ACTIVE"
 msgstr "Ne peut changer le mot de passe de l'instance qu'avec le status ACTIVE"
 
-#: fleio/openstack/instances/views.py:1245
+#: fleio/openstack/instances/views.py:1264
 #, python-brace-format
 msgid "Unable to reset state of instance {0}"
 msgstr "Impossible de réinitialiser l'état de l'instance {0}"
 
-#: fleio/openstack/instances/views.py:1259
+#: fleio/openstack/instances/views.py:1278
 #, python-brace-format
 msgid "Unable to attach the volume {0}"
 msgstr "Impossible d'attacher un volume {0}"
 
-#: fleio/openstack/instances/views.py:1261
+#: fleio/openstack/instances/views.py:1280
 msgid "Volume attaching"
 msgstr "Attacher le volume"
 
-#: fleio/openstack/instances/views.py:1273
+#: fleio/openstack/instances/views.py:1292
 #, python-brace-format
 msgid "Unable to detach the volume {0}"
 msgstr "Impossible de détacher le volume {0}"
 
-#: fleio/openstack/instances/views.py:1275
+#: fleio/openstack/instances/views.py:1294
 msgid "Volume detaching"
 msgstr "Détachement du volume"
 
-#: fleio/openstack/instances/views.py:1289
+#: fleio/openstack/instances/views.py:1308
 #, python-brace-format
 msgid "Unable to add floating ip {ip} to instance {instance_name}"
 msgstr ""
 "Impossible d'ajouter une ip flottante {ip} pour l'instance {instance_name}"
 
-#: fleio/openstack/instances/views.py:1292
+#: fleio/openstack/instances/views.py:1311
 msgid "Floating ip associated"
 msgstr "Ip flottante associée"
 
-#: fleio/openstack/instances/views.py:1305
+#: fleio/openstack/instances/views.py:1324
 #, python-brace-format
 msgid "Unable to remove floating ip {ip} from instance {instance_name}"
 msgstr ""
 "Impossible de supprimer l'ip flottante {ip} de l'instance {instance_name}"
 
-#: fleio/openstack/instances/views.py:1308
+#: fleio/openstack/instances/views.py:1327
 msgid "Floating ip dissociated"
 msgstr "Ip flottante dissociée"
 
-#: fleio/openstack/instances/views.py:1326
+#: fleio/openstack/instances/views.py:1345
 msgid "No free ports available"
 msgstr "Aucun ports libres disponibles"
 
-#: fleio/openstack/instances/views.py:1328
+#: fleio/openstack/instances/views.py:1347
 msgid "No free floating IPs available"
 msgstr "Aucune IP flottantes disponibles"
 
-#: fleio/openstack/instances/views.py:1337
+#: fleio/openstack/instances/views.py:1356
 msgid "No ports are associated"
 msgstr "Aucun port n'est associé"
 
-#: fleio/openstack/instances/views.py:1397
+#: fleio/openstack/instances/views.py:1416
 #, python-brace-format
 msgid "Allow {ethertype} {proto_port} {direction} {remote}"
 msgstr "Autoriser {ethertype} {proto_port} {direction} {remote}"
 
-#: fleio/openstack/instances/views.py:1405
-#: fleio/openstack/instances/views.py:1441
-#: fleiostaff/openstack/instances/views.py:607
+#: fleio/openstack/instances/views.py:1424
+#: fleio/openstack/instances/views.py:1460
+#: fleiostaff/openstack/instances/views.py:615
 msgid "Parameter \"group\" required"
 msgstr "Paramètre \"groupe\" requis"
 
-#: fleio/openstack/instances/views.py:1412
-#: fleiostaff/openstack/instances/views.py:614
+#: fleio/openstack/instances/views.py:1431
+#: fleiostaff/openstack/instances/views.py:622
 #, python-brace-format
 msgid "Unable to associate security group {group} to instance {instance_name}"
 msgstr ""
 "Impossible d'associer le groupe de sécurité {group}à l'instance "
 "{instance_name}"
 
-#: fleio/openstack/instances/views.py:1415
-#: fleio/openstack/instances/views.py:1451
-#: fleiostaff/openstack/instances/views.py:617
+#: fleio/openstack/instances/views.py:1434
+#: fleio/openstack/instances/views.py:1470
+#: fleiostaff/openstack/instances/views.py:625
 msgid "Security group associated"
 msgstr "Groupe de sécurité associée"
 
-#: fleio/openstack/instances/views.py:1448
+#: fleio/openstack/instances/views.py:1467
 #, python-brace-format
 msgid "Unable to dissociate security group {group} to instance {instance_name}"
 msgstr ""
 "Impossible de dissocier un groupe de sécurité {group} de l'instance "
 "{instance_name}"
 
-#: fleio/openstack/instances/views.py:1456
-#: fleio/openstack/instances/views.py:1482
-#: fleiostaff/openstack/instances/views.py:622
-#: fleiostaff/openstack/instances/views.py:648
+#: fleio/openstack/instances/views.py:1475
+#: fleio/openstack/instances/views.py:1501
+#: fleiostaff/openstack/instances/views.py:630
+#: fleiostaff/openstack/instances/views.py:656
 msgid "Backup feature is disabled."
 msgstr "La fonctionnalité de sauvegarde est désactivée."
 
-#: fleio/openstack/instances/views.py:1471
-#: fleiostaff/openstack/instances/views.py:637
+#: fleio/openstack/instances/views.py:1490
+#: fleiostaff/openstack/instances/views.py:645
 msgid "Backup for instance {} was scheduled for creation"
 msgstr "La sauvegarde de l'instance {} était planifiée pour la création"
 
-#: fleio/openstack/instances/views.py:1476
-#: fleiostaff/openstack/instances/views.py:642
+#: fleio/openstack/instances/views.py:1495
+#: fleiostaff/openstack/instances/views.py:650
 #, python-brace-format
 msgid "Unable to create backup for instance {0}"
 msgstr "Impossible de créer une sauvegarde pour l'instance {0}"
+
+#: fleio/openstack/instances/views.py:1528
+#: fleio/openstack/instances/views.py:1549
+#: fleiostaff/openstack/instances/views.py:385
+#: fleiostaff/openstack/instances/views.py:401
+msgid "No networks found for project"
+msgstr "Aucun réseau trouvé pour le projet"
+
+#: fleio/openstack/instances/views.py:1530
+#: fleio/openstack/instances/views.py:1551
+#: fleiostaff/openstack/instances/views.py:387
+#: fleiostaff/openstack/instances/views.py:403
+msgid "Instance has no project"
+msgstr "L'instance n'a pas de projet"
+
+#: fleio/openstack/instances/views.py:1532
+#: fleiostaff/openstack/instances/views.py:405
+msgid "No ports found for instance"
+msgstr "Aucun port trouvé pour l'instance"
 
 #: fleio/openstack/models/cluster.py:67
 msgid "Create completed"
@@ -3820,40 +4090,82 @@ msgstr "rule_id est manquant"
 msgid "Rule delete scheduled"
 msgstr "Suppression de la règle en cours"
 
+#: fleio/openstack/ports/serializers.py:69
+#: fleiostaff/openstack/ports/serializers.py:71
+msgid "Invalid IP specified"
+msgstr "IP invalide spécifiée"
+
+#: fleio/openstack/ports/serializers.py:85
+#: fleiostaff/openstack/ports/serializers.py:87
+msgid "Either subnet or fixed_ips must be specified"
+msgstr "Le sous-réseau ou les IPs fixe doivent être spécifiés"
+
+#: fleio/openstack/ports/views.py:67 fleiostaff/openstack/ports/views.py:68
+msgid "Unable to create port"
+msgstr "Impossible de créer un port"
+
+#: fleio/openstack/ports/views.py:79 fleiostaff/openstack/ports/views.py:80
+msgid "Unable to update port"
+msgstr "Impossible de mettre à jour un port"
+
+#: fleio/openstack/ports/views.py:101 fleiostaff/openstack/ports/views.py:102
+msgid "Unable to add ip"
+msgstr "Impossible d'ajouter une Ip"
+
+#: fleio/openstack/ports/views.py:102 fleiostaff/openstack/ports/views.py:103
+msgid "IP added"
+msgstr "IP ajoutée"
+
+#: fleio/openstack/ports/views.py:126 fleiostaff/openstack/ports/views.py:127
+msgid "Unable to add IP(s)"
+msgstr "Impossible d'ajouter des adresses IPs"
+
+#: fleio/openstack/ports/views.py:127 fleiostaff/openstack/ports/views.py:128
+msgid "IP(s) added"
+msgstr "IPs ajoutées"
+
+#: fleio/openstack/ports/views.py:149 fleiostaff/openstack/ports/views.py:150
+msgid "Unable to remove ip"
+msgstr "Impossible de supprimer l'Ip"
+
+#: fleio/openstack/ports/views.py:150 fleiostaff/openstack/ports/views.py:151
+msgid "IP removed"
+msgstr "IP supprimé"
+
 #: fleio/openstack/serializers/metrics.py:13
 msgid "CPU Utilization"
 msgstr "Utilisation du CPU"
 
-#: fleio/openstack/tasks.py:679
+#: fleio/openstack/tasks.py:694
 msgid "Move instance: failed to stop source instance"
 msgstr "Déplacer l'instance: échec de l'arrêt de l'instance source"
 
-#: fleio/openstack/tasks.py:687 fleio/openstack/tasks.py:692
+#: fleio/openstack/tasks.py:702 fleio/openstack/tasks.py:707
 msgid "Move instance: failed to create source instance snapshot"
 msgstr ""
 "Déplacer l'instance: impossible de créer l'instantané de l'instance source"
 
-#: fleio/openstack/tasks.py:736 fleio/openstack/tasks.py:739
-#: fleio/openstack/tasks.py:742
+#: fleio/openstack/tasks.py:751 fleio/openstack/tasks.py:754
+#: fleio/openstack/tasks.py:757
 msgid "Move instance: failed to create instance from snapshot"
 msgstr ""
 "Déplacer l'instance: impossible de créer l'instance depuis l'instantané"
 
-#: fleio/openstack/tasks.py:769
+#: fleio/openstack/tasks.py:784
 msgid "MOVED"
 msgstr "DÉPLACÉ"
 
-#: fleio/openstack/tasks.py:784
+#: fleio/openstack/tasks.py:799
 msgid "Upload image failed "
 msgstr "Échec du téléchargement de l'image "
 
-#: fleio/openstack/tasks.py:841 fleio/openstack/tasks.py:844
-#: fleio/openstack/tasks.py:847
+#: fleio/openstack/tasks.py:856 fleio/openstack/tasks.py:859
+#: fleio/openstack/tasks.py:862
 msgid "Failed to create instance"
 msgstr "Impossible de créer une instance"
 
 #: fleio/openstack/users/views.py:59 fleio/openstack/users/views.py:69
-#: fleiostaff/openstack/core/views.py:136
+#: fleiostaff/openstack/core/views.py:132
 #: fleiostaff/openstack/summary_views.py:131
 #: fleiostaff/openstack/users/views.py:48
 #: fleiostaff/openstack/users/views.py:58
@@ -4040,34 +4352,34 @@ msgstr "Impossible de mettre à jour le snapshot de volume: {}"
 msgid "Unable to delete volume snapshot: {}"
 msgstr "Impossible de supprimer le snapshot de volume: {}"
 
-#: fleio/openstack/volumes/serializers.py:75
-#: fleiostaff/openstack/volumes/serializers.py:42
+#: fleio/openstack/volumes/serializers.py:81
+#: fleiostaff/openstack/volumes/serializers.py:48
 msgid "Empty volume"
 msgstr "Volume vide"
 
-#: fleio/openstack/volumes/serializers.py:115
-#: fleio/openstack/volumes/serializers.py:208
+#: fleio/openstack/volumes/serializers.py:117
+#: fleio/openstack/volumes/serializers.py:210
 msgid "Size must be a multiple of {}"
 msgstr "La taille doit être un multiple de {}"
 
-#: fleio/openstack/volumes/serializers.py:130
+#: fleio/openstack/volumes/serializers.py:132
 msgid "Unable to find a client for the current user"
 msgstr "Impossible de trouver un client pour l'utilisateur actuel"
 
-#: fleio/openstack/volumes/serializers.py:134
+#: fleio/openstack/volumes/serializers.py:136
 msgid "Cannot create volume without a project"
 msgstr "Impossible de créer un volume sans projet"
 
-#: fleio/openstack/volumes/serializers.py:147
-#: fleio/openstack/volumes/serializers.py:160
+#: fleio/openstack/volumes/serializers.py:149
+#: fleio/openstack/volumes/serializers.py:162
 msgid "Unable to find the instance"
 msgstr "Impossible de trouver l'instance"
 
-#: fleio/openstack/volumes/serializers.py:162
+#: fleio/openstack/volumes/serializers.py:164
 msgid "Unable to find the attachment"
 msgstr "Impossible de trouver la pièce jointe"
 
-#: fleio/openstack/volumes/serializers.py:194
+#: fleio/openstack/volumes/serializers.py:196
 msgid "Volumes cannot be shrinked, only extended"
 msgstr "Les volumes ne peuvent pas être réduits, seulement étendus"
 
@@ -4402,23 +4714,23 @@ msgstr ""
 msgid "No valid client was received"
 msgstr "Aucun client valide n'a été reçu"
 
-#: fleiostaff/billing/invoicing/views.py:124
+#: fleiostaff/billing/invoicing/views.py:128
 msgid "Payment added"
 msgstr "Paiement ajouté"
 
-#: fleiostaff/billing/invoicing/views.py:139
+#: fleiostaff/billing/invoicing/views.py:143
 msgid "Transaction not in a refundable state"
 msgstr "Transaction dans un état non remboursable"
 
-#: fleiostaff/billing/invoicing/views.py:163
+#: fleiostaff/billing/invoicing/views.py:167
 msgid "Payment refund initiated"
 msgstr "Remboursement du paiement lancé"
 
-#: fleiostaff/billing/invoicing/views.py:172
+#: fleiostaff/billing/invoicing/views.py:176
 msgid "Cannot delete invoice with associated transactions"
 msgstr "Impossible de supprimer une facture avec une transaction associée"
 
-#: fleiostaff/billing/invoicing/views.py:184
+#: fleiostaff/billing/invoicing/views.py:188
 msgid "Invoice deleted"
 msgstr "Facture supprimée"
 
@@ -4496,7 +4808,7 @@ msgstr "Remboursement du crédit via la passerelle"
 msgid "Auto settled usage from credit"
 msgstr "Utilisation réglée automatiquement à partir du crédit"
 
-#: fleiostaff/billing/orders/views.py:27
+#: fleiostaff/billing/orders/views.py:28
 #, python-brace-format
 msgid "Staff user {username} ({user_id}) accepted order ({object_id})."
 msgstr ""
@@ -4652,17 +4964,12 @@ msgstr ""
 "Impossible de supprimer la transaction remboursée, supprimez d'abord la "
 "transaction de remboursement"
 
-#: fleiostaff/billing/transactions/views.py:32
-#: fleiostaff/core/clients/views.py:443 fleiostaff/openstack/core/views.py:168
-msgid "Ok"
-msgstr "Ok"
-
 #: fleiostaff/conf/views.py:95 fleiostaff/conf/views.py:112
 #: fleiostaff/conf/views.py:131
 msgid "Settings updated"
 msgstr "Paramètres mis à jour"
 
-#: fleiostaff/core/clients/serializers.py:188
+#: fleiostaff/core/clients/serializers.py:210
 msgid "License client limit reached. Please check your license"
 msgstr "Limite de licence client atteinte. Veuillez vérifier votre licence"
 
@@ -4769,44 +5076,44 @@ msgstr ""
 "L'utilisateur du staff {username} ({user_id}) à envoyé un email de masse aux "
 "clients."
 
-#: fleiostaff/core/clients/views.py:220
+#: fleiostaff/core/clients/views.py:221
 msgid "Client already suspended"
 msgstr "Client déjà suspendu"
 
-#: fleiostaff/core/clients/views.py:232
+#: fleiostaff/core/clients/views.py:233
 msgid "Suspend scheduled"
 msgstr "Suspension en cours"
 
-#: fleiostaff/core/clients/views.py:241
+#: fleiostaff/core/clients/views.py:242
 msgid "Client is not suspended"
 msgstr "Le client n'est pas suspendu"
 
-#: fleiostaff/core/clients/views.py:252
+#: fleiostaff/core/clients/views.py:253
 msgid "Resume scheduled"
 msgstr "Reprise en cours"
 
-#: fleiostaff/core/clients/views.py:302 fleiostaff/core/clients/views.py:310
+#: fleiostaff/core/clients/views.py:303 fleiostaff/core/clients/views.py:311
 msgid "Usage updated"
 msgstr "Usage mis à jour"
 
-#: fleiostaff/core/clients/views.py:351
+#: fleiostaff/core/clients/views.py:352
 msgid "Client delete scheduled"
 msgstr "Suppression du client en cours"
 
-#: fleiostaff/core/clients/views.py:363 fleiostaff/core/clients/views.py:392
+#: fleiostaff/core/clients/views.py:364 fleiostaff/core/clients/views.py:393
 msgid "User not found"
 msgstr "Utilisateur introuvable"
 
-#: fleiostaff/core/clients/views.py:365
+#: fleiostaff/core/clients/views.py:366
 msgid "User associated"
 msgstr "Utilisateur associé"
 
-#: fleiostaff/core/clients/views.py:371
+#: fleiostaff/core/clients/views.py:372
 #: fleiostaff/core/frontend_customization/index_manager.py:119
 #: fleiostaff/core/frontend_customization/views.py:29
 #: fleiostaff/core/frontend_customization/views.py:90
 #: fleiostaff/core/users/views.py:85 fleiostaff/core/users/views.py:93
-#: fleiostaff/core/users/views.py:163 fleiostaff/core/views.py:366
+#: fleiostaff/core/users/views.py:170 fleiostaff/core/views.py:375
 #: fleiostaff/openstack/flavors/views.py:125
 #: fleiostaff/openstack/images/views.py:133
 #: fleiostaff/openstack/projects/views.py:115
@@ -4814,40 +5121,40 @@ msgstr "Utilisateur associé"
 msgid "Operation not allowed in demo mode"
 msgstr "Opération non autorisée en mode démo"
 
-#: fleiostaff/core/clients/views.py:394
+#: fleiostaff/core/clients/views.py:395
 msgid "User dissociated"
 msgstr "Utilisateur dissocié"
 
-#: fleiostaff/core/clients/views.py:438
+#: fleiostaff/core/clients/views.py:439
 msgid "Configuration does not exist"
 msgstr "La configuration n'existe pas"
 
-#: fleiostaff/core/clients/views.py:510
+#: fleiostaff/core/clients/views.py:511
 msgid "Cannot update os plan because openstack plans feature is disabled"
 msgstr ""
 "Impossible de mettre à jour le plan d'exploitation, car la fonctionnalité "
 "des plans openstack est désactivée"
 
-#: fleiostaff/core/clients/views.py:513
+#: fleiostaff/core/clients/views.py:514
 msgid "Client does not have an OpenStack project or pricing plan"
 msgstr "Le client n'a pas de projet OpenStack ni de plan tarifaire"
 
-#: fleiostaff/core/clients/views.py:516
+#: fleiostaff/core/clients/views.py:517
 msgid "An OpenStack pricing plan is required"
 msgstr "Un plan tarifaire OpenStack est requis"
 
-#: fleiostaff/core/clients/views.py:521
+#: fleiostaff/core/clients/views.py:522
 msgid "Pricing plan does not exist"
 msgstr "Le plan tarifaire n'existe pas"
 
-#: fleiostaff/core/clients/views.py:532 fleiostaff/core/clients/views.py:548
+#: fleiostaff/core/clients/views.py:533 fleiostaff/core/clients/views.py:549
 msgid "Missing group id to filter clients against it"
 msgstr ""
 "Identifiant de groupe manquant pour filtrer les clients par rapport à celui-"
 "ci"
 
-#: fleiostaff/core/clients/views.py:536 fleiostaff/core/clients/views.py:552
-#: fleiostaff/core/users/views.py:311 fleiostaff/core/users/views.py:334
+#: fleiostaff/core/clients/views.py:537 fleiostaff/core/clients/views.py:553
+#: fleiostaff/core/users/views.py:318 fleiostaff/core/users/views.py:341
 #: fleiostaff/openstack/flavors/views.py:175
 #: fleiostaff/openstack/flavors/views.py:191
 #: fleiostaff/openstack/flavors/views.py:214
@@ -4855,25 +5162,25 @@ msgstr ""
 msgid "No group to filter against"
 msgstr "Aucun groupe à filtrer"
 
-#: fleiostaff/core/clients/views.py:571 fleiostaff/core/clients/views.py:589
-#: fleiostaff/core/users/views.py:353 fleiostaff/core/users/views.py:371
+#: fleiostaff/core/clients/views.py:572 fleiostaff/core/clients/views.py:590
+#: fleiostaff/core/users/views.py:360 fleiostaff/core/users/views.py:378
 msgid "Missing group id"
 msgstr "Id de groupe manquant"
 
-#: fleiostaff/core/clients/views.py:575 fleiostaff/core/clients/views.py:593
-#: fleiostaff/core/users/views.py:357 fleiostaff/core/users/views.py:375
+#: fleiostaff/core/clients/views.py:576 fleiostaff/core/clients/views.py:594
+#: fleiostaff/core/users/views.py:364 fleiostaff/core/users/views.py:382
 msgid "No group with the provided id found"
 msgstr "Aucun groupe avec l'identifiant fourni trouvé"
 
-#: fleiostaff/core/clients/views.py:579
+#: fleiostaff/core/clients/views.py:580
 msgid "Client added to group"
 msgstr "Client ajouté au groupe"
 
-#: fleiostaff/core/clients/views.py:597
+#: fleiostaff/core/clients/views.py:598
 msgid "Client removed from group"
 msgstr "Client retiré du groupe"
 
-#: fleiostaff/core/clients/views.py:635
+#: fleiostaff/core/clients/views.py:637
 msgid "Mass email scheduled"
 msgstr "Email de masse planifié"
 
@@ -4904,7 +5211,7 @@ msgstr ""
 "Impossible d'extraire le fichier zip. Veuillez autoriser l'accès en écriture "
 "et réactiver la licence."
 
-#: fleiostaff/core/middleware/check_license.py:27 fleiostaff/core/views.py:94
+#: fleiostaff/core/middleware/check_license.py:27 fleiostaff/core/views.py:95
 msgid "License not found"
 msgstr "Licence introuvable"
 
@@ -5028,27 +5335,29 @@ msgstr ""
 
 #: fleiostaff/core/notifications/views.py:93
 msgid ""
-"This notification might be sent when an openstack operation fails. Check the "
-"docs to find out how to configure these kind of notifications (configure "
-"what errors to send and to whom)."
+"This notification will be sent to staff users when a new order is placed by "
+"a client."
 msgstr ""
-"Cette notification peut être envoyée en cas d'échec d'une opération "
-"openstack. Consultez la documentation pour savoir comment configurer ce type "
-"de notifications (configurez les erreurs à envoyer et à qui)."
 
-#: fleiostaff/core/notifications/views.py:137
+#: fleiostaff/core/notifications/views.py:100
+msgid ""
+"This notification will be sent to staff users when a new payment is made by "
+"a client."
+msgstr ""
+
+#: fleiostaff/core/notifications/views.py:145
 msgid "Duplicate entry. A template in this language already exists."
 msgstr "Double entrée. Un modèle dans cette langue existe déjà."
 
-#: fleiostaff/core/notifications/views.py:176
+#: fleiostaff/core/notifications/views.py:184
 msgid "Cannot delete the default notification template."
 msgstr "Impossible de supprimer le modèle de notification par défaut."
 
-#: fleiostaff/core/notifications/views.py:180
+#: fleiostaff/core/notifications/views.py:188
 msgid "Cannot delete the last notification template of this kind."
 msgstr "Impossible de supprimer le dernier modèle de notification de ce type."
 
-#: fleiostaff/core/notifications/views.py:204
+#: fleiostaff/core/notifications/views.py:212
 msgid "Template does not exist."
 msgstr "Le modèle n'existe pas."
 
@@ -5104,7 +5413,7 @@ msgstr ""
 "Jeu d'autorisations {} pour le groupe d'utilisateurs {} créé et mis à jour "
 "avec succès."
 
-#: fleiostaff/core/usergroups/views.py:130 fleiostaff/core/users/views.py:232
+#: fleiostaff/core/usergroups/views.py:130 fleiostaff/core/users/views.py:239
 msgid "Invalid data provided"
 msgstr "Données non valides fournies"
 
@@ -5138,71 +5447,73 @@ msgstr "Jeton associé à l'utilisateur: {0} ({1}) supprimé."
 msgid "Cannot remove own superuser status"
 msgstr "Impossible de supprimer son propre statut de superutilisateur"
 
-#: fleiostaff/core/users/views.py:169
+#: fleiostaff/core/users/views.py:129
+msgid ""
+"Cannot have a staff user with clients associated. Dissociate all clients and "
+"try again."
+msgstr ""
+
+#: fleiostaff/core/users/views.py:176
 msgid "Cannot delete the user you are logged in with."
 msgstr "Impossible de supprimer l'utilisateur avec lequel vous êtes connecté."
 
-#: fleiostaff/core/users/views.py:186
+#: fleiostaff/core/users/views.py:193
 msgid "User {} impersonated"
 msgstr "Utilisateur {} incarné"
 
-#: fleiostaff/core/users/views.py:192
+#: fleiostaff/core/users/views.py:199
 msgid "User is no longer impersonated"
 msgstr "L'utilisateur n'est plus incarné"
 
-#: fleiostaff/core/users/views.py:195
+#: fleiostaff/core/users/views.py:202
 msgid "No user is impersonated"
 msgstr "Aucun utilisateur n'est incarné"
 
-#: fleiostaff/core/users/views.py:225
+#: fleiostaff/core/users/views.py:232
 msgid "Permission set {} for user {} created and updated successfully."
 msgstr ""
 "Jeu d'autorisations {} pour l'utilisateur {} créé et mis à jour avec succès."
 
-#: fleiostaff/core/users/views.py:234
+#: fleiostaff/core/users/views.py:241
 msgid "User already has a permission set assigned"
 msgstr "Un jeu d'autorisations est déjà attribué à l'utilisateur"
 
-#: fleiostaff/core/users/views.py:244 fleiostaff/core/users/views.py:251
+#: fleiostaff/core/users/views.py:251 fleiostaff/core/users/views.py:258
 msgid "Effective permissions fetched successfully"
 msgstr "Autorisations effectives récupérées avec succès"
 
-#: fleiostaff/core/users/views.py:307 fleiostaff/core/users/views.py:330
+#: fleiostaff/core/users/views.py:314 fleiostaff/core/users/views.py:337
 msgid "Missing group id to filter users against it"
 msgstr "Id de groupe manquant pour filtrer les utilisateurs en fonction"
 
-#: fleiostaff/core/users/views.py:340
+#: fleiostaff/core/users/views.py:347
 msgid "Invalid page"
 msgstr "Invalid page"
 
-#: fleiostaff/core/users/views.py:363 fleiostaff/core/users/views.py:381
+#: fleiostaff/core/users/views.py:370 fleiostaff/core/users/views.py:388
 msgid "Successfully added user to group"
 msgstr "Utilisateur ajouté au groupe avec succès"
 
-#: fleiostaff/core/views.py:63
+#: fleiostaff/core/views.py:64
 msgid "License key cannot be changed in demo mode"
 msgstr "La clé de licence ne peut pas être modifiée en mode démo"
 
-#: fleiostaff/core/views.py:82 fleiostaff/core/views.py:101
+#: fleiostaff/core/views.py:83 fleiostaff/core/views.py:102
 msgid ""
 "Can't connect to server. Please check your internet connection and retry."
 msgstr ""
 "Impossible de se connecter au serveur. Veuillez vérifier votre connexion "
 "Internet et réessayer."
 
-#: fleiostaff/core/views.py:201
-msgid "Incorrect user name or password"
-msgstr "Identifiant ou mot de passe incorrect"
-
-#: fleiostaff/core/views.py:300
+#: fleiostaff/core/views.py:309
 msgid "euid required"
 msgstr "euid requis"
 
-#: fleiostaff/core/views.py:305
+#: fleiostaff/core/views.py:314
 msgid "User does not exist"
 msgstr "L'utilisateur n'existe pas"
 
-#: fleiostaff/core/views.py:413
+#: fleiostaff/core/views.py:422
 msgid "Currency cannot be deleted because it is used by other objects"
 msgstr ""
 "La devise ne peut pas être supprimée car elle est utilisée par d'autres "
@@ -5218,20 +5529,20 @@ msgstr ""
 "Si vous voulez obtenir un certificat pour le cluster, incarnez le "
 "propriétaire."
 
-#: fleiostaff/openstack/core/views.py:95
+#: fleiostaff/openstack/core/views.py:91
 msgid "Client has already a project"
 msgstr "Le client a déjà un projet"
 
-#: fleiostaff/openstack/core/views.py:100
+#: fleiostaff/openstack/core/views.py:96
 msgid "Project already associated with a client"
 msgstr "Projet déjà associé à un client"
 
-#: fleiostaff/openstack/core/views.py:114
+#: fleiostaff/openstack/core/views.py:110
 msgid "A project already exists for this client"
 msgstr "Un projet existe déjà pour ce client"
 
-#: fleiostaff/openstack/core/views.py:120
-#: fleiostaff/openstack/core/views.py:157
+#: fleiostaff/openstack/core/views.py:116
+#: fleiostaff/openstack/core/views.py:153
 msgid ""
 "Role \"{}\" does not exist in OpenStack. Set an existing role as default "
 "role."
@@ -5239,8 +5550,8 @@ msgstr ""
 "Le rôle \"{}\" n'existe pas dans OpenStack. Définir un rôle existant en tant "
 "que rôle par défaut."
 
-#: fleiostaff/openstack/core/views.py:123
-#: fleiostaff/openstack/core/views.py:160
+#: fleiostaff/openstack/core/views.py:119
+#: fleiostaff/openstack/core/views.py:156
 msgid ""
 "OpenStack role was not set in OpenStack settings -> defaults tab. Set an "
 "existing role as default role."
@@ -5248,7 +5559,7 @@ msgstr ""
 "Le rôle OpenStack n'a pas été défini dans les paramètres OpenStack -> onglet "
 "par défaut. Définir un rôle existant en tant que rôle par défaut."
 
-#: fleiostaff/openstack/core/views.py:134
+#: fleiostaff/openstack/core/views.py:130
 msgid "Project not found"
 msgstr "Projet non trouvé"
 
@@ -5458,7 +5769,7 @@ msgid "Client ID required"
 msgstr "Identifiant client requis"
 
 #: fleiostaff/openstack/images/views.py:191
-#: fleiostaff/openstack/volumes/serializers.py:91
+#: fleiostaff/openstack/volumes/serializers.py:93
 msgid "Client does not exist"
 msgstr "Le client n'existe pas"
 
@@ -5486,18 +5797,24 @@ msgstr "Le client {} n'existe pas"
 msgid "Unable to boot: {}"
 msgstr "Impossible de démarrer: {}"
 
-#: fleiostaff/openstack/instances/serializers.py:230
+#: fleiostaff/openstack/instances/serializers.py:233
 msgid "Volume not available"
 msgstr "Volume non disponible"
 
-#: fleiostaff/openstack/instances/views.py:77
+#: fleiostaff/openstack/instances/serializers.py:235
+#, fuzzy
+#| msgid "Volume not available"
+msgid "Volume snapshot not available"
+msgstr "Volume non disponible"
+
+#: fleiostaff/openstack/instances/views.py:78
 #, python-brace-format
 msgid "Staff user {username} ({user_id}) moved instance ({object_id})."
 msgstr ""
 "L'utilisateur du staff {username} ({user_id}) a déplacé l'instance "
 "({object_id})."
 
-#: fleiostaff/openstack/instances/views.py:257
+#: fleiostaff/openstack/instances/views.py:258
 msgid ""
 "Project id for client does not exist, or does not have the permission for "
 "the operation"
@@ -5505,89 +5822,75 @@ msgstr ""
 "L'ID de projet pour le client n'existe pas ou ne dispose pas de "
 "l'autorisation pour l'opération"
 
-#: fleiostaff/openstack/instances/views.py:287
+#: fleiostaff/openstack/instances/views.py:295
 msgid "Lock sent"
 msgstr "Verrouillage envoyé"
 
-#: fleiostaff/openstack/instances/views.py:301
+#: fleiostaff/openstack/instances/views.py:309
 msgid "Unlock sent"
 msgstr "Déverrouillage envoyé"
 
-#: fleiostaff/openstack/instances/views.py:310
+#: fleiostaff/openstack/instances/views.py:318
 msgid "Suspend sent"
 msgstr "Suspendre envoyé"
 
-#: fleiostaff/openstack/instances/views.py:319
+#: fleiostaff/openstack/instances/views.py:327
 msgid "Resume sent"
 msgstr "Reprise envoyé"
 
-#: fleiostaff/openstack/instances/views.py:377
-#: fleiostaff/openstack/instances/views.py:393
-msgid "No networks found for project"
-msgstr "Aucun réseau trouvé pour le projet"
-
-#: fleiostaff/openstack/instances/views.py:379
-#: fleiostaff/openstack/instances/views.py:395
-msgid "Instance has no project"
-msgstr "L'instance n'a pas de projet"
-
-#: fleiostaff/openstack/instances/views.py:397
-msgid "No ports found for instance"
-msgstr "Aucun port trouvé pour l'instance"
-
-#: fleiostaff/openstack/instances/views.py:409
+#: fleiostaff/openstack/instances/views.py:417
 msgid "Instance does not exist in OpenStack anymore."
 msgstr "L'instance n'existe plus dans OpenStack."
 
-#: fleiostaff/openstack/instances/views.py:413
+#: fleiostaff/openstack/instances/views.py:421
 msgid "Can not get current hypervisor"
 msgstr "Impossible d'obtenir l'hyperviseur actuel"
 
-#: fleiostaff/openstack/instances/views.py:437
+#: fleiostaff/openstack/instances/views.py:445
 msgid "Can not migrate instance."
 msgstr "Impossible de migrer l'instance."
 
-#: fleiostaff/openstack/instances/views.py:438
+#: fleiostaff/openstack/instances/views.py:446
 msgid "Migrate in progress"
 msgstr "Migration en cours"
 
-#: fleiostaff/openstack/instances/views.py:450
+#: fleiostaff/openstack/instances/views.py:458
 msgid "Instance is not related to any project. Aborting."
 msgstr "L'instance n'est liée à aucun projet. Abandonner."
 
-#: fleiostaff/openstack/instances/views.py:478
+#: fleiostaff/openstack/instances/views.py:486
 msgid "Instance already belongs to selected client"
 msgstr "L'instance appartient déjà au client sélectionné"
 
-#: fleiostaff/openstack/instances/views.py:487
+#: fleiostaff/openstack/instances/views.py:495
 msgid "Moving LXD or Ironic instances is not supported"
 msgstr "Le déplacement d'instances LXC ou Ironic n'est pas pris en charge"
 
-#: fleiostaff/openstack/instances/views.py:490
+#: fleiostaff/openstack/instances/views.py:498
 msgid "Instance is in error state"
 msgstr "L'instance est en statut erreur"
 
-#: fleiostaff/openstack/instances/views.py:493
+#: fleiostaff/openstack/instances/views.py:501
 msgid "Instance has volumes attached"
 msgstr "L'instance a des volumes attachés"
 
-#: fleiostaff/openstack/instances/views.py:514
+#: fleiostaff/openstack/instances/views.py:522
 msgid "Cannot move instance."
 msgstr "Impossible de déplacer l'instance."
 
-#: fleiostaff/openstack/instances/views.py:515
+#: fleiostaff/openstack/instances/views.py:523
 msgid "Move in progress"
 msgstr "Déplacement en cours"
 
-#: fleiostaff/openstack/instances/views.py:524
+#: fleiostaff/openstack/instances/views.py:532
 msgid "Can not abort migrate."
 msgstr "Impossible d'abandonner la migration."
 
-#: fleiostaff/openstack/instances/views.py:525
+#: fleiostaff/openstack/instances/views.py:533
 msgid "Abort migrate in progress"
 msgstr "Abandon de la migration en cours"
 
-#: fleiostaff/openstack/instances/views.py:562
+#: fleiostaff/openstack/instances/views.py:570
 msgid "No data available yet, please wait a few more minutes"
 msgstr ""
 "Aucune donnée disponible pour l'instant, veuillez patienter quelques minutes"
@@ -5644,46 +5947,6 @@ msgstr "Objet dans fleio mais pas dans openstack"
 #: fleiostaff/openstack/networks/views.py:135
 msgid "Must be called with region parameter"
 msgstr "Doit être appelé avec le paramètre region"
-
-#: fleiostaff/openstack/ports/serializers.py:71
-msgid "Invalid IP specified"
-msgstr "IP invalide spécifiée"
-
-#: fleiostaff/openstack/ports/serializers.py:87
-msgid "Either subnet or fixed_ips must be specified"
-msgstr "Le sous-réseau ou les IPs fixe doivent être spécifiés"
-
-#: fleiostaff/openstack/ports/views.py:68
-msgid "Unable to create port"
-msgstr "Impossible de créer un port"
-
-#: fleiostaff/openstack/ports/views.py:80
-msgid "Unable to update port"
-msgstr "Impossible de mettre à jour un port"
-
-#: fleiostaff/openstack/ports/views.py:102
-msgid "Unable to add ip"
-msgstr "Impossible d'ajouter une Ip"
-
-#: fleiostaff/openstack/ports/views.py:103
-msgid "IP added"
-msgstr "IP ajoutée"
-
-#: fleiostaff/openstack/ports/views.py:127
-msgid "Unable to add IP(s)"
-msgstr "Impossible d'ajouter des adresses IPs"
-
-#: fleiostaff/openstack/ports/views.py:128
-msgid "IP(s) added"
-msgstr "IPs ajoutées"
-
-#: fleiostaff/openstack/ports/views.py:150
-msgid "Unable to remove ip"
-msgstr "Impossible de supprimer l'Ip"
-
-#: fleiostaff/openstack/ports/views.py:151
-msgid "IP removed"
-msgstr "IP supprimé"
 
 #: fleiostaff/openstack/projects/views.py:45
 #, python-brace-format
@@ -5816,7 +6079,7 @@ msgid "Unable to update subnet pool"
 msgstr "Impossible de mettre à jour un pool de sous-réseau"
 
 #: fleiostaff/openstack/subnets/serializers.py:57
-#: fleiostaff/openstack/subnets/serializers.py:149
+#: fleiostaff/openstack/subnets/serializers.py:150
 msgid ""
 "Format: [{\"start\":\"ip1\", \"end\":\"ip2\"}, {\"start\":\"ip3\", \"end\":"
 "\"ip4\"}] is required"
@@ -5825,12 +6088,12 @@ msgstr ""
 "\"ip4\"}] est requis"
 
 #: fleiostaff/openstack/subnets/serializers.py:69
-#: fleiostaff/openstack/subnets/serializers.py:158
+#: fleiostaff/openstack/subnets/serializers.py:159
 msgid "Format: [{\"ip\":\"ip1\"}, {\"ip\":\"ip2\"}] is required"
 msgstr "Format: [{\"ip\":\"ip1\"}, {\"ip\":\"ip2\"}] est requis"
 
 #: fleiostaff/openstack/subnets/serializers.py:81
-#: fleiostaff/openstack/subnets/serializers.py:171
+#: fleiostaff/openstack/subnets/serializers.py:172
 msgid ""
 "Format: [{\"destination\":\"CIDR1\", \"nexthop\":\"IP1\"}, {\"destination\":"
 "\"CIDR2\", \"nexthop\":\"IP2\"}] is required"
@@ -5945,11 +6208,11 @@ msgstr ""
 msgid "The volume is in the admin project. No client found."
 msgstr "Le volume est dans le projet admin. Aucun client trouvé."
 
-#: fleiostaff/openstack/volumes/serializers.py:83
+#: fleiostaff/openstack/volumes/serializers.py:85
 msgid "Size must be a multiple of {} GB"
 msgstr "La taille doit être un multiple de {} GB"
 
-#: fleiostaff/openstack/volumes/serializers.py:104
+#: fleiostaff/openstack/volumes/serializers.py:106
 msgid "Unable to find a project for the specified client"
 msgstr "Impossible de trouver un projet pour le client spécifié"
 
@@ -6046,54 +6309,58 @@ msgid "Outgoing traffic"
 msgstr "Trafic sortant"
 
 #: fleiostaff/osbilling/metrics_display_information.py:33
+#: fleiostaff/osbilling/metrics_display_information.py:37
 msgid "API request"
 msgstr "Demande d'API"
 
 #: fleiostaff/osbilling/metrics_display_information.py:34
+#: fleiostaff/osbilling/metrics_display_information.py:38
 msgid "Objects"
 msgstr "Objets"
 
 #: fleiostaff/osbilling/metrics_display_information.py:35
+#: fleiostaff/osbilling/metrics_display_information.py:39
 msgid "Object size in GB"
 msgstr "Taille de l'objet en GB"
 
 #: fleiostaff/osbilling/metrics_display_information.py:36
+#: fleiostaff/osbilling/metrics_display_information.py:40
 msgid "Containers"
 msgstr "Conteneurs"
 
-#: fleiostaff/osbilling/metrics_display_information.py:37
+#: fleiostaff/osbilling/metrics_display_information.py:41
 msgid "Project traffic"
 msgstr "Trafic du projet"
 
-#: fleiostaff/osbilling/metrics_display_information.py:38
+#: fleiostaff/osbilling/metrics_display_information.py:42
 msgid "Floating IPs"
 msgstr "IPs flottantes"
 
-#: fleiostaff/osbilling/metrics_display_information.py:39
+#: fleiostaff/osbilling/metrics_display_information.py:43
 msgid "Incoming public traffic"
 msgstr "Trafic public entrant"
 
-#: fleiostaff/osbilling/metrics_display_information.py:40
+#: fleiostaff/osbilling/metrics_display_information.py:44
 msgid "Incoming private traffic"
 msgstr "Trafic privé entrant"
 
-#: fleiostaff/osbilling/metrics_display_information.py:41
+#: fleiostaff/osbilling/metrics_display_information.py:45
 msgid "Outgoing public traffic"
 msgstr "Trafic public sortant"
 
-#: fleiostaff/osbilling/metrics_display_information.py:42
+#: fleiostaff/osbilling/metrics_display_information.py:46
 msgid "Outgoing private traffic"
 msgstr "Trafic privé sortant"
 
-#: fleiostaff/osbilling/metrics_display_information.py:43
+#: fleiostaff/osbilling/metrics_display_information.py:47
 msgid "Total public traffic"
 msgstr "Trafic public total"
 
-#: fleiostaff/osbilling/metrics_display_information.py:44
+#: fleiostaff/osbilling/metrics_display_information.py:48
 msgid "Total private traffic"
 msgstr "Trafic privé total"
 
-#: fleiostaff/osbilling/metrics_display_information.py:45
+#: fleiostaff/osbilling/metrics_display_information.py:49
 msgid "Total traffic"
 msgstr "Trafic total"
 
@@ -6117,7 +6384,7 @@ msgstr "Plusieurs valeurs de"
 msgid "Same attribute not allowed in modifiers and conditions: {}"
 msgstr "Même attribut non autorisé dans les modificateurs et conditions: {}"
 
-#: fleiostaff/osbilling/views.py:70
+#: fleiostaff/osbilling/views.py:71
 #, python-brace-format
 msgid ""
 "Plan {old_plan} deleted and {client_count} clients migrated to plan "
@@ -6126,9 +6393,31 @@ msgstr ""
 "Le plan {old_plan} a été supprimé et le client {client_count} a été migré "
 "vers le plan {new_plan}"
 
-#: fleiostaff/osbilling/views.py:85
+#: fleiostaff/osbilling/views.py:86
 msgid "There must be a default billing plan"
 msgstr "Il doit y avoir un plan de facturation par défaut"
+
+#: fleiostaff/osbilling/views.py:285
+#, fuzzy
+#| msgid "Client billing information is required to fulfill the request"
+msgid "Client external billing id is required to fulfill this request."
+msgstr ""
+"Les informations de facturation du client sont nécessaires pour répondre à "
+"la demande"
+
+#: fleiostaff/osbilling/views.py:289
+msgid "Could not find client related to given external billing id."
+msgstr ""
+
+#: fleiostaff/osbilling/views.py:293 fleiostaff/osbilling/views.py:296
+#, fuzzy
+#| msgid "Project already associated with a client"
+msgid "No client billing associated with this client"
+msgstr "Projet déjà associé à un client"
+
+#: fleiostaff/osbilling/views.py:304
+msgid "Successfully marked client {} billing histories states as invoiced."
+msgstr ""
 
 #: fleiostaff/tasklog/views.py:36
 msgid "Task recreated"
@@ -6138,11 +6427,19 @@ msgstr "Tâche recréée"
 msgid "CPanel Manage2"
 msgstr "CPanel Manage2"
 
+#: plugins/cpanel/manage2.py:30
+msgid "CPanel manage2 product is not properly configured."
+msgstr ""
+
 #: plugins/cpanelserver/apps.py:25
 msgid "cPanel server"
 msgstr "cPanel serveur"
 
-#: plugins/cpanelserver/billingmodule.py:65
+#: plugins/cpanelserver/billingmodule.py:52
+msgid "CPanel server product is not properly configured."
+msgstr ""
+
+#: plugins/cpanelserver/billingmodule.py:77
 msgid "{} hosting"
 msgstr "{} hébergement"
 
@@ -7328,6 +7625,15 @@ msgstr "Un TODO assigné à vous a été changé"
 #: plugins/todo/tasks.py:55
 msgid "The TODO {} assigned to you has been changed"
 msgstr "Le TODO {} assigné à vous a été changé"
+
+#~ msgid ""
+#~ "This notification might be sent when an openstack operation fails. Check "
+#~ "the docs to find out how to configure these kind of notifications "
+#~ "(configure what errors to send and to whom)."
+#~ msgstr ""
+#~ "Cette notification peut être envoyée en cas d'échec d'une opération "
+#~ "openstack. Consultez la documentation pour savoir comment configurer ce "
+#~ "type de notifications (configurez les erreurs à envoyer et à qui)."
 
 #~ msgid "Invoice {}"
 #~ msgstr "Facture {}"
