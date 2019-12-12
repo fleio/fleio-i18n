@@ -4,13 +4,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:18
+msgid "#{{ $ctrl.ticket.id }} - {{ $ctrl.ticket.title }}"
+msgstr ""
+
 #: staff/apps/osbilling/plans/flbillingplandetails.html:78
 msgid "(Tiered)"
 msgstr ""
 
+#: domains/staff/frontend/components/pricing_cycles/pricingcycles.html:5
 #: staff/apps/clientgroups/flclientgroups.html:59
 #: staff/apps/osflavorgroups/flflavorgroups.html:59
-#: staff/apps/settings/configurations/configurations.html:71
+#: staff/apps/settings/configurations/configurations.html:72
 msgid "(default)"
 msgstr ""
 
@@ -32,6 +37,15 @@ msgstr[1] ""
 msgid "+others"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:273
+msgid ""
+"- Last edited by\n"
+"                                        <a class=\"md-primary\" ui-sref=\"user({id: item.last_edited_by.id})\">\n"
+"                                        {{item.last_edited_by.full_name}}\n"
+"                                        </a>\n"
+"                                        on {{item.last_edited | date:'medium'}}"
+msgstr ""
+
 #: staff/apps/clientgroups/flclientgroups.html:16
 msgid "1 client in this group"
 msgid_plural "{{clientgroup.client_count}} clients in this group"
@@ -50,14 +64,14 @@ msgid_plural "{{flavorgroup.flavor_count}} flavors in this group"
 msgstr[0] ""
 msgstr[1] ""
 
-#: staff/apps/osbilling/plans/flbillingplans.html:21
-#: staff/apps/osbilling/plans/flbillingplans.html:93
+#: staff/apps/osbilling/plans/flbillingplans.html:26
+#: staff/apps/osbilling/plans/flbillingplans.html:98
 msgid "1 pricing rule"
 msgid_plural "{{plan.pricing_rules.length}} pricing rules"
 msgstr[0] ""
 msgstr[1] ""
 
-#: staff/apps/osbilling/plans/flbillingplans.html:26
+#: staff/apps/osbilling/plans/flbillingplans.html:31
 msgid "1 service on this plan"
 msgid_plural "{{plan.services_count}} services on this plan"
 msgstr[0] ""
@@ -102,11 +116,54 @@ msgstr ""
 msgid "7 days"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:39
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:104
+msgid ""
+"<b>Control panel:</b> you need to add a configurable option with the internal name of\n"
+"                'hypanel_control_panel'. Use a dropdown with 2 option values: either 'cpanel' or 'directadmin'."
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:106
+msgid "<b>Disk size:</b> value is expressed in GB."
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:98
+msgid "<b>Hypanel server:</b> the server where Hypanel api is located. You can add the server <a ui-sref=\"serverCreate()\" class=\"md-primary\">here</a>"
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:100
+msgid ""
+"<b>IP count:</b> set a default value here. It is possible to add a configurable option so users\n"
+"                can change this value, make sure the configurable option internal name is 'hypanel_ip_count'."
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:109
+msgid "<b>Machine type:</b> defaults to 'openvz'. You should leave the default value."
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:108
+msgid "<b>Memory:</b> value is expressed in MB."
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:102
+msgid ""
+"<b>OS:</b> you need to add a configurable option with the internal name of 'hypanel_os'. Use\n"
+"                the 'name' field from the OpenVZ Templates as input options."
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:107
+msgid "<b>Traffic:</b> value is expressed in GB."
+msgstr ""
+
+#: staff/apps/users/fluserdetails.html:45
 msgid ""
 "<b>{{ $ctrl.user.latest_agreed_tos.version }}</b><br>\n"
 "                  User agreed with TOS on: {{ $ctrl.user.latest_agreed_tos.agreed_at | date:'medium' }} from IP\n"
 "                {{ $ctrl.user.latest_agreed_tos.ip }}."
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:57
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:54
+msgid "<br>No valid department was selected"
 msgstr ""
 
 #: staff/apps/settings/general/generalsettings.html:16
@@ -134,6 +191,11 @@ msgid ""
 "        <span hide-gt-xs>{{'No ' + $ctrl.objectsNamePlural | translate }}</span>"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:76
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:73
+msgid "<span id=\"no_internal_status_option_text\">None</span>"
+msgstr ""
+
 #: staff/apps/billing/journal/journal.html:108
 #: staff/apps/billing/journal/journal.html:11
 msgid "<span>Amount</span>"
@@ -151,7 +213,7 @@ msgid ""
 "                  How many seconds to wait for OpenStack API to reply.<br>"
 msgstr ""
 
-#: staff/apps/osimages/create/flimagecreate.html:196
+#: staff/apps/osimages/create/flimagecreate.html:202
 msgid ""
 "<strong>Access permissions</strong><br>\n"
 "              The access permission for the image. <strong>Public</strong> or <strong>Private</strong>.\n"
@@ -283,7 +345,7 @@ msgid ""
 "                  API users for these projects will be also hidden"
 msgstr ""
 
-#: staff/apps/osimages/create/flimagecreate.html:181
+#: staff/apps/osimages/create/flimagecreate.html:187
 msgid ""
 "<strong>Image details</strong><br>\n"
 "              Select the <strong>region</strong> where this image should be created, give the image a name\n"
@@ -299,7 +361,7 @@ msgid ""
 "                    or snapshot of an instance."
 msgstr ""
 
-#: staff/apps/osimages/create/flimagecreate.html:188
+#: staff/apps/osimages/create/flimagecreate.html:194
 msgid ""
 "<strong>Image properties</strong><br>\n"
 "              Select the format of the Image disk from the <strong>Disk format</strong> dropdown.\n"
@@ -309,7 +371,7 @@ msgid ""
 "              to take different actions based on the information provided."
 msgstr ""
 
-#: staff/apps/osimages/create/flimagecreate.html:203
+#: staff/apps/osimages/create/flimagecreate.html:209
 msgid ""
 "<strong>Image source</strong><br>\n"
 "              Select the source for the actual image data from the <strong>Image source</strong> dropdown.\n"
@@ -537,7 +599,7 @@ msgid ""
 "            </ul>"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:621
+#: staff/apps/settings/configurations/configurationdetails.html:630
 msgid ""
 "A <strong>Delay</strong> for service termination can be set (in hours) to postpone the actual\n"
 "                  termination after service was suspended."
@@ -547,10 +609,19 @@ msgstr ""
 msgid "A network is required to create a new Instance."
 msgstr ""
 
+#: domains/staff/frontend/components/input_tld/inputtld.html:19
+msgid "A valid TLD is required"
+msgstr ""
+
 #: staff/apps/fleiodata/autocompleteclient/flautocompleteclient.html:19
 msgid "A valid client is required"
 msgstr ""
 
+#: domains/staff/frontend/components/input_contact/inputcontact.html:20
+msgid "A valid contact is required"
+msgstr ""
+
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:49
 #: staff/apps/billing/taxrules/flbillingtaxruleedit.html:28
 #: staff/apps/clients/clienteditdlg/clientedit.html:47
 #: staff/apps/clients/flclientedit.html:67
@@ -563,6 +634,14 @@ msgstr ""
 
 #: staff/apps/osapiusers/flapiuseredit.html:27
 msgid "A valid project is required"
+msgstr ""
+
+#: domains/staff/frontend/components/input_registrar_connector/inputregistrarconnector.html:19
+msgid "A valid registrar connector is required"
+msgstr ""
+
+#: domains/staff/frontend/components/input_registrar/inputregistrar.html:20
+msgid "A valid registrar is required"
 msgstr ""
 
 #: oscommons/revert_volume_to_snapshot_dialog/fl-revert-volume-to-snapshot-dialog.template.html:27
@@ -643,6 +722,7 @@ msgstr ""
 msgid "Access token"
 msgstr ""
 
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:27
 #: staff/apps/clients/clienteditdlg/clientedit.html:25
 #: staff/apps/clients/flclientedit.html:45
 msgid "Account e-mail address"
@@ -669,12 +749,12 @@ msgstr ""
 #: staff/apps/billing/taxrules/taxrules.html:14
 #: staff/apps/clientgroups/flclientgroupdetails.html:25
 #: staff/apps/clientgroups/flclientgroups.html:51
-#: staff/apps/clients/flclients.html:72
+#: staff/apps/clients/flclients.html:83
 #: staff/apps/networks/flnetworkdetails.html:119
 #: staff/apps/networks/flnetworkdetails.html:68
 #: staff/apps/networks/flnetworks.html:61
 #: staff/apps/osapiusers/flapiusers.html:70
-#: staff/apps/osbilling/plans/flbillingplans.html:70
+#: staff/apps/osbilling/plans/flbillingplans.html:75
 #: staff/apps/osclusters/flclusters.component.html:61
 #: staff/apps/osclustertemplates/flclustertemplates.component.html:61
 #: staff/apps/osflavorgroups/flflavorgroupdetails.html:26
@@ -697,14 +777,17 @@ msgstr ""
 #: staff/apps/pkm/flpkmkeys.html:56
 #: staff/apps/servers/flserver-list/flserver-list.component.html:57
 #: staff/apps/servers/flservergroup-list/flservergroup-list.component.html:60
-#: staff/apps/settings/configurations/configurations.html:61
 #: staff/apps/settings/configurations/configurations.html:62
+#: staff/apps/settings/configurations/configurations.html:63
 #: staff/apps/settings/notifications/flnotification-templates.template.html:64
 #: staff/apps/subnetpools/flsubnetpools.html:69
 #: staff/apps/tasklog/tasks.html:15
 #: staff/apps/usergroups/flusergroupdetails.html:28
 #: staff/apps/usergroups/flusergroups.html:52
-#: staff/apps/users/flusers.html:63
+#: staff/apps/users/flusers.html:66
+#: tickets/staff/frontend/components/departments/departments.html:48
+#: tickets/staff/frontend/components/tickets/tickets.html:73
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:229
 msgid "Actions"
 msgstr ""
 
@@ -713,7 +796,7 @@ msgstr ""
 msgid "Activate"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:467
+#: staff/apps/clients/flclientdetails.html:536
 msgid "Activated"
 msgstr ""
 
@@ -721,9 +804,14 @@ msgstr ""
 msgid "Activated at"
 msgstr ""
 
+#: domains/staff/frontend/components/states.config.js:76
 #: staff/apps/billing/states.config.js:215
 #: staff/apps/clients/states.config.js:69
 msgid "Active"
+msgstr ""
+
+#: todo/staff/frontend/components/todo_details/tododetails.html:48
+msgid "Activity"
 msgstr ""
 
 #: staff/apps/activitylog/states.config.js:62
@@ -748,6 +836,12 @@ msgstr ""
 #: staff/apps/osapiusers/flapiusers.component.js:24
 #: staff/apps/osapiusers/flapiusers.html:144
 msgid "Add API user"
+msgstr ""
+
+#: domains/staff/frontend/components/contacts_actions/contactsactions.html:9
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:121
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:4
+msgid "Add Contact"
 msgstr ""
 
 #: staff/apps/networks/flnetworkadd.html:304
@@ -798,11 +892,32 @@ msgstr ""
 msgid "Add SSH key"
 msgstr ""
 
+#: domains/staff/frontend/components/tlds/tlds.html:91
+#: domains/staff/frontend/components/tlds_actions/dialogs/tld_edit/tldedit.html:21
+#: domains/staff/frontend/components/tlds_actions/tldsactions.html:11
+msgid "Add TLD"
+msgstr ""
+
+#: todo/staff/frontend/components/todo_actions/dialogs/todo_edit/todoedit.html:39
+#: todo/staff/frontend/components/todo_actions/dialogs/todo_edit/todoedit.html:4
+#: todo/staff/frontend/components/todo_actions/todoactions.html:9
+#: todo/staff/frontend/components/todos/todos.html:100
+msgid "Add TODO"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:164
+msgid "Add a new domain contact"
+msgstr ""
+
 #: staff/apps/networks/flnetworkadd.html:279
 #: staff/apps/networks/flnetworkadd.html:283
 #: staff/apps/networks/flnetworksubnetedit.html:152
 #: staff/apps/networks/flnetworksubnetedit.html:156
 msgid "Add allocation pool"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:122
+msgid "Add attachment"
 msgstr ""
 
 #: staff/apps/clients/sendmassmail/clientssendmassmail.html:38
@@ -830,6 +945,10 @@ msgstr ""
 msgid "Add condition"
 msgstr ""
 
+#: domains/staff/frontend/components/contacts/contacts.html:95
+msgid "Add contact"
+msgstr ""
+
 #: staff/apps/clients/changecredit/flclientchangecredit.html:13
 #: staff/apps/clients/changecredit/flclientchangecredit.html:31
 msgid "Add credit"
@@ -837,6 +956,16 @@ msgstr ""
 
 #: staff/apps/billing/products/editcycle/flproductcycleedit.html:3
 msgid "Add cycle to product {{ $ctrl.pack.name }}"
+msgstr ""
+
+#: tickets/staff/frontend/components/departments/departments.html:90
+#: tickets/staff/frontend/components/departments_actions/departmentsactions.html:9
+msgid "Add department"
+msgstr ""
+
+#: domains/staff/frontend/components/domains_actions/dialogs/domain_edit/domainedit.html:37
+#: domains/staff/frontend/components/domains_actions/dialogs/domain_edit/domainedit.html:4
+msgid "Add domain"
 msgstr ""
 
 #: commons/ui/filter/flfilter.html:104
@@ -882,6 +1011,10 @@ msgstr ""
 #: staff/apps/floatingips/flfloatingips.component.js:39
 #: staff/apps/floatingips/flfloatingips.html:124
 msgid "Add floating IP"
+msgstr ""
+
+#: tickets/staff/frontend/components/signatures/signatures.html:25
+msgid "Add global signature"
 msgstr ""
 
 #: staff/apps/networks/flnetworkadd.html:333
@@ -956,12 +1089,21 @@ msgstr ""
 msgid "Add new"
 msgstr ""
 
-#: staff/apps/osbilling/plans/flbillingplans.html:107
-#: staff/apps/osbilling/plans/flbillingplans.html:109
-#: staff/apps/osbilling/plans/flbillingplans.html:131
-#: staff/apps/osbilling/plans/flbillingplans.html:133
-#: staff/apps/osbilling/plans/flbillingplans.html:41
-#: staff/apps/osbilling/plans/flbillingplans.html:43
+#: todo/staff/frontend/components/todo_details/tododetails.html:95
+#: todo/staff/frontend/components/todo_details/tododetails.html:96
+msgid "Add new comment"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:166
+msgid "Add new domain contact"
+msgstr ""
+
+#: staff/apps/osbilling/plans/flbillingplans.html:112
+#: staff/apps/osbilling/plans/flbillingplans.html:114
+#: staff/apps/osbilling/plans/flbillingplans.html:136
+#: staff/apps/osbilling/plans/flbillingplans.html:138
+#: staff/apps/osbilling/plans/flbillingplans.html:46
+#: staff/apps/osbilling/plans/flbillingplans.html:48
 msgid "Add new pricing rule"
 msgstr ""
 
@@ -971,6 +1113,10 @@ msgstr ""
 
 #: staff/apps/settings/general/tos_settings/tos-settings.component.html:156
 msgid "Add new terms of service"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:376
+msgid "Add note"
 msgstr ""
 
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:205
@@ -1019,6 +1165,13 @@ msgstr ""
 msgid "Add recordset"
 msgstr ""
 
+#: domains/staff/frontend/components/registrars/registrars.html:85
+#: domains/staff/frontend/components/registrars_actions/dialogs/registrar_edit/registraredit.html:26
+#: domains/staff/frontend/components/registrars_actions/dialogs/registrar_edit/registraredit.html:4
+#: domains/staff/frontend/components/registrars_actions/registrarsactions.html:9
+msgid "Add registrar"
+msgstr ""
+
 #: staff/apps/osrouters/flrouters.component.js:42
 msgid "Add router"
 msgstr ""
@@ -1034,6 +1187,10 @@ msgstr ""
 
 #: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.html:3
 msgid "Add rule to security group"
+msgstr ""
+
+#: tickets/staff/frontend/components/signatures/signatures.html:64
+msgid "Add signature for department"
 msgstr ""
 
 #: staff/apps/networks/flnetworkdetails.html:20
@@ -1057,6 +1214,15 @@ msgstr ""
 msgid "Add subnet to network {{ $ctrl.network.name }}"
 msgstr ""
 
+#: staff/apps/settings/configurations/configurationdetails.html:391
+#: staff/apps/settings/configurations/configurationdetails.html:442
+msgid "Add tax for invoices generated for credit addition"
+msgstr ""
+
+#: tickets/staff/frontend/components/signatures/signatures.html:23
+msgid "Add the default signature. This will be used for the departments that don't have a custom signature."
+msgstr ""
+
 #: staff/apps/osbilling/pricing/flpricerule.html:124
 #: staff/apps/osbilling/pricing/flpricerule.html:127
 #: staff/apps/osbilling/resources/flmetric.html:76
@@ -1064,8 +1230,42 @@ msgstr ""
 msgid "Add tier"
 msgstr ""
 
+#: domains/staff/frontend/components/tlds_actions/dialogs/tld_edit/tldedit.html:4
+msgid "Add tld"
+msgstr ""
+
 #: staff/apps/billing/invoicing/payments/paymentrefund.html:27
 msgid "Add to client's credit balance"
+msgstr ""
+
+#: todo/staff/frontend/components/product_settings/productsettings.html:53
+#: todo/staff/frontend/components/product_settings/productsettings.html:54
+msgid "Add todo on change cycle"
+msgstr ""
+
+#: todo/staff/frontend/components/product_settings/productsettings.html:14
+#: todo/staff/frontend/components/product_settings/productsettings.html:15
+msgid "Add todo on create"
+msgstr ""
+
+#: todo/staff/frontend/components/product_settings/productsettings.html:21
+#: todo/staff/frontend/components/product_settings/productsettings.html:22
+msgid "Add todo on destroy"
+msgstr ""
+
+#: todo/staff/frontend/components/product_settings/productsettings.html:46
+#: todo/staff/frontend/components/product_settings/productsettings.html:47
+msgid "Add todo on renew"
+msgstr ""
+
+#: todo/staff/frontend/components/product_settings/productsettings.html:37
+#: todo/staff/frontend/components/product_settings/productsettings.html:38
+msgid "Add todo on resume"
+msgstr ""
+
+#: todo/staff/frontend/components/product_settings/productsettings.html:30
+#: todo/staff/frontend/components/product_settings/productsettings.html:31
+msgid "Add todo on suspend"
 msgstr ""
 
 #: staff/apps/usergroups/flusergroupedit.html:32
@@ -1077,7 +1277,7 @@ msgstr ""
 
 #: staff/apps/usergroups/flusergroupdetails.html:92
 #: staff/apps/usergroups/flusergroupdetails.html:95
-#: staff/apps/users/fluserdetails.html:106
+#: staff/apps/users/fluserdetails.html:112
 msgid "Add user to group"
 msgstr ""
 
@@ -1085,16 +1285,27 @@ msgstr ""
 msgid "Additional parameters can be set as JSON to be sent to the service module on creation."
 msgstr ""
 
+#: domains/staff/frontend/components/tld_details/tlddetails.component.js:123
+msgid "Addon prices saved"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:72
+msgid "Addons pricing"
+msgstr ""
+
 #: commons/userprofile/fluserprofile.html:82
-#: staff/apps/clients/flclientdetails.html:43
+#: domains/staff/frontend/components/contacts/contacts.html:29
+#: staff/apps/clients/flclientdetails.html:49
 msgid "Address"
 msgstr ""
 
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:70
 #: staff/apps/clients/clienteditdlg/clientedit.html:69
 #: staff/apps/clients/flclientedit.html:94
 msgid "Address line 1"
 msgstr ""
 
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:76
 #: staff/apps/clients/clienteditdlg/clientedit.html:75
 #: staff/apps/clients/flclientedit.html:100
 msgid "Address line 2"
@@ -1195,12 +1406,26 @@ msgstr ""
 msgid "Allocation pool start"
 msgstr ""
 
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:13
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:24
+msgid "Allow domain registration"
+msgstr ""
+
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:19
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:28
+msgid "Allow domain transfer"
+msgstr ""
+
 #: staff/apps/settings/general/signup_settings/signupsettings.component.html:48
 #: staff/apps/settings/general/signup_settings/signupsettings.component.html:52
 msgid "Allow new user sign-up with free email address"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:432
+#: staff/apps/osimages/create/flimagecreate.html:172
+msgid "Allowed formats: {{ $ctrl.allowedFormats }}"
+msgstr ""
+
+#: staff/apps/settings/configurations/configurationdetails.html:437
 msgid "Allows issuing invoices a specified number of days before service due date."
 msgstr ""
 
@@ -1213,15 +1438,15 @@ msgstr ""
 msgid "Always issue fiscal invoices with sequential numbers"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:416
+#: staff/apps/settings/configurations/configurationdetails.html:421
 msgid "Always issue fiscal invoices with sequential numbers - choose when you want all issued invoices to have consecutive numbers and it does not bother you that all invoices will be issued as fiscal, even if not paid. The fiscal invoice date will be the same as the invoice issue date."
 msgstr ""
 
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:183
 #: staff/apps/billing/invoicing/payments/paymentcreate.html:40
 #: staff/apps/clients/changecredit/flclientchangecredit.html:19
-#: staff/apps/clients/flclientdetails.html:173
-#: staff/apps/clients/flclientdetails.html:236
+#: staff/apps/clients/flclientdetails.html:179
+#: staff/apps/clients/flclientdetails.html:242
 msgid "Amount"
 msgstr ""
 
@@ -1240,7 +1465,7 @@ msgid ""
 "  \t<span ng-if=\"$ctrl.error.data.detail\" class=\"fl-message\"><br>{{ $ctrl.error.data.detail }}</span>"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:392
+#: staff/apps/settings/configurations/configurationdetails.html:397
 msgid "An invoice will be generated for used services"
 msgstr ""
 
@@ -1317,6 +1542,10 @@ msgstr ""
 msgid "Are you sure you want to delete invoice?"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:333
+msgid "Are you sure you want to delete the attachment?"
+msgstr ""
+
 #: staff/apps/osclustertemplates/actions/flclustertemplateactions.directive.js:30
 #: staff/apps/osclustertemplates/actions/flxsclustertemplateactions.directive.js:23
 msgid "Are you sure you want to delete the cluster template?"
@@ -1362,12 +1591,19 @@ msgstr ""
 msgid "Are you sure you want to shut down the instance?"
 msgstr ""
 
+#: domains/staff/frontend/components/domains_actions/domainsactions.component.js:26
+msgid "Are you sure you wish to delete this domain from Fleio only ?"
+msgstr ""
+
 #: commons/SFA/google_authenticator/fl-google-authenticator-details.component.js:29
 #: commons/SFA/google_authenticator/fl-google-authenticator-details.component.js:42
 #: commons/SFA/google_authenticator/fl-google-authenticator-details.component.js:60
 #: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:46
 #: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:64
 #: commons/ui/useralerts/list/fluseralerts.component.js:39
+#: domains/staff/frontend/components/contacts_actions/contactsactions.component.js:27
+#: domains/staff/frontend/components/registrars_actions/registrarsactions.component.js:25
+#: domains/staff/frontend/components/tlds_actions/tldsactions.component.js:25
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:21
 #: staff/apps/billing/configurable_options/optionlist.component.js:18
 #: staff/apps/billing/invoicing/flinvoicingdetails.component.js:75
@@ -1386,9 +1622,9 @@ msgstr ""
 #: staff/apps/clients/actions/flclientactions.component.js:49
 #: staff/apps/clients/actions/flxsclientactions.component.js:30
 #: staff/apps/clients/actions/flxsclientactions.component.js:49
-#: staff/apps/clients/flclientdetails.component.js:186
-#: staff/apps/clients/flclientdetails.component.js:235
-#: staff/apps/clients/flclientdetails.component.js:250
+#: staff/apps/clients/flclientdetails.component.js:220
+#: staff/apps/clients/flclientdetails.component.js:271
+#: staff/apps/clients/flclientdetails.component.js:287
 #: staff/apps/floatingips/flfloatingipdetails.component.js:40
 #: staff/apps/floatingips/flfloatingips.component.js:79
 #: staff/apps/networks/flnetworkdetails.component.js:149
@@ -1427,6 +1663,10 @@ msgstr ""
 #: staff/apps/subnetpools/flsubnetpools.component.js:64
 #: staff/apps/usergroups/flusergroupsactions.component.js:51
 #: staff/apps/users/usertogroupmanager.html:8
+#: tickets/staff/frontend/components/departments_actions/departmentsactions.component.js:24
+#: tickets/staff/frontend/components/signatures/signatures.component.js:63
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.component.js:20
+#: todo/staff/frontend/components/todo_actions/todoactions.component.js:25
 msgid "Are you sure?"
 msgstr ""
 
@@ -1443,6 +1683,19 @@ msgstr ""
 #: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:85
 #: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:88
 msgid "Assign client group to flavor"
+msgstr ""
+
+#: domains/staff/frontend/components/client_info/clientinfo.html:10
+#: tickets/staff/frontend/components/states.config.js:95
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:115
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:111
+#: todo/staff/frontend/components/states.config.js:69
+#: todo/staff/frontend/components/todos/todos.html:24
+msgid "Assigned to"
+msgstr ""
+
+#: staff/apps/clients/states.config.js:135
+msgid "Assigned to reseller"
 msgstr ""
 
 #: staff/apps/osinstances/flinstancedetail.html:540
@@ -1487,7 +1740,7 @@ msgstr ""
 msgid "Associate security group to {{::$ctrl.instance.name }}"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:354
+#: staff/apps/clients/flclientdetails.html:423
 msgid "Associate user"
 msgstr ""
 
@@ -1547,8 +1800,33 @@ msgstr ""
 msgid "Attaching volume to instance"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:340
+msgid "Attachment deleted"
+msgstr ""
+
 #: staff/apps/clients/sendmassmail/clientssendmassmail.component.js:61
 msgid "Attachment file size is too big ()."
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.component.js:136
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:184
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:80
+msgid "Attachment file size is too big."
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:14
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:13
+msgid "Attachment upload in progress..."
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:4
+msgid "Attachments upload in progress..."
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:105
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:160
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:254
+msgid "Attachments:"
 msgstr ""
 
 #: staff/apps/osbilling/resources/fladdresourcefield.html:20
@@ -1602,12 +1880,12 @@ msgid "Auto order service cycle"
 msgstr ""
 
 #: staff/apps/settings/configurations/configurationdetails.html:316
-#: staff/apps/settings/configurations/configurationdetails.html:407
+#: staff/apps/settings/configurations/configurationdetails.html:412
 msgid "Auto pay invoice only when enough credit"
 msgstr ""
 
 #: staff/apps/settings/configurations/configurationdetails.html:386
-#: staff/apps/settings/configurations/configurationdetails.html:435
+#: staff/apps/settings/configurations/configurationdetails.html:440
 msgid "Auto set tax exemption for EU customers"
 msgstr ""
 
@@ -1619,11 +1897,19 @@ msgstr ""
 msgid "Auto setup: {{ $ctrl.productDetails.auto_setup_display }}"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:597
+#: domains/staff/frontend/components/pricing_cycles/pricingcycles.html:39
+msgid "Autofill"
+msgstr ""
+
+#: domains/staff/frontend/components/pricing_cycles/pricingcycles.html:36
+msgid "Autofill prices from 2 to 10 years based on 1 year price"
+msgstr ""
+
+#: staff/apps/settings/configurations/configurationdetails.html:606
 msgid "Automatically suspend a client when he reaches the credit limit."
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:619
+#: staff/apps/settings/configurations/configurationdetails.html:628
 msgid ""
 "Automatically terminates a service after certain time (defined in delay field) passed\n"
 "                  since service suspension."
@@ -1639,6 +1925,10 @@ msgstr ""
 
 #: staff/apps/osvolumesnapshots/reset_state/flvolumesnapshot-reset-state.controller.js:14
 msgid "Available"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:114
+msgid "Available actions"
 msgstr ""
 
 #: staff/apps/clients/changeconfiguration/flclientchangeconfiguration.html:22
@@ -1830,6 +2120,15 @@ msgstr ""
 msgid "Bytes in/out"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:90
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:87
+msgid "CC recipients (comma separated)"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:79
+msgid "CC recipients: {{$ctrl.ticket.cc_recipients}}"
+msgstr ""
+
 #: staff/apps/ossecuritygroups/flsecuritygroupdetails.html:62
 msgid "CIDR"
 msgstr ""
@@ -1855,11 +2154,19 @@ msgstr ""
 msgid "CPU utilization"
 msgstr ""
 
+#: cpanel/staff/frontend/components/plugin_configuration/pluginconfiguration.html:6
+msgid "CPanel plugin configurations"
+msgstr ""
+
+#: domains/staff/frontend/components/pricing_cycles/pricingcycles.component.js:36
+msgid "Calculate prices based on default currency prices and and exchange rate."
+msgstr ""
+
 #: staff/apps/billing/products/products.html:24
 msgid "Can't delete group while it contains products"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.component.js:368
+#: staff/apps/clients/flclientdetails.component.js:407
 msgid "Can't retrieve content"
 msgstr ""
 
@@ -1873,6 +2180,12 @@ msgstr ""
 #: commons/ui/utils/fluiutils.service.js:55
 #: commons/ui/utils/fluiutils.service.js:93
 #: commons/userprofile/fledituserprofile.html:140
+#: cpanel/staff/frontend/components/plugin_configuration/pluginconfiguration.html:18
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:119
+#: domains/staff/frontend/components/domains_actions/dialogs/domain_edit/domainedit.html:35
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:117
+#: domains/staff/frontend/components/registrars_actions/dialogs/registrar_edit/registraredit.html:24
+#: domains/staff/frontend/components/tlds_actions/dialogs/tld_edit/tldedit.html:19
 #: oscommons/apiusers/getopenrcfile.dialog.html:26
 #: oscommons/change_bootable_status_dialog/fl-change-bootable-status-dialog.template.html:17
 #: oscommons/revert_volume_to_snapshot_dialog/fl-revert-volume-to-snapshot-dialog.template.html:35
@@ -1893,11 +2206,13 @@ msgstr ""
 #: staff/apps/billing/taxrules/flbillingtaxruleedit.html:80
 #: staff/apps/clientgroups/flclientgroupedit.html:30
 #: staff/apps/clients/associateuser/flclientassociateuser.html:33
+#: staff/apps/clients/change_enduser_panel_url/change_enduser_panel_url.html:20
 #: staff/apps/clients/change_pricing_plan/change_pricing_plan.html:28
 #: staff/apps/clients/changeconfiguration/flclientchangeconfiguration.html:37
 #: staff/apps/clients/changecredit/flclientchangecredit.html:28
 #: staff/apps/clients/clienteditdlg/clientedit.html:123
 #: staff/apps/clients/createopenstackservice/flcreateopenstackservice.html:86
+#: staff/apps/clients/createresellerservice/flcreateresellerservice.html:49
 #: staff/apps/clients/delete/flclientdelete.html:22
 #: staff/apps/clients/deleteopenstackservice/fldeleteopenstackservice.html:20
 #: staff/apps/clients/flclientedit.html:157
@@ -1920,7 +2235,7 @@ msgstr ""
 #: staff/apps/osflavors/edit/flflavoredit.html:102
 #: staff/apps/osflavors/edit/flflavoredit.html:194
 #: staff/apps/osflavors/edit/flflavoredit.html:247
-#: staff/apps/osimages/create/flimagecreate.html:218
+#: staff/apps/osimages/create/flimagecreate.html:224
 #: staff/apps/osimages/update/flimageupdate.html:144
 #: staff/apps/osimages/update/flimageupdate.html:237
 #: staff/apps/osinstances/addip/flinstanceaddip.html:63
@@ -1961,7 +2276,7 @@ msgstr ""
 #: staff/apps/oszones/flzoneedit.html:122
 #: staff/apps/pkm/flpkmkeyedit.html:36
 #: staff/apps/reports/revenue_reports/generate_revenue_report.template.html:25
-#: staff/apps/settings/configurations/configurationdetails.html:675
+#: staff/apps/settings/configurations/configurationdetails.html:684
 #: staff/apps/settings/configurations/configurationedit.html:32
 #: staff/apps/settings/flsettingserror.html:15
 #: staff/apps/settings/general/currency/flcurrencyedit.html:44
@@ -1972,6 +2287,16 @@ msgstr ""
 #: staff/apps/usergroups/flusergroupedit.html:30
 #: staff/apps/users/fluseredit.html:111
 #: staff/apps/users/usertogroupmanager.html:36
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:190
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:194
+#: tickets/staff/frontend/components/signatures/signatures.html:66
+#: tickets/staff/frontend/components/tickets_actions/dialogs/ticket_linking/ticketlinking.html:37
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:134
+#: tickets/staff/frontend/components/tickets_details/dialogs/remove_linking/removelinking.html:21
+#: tickets/staff/frontend/components/tickets_details/dialogs/tickets_updates_edit/ticketsupdatesedit.html:13
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:121
+#: todo/staff/frontend/components/plugin_configuration/pluginconfiguration.html:20
+#: todo/staff/frontend/components/todo_actions/dialogs/todo_edit/todoedit.html:37
 msgid "Cancel"
 msgstr ""
 
@@ -1983,6 +2308,7 @@ msgstr ""
 msgid "Cancellation request ID"
 msgstr ""
 
+#: domains/staff/frontend/components/states.config.js:80
 #: staff/apps/billing/states.config.js:385
 #: staff/apps/billing/states.config.js:67
 #: staff/apps/dashboard/widgets/billing/flbilling.widget.html:13
@@ -1991,6 +2317,10 @@ msgstr ""
 
 #: staff/apps/billing/invoicing/payments/paymentcreate.html:8
 msgid "Cannot add payment as there are no enabled payment methods. You can manage them on the <a class=\"md-primary\" ui-sref=\"billingGateways()\">gateways</a> page."
+msgstr ""
+
+#: tickets/staff/frontend/components/signatures/signatures.component.js:55
+msgid "Cannot add signature"
 msgstr ""
 
 #: staff/apps/osinstances/create/flbootsourceselect.component.js:176
@@ -2041,8 +2371,13 @@ msgid "Change client's configuration"
 msgstr ""
 
 #: staff/apps/clients/changeconfiguration/flclientchangeconfiguration.html:40
-#: staff/apps/clients/flclientdetails.html:376
+#: staff/apps/clients/flclientdetails.html:445
 msgid "Change configuration"
+msgstr ""
+
+#: staff/apps/clients/change_enduser_panel_url/change_enduser_panel_url.html:2
+#: staff/apps/clients/flclientdetails.html:386
+msgid "Change enduser panel url"
 msgstr ""
 
 #: staff/apps/settings/openstack/openstacksettings.html:167
@@ -2060,7 +2395,8 @@ msgid "Change password"
 msgstr ""
 
 #: staff/apps/clients/change_pricing_plan/change_pricing_plan.html:2
-#: staff/apps/clients/flclientdetails.html:309
+#: staff/apps/clients/flclientdetails.html:315
+#: staff/apps/clients/flclientdetails.html:382
 msgid "Change pricing plan"
 msgstr ""
 
@@ -2080,11 +2416,21 @@ msgstr ""
 msgid "Changes ready to be saved."
 msgstr ""
 
+#: domains/staff/frontend/components/register_domain/registerdomain.html:35
+#: domains/staff/frontend/components/transfer_domain/transferdomain.html:34
+msgid "Check"
+msgstr ""
+
 #: staff/apps/settings/authorization/authorization.html:183
 #: staff/apps/settings/authorization/authorization.html:186
 #: staff/apps/settings/authorization/authorization.html:60
 #: staff/apps/settings/authorization/authorization.html:63
 msgid "Check all"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:33
+#: domains/staff/frontend/components/transfer_domain/transferdomain.html:32
+msgid "Check if domain is available"
 msgstr ""
 
 #: staff/apps/osinstances/flinstancedetails.component.js:38
@@ -2095,6 +2441,10 @@ msgid ""
 "Choose Verify resize from the instance menu\n"
 "to confirm migration was successful, otherwise\n"
 "choose Revert resize to revert back to the initial disk."
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:136
+msgid "Check this if an EPP code is required for domain transfer"
 msgstr ""
 
 #: staff/apps/billing/configurable_options/option.component.js:65
@@ -2137,9 +2487,15 @@ msgstr ""
 msgid "Choose from an existing image, volume, instance snapshot or volume snapshot"
 msgstr ""
 
+#: domains/staff/frontend/components/register_domain/registerdomain.html:46
+msgid "Choose period"
+msgstr ""
+
 #: commons/userprofile/fluserprofile.html:79
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:89
+#: domains/staff/frontend/components/states.config.js:371
 #: staff/apps/clients/clienteditdlg/clientedit.html:88
-#: staff/apps/clients/flclientdetails.html:39
+#: staff/apps/clients/flclientdetails.html:45
 #: staff/apps/clients/flclientedit.html:114
 msgid "City"
 msgstr ""
@@ -2163,11 +2519,22 @@ msgstr ""
 msgid "Click for details"
 msgstr ""
 
+#: domains/staff/frontend/components/domain_details/domaindetails.html:58
+#: domains/staff/frontend/components/register_domain/registerdomain.html:183
+msgid "Click here to edit client"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:64
+#: domains/staff/frontend/components/register_domain/registerdomain.html:187
+msgid "Click here to edit domain contact"
+msgstr ""
+
 #: staff/apps/clients/sendmassmail/clientssendmassmail.html:88
 #: staff/apps/settings/notifications/edit/flnotification-template-edit.template.html:58
 msgid "Click to copy"
 msgstr ""
 
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:106
 #: staff/apps/billing/invoicing/flinvoicing.html:21
 #: staff/apps/billing/journal/journaldetail.html:14
 #: staff/apps/billing/orders/orderdetails.html:27
@@ -2210,6 +2577,7 @@ msgstr ""
 #: staff/apps/oszones/states.config.js:56
 #: staff/apps/reports/revenue_reports/revenue_report_details.template.html:39
 #: staff/apps/reports/revenue_reports/revenue_report_details.template.html:69
+#: tickets/staff/frontend/components/tickets/tickets.html:34
 msgid "Client"
 msgstr ""
 
@@ -2225,7 +2593,7 @@ msgstr ""
 msgid "Client added to group"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:64
+#: staff/apps/clients/flclientdetails.html:70
 msgid "Client credit"
 msgstr ""
 
@@ -2246,7 +2614,7 @@ msgstr ""
 msgid "Client deletion in progress.\\nRetry delete if this takes\\nlonger than it should."
 msgstr ""
 
-#: staff/apps/clients/states.config.js:271
+#: staff/apps/clients/states.config.js:281
 msgid "Client details"
 msgstr ""
 
@@ -2283,7 +2651,7 @@ msgstr ""
 msgid "Client group {:name}"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:59
+#: staff/apps/clients/flclientdetails.html:65
 msgid "Client group:"
 msgstr ""
 
@@ -2295,8 +2663,8 @@ msgstr ""
 #: commons/ui/filter/flfilter.html:129
 #: commons/ui/filter/flfilter.html:39
 #: staff/apps/billing/invoicing/create/flinvoicecreate.html:37
-#: staff/apps/clients/flclients.html:22
-#: staff/apps/clients/flclients.html:84
+#: staff/apps/clients/flclients.html:30
+#: staff/apps/clients/flclients.html:95
 #: staff/apps/floatingips/flfloatingipadd.html:25
 #: staff/apps/networks/flnetworkadd.html:28
 #: staff/apps/networks/flnetworkautocreate.html:23
@@ -2318,11 +2686,12 @@ msgstr ""
 msgid "Client initial credit (default currency)"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:98
+#: staff/apps/clients/flclientdetails.html:104
 msgid "Client is out of credit since"
 msgstr ""
 
 #: staff/apps/clientgroups/flclientgroupdetails.html:24
+#: tickets/staff/frontend/components/tickets/tickets.html:68
 msgid "Client name"
 msgstr ""
 
@@ -2339,7 +2708,7 @@ msgstr ""
 msgid "Client signup automation"
 msgstr ""
 
-#: staff/apps/clients/states.config.js:272
+#: staff/apps/clients/states.config.js:282
 msgid "Client {:id}"
 msgstr ""
 
@@ -2349,6 +2718,15 @@ msgstr ""
 
 #: staff/apps/clients/flclientedit.component.js:75
 msgid "Client {{fname}} {{lname}} modified"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:68
+msgid ""
+"Client:\n"
+"                            <a ng-if=\"$ctrl.ticket.client\" class=\"md-primary\" ui-sref=\"client({id: $ctrl.ticket.client})\">\n"
+"                                {{$ctrl.ticket.client_display}}\n"
+"                            </a>\n"
+"                            <span ng-if=\"!$ctrl.ticket.client\">{{$ctrl.ticket.client_display}}</span>"
 msgstr ""
 
 #: staff/apps/osclustertemplates/flclustertemplatedetails.component.html:27
@@ -2408,7 +2786,7 @@ msgstr ""
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:136
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:30
 #: staff/apps/clients/states.config.js:39
-#: staff/apps/users/fluserdetails.html:57
+#: staff/apps/users/fluserdetails.html:63
 msgid "Clients"
 msgstr ""
 
@@ -2425,11 +2803,16 @@ msgstr ""
 msgid "Close impersonation"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.html:14
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:379
+msgid "Close ticket"
+msgstr ""
+
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:35
 msgid "Cloud"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:381
+#: staff/apps/clients/flclientdetails.html:450
 msgid "Cloud resources"
 msgstr ""
 
@@ -2524,15 +2907,29 @@ msgstr ""
 msgid "Code: {{ $ctrl.productDetails.code }}"
 msgstr ""
 
+#: todo/staff/frontend/components/todo_details/tododetails.html:101
+msgid "Comment"
+msgstr ""
+
+#: todo/staff/frontend/components/todo_details/tododetails.html:105
+msgid "Comment & Close"
+msgstr ""
+
+#: todo/staff/frontend/components/todo_details/tododetails.component.js:42
+msgid "Comment added"
+msgstr ""
+
 #: staff/apps/osinstances/create/flbootsourceselect.html:57
 msgid "Community Images"
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:76
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:57
+#: domains/staff/frontend/components/states.config.js:370
 #: staff/apps/clients/clienteditdlg/clientedit.html:55
-#: staff/apps/clients/flclientdetails.html:29
+#: staff/apps/clients/flclientdetails.html:35
 #: staff/apps/clients/flclientedit.html:75
-#: staff/apps/clients/flclients.html:71
+#: staff/apps/clients/flclients.html:82
 #: staff/apps/clients/states.config.js:43
 msgid "Company"
 msgstr ""
@@ -2576,13 +2973,14 @@ msgstr ""
 msgid "Configurable options:"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:369
-#: staff/apps/clients/flclients.html:69
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:28
+#: staff/apps/clients/flclientdetails.html:438
+#: staff/apps/clients/flclients.html:80
 #: staff/apps/settings/configurations/configurations.html:1
 msgid "Configuration"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.component.js:312
+#: staff/apps/clients/flclientdetails.component.js:351
 msgid "Configuration changed"
 msgstr ""
 
@@ -2605,7 +3003,7 @@ msgstr ""
 
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:105
 #: staff/apps/clients/changeconfiguration/flclientchangeconfiguration.html:24
-#: staff/apps/clients/flclientdetails.html:360
+#: staff/apps/clients/flclientdetails.html:429
 #: staff/apps/settings/states.config.js:27
 msgid "Configurations"
 msgstr ""
@@ -2638,6 +3036,11 @@ msgstr ""
 msgid "Connection was not successful"
 msgstr ""
 
+#: domains/staff/frontend/components/registrar_details/registrardetails.html:34
+#: domains/staff/frontend/components/tld_details/tlddetails.html:152
+msgid "Connector"
+msgstr ""
+
 #: staff/apps/settings/configurations/configurationdetails.html:136
 msgid "Consider a calendar month as billing cycle."
 msgstr ""
@@ -2645,6 +3048,19 @@ msgstr ""
 #: staff/apps/osinstances/actions/flinstanceactions.html:101
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:111
 msgid "Console"
+msgstr ""
+
+#: domains/staff/frontend/components/contacts/contacts.html:1
+msgid "Contact"
+msgstr ""
+
+#: domains/staff/frontend/components/contacts/contacts.html:19
+#: domains/staff/frontend/components/contacts/contacts.html:56
+msgid "Contact image"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:360
+msgid "Contacts"
 msgstr ""
 
 #: staff/apps/osimages/flimagedetails.html:57
@@ -2666,6 +3082,14 @@ msgstr ""
 
 #: commons/SFA/confirm_password/fl-sfa-confirm-password.template.html:33
 msgid "Continue"
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:35
+msgid "Control panel"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:149
+msgid "Cost pricing"
 msgstr ""
 
 #: staff/apps/settings/openstack/openstacksettings.component.js:195
@@ -2716,19 +3140,33 @@ msgstr ""
 msgid "Could not load license info"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.component.js:77
+msgid "Could not preselect client"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.component.js:91
+msgid "Could not preselect department"
+msgstr ""
+
 #: staff/apps/billing/invoicing/create/flinvoicecreate.component.js:34
 msgid "Could not preselect the client."
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:78
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:44
+#: domains/staff/frontend/components/states.config.js:372
 #: staff/apps/billing/states.config.js:767
 #: staff/apps/billing/taxrules/flbillingtaxruleedit.html:23
 #: staff/apps/billing/taxrules/taxrules.html:8
 #: staff/apps/clients/clienteditdlg/clientedit.html:42
-#: staff/apps/clients/flclientdetails.html:36
+#: staff/apps/clients/flclientdetails.html:42
 #: staff/apps/clients/flclientedit.html:62
 #: staff/apps/clients/states.config.js:44
 msgid "Country"
+msgstr ""
+
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:83
+msgid "Country / state"
 msgstr ""
 
 #: staff/apps/clients/flclientedit.html:108
@@ -2769,7 +3207,7 @@ msgstr ""
 msgid "Create DNS zone for client"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:318
+#: staff/apps/clients/flclientdetails.html:324
 msgid "Create OpenStack service"
 msgstr ""
 
@@ -2778,7 +3216,7 @@ msgid "Create OpenStack service for client"
 msgstr ""
 
 #: staff/apps/settings/configurations/configurationdetails.html:307
-#: staff/apps/settings/configurations/configurationdetails.html:398
+#: staff/apps/settings/configurations/configurationdetails.html:403
 msgid "Create TODO on invoice payment"
 msgstr ""
 
@@ -2834,8 +3272,8 @@ msgid "Create backup schedule for instance {{ $ctrl.instance.name }}"
 msgstr ""
 
 #: staff/apps/clients/flclientedit.html:8
-#: staff/apps/clients/flclients.html:157
-#: staff/apps/clients/states.config.js:193
+#: staff/apps/clients/flclients.html:168
+#: staff/apps/clients/states.config.js:203
 msgid "Create client"
 msgstr ""
 
@@ -2852,13 +3290,19 @@ msgid "Create cluster template"
 msgstr ""
 
 #: staff/apps/settings/configurations/configurationedit.html:6
-#: staff/apps/settings/configurations/configurations.html:131
+#: staff/apps/settings/configurations/configurations.html:132
 msgid "Create configuration"
 msgstr ""
 
 #: staff/apps/settings/general/currency/flcurrencies.html:28
 #: staff/apps/settings/general/currency/flcurrencyedit.html:5
 msgid "Create currency"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:186
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:8
+#: tickets/staff/frontend/components/states.config.js:285
+msgid "Create department"
 msgstr ""
 
 #: staff/apps/osflavors/edit/flflavoredit.html:191
@@ -2874,7 +3318,7 @@ msgid "Create group"
 msgstr ""
 
 #: staff/apps/osimages/create/flimagecreate.html:14
-#: staff/apps/osimages/create/flimagecreate.html:215
+#: staff/apps/osimages/create/flimagecreate.html:221
 #: staff/apps/osimages/flimages.component.js:30
 #: staff/apps/osimages/states.config.js:186
 msgid "Create image"
@@ -2886,8 +3330,12 @@ msgid "Create instance"
 msgstr ""
 
 #: staff/apps/billing/invoicing/create/flinvoicecreate.html:155
-#: staff/apps/clients/flclientdetails.html:109
+#: staff/apps/clients/flclientdetails.html:115
 msgid "Create invoice"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_actions/dialogs/ticket_linking/ticketlinking.html:29
+msgid "Create link both ways"
 msgstr ""
 
 #: staff/apps/networks/flnetworkadd.html:3
@@ -2933,7 +3381,7 @@ msgid "Create option"
 msgstr ""
 
 #: staff/apps/osbilling/plans/create/flplancreate.html:3
-#: staff/apps/osbilling/plans/flbillingplans.html:161
+#: staff/apps/osbilling/plans/flbillingplans.html:166
 msgid "Create plan"
 msgstr ""
 
@@ -2948,6 +3396,10 @@ msgstr ""
 
 #: staff/apps/billing/products/flbillingproductgroupedit.html:3
 msgid "Create product group"
+msgstr ""
+
+#: staff/apps/clients/createresellerservice/flcreateresellerservice.html:3
+msgid "Create reseller service for client"
 msgstr ""
 
 #: staff/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:12
@@ -2971,7 +3423,9 @@ msgid "Create server"
 msgstr ""
 
 #: staff/apps/clients/createopenstackservice/flcreateopenstackservice.html:90
-#: staff/apps/clients/flclientdetails.html:257
+#: staff/apps/clients/createresellerservice/flcreateresellerservice.html:53
+#: staff/apps/clients/flclientdetails.html:263
+#: staff/apps/clients/flclientdetails.html:343
 msgid "Create service"
 msgstr ""
 
@@ -3005,7 +3459,7 @@ msgid "Create tax rule"
 msgstr ""
 
 #: staff/apps/users/fluseredit.html:5
-#: staff/apps/users/flusers.html:122
+#: staff/apps/users/flusers.html:125
 msgid "Create user"
 msgstr ""
 
@@ -3034,8 +3488,8 @@ msgstr ""
 
 #: staff/apps/billing/products/products.html:122
 #: staff/apps/billing/products/products.html:123
-#: staff/apps/clients/flclients.html:150
-#: staff/apps/clients/flclients.html:151
+#: staff/apps/clients/flclients.html:161
+#: staff/apps/clients/flclients.html:162
 #: staff/apps/networks/flnetworks.html:146
 msgid "Create..."
 msgstr ""
@@ -3045,6 +3499,14 @@ msgstr ""
 msgid "Created"
 msgstr ""
 
+#: domains/staff/frontend/components/client_info/clientinfo.html:6
+#: domains/staff/frontend/components/domains/domains.html:20
+#: domains/staff/frontend/components/registrars/registrars.html:19
+#: domains/staff/frontend/components/states.config.js:191
+#: domains/staff/frontend/components/states.config.js:262
+#: domains/staff/frontend/components/states.config.js:365
+#: domains/staff/frontend/components/states.config.js:45
+#: domains/staff/frontend/components/tlds/tlds.html:19
 #: staff/apps/activitylog/states.config.js:66
 #: staff/apps/billing/services/details/servicedetails.html:66
 #: staff/apps/billing/states.config.js:175
@@ -3053,7 +3515,7 @@ msgstr ""
 #: staff/apps/clientgroups/flclientgroups.html:49
 #: staff/apps/clientgroups/states.config.js:45
 #: staff/apps/clientgroups/states.config.js:49
-#: staff/apps/clients/flclients.html:29
+#: staff/apps/clients/flclients.html:36
 #: staff/apps/floatingips/states.config.js:39
 #: staff/apps/networks/flnetworkdetails.html:38
 #: staff/apps/networks/states.config.js:37
@@ -3091,6 +3553,14 @@ msgstr ""
 #: staff/apps/usergroups/flusergroups.html:50
 #: staff/apps/usergroups/states.config.js:45
 #: staff/apps/usergroups/states.config.js:49
+#: tickets/staff/frontend/components/client_info/clientinfo.html:11
+#: tickets/staff/frontend/components/departments/departments.html:22
+#: tickets/staff/frontend/components/departments/departments.html:46
+#: tickets/staff/frontend/components/states.config.js:213
+#: tickets/staff/frontend/components/states.config.js:96
+#: tickets/staff/frontend/components/user_info/userinfo.html:7
+#: todo/staff/frontend/components/states.config.js:70
+#: todo/staff/frontend/components/todos/todos.html:23
 msgid "Created at"
 msgstr ""
 
@@ -3162,8 +3632,15 @@ msgstr ""
 msgid "Created at: {{clusterTemplate.created_at | date: 'mediumDate'}}"
 msgstr ""
 
+#: tickets/staff/frontend/components/states.config.js:97
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:58
+#: todo/staff/frontend/components/states.config.js:71
+#: todo/staff/frontend/components/todo_details/tododetails.html:43
+msgid "Created by"
+msgstr ""
+
 #: commons/userprofile/fluserprofile.html:89
-#: staff/apps/clients/flclientdetails.html:56
+#: staff/apps/clients/flclientdetails.html:62
 #: staff/apps/osinstances/flinstances.html:40
 #: staff/apps/pkm/flpkmkeys.html:19
 msgid "Created on"
@@ -3204,7 +3681,7 @@ msgstr ""
 msgid "Credit limit when on agreement"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:441
+#: staff/apps/settings/configurations/configurationdetails.html:450
 msgid "Credit notifications"
 msgstr ""
 
@@ -3212,7 +3689,7 @@ msgstr ""
 msgid "Credit related client"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.component.js:219
+#: staff/apps/clients/flclientdetails.component.js:254
 msgid "Credit updated"
 msgstr ""
 
@@ -3231,7 +3708,7 @@ msgstr ""
 #: staff/apps/clients/clienteditdlg/clientedit.html:106
 #: staff/apps/clients/flclientedit.html:132
 #: staff/apps/osbilling/plans/create/flplancreate.html:18
-#: staff/apps/osbilling/plans/flbillingplans.html:67
+#: staff/apps/osbilling/plans/flbillingplans.html:72
 #: staff/apps/osbilling/states.config.js:20
 msgid "Currency"
 msgstr ""
@@ -3256,7 +3733,7 @@ msgstr ""
 msgid "Current client configuration"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:80
+#: staff/apps/clients/flclientdetails.html:86
 msgid "Current credit"
 msgstr ""
 
@@ -3284,7 +3761,11 @@ msgstr ""
 msgid "Custom UDP rule"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:424
+#: domains/staff/frontend/components/tld_details/tlddetails.html:189
+msgid "Custom fields"
+msgstr ""
+
+#: staff/apps/settings/configurations/configurationdetails.html:429
 msgid ""
 "Customize the next invoice number by using\n"
 "                  <span ng-non-bindable>{{ number }}, {{ year }}, {{ month }}, {{ day }}.</span>"
@@ -3295,7 +3776,7 @@ msgstr ""
 #: staff/apps/billing/products/productdetails.html:137
 #: staff/apps/billing/products/productdetails.html:90
 #: staff/apps/billing/services/edit/flserviceedit.html:62
-#: staff/apps/clients/flclientdetails.html:464
+#: staff/apps/clients/flclientdetails.html:533
 msgid "Cycle"
 msgstr ""
 
@@ -3339,6 +3820,14 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
+#: domains/staff/frontend/components/register_domain/registerdomain.html:142
+msgid "Data from client profile will be used when registering the domain:"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:170
+msgid "Data from domain contact will be used when registering the domain:"
+msgstr ""
+
 #: commons/ui/useralerts/list/fluseralerts.html:60
 #: staff/apps/activitylog/log.html:14
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:145
@@ -3346,8 +3835,8 @@ msgstr ""
 #: staff/apps/billing/journal/journal.html:95
 #: staff/apps/billing/journal/journaldetail.html:28
 #: staff/apps/billing/orders/orders.html:41
-#: staff/apps/clients/flclientdetails.html:170
-#: staff/apps/clients/flclientdetails.html:223
+#: staff/apps/clients/flclientdetails.html:176
+#: staff/apps/clients/flclientdetails.html:229
 msgid "Date"
 msgstr ""
 
@@ -3355,6 +3844,7 @@ msgstr ""
 msgid "Date added"
 msgstr ""
 
+#: domains/staff/frontend/components/states.config.js:377
 #: staff/apps/activitylog/states.config.js:69
 #: staff/apps/billing/services/services.html:20
 #: staff/apps/billing/services/services.html:48
@@ -3373,13 +3863,18 @@ msgstr ""
 msgid "Date created"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:34
+#: staff/apps/users/fluserdetails.html:40
 #: staff/apps/users/states.config.js:45
 msgid "Date joined"
 msgstr ""
 
 #: staff/apps/osinstances/states.config.js:79
 msgid "Date of creation"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:59
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:63
+msgid "Day"
 msgstr ""
 
 #: staff/apps/osimages/update/flimageupdate.html:133
@@ -3400,6 +3895,15 @@ msgstr ""
 msgid "Default API interface"
 msgstr ""
 
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:36
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:50
+msgid "Default TLD"
+msgstr ""
+
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:56
+msgid "Default TLD will be used when client checks if a domain is available without specifying a TLD."
+msgstr ""
+
 #: staff/apps/osbilling/plans/create/flplancreate.html:29
 #: staff/apps/osbilling/plans/create/flplancreate.html:37
 msgid "Default billing plan"
@@ -3407,6 +3911,30 @@ msgstr ""
 
 #: staff/apps/settings/configurations/configurationedit.html:26
 msgid "Default configuration"
+msgstr ""
+
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:77
+msgid "Default nameserver 1"
+msgstr ""
+
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:85
+msgid "Default nameserver 2"
+msgstr ""
+
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:93
+msgid "Default nameserver 3"
+msgstr ""
+
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:101
+msgid "Default nameserver 4"
+msgstr ""
+
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:63
+msgid "Default nameservers"
+msgstr ""
+
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:107
+msgid "Default nameservers will be used when client orders a domain without specifying nameservers."
 msgstr ""
 
 #: staff/apps/subnetpools/edit/flsubnetpooledit.html:72
@@ -3421,8 +3949,16 @@ msgstr ""
 msgid "Default region name"
 msgstr ""
 
+#: domains/staff/frontend/components/states.config.js:281
+msgid "Default registrar"
+msgstr ""
+
 #: staff/apps/settings/openstack/openstacksettings.html:233
 msgid "Default role name"
+msgstr ""
+
+#: tickets/staff/frontend/components/signatures/signatures.component.js:37
+msgid "Default signature successfully added"
 msgstr ""
 
 #: staff/apps/settings/openstack/openstacksettings.html:217
@@ -3433,15 +3969,19 @@ msgstr ""
 msgid "Define what happens after a client is created from staff or signs up."
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:581
+#: staff/apps/settings/configurations/configurationdetails.html:590
 msgid "Delay (credit)"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:565
-#: staff/apps/settings/configurations/configurationdetails.html:650
+#: staff/apps/settings/configurations/configurationdetails.html:574
+#: staff/apps/settings/configurations/configurationdetails.html:659
 msgid "Delay (hours)"
 msgstr ""
 
+#: domains/staff/frontend/components/contacts_actions/contactsactions.html:5
+#: domains/staff/frontend/components/domains_actions/domainsactions.html:7
+#: domains/staff/frontend/components/registrars_actions/registrarsactions.html:5
+#: domains/staff/frontend/components/tlds_actions/tldsactions.html:7
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:133
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:190
 #: staff/apps/billing/products/productdetails.html:209
@@ -3500,9 +4040,9 @@ msgstr ""
 #: staff/apps/pkm/flpkmkeys.component.js:27
 #: staff/apps/pkm/flpkmkeys.html:104
 #: staff/apps/settings/configurations/configurationdetails.html:12
-#: staff/apps/settings/configurations/configurations.html:108
-#: staff/apps/settings/configurations/configurations.html:38
-#: staff/apps/settings/configurations/configurations.html:86
+#: staff/apps/settings/configurations/configurations.html:109
+#: staff/apps/settings/configurations/configurations.html:39
+#: staff/apps/settings/configurations/configurations.html:87
 #: staff/apps/settings/general/currency/flcurrencies.component.js:57
 #: staff/apps/settings/general/currency/flcurrencies.html:18
 #: staff/apps/settings/general/tos_settings/tos-settings.component.html:122
@@ -3513,7 +4053,14 @@ msgstr ""
 #: staff/apps/usergroups/flusergroupsactions.html:5
 #: staff/apps/users/actions/fluseractions.component.js:53
 #: staff/apps/users/actions/flxsuseractions.component.js:53
+#: tickets/staff/frontend/components/departments_actions/departmentsactions.html:5
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:270
+#: todo/staff/frontend/components/todo_actions/todoactions.html:5
 msgid "Delete"
+msgstr ""
+
+#: domains/staff/frontend/components/contacts_actions/contactsactions.component.js:27
+msgid "Delete Contact"
 msgstr ""
 
 #: staff/apps/osinstances/flinstancedetails.component.js:498
@@ -3522,6 +4069,14 @@ msgstr ""
 
 #: staff/apps/osinstances/flinstancedetails.component.js:497
 msgid "Delete IP {{ip}}"
+msgstr ""
+
+#: domains/staff/frontend/components/tlds_actions/tldsactions.component.js:25
+msgid "Delete TLD"
+msgstr ""
+
+#: todo/staff/frontend/components/todo_actions/todoactions.component.js:25
+msgid "Delete TODO"
 msgstr ""
 
 #: staff/apps/settings/general/tos_settings/tos-settings.component.js:65
@@ -3542,6 +4097,11 @@ msgstr ""
 
 #: staff/apps/clients/deleteopenstackservice/fldeleteopenstackservice.html:10
 msgid "Delete associated openstack project"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:334
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:335
+msgid "Delete attachment"
 msgstr ""
 
 #: staff/apps/osinstances/flinstancedetails.component.js:571
@@ -3598,6 +4158,14 @@ msgstr ""
 #: staff/apps/billing/products/productdetails.html:125
 #: staff/apps/billing/products/productdetails.html:169
 msgid "Delete cycle"
+msgstr ""
+
+#: tickets/staff/frontend/components/departments_actions/departmentsactions.component.js:24
+msgid "Delete department"
+msgstr ""
+
+#: domains/staff/frontend/components/domains_actions/domainsactions.component.js:27
+msgid "Delete domain"
 msgstr ""
 
 #: staff/apps/osflavors/flflavordetails.component.js:58
@@ -3684,6 +4252,10 @@ msgstr ""
 msgid "Delete key {{name}}"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:269
+msgid "Delete message?"
+msgstr ""
+
 #: staff/apps/networks/flnetworkdetails.component.js:72
 #: staff/apps/networks/flnetworks.component.js:171
 msgid "Delete network"
@@ -3721,9 +4293,9 @@ msgid "Delete order"
 msgstr ""
 
 #: staff/apps/osbilling/plans/flbillingplandetails.html:39
-#: staff/apps/osbilling/plans/flbillingplans.html:112
-#: staff/apps/osbilling/plans/flbillingplans.html:139
-#: staff/apps/osbilling/plans/flbillingplans.html:46
+#: staff/apps/osbilling/plans/flbillingplans.html:117
+#: staff/apps/osbilling/plans/flbillingplans.html:144
+#: staff/apps/osbilling/plans/flbillingplans.html:51
 msgid "Delete plan"
 msgstr ""
 
@@ -3768,6 +4340,10 @@ msgstr ""
 
 #: staff/apps/oszones/flzonedetails.component.js:168
 msgid "Delete recordset {{recordset}}"
+msgstr ""
+
+#: domains/staff/frontend/components/registrars_actions/registrarsactions.component.js:25
+msgid "Delete registrar"
 msgstr ""
 
 #: staff/apps/osrouters/flrouterdetails.component.js:119
@@ -3826,6 +4402,12 @@ msgstr ""
 msgid "Delete service {{id}}"
 msgstr ""
 
+#: tickets/staff/frontend/components/signatures/signatures.component.js:64
+#: tickets/staff/frontend/components/signatures/signatures.component.js:65
+#: tickets/staff/frontend/components/signatures/signatures.html:45
+msgid "Delete signature"
+msgstr ""
+
 #: staff/apps/networks/flnetworkdetails.component.js:151
 msgid "Delete subnet"
 msgstr ""
@@ -3857,6 +4439,11 @@ msgstr ""
 #: staff/apps/settings/notifications/edit/flnotification-template-edit.component.js:42
 #: staff/apps/settings/notifications/edit/flnotification-template-edit.template.html:46
 msgid "Delete template"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.component.js:20
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.html:32
+msgid "Delete ticket"
 msgstr ""
 
 #: staff/apps/billing/invoicing/flinvoicingdetails.component.js:77
@@ -3946,6 +4533,48 @@ msgstr ""
 msgid "Deleting the princing rule will apply to all calculated costs"
 msgstr ""
 
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:8
+#: tickets/staff/frontend/components/departments/departments.html:1
+#: tickets/staff/frontend/components/states.config.js:101
+#: tickets/staff/frontend/components/tickets/tickets.html:44
+#: tickets/staff/frontend/components/tickets/tickets.html:71
+msgid "Department"
+msgstr ""
+
+#: tickets/staff/frontend/components/departments_actions/departmentsactions.component.js:28
+msgid "Department deleted"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:102
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:106
+msgid "Department notification on ticket open to staff"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:111
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:115
+msgid "Department notification on ticket staff user reply to all users"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.component.js:46
+msgid "Department successfully created"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_details/departmentdetails.component.js:41
+msgid "Department successfully updated"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:257
+msgid "Department {:name}"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:64
+msgid "Department: <a ui-sref=\"pluginsTicketsDepartments({search: $ctrl.ticket.department_display})\" class=\"md-primary\">{{$ctrl.ticket.department_display}}</a>"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:208
+msgid "Departments"
+msgstr ""
+
 #: staff/apps/billing/configurable_options/optionlist.component.html:55
 #: staff/apps/billing/invoicing/create/flinvoicecreate.html:101
 #: staff/apps/billing/invoicing/edit/flinvoiceedit.html:46
@@ -3987,13 +4616,18 @@ msgstr ""
 #: staff/apps/oszones/flzoneedit.html:82
 #: staff/apps/servers/flservergroup-list/flservergroup-list.component.html:58
 #: staff/apps/settings/configurations/configurationedit.html:16
-#: staff/apps/settings/configurations/configurations.html:60
+#: staff/apps/settings/configurations/configurations.html:61
 #: staff/apps/subnetpools/edit/flsubnetpooledit.html:66
 #: staff/apps/subnetpools/flsubnetpools.html:68
 #: staff/apps/tasklog/tasks.html:13
 #: staff/apps/usergroups/flusergroupdetails.html:19
 #: staff/apps/usergroups/flusergroupedit.html:16
 #: staff/apps/usergroups/flusergroups.html:51
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:118
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:114
+#: todo/staff/frontend/components/todo_actions/dialogs/todo_edit/todoedit.html:28
+#: todo/staff/frontend/components/todo_details/tododetails.html:39
+#: todo/staff/frontend/components/todos/todos.html:26
 msgid "Description"
 msgstr ""
 
@@ -4030,7 +4664,7 @@ msgstr ""
 #: staff/apps/billing/journal/journaldetail.html:24
 #: staff/apps/billing/states.config.js:648
 #: staff/apps/billing/states.config.js:710
-#: staff/apps/clients/flclientdetails.html:232
+#: staff/apps/clients/flclientdetails.html:238
 msgid "Destination"
 msgstr ""
 
@@ -4090,14 +4724,14 @@ msgstr ""
 msgid "Disable this notification"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:291
+#: staff/apps/clients/flclientdetails.html:297
 #: staff/apps/osflavors/flflavordetails.html:41
 #: staff/apps/osprojects/states.config.js:45
 #: staff/apps/osprojects/states.config.js:62
 msgid "Disabled"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:298
+#: staff/apps/clients/flclientdetails.html:304
 msgid "Disabled reason"
 msgstr ""
 
@@ -4144,6 +4778,7 @@ msgstr ""
 msgid "Disk overcommit"
 msgstr ""
 
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:66
 #: staff/apps/osflavors/states.config.js:55
 msgid "Disk size"
 msgstr ""
@@ -4210,12 +4845,12 @@ msgstr ""
 msgid "Dissociate security group {{sec_group}} from instance {{instance}}"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.component.js:252
-#: staff/apps/clients/flclientdetails.html:340
+#: staff/apps/clients/flclientdetails.component.js:289
+#: staff/apps/clients/flclientdetails.html:409
 msgid "Dissociate user"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.component.js:251
+#: staff/apps/clients/flclientdetails.component.js:288
 msgid "Dissociate user {{user}}"
 msgstr ""
 
@@ -4225,6 +4860,14 @@ msgstr ""
 
 #: staff/apps/osrouters/flrouterdetails.html:46
 msgid "Distributed: {{ $ctrl.router.distributed }}"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:62
+msgid "Dns management"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:41
+msgid "Dns management enabled"
 msgstr ""
 
 #: staff/apps/settings/general/signup_settings/signupsettings.component.html:66
@@ -4266,6 +4909,33 @@ msgstr ""
 msgid "Docker volume size (GB): {{$ctrl.clusterTemplate.docker_volume_size}}"
 msgstr ""
 
+#: domains/staff/frontend/components/domains/domains.html:1
+msgid "Domain"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:149
+msgid "Domain Details"
+msgstr ""
+
+#: domains/staff/frontend/components/domains_actions/domainsactions.component.js:31
+msgid "Domain deleted from Fleio"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:68
+msgid "Domain has no contact associated"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:43
+msgid "Domain is available for registration"
+msgstr ""
+
+#: domains/staff/frontend/components/transfer_domain/transferdomain.html:42
+msgid "Domain is available for transfer"
+msgstr ""
+
+#: domains/staff/frontend/components/client_info/clientinfo.html:5
+#: domains/staff/frontend/components/register_domain/registerdomain.html:24
+#: domains/staff/frontend/components/transfer_domain/transferdomain.html:25
 #: staff/apps/oszones/flzoneedit.html:60
 msgid "Domain name"
 msgstr ""
@@ -4274,8 +4944,25 @@ msgstr ""
 msgid "Domain name: {{ $ctrl.serviceDetails.domain_name }}"
 msgstr ""
 
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:7
+msgid "Domain options"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.component.js:94
+msgid "Domain updated"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:39
+msgid "Domains"
+msgstr ""
+
 #: commons/SFA/remember_sfa/fl-remember-sfa.template.html:4
 msgid "Don't ask again on this computer"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:41
+#: tickets/staff/frontend/components/states.config.js:63
+msgid "Done"
 msgstr ""
 
 #: staff/apps/osimages/flimagedetails.component.js:31
@@ -4285,6 +4972,12 @@ msgstr ""
 
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:221
 msgid "Download PDF"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:113
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:169
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:263
+msgid "Download attachment"
 msgstr ""
 
 #: staff/apps/osimages/flimages.component.js:32
@@ -4321,11 +5014,23 @@ msgstr ""
 msgid "ENABLED<span ng-if=\"$ctrl.status.default\"> - DEFAULT</span>"
 msgstr ""
 
+#: domains/staff/frontend/components/transfer_domain/transferdomain.html:47
+msgid "EPP code"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:138
+msgid "EPP code required for transfer"
+msgstr ""
+
 #: oscommons/floatingips-status-translations.js:15
 #: oscommons/osfilters/flinstancestatus.filter.js:15
 msgid "ERROR"
 msgstr ""
 
+#: domains/staff/frontend/components/contacts_actions/contactsactions.html:1
+#: domains/staff/frontend/components/domains_actions/domainsactions.html:2
+#: domains/staff/frontend/components/registrars_actions/registrarsactions.html:1
+#: domains/staff/frontend/components/tlds_actions/tldsactions.html:2
 #: staff/apps/billing/invoicing/edit/flinvoiceedit.html:7
 #: staff/apps/billing/invoicing/edit/states.config.js:33
 #: staff/apps/billing/invoicing/edit/states.config.js:35
@@ -4354,12 +5059,15 @@ msgstr ""
 #: staff/apps/osvolumesnapshots/actions/flvolumesnapshotactions.directive.js:25
 #: staff/apps/pkm/flpkmkeys.component.js:28
 #: staff/apps/pkm/flpkmkeys.html:98
-#: staff/apps/settings/configurations/configurations.html:102
-#: staff/apps/settings/configurations/configurations.html:34
-#: staff/apps/settings/configurations/configurations.html:82
+#: staff/apps/settings/configurations/configurations.html:103
+#: staff/apps/settings/configurations/configurations.html:35
+#: staff/apps/settings/configurations/configurations.html:83
 #: staff/apps/settings/general/currency/flcurrencies.html:14
 #: staff/apps/usergroups/flusergroupsactions.html:1
 #: staff/apps/usergroups/flusergroupsactions.html:18
+#: tickets/staff/frontend/components/departments_actions/departmentsactions.html:1
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.html:1
+#: todo/staff/frontend/components/todo_actions/todoactions.html:1
 msgid "Edit"
 msgstr ""
 
@@ -4381,7 +5089,7 @@ msgstr ""
 #: staff/apps/clients/actions/flclientactions.html:1
 #: staff/apps/clients/actions/flxsclientactions.html:10
 #: staff/apps/clients/flclientedit.html:9
-#: staff/apps/clients/states.config.js:177
+#: staff/apps/clients/states.config.js:187
 msgid "Edit client"
 msgstr ""
 
@@ -4393,7 +5101,7 @@ msgstr ""
 msgid "Edit configuration"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:89
+#: staff/apps/clients/flclientdetails.html:95
 msgid "Edit credit"
 msgstr ""
 
@@ -4409,6 +5117,15 @@ msgstr ""
 #: staff/apps/billing/products/productdetails.html:121
 #: staff/apps/billing/products/productdetails.html:165
 msgid "Edit cycle"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:259
+msgid "Edit department"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:159
+#: domains/staff/frontend/components/register_domain/registerdomain.html:161
+msgid "Edit domain contact"
 msgstr ""
 
 #: staff/apps/osflavors/states.config.js:144
@@ -4438,6 +5155,10 @@ msgstr ""
 msgid "Edit invoice"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_details/dialogs/tickets_updates_edit/ticketsupdatesedit.html:3
+msgid "Edit message"
+msgstr ""
+
 #: staff/apps/osbilling/resources/flmetric.html:2
 msgid "Edit metric"
 msgstr ""
@@ -4463,9 +5184,9 @@ msgstr ""
 
 #: staff/apps/osbilling/plans/create/flplancreate.html:4
 #: staff/apps/osbilling/plans/flbillingplandetails.html:34
-#: staff/apps/osbilling/plans/flbillingplans.html:104
-#: staff/apps/osbilling/plans/flbillingplans.html:127
-#: staff/apps/osbilling/plans/flbillingplans.html:37
+#: staff/apps/osbilling/plans/flbillingplans.html:109
+#: staff/apps/osbilling/plans/flbillingplans.html:132
+#: staff/apps/osbilling/plans/flbillingplans.html:42
 msgid "Edit plan"
 msgstr ""
 
@@ -4526,6 +5247,12 @@ msgstr ""
 msgid "Edit settings"
 msgstr ""
 
+#: tickets/staff/frontend/components/plugin_signatures_manage/pluginsignaturesmanage.html:17
+#: tickets/staff/frontend/components/signatures/signatures.html:8
+#: tickets/staff/frontend/components/states.config.js:436
+msgid "Edit signatures"
+msgstr ""
+
 #: staff/apps/subnetpools/flsubnetpooldetails.component.js:28
 #: staff/apps/subnetpools/flsubnetpools.component.js:37
 #: staff/apps/subnetpools/flsubnetpools.html:133
@@ -4552,6 +5279,14 @@ msgstr ""
 msgid "Edit templates"
 msgstr ""
 
+#: tickets/staff/frontend/components/states.config.js:399
+msgid "Edit ticket"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:6
+msgid "Edit ticket {{$ctrl.ticket.id}}"
+msgstr ""
+
 #: staff/apps/users/actions/fluseractions.html:1
 #: staff/apps/users/actions/flxsuseractions.html:10
 #: staff/apps/users/fluseredit.html:6
@@ -4560,6 +5295,10 @@ msgstr ""
 
 #: commons/userprofile/fluserprofile.html:47
 msgid "Edit user profile"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:434
+msgid "Edit user signatures"
 msgstr ""
 
 #: staff/apps/oszones/flzonedetails.component.js:67
@@ -4580,8 +5319,28 @@ msgstr ""
 msgid "Edit {{::$ctrl.clientgroup.name}}"
 msgstr ""
 
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:3
+msgid "Edit {{::$ctrl.contact.first_name}}"
+msgstr ""
+
+#: domains/staff/frontend/components/domains_actions/dialogs/domain_edit/domainedit.html:3
+msgid "Edit {{::$ctrl.domain.name}}"
+msgstr ""
+
 #: staff/apps/osflavorgroups/flflavorgroupedit.html:3
 msgid "Edit {{::$ctrl.flavorgroup.name}}"
+msgstr ""
+
+#: domains/staff/frontend/components/registrars_actions/dialogs/registrar_edit/registraredit.html:3
+msgid "Edit {{::$ctrl.registrar.name}}"
+msgstr ""
+
+#: domains/staff/frontend/components/tlds_actions/dialogs/tld_edit/tldedit.html:3
+msgid "Edit {{::$ctrl.tld.name}}"
+msgstr ""
+
+#: todo/staff/frontend/components/todo_actions/dialogs/todo_edit/todoedit.html:3
+msgid "Edit {{::$ctrl.todo.title}}"
 msgstr ""
 
 #: staff/apps/osapiusers/flapiuseredit.html:3
@@ -4607,16 +5366,23 @@ msgid "Egress - Outgoing"
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:77
-#: staff/apps/clients/flclientdetails.html:33
+#: domains/staff/frontend/components/contacts/contacts.html:26
+#: domains/staff/frontend/components/states.config.js:369
+#: staff/apps/clients/flclientdetails.html:39
 #: staff/apps/oszones/flzoneedit.html:66
 #: staff/apps/oszones/flzones.html:53
-#: staff/apps/users/fluserdetails.html:28
+#: staff/apps/users/fluserdetails.html:34
 #: staff/apps/users/fluseredit.html:32
 #: staff/apps/users/states.config.js:42
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:35
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:39
+#: tickets/staff/frontend/components/departments/departments.html:23
+#: tickets/staff/frontend/components/departments/departments.html:47
 msgid "Email"
 msgstr ""
 
 #: commons/userprofile/fledituserprofile.html:42
+#: tickets/staff/frontend/components/states.config.js:214
 msgid "Email address"
 msgstr ""
 
@@ -4631,6 +5397,14 @@ msgstr ""
 #: staff/apps/settings/general/signup_settings/signupsettings.component.html:29
 #: staff/apps/settings/general/signup_settings/signupsettings.component.html:39
 msgid "Email confirmation template"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:70
+msgid "Email forwarding"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:46
+msgid "Email forwarding enabled"
 msgstr ""
 
 #: staff/apps/oszones/flzonedetails.html:33
@@ -4650,6 +5424,10 @@ msgstr ""
 msgid "Enable DHCP"
 msgstr ""
 
+#: domains/staff/frontend/components/register_domain/registerdomain.html:77
+msgid "Enable ID protection for this domain"
+msgstr ""
+
 #: staff/apps/settings/configurations/configurationdetails.html:201
 msgid "Enable MaxMind fraud check"
 msgstr ""
@@ -4663,34 +5441,52 @@ msgid "Enable SNAT: {{ $ctrl.router.enable_snat }}"
 msgstr ""
 
 #: staff/apps/settings/configurations/configurationdetails.html:311
-#: staff/apps/settings/configurations/configurationdetails.html:402
+#: staff/apps/settings/configurations/configurationdetails.html:407
 msgid "Enable automatic settlements"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:550
-#: staff/apps/settings/configurations/configurationdetails.html:596
+#: staff/apps/settings/configurations/configurationdetails.html:559
+#: staff/apps/settings/configurations/configurationdetails.html:605
 msgid "Enable automatic suspension"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:614
-#: staff/apps/settings/configurations/configurationdetails.html:618
+#: staff/apps/settings/configurations/configurationdetails.html:623
+#: staff/apps/settings/configurations/configurationdetails.html:627
 msgid "Enable automatic termination"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:451
+#: staff/apps/settings/configurations/configurationdetails.html:460
 msgid "Enable credit notification"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:447
+#: staff/apps/settings/configurations/configurationdetails.html:456
 msgid "Enable credit notifications"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:556
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:42
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:55
+msgid "Enable default TLD"
+msgstr ""
+
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:106
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:69
+msgid "Enable default nameservers"
+msgstr ""
+
+#: staff/apps/settings/configurations/configurationdetails.html:565
 msgid "Enable delay by hours"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:572
+#: staff/apps/settings/configurations/configurationdetails.html:581
 msgid "Enable delay until credit is used"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:61
+msgid "Enable dns management for this domain"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:69
+msgid "Enable email forwarding for this domain"
 msgstr ""
 
 #: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:66
@@ -4716,7 +5512,7 @@ msgstr ""
 msgid "Enable registry"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:419
+#: staff/apps/settings/configurations/configurationdetails.html:424
 msgid "Enable sequential numbering for paid invoices."
 msgstr ""
 
@@ -4792,6 +5588,18 @@ msgid ""
 "      they validate their email. They will be redirected to the email confirmation page until they activate their\n"
 "      account either by adding the code received in the notification email in the input field on the page or by\n"
 "      clicking the link received in the email."
+msgstr ""
+
+#: staff/apps/clients/change_enduser_panel_url/change_enduser_panel_url.html:9
+msgid "Enduser panel url"
+msgstr ""
+
+#: staff/apps/clients/flclientdetails.html:374
+msgid "Enduser panel url:"
+msgstr ""
+
+#: hypanel/staff/frontend/components/server_settings/serversettings.html:45
+msgid "Enter Hypanel server details."
 msgstr ""
 
 #: staff/apps/osvolumes/extend/flvolumeextend.html:11
@@ -4882,6 +5690,15 @@ msgstr ""
 msgid "Error copying text to clipboard"
 msgstr ""
 
+#: domains/staff/frontend/components/register_domain/registerdomain.component.js:132
+#: domains/staff/frontend/components/register_domain/registerdomain.component.js:183
+msgid "Error when checking custom fields."
+msgstr ""
+
+#: domains/staff/frontend/components/transfer_domain/transferdomain.component.js:37
+msgid "Error when checking if domain is available."
+msgstr ""
+
 #: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:105
 msgid "Error when trying to update profile."
 msgstr ""
@@ -4906,10 +5723,19 @@ msgstr ""
 msgid "Exclude"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:403
+#: staff/apps/settings/configurations/configurationdetails.html:408
 msgid ""
 "Existing usage will be automatically settled using client credit. If an invoice exists it will be\n"
 "                  paid using client credit."
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:84
+msgid "Expired"
+msgstr ""
+
+#: domains/staff/frontend/components/client_info/clientinfo.html:8
+#: domains/staff/frontend/components/domain_details/domaindetails.html:86
+msgid "Expiry date"
 msgstr ""
 
 #: staff/apps/osimages/flimagedetails.html:65
@@ -4936,7 +5762,7 @@ msgstr ""
 msgid "External"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:45
+#: staff/apps/users/fluserdetails.html:51
 msgid "External billing id"
 msgstr ""
 
@@ -4970,6 +5796,10 @@ msgstr ""
 msgid "Extra information"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_details/dialogs/remove_linking/removelinking.controller.js:25
+msgid "Failed to retrieve the link"
+msgstr ""
+
 #: staff/apps/billing/invoicing/payments/paymentcreate.html:46
 #: staff/apps/billing/journal/journaldetail.html:52
 msgid "Fee"
@@ -4984,7 +5814,7 @@ msgstr ""
 msgid "File"
 msgstr ""
 
-#: staff/apps/osimages/create/flimagecreate.component.js:88
+#: staff/apps/osimages/create/flimagecreate.component.js:97
 msgid "File to large, please check server upload limit."
 msgstr ""
 
@@ -4995,6 +5825,14 @@ msgstr ""
 
 #: staff/apps/osbilling/pricing/flpricerule.component.js:60
 msgid "Fill in name, time unit and price first"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:83
+msgid "Fill in the addon selling prices. Leave price empty if you want to disable price for a number of years."
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:27
+msgid "Fill in the selling prices. Leave price empty if you want to disable price for a number of years."
 msgstr ""
 
 #: commons/auth/reset/flreset.html:11
@@ -5038,15 +5876,22 @@ msgstr ""
 msgid "Finished generation"
 msgstr ""
 
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:14
 #: staff/apps/clients/clienteditdlg/clientedit.html:12
 #: staff/apps/clients/flclientedit.html:26
 msgid "First Name"
 msgstr ""
 
 #: commons/userprofile/fledituserprofile.html:26
-#: staff/apps/users/fluserdetails.html:25
+#: domains/staff/frontend/components/states.config.js:366
+#: staff/apps/users/fluserdetails.html:31
 #: staff/apps/users/fluseredit.html:11
 msgid "First name"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:143
+#: domains/staff/frontend/components/register_domain/registerdomain.html:96
+msgid "First nameserver"
 msgstr ""
 
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:40
@@ -5305,6 +6150,12 @@ msgstr ""
 msgid "Found version"
 msgstr ""
 
+#: domains/staff/frontend/components/domain_details/domaindetails.html:167
+#: domains/staff/frontend/components/register_domain/registerdomain.html:123
+msgid "Fourth nameserver"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:88
 #: staff/apps/billing/states.config.js:231
 msgid "Fraud"
 msgstr ""
@@ -5346,8 +6197,13 @@ msgid "Frontend updated"
 msgstr ""
 
 #: staff/apps/usergroups/flusergroupdetails.html:27
-#: staff/apps/users/flusers.html:59
+#: staff/apps/users/flusers.html:62
 msgid "Full name"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:44
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:48
+msgid "Full year (e.g. 2019)"
 msgstr ""
 
 #: staff/apps/billing/gateways/gateways.html:1
@@ -5377,6 +6233,7 @@ msgstr ""
 msgid "Gateways"
 msgstr ""
 
+#: domains/staff/frontend/components/domain_details/domaindetails.html:24
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:104
 #: staff/apps/billing/products/flbillingproductedit.html:14
 #: staff/apps/billing/products/productdetails.html:33
@@ -5390,7 +6247,7 @@ msgstr ""
 msgid "General settings"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:391
+#: staff/apps/settings/configurations/configurationdetails.html:396
 msgid "Generate invoice"
 msgstr ""
 
@@ -5485,6 +6342,10 @@ msgid ""
 "          manually entering the secret key."
 msgstr ""
 
+#: domains/staff/frontend/components/states.config.js:92
+msgid "Grace"
+msgstr ""
+
 #: staff/apps/settings/authorization/authorization.html:205
 #: staff/apps/settings/authorization/authorization.html:206
 #: staff/apps/settings/authorization/authorization.html:82
@@ -5498,12 +6359,22 @@ msgstr ""
 
 #: staff/apps/billing/products/flbillingproductedit.html:43
 #: staff/apps/billing/products/productdetails.html:48
-#: staff/apps/clients/flclients.html:70
+#: staff/apps/clients/flclients.html:81
 #: staff/apps/osflavors/flflavordetails.html:46
 #: staff/apps/osflavors/flflavors.html:35
 #: staff/apps/servers/flserver-list/flserver-list.component.html:54
 #: staff/apps/servers/flservers.states.js:22
 msgid "Group"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:21
+#: domains/staff/frontend/components/tld_details/tlddetails.html:77
+msgid "Group by currency"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:24
+#: domains/staff/frontend/components/tld_details/tlddetails.html:80
+msgid "Group by price type"
 msgstr ""
 
 #: staff/apps/billing/products/flbillingproducts.component.js:48
@@ -5546,6 +6417,10 @@ msgstr ""
 msgid "HIDDEN"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets/tickets.html:88
+msgid "HIGH"
+msgstr ""
+
 #: staff/apps/osclustertemplates/flclustertemplatedetails.component.html:112
 msgid "HTTP proxy: {{$ctrl.clusterTemplate.http_proxy ? $ctrl.clusterTemplate.http_proxy : '-'}}"
 msgstr ""
@@ -5564,6 +6439,10 @@ msgstr ""
 
 #: staff/apps/osvolumebackups/flvolumebackupdetails.html:29
 msgid "Has dependent backups: {{ ::$ctrl.volumeBackup.has_dependent_backups }}"
+msgstr ""
+
+#: staff/apps/clients/states.config.js:125
+msgid "Has instances"
 msgstr ""
 
 #: staff/apps/settings/authorization/authorization.html:104
@@ -5633,8 +6512,16 @@ msgstr ""
 msgid "Hide widget"
 msgstr ""
 
+#: tickets/staff/frontend/components/states.config.js:138
+msgid "High"
+msgstr ""
+
 #: staff/apps/osrouters/flrouterdetails.html:48
 msgid "High availability: {{ $ctrl.router.ha }}"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets/tickets.html:20
+msgid "High priority"
 msgstr ""
 
 #: staff/apps/osinstances/flinstancedetail.html:305
@@ -5677,25 +6564,43 @@ msgstr ""
 msgid "Host name starts with"
 msgstr ""
 
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:21
 #: staff/apps/servers/flserver-create/flserver-create.component.html:62
 #: staff/apps/servers/flserver-detail/flserver-detail.component.html:60
 msgid "Hostname"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:480
-#: staff/apps/settings/configurations/configurationdetails.html:501
-#: staff/apps/settings/configurations/configurationdetails.html:522
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:64
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:68
+msgid "Hour"
+msgstr ""
+
+#: staff/apps/settings/configurations/configurationdetails.html:489
+#: staff/apps/settings/configurations/configurationdetails.html:510
+#: staff/apps/settings/configurations/configurationdetails.html:531
 msgid "Hours remaining"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:538
+#: staff/apps/settings/configurations/configurationdetails.html:547
 msgid "Hours remaining & notification template"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:539
+#: staff/apps/settings/configurations/configurationdetails.html:548
 msgid ""
 "How many hours until the client reaches the credit limit with his current usage.\n"
 "                  Select a notification template to send. Selecting the blank notification will disable it."
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:2
+msgid "Hypanel module configuration"
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:12
+msgid "Hypanel server"
+msgstr ""
+
+#: hypanel/staff/frontend/components/server_settings/serversettings.html:44
+msgid "Hypanel server configuration"
 msgstr ""
 
 #: staff/apps/osinstances/flinstances.html:67
@@ -5734,20 +6639,30 @@ msgid "ICMP type"
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:88
+#: domains/staff/frontend/components/states.config.js:368
 #: staff/apps/billing/gateways/gateways.html:47
-#: staff/apps/clients/flclientdetails.html:53
+#: staff/apps/clients/flclientdetails.html:59
 #: staff/apps/networks/flnetworkdetails.html:35
 #: staff/apps/osapiusers/flapiusers.html:29
 #: staff/apps/osapiusers/flapiusers.html:68
 #: staff/apps/osvolumes/snapshots/flvolumesnapshots.template.html:12
-#: staff/apps/users/fluserdetails.html:29
-#: staff/apps/users/fluserdetails.html:67
-#: staff/apps/users/fluserdetails.html:90
+#: staff/apps/users/fluserdetails.html:35
+#: staff/apps/users/fluserdetails.html:73
+#: staff/apps/users/fluserdetails.html:96
+#: tickets/staff/frontend/components/departments/departments.html:21
 msgid "ID"
 msgstr ""
 
 #: staff/apps/osvolumes/backups/flvolumebackups.template.html:12
 msgid "ID / Date"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:78
+msgid "ID protection"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:51
+msgid "ID protection enabled"
 msgstr ""
 
 #: staff/apps/osimages/flimagedetails.html:48
@@ -5808,6 +6723,12 @@ msgstr ""
 msgid "IP address"
 msgstr ""
 
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:44
+msgid ""
+"IP count (configurable option can be added so users can change the value\n"
+"                    themselves)"
+msgstr ""
+
 #: staff/apps/osinstances/dissociateip/flinstancedissociateip.controller.js:26
 msgid "IP dissociated"
 msgstr ""
@@ -5852,17 +6773,17 @@ msgstr ""
 msgid "Idle ..."
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:394
+#: staff/apps/settings/configurations/configurationdetails.html:399
 msgid ""
 "If an invoice is generated and it not automatically settled an notification containing invoice details\n"
 "                  will be sent to the customer."
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:399
+#: staff/apps/settings/configurations/configurationdetails.html:404
 msgid "If an user manually pays an invoice a TODO will be created to make staff users aware of the payment."
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:408
+#: staff/apps/settings/configurations/configurationdetails.html:413
 msgid ""
 "If automatic settlements are enabled the invoices will be paid only if afer paying the invoice the\n"
 "                  uptodate credit will be greater or equal than minimum up to date credit to be left after paying an\n"
@@ -5871,6 +6792,14 @@ msgstr ""
 
 #: staff/apps/oszones/flzonedetails.html:119
 msgid "If input value exceeds 255 characters\\nsplit it using spaces."
+msgstr ""
+
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:25
+msgid "If this is checked new internet domain registration is allowed for the clients with this configuration."
+msgstr ""
+
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:29
+msgid "If this is checked transfer of internet domains is allowed for the clients with this configuration."
 msgstr ""
 
 #: staff/apps/billing/invoicing/delete/flinvoicedelete.html:11
@@ -5895,7 +6824,7 @@ msgstr ""
 msgid "Image"
 msgstr ""
 
-#: staff/apps/osimages/create/flimagecreate.component.js:70
+#: staff/apps/osimages/create/flimagecreate.component.js:79
 msgid "Image create scheduled"
 msgstr ""
 
@@ -5979,7 +6908,7 @@ msgstr ""
 msgid "Impersonate"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:344
+#: staff/apps/clients/flclientdetails.html:413
 #: staff/apps/users/actions/fluseractions.html:4
 #: staff/apps/users/states.config.js:136
 msgid "Impersonate user"
@@ -5987,6 +6916,10 @@ msgstr ""
 
 #: staff/apps/users/states.config.js:137
 msgid "Impersonate user {:id}"
+msgstr ""
+
+#: todo/staff/frontend/components/states.config.js:41
+msgid "In Progress"
 msgstr ""
 
 #: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:16
@@ -6000,6 +6933,12 @@ msgstr ""
 
 #: staff/apps/osinstances/create/flshareimage.html:8
 msgid "In order to proceed, the image needs to be shared with {{::$ctrl.client.name}}"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:49
+#: tickets/staff/frontend/components/states.config.js:71
+#: todo/staff/frontend/components/states.config.js:40
+msgid "In progress"
 msgstr ""
 
 #: commons/messages/errormessages.html:17
@@ -6140,6 +7079,40 @@ msgstr ""
 msgid "Internal id"
 msgstr ""
 
+#: tickets/staff/frontend/components/states.config.js:98
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:73
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:70
+msgid "Internal status"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:258
+msgid "Internal status successfully updated."
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:82
+msgid ""
+"Internal status: {{$ctrl.ticket.internal_status_display}}\n"
+"                            <md-menu>\n"
+"                                <a class=\"md-primary\" ng-click=\"$mdMenu.open($event)\">\n"
+"                                    <md-icon fl-tooltip=\"{{'Quick edit' | translate}}\" class=\"fl-icons\">edit</md-icon>\n"
+"                                </a>\n"
+"                                <md-menu-content>\n"
+"                                    <md-menu-item>\n"
+"                                        <md-button ng-click=\"$ctrl.changeInternalStatus(null)\" translate>Set to \"N/A\"</md-button>\n"
+"                                    </md-menu-item>\n"
+"                                    <md-menu-item>\n"
+"                                        <md-button ng-click=\"$ctrl.changeInternalStatus('open')\" translate>Set to \"open\"</md-button>\n"
+"                                    </md-menu-item>\n"
+"                                    <md-menu-item>\n"
+"                                        <md-button ng-click=\"$ctrl.changeInternalStatus('done')\" translate>Set to \"done\"</md-button>\n"
+"                                    </md-menu-item>\n"
+"                                    <md-menu-item>\n"
+"                                        <md-button ng-click=\"$ctrl.changeInternalStatus('in progress')\" translate>Set to \"in progress\"</md-button>\n"
+"                                    </md-menu-item>\n"
+"                                </md-menu-content>\n"
+"                            </md-menu>"
+msgstr ""
+
 #: commons/messages/errormessages.html:19
 #: commons/messages/ngmessages.html:9
 msgid "Invalid URL"
@@ -6222,8 +7195,8 @@ msgid "Invoice type"
 msgstr ""
 
 #: staff/apps/billing/journal/journal.html:46
-#: staff/apps/clients/flclientdetails.html:191
-#: staff/apps/clients/flclientdetails.html:205
+#: staff/apps/clients/flclientdetails.html:197
+#: staff/apps/clients/flclientdetails.html:211
 msgid "Invoice {{::journal.destination_info.invoice}}"
 msgstr ""
 
@@ -6242,12 +7215,12 @@ msgstr ""
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:137
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:64
 #: staff/apps/billing/states.config.js:32
-#: staff/apps/clients/flclientdetails.html:105
+#: staff/apps/clients/flclientdetails.html:111
 msgid "Invoices"
 msgstr ""
 
 #: staff/apps/settings/configurations/configurationdetails.html:294
-#: staff/apps/settings/configurations/configurationdetails.html:413
+#: staff/apps/settings/configurations/configurationdetails.html:418
 msgid "Invoicing"
 msgstr ""
 
@@ -6274,7 +7247,7 @@ msgstr ""
 #: staff/apps/clientgroups/states.config.js:54
 #: staff/apps/networks/flnetworkdetails.html:41
 #: staff/apps/networks/states.config.js:53
-#: staff/apps/osbilling/plans/flbillingplans.html:68
+#: staff/apps/osbilling/plans/flbillingplans.html:73
 #: staff/apps/osflavorgroups/flflavorgroupedit.html:29
 #: staff/apps/subnetpools/states.config.js:49
 #: staff/apps/usergroups/flusergroupedit.html:23
@@ -6324,6 +7297,7 @@ msgstr ""
 msgid "Is public"
 msgstr ""
 
+#: staff/apps/clients/states.config.js:130
 #: staff/apps/users/fluseredit.html:79
 #: staff/apps/users/fluseredit.html:80
 #: staff/apps/users/fluseredit.html:84
@@ -6350,6 +7324,10 @@ msgstr ""
 msgid "Is superuser"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_actions/dialogs/ticket_linking/ticketlinking.html:28
+msgid "Is symmetrical"
+msgstr ""
+
 #: staff/apps/billing/invoicing/create/flinvoicecreate.html:64
 #: staff/apps/billing/invoicing/edit/flinvoiceedit.html:22
 #: staff/apps/billing/invoicing/flinvoicing.html:19
@@ -6368,7 +7346,7 @@ msgstr ""
 msgid "Issue invoice"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:431
+#: staff/apps/settings/configurations/configurationdetails.html:436
 msgid "Issue invoice before next due date"
 msgstr ""
 
@@ -6380,7 +7358,7 @@ msgstr ""
 msgid "Issue proforma invoices and make them fiscal when paid"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:415
+#: staff/apps/settings/configurations/configurationdetails.html:420
 msgid "Issue proforma invoices and make them fiscal when paid. The fiscal invoice date will be set to the date when the invoice becomes paid."
 msgstr ""
 
@@ -6396,7 +7374,7 @@ msgstr ""
 
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:62
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:96
-#: staff/apps/clients/flclientdetails.html:156
+#: staff/apps/clients/flclientdetails.html:162
 msgid "Journal"
 msgstr ""
 
@@ -6433,6 +7411,11 @@ msgstr ""
 msgid "Kubernetes"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets/tickets.html:90
+msgid "LOW"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:192
 #: staff/apps/billing/configurable_options/choices/choice.dialog.html:11
 msgid "Label"
 msgstr ""
@@ -6453,29 +7436,34 @@ msgstr ""
 msgid "Language"
 msgstr ""
 
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:20
 #: staff/apps/clients/clienteditdlg/clientedit.html:18
 #: staff/apps/clients/flclientedit.html:32
 msgid "Last Name"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:94
+msgid "Last Updated"
 msgstr ""
 
 #: staff/apps/osinstances/flinstancedetails.component.js:66
 msgid "Last hour"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:30
-#: staff/apps/users/flusers.html:61
+#: staff/apps/users/fluserdetails.html:36
+#: staff/apps/users/flusers.html:64
 #: staff/apps/users/states.config.js:42
 #: staff/apps/users/states.config.js:50
 msgid "Last login"
 msgstr ""
 
 #: staff/apps/users/flusers.html:29
-#: staff/apps/users/flusers.html:90
+#: staff/apps/users/flusers.html:93
 msgid "Last login: never"
 msgstr ""
 
 #: staff/apps/users/flusers.html:28
-#: staff/apps/users/flusers.html:89
+#: staff/apps/users/flusers.html:92
 msgid "Last login: {{ ::user.last_login | date:'medium' }}"
 msgstr ""
 
@@ -6484,9 +7472,22 @@ msgid "Last message received at"
 msgstr ""
 
 #: commons/userprofile/fledituserprofile.html:33
-#: staff/apps/users/fluserdetails.html:26
+#: domains/staff/frontend/components/states.config.js:367
+#: staff/apps/users/fluserdetails.html:32
 #: staff/apps/users/fluseredit.html:17
 msgid "Last name"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:96
+msgid "Last registrar"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets/tickets.html:70
+msgid "Last reply"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets/tickets.html:43
+msgid "Last reply at"
 msgstr ""
 
 #: staff/apps/billing/services/details/servicedetails.html:123
@@ -6497,7 +7498,7 @@ msgstr ""
 msgid "Last updated"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:38
+#: staff/apps/users/fluserdetails.html:44
 msgid "Latest TOS user agreed with"
 msgstr ""
 
@@ -6560,12 +7561,29 @@ msgid "License set"
 msgstr ""
 
 #: staff/apps/settings/configurations/configurationdetails.html:352
-#: staff/apps/settings/configurations/configurationdetails.html:426
+#: staff/apps/settings/configurations/configurationdetails.html:431
 msgid "Limit billable seconds per month"
 msgstr ""
 
 #: staff/apps/settings/configurations/configurationdetails.html:84
 msgid "Limits for clients with agreements"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_actions/dialogs/ticket_linking/ticketlinking.html:3
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.html:26
+msgid "Link a ticket"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_actions/dialogs/ticket_linking/ticketlinking.html:40
+msgid "Link ticket"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.component.js:74
+msgid "Linking created"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:368
+msgid "Linking removed"
 msgstr ""
 
 #: commons/ui/cardswitch/flcardswitch.directive.js:35
@@ -6576,16 +7594,18 @@ msgstr ""
 msgid "Live migrate"
 msgstr ""
 
+#: domains/staff/frontend/components/contacts/contacts.html:46
+#: domains/staff/frontend/components/contacts/contacts.html:90
 #: staff/apps/activitylog/log.html:106
 #: staff/apps/clientgroups/flclientgroups.html:91
-#: staff/apps/clients/flclients.html:143
-#: staff/apps/clients/flclients.html:55
+#: staff/apps/clients/flclients.html:154
+#: staff/apps/clients/flclients.html:66
 #: staff/apps/floatingips/flfloatingips.html:115
 #: staff/apps/floatingips/flfloatingips.html:56
 #: staff/apps/networks/flnetworks.html:139
 #: staff/apps/networks/flnetworks.html:49
-#: staff/apps/osbilling/plans/flbillingplans.html:154
-#: staff/apps/osbilling/plans/flbillingplans.html:58
+#: staff/apps/osbilling/plans/flbillingplans.html:159
+#: staff/apps/osbilling/plans/flbillingplans.html:63
 #: staff/apps/osclusters/flclusters.component.html:120
 #: staff/apps/osclusters/flclusters.component.html:48
 #: staff/apps/osclustertemplates/flclustertemplates.component.html:114
@@ -6613,14 +7633,14 @@ msgstr ""
 #: staff/apps/oszones/flzones.html:43
 #: staff/apps/pkm/flpkmkeys.html:119
 #: staff/apps/pkm/flpkmkeys.html:45
-#: staff/apps/settings/configurations/configurations.html:124
-#: staff/apps/settings/configurations/configurations.html:49
+#: staff/apps/settings/configurations/configurations.html:125
+#: staff/apps/settings/configurations/configurations.html:50
 #: staff/apps/subnetpools/flsubnetpools.html:155
 #: staff/apps/subnetpools/flsubnetpools.html:56
 #: staff/apps/tasklog/tasks.html:56
 #: staff/apps/usergroups/flusergroups.html:92
-#: staff/apps/users/flusers.html:117
-#: staff/apps/users/flusers.html:50
+#: staff/apps/users/flusers.html:120
+#: staff/apps/users/flusers.html:53
 msgid "Load more"
 msgstr ""
 
@@ -6658,8 +7678,28 @@ msgstr ""
 msgid "Login page"
 msgstr ""
 
+#: tickets/staff/frontend/components/states.config.js:146
+msgid "Low"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets/tickets.html:24
+msgid "Low priority"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets/tickets.html:89
+msgid "MED"
+msgstr ""
+
 #: oscommons/osfilters/flinstancestatus.filter.js:27
 msgid "MIGRATING"
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:78
+msgid "Machine type"
+msgstr ""
+
+#: cpanel/staff/frontend/components/product_settings/productsettings.html:30
+msgid "Make sure CPANEL_USERNAME and CPANEL_PASSWORD are set in settings.py"
 msgstr ""
 
 #: staff/apps/settings/authorization/authorization.html:8
@@ -6761,6 +7801,15 @@ msgstr ""
 msgid "Maximum supported version"
 msgstr ""
 
+#: tickets/staff/frontend/components/states.config.js:142
+msgid "Medium"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets/tickets.html:22
+msgid "Medium priority"
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:52
 #: staff/apps/dashboard/widgets/hypervisors/flhypervisors.widget.html:29
 #: staff/apps/osflavors/flflavors.html:76
 #: staff/apps/osflavors/states.config.js:55
@@ -6781,6 +7830,10 @@ msgstr ""
 
 #: staff/apps/activitylog/log.html:20
 msgid "Message"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:310
+msgid "Message updated"
 msgstr ""
 
 #: staff/apps/osbilling/pricing/flpricerule.html:40
@@ -6853,6 +7906,11 @@ msgstr ""
 msgid "Minimum up to date credit to be left after paying an invoice"
 msgstr ""
 
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:69
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:73
+msgid "Minute"
+msgstr ""
+
 #: staff/apps/osclusters/create/flclustercreate.component.html:93
 msgid "Misc"
 msgstr ""
@@ -6876,7 +7934,13 @@ msgid ""
 "                    <span class=\"fl-block fl-detail fl-margin-left\" translate>Path: {{ $ctrl.productDetails.module.path }}</span>"
 msgstr ""
 
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:54
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:58
+msgid "Month"
+msgstr ""
+
 #: commons/ui/filter/flfilterdisplay.html:30
+#: domains/staff/frontend/components/domains_actions/domainsactions.html:12
 #: staff/apps/billing/orders/florderactions.html:2
 #: staff/apps/billing/products/products.html:33
 #: staff/apps/billing/products/products.html:92
@@ -6887,7 +7951,7 @@ msgstr ""
 #: staff/apps/networks/flnetworks.html:110
 #: staff/apps/osapiusers/flapiusers.html:104
 #: staff/apps/osbilling/plans/flbillingplandetails.html:24
-#: staff/apps/osbilling/plans/flbillingplans.html:118
+#: staff/apps/osbilling/plans/flbillingplans.html:123
 #: staff/apps/osclusters/actions/flxsclusteractions.html:1
 #: staff/apps/osclustertemplates/actions/flxsclustertemplateactions.html:1
 #: staff/apps/osflavorgroups/flflavorgroupsactions.html:9
@@ -6902,7 +7966,7 @@ msgstr ""
 #: staff/apps/osvolumes/actions/flxsvolumeactions.html:1
 #: staff/apps/osvolumesnapshots/actions/flxsvolumesnapshotactions.html:1
 #: staff/apps/pkm/flpkmkeys.html:89
-#: staff/apps/settings/configurations/configurations.html:93
+#: staff/apps/settings/configurations/configurations.html:94
 #: staff/apps/subnetpools/flsubnetpools.html:124
 #: staff/apps/usergroups/flusergroupsactions.html:9
 #: staff/apps/users/actions/flxsuseractions.html:1
@@ -6941,10 +8005,23 @@ msgstr ""
 msgid "My profile"
 msgstr ""
 
+#: tickets/staff/frontend/components/plugin_signatures_manage/pluginsignaturesmanage.html:6
+msgid "My signatures"
+msgstr ""
+
 #: commons/userprofile/fluserprofile.html:6
 msgid "My user profile"
 msgstr ""
 
+#: domains/staff/frontend/components/domain_details/domaindetails.html:29
+#: domains/staff/frontend/components/domains_actions/dialogs/domain_edit/domainedit.html:10
+#: domains/staff/frontend/components/registrar_details/registrardetails.html:28
+#: domains/staff/frontend/components/registrars_actions/dialogs/registrar_edit/registraredit.html:10
+#: domains/staff/frontend/components/states.config.js:192
+#: domains/staff/frontend/components/states.config.js:261
+#: domains/staff/frontend/components/states.config.js:44
+#: domains/staff/frontend/components/tld_details/tlddetails.html:193
+#: domains/staff/frontend/components/tlds_actions/dialogs/tld_edit/tldedit.html:10
 #: staff/apps/billing/configurable_options/optionlist.component.html:54
 #: staff/apps/billing/gateways/gateways.html:48
 #: staff/apps/billing/products/flbillingproductedit.html:22
@@ -6958,8 +8035,8 @@ msgstr ""
 #: staff/apps/clientgroups/flclientgroupedit.html:10
 #: staff/apps/clientgroups/flclientgroups.html:48
 #: staff/apps/clientgroups/states.config.js:44
-#: staff/apps/clients/flclientdetails.html:461
-#: staff/apps/clients/flclients.html:66
+#: staff/apps/clients/flclientdetails.html:530
+#: staff/apps/clients/flclients.html:77
 #: staff/apps/floatingips/flfloatingips.html:66
 #: staff/apps/networks/flnetworkdetails.html:103
 #: staff/apps/networks/flnetworkdetails.html:64
@@ -6971,7 +8048,7 @@ msgstr ""
 #: staff/apps/osapiusers/flapiusers.html:67
 #: staff/apps/osbilling/plans/create/flplancreate.html:10
 #: staff/apps/osbilling/plans/create/flplancreate.html:12
-#: staff/apps/osbilling/plans/flbillingplans.html:66
+#: staff/apps/osbilling/plans/flbillingplans.html:71
 #: staff/apps/osbilling/pricing/flpricerule.html:31
 #: staff/apps/osbilling/resources/fladdresourcefield.html:13
 #: staff/apps/osbilling/states.config.js:20
@@ -7019,7 +8096,7 @@ msgstr ""
 #: staff/apps/servers/flservers.states.js:124
 #: staff/apps/servers/flservers.states.js:20
 #: staff/apps/settings/configurations/configurationedit.html:10
-#: staff/apps/settings/configurations/configurations.html:59
+#: staff/apps/settings/configurations/configurations.html:60
 #: staff/apps/settings/general/sfa_settings/sfasettings.component.html:44
 #: staff/apps/settings/notifications/flnotification-templates.template.html:61
 #: staff/apps/settings/states.config.js:134
@@ -7030,13 +8107,22 @@ msgstr ""
 #: staff/apps/usergroups/flusergroupedit.html:10
 #: staff/apps/usergroups/flusergroups.html:49
 #: staff/apps/usergroups/states.config.js:44
-#: staff/apps/users/fluserdetails.html:72
-#: staff/apps/users/fluserdetails.html:95
+#: staff/apps/users/fluserdetails.html:101
+#: staff/apps/users/fluserdetails.html:78
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:27
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:31
+#: tickets/staff/frontend/components/departments/departments.html:45
+#: tickets/staff/frontend/components/states.config.js:215
 msgid "Name"
 msgstr ""
 
 #: staff/apps/billing/products/productdetails.html:55
 msgid "Name: {{ $ctrl.productDetails.module.name }}"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:136
+#: domains/staff/frontend/components/domain_details/domaindetails.html:137
+msgid "Nameservers"
 msgstr ""
 
 #: staff/apps/floatingips/flfloatingipadd.html:35
@@ -7175,7 +8261,7 @@ msgstr ""
 
 #: staff/apps/billing/services/services.html:21
 #: staff/apps/billing/services/services.html:49
-#: staff/apps/clients/flclientdetails.html:470
+#: staff/apps/clients/flclientdetails.html:539
 msgid "Next due"
 msgstr ""
 
@@ -7192,12 +8278,12 @@ msgid "Next expiration date"
 msgstr ""
 
 #: staff/apps/settings/configurations/configurationdetails.html:338
-#: staff/apps/settings/configurations/configurationdetails.html:420
+#: staff/apps/settings/configurations/configurationdetails.html:425
 msgid "Next fiscal invoice number"
 msgstr ""
 
 #: staff/apps/settings/configurations/configurationdetails.html:346
-#: staff/apps/settings/configurations/configurationdetails.html:423
+#: staff/apps/settings/configurations/configurationdetails.html:428
 msgid "Next fiscal invoice number format"
 msgstr ""
 
@@ -7210,6 +8296,7 @@ msgstr ""
 msgid "Next invoice date offset"
 msgstr ""
 
+#: domains/staff/frontend/components/client_info/clientinfo.html:71
 #: staff/apps/clientgroups/flclientgroupdetails.html:53
 #: staff/apps/osflavorgroups/flflavorgroupdetails.html:57
 #: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:52
@@ -7218,12 +8305,24 @@ msgstr ""
 #: staff/apps/osvolumes/backups/flvolumebackups.template.html:74
 #: staff/apps/osvolumes/snapshots/flvolumesnapshots.template.html:56
 #: staff/apps/usergroups/flusergroupdetails.html:59
+#: tickets/staff/frontend/components/client_info/clientinfo.html:46
+#: tickets/staff/frontend/components/user_info/userinfo.html:42
 msgid "Next page"
 msgstr ""
 
 #: staff/apps/networks/flnetworkadd.html:322
 #: staff/apps/networks/flnetworksubnetedit.html:195
 msgid "Nexthop (IP)"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:43
+#: domains/staff/frontend/components/domain_details/domaindetails.html:48
+#: domains/staff/frontend/components/domain_details/domaindetails.html:53
+#: domains/staff/frontend/components/domain_details/domaindetails.html:93
+#: domains/staff/frontend/components/tlds/tlds.html:23
+#: domains/staff/frontend/components/tlds/tlds.html:28
+#: domains/staff/frontend/components/tlds/tlds.html:59
+msgid "No"
 msgstr ""
 
 #: staff/apps/osapiusers/flapiusers.html:5
@@ -7310,7 +8409,7 @@ msgstr ""
 msgid "No Notifications"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:254
+#: staff/apps/clients/flclientdetails.html:260
 msgid "No OpenStack service exists for this client"
 msgstr ""
 
@@ -7328,6 +8427,10 @@ msgstr ""
 
 #: commons/ui/flsubheader/flsubheader.component.js:63
 msgid "No Registrars"
+msgstr ""
+
+#: staff/apps/clients/flclientdetails.html:340
+msgid "No Reseller service exists for this client"
 msgstr ""
 
 #: commons/ui/flsubheader/flsubheader.component.js:33
@@ -7390,6 +8493,10 @@ msgstr ""
 msgid "No Zones"
 msgstr ""
 
+#: domains/staff/frontend/components/domain_details/domaindetails.html:125
+msgid "No actions available."
+msgstr ""
+
 #: staff/apps/floatingips/flfloatingipdetails.html:49
 msgid "No associated object"
 msgstr ""
@@ -7428,7 +8535,7 @@ msgstr ""
 msgid "No client matching \"{{$ctrl.clientsSearchText}}\" found"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:62
+#: staff/apps/users/fluserdetails.html:68
 msgid "No clients"
 msgstr ""
 
@@ -7443,6 +8550,8 @@ msgstr ""
 #: staff/apps/osrouters/flrouteredit.html:32
 #: staff/apps/ossecuritygroups/flsecuritygroupedit.html:31
 #: staff/apps/oszones/flzoneedit.html:36
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:112
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:108
 msgid "No clients matching \"{{$ctrl.clientSearchText}}\" found"
 msgstr ""
 
@@ -7460,8 +8569,17 @@ msgstr ""
 msgid "No data available"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurations.html:28
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:52
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:49
+msgid "No departments matching \"{{$ctrl.departmentSearchText}}\" found"
+msgstr ""
+
+#: staff/apps/settings/configurations/configurations.html:29
 msgid "No description"
+msgstr ""
+
+#: domains/staff/frontend/components/client_info/clientinfo.html:64
+msgid "No domains were found."
 msgstr ""
 
 #: staff/apps/osrouters/flrouteredit.html:81
@@ -7509,7 +8627,7 @@ msgstr ""
 msgid "No images to display"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:112
+#: staff/apps/clients/flclientdetails.html:118
 msgid "No invoices"
 msgstr ""
 
@@ -7517,7 +8635,7 @@ msgstr ""
 msgid "No items matching \"{{$ctrl.customModelSearchText}}\" found"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:161
+#: staff/apps/clients/flclientdetails.html:167
 msgid "No journal entries"
 msgstr ""
 
@@ -7567,8 +8685,8 @@ msgid "No other hosts available"
 msgstr ""
 
 #: staff/apps/osbilling/plans/flbillingplandetails.html:52
-#: staff/apps/osbilling/plans/flbillingplans.html:23
-#: staff/apps/osbilling/plans/flbillingplans.html:96
+#: staff/apps/osbilling/plans/flbillingplans.html:101
+#: staff/apps/osbilling/plans/flbillingplans.html:28
 msgid "No pricing rules"
 msgstr ""
 
@@ -7604,6 +8722,11 @@ msgstr ""
 msgid "No regions available"
 msgstr ""
 
+#: tickets/staff/frontend/components/client_info/clientinfo.html:39
+#: tickets/staff/frontend/components/user_info/userinfo.html:35
+msgid "No related tickets were found."
+msgstr ""
+
 #: staff/apps/osvolumes/backups/flvolumebackups.template.html:67
 msgid "No related volume backups were found."
 msgstr ""
@@ -7624,11 +8747,11 @@ msgstr ""
 msgid "No servers found"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:451
+#: staff/apps/clients/flclientdetails.html:520
 msgid "No services"
 msgstr ""
 
-#: staff/apps/osbilling/plans/flbillingplans.html:28
+#: staff/apps/osbilling/plans/flbillingplans.html:33
 msgid "No services on this plan"
 msgstr ""
 
@@ -7654,11 +8777,15 @@ msgstr ""
 msgid "No terms of service found."
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_actions/dialogs/ticket_linking/ticketlinking.html:21
+msgid "No tickets matching \"{{$ctrl.ticketSearchText}}\" found"
+msgstr ""
+
 #: staff/apps/osinstances/associatesecuritygroup/flassociatesecuritygroup.html:23
 msgid "No unassigned security groups available"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:85
+#: staff/apps/users/fluserdetails.html:91
 msgid "No user groups"
 msgstr ""
 
@@ -7732,6 +8859,7 @@ msgstr ""
 
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:143
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:297
+#: tickets/staff/frontend/components/states.config.js:55
 msgid "None"
 msgstr ""
 
@@ -7752,6 +8880,15 @@ msgstr ""
 msgid "Not shared"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:211
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:242
+msgid "Note added"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:282
+msgid "Note deleted"
+msgstr ""
+
 #: staff/apps/osinstances/migrate/flinstancemigrate.html:46
 msgid ""
 "Note that migration may fail if target hypervisor does not have enough disk space.\n"
@@ -7762,6 +8899,10 @@ msgstr ""
 msgid ""
 "Note that you must also configure <strong>Notifications</strong>, on the next tab, in\n"
 "                    order for Fleio to work."
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:294
+msgid "Note updated"
 msgstr ""
 
 #: staff/apps/settings/authorization/authorization.html:19
@@ -7803,11 +8944,11 @@ msgstr ""
 msgid "Notification deleted"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:484
-#: staff/apps/settings/configurations/configurationdetails.html:505
-#: staff/apps/settings/configurations/configurationdetails.html:526
-#: staff/apps/settings/configurations/configurationdetails.html:585
-#: staff/apps/settings/configurations/configurationdetails.html:654
+#: staff/apps/settings/configurations/configurationdetails.html:493
+#: staff/apps/settings/configurations/configurationdetails.html:514
+#: staff/apps/settings/configurations/configurationdetails.html:535
+#: staff/apps/settings/configurations/configurationdetails.html:594
+#: staff/apps/settings/configurations/configurationdetails.html:663
 msgid "Notification template"
 msgstr ""
 
@@ -7857,12 +8998,27 @@ msgstr ""
 msgid "Notifications test dialog"
 msgstr ""
 
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:126
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:130
+msgid "Notifications to end users ( ticket owner )"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:96
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:100
+msgid "Notifications to staff users"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:154
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:158
+msgid "Notifications to ticket cc recipients"
+msgstr ""
+
 #: staff/apps/settings/openstack/openstacksettings.html:152
 msgid "Notifications topic"
 msgstr ""
 
 #: staff/apps/settings/configurations/configurationdetails.html:303
-#: staff/apps/settings/configurations/configurationdetails.html:393
+#: staff/apps/settings/configurations/configurationdetails.html:398
 msgid "Notify on unpaid invoices"
 msgstr ""
 
@@ -7886,6 +9042,10 @@ msgstr ""
 #: commons/ui/utils/fluiutils.service.js:39
 #: staff/apps/billing/invoicing/delete/flinvoicedelete.html:26
 msgid "OK"
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:58
+msgid "OS"
 msgstr ""
 
 #: staff/apps/osimages/create/flimagecreate.html:98
@@ -7918,8 +9078,8 @@ msgstr ""
 msgid "Object count: {{ ::$ctrl.volumeBackup.object_count }}"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.component.js:361
-#: staff/apps/clients/flclientdetails.component.js:369
+#: staff/apps/clients/flclientdetails.component.js:400
+#: staff/apps/clients/flclientdetails.component.js:408
 #: staff/apps/settings/openstack/testnotificationsurls/testnotificationsurlsdialog.html:33
 msgid "Ok"
 msgstr ""
@@ -7927,6 +9087,11 @@ msgstr ""
 #: commons/userprofile/fledituserprofile.html:59
 #: commons/userprofile/fledituserprofile.html:63
 msgid "Old password"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:45
+#: tickets/staff/frontend/components/states.config.js:67
+msgid "On hold"
 msgstr ""
 
 #: staff/apps/settings/configurations/configurationdetails.html:42
@@ -7960,6 +9125,35 @@ msgstr ""
 msgid "One user can be included in one or more groups. The final permissions are calculated based on the values of all permissions that are associated with the user, including those from the user groups. Effective permissions are represented by the disabled checkboxes."
 msgstr ""
 
+#: tickets/staff/frontend/components/states.config.js:37
+#: tickets/staff/frontend/components/states.config.js:59
+msgid "Open"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:6
+msgid "Open a new ticket"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:118
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:174
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:266
+msgid "Open attachment"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.html:38
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.html:41
+msgid "Open new ticket"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:363
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:132
+msgid "Open ticket"
+msgstr ""
+
+#: tickets/staff/frontend/components/client_info/clientinfo.html:3
+msgid "Open ticket for client"
+msgstr ""
+
 #: staff/apps/dashboard/fldashboard.html:4
 msgid "Open widget interactions menu"
 msgstr ""
@@ -7977,11 +9171,11 @@ msgstr ""
 msgid "Openstack"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:245
+#: staff/apps/clients/flclientdetails.html:251
 msgid "Openstack service"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.component.js:159
+#: staff/apps/clients/flclientdetails.component.js:172
 msgid "Openstack service created"
 msgstr ""
 
@@ -8064,11 +9258,11 @@ msgstr ""
 msgid "Other protocol"
 msgstr ""
 
-#: staff/apps/clients/flclients.html:68
+#: staff/apps/clients/flclients.html:79
 msgid "Out of credit"
 msgstr ""
 
-#: staff/apps/clients/flclients.html:34
+#: staff/apps/clients/flclients.html:42
 msgid "Out of credit since"
 msgstr ""
 
@@ -8116,6 +9310,7 @@ msgid "Paid"
 msgstr ""
 
 #: commons/auth/login.html:33
+#: hypanel/staff/frontend/components/server_settings/serversettings.html:32
 #: staff/apps/osapiusers/flapiuseredit.html:39
 #: staff/apps/osinstances/password/flinstancechangepassword.html:14
 #: staff/apps/servers/flserver-create/flserver-create.component.html:102
@@ -8194,8 +9389,9 @@ msgid "Permissions"
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:87
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:102
 #: staff/apps/clients/clienteditdlg/clientedit.html:101
-#: staff/apps/clients/flclientdetails.html:50
+#: staff/apps/clients/flclientdetails.html:56
 #: staff/apps/clients/flclientedit.html:127
 msgid "Phone"
 msgstr ""
@@ -8213,6 +9409,8 @@ msgstr ""
 msgid "Phone number set"
 msgstr ""
 
+#: domains/staff/frontend/components/register_domain/registerdomain.html:193
+#: domains/staff/frontend/components/transfer_domain/transferdomain.html:65
 #: staff/apps/billing/services/upgrade/flserviceupgradesummary.component.html:44
 msgid "Place order"
 msgstr ""
@@ -8248,6 +9446,18 @@ msgstr ""
 #: commons/ui/licensewarning/fllicensewarningdialog.html:19
 #: commons/ui/licensewarning/fllicensewarningdialog.html:9
 msgid "Please renew your Fleio license."
+msgstr ""
+
+#: tickets/staff/frontend/components/signatures/signatures.component.js:44
+msgid "Please select a department"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:147
+msgid "Please select a domain contact"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_actions/dialogs/ticket_linking/ticketlinking.controller.js:30
+msgid "Please select a ticket first."
 msgstr ""
 
 #: staff/apps/billing/invoicing/payments/paymentrefund.html:39
@@ -8361,6 +9571,11 @@ msgstr[1] ""
 msgid "Prefixes"
 msgstr ""
 
+#: domains/staff/frontend/components/states.config.js:271
+#: domains/staff/frontend/components/tlds/tlds.html:21
+msgid "Premium domains available"
+msgstr ""
+
 #: staff/apps/osflavors/edit/flflavoredit.html:115
 #: staff/apps/osflavors/edit/flflavoredit.html:13
 msgid "Preserve existing flavor ID (not recommended for major changes)"
@@ -8371,6 +9586,7 @@ msgstr ""
 msgid "Preserve existing flavor id"
 msgstr ""
 
+#: domains/staff/frontend/components/client_info/clientinfo.html:68
 #: staff/apps/clientgroups/flclientgroupdetails.html:48
 #: staff/apps/osflavorgroups/flflavorgroupdetails.html:52
 #: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:47
@@ -8379,6 +9595,8 @@ msgstr ""
 #: staff/apps/osvolumes/backups/flvolumebackups.template.html:71
 #: staff/apps/osvolumes/snapshots/flvolumesnapshots.template.html:53
 #: staff/apps/usergroups/flusergroupdetails.html:54
+#: tickets/staff/frontend/components/client_info/clientinfo.html:43
+#: tickets/staff/frontend/components/user_info/userinfo.html:39
 msgid "Previous page"
 msgstr ""
 
@@ -8422,6 +9640,18 @@ msgstr ""
 msgid "Price override"
 msgstr ""
 
+#: domains/staff/frontend/components/domain_details/domaindetails.html:78
+msgid "Price: {{ $ctrl.domain.price_display}}"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.component.js:108
+msgid "Prices saved"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:16
+msgid "Pricing"
+msgstr ""
+
 #: staff/apps/osbilling/pricing/flpricerule.html:54
 msgid "Pricing attribute"
 msgstr ""
@@ -8430,17 +9660,25 @@ msgstr ""
 msgid "Pricing plan"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:276
+#: staff/apps/clients/flclientdetails.html:363
+msgid "Pricing plan: {{$ctrl.reseller.resources[resellerService.id].plan.name || 'n/a'}}"
+msgstr ""
+
+#: staff/apps/clients/flclientdetails.html:282
 msgid "Pricing plan: {{OSService.pricing_plan.name}}"
 msgstr ""
 
 #: staff/apps/osbilling/plans/flbillingplandetails.html:54
-#: staff/apps/osbilling/plans/flbillingplans.html:69
+#: staff/apps/osbilling/plans/flbillingplans.html:74
 msgid "Pricing rules"
 msgstr ""
 
 #: staff/apps/osflavorgroups/flflavorgroupedit.html:16
 #: staff/apps/osflavorgroups/states.config.js:46
+#: tickets/staff/frontend/components/states.config.js:102
+#: tickets/staff/frontend/components/tickets/tickets.html:67
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:27
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:24
 msgid "Priority"
 msgstr ""
 
@@ -8462,12 +9700,15 @@ msgstr ""
 msgid "Product added"
 msgstr ""
 
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:97
 #: staff/apps/billing/products/flbillingproductedit.html:5
 msgid "Product configuration"
 msgstr ""
 
 #: staff/apps/clients/createopenstackservice/flcreateopenstackservice.html:33
-#: staff/apps/clients/flclientdetails.html:272
+#: staff/apps/clients/createresellerservice/flcreateresellerservice.html:33
+#: staff/apps/clients/flclientdetails.html:278
+#: staff/apps/clients/flclientdetails.html:359
 msgid "Product cycle"
 msgstr ""
 
@@ -8500,7 +9741,8 @@ msgstr ""
 msgid "Product modified"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:268
+#: staff/apps/clients/flclientdetails.html:274
+#: staff/apps/clients/flclientdetails.html:355
 msgid "Product name"
 msgstr ""
 
@@ -8557,7 +9799,7 @@ msgstr ""
 msgid "Project disabled"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:303
+#: staff/apps/clients/flclientdetails.html:309
 msgid "Project domain ID"
 msgstr ""
 
@@ -8585,7 +9827,7 @@ msgstr ""
 msgid "Project updated"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:282
+#: staff/apps/clients/flclientdetails.html:288
 msgid "Project:"
 msgstr ""
 
@@ -8687,6 +9929,18 @@ msgstr ""
 msgid "Public traffic this month: {{::$ctrl.instance.current_month_traffic }} GB"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.html:7
+msgid "Quick actions"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:85
+msgid "Quick edit"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:325
+msgid "Quoted from"
+msgstr ""
+
 #: staff/apps/osflavors/edit/flflavoredit.html:131
 #: staff/apps/osflavors/edit/flflavoredit.html:39
 #: staff/apps/osflavors/flflavors.html:33
@@ -8728,6 +9982,21 @@ msgstr ""
 #: staff/apps/osflavors/edit/flflavoredit.html:129
 #: staff/apps/osflavors/edit/flflavoredit.html:37
 msgid "Ram in MB"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:79
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:83
+msgid "Random lowercase letter"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:84
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:88
+msgid "Random number (between 0 and 9)"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:74
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:78
+msgid "Random uppercase letter"
 msgstr ""
 
 #: staff/apps/billing/states.config.js:770
@@ -8801,6 +10070,10 @@ msgstr ""
 
 #: commons/userprofile/fluserprofile.html:42
 msgid "Recurring payment options"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:96
+msgid "Redemption"
 msgstr ""
 
 #: staff/apps/settings/general/license/flgetlicenseinfo.html:21
@@ -8920,6 +10193,63 @@ msgstr ""
 msgid "Region: {{::securityGroup.region }}"
 msgstr ""
 
+#: domains/staff/frontend/components/tld_details/tlddetails.html:153
+msgid "Register"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:401
+msgid "Register domain"
+msgstr ""
+
+#: domains/staff/frontend/components/input_registrar/inputregistrar.html:15
+#: domains/staff/frontend/components/registrars/registrars.html:1
+msgid "Registrar"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:215
+msgid "Registrar Details"
+msgstr ""
+
+#: domains/staff/frontend/components/input_registrar_connector/inputregistrarconnector.html:14
+#: domains/staff/frontend/components/registrars/registrars.html:21
+msgid "Registrar connector"
+msgstr ""
+
+#: domains/staff/frontend/components/registrars_actions/registrarsactions.component.js:29
+msgid "Registrar deleted"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:91
+msgid "Registrar lock active"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:186
+#: domains/staff/frontend/components/tld_details/tlddetails.html:128
+msgid "Registrars"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.component.js:135
+msgid "Registrars saved"
+msgstr ""
+
+#: domains/staff/frontend/components/client_info/clientinfo.html:7
+#: domains/staff/frontend/components/domain_details/domaindetails.html:81
+msgid "Registration date"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:100
+msgid "Registration pending"
+msgstr ""
+
+#: domains/staff/frontend/components/domains_actions/dialogs/domain_edit/domainedit.html:26
+#: domains/staff/frontend/components/states.config.js:66
+msgid "Registration period"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:75
+msgid "Registration period: {{ $ctrl.domain.registration_period }} years"
+msgstr ""
+
 #: staff/apps/osinstances/rebuild/flinstancerebuild.html:113
 msgid "Reinstall instance"
 msgstr ""
@@ -8934,6 +10264,10 @@ msgstr ""
 msgid "Related objects will not be deleted."
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:75
+msgid "Related service: <a ui-sref=\"billingServicesDetails({'id': $ctrl.ticket.service})\" class=\"md-primary\">{{$ctrl.ticket.service}}</a>"
+msgstr ""
+
 #: staff/apps/osvolumesnapshots/flvolumesnapshotdetails.html:34
 msgid ""
 "Related volume:\n"
@@ -8943,6 +10277,10 @@ msgstr ""
 #: staff/apps/billing/products/productdetails.html:155
 #: staff/apps/billing/products/productdetails.html:94
 msgid "Relative price"
+msgstr ""
+
+#: domains/staff/frontend/components/pricing_cycles/pricingcycles.component.js:34
+msgid "Relative prices cannot be applied to default currency."
 msgstr ""
 
 #: staff/apps/settings/general/currency/flcurrencies.component.js:78
@@ -9030,6 +10368,10 @@ msgstr ""
 msgid "Remove interface"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_details/dialogs/remove_linking/removelinking.html:24
+msgid "Remove link"
+msgstr ""
+
 #: staff/apps/osinstances/removeport/flinstanceremoveport.html:25
 msgid "Remove port"
 msgstr ""
@@ -9042,9 +10384,21 @@ msgstr ""
 msgid "Remove port scheduled"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_details/dialogs/remove_linking/removelinking.html:13
+msgid "Remove reverse link if it exists"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/dialogs/remove_linking/removelinking.html:12
+msgid "Remove reversed link if it exists"
+msgstr ""
+
 #: commons/ui/flupload/flupload.html:17
 #: commons/ui/flupload/flupload.html:21
 msgid "Remove selected files"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/dialogs/remove_linking/removelinking.html:2
+msgid "Remove ticket linking"
 msgstr ""
 
 #: staff/apps/osbilling/resources/flmetric.html:57
@@ -9052,7 +10406,7 @@ msgid "Remove tier"
 msgstr ""
 
 #: staff/apps/usergroups/flusergroupdetails.html:43
-#: staff/apps/users/fluserdetails.html:99
+#: staff/apps/users/fluserdetails.html:105
 msgid "Remove user from group"
 msgstr ""
 
@@ -9077,6 +10431,29 @@ msgstr ""
 
 #: staff/apps/osvolumes/rename/flvolumerename.html:3
 msgid "Rename volume {{ $ctrl.volume.name }}"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:155
+msgid "Renew"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.html:20
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:382
+msgid "Reopen ticket"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:154
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:373
+msgid "Reply"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:107
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:137
+msgid "Reply added"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:275
+msgid "Reply deleted"
 msgstr ""
 
 #: staff/apps/reports/revenue_reports/revenue_reports.template.html:39
@@ -9112,6 +10489,7 @@ msgstr ""
 msgid "Require staff users to use second factor authentication"
 msgstr ""
 
+#: domains/staff/frontend/components/tld_details/tlddetails.html:194
 #: staff/apps/billing/configurable_options/createoption.component.html:65
 #: staff/apps/billing/configurable_options/option.component.html:77
 msgid "Required"
@@ -9130,6 +10508,10 @@ msgstr ""
 msgid "Required credit when on agreement"
 msgstr ""
 
+#: domains/staff/frontend/components/states.config.js:276
+msgid "Requires EPP for transfer"
+msgstr ""
+
 #: staff/apps/osinstances/actions/flinstanceactions.html:136
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:146
 #: staff/apps/osinstances/states.config.js:326
@@ -9140,8 +10522,23 @@ msgstr ""
 msgid "Rescue instance"
 msgstr ""
 
-#: staff/apps/osbilling/plans/flbillingplans.html:30
+#: staff/apps/clients/flclients.html:18
+#: staff/apps/osbilling/plans/flbillingplans.html:35
+#: staff/apps/users/flusers.html:33
 msgid "Reseller"
+msgstr ""
+
+#: staff/apps/clients/flclientdetails.html:29
+#: staff/apps/users/fluserdetails.html:26
+msgid "Reseller client"
+msgstr ""
+
+#: staff/apps/clients/flclientdetails.html:331
+msgid "Reseller service"
+msgstr ""
+
+#: staff/apps/clients/flclientdetails.component.js:191
+msgid "Reseller service created"
 msgstr ""
 
 #: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:45
@@ -9172,9 +10569,9 @@ msgid ""
 "    \"{{ $ctrl.snapshot.name || $ctrl.snapshot.id }}\""
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.component.js:236
-#: staff/apps/clients/flclientdetails.component.js:237
-#: staff/apps/clients/flclientdetails.html:75
+#: staff/apps/clients/flclientdetails.component.js:272
+#: staff/apps/clients/flclientdetails.component.js:273
+#: staff/apps/clients/flclientdetails.html:81
 msgid "Reset usage"
 msgstr ""
 
@@ -9413,8 +10810,8 @@ msgstr ""
 msgid "SSH key"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.component.js:359
-#: staff/apps/clients/flclientdetails.component.js:367
+#: staff/apps/clients/flclientdetails.component.js:398
+#: staff/apps/clients/flclientdetails.component.js:406
 msgid "SSH key content"
 msgstr ""
 
@@ -9455,6 +10852,9 @@ msgstr ""
 
 #: commons/terms_of_service_agreement/fltosagreement.component.html:30
 #: commons/userprofile/fledituserprofile.html:139
+#: cpanel/staff/frontend/components/plugin_configuration/pluginconfiguration.html:15
+#: domains/staff/frontend/components/domain_details/domaindetails.html:111
+#: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:114
 #: staff/apps/billing/configurable_options/choices/choice.dialog.html:37
 #: staff/apps/billing/configurable_options/cycles/optioncycleedit.html:76
 #: staff/apps/billing/configurable_options/option.component.html:121
@@ -9473,7 +10873,7 @@ msgstr ""
 #: staff/apps/oszones/flzoneedit.html:127
 #: staff/apps/settings/authorization/authorization.html:144
 #: staff/apps/settings/authorization/authorization.html:260
-#: staff/apps/settings/configurations/configurationdetails.html:672
+#: staff/apps/settings/configurations/configurationdetails.html:681
 #: staff/apps/settings/configurations/configurationedit.html:36
 #: staff/apps/settings/general/currency/flcurrencyedit.html:46
 #: staff/apps/settings/general/currency/flcurrencyedit.html:48
@@ -9484,6 +10884,7 @@ msgstr ""
 #: staff/apps/settings/openstack/openstacksettings.html:311
 #: staff/apps/settings/openstack/openstacksettings.html:397
 #: staff/apps/users/fluseredit.html:115
+#: todo/staff/frontend/components/plugin_configuration/pluginconfiguration.html:17
 msgid "Save"
 msgstr ""
 
@@ -9495,9 +10896,25 @@ msgstr ""
 msgid "Save API user"
 msgstr ""
 
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:122
+msgid "Save Contact"
+msgstr ""
+
 #: staff/apps/osflavors/edit/flflavoredit.html:244
 #: staff/apps/osimages/update/flimageupdate.html:234
 msgid "Save Properties"
+msgstr ""
+
+#: domains/staff/frontend/components/tlds_actions/dialogs/tld_edit/tldedit.html:22
+msgid "Save TLD"
+msgstr ""
+
+#: todo/staff/frontend/components/todo_actions/dialogs/todo_edit/todoedit.html:40
+msgid "Save TODO"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:124
+msgid "Save addons prices"
 msgstr ""
 
 #: staff/apps/billing/configurable_options/option.component.html:115
@@ -9512,6 +10929,14 @@ msgstr ""
 msgid "Save client group"
 msgstr ""
 
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:190
+msgid "Save department"
+msgstr ""
+
+#: domains/staff/frontend/components/domains_actions/dialogs/domain_edit/domainedit.html:38
+msgid "Save domain"
+msgstr ""
+
 #: staff/apps/osflavorgroups/flflavorgroupedit.html:39
 msgid "Save flavor group"
 msgstr ""
@@ -9524,8 +10949,28 @@ msgstr ""
 msgid "Save key"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_details/dialogs/tickets_updates_edit/ticketsupdatesedit.html:16
+msgid "Save message"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:173
+msgid "Save nameservers"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:68
+msgid "Save prices"
+msgstr ""
+
 #: staff/apps/osprojects/flprojectedit.html:34
 msgid "Save project"
+msgstr ""
+
+#: domains/staff/frontend/components/registrars_actions/dialogs/registrar_edit/registraredit.html:27
+msgid "Save registrar"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:145
+msgid "Save registrars"
 msgstr ""
 
 #: staff/apps/osbilling/pricing/flpricerule.html:225
@@ -9545,6 +10990,10 @@ msgstr ""
 msgid "Save settings & sync"
 msgstr ""
 
+#: tickets/staff/frontend/components/signatures/signatures.html:65
+msgid "Save signatures"
+msgstr ""
+
 #: staff/apps/settings/notifications/edit/flnotification-template-edit.template.html:69
 msgid "Save templates"
 msgstr ""
@@ -9553,12 +11002,36 @@ msgstr ""
 msgid "Save terms of service"
 msgstr ""
 
+#: staff/apps/clients/change_enduser_panel_url/change_enduser_panel_url.html:23
+msgid "Save url"
+msgstr ""
+
 #: staff/apps/usergroups/flusergroupedit.html:33
 msgid "Save user group"
 msgstr ""
 
+#: domains/staff/frontend/components/domain_details/domaindetails.html:184
+msgid "Save whois information"
+msgstr ""
+
 #: staff/apps/settings/openstack/openstacksettings.html:130
 msgid "Saving the settings will launch a process that will sync OpenStack resources with Fleio."
+msgstr ""
+
+#: domains/staff/frontend/components/domains/domains.component.js:19
+msgid "Search Domains"
+msgstr ""
+
+#: domains/staff/frontend/components/registrars/registrars.component.js:19
+msgid "Search Registrars"
+msgstr ""
+
+#: domains/staff/frontend/components/tlds/tlds.component.js:19
+msgid "Search TLDs"
+msgstr ""
+
+#: todo/staff/frontend/components/todos/todos.component.js:20
+msgid "Search TODOs"
 msgstr ""
 
 #: staff/apps/clientgroups/flclientgroups.component.js:22
@@ -9579,6 +11052,14 @@ msgstr ""
 
 #: staff/apps/settings/configurations/configurations.component.js:26
 msgid "Search configurations"
+msgstr ""
+
+#: domains/staff/frontend/components/contacts/contacts.component.js:21
+msgid "Search contacts"
+msgstr ""
+
+#: tickets/staff/frontend/components/departments/departments.component.js:20
+msgid "Search departments"
 msgstr ""
 
 #: staff/apps/osflavorgroups/flflavorgroups.component.js:22
@@ -9677,6 +11158,10 @@ msgstr ""
 msgid "Search tax rules"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets/tickets.component.js:20
+msgid "Search tickets"
+msgstr ""
+
 #: staff/apps/usergroups/flusergroups.component.js:22
 msgid "Search user groups"
 msgstr ""
@@ -9712,6 +11197,11 @@ msgstr ""
 
 #: commons/SFA/states.config.js:67
 msgid "Second factor authentication confirm options"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:151
+#: domains/staff/frontend/components/register_domain/registerdomain.html:105
+msgid "Second nameserver"
 msgstr ""
 
 #: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:35
@@ -9783,6 +11273,10 @@ msgstr ""
 msgid "Select a configuration"
 msgstr ""
 
+#: domains/staff/frontend/components/register_domain/registerdomain.html:138
+msgid "Select a domain contact"
+msgstr ""
+
 #: staff/apps/osinstances/create/flinstancecreate.html:130
 msgid "Select a flavor"
 msgstr ""
@@ -9819,12 +11313,20 @@ msgstr ""
 msgid "Select a product"
 msgstr ""
 
+#: domains/staff/frontend/components/domain_details/domaindetails.html:101
+msgid "Select a registrar"
+msgstr ""
+
 #: staff/apps/usergroups/flusergroupdetails.html:77
 msgid "Select a user to add it to the group"
 msgstr ""
 
 #: staff/apps/settings/authorization/authorization.html:36
 msgid "Select a user to manage permissions"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:56
+msgid "Select additional options"
 msgstr ""
 
 #: commons/messages/errormessages.html:18
@@ -9843,6 +11345,8 @@ msgid "Select boot source"
 msgstr ""
 
 #: commons/ui/filter/flfilter.html:33
+#: domains/staff/frontend/components/register_domain/registerdomain.html:16
+#: domains/staff/frontend/components/transfer_domain/transferdomain.html:17
 #: staff/apps/billing/invoicing/create/flinvoicecreate.html:21
 #: staff/apps/billing/invoicing/create/flinvoicecreate.html:32
 #: staff/apps/floatingips/flfloatingipadd.html:19
@@ -9853,6 +11357,8 @@ msgstr ""
 #: staff/apps/ossecuritygroups/flsecuritygroupedit.html:20
 #: staff/apps/osvolumes/create/flvolumecreate.html:26
 #: staff/apps/oszones/flzoneedit.html:25
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:103
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:99
 msgid "Select client"
 msgstr ""
 
@@ -9870,6 +11376,12 @@ msgstr ""
 
 #: staff/apps/osbilling/plans/create/flplancreate.html:20
 msgid "Select currency"
+msgstr ""
+
+#: tickets/staff/frontend/components/signatures/signatures.html:57
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:43
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:40
+msgid "Select department"
 msgstr ""
 
 #: staff/apps/osinstances/bootfromiso/flinstancebootfromiso.html:25
@@ -9973,6 +11485,10 @@ msgstr ""
 msgid "Select operator"
 msgstr ""
 
+#: domains/staff/frontend/components/transfer_domain/transferdomain.html:51
+msgid "Select period"
+msgstr ""
+
 #: staff/apps/osbilling/plans/flbillingplandelete.html:11
 msgid "Select plan to migrate"
 msgstr ""
@@ -9996,6 +11512,10 @@ msgstr ""
 
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:97
 msgid "Select region"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:44
+msgid "Select registration period"
 msgstr ""
 
 #: staff/apps/osbilling/pricing/flpricerule.html:23
@@ -10080,7 +11600,7 @@ msgstr ""
 msgid "Selected volume"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:603
+#: staff/apps/settings/configurations/configurationdetails.html:612
 msgid ""
 "Selecting a <strong>Notification template</strong> will send a notification to the\n"
 "                  client on suspension."
@@ -10106,7 +11626,7 @@ msgstr ""
 msgid "Send mails"
 msgstr ""
 
-#: staff/apps/clients/states.config.js:219
+#: staff/apps/clients/states.config.js:229
 msgid "Send mass email to clients"
 msgstr ""
 
@@ -10114,21 +11634,90 @@ msgstr ""
 msgid "Send mass email to selected clients"
 msgstr ""
 
-#: staff/apps/clients/flclients.html:162
+#: staff/apps/clients/flclients.html:173
 msgid "Send mass mail to filtered clients"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:460
-#: staff/apps/settings/configurations/configurationdetails.html:464
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:103
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:107
+msgid "Send notifications on ticket open to staff users"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:177
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:178
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:181
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:182
+msgid "Send notifications to cc recipients when a reply is added to a ticket"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:168
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:169
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:172
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:173
+msgid "Send notifications to cc recipients when ticket is closed"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:159
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:160
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:163
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:164
+msgid "Send notifications to cc recipients when ticket is opened"
+msgstr ""
+
+#: staff/apps/settings/configurations/configurationdetails.html:469
+#: staff/apps/settings/configurations/configurationdetails.html:473
 msgid "Send notifications to customers having billing agreements"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:465
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:150
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:154
+msgid "Send notifications to end users when a staff user replies to ticket"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:140
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:141
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:144
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:145
+msgid "Send notifications to end users when a ticket is closed"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:131
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:132
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:135
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:136
+msgid "Send notifications to end users when a ticket is opened"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:149
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:153
+msgid "Send notifications to users when a staff user replies to ticket"
+msgstr ""
+
+#: staff/apps/settings/configurations/configurationdetails.html:474
 msgid "Send notifications when a client has a billing agreement enabled"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:452
+#: staff/apps/settings/configurations/configurationdetails.html:461
 msgid "Send notifications when a client's remaining hours with his current credit is reached"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:121
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:125
+msgid "Send notifications when end user replies to a ticket to staff users"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:112
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:116
+msgid "Send notifications when staff user replies to a ticket to staff users"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:120
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:124
+msgid "Send notifications when user replies to a ticket to staff users"
+msgstr ""
+
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:93
+msgid "Send welcome email"
 msgstr ""
 
 #: staff/apps/oszones/states.config.js:49
@@ -10143,6 +11732,8 @@ msgstr ""
 msgid "Server details"
 msgstr ""
 
+#: cpanelserver/staff/frontend/components/product_settings/productsettings.html:8
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:85
 #: staff/apps/servers/flserver-create/flserver-create.component.html:22
 #: staff/apps/servers/flserver-detail/flserver-detail.component.html:21
 msgid "Server group"
@@ -10226,7 +11817,8 @@ msgstr ""
 msgid "Service details"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:264
+#: staff/apps/clients/flclientdetails.html:270
+#: staff/apps/clients/flclientdetails.html:351
 msgid "Service status"
 msgstr ""
 
@@ -10235,13 +11827,14 @@ msgstr ""
 msgid "Service updated"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:279
+#: staff/apps/clients/flclientdetails.html:285
+#: staff/apps/clients/flclientdetails.html:368
 msgid "Service:"
 msgstr ""
 
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:65
 #: staff/apps/billing/states.config.js:168
-#: staff/apps/clients/flclientdetails.html:446
+#: staff/apps/clients/flclientdetails.html:515
 #: staff/apps/reports/revenue_reports/revenue_report_details.template.html:41
 #: staff/apps/reports/revenue_reports/revenue_report_details.template.html:81
 msgid "Services"
@@ -10299,6 +11892,22 @@ msgstr ""
 
 #: staff/apps/osinstances/create/flinstancecreate.html:251
 msgid "Set the Administrator password on first boot through the web console."
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:89
+msgid "Set to \"N/A\""
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:95
+msgid "Set to \"done\""
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:98
+msgid "Set to \"in progress\""
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:92
+msgid "Set to \"open\""
 msgstr ""
 
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:101
@@ -10364,8 +11973,8 @@ msgstr ""
 msgid "Show actions"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:436
-#: staff/apps/clients/flclientdetails.html:440
+#: staff/apps/clients/flclientdetails.html:505
+#: staff/apps/clients/flclientdetails.html:509
 msgid "Show all"
 msgstr ""
 
@@ -10445,6 +12054,10 @@ msgstr[1] ""
 msgid "Showing {{$ctrl.ngModel.objects.length}} {{$ctrl.ngModel.objects.length > 1 ? $ctrl.translatedObjectsNamePlural : $ctrl.objectsName}}"
 msgstr ""
 
+#: tickets/staff/frontend/components/user_info/userinfo.html:3
+msgid "Shows tickets created by the user or tickets related to one of the user's clients."
+msgstr ""
+
 #: staff/apps/osinstances/actions/flinstanceactions.directive.js:34
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:33
 msgid "Shut down"
@@ -10472,6 +12085,22 @@ msgstr ""
 
 #: staff/apps/users/states.config.js:42
 msgid "Sign-up date"
+msgstr ""
+
+#: tickets/staff/frontend/components/signatures/signatures.component.js:51
+msgid "Signature successfully added"
+msgstr ""
+
+#: tickets/staff/frontend/components/signatures/signatures.component.js:70
+msgid "Signature successfully deleted"
+msgstr ""
+
+#: tickets/staff/frontend/components/signatures/signatures.component.js:84
+msgid "Signatures successfully updated"
+msgstr ""
+
+#: tickets/staff/frontend/components/plugin_signatures_manage/pluginsignaturesmanage.html:11
+msgid "Signatures used when responding to a ticket."
 msgstr ""
 
 #: staff/apps/osclusters/create/flclustercreate.component.html:49
@@ -10556,7 +12185,7 @@ msgstr ""
 #: staff/apps/billing/journal/journaldetail.html:20
 #: staff/apps/billing/states.config.js:617
 #: staff/apps/billing/states.config.js:709
-#: staff/apps/clients/flclientdetails.html:228
+#: staff/apps/clients/flclientdetails.html:234
 msgid "Source"
 msgstr ""
 
@@ -10565,7 +12194,7 @@ msgstr ""
 msgid "Source amount"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:427
+#: staff/apps/settings/configurations/configurationdetails.html:432
 msgid ""
 "Specifies the number of seconds per month that should be billed for clients.\n"
 "                  The remaining seconds after this limit is reached will not be billed."
@@ -10611,6 +12240,7 @@ msgstr ""
 msgid "Start instance {{name}}"
 msgstr ""
 
+#: domains/staff/frontend/components/states.config.js:373
 #: staff/apps/billing/states.config.js:768
 #: staff/apps/billing/taxrules/flbillingtaxruleedit.html:50
 #: staff/apps/billing/taxrules/taxrules.html:9
@@ -10623,6 +12253,11 @@ msgstr ""
 
 #: commons/ui/useralerts/detail/fluseralertdialog.html:11
 #: commons/ui/useralerts/list/fluseralerts.html:67
+#: domains/staff/frontend/components/client_info/clientinfo.html:9
+#: domains/staff/frontend/components/domain_details/domaindetails.html:38
+#: domains/staff/frontend/components/domains/domains.html:23
+#: domains/staff/frontend/components/domains_actions/dialogs/domain_edit/domainedit.html:16
+#: domains/staff/frontend/components/states.config.js:46
 #: staff/apps/billing/configurable_options/createoption.component.html:49
 #: staff/apps/billing/configurable_options/option.component.html:60
 #: staff/apps/billing/configurable_options/optionlist.component.html:56
@@ -10640,8 +12275,8 @@ msgstr ""
 #: staff/apps/billing/states.config.js:368
 #: staff/apps/billing/states.config.js:37
 #: staff/apps/billing/states.config.js:54
-#: staff/apps/clients/flclientdetails.html:473
-#: staff/apps/clients/flclients.html:40
+#: staff/apps/clients/flclientdetails.html:542
+#: staff/apps/clients/flclients.html:51
 #: staff/apps/clients/states.config.js:64
 #: staff/apps/floatingips/flfloatingips.html:65
 #: staff/apps/floatingips/states.config.js:36
@@ -10672,6 +12307,14 @@ msgstr ""
 #: staff/apps/servers/flserver-detail/flserver-detail.component.html:31
 #: staff/apps/servers/flserver-list/flserver-list.component.html:55
 #: staff/apps/settings/openstack/testnotificationsurls/testnotificationsurlsdialog.html:10
+#: tickets/staff/frontend/components/states.config.js:99
+#: tickets/staff/frontend/components/tickets/tickets.html:35
+#: tickets/staff/frontend/components/tickets/tickets.html:72
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:62
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:59
+#: todo/staff/frontend/components/states.config.js:72
+#: todo/staff/frontend/components/todo_actions/dialogs/todo_edit/todoedit.html:16
+#: todo/staff/frontend/components/todos/todos.html:25
 msgid "Status"
 msgstr ""
 
@@ -10830,8 +12473,8 @@ msgstr ""
 msgid "Suspend reason"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:635
-#: staff/apps/settings/configurations/configurationdetails.html:665
+#: staff/apps/settings/configurations/configurationdetails.html:644
+#: staff/apps/settings/configurations/configurationdetails.html:674
 msgid "Suspend the client instead of termination"
 msgstr ""
 
@@ -10845,7 +12488,7 @@ msgstr ""
 msgid "Suspended at"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:545
+#: staff/apps/settings/configurations/configurationdetails.html:554
 msgid "Suspension"
 msgstr ""
 
@@ -10877,6 +12520,47 @@ msgstr ""
 
 #: staff/apps/osinstances/flinstancedetail.html:97
 msgid "System log"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:32
+#: domains/staff/frontend/components/input_tld/inputtld.html:14
+#: domains/staff/frontend/components/states.config.js:47
+#: domains/staff/frontend/components/tlds/tlds.html:1
+msgid "TLD"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:310
+msgid "TLD Pricing"
+msgstr ""
+
+#: domains/staff/frontend/components/tlds_actions/tldsactions.component.js:29
+msgid "TLD deleted"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:256
+msgid "TLDs"
+msgstr ""
+
+#: todo/staff/frontend/components/todos/todos.html:1
+msgid "TODO"
+msgstr ""
+
+#: todo/staff/frontend/components/states.config.js:124
+msgid "TODO Details"
+msgstr ""
+
+#: todo/staff/frontend/components/product_settings/productsettings.html:2
+msgid "TODO module configuration"
+msgstr ""
+
+#: todo/staff/frontend/components/plugin_configuration/pluginconfiguration.html:6
+msgid "TODO plugin configurations"
+msgstr ""
+
+#: todo/staff/frontend/components/plugin_notifications/pluginnotifications.html:1
+#: todo/staff/frontend/components/plugin_notifications/pluginnotifications.html:9
+#: todo/staff/frontend/components/states.config.js:64
+msgid "TODOs"
 msgstr ""
 
 #: staff/apps/settings/general/tos_settings/tos-settings.component.js:98
@@ -10969,13 +12653,13 @@ msgid "Terminate"
 msgstr ""
 
 #: staff/apps/billing/services/flserviceactions.component.js:54
-#: staff/apps/clients/flclientdetails.component.js:188
-#: staff/apps/clients/flclientdetails.html:313
+#: staff/apps/clients/flclientdetails.component.js:222
+#: staff/apps/clients/flclientdetails.html:319
 msgid "Terminate service"
 msgstr ""
 
 #: staff/apps/billing/services/flserviceactions.component.js:53
-#: staff/apps/clients/flclientdetails.component.js:187
+#: staff/apps/clients/flclientdetails.component.js:221
 msgid "Terminate service {{id}}"
 msgstr ""
 
@@ -10987,7 +12671,7 @@ msgstr ""
 msgid "Terminated at"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:609
+#: staff/apps/settings/configurations/configurationdetails.html:618
 msgid "Termination"
 msgstr ""
 
@@ -11013,7 +12697,7 @@ msgstr ""
 msgid "Test results"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:598
+#: staff/apps/settings/configurations/configurationdetails.html:607
 msgid ""
 "The actual suspension can be postponed by a few hours when <strong>Delay by hours</strong>\n"
 "                  is checked or until client is under the credit limit by a specified amount when\n"
@@ -11024,7 +12708,13 @@ msgstr ""
 msgid "The body of the email. The following parameters can be used to customize email body:"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:625
+#: cpanel/staff/frontend/components/product_settings/productsettings.html:28
+msgid ""
+"The cPanel license Package ID and Group ID for licenses issued with this package are\n"
+"                configurable here."
+msgstr ""
+
+#: staff/apps/settings/configurations/configurationdetails.html:634
 msgid ""
 "The client can be notified about the termination if a <strong>Notification template</strong> is\n"
 "                  selected."
@@ -11032,6 +12722,10 @@ msgstr ""
 
 #: staff/apps/settings/configurations/configurationdetails.html:191
 msgid "The e-mail address the notifications are sent from."
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:268
+msgid "The message will permanently be deleted"
 msgstr ""
 
 #: staff/apps/clients/sendmassmail/clientssendmassmail.html:73
@@ -11042,7 +12736,7 @@ msgstr ""
 msgid "The name to send the notifications from."
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:421
+#: staff/apps/settings/configurations/configurationdetails.html:426
 msgid "The next number that will be allocated for a paid invoice."
 msgstr ""
 
@@ -11111,6 +12805,11 @@ msgid ""
 "            Please delete or refund any transactions before deleting invoice."
 msgstr ""
 
+#: domains/staff/frontend/components/domain_details/domaindetails.html:159
+#: domains/staff/frontend/components/register_domain/registerdomain.html:114
+msgid "Third nameserver"
+msgstr ""
+
 #: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:11
 #: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:12
 msgid "This extra step shows it’s really you trying to sign in"
@@ -11132,11 +12831,11 @@ msgstr ""
 msgid "This information is shown on invoices."
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:422
+#: staff/apps/settings/configurations/configurationdetails.html:427
 msgid "This option only takes effect if sequential invoice numbering is enabled."
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:666
+#: staff/apps/settings/configurations/configurationdetails.html:675
 msgid ""
 "This overrides the default termination action and suspends the client and his resources\n"
 "                  instead."
@@ -11163,6 +12862,14 @@ msgstr ""
 msgid "This service has an existing upgrade/downgrade invoice:"
 msgstr ""
 
+#: tickets/staff/frontend/components/signatures/signatures.html:38
+msgid "This signature will be used for the {{signature.department_display}} department."
+msgstr ""
+
+#: tickets/staff/frontend/components/signatures/signatures.html:31
+msgid "This signature will be used if the signature for a specific department is not set."
+msgstr ""
+
 #: staff/apps/osvolumes/flvolumedetails.html:35
 msgid ""
 "This volume is attached to\n"
@@ -11176,16 +12883,62 @@ msgid "This will permanently delete data (including the cost information for the
 msgstr ""
 
 #: staff/apps/billing/services/flserviceactions.component.js:55
-#: staff/apps/clients/flclientdetails.component.js:189
+#: staff/apps/clients/flclientdetails.component.js:223
 msgid "This will permanently delete data."
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.component.js:237
+#: staff/apps/clients/flclientdetails.component.js:273
 msgid "This will permanently delete usage data."
 msgstr ""
 
 #: staff/apps/users/usertogroupmanager.html:6
 msgid "This will remove the user from the group"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets/tickets.html:1
+msgid "Ticket"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.component.js:58
+msgid "Ticket closed."
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.component.js:24
+msgid "Ticket deleted"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:325
+msgid "Ticket details"
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:90
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:94
+msgid "Ticket id format"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_actions/dialogs/ticket_linking/ticketlinking.html:1
+#: tickets/staff/frontend/components/tickets_details/dialogs/remove_linking/removelinking.html:1
+msgid "Ticket linking dialog"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_actions/ticketsactions.component.js:48
+msgid "Ticket reopened."
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.component.js:166
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.component.js:182
+msgid "Ticket successfully opened."
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.component.js:70
+msgid "Ticket successfully updated."
+msgstr ""
+
+#: tickets/staff/frontend/components/plugin_notifications/pluginnotifications.html:13
+#: tickets/staff/frontend/components/plugin_notifications/pluginnotifications.html:2
+#: tickets/staff/frontend/components/plugin_notifications/pluginnotifications.html:3
+#: tickets/staff/frontend/components/states.config.js:89
+msgid "Tickets"
 msgstr ""
 
 #: staff/apps/osbilling/resources/flmetric.html:47
@@ -11217,6 +12970,14 @@ msgstr ""
 #: staff/apps/settings/general/tos_settings/tos-settings.component.html:92
 #: staff/apps/settings/notifications/edit/flnotification-template-edit.template.html:31
 #: staff/apps/settings/notifications/flnotification-templates.template.html:63
+#: tickets/staff/frontend/components/client_info/clientinfo.html:10
+#: tickets/staff/frontend/components/states.config.js:100
+#: tickets/staff/frontend/components/tickets/tickets.html:69
+#: tickets/staff/frontend/components/tickets_create/ticketscreate.html:21
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:18
+#: tickets/staff/frontend/components/user_info/userinfo.html:6
+#: todo/staff/frontend/components/states.config.js:73
+#: todo/staff/frontend/components/todo_actions/dialogs/todo_edit/todoedit.html:10
 msgid "Title"
 msgstr ""
 
@@ -11273,6 +13034,10 @@ msgstr ""
 msgid "Total:"
 msgstr ""
 
+#: hypanel/staff/frontend/components/product_settings/productsettings.html:72
+msgid "Traffic"
+msgstr ""
+
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:167
 #: staff/apps/billing/journal/journaldetail.html:46
 #: staff/apps/billing/states.config.js:622
@@ -11299,8 +13064,8 @@ msgid "Transaction refund initiated."
 msgstr ""
 
 #: staff/apps/billing/journal/journal.html:50
-#: staff/apps/clients/flclientdetails.html:195
-#: staff/apps/clients/flclientdetails.html:207
+#: staff/apps/clients/flclientdetails.html:201
+#: staff/apps/clients/flclientdetails.html:213
 msgid "Transaction {{::journal.destination_info.transaction}}"
 msgstr ""
 
@@ -11314,6 +13079,22 @@ msgstr ""
 
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:115
 msgid "Transaction {{::journalEntry.source_info.transaction}}"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:154
+msgid "Transfer"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:423
+msgid "Transfer domain"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:104
+msgid "Transfer pending"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:108
+msgid "Transferred away"
 msgstr ""
 
 #: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:43
@@ -11351,11 +13132,11 @@ msgid "UP"
 msgstr ""
 
 #: staff/apps/osimages/create/flimagecreate.html:162
-#: staff/apps/osimages/create/flimagecreate.html:173
+#: staff/apps/osimages/create/flimagecreate.html:179
 msgid "URL"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:638
+#: staff/apps/settings/configurations/configurationdetails.html:647
 msgid ""
 "Un-checking suspend instead of terminate allows clients and service termination and may cause\n"
 "                    accidental data loss. However, you can remove permissions for service/client deletion on\n"
@@ -11386,6 +13167,10 @@ msgstr ""
 msgid "Uncheck all"
 msgstr ""
 
+#: domains/staff/frontend/components/states.config.js:112
+msgid "Undefined"
+msgstr ""
+
 #: staff/apps/osbilling/pricing/flpricerule.html:65
 msgid "Unit"
 msgstr ""
@@ -11405,6 +13190,10 @@ msgstr ""
 msgid "Unlock instance {{name}}"
 msgstr ""
 
+#: domains/staff/frontend/components/states.config.js:116
+msgid "Unmanaged"
+msgstr ""
+
 #: staff/apps/osinstances/actions/flinstanceactions.html:157
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:167
 msgid "Unmount ISO and reboot"
@@ -11420,9 +13209,9 @@ msgstr ""
 msgid "Unrescue"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:66
-#: staff/apps/clients/flclients.html:31
-#: staff/apps/clients/flclients.html:67
+#: staff/apps/clients/flclientdetails.html:72
+#: staff/apps/clients/flclients.html:39
+#: staff/apps/clients/flclients.html:78
 #: staff/apps/clients/states.config.js:47
 msgid "Up to date credit"
 msgstr ""
@@ -11434,6 +13223,11 @@ msgstr ""
 #: staff/apps/osimages/flimages.html:216
 #: staff/apps/osvolumesnapshots/actions/flxsvolumesnapshotactions.html:10
 msgid "Update"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:171
+#: domains/staff/frontend/components/tld_details/tlddetails.html:182
+msgid "Update all prices"
 msgstr ""
 
 #: staff/apps/osvolumebackups/edit/fl-volumebackups-edit.template.html:27
@@ -11491,7 +13285,11 @@ msgstr ""
 msgid "Update subnet scheduled"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:71
+#: tickets/staff/frontend/components/tickets_edit/ticketsedit.html:119
+msgid "Update ticket"
+msgstr ""
+
+#: staff/apps/clients/flclientdetails.html:77
 msgid "Update usage"
 msgstr ""
 
@@ -11504,6 +13302,7 @@ msgstr ""
 msgid "Updated"
 msgstr ""
 
+#: domains/staff/frontend/components/tld_details/tlddetails.html:156
 #: staff/apps/billing/states.config.js:186
 #: staff/apps/floatingips/states.config.js:44
 #: staff/apps/networks/flnetworkdetails.html:39
@@ -11557,15 +13356,16 @@ msgstr ""
 msgid "Uploading image ..."
 msgstr ""
 
+#: hypanel/staff/frontend/components/server_settings/serversettings.html:12
 #: staff/apps/settings/openstack/testnotificationsurls/testnotificationsurlsdialog.html:9
 msgid "Url"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.component.js:243
+#: staff/apps/clients/flclientdetails.component.js:279
 msgid "Usage reset"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.component.js:229
+#: staff/apps/clients/flclientdetails.component.js:265
 msgid "Usage updated"
 msgstr ""
 
@@ -11578,6 +13378,15 @@ msgstr ""
 
 #: staff/apps/osvolumes/create/flvolumecreate.component.js:63
 msgid "Use an existing volume"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:134
+msgid "Use client as a contact"
+msgstr ""
+
+#: domains/staff/frontend/components/register_domain/registerdomain.html:87
+#: domains/staff/frontend/components/register_domain/registerdomain.html:88
+msgid "Use default nameservers"
 msgstr ""
 
 #: staff/apps/users/fluseredit.html:46
@@ -11593,8 +13402,16 @@ msgstr ""
 msgid "Use only proforma invoices with random numbers"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:417
+#: staff/apps/settings/configurations/configurationdetails.html:422
 msgid "Use only proforma invoices with random numbers - you can choose this when your fiscal rules do not require invoices with sequential numbers."
+msgstr ""
+
+#: domains/staff/frontend/components/pricing_cycles/pricingcycles.html:16
+msgid "Use relative prices"
+msgstr ""
+
+#: staff/apps/settings/configurations/configurations.html:27
+msgid "Used by reseller"
 msgstr ""
 
 #: staff/apps/activitylog/log.html:17
@@ -11628,7 +13445,7 @@ msgstr ""
 msgid "User added to group"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.component.js:279
+#: staff/apps/clients/flclientdetails.component.js:317
 msgid "User associated"
 msgstr ""
 
@@ -11680,17 +13497,19 @@ msgstr ""
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:29
 #: staff/apps/settings/authorization/authorization.html:157
 #: staff/apps/usergroups/states.config.js:39
-#: staff/apps/users/fluserdetails.html:81
+#: staff/apps/users/fluserdetails.html:87
 msgid "User groups"
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:10
 #: staff/apps/users/flusers.html:21
-#: staff/apps/users/flusers.html:74
+#: staff/apps/users/flusers.html:77
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:141
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:213
 msgid "User image"
 msgstr ""
 
-#: staff/apps/users/flusers.html:62
+#: staff/apps/users/flusers.html:65
 msgid "User labels"
 msgstr ""
 
@@ -11699,11 +13518,11 @@ msgid "User modified"
 msgstr ""
 
 #: commons/auth/login.html:24
-msgid "User name"
+msgid "User name or email address"
 msgstr ""
 
 #: commons/auth/login.html:29
-msgid "User name is required"
+msgid "User name or email address is required"
 msgstr ""
 
 #: staff/apps/settings/authorization/authorization.component.js:170
@@ -11722,12 +13541,13 @@ msgstr ""
 msgid "User {:id}"
 msgstr ""
 
+#: hypanel/staff/frontend/components/server_settings/serversettings.html:22
 #: staff/apps/servers/flserver-create/flserver-create.component.html:93
 #: staff/apps/servers/flserver-detail/flserver-detail.component.html:92
 #: staff/apps/usergroups/flusergroupdetails.html:26
-#: staff/apps/users/fluserdetails.html:27
+#: staff/apps/users/fluserdetails.html:33
 #: staff/apps/users/fluseredit.html:38
-#: staff/apps/users/flusers.html:60
+#: staff/apps/users/flusers.html:63
 #: staff/apps/users/states.config.js:42
 msgid "Username"
 msgstr ""
@@ -11737,7 +13557,7 @@ msgid "Username or email"
 msgstr ""
 
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:28
-#: staff/apps/clients/flclientdetails.html:324
+#: staff/apps/clients/flclientdetails.html:393
 #: staff/apps/settings/authorization/authorization.html:15
 #: staff/apps/users/states.config.js:39
 msgid "Users"
@@ -11753,6 +13573,7 @@ msgstr ""
 msgid "Utilities"
 msgstr ""
 
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:64
 #: staff/apps/clients/clienteditdlg/clientedit.html:62
 #: staff/apps/clients/flclientedit.html:82
 msgid "VAT ID"
@@ -11983,6 +13804,22 @@ msgstr ""
 msgid "When you press <b>Move instance</b> we will attempt to move the instance to selected client."
 msgstr ""
 
+#: domains/staff/frontend/components/domain_details/domaindetails.component.js:56
+msgid "Whois data saved"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:178
+msgid "Whois information"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:179
+msgid "Whois information for domain"
+msgstr ""
+
+#: domains/staff/frontend/components/tlds/tlds.html:26
+msgid "Whois server configured"
+msgstr ""
+
 #: staff/apps/billing/configurable_options/optionlist.component.html:57
 msgid "Widget"
 msgstr ""
@@ -11991,12 +13828,34 @@ msgstr ""
 msgid "Wildcard available, use asterisk symbol to use it:"
 msgstr ""
 
+#: staff/apps/settings/configurations/configurationdetails.html:443
+msgid ""
+"Will add tax for invoices that are generated when a client adds credit. If the\n"
+"                  configuration is active, paying an invoice generated for a service using client credit will remove\n"
+"                  tax on that invoice."
+msgstr ""
+
 #: commons/auth/flcannotconnect.html:5
 msgid "Will try to reconnect shortly"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:436
+#: staff/apps/settings/configurations/configurationdetails.html:441
 msgid "With this option enabled, an European Union Client will be marked as non taxable if he has a valid EU vat ID."
+msgstr ""
+
+#: tickets/staff/frontend/components/department_create/departmentcreate.html:49
+#: tickets/staff/frontend/components/department_details/departmentdetails.html:53
+msgid "Year (e.g. 19)"
+msgstr ""
+
+#: domains/staff/frontend/components/domain_details/domaindetails.html:42
+#: domains/staff/frontend/components/domain_details/domaindetails.html:47
+#: domains/staff/frontend/components/domain_details/domaindetails.html:52
+#: domains/staff/frontend/components/domain_details/domaindetails.html:92
+#: domains/staff/frontend/components/tlds/tlds.html:22
+#: domains/staff/frontend/components/tlds/tlds.html:27
+#: domains/staff/frontend/components/tlds/tlds.html:58
+msgid "Yes"
 msgstr ""
 
 #: commons/terms_of_service_agreement/fltosagreement.component.js:39
@@ -12089,6 +13948,10 @@ msgstr ""
 msgid "You must select a flavor first!"
 msgstr ""
 
+#: domains/staff/frontend/components/register_domain/registerdomain.html:175
+msgid "You need to fill the following custom fields in order to register the domain"
+msgstr ""
+
 #: commons/SFA/google_authenticator/fl-google-authenticator-details.component.js:30
 msgid "You will need to re-enable google authenticator"
 msgstr ""
@@ -12124,8 +13987,9 @@ msgid "Your license expires today. Please renew your Fleio license."
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:86
+#: domains/staff/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:95
 #: staff/apps/clients/clienteditdlg/clientedit.html:94
-#: staff/apps/clients/flclientdetails.html:47
+#: staff/apps/clients/flclientdetails.html:53
 #: staff/apps/clients/flclientedit.html:120
 msgid "Zip code"
 msgstr ""
@@ -12182,8 +14046,23 @@ msgstr ""
 msgid "add credit page"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:341
+msgid "added the following CC recipients"
+msgstr ""
+
 #: staff/apps/billing/invoicing/payments/paymentrefund.html:58
 msgid "and added to client credit"
+msgstr ""
+
+#: todo/staff/frontend/components/todo_details/tododetails.html:63
+msgid "assigned this TODO to"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:106
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:25
+#: todo/staff/frontend/components/states.config.js:77
+#: todo/staff/frontend/components/todo_details/tododetails.html:14
+msgid "assigned to"
 msgstr ""
 
 #: oscommons/osfilters/flinstancestatus.filter.js:44
@@ -12196,6 +14075,26 @@ msgstr ""
 
 #: oscommons/osfilters/flinstancestatus.filter.js:62
 msgid "building"
+msgstr ""
+
+#: cpanel/staff/frontend/components/product_settings/productsettings.html:16
+msgid "cPanel group ID"
+msgstr ""
+
+#: cpanel/staff/frontend/components/product_settings/productsettings.html:27
+msgid "cPanel licensing package configuration"
+msgstr ""
+
+#: cpanelserver/staff/frontend/components/product_settings/productsettings.html:2
+msgid "cPanel module configuration"
+msgstr ""
+
+#: cpanel/staff/frontend/components/product_settings/productsettings.html:5
+msgid "cPanel package ID"
+msgstr ""
+
+#: cpanelserver/staff/frontend/components/product_settings/productsettings.html:20
+msgid "cPanel plan"
 msgstr ""
 
 #: staff/apps/billing/services/upgrade/flserviceupgrade.component.html:44
@@ -12212,8 +14111,51 @@ msgstr ""
 msgid "change"
 msgstr ""
 
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:327
+msgid "changed assignee to"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:348
+msgid "changed client to"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:334
+msgid "changed department to"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:361
+#: todo/staff/frontend/components/todo_details/tododetails.html:80
+msgid "changed description on"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:306
+msgid "changed internal status to {{item.new_internal_status}}"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:320
+msgid "changed priority to"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:299
+#: todo/staff/frontend/components/todo_details/tododetails.html:72
+msgid "changed status to"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:355
+#: todo/staff/frontend/components/todo_details/tododetails.html:87
+msgid "changed title on"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:152
+msgid "client"
+msgstr ""
+
 #: staff/apps/clients/states.config.js:88
 msgid "client group"
+msgstr ""
+
+#: todo/staff/frontend/components/todo_details/tododetails.html:54
+msgid "commented on"
 msgstr ""
 
 #: staff/apps/clients/states.config.js:58
@@ -12228,12 +14170,20 @@ msgstr ""
 msgid "create {{$ctrl.bootSource.options.volume_size}} GB volume"
 msgstr ""
 
+#: domains/staff/frontend/components/states.config.js:266
+#: domains/staff/frontend/components/states.config.js:51
+#: tickets/staff/frontend/components/states.config.js:112
+#: tickets/staff/frontend/components/states.config.js:219
+#: todo/staff/frontend/components/states.config.js:82
+msgid "created at"
+msgstr ""
+
 #: commons/SFA/sfa_options/fl-sfa-options.template.html:17
 #: staff/apps/clientgroups/flclientgroups.html:22
 #: staff/apps/networks/flnetworkadd.html:167
 #: staff/apps/osbilling/plans/flbillingplandetails.html:9
-#: staff/apps/osbilling/plans/flbillingplans.html:31
-#: staff/apps/osbilling/plans/flbillingplans.html:88
+#: staff/apps/osbilling/plans/flbillingplans.html:36
+#: staff/apps/osbilling/plans/flbillingplans.html:93
 #: staff/apps/osflavorgroups/flflavorgroups.html:22
 #: staff/apps/settings/configurations/configurationdetails.html:8
 #: staff/apps/settings/configurations/configurations.html:19
@@ -12248,6 +14198,10 @@ msgstr ""
 
 #: oscommons/osfilters/flinstancestatus.filter.js:52
 msgid "deleted"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:157
+msgid "department"
 msgstr ""
 
 #: commons/SFA/sfa_options/fl-sfa-options.template.html:16
@@ -12297,6 +14251,10 @@ msgstr ""
 msgid "existence"
 msgstr ""
 
+#: domains/staff/frontend/components/states.config.js:61
+msgid "expiry date"
+msgstr ""
+
 #: staff/apps/networks/flnetworkdetails.html:8
 #: staff/apps/networks/flnetworks.html:15
 #: staff/apps/networks/flnetworks.html:74
@@ -12319,19 +14277,15 @@ msgstr ""
 msgid "hard reboot"
 msgstr ""
 
-#: staff/apps/clients/states.config.js:125
-msgid "has instances"
-msgstr ""
-
-#: staff/apps/clients/states.config.js:130
+#: staff/apps/clients/states.config.js:140
 msgid "has instances in region"
 msgstr ""
 
-#: staff/apps/clients/states.config.js:147
+#: staff/apps/clients/states.config.js:157
 msgid "has instances on hypervisor"
 msgstr ""
 
-#: staff/apps/clients/states.config.js:136
+#: staff/apps/clients/states.config.js:146
 msgid "has instances with flavor"
 msgstr ""
 
@@ -12355,8 +14309,8 @@ msgstr ""
 msgid "in"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:51
-#: staff/apps/users/flusers.html:37
+#: staff/apps/users/fluserdetails.html:57
+#: staff/apps/users/flusers.html:40
 msgid "inactive"
 msgstr ""
 
@@ -12368,6 +14322,10 @@ msgstr ""
 #: staff/apps/networks/flnetworks.html:16
 #: staff/apps/networks/flnetworks.html:75
 msgid "internal"
+msgstr ""
+
+#: tickets/staff/frontend/components/states.config.js:117
+msgid "internal status"
 msgstr ""
 
 #: commons/ui/filter/flfilter.service.js:161
@@ -12387,21 +14345,26 @@ msgid "migrating"
 msgstr ""
 
 #: commons/ui/utils/fluiutils.service.js:34
+#: domains/staff/frontend/components/client_info/clientinfo.html:36
+#: domains/staff/frontend/components/client_info/clientinfo.html:45
+#: domains/staff/frontend/components/client_info/clientinfo.html:58
+#: domains/staff/frontend/components/domain_details/domaindetails.html:83
+#: domains/staff/frontend/components/domain_details/domaindetails.html:88
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:174
 #: staff/apps/billing/journal/journaldetail.html:35
 #: staff/apps/billing/journal/journaldetail.html:42
 #: staff/apps/billing/services/details/servicedetails.html:77
 #: staff/apps/billing/services/details/servicedetails.html:86
-#: staff/apps/clients/flclientdetails.html:287
-#: staff/apps/clients/flclientdetails.html:294
-#: staff/apps/clients/flclientdetails.html:305
+#: staff/apps/clients/flclientdetails.html:293
+#: staff/apps/clients/flclientdetails.html:300
+#: staff/apps/clients/flclientdetails.html:311
 #: staff/apps/osflavors/flflavordetails.html:48
 #: staff/apps/osflavors/flflavors.html:37
 #: staff/apps/ossecuritygroups/flsecuritygroupdetails.html:89
 msgid "n/a"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:32
+#: staff/apps/users/fluserdetails.html:38
 msgid "never"
 msgstr ""
 
@@ -12411,6 +14374,10 @@ msgstr ""
 
 #: staff/apps/billing/services/details/servicedetails.html:41
 msgid "no order exists for this service"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:177
+msgid "no prices available"
 msgstr ""
 
 #: commons/ui/filter/flfilterdisplay.html:18
@@ -12424,6 +14391,24 @@ msgstr ""
 
 #: staff/apps/subnetpools/flsubnetpools.html:18
 msgid "not shared"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:292
+msgid "note from"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:300
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:306
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:321
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:328
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:335
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:342
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:349
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:62
+#: todo/staff/frontend/components/todo_details/tododetails.html:44
+#: todo/staff/frontend/components/todo_details/tododetails.html:65
+#: todo/staff/frontend/components/todo_details/tododetails.html:73
+msgid "on"
 msgstr ""
 
 #: oscommons/osfilters/flinstancestatus.filter.js:24
@@ -12443,6 +14428,10 @@ msgstr ""
 msgid "pending"
 msgstr ""
 
+#: tickets/staff/frontend/components/states.config.js:133
+msgid "priority"
+msgstr ""
+
 #: staff/apps/billing/products/associateproductoption.html:16
 msgid "product and option cycles do not match"
 msgstr ""
@@ -12460,9 +14449,17 @@ msgstr ""
 msgid "rebuild"
 msgstr ""
 
+#: domains/staff/frontend/components/states.config.js:56
+msgid "registration date"
+msgstr ""
+
 #: staff/apps/osvolumebackups/states.config.js:60
 #: staff/apps/osvolumesnapshots/states.config.js:60
 msgid "related volume"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:314
+msgid "reopened ticket because of email reply on"
 msgstr ""
 
 #: oscommons/osfilters/flinstancestatus.filter.js:64
@@ -12473,9 +14470,9 @@ msgstr ""
 msgid "rescued"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:48
-#: staff/apps/users/flusers.html:34
-#: staff/apps/users/flusers.html:94
+#: staff/apps/users/fluserdetails.html:54
+#: staff/apps/users/flusers.html:37
+#: staff/apps/users/flusers.html:97
 msgid "reseller"
 msgstr ""
 
@@ -12512,14 +14509,20 @@ msgstr ""
 msgid "soft-delete"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:49
-#: staff/apps/users/flusers.html:35
-#: staff/apps/users/flusers.html:95
+#: staff/apps/users/fluserdetails.html:55
+#: staff/apps/users/flusers.html:38
+#: staff/apps/users/flusers.html:98
 msgid "staff"
 msgstr ""
 
 #: oscommons/osfilters/flinstancestatus.filter.js:34
 msgid "starting"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:71
+#: tickets/staff/frontend/components/states.config.js:125
+#: todo/staff/frontend/components/states.config.js:87
+msgid "status"
 msgstr ""
 
 #: oscommons/osfilters/flinstancestatus.filter.js:60
@@ -12530,15 +14533,24 @@ msgstr ""
 msgid "stopping"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:50
-#: staff/apps/users/flusers.html:36
-#: staff/apps/users/flusers.html:96
+#: staff/apps/users/fluserdetails.html:56
+#: staff/apps/users/flusers.html:39
+#: staff/apps/users/flusers.html:99
 msgid "superuser"
 msgstr ""
 
 #: oscommons/osfilters/flinstancestatus.filter.js:20
-#: staff/apps/clients/flclients.html:40
+#: staff/apps/clients/flclients.html:51
 msgid "suspended"
+msgstr ""
+
+#: domains/staff/frontend/components/states.config.js:122
+msgid "top level domain"
+msgstr ""
+
+#: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:31
+#: todo/staff/frontend/components/todo_details/tododetails.html:20
+msgid "unassigned"
 msgstr ""
 
 #: oscommons/osfilters/flinstancestatus.filter.js:58
@@ -12566,6 +14578,36 @@ msgstr ""
 msgid "verify resize"
 msgstr ""
 
+#: domains/staff/frontend/components/pricing_cycles/pricingcycles.component.js:25
+#: domains/staff/frontend/components/register_domain/registerdomain.component.js:67
+#: domains/staff/frontend/components/transfer_domain/transferdomain.component.js:46
+msgid "year"
+msgstr ""
+
+#: domains/staff/frontend/components/pricing_cycles/pricingcycles.component.js:28
+#: domains/staff/frontend/components/register_domain/registerdomain.component.js:70
+#: domains/staff/frontend/components/transfer_domain/transferdomain.component.js:49
+msgid "years"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:109
+msgid "{{ $ctrl.domainAddonPrices.price_types[price_type] }} prices"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:53
+msgid "{{ $ctrl.domainPrices.price_types[price_type] }} prices"
+msgstr ""
+
+#: domains/staff/frontend/components/pricing_cycles/pricingcycles.html:3
+msgid ""
+"{{ $ctrl.priceCycles.currency.code }}\n"
+"            <translate ng-if=\"$ctrl.priceCycles.currency.is_default\">(default)</translate>"
+msgstr ""
+
+#: domains/staff/frontend/components/pricing_cycles/pricingcycles.html:7
+msgid "{{ $ctrl.priceCycles.price_type_display }}"
+msgstr ""
+
 #: staff/apps/billing/products/productdetails.html:49
 msgid "{{ $ctrl.productDetails.group.name }}"
 msgstr ""
@@ -12578,12 +14620,26 @@ msgstr ""
 msgid "{{ $ctrl.readableBytes(snapshot.size); }}"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:35
+#: domains/staff/frontend/components/tld_details/tlddetails.html:8
+msgid "{{ $ctrl.tld.name }} pricing and details"
+msgstr ""
+
+#: staff/apps/users/fluserdetails.html:41
 msgid "{{ $ctrl.user.date_joined | date:'medium' }}"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:31
+#: staff/apps/users/fluserdetails.html:37
 msgid "{{ ::$ctrl.user.last_login | date:'medium' }}"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:37
+#: domains/staff/frontend/components/tld_details/tlddetails.html:93
+msgid "{{ currency_code }} prices"
+msgstr ""
+
+#: domains/staff/frontend/components/tld_details/tlddetails.html:32
+#: domains/staff/frontend/components/tld_details/tlddetails.html:88
+msgid "{{ currency_code }}(default) prices"
 msgstr ""
 
 #: staff/apps/billing/products/productdetails.html:114
@@ -12669,7 +14725,7 @@ msgstr ""
 msgid "{{::reqVolume.size}} GB created on {{::reqVolume.created_at | date }}"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:498
+#: staff/apps/clients/flclientdetails.html:567
 msgid "{{::service.status}}"
 msgstr ""
 

@@ -4,6 +4,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:18
+msgid "#{{ $ctrl.ticket.id }} - {{ $ctrl.ticket.title }}"
+msgstr ""
+
 #: site/apps/dashboard/fldashboard.html:142
 msgid "(All paid)"
 msgstr ""
@@ -26,6 +30,10 @@ msgstr ""
 
 #: commons/ui/filter/flfilter.html:203
 msgid "*abc* -> {{$ctrl.item.display}} contains \"abc\""
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:92
+msgid "- {{ $ctrl.price_per_year }} {{ $ctrl.currency }} / year"
 msgstr ""
 
 #: site/apps/dashboard/fldashboard.html:108
@@ -82,6 +90,11 @@ msgstr ""
 msgid "7 days"
 msgstr ""
 
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:45
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:45
+msgid "<br>No valid department was selected"
+msgstr ""
+
 #: site/apps/billing/recurring_payment_opts/recurring_payment_opts.component.html:1
 msgid ""
 "<h2 hide-xs class=\"fl-margin-right-small fl-grey\"><translate>No recurring payment options found</translate></h2>\n"
@@ -101,7 +114,7 @@ msgid ""
 "              <translate>All data currently on the instance disk will be permanently deleted.</translate>"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:202
+#: site/apps/osimages/create/flimagecreate.html:208
 msgid ""
 "<strong>Access permissions</strong><br>\n"
 "              The access permission for the image. <strong>Public</strong> or <strong>Private</strong>.\n"
@@ -110,7 +123,7 @@ msgid ""
 "              <strong>Protected</strong> ensures that only users with permissions can delete the image."
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:187
+#: site/apps/osimages/create/flimagecreate.html:193
 msgid ""
 "<strong>Image details</strong><br>\n"
 "              Select the <strong>region</strong> where this image should be created, give the image a name\n"
@@ -126,7 +139,7 @@ msgid ""
 "                    or snapshot of an instance."
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:194
+#: site/apps/osimages/create/flimagecreate.html:200
 msgid ""
 "<strong>Image properties</strong><br>\n"
 "              Select the format of the Image disk from the <strong>Disk format</strong> dropdown.\n"
@@ -136,7 +149,7 @@ msgid ""
 "              to take different actions based on the information provided."
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.html:209
+#: site/apps/osimages/create/flimagecreate.html:215
 msgid ""
 "<strong>Image source</strong><br>\n"
 "              Select the source for the actual image data from the <strong>Image source</strong> dropdown.\n"
@@ -232,10 +245,19 @@ msgstr ""
 msgid "A snapshot will be charged up to {{ $ctrl.price_per_storage }}."
 msgstr ""
 
+#: domains/enduser/frontend/components/input_contact/inputcontact.html:20
+msgid "A valid contact is required"
+msgstr ""
+
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:48
 #: site/apps/clients/clienteditdlg/clientedit.html:47
 #: site/apps/clients/fladdclient.html:58
 #: site/apps/clients/flclientedit.html:59
 msgid "A valid country is required"
+msgstr ""
+
+#: domains/enduser/frontend/components/select_existing_domain_form/selectexistingdomainform.html:20
+msgid "A valid domain in required"
 msgstr ""
 
 #: oscommons/revert_volume_to_snapshot_dialog/fl-revert-volume-to-snapshot-dialog.template.html:27
@@ -287,6 +309,7 @@ msgid ""
 "              <strong>{{ vm.credentials}}</strong>,password <strong> {{ vm.credentials }}</strong>"
 msgstr ""
 
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:26
 #: site/apps/clients/clienteditdlg/clientedit.html:25
 #: site/apps/clients/fladdclient.html:37
 #: site/apps/clients/flclientedit.html:37
@@ -315,6 +338,7 @@ msgstr ""
 #: site/apps/oszones/flzonedetails.html:54
 #: site/apps/oszones/flzones.html:66
 #: site/apps/pkm/flpkmkeys.html:55
+#: tickets/enduser/frontend/components/tickets/tickets.html:55
 msgid "Actions"
 msgstr ""
 
@@ -345,6 +369,12 @@ msgstr ""
 #: site/apps/osapiusers/flapiusers.component.js:24
 #: site/apps/osapiusers/flapiusers.html:142
 msgid "Add API user"
+msgstr ""
+
+#: domains/enduser/frontend/components/contacts_actions/contactsactions.html:9
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:114
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:4
+msgid "Add Contact"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:225
@@ -388,11 +418,20 @@ msgstr ""
 msgid "Add SSH key"
 msgstr ""
 
+#: domains/enduser/frontend/components/order_product/orderproduct.html:88
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:143
+msgid "Add a new domain contact"
+msgstr ""
+
 #: site/apps/networks/flnetworkadd.html:200
 #: site/apps/networks/flnetworkadd.html:204
 #: site/apps/networks/flnetworksubnetedit.html:147
 #: site/apps/networks/flnetworksubnetedit.html:151
 msgid "Add allocation pool"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:87
+msgid "Add attachments"
 msgstr ""
 
 #: site/apps/clients/fladdclient.html:121
@@ -401,8 +440,12 @@ msgstr ""
 msgid "Add client billing information"
 msgstr ""
 
-#: site/apps/billing/invoicing/fladdcredit.html:21
-#: site/apps/billing/invoicing/fladdcredit.html:29
+#: domains/enduser/frontend/components/contacts/contacts.html:95
+msgid "Add contact"
+msgstr ""
+
+#: site/apps/billing/invoicing/fladdcredit.html:26
+#: site/apps/billing/invoicing/fladdcredit.html:34
 #: site/apps/billing/invoicing/states.config.js:121
 #: site/apps/dashboard/fldashboard.html:22
 #: site/apps/dashboard/fldashboard.html:26
@@ -475,6 +518,11 @@ msgstr ""
 msgid "Add new"
 msgstr ""
 
+#: domains/enduser/frontend/components/order_product/orderproduct.html:90
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:145
+msgid "Add new domain contact"
+msgstr ""
+
 #: site/apps/osinstances/create/flinstancecreate.html:203
 msgid "Add new key"
 msgstr ""
@@ -529,16 +577,24 @@ msgstr ""
 msgid "Add subnet to network {{ $ctrl.network.name }}"
 msgstr ""
 
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:172
+#: domains/enduser/frontend/components/transfer_domain_form/transferdomainform.html:44
+msgid "Add to cart"
+msgstr ""
+
 #: commons/userprofile/fluserprofile.html:82
+#: domains/enduser/frontend/components/contacts/contacts.html:29
 msgid "Address"
 msgstr ""
 
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:69
 #: site/apps/clients/clienteditdlg/clientedit.html:69
 #: site/apps/clients/fladdclient.html:80
 #: site/apps/clients/flclientedit.html:81
 msgid "Address line 1"
 msgstr ""
 
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:75
 #: site/apps/clients/clienteditdlg/clientedit.html:75
 #: site/apps/clients/fladdclient.html:84
 #: site/apps/clients/flclientedit.html:87
@@ -600,6 +656,10 @@ msgstr ""
 #: site/apps/networks/flnetworkadd.html:183
 #: site/apps/networks/flnetworksubnetedit.html:130
 msgid "Allocation pool start"
+msgstr ""
+
+#: site/apps/osimages/create/flimagecreate.html:178
+msgid "Allowed formats: {{ $ctrl.allowedFormats }}"
 msgstr ""
 
 #: site/apps/billing/invoicing/flinvoicingdetails.html:125
@@ -693,6 +753,7 @@ msgstr ""
 #: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:46
 #: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:64
 #: commons/ui/useralerts/list/fluseralerts.component.js:39
+#: domains/enduser/frontend/components/contacts_actions/contactsactions.component.js:26
 #: site/apps/baseconfig/fleio.baseconfig.module.js:21
 #: site/apps/billing/recurring_payment_opts/recurring_payment_opts.component.js:32
 #: site/apps/billing/recurring_payment_opts/recurring_payment_opts.component.js:48
@@ -721,6 +782,10 @@ msgstr ""
 #: site/apps/oszones/flzones.component.js:91
 #: site/apps/pkm/flpkmkeys.component.js:75
 msgid "Are you sure?"
+msgstr ""
+
+#: tickets/enduser/frontend/components/states.config.js:72
+msgid "Assigned to"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.html:532
@@ -785,6 +850,26 @@ msgstr ""
 msgid "Attaching volume to instance"
 msgstr ""
 
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:114
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:77
+msgid "Attachment file size is too big."
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:13
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:13
+msgid "Attachment upload in progress..."
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:4
+msgid "Attachments upload in progress..."
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:160
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:49
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:97
+msgid "Attachments:"
+msgstr ""
+
 #: site/apps/networks/flnetworkautocreate.controller.js:26
 msgid "Auto creating network finished"
 msgstr ""
@@ -819,6 +904,10 @@ msgstr ""
 
 #: site/apps/osvolumesnapshots/reset_state/flvolumesnapshot-reset-state.controller.js:14
 msgid "Available"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:68
+msgid "Available actions"
 msgstr ""
 
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:9
@@ -960,6 +1049,15 @@ msgstr ""
 msgid "Bytes in/out"
 msgstr ""
 
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:47
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:47
+msgid "CC recipients (comma separated)"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:47
+msgid "CC recipients: {{$ctrl.ticket.cc_recipients}}"
+msgstr ""
+
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:60
 msgid "CIDR"
 msgstr ""
@@ -995,11 +1093,12 @@ msgstr ""
 #: commons/ui/utils/fluiutils.service.js:55
 #: commons/ui/utils/fluiutils.service.js:93
 #: commons/userprofile/fledituserprofile.html:140
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:112
 #: oscommons/apiusers/getopenrcfile.dialog.html:26
 #: oscommons/change_bootable_status_dialog/fl-change-bootable-status-dialog.template.html:17
 #: oscommons/revert_volume_to_snapshot_dialog/fl-revert-volume-to-snapshot-dialog.template.html:35
 #: site/apps/billing/cart/cartitem.html:65
-#: site/apps/billing/invoicing/fladdcredit.html:32
+#: site/apps/billing/invoicing/fladdcredit.html:37
 #: site/apps/billing/services/cancellationrequest.html:30
 #: site/apps/billing/services/upgrade/flservicechangeproduct.component.html:49
 #: site/apps/billing/services/upgrade/flservicechangeproduct.component.html:69
@@ -1013,7 +1112,7 @@ msgstr ""
 #: site/apps/osclusters/create/flclustercreate.component.html:204
 #: site/apps/osclusters/resize/flclusterresize.html:26
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:419
-#: site/apps/osimages/create/flimagecreate.html:224
+#: site/apps/osimages/create/flimagecreate.html:230
 #: site/apps/osimages/memberstatus/memberstatusdialog.template.html:21
 #: site/apps/osimages/snapshot/flinstancesnapshot.html:35
 #: site/apps/osimages/update/flimageupdate.html:139
@@ -1049,6 +1148,8 @@ msgstr ""
 #: site/apps/osvolumesnapshots/update/fl-volumesnapshots-update.template.html:25
 #: site/apps/oszones/flzoneedit.html:58
 #: site/apps/pkm/flpkmkeyedit.html:36
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:100
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:89
 msgid "Cancel"
 msgstr ""
 
@@ -1134,6 +1235,20 @@ msgstr ""
 msgid "Change volume {{ $ctrl.volume.name }} bootable status?"
 msgstr ""
 
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:16
+#: domains/enduser/frontend/components/transfer_domain_form/transferdomainform.html:14
+msgid "Check"
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:102
+msgid "Check domain"
+msgstr ""
+
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:14
+#: domains/enduser/frontend/components/transfer_domain_form/transferdomainform.html:12
+msgid "Check if domain is available"
+msgstr ""
+
 #: site/apps/osinstances/flinstancedetail.component.js:39
 #: site/apps/osinstances/flinstances.component.js:31
 msgid ""
@@ -1172,7 +1287,13 @@ msgstr ""
 msgid "Choose from an existing image, volume, instance snapshot or volume snapshot"
 msgstr ""
 
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:26
+msgid "Choose period"
+msgstr ""
+
 #: commons/userprofile/fluserprofile.html:79
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:88
+#: domains/enduser/frontend/components/states.config.js:196
 #: site/apps/clients/clienteditdlg/clientedit.html:88
 #: site/apps/clients/fladdclient.html:101
 #: site/apps/clients/flclientedit.html:101
@@ -1192,6 +1313,16 @@ msgstr ""
 #: commons/ui/filter/flfilter.html:56
 #: commons/ui/filter/flfilter.html:83
 msgid "Clear all filters"
+msgstr ""
+
+#: domains/enduser/frontend/components/order_product/orderproduct.html:107
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:162
+msgid "Click here to edit client"
+msgstr ""
+
+#: domains/enduser/frontend/components/order_product/orderproduct.html:111
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:166
+msgid "Click here to edit domain contact"
 msgstr ""
 
 #: site/apps/osvolumebackups/flvolumebackups.html:65
@@ -1227,6 +1358,10 @@ msgid ""
 "                  </a>"
 msgstr ""
 
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:45
+msgid "Client: {{$ctrl.ticket.client_display}}"
+msgstr ""
+
 #: site/apps/osvolumebackups/flvolumebackups.html:38
 msgid "Client: {{backup.client.name}}"
 msgstr ""
@@ -1237,6 +1372,11 @@ msgstr ""
 
 #: commons/ui/currentuser/currentuser.html:31
 msgid "Close impersonation"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_actions/ticketsactions.html:9
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:281
+msgid "Close ticket"
 msgstr ""
 
 #: site/apps/baseconfig/fleio.baseconfig.module.js:26
@@ -1329,6 +1469,8 @@ msgid "Community Images"
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:76
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:56
+#: domains/enduser/frontend/components/states.config.js:195
 #: site/apps/clients/clienteditdlg/clientedit.html:55
 #: site/apps/clients/fladdclient.html:66
 #: site/apps/clients/flclientedit.html:67
@@ -1377,6 +1519,19 @@ msgstr ""
 msgid "Console"
 msgstr ""
 
+#: domains/enduser/frontend/components/contacts/contacts.html:1
+msgid "Contact"
+msgstr ""
+
+#: domains/enduser/frontend/components/contacts/contacts.html:19
+#: domains/enduser/frontend/components/contacts/contacts.html:56
+msgid "Contact image"
+msgstr ""
+
+#: domains/enduser/frontend/components/states.config.js:185
+msgid "Contacts"
+msgstr ""
+
 #: site/apps/osimages/flimagedetails.html:55
 msgid "Container format: {{ $ctrl.image.container_format }}"
 msgstr ""
@@ -1386,6 +1541,7 @@ msgid "Container orchestration engine"
 msgstr ""
 
 #: commons/SFA/confirm_password/fl-sfa-confirm-password.template.html:33
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:105
 msgid "Continue"
 msgstr ""
 
@@ -1421,6 +1577,10 @@ msgstr ""
 msgid "Could not delete zone"
 msgstr ""
 
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:76
+msgid "Could not preselect department"
+msgstr ""
+
 #: site/apps/billing/recurring_payment_opts/recurring_payment_opts.component.js:27
 msgid "Could not refresh recurring payment options."
 msgstr ""
@@ -1432,10 +1592,16 @@ msgid "Could not update recurring payment option."
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:78
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:43
+#: domains/enduser/frontend/components/states.config.js:197
 #: site/apps/clients/clienteditdlg/clientedit.html:42
 #: site/apps/clients/fladdclient.html:53
 #: site/apps/clients/flclientedit.html:54
 msgid "Country"
+msgstr ""
+
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:82
+msgid "Country / state"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:275
@@ -1507,7 +1673,7 @@ msgstr ""
 
 #: site/apps/dashboard/fldashboard.html:89
 #: site/apps/osimages/create/flimagecreate.html:14
-#: site/apps/osimages/create/flimagecreate.html:221
+#: site/apps/osimages/create/flimagecreate.html:227
 #: site/apps/osimages/flimages.component.js:33
 #: site/apps/osimages/states.config.js:164
 msgid "Create image"
@@ -1604,6 +1770,9 @@ msgstr ""
 msgid "Create..."
 msgstr ""
 
+#: domains/enduser/frontend/components/domains/domains.html:20
+#: domains/enduser/frontend/components/states.config.js:190
+#: domains/enduser/frontend/components/states.config.js:45
 #: site/apps/billing/services/states.config.js:38
 #: site/apps/billing/services/states.config.js:44
 #: site/apps/floatingips/states.config.js:43
@@ -1627,6 +1796,8 @@ msgstr ""
 #: site/apps/oszones/states.config.js:42
 #: site/apps/pkm/flpkmkeys.html:54
 #: site/apps/pkm/states.config.js:49
+#: tickets/enduser/frontend/components/states.config.js:73
+#: tickets/enduser/frontend/components/tickets/tickets.html:30
 msgid "Created at"
 msgstr ""
 
@@ -1683,8 +1854,13 @@ msgstr ""
 msgid "Created at: {{clusterTemplate.created_at | date: 'mediumDate'}}"
 msgstr ""
 
+#: tickets/enduser/frontend/components/states.config.js:74
+msgid "Created by"
+msgstr ""
+
 #: commons/userprofile/fluserprofile.html:89
 #: site/apps/osinstances/flinstances.html:36
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:42
 msgid "Created on"
 msgstr ""
 
@@ -1766,12 +1942,23 @@ msgstr ""
 msgid "DOWN"
 msgstr ""
 
+#: domains/enduser/frontend/components/order_product/orderproduct.html:63
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:122
+msgid "Data from client profile will be used when registering the domain:"
+msgstr ""
+
+#: domains/enduser/frontend/components/order_product/orderproduct.html:94
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:149
+msgid "Data from domain contact will be used when registering the domain:"
+msgstr ""
+
 #: commons/ui/useralerts/list/fluseralerts.html:60
 #: site/apps/billing/invoicing/flinvoicingdetails.html:110
 #: site/apps/billing/invoicing/flinvoicingdetails.html:167
 msgid "Date"
 msgstr ""
 
+#: domains/enduser/frontend/components/states.config.js:202
 #: site/apps/billing/services/services.html:22
 #: site/apps/billing/services/services.html:45
 #: site/apps/osclusters/states.config.js:56
@@ -1802,6 +1989,7 @@ msgstr ""
 msgid "Deactivate recurring payments for {{name}}"
 msgstr ""
 
+#: domains/enduser/frontend/components/contacts_actions/contactsactions.html:5
 #: site/apps/billing/cart/cart.html:45
 #: site/apps/billing/cart/cart.html:80
 #: site/apps/floatingips/flfloatingipdetails.component.js:27
@@ -1843,6 +2031,10 @@ msgstr ""
 #: site/apps/pkm/flpkmkeys.component.js:27
 #: site/apps/pkm/flpkmkeys.html:101
 msgid "Delete"
+msgstr ""
+
+#: domains/enduser/frontend/components/contacts_actions/contactsactions.component.js:26
+msgid "Delete Contact"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.component.js:464
@@ -2036,6 +2228,15 @@ msgstr ""
 msgid "Delete zone {{name}}"
 msgstr ""
 
+#: tickets/enduser/frontend/components/states.config.js:78
+#: tickets/enduser/frontend/components/tickets/tickets.html:33
+msgid "Department"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:44
+msgid "Department: {{$ctrl.ticket.department_display}}"
+msgstr ""
+
 #: site/apps/billing/cart/cart.html:61
 #: site/apps/floatingips/flfloatingipadd.html:33
 #: site/apps/networks/flnetworkadd.html:21
@@ -2050,6 +2251,8 @@ msgstr ""
 #: site/apps/ossecuritygroups/flsecuritygroups.html:67
 #: site/apps/osvolumes/create/flvolumecreate.html:41
 #: site/apps/oszones/flzoneedit.html:42
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:83
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:82
 msgid "Description"
 msgstr ""
 
@@ -2204,6 +2407,14 @@ msgstr ""
 msgid "Distributed: {{ $ctrl.router.distributed }}"
 msgstr ""
 
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:42
+msgid "Dns management"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:29
+msgid "Dns management enabled"
+msgstr ""
+
 #: site/apps/networks/flnetworkadd.html:117
 #: site/apps/networks/flnetworksubnetedit.html:64
 msgid "Do not set gateway IP"
@@ -2226,10 +2437,35 @@ msgstr ""
 msgid "Docker volume size (GB): {{$ctrl.clusterTemplate.docker_volume_size}}"
 msgstr ""
 
+#: domains/enduser/frontend/components/domains/domains.html:1
+#: domains/enduser/frontend/components/select_existing_domain_form/selectexistingdomainform.html:15
+msgid "Domain"
+msgstr ""
+
+#: domains/enduser/frontend/components/states.config.js:90
+msgid "Domain Details"
+msgstr ""
+
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:23
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:89
+msgid "Domain is available for registration"
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:90
+#: domains/enduser/frontend/components/transfer_domain_form/transferdomainform.html:21
+msgid "Domain is available for transfer"
+msgstr ""
+
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:5
+#: domains/enduser/frontend/components/transfer_domain_form/transferdomainform.html:5
 #: site/apps/billing/cart/cartitem.html:32
 #: site/apps/billing/cart/cartitem.html:34
 #: site/apps/oszones/flzoneedit.html:30
 msgid "Domain name"
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:91
+msgid "Domain name is valid"
 msgstr ""
 
 #: site/apps/billing/services/servicedetails.html:47
@@ -2241,8 +2477,16 @@ msgstr ""
 msgid "Domain options"
 msgstr ""
 
+#: domains/enduser/frontend/components/states.config.js:39
+msgid "Domains"
+msgstr ""
+
 #: commons/SFA/remember_sfa/fl-remember-sfa.template.html:4
 msgid "Don't ask again on this computer"
+msgstr ""
+
+#: tickets/enduser/frontend/components/states.config.js:41
+msgid "Done"
 msgstr ""
 
 #: site/apps/osimages/flimagedetails.component.js:33
@@ -2252,6 +2496,12 @@ msgstr ""
 
 #: site/apps/billing/invoicing/flinvoicingdetails.html:218
 msgid "Download PDF"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:106
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:169
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:57
+msgid "Download attachment"
 msgstr ""
 
 #: site/apps/osimages/flimages.component.js:35
@@ -2282,11 +2532,16 @@ msgstr ""
 msgid "ENABLED<span ng-if=\"$ctrl.status.default\"> - DEFAULT</span>"
 msgstr ""
 
+#: domains/enduser/frontend/components/transfer_domain_form/transferdomainform.html:26
+msgid "EPP code"
+msgstr ""
+
 #: oscommons/floatingips-status-translations.js:15
 #: oscommons/osfilters/flinstancestatus.filter.js:15
 msgid "ERROR"
 msgstr ""
 
+#: domains/enduser/frontend/components/contacts_actions/contactsactions.html:1
 #: site/apps/billing/cart/cart.html:39
 #: site/apps/billing/cart/cart.html:74
 #: site/apps/osapiusers/flapiusers.component.js:25
@@ -2299,6 +2554,7 @@ msgstr ""
 #: site/apps/osvolumesnapshots/actions/flxsvolumesnapshotactions.html:10
 #: site/apps/pkm/flpkmkeys.component.js:28
 #: site/apps/pkm/flpkmkeys.html:95
+#: tickets/enduser/frontend/components/tickets_actions/ticketsactions.html:1
 msgid "Edit"
 msgstr ""
 
@@ -2319,6 +2575,13 @@ msgstr ""
 
 #: commons/userprofile/states.config.js:69
 msgid "Edit client {:id}"
+msgstr ""
+
+#: domains/enduser/frontend/components/order_product/orderproduct.html:81
+#: domains/enduser/frontend/components/order_product/orderproduct.html:83
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:138
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:140
+msgid "Edit domain contact"
 msgstr ""
 
 #: site/apps/osimages/states.config.js:204
@@ -2366,6 +2629,14 @@ msgstr ""
 msgid "Edit subnet {{ $ctrl.subnet.name }}"
 msgstr ""
 
+#: tickets/enduser/frontend/components/states.config.js:195
+msgid "Edit ticket"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:6
+msgid "Edit ticket {{$ctrl.ticket.id}}"
+msgstr ""
+
 #: commons/userprofile/fluserprofile.html:47
 msgid "Edit user profile"
 msgstr ""
@@ -2380,6 +2651,10 @@ msgstr ""
 msgid "Edit {{$ctrl.client.name}}"
 msgstr ""
 
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:3
+msgid "Edit {{::$ctrl.contact.first_name}}"
+msgstr ""
+
 #: site/apps/osapiusers/flapiuseredit.html:3
 msgid "Edit {{::$ctrl.user.name}}"
 msgstr ""
@@ -2389,6 +2664,8 @@ msgid "Egress - Outgoing"
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:77
+#: domains/enduser/frontend/components/contacts/contacts.html:26
+#: domains/enduser/frontend/components/states.config.js:194
 #: site/apps/oszones/flzoneedit.html:36
 #: site/apps/oszones/flzones.html:65
 #: site/apps/signup/flsignup.html:34
@@ -2397,6 +2674,14 @@ msgstr ""
 
 #: commons/userprofile/fledituserprofile.html:42
 msgid "Email address"
+msgstr ""
+
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:50
+msgid "Email forwarding"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:34
+msgid "Email forwarding enabled"
 msgstr ""
 
 #: site/apps/signup/flsignup.html:39
@@ -2416,12 +2701,24 @@ msgstr ""
 msgid "Enable DHCP"
 msgstr ""
 
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:57
+msgid "Enable ID protection for this domain"
+msgstr ""
+
 #: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:71
 msgid "Enable SMS authenticator"
 msgstr ""
 
 #: site/apps/osrouters/flrouterdetails.html:35
 msgid "Enable SNAT: {{ $ctrl.router.enable_snat }}"
+msgstr ""
+
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:41
+msgid "Enable dns management for this domain"
+msgstr ""
+
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:49
+msgid "Enable email forwarding for this domain"
 msgstr ""
 
 #: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:66
@@ -2471,6 +2768,15 @@ msgstr ""
 msgid "Enter code"
 msgstr ""
 
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:34
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:35
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:46
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:47
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:57
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:58
+msgid "Enter domain name"
+msgstr ""
+
 #: commons/SFA/confirm_password/fl-sfa-confirm-password.template.html:27
 msgid "Enter password"
 msgstr ""
@@ -2491,6 +2797,18 @@ msgstr ""
 msgid "Error copying text to clipboard"
 msgstr ""
 
+#: domains/enduser/frontend/components/order_product/orderproduct.component.js:125
+#: domains/enduser/frontend/components/order_product/orderproduct.component.js:138
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.component.js:137
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.component.js:187
+msgid "Error when checking custom fields."
+msgstr ""
+
+#: domains/enduser/frontend/components/transfer_domain/transferdomain.component.js:36
+#: domains/enduser/frontend/components/transfer_domain_form/transferdomainform.component.js:43
+msgid "Error when checking if domain is available."
+msgstr ""
+
 #: commons/SFA/sms_authenticator/fl-sms-authenticator-details.component.js:105
 msgid "Error when trying to update profile."
 msgstr ""
@@ -2509,6 +2827,10 @@ msgstr ""
 #: commons/ui/filter/flfilter.html:242
 #: commons/ui/filter/flfilter.html:49
 msgid "Exclude"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:56
+msgid "Expiry date"
 msgstr ""
 
 #: site/apps/osimages/flimagedetails.html:63
@@ -2553,7 +2875,7 @@ msgstr ""
 msgid "File"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.component.js:98
+#: site/apps/osimages/create/flimagecreate.component.js:107
 msgid "File to large, contact support."
 msgstr ""
 
@@ -2602,6 +2924,7 @@ msgstr ""
 msgid "Fingerprint: {{ key.fingerprint }}"
 msgstr ""
 
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:13
 #: site/apps/clients/clienteditdlg/clientedit.html:12
 #: site/apps/clients/fladdclient.html:24
 #: site/apps/clients/flclientedit.html:24
@@ -2609,8 +2932,15 @@ msgid "First Name"
 msgstr ""
 
 #: commons/userprofile/fledituserprofile.html:26
+#: domains/enduser/frontend/components/states.config.js:191
 #: site/apps/signup/flsignup.html:21
 msgid "First name"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:96
+#: domains/enduser/frontend/components/order_product/orderproduct.html:17
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:76
+msgid "First nameserver"
 msgstr ""
 
 #: site/apps/billing/invoicing/flinvoicingdetails.html:51
@@ -2714,6 +3044,12 @@ msgstr ""
 msgid "Forgot password"
 msgstr ""
 
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:120
+#: domains/enduser/frontend/components/order_product/orderproduct.html:44
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:103
+msgid "Fourth nameserver"
+msgstr ""
+
 #: site/apps/billing/services/states.config.js:94
 msgid "Fraud"
 msgstr ""
@@ -2736,6 +3072,10 @@ msgstr ""
 #: site/apps/networks/flnetworksubnetedit.html:61
 #: site/apps/networks/flnetworksubnetedit.html:77
 msgid "Gateway ip"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:18
+msgid "General"
 msgstr ""
 
 #: site/apps/pkm/flpkmkeyedit.html:40
@@ -2923,11 +3263,20 @@ msgid "ICMP type"
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:88
+#: domains/enduser/frontend/components/states.config.js:193
 #: site/apps/osapiusers/flapiusers.html:29
 #: site/apps/osapiusers/flapiusers.html:67
 #: site/apps/osvolumes/backups/flvolumebackups.template.html:12
 #: site/apps/osvolumes/snapshots/flvolumesnapshots.template.html:12
 msgid "ID"
+msgstr ""
+
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:58
+msgid "ID protection"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:39
+msgid "ID protection enabled"
 msgstr ""
 
 #: site/apps/osimages/flimagedetails.html:48
@@ -2979,6 +3328,7 @@ msgstr ""
 msgid "IP Addresses"
 msgstr ""
 
+#: cpanel/enduser/frontend/components/order_product/orderproduct.html:5
 #: site/apps/floatingips/flfloatingips.html:59
 #: site/apps/floatingips/states.config.js:40
 #: site/apps/osinstances/addport/flinstanceaddport.html:31
@@ -3033,7 +3383,7 @@ msgstr ""
 msgid "Image"
 msgstr ""
 
-#: site/apps/osimages/create/flimagecreate.component.js:81
+#: site/apps/osimages/create/flimagecreate.component.js:90
 msgid "Image create scheduled"
 msgstr ""
 
@@ -3108,6 +3458,10 @@ msgstr ""
 #: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:16
 #: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:18
 msgid "In demo mode, any input will log you in."
+msgstr ""
+
+#: tickets/enduser/frontend/components/states.config.js:49
+msgid "In progress"
 msgstr ""
 
 #: commons/messages/errormessages.html:17
@@ -3215,6 +3569,10 @@ msgstr ""
 
 #: site/apps/osrouters/flrouterdetails.html:62
 msgid "Interfaces"
+msgstr ""
+
+#: tickets/enduser/frontend/components/states.config.js:75
+msgid "Internal status"
 msgstr ""
 
 #: commons/messages/errormessages.html:19
@@ -3325,6 +3683,7 @@ msgstr ""
 msgid "Language"
 msgstr ""
 
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:19
 #: site/apps/clients/clienteditdlg/clientedit.html:18
 #: site/apps/clients/fladdclient.html:30
 #: site/apps/clients/flclientedit.html:30
@@ -3336,8 +3695,13 @@ msgid "Last hour"
 msgstr ""
 
 #: commons/userprofile/fledituserprofile.html:33
+#: domains/enduser/frontend/components/states.config.js:192
 #: site/apps/signup/flsignup.html:27
 msgid "Last name"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets/tickets.html:53
+msgid "Last reply at"
 msgstr ""
 
 #: site/apps/osimages/flimagedetails.html:17
@@ -3359,6 +3723,8 @@ msgstr ""
 msgid "List view"
 msgstr ""
 
+#: domains/enduser/frontend/components/contacts/contacts.html:46
+#: domains/enduser/frontend/components/contacts/contacts.html:90
 #: site/apps/billing/invoicing/flinvoicing.html:31
 #: site/apps/billing/invoicing/flinvoicing.html:85
 #: site/apps/floatingips/flfloatingips.html:103
@@ -3528,6 +3894,7 @@ msgid "Miscellaneous"
 msgstr ""
 
 #: commons/ui/filter/flfilterdisplay.html:30
+#: domains/enduser/frontend/components/domains_actions/domainsactions.html:3
 #: site/apps/dashboard/fldashboard.html:51
 #: site/apps/networks/flnetworks.html:120
 #: site/apps/osapiusers/flapiusers.html:102
@@ -3574,6 +3941,8 @@ msgstr ""
 msgid "My user profile"
 msgstr ""
 
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:23
+#: domains/enduser/frontend/components/states.config.js:44
 #: site/apps/billing/cart/cart.html:55
 #: site/apps/billing/recurring_payment_opts/recurring_payment_opts.component.html:18
 #: site/apps/billing/services/services.html:44
@@ -3623,6 +3992,11 @@ msgstr ""
 
 #: site/apps/billing/services/servicedetails.html:30
 msgid "Name: {{::$ctrl.serviceDetails.product.name }}"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:89
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:90
+msgid "Nameservers"
 msgstr ""
 
 #: site/apps/floatingips/flfloatingipadd.html:17
@@ -3771,6 +4145,13 @@ msgstr ""
 #: site/apps/networks/flnetworkadd.html:243
 #: site/apps/networks/flnetworksubnetedit.html:190
 msgid "Nexthop (IP)"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:31
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:36
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:41
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:63
+msgid "No"
 msgstr ""
 
 #: site/apps/osapiusers/flapiusers.html:5
@@ -3938,6 +4319,10 @@ msgstr ""
 msgid "No actions available"
 msgstr ""
 
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:78
+msgid "No actions available."
+msgstr ""
+
 #: site/apps/floatingips/flfloatingipdetails.html:44
 msgid "No associated object"
 msgstr ""
@@ -3957,6 +4342,8 @@ msgstr ""
 
 #: commons/ui/filter/flfilter.html:134
 #: commons/ui/filter/flfilter.html:44
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:69
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:68
 msgid "No clients matching \"{{$ctrl.clientSearchText}}\" found"
 msgstr ""
 
@@ -3968,6 +4355,15 @@ msgstr ""
 #: site/apps/osinstances/flinstancedetail.html:195
 #: site/apps/osinstances/flinstancedetail.html:204
 msgid "No data available"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:40
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:40
+msgid "No departments matching \"{{$ctrl.departmentSearchText}}\" found"
+msgstr ""
+
+#: domains/enduser/frontend/components/dashboard_services_rows/dashboardservicesrows.html:12
+msgid "No domains"
 msgstr ""
 
 #: site/apps/osrouters/flrouteredit.html:55
@@ -4200,6 +4596,14 @@ msgstr ""
 msgid "Notifications settings updated"
 msgstr ""
 
+#: tickets/enduser/frontend/components/user_settings/usersettings.html:18
+msgid "Notify on ticket closed"
+msgstr ""
+
+#: tickets/enduser/frontend/components/user_settings/usersettings.html:10
+msgid "Notify on ticket opened"
+msgstr ""
+
 #: site/apps/osinstances/flinstancedetail.html:128
 msgid "Number of lines to show"
 msgstr ""
@@ -4247,8 +4651,36 @@ msgstr ""
 msgid "Old password"
 msgstr ""
 
+#: tickets/enduser/frontend/components/states.config.js:45
+msgid "On hold"
+msgstr ""
+
 #: site/apps/billing/services/cancellationrequest.html:21
 msgid "On service due date"
+msgstr ""
+
+#: tickets/enduser/frontend/components/states.config.js:37
+msgid "Open"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:6
+msgid "Open a new ticket"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:111
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:174
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:62
+msgid "Open attachment"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_actions/ticketsactions.html:13
+#: tickets/enduser/frontend/components/tickets_actions/ticketsactions.html:16
+msgid "Open new ticket"
+msgstr ""
+
+#: tickets/enduser/frontend/components/states.config.js:159
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:98
+msgid "Open ticket"
 msgstr ""
 
 #: site/apps/signup/flconfirmemail.component.html:13
@@ -4265,6 +4697,11 @@ msgstr ""
 
 #: commons/ui/order/florder.html:1
 msgid "Order by"
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:28
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:72
+msgid "Order new domain"
 msgstr ""
 
 #: site/apps/dashboard/fldashboard.html:168
@@ -4371,6 +4808,7 @@ msgid "Permanently hide"
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:87
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:101
 #: site/apps/clients/clienteditdlg/clientedit.html:101
 #: site/apps/clients/fladdclient.html:114
 #: site/apps/clients/flclientedit.html:114
@@ -4398,6 +4836,11 @@ msgstr ""
 #: commons/ui/licensewarning/fllicensewarningdialog.html:19
 #: commons/ui/licensewarning/fllicensewarningdialog.html:9
 msgid "Please renew your Fleio license."
+msgstr ""
+
+#: domains/enduser/frontend/components/order_product/orderproduct.html:68
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:127
+msgid "Please select a domain contact"
 msgstr ""
 
 #: site/apps/osinstances/resize/flinstanceresize.html:35
@@ -4461,6 +4904,10 @@ msgstr ""
 #: site/apps/osvolumes/backups/flvolumebackups.template.html:59
 #: site/apps/osvolumes/snapshots/flvolumesnapshots.template.html:53
 msgid "Previous page"
+msgstr ""
+
+#: tickets/enduser/frontend/components/states.config.js:79
+msgid "Priority"
 msgstr ""
 
 #: site/apps/osimages/states.config.js:91
@@ -4541,6 +4988,10 @@ msgstr ""
 msgid "Public traffic this month: {{::$ctrl.instance.current_month_traffic }} GB"
 msgstr ""
 
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:170
+msgid "Quoted from"
+msgstr ""
+
 #: oscommons/osfilters/flinstancestatus.filter.js:55
 msgid "REBOOT"
 msgstr ""
@@ -4608,6 +5059,14 @@ msgstr ""
 msgid "Rebuild instance"
 msgstr ""
 
+#: tickets/enduser/frontend/components/user_settings/usersettings.html:17
+msgid "Receive notifications on ticket closed"
+msgstr ""
+
+#: tickets/enduser/frontend/components/user_settings/usersettings.html:9
+msgid "Receive notifications on ticket opened"
+msgstr ""
+
 #: site/apps/oszones/flzonedetails.html:53
 msgid "Record"
 msgstr ""
@@ -4666,7 +5125,6 @@ msgstr ""
 #: site/apps/osimages/flimages.html:95
 #: site/apps/osimages/states.config.js:70
 #: site/apps/osinstances/flinstances.html:35
-#: site/apps/osinstances/flinstances.html:67
 #: site/apps/osinstances/states.config.js:65
 #: site/apps/osinstances/states.config.js:83
 #: site/apps/ossecuritygroups/flsecuritygroups.html:68
@@ -4677,6 +5135,10 @@ msgstr ""
 #: site/apps/osvolumes/flvolumes.html:60
 #: site/apps/osvolumes/states.config.js:86
 msgid "Region"
+msgstr ""
+
+#: site/apps/osinstances/flinstances.html:67
+msgid "Region - Hipervysor"
 msgstr ""
 
 #: site/apps/networks/flnetworkadd.html:29
@@ -4715,12 +5177,45 @@ msgstr ""
 msgid "Region: {{::$ctrl.securityGroup.region }}"
 msgstr ""
 
+#: domains/enduser/frontend/components/states.config.js:113
+msgid "Register domain"
+msgstr ""
+
+#: domains/enduser/frontend/components/dashboard_services_rows/dashboardservicesrows.html:17
+msgid "Register new domain"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:61
+msgid "Registrar lock active"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:51
+msgid "Registration date"
+msgstr ""
+
+#: domains/enduser/frontend/components/states.config.js:64
+msgid "Registration period"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:48
+msgid "Registration period: {{ $ctrl.domain.registration_period }} years"
+msgstr ""
+
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:111
 msgid "Reinstall instance"
 msgstr ""
 
 #: site/apps/osimages/memberstatus/memberstatusdialog.template.html:19
 msgid "Reject"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:74
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:73
+msgid "Related service"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:46
+msgid "Related service: <a ui-sref=\"billingServicesDetails({'id': $ctrl.ticket.service})\" class=\"md-primary\">{{$ctrl.ticket.service}}</a>"
 msgstr ""
 
 #: site/apps/osvolumebackups/flvolumebackupdetails.html:36
@@ -4793,6 +5288,22 @@ msgstr ""
 
 #: site/apps/osvolumes/rename/flvolumerename.html:3
 msgid "Rename volume {{ $ctrl.volume.name }}"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_actions/ticketsactions.html:5
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:285
+msgid "Reopen ticket"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:154
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:277
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:91
+msgid "Reply"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:104
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:130
+msgid "Reply added"
 msgstr ""
 
 #: site/apps/billing/services/cancellationrequest.html:34
@@ -5076,6 +5587,10 @@ msgstr ""
 msgid "Save API user"
 msgstr ""
 
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:115
+msgid "Save Contact"
+msgstr ""
+
 #: site/apps/osinstances/editptr/fleditptr.html:22
 msgid "Save PTR"
 msgstr ""
@@ -5096,6 +5611,10 @@ msgstr ""
 msgid "Save key"
 msgstr ""
 
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:126
+msgid "Save nameservers"
+msgstr ""
+
 #: commons/ui/useralerts/settings/fluseralertsettingsdialog.html:17
 msgid "Save settings"
 msgstr ""
@@ -5105,12 +5624,24 @@ msgstr ""
 msgid "Save to cart"
 msgstr ""
 
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:136
+msgid "Save whois information"
+msgstr ""
+
+#: domains/enduser/frontend/components/domains/domains.component.js:19
+msgid "Search Domains"
+msgstr ""
+
 #: site/apps/osclustertemplates/flclustertemplates.component.js:22
 msgid "Search cluster templates"
 msgstr ""
 
 #: site/apps/osclusters/flclusters.component.js:20
 msgid "Search clusters"
+msgstr ""
+
+#: domains/enduser/frontend/components/contacts/contacts.component.js:20
+msgid "Search contacts"
 msgstr ""
 
 #: site/apps/floatingips/flfloatingips.component.js:31
@@ -5149,6 +5680,10 @@ msgstr ""
 msgid "Search services"
 msgstr ""
 
+#: tickets/enduser/frontend/components/tickets/tickets.component.js:20
+msgid "Search tickets"
+msgstr ""
+
 #: site/apps/osvolumebackups/flvolumebackups.component.js:22
 msgid "Search volume backups"
 msgstr ""
@@ -5172,6 +5707,12 @@ msgstr ""
 
 #: commons/SFA/states.config.js:67
 msgid "Second factor authentication confirm options"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:104
+#: domains/enduser/frontend/components/order_product/orderproduct.html:26
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:85
+msgid "Second nameserver"
 msgstr ""
 
 #: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:35
@@ -5226,6 +5767,11 @@ msgstr ""
 msgid "Select a configuration"
 msgstr ""
 
+#: domains/enduser/frontend/components/order_product/orderproduct.html:59
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:118
+msgid "Select a domain contact"
+msgstr ""
+
 #: site/apps/osinstances/create/flinstancecreate.html:100
 msgid "Select a flavor"
 msgstr ""
@@ -5242,6 +5788,10 @@ msgstr ""
 msgid "Select a region"
 msgstr ""
 
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:36
+msgid "Select additional options"
+msgstr ""
+
 #: commons/messages/errormessages.html:18
 #: commons/messages/ngmessages.html:8
 msgid "Select an existing value"
@@ -5254,11 +5804,18 @@ msgid "Select boot source"
 msgstr ""
 
 #: commons/ui/filter/flfilter.html:33
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:60
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:59
 msgid "Select client"
 msgstr ""
 
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:32
 msgid "Select coe"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:31
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:31
+msgid "Select department"
 msgstr ""
 
 #: site/apps/osinstances/bootfromiso/flinstancebootfromiso.html:25
@@ -5335,6 +5892,10 @@ msgstr ""
 msgid "Select payment method"
 msgstr ""
 
+#: domains/enduser/frontend/components/transfer_domain_form/transferdomainform.html:30
+msgid "Select period"
+msgstr ""
+
 #: site/apps/osinstances/addip/flinstanceaddip.html:10
 #: site/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:9
 msgid "Select port"
@@ -5342,6 +5903,10 @@ msgstr ""
 
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:89
 msgid "Select region"
+msgstr ""
+
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:24
+msgid "Select registration period"
 msgstr ""
 
 #: site/apps/osinstances/associatesecuritygroup/flassociatesecuritygroup.html:14
@@ -5372,6 +5937,28 @@ msgstr ""
 #: site/apps/osinstances/addport/flinstanceaddport.html:18
 #: site/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:19
 msgid "Select subnet"
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:65
+msgid "Select this option if you want to use a domain you already registered."
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:73
+msgid "Select this option to order a new domain."
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:69
+msgid "Select this option to use a domain you already placed in cart."
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:81
+msgid ""
+"Select this option to use an external domain registered with another provider.\n"
+"                You will have to configure nameservers manually."
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:77
+msgid "Select this option to use transfer a domain from another provider."
 msgstr ""
 
 #: commons/ui/filter/flfilter.html:123
@@ -5649,6 +6236,7 @@ msgstr ""
 msgid "Start instance {{name}}"
 msgstr ""
 
+#: domains/enduser/frontend/components/states.config.js:198
 #: site/apps/clients/clienteditdlg/clientedit.html:82
 #: site/apps/clients/fladdclient.html:95
 #: site/apps/clients/flclientedit.html:95
@@ -5657,6 +6245,8 @@ msgstr ""
 
 #: commons/ui/useralerts/detail/fluseralertdialog.html:11
 #: commons/ui/useralerts/list/fluseralerts.html:67
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:26
+#: domains/enduser/frontend/components/domains/domains.html:23
 #: site/apps/billing/invoicing/flinvoicing.html:40
 #: site/apps/billing/invoicing/states.config.js:38
 #: site/apps/billing/invoicing/states.config.js:54
@@ -5687,6 +6277,9 @@ msgstr ""
 #: site/apps/osvolumesnapshots/states.config.js:70
 #: site/apps/oszones/flzones.html:63
 #: site/apps/oszones/states.config.js:41
+#: tickets/enduser/frontend/components/states.config.js:76
+#: tickets/enduser/frontend/components/tickets/tickets.html:31
+#: tickets/enduser/frontend/components/tickets/tickets.html:54
 msgid "Status"
 msgstr ""
 
@@ -5865,6 +6458,12 @@ msgstr ""
 msgid "There are no available second factor authentication methods."
 msgstr ""
 
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:112
+#: domains/enduser/frontend/components/order_product/orderproduct.html:35
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:94
+msgid "Third nameserver"
+msgstr ""
+
 #: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:11
 #: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:12
 msgid "This extra step shows it’s really you trying to sign in"
@@ -5895,6 +6494,42 @@ msgid ""
 "                  </a>"
 msgstr ""
 
+#: tickets/enduser/frontend/components/tickets/tickets.html:1
+msgid "Ticket"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_actions/ticketsactions.component.js:46
+msgid "Ticket closed."
+msgstr ""
+
+#: tickets/enduser/frontend/components/states.config.js:131
+msgid "Ticket details"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_actions/ticketsactions.component.js:36
+msgid "Ticket reopened."
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:146
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.component.js:164
+msgid "Ticket successfully opened."
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.component.js:68
+msgid "Ticket successfully updated."
+msgstr ""
+
+#: tickets/enduser/frontend/components/plugin_notifications/pluginnotifications.html:13
+#: tickets/enduser/frontend/components/plugin_notifications/pluginnotifications.html:2
+#: tickets/enduser/frontend/components/plugin_notifications/pluginnotifications.html:3
+#: tickets/enduser/frontend/components/states.config.js:67
+msgid "Tickets"
+msgstr ""
+
+#: tickets/enduser/frontend/components/user_settings/usersettings.html:3
+msgid "Tickets settings"
+msgstr ""
+
 #: site/apps/oszones/flzonedetails.html:188
 #: site/apps/oszones/flzonedetails.html:91
 msgid "Time to live"
@@ -5905,6 +6540,10 @@ msgid "Timeout"
 msgstr ""
 
 #: commons/ui/useralerts/list/fluseralerts.html:54
+#: tickets/enduser/frontend/components/states.config.js:77
+#: tickets/enduser/frontend/components/tickets/tickets.html:52
+#: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:18
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:18
 msgid "Title"
 msgstr ""
 
@@ -5968,6 +6607,15 @@ msgstr ""
 msgid "Transaction"
 msgstr ""
 
+#: domains/enduser/frontend/components/states.config.js:135
+msgid "Transfer domain"
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:40
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:76
+msgid "Transfer domain from another provider"
+msgstr ""
+
 #: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:43
 #: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:53
 msgid "Try another way"
@@ -6000,7 +6648,7 @@ msgid "UP"
 msgstr ""
 
 #: site/apps/osimages/create/flimagecreate.html:168
-#: site/apps/osimages/create/flimagecreate.html:179
+#: site/apps/osimages/create/flimagecreate.html:185
 msgid "URL"
 msgstr ""
 
@@ -6074,6 +6722,10 @@ msgstr ""
 msgid "Update snapshot"
 msgstr ""
 
+#: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:87
+msgid "Update ticket"
+msgstr ""
+
 #: site/apps/osvolumesnapshots/update/fl-volumesnapshots-update.template.html:1
 #: site/apps/osvolumesnapshots/update/fl-volumesnapshots-update.template.html:3
 msgid "Update volume snapshot"
@@ -6115,8 +6767,38 @@ msgstr ""
 msgid "Uploading image ..."
 msgstr ""
 
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:64
+msgid "Use an existing domain"
+msgstr ""
+
 #: site/apps/osvolumes/create/flvolumecreate.component.js:56
 msgid "Use an existing volume"
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:51
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:80
+msgid "Use an external domain"
+msgstr ""
+
+#: domains/enduser/frontend/components/order_product/orderproduct.html:55
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:114
+msgid "Use client as a contact"
+msgstr ""
+
+#: domains/enduser/frontend/components/order_product/orderproduct.html:8
+#: domains/enduser/frontend/components/order_product/orderproduct.html:9
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:67
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:68
+msgid "Use default nameservers"
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:18
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:68
+msgid "Use domain in cart"
+msgstr ""
+
+#: domains/enduser/frontend/components/select_domain/selectdomain.html:8
+msgid "Use existing domain"
 msgstr ""
 
 #: site/apps/osvolumes/create/flvolumecreate.component.js:53
@@ -6124,21 +6806,24 @@ msgid "Use image as a source"
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:10
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:143
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:79
 msgid "User image"
 msgstr ""
 
 #: commons/auth/login.html:24
-msgid "User name"
+msgid "User name or email address"
 msgstr ""
 
 #: commons/auth/login.html:29
-msgid "User name is required"
+msgid "User name or email address is required"
 msgstr ""
 
 #: commons/auth/reset/flreset.html:20
 msgid "Username or email"
 msgstr ""
 
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:63
 #: site/apps/clients/clienteditdlg/clientedit.html:62
 #: site/apps/clients/fladdclient.html:73
 #: site/apps/clients/flclientedit.html:74
@@ -6299,12 +6984,31 @@ msgid ""
 "            while, depending on the disk size."
 msgstr ""
 
+#: domains/enduser/frontend/components/domain_details/domaindetails.component.js:51
+msgid "Whois data saved"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:130
+msgid "Whois information"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:131
+msgid "Whois information for domain"
+msgstr ""
+
 #: commons/ui/filter/flfilter.html:199
 msgid "Wildcard available, use asterisk symbol to use it:"
 msgstr ""
 
 #: commons/auth/flcannotconnect.html:5
 msgid "Will try to reconnect shortly"
+msgstr ""
+
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:30
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:35
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:40
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:62
+msgid "Yes"
 msgstr ""
 
 #: commons/terms_of_service_agreement/fltosagreement.component.js:39
@@ -6385,6 +7089,11 @@ msgstr ""
 msgid "You must select a flavor first!"
 msgstr ""
 
+#: domains/enduser/frontend/components/order_product/orderproduct.html:99
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:154
+msgid "You need to fill the following custom fields in order to register the domain"
+msgstr ""
+
 #: site/apps/osimages/snapshot/flinstancesnapshot.html:14
 msgid "You will be charged up to {{ $ctrl.price_per_snapshot }} for each existing snapshot."
 msgstr ""
@@ -6428,6 +7137,7 @@ msgid "Your request was sent."
 msgstr ""
 
 #: commons/userprofile/fluserprofile.html:86
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:94
 #: site/apps/clients/clienteditdlg/clientedit.html:94
 #: site/apps/clients/fladdclient.html:107
 #: site/apps/clients/flclientedit.html:107
@@ -6482,6 +7192,14 @@ msgstr ""
 msgid "add credit page"
 msgstr ""
 
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:224
+msgid "added the following cc recipients:"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:199
+msgid "assigned this ticket to"
+msgstr ""
+
 #: site/apps/osapi/flosapi.service.js:71
 #: site/apps/osapi/flosapi.service.js:77
 msgid "available"
@@ -6513,12 +7231,41 @@ msgstr ""
 msgid "change"
 msgstr ""
 
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:240
+msgid "changed client to"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:216
+msgid "changed department to"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:248
+msgid "changed description on"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:232
+msgid "changed priority to"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:208
+msgid "changed status to"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:255
+msgid "changed title on"
+msgstr ""
+
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:40
 msgid "create new volume"
 msgstr ""
 
 #: site/apps/osinstances/create/flinstancecreate.html:74
 msgid "create {{$ctrl.bootSource.options.volume_size}} GB volume"
+msgstr ""
+
+#: domains/enduser/frontend/components/states.config.js:49
+#: tickets/enduser/frontend/components/states.config.js:83
+msgid "created at"
 msgstr ""
 
 #: commons/SFA/sfa_options/fl-sfa-options.template.html:17
@@ -6528,6 +7275,10 @@ msgstr ""
 #: oscommons/osfilters/flinstancestatus.filter.js:52
 #: site/apps/osapi/flosapi.service.js:71
 msgid "deleted"
+msgstr ""
+
+#: tickets/enduser/frontend/components/states.config.js:96
+msgid "department"
 msgstr ""
 
 #: commons/SFA/sfa_options/fl-sfa-options.template.html:16
@@ -6579,6 +7330,10 @@ msgstr ""
 msgid "exclude"
 msgstr ""
 
+#: domains/enduser/frontend/components/states.config.js:59
+msgid "expiry date"
+msgstr ""
+
 #: site/apps/networks/flnetworkdetails.html:8
 #: site/apps/networks/flnetworks.html:15
 #: site/apps/networks/flnetworks.html:77
@@ -6625,6 +7380,8 @@ msgid "migrating"
 msgstr ""
 
 #: commons/ui/utils/fluiutils.service.js:34
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:53
+#: domains/enduser/frontend/components/domain_details/domaindetails.html:58
 #: site/apps/billing/invoicing/flinvoicingdetails.html:153
 #: site/apps/billing/invoicing/flinvoicingdetails.html:195
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:87
@@ -6642,6 +7399,15 @@ msgstr ""
 
 #: site/apps/billing/history/billinghistory.html:122
 msgid "not charged"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:201
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:209
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:217
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:225
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:233
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:241
+msgid "on"
 msgstr ""
 
 #: site/apps/billing/services/flbillingservicesdetails.component.js:22
@@ -6691,9 +7457,17 @@ msgstr ""
 msgid "refunded"
 msgstr ""
 
+#: domains/enduser/frontend/components/states.config.js:54
+msgid "registration date"
+msgstr ""
+
 #: site/apps/osvolumebackups/states.config.js:60
 #: site/apps/osvolumesnapshots/states.config.js:60
 msgid "related volume"
+msgstr ""
+
+#: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:262
+msgid "reopened ticket because of email reply on"
 msgstr ""
 
 #: oscommons/osfilters/flinstancestatus.filter.js:64
@@ -6744,6 +7518,10 @@ msgstr ""
 msgid "starting"
 msgstr ""
 
+#: tickets/enduser/frontend/components/states.config.js:88
+msgid "status"
+msgstr ""
+
 #: oscommons/osfilters/flinstancestatus.filter.js:60
 msgid "stopped"
 msgstr ""
@@ -6776,6 +7554,18 @@ msgstr ""
 
 #: oscommons/osfilters/flinstancestatus.filter.js:36
 msgid "verify resize"
+msgstr ""
+
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.component.js:74
+#: domains/enduser/frontend/components/transfer_domain/transferdomain.component.js:45
+#: domains/enduser/frontend/components/transfer_domain_form/transferdomainform.component.js:52
+msgid "year"
+msgstr ""
+
+#: domains/enduser/frontend/components/register_domain_form/registerdomainform.component.js:77
+#: domains/enduser/frontend/components/transfer_domain/transferdomain.component.js:48
+#: domains/enduser/frontend/components/transfer_domain_form/transferdomainform.component.js:55
+msgid "years"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.html:244
@@ -6824,6 +7614,14 @@ msgstr ""
 
 #: site/apps/billing/services/upgrade/flserviceupgrade.component.html:5
 msgid "{{::$ctrl.serviceUpgradeOptions.display_name }} - change service"
+msgstr ""
+
+#: domains/enduser/frontend/components/dashboard_services_rows/dashboardservicesrows.html:7
+msgid "{{::$ctrl.summary.domains_count}} domain"
+msgstr ""
+
+#: domains/enduser/frontend/components/dashboard_services_rows/dashboardservicesrows.html:10
+msgid "{{::$ctrl.summary.domains_count}} domains"
 msgstr ""
 
 #: site/apps/dashboard/fldashboard.html:140
