@@ -96,5 +96,5 @@ fleio-i18n is licensed under BSD License. See the "LICENSE" file for more inform
 ## Thanks
 
 * Thanks to [Hopla](https://hopla.cloud) for the French translation
-* Thanks to [Binero](https://binero.com) for the Sweedish translation
+* Thanks to [Binero](https://binero.com) for the Swedish translation
 
