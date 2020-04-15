@@ -20,7 +20,7 @@ msgstr "#{{ $ctrl.ticket.id }} - {{ $ctrl.ticket.title }}"
 msgid "(All paid)"
 msgstr "(Alla betalda)"
 
-#: site/apps/osinstances/create/flinstancecreate.html:114
+#: site/apps/osinstances/create/flinstancecreate.html:115
 msgid "(OUT OF STOCK)"
 msgstr "(SLUT I LAGER)"
 
@@ -41,49 +41,48 @@ msgid "*abc* -> {{$ctrl.item.display}} contains \"abc\""
 msgstr "*abc* -> {{$ctrl.item.display}} innehåller \"abc\""
 
 #: domains/enduser/frontend/components/select_domain/selectdomain.html:92
-#| msgid "Total: {{$ctrl.cart.total}} {{::$ctrl.cart.currency}}"
 msgid "- {{ $ctrl.price_per_year }} {{ $ctrl.currency }} / year"
 msgstr "- {{ $ctrl.price_per_year }} {{ $ctrl.currency }} / år"
 
 #: site/apps/dashboard/fldashboard.html:108
 msgid "1 SSH key"
 msgid_plural "{{$ctrl.openstackSummary.pkm}} SSH keys"
-msgstr[0] "1 SSH-nyckel"
+msgstr[0] "En SSH-nyckel"
 msgstr[1] "{{$ctrl.openstackSummary.pkm}} SSH-nycklar"
 
 #: site/apps/dashboard/fldashboard.html:82
 msgid "1 image"
 msgid_plural "{{$ctrl.openstackSummary.images}} images"
-msgstr[0] "1 image"
+msgstr[0] "En image"
 msgstr[1] "{{$ctrl.openstackSummary.images}} images"
 
 #: site/apps/dashboard/fldashboard.html:68
 msgid "1 instance"
 msgid_plural "{{$ctrl.openstackSummary.instances}} instances"
-msgstr[0] "1 instans"
+msgstr[0] "En instans"
 msgstr[1] "{{$ctrl.openstackSummary.instances}} instanser"
 
 #: site/apps/dashboard/fldashboard.html:137
 msgid "1 invoice"
-msgstr "1 faktura"
+msgstr "En faktura"
 
 #: site/apps/dashboard/fldashboard.html:96
 msgid "1 volume"
 msgid_plural "{{$ctrl.openstackSummary.volumes}} volumes"
-msgstr[0] "1 volym"
+msgstr[0] "En volym"
 msgstr[1] "{{$ctrl.openstackSummary.volumes}} volymer"
 
 #: commons/SFA/google_authenticator/confirm_login/fl-ga-confirm-login.template.html:10
 #: commons/SFA/sfa_confirm_options/fl-sfa-confirm-options.template.html:10
 #: commons/SFA/sms_authenticator/confirm_login/fl-sms-confirm-login.template.html:10
 msgid "2-Step Verification"
-msgstr "2-stegsverifiering"
+msgstr "Tvåstegsverifiering"
 
-#: site/apps/osinstances/flinstancedetail.component.js:68
+#: site/apps/osinstances/flinstancedetail.component.js:72
 msgid "24 hours"
 msgstr "24 timmar"
 
-#: site/apps/osinstances/flinstancedetail.component.js:74
+#: site/apps/osinstances/flinstancedetail.component.js:78
 msgid "30 days"
 msgstr "30 dagar"
 
@@ -95,7 +94,7 @@ msgstr "404 – Sidan kunde inte hittas"
 msgid "404: Not found :("
 msgstr "404 – Sidan kunde inte hittas :("
 
-#: site/apps/osinstances/flinstancedetail.component.js:71
+#: site/apps/osinstances/flinstancedetail.component.js:75
 msgid "7 days"
 msgstr "7 dagar"
 
@@ -103,6 +102,16 @@ msgstr "7 dagar"
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:45
 msgid "<br>No valid department was selected"
 msgstr "<br>Ingen avdelning har valts"
+
+#: site/apps/billing/invoicing/flinvoicingdetails.html:141
+msgid ""
+"<div translate>\n"
+"                  {{resourceType.display_name}} resources\n"
+"                </div>"
+msgstr ""
+"<div translate>\n"
+"                  {{resourceType.display_name}} resurser\n"
+"                </div>"
 
 #: site/apps/billing/recurring_payment_opts/recurring_payment_opts.component.html:1
 msgid ""
@@ -144,6 +153,45 @@ msgstr ""
 "                  <span ng-if=\"vm.customUsernameLabel\">{{ vm."
 "customUsernameLabel | translate }}</span>"
 
+#: site/apps/osports/flports.html:127
+#| msgid ""
+#| "<span ng-if=\"!vm.customUsernameLabel\"><translate>Username</translate></"
+#| "span>\n"
+#| "                  <span ng-if=\"vm.customUsernameLabel\">{{ vm."
+#| "customUsernameLabel | translate }}</span>"
+msgid ""
+"<span ng-if=\"port.admin_state_up\"><translate>UP</translate></span>\n"
+"                <span ng-if=\"!port.admin_state_up\"><translate>DOWN</"
+"translate></span>"
+msgstr ""
+"<span ng-if=\"port.admin_state_up\"><translate>UPPE</translate></span>\n"
+"                <span ng-if=\"!port.admin_state_up\"><translate>NERE</"
+"translate></span>"
+
+#: site/apps/osports/flports.html:117
+msgid ""
+"<span ng-if=\"port.device_owner\">{{ port.device_owner }}</span>\n"
+"                <span ng-if=\"!port.device_owner\"><translate>Detached</"
+"translate></span>"
+msgstr ""
+"<span ng-if=\"port.device_owner\">{{ port.device_owner }}</span>\n"
+"                <span ng-if=\"!port.device_owner\"><translate>Bortkopplad</"
+"translate></span>"
+
+#: site/apps/osports/flportdetails.html:64
+msgid ""
+"<span ng-repeat=\"fixed_ip in $ctrl.port.fixed_ips\">{{ fixed_ip."
+"ip_address }}\n"
+"                      <span ng-if=\"fixed_ip.subnet_id\"> (subnet: "
+"{{ fixed_ip.subnet_id }})</span><br>\n"
+"                    </span>"
+msgstr ""
+"<span ng-repeat=\"fixed_ip in $ctrl.port.fixed_ips\">{{ fixed_ip."
+"ip_address }}\n"
+"                      <span ng-if=\"fixed_ip.subnet_id\"> (subnät: "
+"{{ fixed_ip.subnet_id }})</span><br>\n"
+"                    </span>"
+
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:110
 msgid ""
 "<strong><translate>Reinstall instance</translate></strong><br>\n"
@@ -154,7 +202,7 @@ msgstr ""
 "<translate> All data som för närvarande finns på instansdisken kommer att "
 "raderas permanent. </translate>"
 
-#: site/apps/osimages/create/flimagecreate.html:208
+#: site/apps/osimages/create/flimagecreate.html:210
 msgid ""
 "<strong>Access permissions</strong><br>\n"
 "              The access permission for the image. <strong>Public</strong> "
@@ -174,7 +222,24 @@ msgstr ""
 "<strong>Skyddat</strong> säkerställer att endast användare med behörigheter "
 "kan ta bort imagen."
 
-#: site/apps/osimages/create/flimagecreate.html:193
+#: site/apps/osports/create/flportcreate.html:159
+msgid ""
+"<strong>IP address or subnet</strong><br>\n"
+"              If you specify the subnet, OpenStack Networking allocates an "
+"available IP from that subnet to\n"
+"              the port. If you specify the IP address, OpenStack Networking "
+"tries to allocate the IP address\n"
+"              if the address is a valid IP for any of the subnets on the "
+"specified network."
+msgstr ""
+"<strong>IP-adress eller subnät</strong><br>\n"
+"              Om du specificerar subnät så allokerar OpenStacks "
+"nätverkstjänst ett tillgängligt ip från det subnätet till\n"
+"              porten. Om du specificerar en IP-adress, så försöker tjänsten "
+"allokera den specifika IP-adressen\n"
+"              (om den är korrekt för något av subnäten i det valda nätverket)"
+
+#: site/apps/osimages/create/flimagecreate.html:195
 msgid ""
 "<strong>Image details</strong><br>\n"
 "              Select the <strong>region</strong> where this image should be "
@@ -191,7 +256,7 @@ msgstr ""
 "den <strong>minsta mängden RAM som</strong> krävs för att starta en ny "
 "instans med den här imagen."
 
-#: site/apps/osimages/update/flimageupdate.html:145
+#: site/apps/osimages/update/flimageupdate.html:147
 msgid ""
 "<strong>Image name</strong><br>\n"
 "                    Set an image display name that will reflect what the "
@@ -202,7 +267,7 @@ msgstr ""
 "Välj ett namn som återspeglar vad imagen innehåller, till exempel att det är "
 "ett visst operativsystem eller en snapshot av en instans."
 
-#: site/apps/osimages/create/flimagecreate.html:200
+#: site/apps/osimages/create/flimagecreate.html:202
 msgid ""
 "<strong>Image properties</strong><br>\n"
 "              Select the format of the Image disk from the <strong>Disk "
@@ -224,7 +289,7 @@ msgstr ""
 "tillåter tjänster att \n"
 "vidta olika åtgärder baserat på den information som tillhandahålls."
 
-#: site/apps/osimages/create/flimagecreate.html:215
+#: site/apps/osimages/create/flimagecreate.html:217
 msgid ""
 "<strong>Image source</strong><br>\n"
 "              Select the source for the actual image data from the "
@@ -245,7 +310,17 @@ msgstr ""
 " Vänligen ange webbadressen för hela imagen (ex: https://somehost.com/"
 "someimage.qcow2)."
 
-#: site/apps/osimages/update/flimageupdate.html:150
+#: site/apps/osports/create/flportcreate.html:165
+msgid ""
+"<strong>MAC address</strong><br>\n"
+"              The MAC address of the port. If unspecified, a MAC address is "
+"automatically generated."
+msgstr ""
+"<strong>MAC-adress</strong><br>\n"
+"              Portens MAC-adress. Om detta lämnas tomt så genereras en MAC-"
+"adress automatiskt."
+
+#: site/apps/osimages/update/flimageupdate.html:152
 msgid ""
 "<strong>Minimum disk size (GB)</strong><br>\n"
 "                    This property will tell OpenStack Compute what the "
@@ -264,7 +339,7 @@ msgstr ""
 "du skapar ett instans med \n"
 "en lägre diskstorlek än den installerade programvaran på imagen."
 
-#: site/apps/osimages/update/flimageupdate.html:157
+#: site/apps/osimages/update/flimageupdate.html:159
 msgid ""
 "<strong>Minimum required RAM (MB)</strong><br>\n"
 "                    Like the minimum required disk size, this option allows "
@@ -290,7 +365,7 @@ msgstr ""
 "där volymen ska skapas och ställ sedan in namnet och en beskrivning för den. "
 "<br>"
 
-#: site/apps/osimages/update/flimageupdate.html:170
+#: site/apps/osimages/update/flimageupdate.html:172
 msgid ""
 "<strong>OS distro, OS version and Architecture</strong><br>\n"
 "                    These special attributes allows Fleio to show the distro "
@@ -306,7 +381,21 @@ msgstr ""
 "och tillåter också OpenStack att skapa instansen på rätt vis (speciellt för "
 "Windows och Linux)"
 
-#: site/apps/osimages/update/flimageupdate.html:177
+#: site/apps/osports/create/flportcreate.html:155
+#| msgid ""
+#| "<strong>Protected</strong><br>\n"
+#| "                    Set this option in order to protect the image from "
+#| "accidental deletion"
+msgid ""
+"<strong>Project</strong><br>\n"
+"              The project that owns the resource. Leave blank to create the "
+"resource under admin project."
+msgstr ""
+"<strong>Project</strong><br>\n"
+"              Projektet som äger denna resurs. Lämna blankt för att skapa "
+"resursen under standardprojektet."
+
+#: site/apps/osimages/update/flimageupdate.html:179
 msgid ""
 "<strong>Protected</strong><br>\n"
 "                    Set this option in order to protect the image from "
@@ -320,9 +409,9 @@ msgstr ""
 msgid ""
 "<strong>Size</strong><br>\n"
 "            Enter the size of the new volume. This size must be equal of "
-"higher than the source size if <br>\n"
+"higher than the source size if\n"
 "            any source is selected. For example, if an image has a minimum "
-"size of 3GB, the new volume size <br>\n"
+"size of 3GB, the new volume size\n"
 "            must be at least 3GB."
 msgstr ""
 "<strong>Storlek</strong> <br> \n"
@@ -363,7 +452,7 @@ msgstr ""
 "Alla tillgängliga volymtyper i den valda regionen är tillgängliga att välja "
 "mellan. <br>"
 
-#: site/apps/osimages/update/flimageupdate.html:162
+#: site/apps/osimages/update/flimageupdate.html:164
 msgid ""
 "<strong>Visibility</strong><br>\n"
 "                    An image can be set as <strong>private</strong>, makeing "
@@ -384,6 +473,10 @@ msgstr ""
 "imagen. \n"
 "<strong>community</strong> beter sig på samma vis som <strong>publik</strong>"
 
+#: site/apps/osimages/create/flimagecreate.html:139
+msgid "<translate>Any hypervisor</translate>"
+msgstr "<translate>Alla hypervisors</translate>"
+
 #: site/apps/osrouters/flrouters.html:34
 msgid ""
 "<translate>Gateway</translate>:&nbsp;{{::router.network_name}}<br>\n"
@@ -394,13 +487,12 @@ msgstr ""
 "                <translate>Beskrivning</translate>:&nbsp;{{ router."
 "description ? (router.description) : \"-\" }}"
 
-#: site/apps/osinstances/create/flinstancecreate.html:166
-#: site/apps/osinstances/create/flinstancecreate.html:169
+#: site/apps/osinstances/create/flinstancecreate.html:167
+#: site/apps/osinstances/create/flinstancecreate.html:170
 msgid "A network is required to create a new Instance."
 msgstr "Ett nätverk krävs för att skapa en ny instans."
 
 #: site/apps/osimages/snapshot/flinstancesnapshot.html:9
-#| msgid "A snapshot will be charged up to {{ $ctrl.price_per_storage }}."
 msgid ""
 "A snapshot will be charged {{ $ctrl.price_per_storage }} (around {{ $ctrl."
 "price_per_storage_per_month }} per month)."
@@ -440,7 +532,7 @@ msgstr "En verifieringskod skickades till {{$ctrl.receiver}}"
 msgid "ACTIVE"
 msgstr "AKTIV"
 
-#: site/apps/osclusters/flclusterdetails.component.html:54
+#: site/apps/osclusters/flclusterdetails.component.html:57
 msgid "API Address: {{$ctrl.cluster.api_address}}"
 msgstr "API-adress: {{$ctrl.cluster.api_address}}"
 
@@ -452,10 +544,14 @@ msgstr "API-användare har tagits bort"
 msgid "API user edited"
 msgstr "API-användare redigerad"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:42
+#: site/apps/baseconfig/fleio.baseconfig.module.js:43
 #: site/apps/osapiusers/states.config.js:33
 msgid "API users"
 msgstr "API-användare"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:107
+msgid "AVAILABLE"
+msgstr "TILLGÄNGLIG"
 
 #: site/apps/operations/operationactions.html:1
 #: site/apps/operations/operationactions.html:16
@@ -473,7 +569,7 @@ msgstr ""
 "Att avbryta en operation kan resultera i felaktiga statusar på tjänster. Är "
 "du säker på att du vill avbryta operationen?"
 
-#: site/apps/osinstances/flinstances.html:67
+#: site/apps/osinstances/flinstances.html:69
 msgid "Acccess IP"
 msgstr "Access IP"
 
@@ -502,16 +598,16 @@ msgstr "Åtgärd inte tillåten"
 
 #: site/apps/billing/recurring_payment_opts/recurring_payment_opts.component.html:20
 #: site/apps/billing/services/services.html:48
-#: site/apps/networks/flnetworkdetails.html:115
-#: site/apps/networks/flnetworkdetails.html:60
+#: site/apps/networks/flnetworkdetails.html:133
+#: site/apps/networks/flnetworkdetails.html:78
 #: site/apps/networks/flnetworks.html:64
 #: site/apps/operations/operations.html:18
 #: site/apps/osapiusers/flapiusers.html:68
 #: site/apps/osclusters/flclusters.component.html:57
 #: site/apps/osclustertemplates/flclustertemplates.component.html:57
 #: site/apps/osimages/flimages.html:100
-#: site/apps/osinstances/flinstancedetail.html:585
-#: site/apps/osinstances/flinstances.html:70
+#: site/apps/osinstances/flinstancedetail.html:601
+#: site/apps/osinstances/flinstances.html:72 site/apps/osports/flports.html:76
 #: site/apps/ossecuritygroups/flsecuritygroups.html:69
 #: site/apps/osvolumebackups/flvolumebackups.html:66
 #: site/apps/osvolumes/flvolumes.html:62
@@ -568,14 +664,14 @@ msgstr "Lägg till DNS-namnserver"
 
 #: site/apps/osinstances/addip/flinstanceaddip.html:55
 #: site/apps/osinstances/addip/flinstanceaddip.html:66
-#: site/apps/osinstances/flinstancedetail.html:444
-#: site/apps/osinstances/flinstancedetail.html:475
+#: site/apps/osinstances/flinstancedetail.html:460
+#: site/apps/osinstances/flinstancedetail.html:491
 msgid "Add IP"
 msgstr "Lägg till IP"
 
 #: site/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:43
-#: site/apps/osinstances/flinstancedetail.html:451
-#: site/apps/osinstances/flinstancedetail.html:482
+#: site/apps/osinstances/flinstancedetail.html:467
+#: site/apps/osinstances/flinstancedetail.html:498
 msgid "Add IP automatically"
 msgstr "Lägg till IP automatiskt"
 
@@ -657,8 +753,8 @@ msgstr "Lägg till floating IP"
 msgid "Add host route"
 msgstr "Lägg till host route"
 
-#: site/apps/osimages/update/flimageupdate.html:213
-#: site/apps/osimages/update/flimageupdate.html:221
+#: site/apps/osimages/update/flimageupdate.html:215
+#: site/apps/osimages/update/flimageupdate.html:223
 msgid "Add image property"
 msgstr "Lägg till image-attribut"
 
@@ -697,13 +793,13 @@ msgstr "Lägg till ny"
 msgid "Add new domain contact"
 msgstr "Skapa ny domänkontakt"
 
-#: site/apps/osinstances/create/flinstancecreate.html:203
+#: site/apps/osinstances/create/flinstancecreate.html:204
 msgid "Add new key"
 msgstr "Lägg till ny nyckel"
 
 #: site/apps/osinstances/addport/flinstanceaddport.html:58
-#: site/apps/osinstances/flinstancedetail.html:437
-#: site/apps/osinstances/flinstancedetail.html:468
+#: site/apps/osinstances/flinstancedetail.html:446
+#: site/apps/osinstances/flinstancedetail.html:484
 msgid "Add port"
 msgstr "Lägg till port"
 
@@ -728,7 +824,7 @@ msgstr "Lägg till recordset"
 msgid "Add rule"
 msgstr "Lägg till regel"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:158
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:161
 msgid "Add rule scheduled"
 msgstr "Lägger till regel..."
 
@@ -776,38 +872,59 @@ msgstr "Adressrad 2"
 msgid "Admin password changed successfully"
 msgstr "Administratörslösenordet har ändrats"
 
-#: site/apps/osrouters/states.config.js:32
+#: site/apps/osports/flports.html:75 site/apps/osrouters/states.config.js:32
 msgid "Admin state"
 msgstr "Admin state"
 
 #: site/apps/networks/flnetworkadd.html:46
 #: site/apps/networks/flnetworkedit.html:41
-#: site/apps/osrouters/flrouterdetails.html:69
+#: site/apps/osports/states.config.js:70
+#: site/apps/osrouters/flrouterdetails.html:81
 #: site/apps/osrouters/flrouteredit.html:59
 msgid "Admin state up"
 msgstr "Admin state up"
 
-#: site/apps/networks/flnetworkdetails.html:42
-msgid "Admin state up: {{ $ctrl.network.admin_state_up }}"
-msgstr "Admin state up: {{$ctrl.network.admin_state_up}}"
-
 #: site/apps/osrouters/flrouterdetails.html:34
-msgid "Admin state up: {{ $ctrl.router.admin_state_up }}"
-msgstr "Admin state up: {{ $ctrl.router.admin_state_up }}"
+msgid ""
+"Admin state up:\n"
+"            <span ng-if=\"$ctrl.router.admin_state_up\">true</span>\n"
+"            <span ng-if=\"!$ctrl.router.admin_state_up\">false</span>"
+msgstr ""
+"Admin state uppe:\n"
+"            <span ng-if=\"$ctrl.router.admin_state_up\">JA</span>\n"
+"            <span ng-if=\"!$ctrl.router.admin_state_up\">NEJ</span>"
+
+#: site/apps/osports/flportdetails.html:33
+msgid ""
+"Admin state:\n"
+"                  <span ng-if=\"$ctrl.port.admin_state_up\">UP</span><span "
+"ng-if=\"!$ctrl.port.admin_state_up\">DOWN</span>"
+msgstr ""
+"Admin state:\n"
+"                  <span ng-if=\"$ctrl.port.admin_state_up\">UPPE</span><span "
+"ng-if=\"!$ctrl.port.admin_state_up\">NERE</span>"
+
+#: site/apps/networks/flnetworkdetails.html:50
+msgid ""
+"Admin state: <span ng-if=\"$ctrl.network.admin_state_up\">UP</span><span ng-"
+"if=\"!$ctrl.network.admin_state_up\">DOWN</span>"
+msgstr ""
+"Admin state: <span ng-if=\"$ctrl.network.admin_state_up\">UPPE</span><span "
+"ng-if=\"!$ctrl.network.admin_state_up\">NERE</span>"
 
 #: commons/terms_of_service_agreement/states.config.js:16
 msgid "Agree with terms of service"
 msgstr "Accepterar användarvillkoren"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:22
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:25
 msgid "All ICMP"
 msgstr "Alla ICMP"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:20
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:23
 msgid "All TCP"
 msgstr "Alla TCP"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:21
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:24
 msgid "All UDP"
 msgstr "Alla UDP"
 
@@ -829,13 +946,12 @@ msgstr "Allokeringspool slut"
 msgid "Allocation pool start"
 msgstr "Allokeringspool start"
 
-#: site/apps/osimages/create/flimagecreate.html:178
-#| msgid "Disk format: {{ $ctrl.image.disk_format }}"
+#: site/apps/osimages/create/flimagecreate.html:180
 msgid "Allowed formats: {{ $ctrl.allowedFormats }}"
 msgstr "Tillåtna format: {{ $ctrl.allowedFormats }}"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:125
-#: site/apps/billing/invoicing/flinvoicingdetails.html:204
+#: site/apps/billing/invoicing/flinvoicingdetails.html:201
+#: site/apps/billing/invoicing/flinvoicingdetails.html:281
 msgid "Amount"
 msgstr "Belopp"
 
@@ -866,8 +982,8 @@ msgstr "Besvarat"
 msgid "Any"
 msgstr "Alla"
 
-#: site/apps/osimages/create/flimagecreate.html:139
-#: site/apps/osimages/update/flimageupdate.html:107
+#: site/apps/osimages/create/flimagecreate.html:140
+#: site/apps/osimages/update/flimageupdate.html:108
 msgid "Any hypervisor"
 msgstr "Vilken hypervisor som helst"
 
@@ -944,18 +1060,21 @@ msgstr "Är du säker på att du vill stänga av instansen?"
 #: site/apps/billing/recurring_payment_opts/recurring_payment_opts.component.js:48
 #: site/apps/floatingips/flfloatingipdetails.component.js:38
 #: site/apps/floatingips/flfloatingips.component.js:75
-#: site/apps/networks/flnetworkdetails.component.js:149
-#: site/apps/networks/flnetworkdetails.component.js:70
+#: site/apps/networks/flnetworkdetails.component.js:150
+#: site/apps/networks/flnetworkdetails.component.js:71
 #: site/apps/networks/flnetworks.component.js:170
 #: site/apps/osapiusers/flapiusers.component.js:92
 #: site/apps/osimages/flimagedetails.component.js:48
 #: site/apps/osimages/flimages.component.js:51
-#: site/apps/osinstances/flinstancedetail.component.js:219
-#: site/apps/osinstances/flinstancedetail.component.js:319
-#: site/apps/osinstances/flinstancedetail.component.js:336
-#: site/apps/osinstances/flinstancedetail.component.js:383
-#: site/apps/osinstances/flinstancedetail.component.js:474
-#: site/apps/osinstances/flinstancedetail.component.js:577
+#: site/apps/osinstances/flinstancedetail.component.js:223
+#: site/apps/osinstances/flinstancedetail.component.js:341
+#: site/apps/osinstances/flinstancedetail.component.js:358
+#: site/apps/osinstances/flinstancedetail.component.js:405
+#: site/apps/osinstances/flinstancedetail.component.js:496
+#: site/apps/osinstances/flinstancedetail.component.js:615
+#: site/apps/osinstances/flinstancedetail.component.js:631
+#: site/apps/osports/flportdetails.component.js:47
+#: site/apps/osports/flports.component.js:42
 #: site/apps/osrouters/flrouterdetails.component.js:108
 #: site/apps/osrouters/flrouterdetails.component.js:118
 #: site/apps/osrouters/flrouters.component.js:116
@@ -973,15 +1092,15 @@ msgstr "Är du säker?"
 msgid "Assigned to"
 msgstr "Tilldelat till"
 
-#: site/apps/osinstances/flinstancedetail.html:535
+#: site/apps/osinstances/flinstancedetail.html:551
 msgid "Associate"
 msgstr "Koppla"
 
 #: site/apps/osinstances/actions/flinstanceactions.html:122
 #: site/apps/osinstances/actions/flxsinstanceactions.html:124
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:39
-#: site/apps/osinstances/flinstancedetail.html:458
-#: site/apps/osinstances/flinstancedetail.html:489
+#: site/apps/osinstances/flinstancedetail.html:474
+#: site/apps/osinstances/flinstancedetail.html:505
 msgid "Associate IP"
 msgstr "Allokera IP"
 
@@ -1028,6 +1147,15 @@ msgstr ""
 "Allokerade till objekt:\n"
 "                {{$ctrl.floatingIp.associated_object.id}}"
 
+#: site/apps/osinstances/attachport/flinstanceattachport.html:44
+#: site/apps/osinstances/flinstancedetail.html:453
+msgid "Attach port"
+msgstr "Anslut port"
+
+#: site/apps/osinstances/attachport/flinstanceattachport.html:3
+msgid "Attach port to instance {{ $ctrl.instance.name }}"
+msgstr "Lägg till port till instansen {{$ctrl.instance.name}}"
+
 #: site/apps/osinstances/flinstancedetail.html:276
 #: site/apps/osvolumes/attach/flvolumeattach.html:31
 msgid "Attach volume"
@@ -1037,7 +1165,7 @@ msgstr "Anslut volym"
 msgid "Attach volume to instance {{ $ctrl.instance.name }}"
 msgstr "Anslut volymen till instansen {{$ctrl.instance.name}}"
 
-#: site/apps/osinstances/flinstancedetail.component.js:214
+#: site/apps/osinstances/flinstancedetail.component.js:218
 msgid "Attaching volume to instance"
 msgstr "Anslut volym till instans"
 
@@ -1060,6 +1188,11 @@ msgstr "Laddar upp filer..."
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:97
 msgid "Attachments:"
 msgstr "Bifogade filer:"
+
+#: site/apps/osports/create/flportcreate.html:124
+#: site/apps/osports/create/flportcreate.html:125
+msgid "Auto add security group"
+msgstr "Lägg till säkerhetsgrupp automatiskt"
 
 #: site/apps/networks/flnetworkautocreate.controller.js:26
 msgid "Auto creating network finished"
@@ -1089,11 +1222,11 @@ msgstr ""
 "Orsak för automatisk terminering\n"
 "              : {{$ctrl.serviceDetails.auto_terminate_reason }}"
 
-#: site/apps/osrouters/flrouterdetails.html:51
+#: site/apps/osrouters/flrouterdetails.html:63
 msgid "Availability hints:"
 msgstr "Info om tillgänglighet:"
 
-#: site/apps/osrouters/flrouterdetails.html:45
+#: site/apps/osrouters/flrouterdetails.html:57
 msgid "Availability zones:"
 msgstr "Tillgänglighetszoner:"
 
@@ -1117,15 +1250,20 @@ msgstr "Tillgängliga portar"
 msgid "Available products"
 msgstr "Tillgängliga produkter"
 
+#: oscommons/osfilters/flinstancestatus.filter.js:68
+msgid "BLOCK DEVICE MAPPING"
+msgstr "MAPPAR BLOCK STORAGE"
+
 #: oscommons/osfilters/flinstancestatus.filter.js:43
 msgid "BOOTED FROM ISO"
 msgstr "BOOTAT FRÅN ISO"
 
 #: oscommons/osfilters/flinstancestatus.filter.js:41
+#: oscommons/osfilters/flinstancestatus.filter.js:93
 msgid "BOOTING FROM ISO"
 msgstr "BOOTAR FRÅN ISO"
 
-#: oscommons/osfilters/flinstancestatus.filter.js:61
+#: oscommons/osfilters/flinstancestatus.filter.js:62
 msgid "BUILDING"
 msgstr "BYGGER INSTANS"
 
@@ -1152,7 +1290,7 @@ msgstr "Namn på backup"
 msgid "Backup rotation"
 msgstr "Rotering av backuper"
 
-#: site/apps/osinstances/flinstancedetail.component.js:391
+#: site/apps/osinstances/flinstancedetail.component.js:413
 msgid "Backup schedule deleted"
 msgstr "Backupschema raderat"
 
@@ -1168,7 +1306,7 @@ msgstr "Backupschema har lagts till"
 msgid "Backup schedule type"
 msgstr "Typ av backupschema"
 
-#: site/apps/osinstances/flinstancedetail.html:577
+#: site/apps/osinstances/flinstancedetail.html:593
 msgid "Backup schedules"
 msgstr "Backupscheman"
 
@@ -1185,13 +1323,13 @@ msgstr "Backupen schemalagd för återställning."
 msgid "Backup was scheduled for updating"
 msgstr "Backup schemalagd för uppdatering..."
 
-#: site/apps/osinstances/flinstancedetail.html:542
-#: site/apps/osinstances/flinstancedetail.html:551
+#: site/apps/osinstances/flinstancedetail.html:558
+#: site/apps/osinstances/flinstancedetail.html:567
 #: site/apps/osvolumes/flvolumedetails.html:38
 msgid "Backups"
 msgstr "Backuper"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:212
+#: site/apps/billing/invoicing/flinvoicingdetails.html:289
 msgid "Balance {{$ctrl.invoice.balance}} {{::$ctrl.invoice.currency }}"
 msgstr "Saldo: {{$ctrl.invoice.balance}} {{::$ctrl.invoice.currency }}"
 
@@ -1199,15 +1337,19 @@ msgstr "Saldo: {{$ctrl.invoice.balance}} {{::$ctrl.invoice.currency }}"
 msgid "Before you continue, please fill in your information"
 msgstr "Fyll i din information innan du fortsätter"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:50
+#: site/apps/baseconfig/fleio.baseconfig.module.js:51
 #: site/apps/dashboard/fldashboard.html:3
 msgid "Billing"
 msgstr "Användning"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:57
+#: site/apps/baseconfig/fleio.baseconfig.module.js:58
 #: site/apps/billing/history/states.config.js:16
 msgid "Billing history"
 msgstr "Statistik"
+
+#: site/apps/osports/create/flportcreate.html:139
+msgid "Binding: Host"
+msgstr "Binding: Host"
 
 #: site/apps/osinstances/actions/flinstanceactions.html:75
 #: site/apps/osinstances/actions/flxsinstanceactions.html:77
@@ -1233,12 +1375,10 @@ msgstr "Bytes in / ut"
 
 #: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:47
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:47
-#| msgid "Nodes to remove (comma separated IDs)"
 msgid "CC recipients (comma separated)"
 msgstr "CC-mottagare (kommaseparerade)"
 
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:47
-#| msgid "Description: {{ $ctrl.zone.description }}"
 msgid "CC recipients: {{$ctrl.ticket.cc_recipients}}"
 msgstr "CC-mottagare: {{$ctrl.ticket.cc_recipients}}"
 
@@ -1249,9 +1389,9 @@ msgstr "CIDR"
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:27
 #: site/apps/osclustertemplates/flclustertemplates.component.html:56
 msgid "COE"
-msgstr "Havsål COE"
+msgstr "COE"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:25
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:26
 msgid "COE: {{$ctrl.clusterTemplate.coe}}"
 msgstr "COE: {{$ctrl.clusterTemplate.coe}}"
 
@@ -1296,19 +1436,20 @@ msgstr "CPU-användning"
 #: site/apps/osclusters/create/flclustercreate.component.html:204
 #: site/apps/osclusters/resize/flclusterresize.html:26
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:419
-#: site/apps/osimages/create/flimagecreate.html:230
+#: site/apps/osimages/create/flimagecreate.html:232
 #: site/apps/osimages/memberstatus/memberstatusdialog.template.html:21
 #: site/apps/osimages/snapshot/flinstancesnapshot.html:35
-#: site/apps/osimages/update/flimageupdate.html:139
-#: site/apps/osimages/update/flimageupdate.html:232
+#: site/apps/osimages/update/flimageupdate.html:141
+#: site/apps/osimages/update/flimageupdate.html:234
 #: site/apps/osinstances/addip/flinstanceaddip.html:63
 #: site/apps/osinstances/addport/flinstanceaddport.html:55
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:36
 #: site/apps/osinstances/associatesecuritygroup/flassociatesecuritygroup.html:32
+#: site/apps/osinstances/attachport/flinstanceattachport.html:41
 #: site/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:40
 #: site/apps/osinstances/bootfromiso/flinstancebootfromiso.html:83
 #: site/apps/osinstances/create/flbootsourceselect.html:183
-#: site/apps/osinstances/create/flinstancecreate.html:250
+#: site/apps/osinstances/create/flinstancecreate.html:251
 #: site/apps/osinstances/dissociateip/flinstancedissociateip.html:24
 #: site/apps/osinstances/editptr/fleditptr.html:20
 #: site/apps/osinstances/password/flinstancechangepassword.html:27
@@ -1316,6 +1457,8 @@ msgstr "CPU-användning"
 #: site/apps/osinstances/rename/flinstancerename.html:20
 #: site/apps/osinstances/rescue/flinstancerescue.html:97
 #: site/apps/osinstances/resize/flinstanceresize.html:52
+#: site/apps/osports/create/flportcreate.html:177
+#: site/apps/osports/edit/flportedit.html:62
 #: site/apps/osrouters/flinterfaceadd.html:27
 #: site/apps/osrouters/flrouteredit.html:65
 #: site/apps/ossecuritygroups/flsecuritygroupedit.html:45
@@ -1376,7 +1519,7 @@ msgstr "Kan inte filtrera samma fält två gånger!"
 msgid "Card view"
 msgstr "Kort-vy"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:56
+#: site/apps/baseconfig/fleio.baseconfig.module.js:57
 msgid "Cart"
 msgstr "Varukorg"
 
@@ -1432,12 +1575,12 @@ msgstr "Kontrollera domän"
 msgid "Check if domain is available"
 msgstr "Kontrollera om domän är tillgänglig"
 
-#: site/apps/osinstances/flinstancedetail.component.js:39
+#: site/apps/osinstances/flinstancedetail.component.js:40
 #: site/apps/osinstances/flinstances.component.js:31
 msgid ""
 "Check if files have been successfully\n"
 "migrated to the new instance disk. \n"
-"Choose Verify resize from the instance menu\n"
+"Choose Confirm resize from the instance menu\n"
 "to confirm migration was successful, otherwise\n"
 "choose Revert resize to revert back to the initial disk."
 msgstr ""
@@ -1525,7 +1668,7 @@ msgstr "Kundkonton"
 msgid "Client image"
 msgstr "Kundimage"
 
-#: site/apps/clients/flclientedit.component.js:78
+#: site/apps/clients/flclientedit.component.js:81
 msgid "Client {{fname}} {{lname}} modified"
 msgstr "Kund {{fname}} {{lname}} modifierad"
 
@@ -1553,8 +1696,12 @@ msgstr ""
 "                    {{ ::$ctrl.volumeSnapshot.client.name }}\n"
 "                  </a>"
 
+#: site/apps/osports/flports.html:38
+#| msgid "Client: {{backup.client.name}}"
+msgid "Client: {{ port.client.name }}"
+msgstr "Kund: {{ port.client.name }}"
+
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:45
-#| msgid "{{$ctrl.item.display}}"
 msgid "Client: {{$ctrl.ticket.client_display}}"
 msgstr "Kund: {{$ctrl.ticket.client_display}}"
 
@@ -1579,8 +1726,8 @@ msgstr "Stäng ärende"
 msgid "Cloud"
 msgstr "Cloud"
 
-#: site/apps/osinstances/create/flinstancecreate.html:140
-#: site/apps/osinstances/create/flinstancecreate.html:143
+#: site/apps/osinstances/create/flinstancecreate.html:141
+#: site/apps/osinstances/create/flinstancecreate.html:144
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:58
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:61
 msgid "Cloud-init user data"
@@ -1594,7 +1741,7 @@ msgstr "Kluster"
 msgid "Cluster Templates"
 msgstr "Klustertemplates"
 
-#: site/apps/osclusters/flclusterdetails.component.html:84
+#: site/apps/osclusters/flclusterdetails.component.html:87
 msgid "Cluster create timeout: {{$ctrl.cluster.create_timeout}}"
 msgstr "Timeout vid skapande av kluster: {{$ctrl.cluster.create_timeout}}"
 
@@ -1649,6 +1796,11 @@ msgstr ""
 "                      {{$ctrl.cluster.cluster_template.name}}\n"
 "                    </a>"
 
+#: site/apps/osclusters/flclusterdetails.component.html:42
+#| msgid "Cluster create timeout: {{$ctrl.cluster.create_timeout}}"
+msgid "Cluster template: {{$ctrl.cluster.cluster_template.name}}"
+msgstr "Klustermall: {{$ctrl.cluster.cluster_template.name}}"
+
 #: site/apps/osclustertemplates/flclustertemplates.component.html:1
 #: site/apps/osclustertemplates/states.config.js:51
 msgid "Cluster templates"
@@ -1680,7 +1832,7 @@ msgstr "Community-images"
 msgid "Company"
 msgstr "Företag"
 
-#: site/apps/operations/states.config.js:50
+#: site/apps/operations/states.config.js:61
 msgid "Completed"
 msgstr "Slutfört"
 
@@ -1759,6 +1911,10 @@ msgstr "Container orchestration engine"
 msgid "Continue"
 msgstr "Fortsätt"
 
+#: commons/ui/flcopy/flcopy.template.html:2
+msgid "Copy to clipboard"
+msgstr "Kopiera till urklipp"
+
 #: site/apps/billing/cart/cart.html:65
 msgid "Cost"
 msgstr "Kostnad"
@@ -1783,7 +1939,7 @@ msgstr "Det gick inte att ta bort nätverket"
 msgid "Could not delete router"
 msgstr "Det gick inte att radera routern"
 
-#: site/apps/networks/flnetworkdetails.component.js:158
+#: site/apps/networks/flnetworkdetails.component.js:159
 msgid "Could not delete subnet"
 msgstr "Det gick inte att ta bort subnätet"
 
@@ -1830,7 +1986,7 @@ msgstr "Land / stat"
 msgid "Create"
 msgstr "Skapa"
 
-#: site/apps/osinstances/create/flinstancecreate.html:246
+#: site/apps/osinstances/create/flinstancecreate.html:247
 msgid "Create & Boot from ISO"
 msgstr "Skapa & starta från ISO"
 
@@ -1886,20 +2042,20 @@ msgstr "Skapa klustertemplate"
 
 #: site/apps/dashboard/fldashboard.html:89
 #: site/apps/osimages/create/flimagecreate.html:14
-#: site/apps/osimages/create/flimagecreate.html:227
+#: site/apps/osimages/create/flimagecreate.html:229
 #: site/apps/osimages/flimages.component.js:33
 #: site/apps/osimages/states.config.js:164
 msgid "Create image"
 msgstr "Skapa image"
 
 #: site/apps/dashboard/fldashboard.html:75
-#: site/apps/osinstances/create/flinstancecreate.html:247
+#: site/apps/osinstances/create/flinstancecreate.html:248
 #: site/apps/osinstances/flinstances.component.js:29
 #: site/apps/osinstances/states.config.js:115
 msgid "Create instance"
 msgstr "Skapa instans"
 
-#: site/apps/osinstances/flinstancedetail.html:553
+#: site/apps/osinstances/flinstancedetail.html:569
 msgid "Create instant backups for your instance."
 msgstr "Skapa omedelbara backuper för din instans."
 
@@ -1914,18 +2070,25 @@ msgstr "Skapa nätverk"
 msgid "Create new account"
 msgstr "Skapa nytt konto"
 
-#: site/apps/osinstances/flinstancedetail.html:570
+#: site/apps/osinstances/flinstancedetail.html:586
 #: site/apps/osvolumes/backups/flvolumebackups.template.html:4
 msgid "Create new backup"
 msgstr "Skapa ny backup"
 
-#: site/apps/osinstances/flinstancedetail.html:610
+#: site/apps/osinstances/flinstancedetail.html:626
 msgid "Create new backup schedule"
 msgstr "Skapa ett nytt schema för backup"
 
 #: site/apps/osvolumes/snapshots/flvolumesnapshots.template.html:4
 msgid "Create new snapshot"
 msgstr "Skapa ny snapshot"
+
+#: site/apps/osports/create/flportcreate.html:174
+#: site/apps/osports/create/flportcreate.html:6
+#: site/apps/osports/flports.component.js:29
+#: site/apps/osports/states.config.js:118
+msgid "Create port"
+msgstr "Skapa port"
 
 #: site/apps/osrouters/flrouteredit.html:3
 #: site/apps/osrouters/flrouters.html:127
@@ -1995,7 +2158,8 @@ msgstr "Skapa..."
 #: site/apps/osclustertemplates/flclustertemplates.component.html:55
 #: site/apps/osclustertemplates/states.config.js:58
 #: site/apps/osimages/flimages.html:96 site/apps/osimages/states.config.js:60
-#: site/apps/osinstances/flinstances.html:65
+#: site/apps/osinstances/flinstances.html:67
+#: site/apps/osports/states.config.js:45 site/apps/osports/states.config.js:49
 #: site/apps/ossecuritygroups/flsecuritygroups.html:66
 #: site/apps/ossecuritygroups/states.config.js:36
 #: site/apps/ossecuritygroups/states.config.js:39
@@ -2015,6 +2179,11 @@ msgstr "Skapad"
 #: site/apps/osvolumesnapshots/flvolumesnapshots.html:35
 msgid "Created at:"
 msgstr "Skapad:"
+
+#: site/apps/osports/flportdetails.html:32
+#| msgid "Created at: {{ ::$ctrl.zone.created_at | date:'medium' }}"
+msgid "Created at: {{ $ctrl.port.created_at | date:'medium' }}"
+msgstr "Skapad: {{ $ctrl.port.created_at | date:'medium' }}"
 
 #: site/apps/billing/services/servicedetails.html:49
 msgid "Created at: {{ $ctrl.serviceDetails.created_at | date:'medium'}}"
@@ -2056,7 +2225,7 @@ msgstr ""
 msgid "Created at: {{$ctrl.cluster.created_at | date:'medium'}}"
 msgstr "Skapad: {{$ctrl.cluster.created_at | date:'medium'}}"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:24
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:25
 msgid "Created at: {{$ctrl.clusterTemplate.created_at | date:'medium'}}"
 msgstr "Skapad: {{$ctrl.clusterTemplate.created_at | date:'medium'}}"
 
@@ -2069,7 +2238,6 @@ msgid "Created at: {{clusterTemplate.created_at | date: 'mediumDate'}}"
 msgstr "Skapad: {{clusterTemplate.created_at | date: 'mediumDate'}}"
 
 #: site/apps/operations/operationdetails.html:29
-#| msgid "Created at: {{ ::$ctrl.zone.created_at | date:'medium' }}"
 msgid "Created at:&nbsp;{{ $ctrl.operation.created_at | date:'medium' }}"
 msgstr "Skapad:&nbsp;{{ $ctrl.operation.created_at | date:'medium' }}"
 
@@ -2078,7 +2246,7 @@ msgid "Created by"
 msgstr "Skapad av"
 
 #: commons/userprofile/fluserprofile.html:89
-#: site/apps/osinstances/flinstances.html:38
+#: site/apps/osinstances/flinstances.html:40
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:42
 msgid "Created on"
 msgstr "Skapad den"
@@ -2127,17 +2295,23 @@ msgstr "Nuvarande period:"
 msgid "Current month traffic"
 msgstr "Aktuell månadstrafik"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:18
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:21
 msgid "Custom ICMP rule"
 msgstr "Anpassad ICMP-regel"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:16
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:19
 msgid "Custom TCP rule"
 msgstr "Anpassad TCP-regel"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:17
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:20
 msgid "Custom UDP rule"
 msgstr "Anpassad UDP-regel"
+
+#: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:104
+#: site/apps/clients/clienteditdlg/clientedit.html:114
+#: site/apps/clients/flclientedit.html:118
+msgid "Custom fields"
+msgstr "Särskilda fält"
 
 #: tickets/enduser/frontend/components/states.config.js:57
 msgid "Customer reply"
@@ -2146,6 +2320,10 @@ msgstr "Kundsvar"
 #: oscommons/osfilters/flinstancestatus.filter.js:51
 msgid "DELETED"
 msgstr "RADERAD"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:100
+msgid "DELETING"
+msgstr "RADERAR"
 
 #: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:18
 #: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:16
@@ -2157,7 +2335,7 @@ msgstr "AVAKTIVERAD"
 msgid "DNS name server"
 msgstr "Lägg till DNS-namnserver"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:134
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:135
 msgid ""
 "DNS nameserver: {{$ctrl.clusterTemplate.dns_nameserver ? $ctrl."
 "clusterTemplate.dns_nameserver : '-'}}"
@@ -2166,6 +2344,7 @@ msgstr ""
 "clusterTemplate.dns_nameserver : '-'}}"
 
 #: oscommons/floatingips-status-translations.js:12
+#: site/apps/osports/flports.html:129
 msgid "DOWN"
 msgstr "NERE"
 
@@ -2180,16 +2359,16 @@ msgid "Data from domain contact will be used when registering the domain:"
 msgstr "Data från domänkontakten kommer användas vid registrering av domänen: "
 
 #: commons/ui/useralerts/list/fluseralerts.html:60
-#: site/apps/billing/invoicing/flinvoicingdetails.html:110
-#: site/apps/billing/invoicing/flinvoicingdetails.html:167
+#: site/apps/billing/invoicing/flinvoicingdetails.html:186
+#: site/apps/billing/invoicing/flinvoicingdetails.html:244
 msgid "Date"
 msgstr "Datum"
 
 #: domains/enduser/frontend/components/states.config.js:202
 #: site/apps/billing/services/services.html:22
 #: site/apps/billing/services/services.html:45
-#: site/apps/operations/states.config.js:42
-#: site/apps/operations/states.config.js:45
+#: site/apps/operations/states.config.js:53
+#: site/apps/operations/states.config.js:56
 #: site/apps/osclusters/states.config.js:56
 #: site/apps/osclustertemplates/states.config.js:55
 #: site/apps/osimages/states.config.js:57
@@ -2214,7 +2393,7 @@ msgstr "Dag"
 msgid "Deactivate"
 msgstr "Avaktivera"
 
-#: site/apps/osimages/update/flimageupdate.html:130
+#: site/apps/osimages/update/flimageupdate.html:132
 msgid "Deactivate image"
 msgstr "Deaktivera image"
 
@@ -2226,7 +2405,7 @@ msgstr "Inaktivera återkommande betalningar för {{name}}"
 #: site/apps/billing/cart/cart.html:45 site/apps/billing/cart/cart.html:80
 #: site/apps/floatingips/flfloatingipdetails.component.js:27
 #: site/apps/floatingips/flfloatingips.component.js:38
-#: site/apps/networks/flnetworkdetails.component.js:27
+#: site/apps/networks/flnetworkdetails.component.js:28
 #: site/apps/networks/flnetworks.component.js:36
 #: site/apps/networks/flnetworks.html:138
 #: site/apps/osapiusers/flapiusers.component.js:23
@@ -2238,14 +2417,16 @@ msgstr "Inaktivera återkommande betalningar för {{name}}"
 #: site/apps/osimages/flimagedetails.component.js:32
 #: site/apps/osimages/flimages.component.js:34
 #: site/apps/osimages/flimages.html:232
-#: site/apps/osimages/update/flimageupdate.html:211
+#: site/apps/osimages/update/flimageupdate.html:213
 #: site/apps/osinstances/actions/flinstanceactions.directive.js:30
 #: site/apps/osinstances/actions/flinstanceactions.html:136
 #: site/apps/osinstances/actions/flxsinstanceactions.html:138
 #: site/apps/osinstances/actions/flxsinstanceactions.html:49
-#: site/apps/osinstances/flinstancedetail.component.js:386
+#: site/apps/osinstances/flinstancedetail.component.js:408
+#: site/apps/osports/flportdetails.component.js:26
+#: site/apps/osports/flports.component.js:30 site/apps/osports/flports.html:170
 #: site/apps/osrouters/flrouterdetails.html:18
-#: site/apps/osrouters/flrouterdetails.html:71
+#: site/apps/osrouters/flrouterdetails.html:83
 #: site/apps/osrouters/flrouters.html:105 site/apps/osrouters/flrouters.html:48
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:32
 #: site/apps/ossecuritygroups/flsecuritygroups.component.js:42
@@ -2267,15 +2448,15 @@ msgstr "Radera"
 msgid "Delete Contact"
 msgstr "Radera kontakt"
 
-#: site/apps/osinstances/flinstancedetail.component.js:476
+#: site/apps/osinstances/flinstancedetail.component.js:498
 msgid "Delete IP"
 msgstr "Radera IP"
 
-#: site/apps/osinstances/flinstancedetail.component.js:475
+#: site/apps/osinstances/flinstancedetail.component.js:497
 msgid "Delete IP {{ip}}"
 msgstr "Radera IP {{ip}}"
 
-#: site/apps/osinstances/flinstancedetail.component.js:384
+#: site/apps/osinstances/flinstancedetail.component.js:406
 msgid "Delete backup schedule {{name}}"
 msgstr "Ta bort backupschema {{name}}"
 
@@ -2341,22 +2522,30 @@ msgstr "Ta bort nyckel"
 msgid "Delete key {{name}}"
 msgstr "Radera nyckel {{name}}"
 
-#: site/apps/networks/flnetworkdetails.component.js:72
+#: site/apps/networks/flnetworkdetails.component.js:73
 #: site/apps/networks/flnetworks.component.js:172
 msgid "Delete network"
 msgstr "Radera nätverk"
 
-#: site/apps/networks/flnetworkdetails.component.js:71
+#: site/apps/networks/flnetworkdetails.component.js:72
 #: site/apps/networks/flnetworks.component.js:171
 msgid "Delete network {{name}}"
 msgstr "Radera nätverket {{name}}"
 
 #: site/apps/osinstances/flinstancedetail.component.js:33
-#: site/apps/osinstances/flinstancedetail.component.js:579
+#: site/apps/osinstances/flinstancedetail.component.js:633
+#: site/apps/osports/flportdetails.component.js:49
+#: site/apps/osports/flports.component.js:44
 msgid "Delete port"
 msgstr "Radera port"
 
-#: site/apps/osinstances/flinstancedetail.component.js:578
+#: site/apps/osports/flportdetails.component.js:48
+#: site/apps/osports/flports.component.js:43
+#| msgid "Delete port {{port_name}}"
+msgid "Delete port {{name}}"
+msgstr "Radera port {{name}}"
+
+#: site/apps/osinstances/flinstancedetail.component.js:632
 msgid "Delete port {{port_name}}"
 msgstr "Radera port {{port_name}}"
 
@@ -2388,7 +2577,7 @@ msgstr "Radera regel"
 msgid "Delete rule {{rule}}"
 msgstr "Radera regel {{regel}}"
 
-#: site/apps/osinstances/flinstancedetail.html:601
+#: site/apps/osinstances/flinstancedetail.html:617
 msgid "Delete schedule"
 msgstr "Radera schema"
 
@@ -2402,11 +2591,11 @@ msgstr "Radera säkerhetsgruppen"
 msgid "Delete security group {{name}}"
 msgstr "Radera säkerhetsgruppen {{name}}"
 
-#: site/apps/networks/flnetworkdetails.component.js:151
+#: site/apps/networks/flnetworkdetails.component.js:152
 msgid "Delete subnet"
 msgstr "Ta bort subnät"
 
-#: site/apps/networks/flnetworkdetails.component.js:150
+#: site/apps/networks/flnetworkdetails.component.js:151
 msgid "Delete subnet {{subnet}}"
 msgstr "Radera subnät {{subnet}}"
 
@@ -2464,16 +2653,18 @@ msgid "Department"
 msgstr "Avdelning"
 
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:44
-#| msgid "{{$ctrl.item.display}}"
 msgid "Department: {{$ctrl.ticket.department_display}}"
 msgstr "Avdelning: {{$ctrl.ticket.department_display}}"
 
 #: site/apps/billing/cart/cart.html:61
+#: site/apps/billing/invoicing/flinvoicingdetails.html:85
 #: site/apps/floatingips/flfloatingipadd.html:33
 #: site/apps/networks/flnetworkadd.html:21
 #: site/apps/networks/flnetworkedit.html:17
 #: site/apps/networks/flnetworks.html:63
 #: site/apps/osapiusers/flapiuseredit.html:30
+#: site/apps/osports/create/flportcreate.html:146
+#: site/apps/osports/edit/flportedit.html:49
 #: site/apps/osrouters/flrouteredit.html:35
 #: site/apps/osrouters/flrouters.html:36 site/apps/osrouters/flrouters.html:68
 #: site/apps/ossecuritygroups/flsecuritygroupedit.html:35
@@ -2490,13 +2681,15 @@ msgstr "Beskrivning"
 msgid "Description: {{ $ctrl.floatingIp.description }}"
 msgstr "Beskrivning: {{ $ctrl.floatingIp.description }}"
 
-#: site/apps/networks/flnetworkdetails.html:43
-msgid ""
-"Description: {{ $ctrl.network.description\n"
-"            }}"
-msgstr ""
-"Beskrivning: {{ $ctrl.network.description\n"
-"            }}"
+#: site/apps/networks/flnetworkdetails.html:54
+#| msgid "Description: {{ $ctrl.zone.description }}"
+msgid "Description: {{ $ctrl.network.description }}"
+msgstr "Beskrivning: {{ $ctrl.network.description }}"
+
+#: site/apps/osports/flportdetails.html:56
+#| msgid "Description: {{ $ctrl.zone.description }}"
+msgid "Description: {{ $ctrl.port.description }}"
+msgstr "Beskrivning: {{ $ctrl.port.description }}"
 
 #: site/apps/oszones/flzonedetails.html:36
 msgid "Description: {{ $ctrl.zone.description }}"
@@ -2526,8 +2719,8 @@ msgstr ""
 msgid "Description: {{::$ctrl.serviceDetails.product.description }}"
 msgstr "Beskrivning: {{::$ctrl.serviceDetails.product.description }}"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:122
-#: site/apps/billing/invoicing/flinvoicingdetails.html:200
+#: site/apps/billing/invoicing/flinvoicingdetails.html:198
+#: site/apps/billing/invoicing/flinvoicingdetails.html:277
 msgid "Destination"
 msgstr "Destination"
 
@@ -2536,21 +2729,63 @@ msgstr "Destination"
 msgid "Destination (CIDR)"
 msgstr "Destination (CIDR)"
 
-#: site/apps/osinstances/flinstancedetail.component.js:36
+#: site/apps/osrouters/flrouterdetails.html:53
+msgid "Destination: {{ route.destination }} - NextHop: {{ route.nexthop }}"
+msgstr "Destination: {{ route.destination }} - Nästa hopp: {{ route.nexthop }}"
+
+#: site/apps/osinstances/flinstancedetail.component.js:34
+#: site/apps/osinstances/flinstancedetail.component.js:617
+msgid "Detach port"
+msgstr "Koppla ur port"
+
+#: site/apps/osinstances/flinstancedetail.component.js:616
+#| msgid "Delete port {{port_name}}"
+msgid "Detach port {{port_name}}"
+msgstr "Koppla ur port {{port_name}}"
+
+#: site/apps/osinstances/flinstancedetail.component.js:37
 msgid "Detach volume"
 msgstr "Koppla bort volymen"
 
-#: site/apps/osinstances/flinstancedetail.component.js:220
+#: site/apps/osinstances/flinstancedetail.component.js:224
 msgid "Detach volume {{volume_name}}"
 msgstr "Koppla bort volym {{volume_name}}"
 
-#: site/apps/osinstances/flinstancedetail.component.js:221
+#: site/apps/osports/flports.html:119
+msgid "Detached"
+msgstr "Bortkopplad"
+
+#: site/apps/osinstances/flinstancedetail.component.js:225
 msgid "Detaching volume from instance"
 msgstr "Koppla bort volym från instans"
 
 #: site/apps/billing/history/billinghistory.html:114
 msgid "Details"
 msgstr "Detaljer"
+
+#: site/apps/osports/flportdetails.html:37
+#| msgid "Port id: {{ $ctrl.floatingIp.port.id }}"
+msgid "Device id: {{ $ctrl.port.device_id }}"
+msgstr "Enhets-id: {{ $ctrl.port.device_id }}"
+
+#: site/apps/osports/flports.html:74
+msgid "Device owner"
+msgstr "Enhetsägare"
+
+#: site/apps/osports/flports.html:31
+msgid ""
+"Device owner:\n"
+"                    <span ng-if=\"port.device_owner\">{{ port.device_owner }}"
+"</span><span ng-if=\"!port.device_owner\">Detached</span>"
+msgstr ""
+"Portägare:\n"
+"                    <span ng-if=\"port.device_owner\">{{ port.device_owner }}"
+"</span><span ng-if=\"!port.device_owner\">Bortkopplad</span>"
+
+#: site/apps/osports/flportdetails.html:40
+#| msgid "Region: {{ $ctrl.network.region }}"
+msgid "Device owner: {{ $ctrl.port.device_owner }}"
+msgstr "Enhetsägare: {{ $ctrl.port.device_owner }}"
 
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:56
 #: site/apps/ossecuritygroups/flsecuritygrouprulecreate.html:26
@@ -2564,8 +2799,8 @@ msgstr "Inaktivera SMS-autentiserare"
 
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:72
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:73
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:52
 #: site/apps/osclustertemplates/flclustertemplatedetails.component.html:53
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:54
 msgid "Disable TLS"
 msgstr "Inaktivera TLS"
 
@@ -2574,15 +2809,15 @@ msgstr "Inaktivera TLS"
 msgid "Disable google authenticator"
 msgstr "Inaktivera google authenticator"
 
-#: site/apps/osinstances/flinstancedetail.component.js:344
+#: site/apps/osinstances/flinstancedetail.component.js:366
 msgid "Disassociate IP scheduled"
 msgstr "Tar bort IP-adress..."
 
-#: site/apps/osinstances/flinstancedetail.component.js:338
+#: site/apps/osinstances/flinstancedetail.component.js:360
 msgid "Disassociate floating IP"
 msgstr "Ta bort floating IP"
 
-#: site/apps/osinstances/flinstancedetail.component.js:337
+#: site/apps/osinstances/flinstancedetail.component.js:359
 msgid "Disassociate floating IP {{ip_address}}"
 msgstr "Ta bort floating IP {{ip_address}}"
 
@@ -2590,7 +2825,7 @@ msgstr "Ta bort floating IP {{ip_address}}"
 msgid "Discovery URL"
 msgstr "Discovery-URL"
 
-#: site/apps/osclusters/flclusterdetails.component.html:80
+#: site/apps/osclusters/flclusterdetails.component.html:83
 msgid ""
 "Discovery URL:\n"
 "                    <a ng-href=\"{{$ctrl.cluster.discovery_url}}\" class="
@@ -2626,26 +2861,32 @@ msgstr "Deallokera IP"
 msgid "Dissociate IP from instance {{ $ctrl.instance.name }}"
 msgstr "Deallokera IP från instans {{ $ctrl.instance.name }}"
 
-#: site/apps/osinstances/flinstancedetail.component.js:35
+#: site/apps/osinstances/flinstancedetail.component.js:36
 msgid "Dissociate floating IP"
 msgstr "Deallokera floating IP"
 
-#: site/apps/osinstances/flinstancedetail.component.js:322
-#: site/apps/osinstances/flinstancedetail.component.js:37
+#: site/apps/osinstances/flinstancedetail.component.js:344
+#: site/apps/osinstances/flinstancedetail.component.js:38
 msgid "Dissociate security group"
 msgstr "Deallokera säkerhetsgruppen"
 
-#: site/apps/osinstances/flinstancedetail.component.js:328
+#: site/apps/osinstances/flinstancedetail.component.js:350
 msgid "Dissociate security group scheduled"
 msgstr "Deallokerar säkerhetsgrupp..."
 
-#: site/apps/osinstances/flinstancedetail.component.js:320
+#: site/apps/osinstances/flinstancedetail.component.js:342
 msgid "Dissociate security group {{sec_group}} from instance {{instance}}"
 msgstr "Deallokera säkerhetsgruppen {{sec_group}} från instansen {{instansen}}"
 
-#: site/apps/osrouters/flrouterdetails.html:36
-msgid "Distributed: {{ $ctrl.router.distributed }}"
-msgstr "Distribuerad: {{$ctrl.router.distribution}}"
+#: site/apps/osrouters/flrouterdetails.html:42
+msgid ""
+"Distributed:\n"
+"            <span ng-if=\"$ctrl.router.distributed\">true</span>\n"
+"            <span ng-if=\"!$ctrl.router.distributed\">false</span>"
+msgstr ""
+"Distribuerad:\n"
+"            <span ng-if=\"$ctrl.router.distributed\">JA</span>\n"
+"            <span ng-if=\"!$ctrl.router.distributed\">NEJ</span>"
 
 #: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:42
 msgid "Dns management"
@@ -2664,7 +2905,7 @@ msgstr "Ställ inte gateway IP"
 msgid "Docker storage driver"
 msgstr "Docker-lagringsdrivrutin"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:72
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:73
 msgid "Docker storage driver: {{$ctrl.clusterTemplate.docker_storage_driver}}"
 msgstr ""
 "Docker-lagringsdrivrutin: {{$ctrl.clusterTemplate.docker_storage_driver}}"
@@ -2674,7 +2915,7 @@ msgstr ""
 msgid "Docker volume size (GB)"
 msgstr "Dockervolymstorlek (GB)"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:73
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:74
 msgid "Docker volume size (GB): {{$ctrl.clusterTemplate.docker_volume_size}}"
 msgstr "Dockervolymstorlek (GB): {{$ctrl.clusterTemplate.docker_volume_size}}"
 
@@ -2734,7 +2975,7 @@ msgstr "Slutfört"
 msgid "Download"
 msgstr "Ladda ner"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:218
+#: site/apps/billing/invoicing/flinvoicingdetails.html:295
 msgid "Download PDF"
 msgstr "Ladda ner PDF"
 
@@ -2831,12 +3072,21 @@ msgstr "Redigera image"
 msgid "Edit image {:name}"
 msgstr "Redigera image {: name}"
 
-#: site/apps/networks/flnetworkdetails.component.js:28
+#: site/apps/networks/flnetworkdetails.component.js:29
 #: site/apps/networks/flnetworkedit.html:4
 #: site/apps/networks/flnetworks.component.js:37
 #: site/apps/networks/flnetworks.html:126
 msgid "Edit network"
 msgstr "Redigera nätverk"
+
+#: site/apps/osports/states.config.js:164
+msgid "Edit port"
+msgstr "Redigera port"
+
+#: site/apps/osports/states.config.js:163
+#| msgid "Edit image {:name}"
+msgid "Edit port {:name}"
+msgstr "Redigera port {:name}"
 
 #: commons/userprofile/states.config.js:32
 msgid "Edit profile"
@@ -2854,7 +3104,7 @@ msgstr "Redigera routern"
 msgid "Edit security group"
 msgstr "Redigera säkerhetsgruppen"
 
-#: site/apps/networks/flnetworkdetails.html:118
+#: site/apps/networks/flnetworkdetails.html:136
 msgid "Edit subnet"
 msgstr "Redigera subnät"
 
@@ -2871,7 +3121,6 @@ msgid "Edit ticket"
 msgstr "Redigera ärende"
 
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:6
-#| msgid "Edit {{$ctrl.client.name}}"
 msgid "Edit ticket {{$ctrl.ticket.id}}"
 msgstr "Redigera ärende {{$ctrl.ticket.id}}"
 
@@ -2890,7 +3139,6 @@ msgid "Edit {{$ctrl.client.name}}"
 msgstr "Redigera {{$ctrl.client.name}}"
 
 #: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:3
-#| msgid "Edit {{$ctrl.client.name}}"
 msgid "Edit {{::$ctrl.contact.first_name}}"
 msgstr "Redigera {{::$ctrl.contact.first_name}}"
 
@@ -2947,9 +3195,22 @@ msgstr "Aktivera ID-skydd för denna domän"
 msgid "Enable SMS authenticator"
 msgstr "Aktivera SMS-autentiserare"
 
-#: site/apps/osrouters/flrouterdetails.html:35
-msgid "Enable SNAT: {{ $ctrl.router.enable_snat }}"
-msgstr "Aktivera SNAT: {{ $ctrl.router.enable_snat }}"
+#: site/apps/osrouters/flrouterdetails.html:38
+msgid ""
+"Enable SNAT:\n"
+"            <span ng-if=\"$ctrl.router.enable_snat\">true</span>\n"
+"            <span ng-if=\"!$ctrl.router.enable_snat\">false</span>"
+msgstr ""
+"Aktivera SNAT:\n"
+"            <span ng-if=\"$ctrl.router.enable_snat\">JA</span>\n"
+"            <span ng-if=\"!$ctrl.router.enable_snat\">NEJ</span>"
+
+#: site/apps/osports/create/flportcreate.html:26
+#: site/apps/osports/create/flportcreate.html:27
+#: site/apps/osports/edit/flportedit.html:26
+#: site/apps/osports/edit/flportedit.html:27
+msgid "Enable admin state"
+msgstr "Aktivera admin state"
 
 #: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:41
 msgid "Enable dns management for this domain"
@@ -2965,8 +3226,8 @@ msgstr "Aktivera google authenticator"
 
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:64
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:65
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:43
 #: site/apps/osclustertemplates/flclustertemplatedetails.component.html:44
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:45
 msgid "Enable registry"
 msgstr "Aktivera register"
 
@@ -3014,6 +3275,10 @@ msgstr "Ange kod"
 msgid "Enter domain name"
 msgstr "Ange domännamn"
 
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:16
+msgid "Enter one port or port range as such: port_min:port_max"
+msgstr "Fyll i en port eller portintervall inom: port_min:port_max"
+
 #: commons/SFA/confirm_password/fl-sfa-confirm-password.template.html:27
 msgid "Enter password"
 msgstr "Ange lösenord"
@@ -3050,7 +3315,7 @@ msgstr "Fel uppstod vid validering av domän"
 msgid "Error when trying to update profile."
 msgstr "Fel vid försök att uppdatera profilen."
 
-#: site/apps/osinstances/flinstancedetail.component.js:229
+#: site/apps/osinstances/flinstancedetail.component.js:233
 msgid "Error while detaching"
 msgstr "Fel vid bortkoppling"
 
@@ -3097,20 +3362,24 @@ msgstr "Val av externt nätverk"
 msgid "External network: {{ $ctrl.router.network_name }}"
 msgstr "Externt nätverk: {{ $ctrl.router.network_name }}"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:88
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:89
 msgid "External network: {{$ctrl.clusterTemplate.external_network_id}}"
 msgstr "Externt nätverk: {{$ctrl.clusterTemplate.external_network_id}}"
+
+#: site/apps/osports/flportdetails.html:73
+msgid "Extra:"
+msgstr "Extra:"
 
 #: commons/messages/errormessages.html:5 commons/messages/ngmessages.html:1
 msgid "Field is required"
 msgstr "Obligatoriskt fält"
 
-#: site/apps/osimages/create/flimagecreate.html:166
+#: site/apps/osimages/create/flimagecreate.html:168
 msgid "File"
 msgstr "Fil"
 
-#: site/apps/osimages/create/flimagecreate.component.js:107
-msgid "File to large, contact support."
+#: site/apps/osimages/create/flimagecreate.component.js:112
+msgid "File too large, contact support."
 msgstr "Filen är för stor, kontakta support."
 
 #: commons/messages/errormessages.html:6 commons/messages/ngmessages.html:2
@@ -3179,7 +3448,7 @@ msgstr "Förnamn"
 msgid "First nameserver"
 msgstr "Första namnserver"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:51
+#: site/apps/billing/invoicing/flinvoicingdetails.html:52
 msgid "Fiscal invoice due date"
 msgstr "Betalningsdatum för faktura"
 
@@ -3187,9 +3456,29 @@ msgstr "Betalningsdatum för faktura"
 msgid "Fiscal invoice issue date"
 msgstr "Fakturadatum"
 
-#: site/apps/osrouters/flrouterdetails.html:68
+#: site/apps/osrouters/flrouterdetails.html:80
 msgid "Fixed IP"
 msgstr "Fast IP"
+
+#: site/apps/osports/create/flportcreate.html:67
+msgid "Fixed IP Address"
+msgstr "Statisk IP-adress"
+
+#: site/apps/osports/create/flportcreate.html:73
+msgid "Fixed IP address"
+msgstr "Statisk IP-adress"
+
+#: site/apps/osports/flportdetails.html:61 site/apps/osports/flports.html:72
+msgid "Fixed IPs"
+msgstr "Fast IP"
+
+#: site/apps/osports/flports.html:25
+msgid ""
+"Fixed IPs: {{  port.fixed_ips.length ? port.fixed_ips[0].ip_address : '' }}"
+"<span ng-if=\"port.fixed_ips.length > 1\">, ...</span>"
+msgstr ""
+"Statiska IP: {{  port.fixed_ips.length ? port.fixed_ips[0].ip_address : '' }}"
+"<span ng-if=\"port.fixed_ips.length > 1\">, ...</span>"
 
 #: site/apps/floatingips/flfloatingipdetails.html:29
 msgid "Fixed ip address: {{ $ctrl.floatingIp.fixed_ip_address }}"
@@ -3199,7 +3488,7 @@ msgstr "Fast ip-adress: {{ $ctrl.floatingIp.fixed_ip_address }}"
 msgid "Fixed network"
 msgstr "Fast nätverk"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:92
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:93
 msgid ""
 "Fixed network: {{$ctrl.clusterTemplate.fixed_network ? $ctrl.clusterTemplate."
 "fixed_network : '-'}}"
@@ -3211,7 +3500,7 @@ msgstr ""
 msgid "Fixed subnet"
 msgstr "Fast subnät"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:97
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:98
 msgid ""
 "Fixed subnet: {{$ctrl.clusterTemplate.fixed_subnet ? $ctrl.clusterTemplate."
 "fixed_subnet : '-'}}"
@@ -3219,16 +3508,16 @@ msgstr ""
 "Fast subnät: {{$ctrl.clusterTemplate.fixed_subnet ? $ctrl.clusterTemplate."
 "fixed_subnet : '-'}}"
 
-#: site/apps/osinstances/flinstances.html:68
+#: site/apps/osinstances/flinstances.html:70
 msgid "Flavor"
 msgstr "Instanstyp"
 
-#: oscommons/flavorsascards/flavorsascards.component.html:38
-#: oscommons/flavorsascards/flavorsascards.component.html:76
+#: oscommons/flavorsascards/flavorsascards.component.html:45
+#: oscommons/flavorsascards/flavorsascards.component.html:84
 msgid "Flavor is out of stock"
 msgstr "Det finns inte resurser nog för instanstypen"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:67
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:68
 msgid "Flavor: {{$ctrl.clusterTemplate.flavor_id}}"
 msgstr "Instanstyp: {{$ctrl.clusterTemplate.flavor_id}}"
 
@@ -3239,8 +3528,8 @@ msgstr "Instanstyp: {{$ctrl.instance.flavor.name }}"
 #: site/apps/floatingips/flfloatingips.html:1
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:387
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:388
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:156
 #: site/apps/osclustertemplates/flclustertemplatedetails.component.html:157
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:158
 msgid "Floating IP"
 msgstr "Floating IP"
 
@@ -3261,10 +3550,10 @@ msgstr "Floating IP aktiverat"
 msgid "Floating IP {:floating_ip_address}"
 msgstr "Floating IP {:floating_ip_address}"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:36
+#: site/apps/baseconfig/fleio.baseconfig.module.js:37
 #: site/apps/floatingips/states.config.js:36
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:11
-#: site/apps/osinstances/flinstancedetail.html:407
+#: site/apps/osinstances/flinstancedetail.html:416
 msgid "Floating IPs"
 msgstr "Floating IPs"
 
@@ -3315,8 +3604,8 @@ msgstr "Fredag"
 msgid "Gateway"
 msgstr "Gateway"
 
-#: site/apps/networks/flnetworkdetails.html:111
-#: site/apps/networks/flnetworkdetails.html:59
+#: site/apps/networks/flnetworkdetails.html:129
+#: site/apps/networks/flnetworkdetails.html:77
 msgid "Gateway IP"
 msgstr "Gateway IP"
 
@@ -3427,7 +3716,7 @@ msgstr ""
 msgid "Greater than"
 msgstr "Större än"
 
-#: site/apps/osinstances/flinstancedetail.html:505
+#: site/apps/osinstances/flinstancedetail.html:521
 msgid "Group: {{::security_group.name }}"
 msgstr "Grupp: {{::security_group.name }}"
 
@@ -3435,7 +3724,7 @@ msgstr "Grupp: {{::security_group.name }}"
 msgid "HARD REBOOT"
 msgstr "HÅRD OMSTART"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:107
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:108
 msgid ""
 "HTTP proxy: {{$ctrl.clusterTemplate.http_proxy ? $ctrl.clusterTemplate."
 "http_proxy : '-'}}"
@@ -3443,7 +3732,7 @@ msgstr ""
 "HTTP proxy: {{$ctrl.clusterTemplate.http_proxy ? $ctrl.clusterTemplate."
 "http_proxy : '-'}}"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:116
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:117
 msgid ""
 "HTTPS proxy: {{$ctrl.clusterTemplate.https_proxy ? $ctrl.clusterTemplate."
 "https_proxy : '-'}}"
@@ -3464,7 +3753,7 @@ msgstr ""
 msgid "Has snapshots"
 msgstr "Har snapshots"
 
-#: site/apps/osclusters/flclusterdetails.component.html:88
+#: site/apps/osclusters/flclusterdetails.component.html:91
 msgid "Health status: {{$ctrl.cluster.health_status}}"
 msgstr "Hälsostatus: {{$ctrl.cluster.health_status}}"
 
@@ -3484,9 +3773,15 @@ msgstr ""
 msgid "Hide"
 msgstr "Dölj"
 
-#: site/apps/osrouters/flrouterdetails.html:37
-msgid "High availability: {{ $ctrl.router.ha }}"
-msgstr "High availability: {{ $ctrl.router.ha }}"
+#: site/apps/osrouters/flrouterdetails.html:46
+msgid ""
+"High availability:\n"
+"            <span ng-if=\"$ctrl.router.ha\">true</span>\n"
+"            <span ng-if=\"!$ctrl.router.ha\">false</span>"
+msgstr ""
+"High availability:\n"
+"            <span ng-if=\"$ctrl.router.ha\">JA</span>\n"
+"            <span ng-if=\"!$ctrl.router.ha\">NEJ</span>"
 
 #: site/apps/osinstances/flinstancedetail.html:328
 msgid "History log"
@@ -3495,7 +3790,7 @@ msgstr "Historiklogg"
 #: commons/customfields/flfieldinput.html:31
 #: commons/userprofile/fledituserprofile.html:71
 #: commons/userprofile/fledituserprofile.html:93
-#: site/apps/osinstances/create/flinstancecreate.html:222
+#: site/apps/osinstances/create/flinstancecreate.html:223
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:97
 msgid "Hold button to reveal password"
 msgstr "Håll in knappen för att visa lösenordet"
@@ -3568,6 +3863,11 @@ msgstr "ID-skydd aktiverat"
 msgid "ID: {{ $ctrl.image.id }}"
 msgstr "ID: {{ $ctrl.image.id }}"
 
+#: site/apps/osports/flportdetails.html:31
+#| msgid "ID: {{ ::$ctrl.router.id }}"
+msgid "ID: {{ $ctrl.port.id }}"
+msgstr "ID: {{ $ctrl.port.id }}"
+
 #: site/apps/osvolumes/flvolumedetails.html:24
 msgid "ID: {{ $ctrl.volume.id }}"
 msgstr "ID: {{ $ctrl.volume.id }}"
@@ -3604,6 +3904,30 @@ msgstr "ID: {{::$ctrl.securityGroup.id }}"
 msgid "ID: {{cluster.id}}"
 msgstr "ID: {{cluster.id}}"
 
+#: oscommons/osfilters/flinstancestatus.filter.js:73
+msgid "IMAGE BACKUP"
+msgstr "IMAGE BACKUP"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:71
+msgid "IMAGE PENDING UPLOAD"
+msgstr "IMAGE UPPLADDNING FÖRBEREDS"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:69
+msgid "IMAGE SNAPSHOT"
+msgstr "IMAGE SNAPSHOT"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:70
+msgid "IMAGE SNAPSHOT PENDING"
+msgstr "IMAGE SNAPSHOT FÖRBEREDS"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:72
+msgid "IMAGE UPLOADING"
+msgstr "LADDAR UP IMAGE"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:106
+msgid "IN USE"
+msgstr "ANVÄNDS"
+
 #: site/apps/osinstances/addip/flinstanceaddip.html:39
 #: site/apps/osrouters/flinterfaceadd.html:19
 msgid "IP"
@@ -3619,6 +3943,11 @@ msgstr "IP-adresser"
 #: site/apps/osinstances/addport/flinstanceaddport.html:31
 msgid "IP address"
 msgstr "IP-adress"
+
+#: site/apps/osports/create/flportcreate.html:58
+#| msgid "IPv6 address mode"
+msgid "IP address or subnet"
+msgstr "IP adress eller subnät"
 
 #: site/apps/osinstances/associateip/flinstanceassociateip.controller.js:29
 msgid "IP associated"
@@ -3674,7 +4003,7 @@ msgstr ""
 msgid "Image"
 msgstr "Image"
 
-#: site/apps/osimages/create/flimagecreate.component.js:90
+#: site/apps/osimages/create/flimagecreate.component.js:99
 msgid "Image create scheduled"
 msgstr "Skapar image..."
 
@@ -3730,7 +4059,7 @@ msgstr ""
 "Välj en instanstyp med mer resurser\n"
 "eller använd en annan image."
 
-#: site/apps/osimages/create/flimagecreate.html:163
+#: site/apps/osimages/create/flimagecreate.html:165
 msgid "Image source"
 msgstr "Imagekälla"
 
@@ -3751,7 +4080,7 @@ msgstr ""
 "Image:\n"
 "                  {{::$ctrl.instance.image.name}}"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:65
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:66
 msgid "Image: {{$ctrl.clusterTemplate.image_id}}"
 msgstr "Image: {{$ctrl.clusterTemplate.image_id}}"
 
@@ -3786,7 +4115,7 @@ msgstr ""
 
 #: site/apps/osclusters/flclusterdetails.component.html:24
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:10
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:20
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:21
 #: site/apps/osinstances/flinstancedetail.html:31
 #: site/apps/osvolumes/flvolumedetails.html:18
 msgid "Info"
@@ -3796,7 +4125,7 @@ msgstr "Info"
 msgid "Ingress - Incoming"
 msgstr "Ingress - Inkommande"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:75
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:76
 msgid ""
 "Insecure registry: {{$ctrl.clusterTemplate.insecure_registry ? $ctrl."
 "clusterTemplate.insecure_registry : '-'}}"
@@ -3817,7 +4146,7 @@ msgstr "Instansens UUID: {{::$ctrl.instance.uuid }}"
 msgid "Instance boot from ISO scheduled"
 msgstr "Startar instans från ISO..."
 
-#: site/apps/osinstances/create/flinstancecreate.component.js:457
+#: site/apps/osinstances/create/flinstancecreate.component.js:458
 msgid "Instance create scheduled"
 msgstr "Skapar instans..."
 
@@ -3884,7 +4213,7 @@ msgstr "Instanser"
 msgid "Interface delete scheduled"
 msgstr "Raderar interface..."
 
-#: site/apps/osrouters/flrouterdetails.html:62
+#: site/apps/osrouters/flrouterdetails.html:74
 msgid "Interfaces"
 msgstr "Gränssnitt"
 
@@ -3908,7 +4237,7 @@ msgstr "Faktura"
 msgid "Invoice details"
 msgstr "Fakturainformation"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:54
+#: site/apps/baseconfig/fleio.baseconfig.module.js:55
 #: site/apps/billing/invoicing/states.config.js:32
 msgid "Invoices"
 msgstr "Fakturor"
@@ -3917,8 +4246,8 @@ msgstr "Fakturor"
 msgid "Invoicing feature is disabled"
 msgstr "Fakturafunktionen är inaktiverad"
 
-#: site/apps/networks/flnetworkdetails.html:107
-#: site/apps/networks/flnetworkdetails.html:58
+#: site/apps/networks/flnetworkdetails.html:125
+#: site/apps/networks/flnetworkdetails.html:76
 msgid "Ip version"
 msgstr "IP-version"
 
@@ -3956,11 +4285,11 @@ msgstr "Fakturadatum"
 msgid "Issue date: {{::invoice.issue_date | date }}"
 msgstr "Fakturadatum: {{::invoice.issue_date | date }}"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:74
+#: site/apps/billing/invoicing/flinvoicingdetails.html:78
 msgid "Items"
 msgstr "Artiklar"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:104
+#: site/apps/billing/invoicing/flinvoicingdetails.html:180
 msgid "Journal"
 msgstr "Journal"
 
@@ -3973,11 +4302,11 @@ msgstr "SSH-nyckelinnehåll"
 msgid "Keypair"
 msgstr "Nyckelpar"
 
-#: site/apps/osclusters/flclusterdetails.component.html:85
+#: site/apps/osclusters/flclusterdetails.component.html:88
 msgid "Keypair: {{$ctrl.cluster.keypair}}"
 msgstr "Keypair: {{$ctrl.cluster.keypair}}"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:66
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:67
 msgid "Keypair: {{$ctrl.clusterTemplate.keypair_id}}"
 msgstr "Keypair: {{$ctrl.clusterTemplate.keypair_id}}"
 
@@ -3987,10 +4316,10 @@ msgstr "Kubernetes"
 
 #: site/apps/osclusters/create/flclustercreate.component.html:178
 #: site/apps/osclusters/create/flclustercreate.component.html:183
-#: site/apps/osclusters/flclusterdetails.component.html:93
+#: site/apps/osclusters/flclusterdetails.component.html:96
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:393
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:398
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:163
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:164
 msgid "Labels"
 msgstr "Etiketter"
 
@@ -4005,7 +4334,7 @@ msgstr "Språk"
 msgid "Last Name"
 msgstr "Efternamn"
 
-#: site/apps/osinstances/flinstancedetail.component.js:65
+#: site/apps/osinstances/flinstancedetail.component.js:69
 msgid "Last hour"
 msgstr "Senaste timmen"
 
@@ -4049,14 +4378,15 @@ msgstr "Listvy"
 #: site/apps/osclustertemplates/flclustertemplates.component.html:104
 #: site/apps/osclustertemplates/flclustertemplates.component.html:45
 #: site/apps/osimages/flimages.html:248 site/apps/osimages/flimages.html:83
-#: site/apps/osinstances/flinstances.html:149
-#: site/apps/osinstances/flinstances.html:53
-#: site/apps/osrouters/flrouters.html:121 site/apps/osrouters/flrouters.html:58
+#: site/apps/osinstances/flinstances.html:151
+#: site/apps/osinstances/flinstances.html:55 site/apps/osports/flports.html:186
+#: site/apps/osports/flports.html:63 site/apps/osrouters/flrouters.html:121
+#: site/apps/osrouters/flrouters.html:58
 #: site/apps/ossecuritygroups/flsecuritygroups.html:125
 #: site/apps/ossecuritygroups/flsecuritygroups.html:57
 #: site/apps/osvolumebackups/flvolumebackups.html:144
 #: site/apps/osvolumebackups/flvolumebackups.html:51
-#: site/apps/osvolumes/flvolumes.html:127 site/apps/osvolumes/flvolumes.html:48
+#: site/apps/osvolumes/flvolumes.html:129 site/apps/osvolumes/flvolumes.html:48
 #: site/apps/osvolumesnapshots/flvolumesnapshots.html:128
 #: site/apps/osvolumesnapshots/flvolumesnapshots.html:49
 #: site/apps/oszones/flzones.html:118 site/apps/oszones/flzones.html:55
@@ -4081,7 +4411,18 @@ msgstr "Logga in"
 msgid "Login page"
 msgstr "Login sida"
 
+#: site/apps/osports/create/flportcreate.html:111
+#: site/apps/osports/flports.html:73
+msgid "MAC address"
+msgstr "MAC-adress"
+
+#: site/apps/osports/flportdetails.html:36
+#| msgid "API Address: {{$ctrl.cluster.api_address}}"
+msgid "MAC address: {{ $ctrl.port.mac_address }}"
+msgstr "MAC-adress: {{ $ctrl.port.mac_address }}"
+
 #: oscommons/osfilters/flinstancestatus.filter.js:27
+#: oscommons/osfilters/flinstancestatus.filter.js:99
 msgid "MIGRATING"
 msgstr "MIGRERAR"
 
@@ -4106,7 +4447,7 @@ msgstr "Markera alla som lästa"
 msgid "Mark as unread"
 msgstr "Markera som oläst"
 
-#: site/apps/osclusters/flclusterdetails.component.html:56
+#: site/apps/osclusters/flclusterdetails.component.html:59
 msgid ""
 "Master Addresses:\n"
 "                    <span ng-repeat=\"address in $ctrl.cluster."
@@ -4128,8 +4469,8 @@ msgstr ""
 
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:379
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:380
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:147
 #: site/apps/osclustertemplates/flclustertemplatedetails.component.html:148
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:149
 msgid "Master LB"
 msgstr "Master LB"
 
@@ -4137,15 +4478,15 @@ msgstr "Master LB"
 msgid "Master count"
 msgstr "Masterantal"
 
-#: site/apps/osclusters/flclusterdetails.component.html:52
+#: site/apps/osclusters/flclusterdetails.component.html:55
 msgid "Master count: {{$ctrl.cluster.master_count}}"
 msgstr "Masterantal: {{$ctrl.cluster.master_count}}"
 
-#: site/apps/osclusters/flclusterdetails.component.html:86
+#: site/apps/osclusters/flclusterdetails.component.html:89
 msgid "Master flavor: {{$ctrl.cluster.master_flavor_id}}"
 msgstr "Master instanstyp: {{$ctrl.cluster.master_flavor_id}}"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:68
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:69
 msgid "Master flavor: {{$ctrl.clusterTemplate.master_flavor_id}}"
 msgstr "Master instanstyp: {{$ctrl.clusterTemplate.master_flavor_id}}"
 
@@ -4205,7 +4546,7 @@ msgstr "Minimum RAM (MB)"
 msgid "Misc"
 msgstr "Övrigt"
 
-#: site/apps/osclusters/flclusterdetails.component.html:75
+#: site/apps/osclusters/flclusterdetails.component.html:78
 msgid "Miscellaneous"
 msgstr "Diverse"
 
@@ -4224,6 +4565,7 @@ msgstr "Måndag"
 #: site/apps/osimages/flimages.html:201
 #: site/apps/osinstances/actions/flinstanceactions.html:46
 #: site/apps/osinstances/actions/flxsinstanceactions.html:4
+#: site/apps/osports/flports.html:153
 #: site/apps/osvolumebackups/actions/flxsvolumebackupactions.html:1
 #: site/apps/osvolumes/actions/flvolumeactions.html:21
 #: site/apps/osvolumes/actions/flxsvolumeactions.html:3
@@ -4245,7 +4587,7 @@ msgstr "Images"
 msgid "My account"
 msgstr "Mitt konto"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:41
+#: site/apps/baseconfig/fleio.baseconfig.module.js:42
 #: site/apps/osimages/states.config.js:53
 #: site/apps/osinstances/bootfromiso/flinstancebootfromiso.html:36
 #: site/apps/osinstances/rescue/flinstancerescue.html:36
@@ -4261,14 +4603,18 @@ msgstr "Min profil"
 msgid "My user profile"
 msgstr "Min användarprofil"
 
+#: oscommons/osfilters/flinstancestatus.filter.js:105
+msgid "NETWORKING"
+msgstr "NÄTVERK"
+
 #: domains/enduser/frontend/components/domain_details/domaindetails.html:23
 #: domains/enduser/frontend/components/states.config.js:44
 #: site/apps/billing/cart/cart.html:55
 #: site/apps/billing/recurring_payment_opts/recurring_payment_opts.component.html:18
 #: site/apps/billing/services/services.html:44
 #: site/apps/billing/services/states.config.js:37
-#: site/apps/networks/flnetworkdetails.html:56
-#: site/apps/networks/flnetworkdetails.html:99
+#: site/apps/networks/flnetworkdetails.html:117
+#: site/apps/networks/flnetworkdetails.html:74
 #: site/apps/networks/flnetworkedit.html:11
 #: site/apps/networks/flnetworks.html:60
 #: site/apps/networks/flnetworksubnetedit.html:13
@@ -4280,10 +4626,13 @@ msgstr "Min användarprofil"
 #: site/apps/osclustertemplates/flclustertemplates.component.html:54
 #: site/apps/osclustertemplates/states.config.js:55
 #: site/apps/osimages/flimages.html:92 site/apps/osimages/states.config.js:57
-#: site/apps/osinstances/flinstancedetail.html:582
-#: site/apps/osinstances/flinstances.html:64
+#: site/apps/osinstances/flinstancedetail.html:598
+#: site/apps/osinstances/flinstances.html:66
 #: site/apps/osinstances/rename/flinstancerename.html:11
 #: site/apps/osinstances/states.config.js:63
+#: site/apps/osports/create/flportcreate.html:17
+#: site/apps/osports/edit/flportedit.html:17 site/apps/osports/flports.html:71
+#: site/apps/osports/states.config.js:45
 #: site/apps/osrouters/flrouteredit.html:29
 #: site/apps/osrouters/flrouters.html:65
 #: site/apps/osrouters/states.config.js:32
@@ -4321,15 +4670,16 @@ msgstr "Namnservrar"
 #: site/apps/floatingips/states.config.js:40
 #: site/apps/networks/flnetworkadd.html:13 site/apps/networks/flnetworks.html:1
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:245
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:83
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:84
 #: site/apps/osinstances/addport/flinstanceaddport.html:11
-#: site/apps/osrouters/flrouterdetails.html:70
+#: site/apps/osports/states.config.js:45 site/apps/osports/states.config.js:54
+#: site/apps/osrouters/flrouterdetails.html:82
 msgid "Network"
 msgstr "Nätverk"
 
 #: site/apps/networks/flnetworkadd.html:77
-#: site/apps/networks/flnetworkdetails.html:103
-#: site/apps/networks/flnetworkdetails.html:57
+#: site/apps/networks/flnetworkdetails.html:121
+#: site/apps/networks/flnetworkdetails.html:75
 #: site/apps/networks/flnetworksubnetedit.html:26
 msgid "Network address"
 msgstr "Nätverksadress"
@@ -4349,7 +4699,7 @@ msgstr "Nätverksinformation"
 msgid "Network driver"
 msgstr "Nätverksdrivrutin"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:87
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:88
 msgid "Network driver: {{$ctrl.clusterTemplate.network_driver}}"
 msgstr "Nätverksdrivrutin: {{$ctrl.clusterTemplate.network_driver}}"
 
@@ -4378,7 +4728,7 @@ msgid "Network name: {{::$ctrl.floatingIp.floating_network.name }}"
 msgstr "Nätverksnamn: {{::$ctrl.floatingIp.floating_network.name }}"
 
 #: site/apps/floatingips/flfloatingipadd.html:20
-#: site/apps/osinstances/create/flinstancecreate.html:154
+#: site/apps/osinstances/create/flinstancecreate.html:155
 msgid "Network selection"
 msgstr "Nätverksval"
 
@@ -4389,6 +4739,23 @@ msgstr "Uppdaterar nätverk..."
 #: site/apps/networks/states.config.js:109
 msgid "Network {:network}"
 msgstr "Nätverk {:network}"
+
+#: site/apps/osports/flportdetails.html:46
+#| msgid ""
+#| "Client:\n"
+#| "                  <a ui-sref=\"userprofile\" class=\"md-primary\">\n"
+#| "                    {{ ::$ctrl.volumeSnapshot.client.name }}\n"
+#| "                  </a>"
+msgid ""
+"Network: <a ui-sref=\"networkDetails({'id': $ctrl.port.network})\" class="
+"\"md-primary\">\n"
+"                    {{ $ctrl.port.network }}\n"
+"                  </a>"
+msgstr ""
+"Nätverk: <a ui-sref=\"networkDetails({'id': $ctrl.port.network})\" class="
+"\"md-primary\">\n"
+"                    {{ $ctrl.port.network }}\n"
+"                  </a>"
 
 #: site/apps/osinstances/flinstancedetail.html:361
 msgid "Networking"
@@ -4464,7 +4831,7 @@ msgstr ""
 msgid "Next page"
 msgstr "Nästa sida"
 
-#: site/apps/osinstances/flinstancedetail.html:584
+#: site/apps/osinstances/flinstancedetail.html:600
 msgid "Next run (UTC)"
 msgstr "Nästa körning (UTC)"
 
@@ -4653,15 +5020,15 @@ msgstr "Inga operationer tillgängliga."
 msgid "No associated object"
 msgstr "Inget associerat objekt"
 
-#: site/apps/osinstances/flinstancedetail.html:578
+#: site/apps/osinstances/flinstancedetail.html:594
 msgid "No backup schedules for this instance"
 msgstr "Inga backupscheman för den här instansen"
 
-#: site/apps/osinstances/flinstancedetail.html:552
+#: site/apps/osinstances/flinstancedetail.html:568
 msgid "No backups for this instance"
 msgstr "Inga backuper för den här instansen"
 
-#: site/apps/osinstances/create/flinstancecreate.html:78
+#: site/apps/osinstances/create/flinstancecreate.html:79
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:44
 msgid "No boot source selected"
 msgstr "Ingen bootkälla har valts"
@@ -4687,7 +5054,6 @@ msgstr "Inget data tillgängligt"
 
 #: tickets/enduser/frontend/components/tickets_create/ticketscreate.html:40
 #: tickets/enduser/frontend/components/tickets_edit/ticketsedit.html:40
-#| msgid "No clients matching \"{{$ctrl.clientSearchText}}\" found"
 msgid "No departments matching \"{{$ctrl.departmentSearchText}}\" found"
 msgstr ""
 "Inga avdelningar som matchade \"{{$ctrl.departmentSearchText}}\" kunde hittas"
@@ -4704,11 +5070,11 @@ msgstr "Inga externa nätverk tillgängliga"
 msgid "No file chosen"
 msgstr "Ingen fil har valts"
 
-#: site/apps/osinstances/create/flinstancecreate.html:128
+#: site/apps/osinstances/create/flinstancecreate.html:129
 msgid "No flavor selected"
 msgstr "Ingen instanstyp vald"
 
-#: site/apps/osinstances/create/flinstancecreate.html:131
+#: site/apps/osinstances/create/flinstancecreate.html:132
 msgid "No flavors available in this region"
 msgstr "Inga instanstyper är tillgängliga i denna region"
 
@@ -4740,13 +5106,13 @@ msgstr ""
 "Inga objekt som matchade \"{{$ctrl.customModelSearchText}}\" kunde hittas"
 
 #: site/apps/osclusters/create/flclustercreate.component.html:132
-#: site/apps/osinstances/create/flinstancecreate.html:190
+#: site/apps/osinstances/create/flinstancecreate.html:191
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:76
 msgid "No keys to choose from."
 msgstr "Inga nycklar att välja mellan."
 
-#: site/apps/osclusters/flclusterdetails.component.html:97
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:165
+#: site/apps/osclusters/flclusterdetails.component.html:100
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:166
 msgid "No labels"
 msgstr "Inga etiketter"
 
@@ -4758,15 +5124,25 @@ msgstr "Inga nätverk"
 msgid "No networks available"
 msgstr "Inga nätverk tillgängliga"
 
+#: site/apps/osports/create/flportcreate.html:48
+#| msgid "No clients matching \"{{$ctrl.clientSearchText}}\" found"
+msgid "No networks matching \"{{$ctrl.networkSearchText}}\" found"
+msgstr "Inga nätverk som matchade \"{{$ctrl.networkSearchText}}\" kunde hittas"
+
 #: commons/ui/useralerts/list/fluseralerts.html:9
 msgid "No notifications"
 msgstr "Inga meddelanden"
+
+#: site/apps/osinstances/attachport/flinstanceattachport.html:28
+#| msgid "No departments matching \"{{$ctrl.departmentSearchText}}\" found"
+msgid "No ports matching \"{{$ctrl.portSearchText}}\" found"
+msgstr "Inga portar som matchade \"{{$ctrl.portSearchText}}\" kunde hittas"
 
 #: site/apps/billing/cart/cart.html:3
 msgid "No product has been selected yet"
 msgstr "Ingen produkt har valts än"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:125
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:126
 msgid ""
 "No proxy: {{$ctrl.clusterTemplate.no_proxy ? $ctrl.clusterTemplate."
 "no_proxy : '-'}}"
@@ -4815,6 +5191,11 @@ msgstr "Inga snapshots"
 msgid "No subnet pools in this region available"
 msgstr "Inga subnätpooler i denna region finns tillgängliga"
 
+#: site/apps/osports/create/flportcreate.html:101
+#| msgid "No clients matching \"{{$ctrl.clientSearchText}}\" found"
+msgid "No subnets matching \"{{$ctrl.subnetSearchText}}\" found"
+msgstr "Inga subnät som matchade \"{{$ctrl.subnetSearchText}}\" kunde hittas"
+
 #: commons/terms_of_service_agreement/fltosagreement.component.html:10
 #: commons/terms_of_service_agreement/fltospreview.component.html:10
 msgid "No terms of service found."
@@ -4849,7 +5230,7 @@ msgstr "Inga zoner"
 msgid "No zones found"
 msgstr "Inga zoner hittades"
 
-#: site/apps/osclusters/flclusterdetails.component.html:64
+#: site/apps/osclusters/flclusterdetails.component.html:67
 msgid ""
 "Node Addresses:\n"
 "                    <span ng-repeat=\"address in $ctrl.cluster."
@@ -4874,7 +5255,7 @@ msgstr ""
 msgid "Node count"
 msgstr "Nodantal"
 
-#: site/apps/osclusters/flclusterdetails.component.html:53
+#: site/apps/osclusters/flclusterdetails.component.html:56
 msgid "Node count: {{$ctrl.cluster.node_count}}"
 msgstr "Nodantal: {{$ctrl.cluster.node_count}}"
 
@@ -4883,16 +5264,16 @@ msgstr "Nodantal: {{$ctrl.cluster.node_count}}"
 msgid "Node flavor"
 msgstr "Nodens instanstyp"
 
-#: site/apps/osclusters/flclusterdetails.component.html:87
+#: site/apps/osclusters/flclusterdetails.component.html:90
 msgid "Node flavor: {{$ctrl.cluster.flavor_id}}"
 msgstr "Nodens instanstyp: {{$ctrl.cluster.flavor_id}}"
 
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:78
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:60
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:61
 msgid "Node spec"
 msgstr "Nodspecifikation"
 
-#: site/apps/osclusters/flclusterdetails.component.html:48
+#: site/apps/osclusters/flclusterdetails.component.html:51
 msgid "Nodes"
 msgstr "Noder"
 
@@ -5054,33 +5435,32 @@ msgstr "Öppna ärende"
 msgid "Operation"
 msgstr "Operation"
 
-#: site/apps/operations/states.config.js:75
+#: site/apps/operations/states.config.js:98
 msgid "Operation details"
 msgstr "Operationsdetaljer"
 
 #: site/apps/operations/operations.html:16
+#: site/apps/operations/states.config.js:66
 msgid "Operation type"
 msgstr "Typ av operation"
 
 #: site/apps/operations/operationdetails.html:27
-#| msgid "Hypervisor type: {{ $ctrl.image.hypervisor_type }}"
 msgid "Operation type:&nbsp;{{ $ctrl.operation.operation_type }}"
 msgstr "Typ av operation:&nbsp;{{ $ctrl.operation.operation_type }}"
 
-#: site/apps/operations/states.config.js:76
+#: site/apps/operations/states.config.js:99
 msgid "Operation {:id}"
 msgstr "Operation {:id}"
 
 #: site/apps/operations/operationdetails.html:14
-#| msgid "Version {{ $ctrl.tos.version }}"
 msgid "Operation {{ $ctrl.operation.id }}"
 msgstr "Operation {{ $ctrl.operation.id }}"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:64
+#: site/apps/baseconfig/fleio.baseconfig.module.js:65
 #: site/apps/operations/operations.html:1
-#: site/apps/operations/states.config.js:38
+#: site/apps/operations/states.config.js:49
 msgid "Operations"
-msgstr "Händelser"
+msgstr "Operationer"
 
 #: site/apps/signup/flconfirmemail.component.html:13
 msgid "Or fill in the confirmation code received in the email."
@@ -5111,7 +5491,7 @@ msgstr "Beställ ny tjänst"
 msgid "Order new services"
 msgstr "Beställ nya tjänster"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:55
+#: site/apps/baseconfig/fleio.baseconfig.module.js:56
 msgid "Order services"
 msgstr "Beställ tjänster"
 
@@ -5119,11 +5499,12 @@ msgstr "Beställ tjänster"
 msgid "Other details"
 msgstr "Andra detaljer"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:19
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:22
 msgid "Other protocol"
 msgstr "Annat protokoll"
 
 #: site/apps/osimages/flimagedetails.html:47
+#: site/apps/osports/flportdetails.html:27
 #: site/apps/osvolumebackups/flvolumebackupdetails.html:23
 #: site/apps/osvolumes/flvolumedetails.html:23
 #: site/apps/osvolumesnapshots/flvolumesnapshotdetails.html:23
@@ -5137,6 +5518,22 @@ msgstr "LÖSENORD"
 #: oscommons/osfilters/flinstancestatus.filter.js:17
 msgid "PAUSED"
 msgstr "PAUSAD"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:86
+msgid "PAUSING"
+msgstr "PAUSAR"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:101
+msgid "PENDING"
+msgstr "FÖRBEREDER"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:90
+msgid "POWERING OFF"
+msgstr "STÄNGER AV"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:91
+msgid "POWERING ON"
+msgstr "STARTAR UPP"
 
 #: site/apps/osinstances/editptr/fleditptr.html:12
 msgid "PTR"
@@ -5178,8 +5575,8 @@ msgstr "Lösenordet matchar inte"
 msgid "Pay now"
 msgstr "Betala nu"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:138
-#: site/apps/billing/invoicing/flinvoicingdetails.html:173
+#: site/apps/billing/invoicing/flinvoicingdetails.html:214
+#: site/apps/billing/invoicing/flinvoicingdetails.html:250
 msgid "Payment"
 msgstr "Betalning"
 
@@ -5248,6 +5645,21 @@ msgstr "Välj en instanstyp"
 msgid "Please select a valid cluster template"
 msgstr "Välj en giltig klustertemplate"
 
+#: site/apps/osports/create/flportcreate.html:52
+#| msgid "Please select a domain contact"
+msgid "Please select an existing network."
+msgstr "Välj ett existerande nätverk."
+
+#: site/apps/osinstances/attachport/flinstanceattachport.html:32
+#| msgid "Please select a domain contact"
+msgid "Please select an existing port."
+msgstr "Välj en existerande port."
+
+#: site/apps/osports/create/flportcreate.html:105
+#| msgid "Select an existing value"
+msgid "Please select an existing subnet."
+msgstr "Välj ett existerande subnät."
+
 #: commons/ui/filter/flfilter.component.js:253
 msgid "Please specify a value for the date field"
 msgstr "Ange ett värde i datumfältet"
@@ -5274,19 +5686,66 @@ msgstr "Tillägg"
 #: site/apps/osinstances/addip/flinstanceaddip.html:12
 #: site/apps/osinstances/addip/flinstanceaddip.html:21
 #: site/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:11
+#: site/apps/osports/flports.html:1
 msgid "Port"
 msgstr "Port"
+
+#: site/apps/osports/flportdetails.component.js:51
+#: site/apps/osports/flports.component.js:45
+msgid "Port deletion scheduled"
+msgstr "Raderar port..."
+
+#: site/apps/osports/states.config.js:108
+msgid "Port details"
+msgstr "Portdetaljer"
 
 #: site/apps/floatingips/flfloatingipdetails.html:30
 msgid "Port id: {{ $ctrl.floatingIp.port.id }}"
 msgstr "Port-id: {{ $ctrl.floatingIp.port.id }}"
 
+#: site/apps/osinstances/attachport/flinstanceattachport.controller.js:23
+msgid "Port is being attached"
+msgstr "Port kopplas på"
+
+#: site/apps/osinstances/flinstancedetail.component.js:623
+msgid "Port is being detached"
+msgstr "Port kopplas bort"
+
 #: site/apps/ossecuritygroups/flsecuritygrouprulecreate.html:51
 msgid "Port or range"
 msgstr "Port eller range"
 
+#: site/apps/osports/create/flportcreate.component.js:69
+msgid "Port scheduled for creation."
+msgstr "Skapar port..."
+
+#: site/apps/osports/create/flportcreate.html:118
+#: site/apps/osports/create/flportcreate.html:119
+#: site/apps/osports/edit/flportedit.html:31
+#: site/apps/osports/edit/flportedit.html:32
+#: site/apps/osports/states.config.js:75
+msgid "Port security enabled"
+msgstr "Port-säkerhet aktiverad"
+
+#: site/apps/osports/flportdetails.html:44
+#| msgid "Port id: {{ $ctrl.floatingIp.port.id }}"
+msgid "Port security enabled: {{ $ctrl.port.port_security_enabled }}"
+msgstr "Port-säkerhet aktiverad: {{ $ctrl.port.port_security_enabled }}"
+
+#: site/apps/osports/edit/flportedit.component.js:39
+#| msgid "Router update scheduled"
+msgid "Port update scheduled."
+msgstr "Uppdaterar port..."
+
+#: site/apps/osports/states.config.js:106
+#| msgid "Instance {:name}"
+msgid "Port {:name}"
+msgstr "Port {:name}"
+
+#: site/apps/baseconfig/fleio.baseconfig.module.js:34
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:22
 #: site/apps/osinstances/flinstancedetail.html:368
+#: site/apps/osports/states.config.js:41
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:59
 msgid "Ports"
 msgstr "Portar"
@@ -5334,11 +5793,11 @@ msgstr "Produktkonfiguration"
 msgid "Product:"
 msgstr "Produkt:"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:59
+#: site/apps/billing/invoicing/flinvoicingdetails.html:62
 msgid "Proforma due date"
 msgstr "Proforma förfallodag"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:55
+#: site/apps/billing/invoicing/flinvoicingdetails.html:57
 msgid "Proforma issue date"
 msgstr "Proforma faktureringsdatum"
 
@@ -5355,21 +5814,21 @@ msgid "Project: {{ ::$ctrl.zone.project_id }}"
 msgstr "Projekt: {{ ::$ctrl.zone.project_id }}"
 
 #: site/apps/osimages/flimagedetails.html:74
-#: site/apps/osimages/update/flimageupdate.html:186
+#: site/apps/osimages/update/flimageupdate.html:188
 msgid "Properties"
 msgstr "Egenskaper"
 
-#: site/apps/osimages/update/flimageupdate.html:204
+#: site/apps/osimages/update/flimageupdate.html:206
 msgid "Property"
 msgstr "Parameter"
 
-#: site/apps/osimages/update/flimageupdate.html:196
+#: site/apps/osimages/update/flimageupdate.html:198
 msgid "Property key"
 msgstr "Egenskapsnyckel"
 
-#: site/apps/osimages/create/flimagecreate.html:159
+#: site/apps/osimages/create/flimagecreate.html:161
 #: site/apps/osimages/states.config.js:101
-#: site/apps/osimages/update/flimageupdate.html:117
+#: site/apps/osimages/update/flimageupdate.html:119
 msgid "Protected"
 msgstr "Skyddad"
 
@@ -5378,8 +5837,8 @@ msgstr "Skyddad"
 msgid "Protocol"
 msgstr "Protokoll"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:34
 #: site/apps/osclustertemplates/flclustertemplatedetails.component.html:35
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:36
 #: site/apps/osimages/states.config.js:95
 msgid "Public"
 msgstr "Offentlig"
@@ -5401,19 +5860,59 @@ msgid ""
 msgstr ""
 "Publik trafik denna månad: {{::$ctrl.instance.current_month_traffic }} GB"
 
+#: site/apps/billing/invoicing/flinvoicingdetails.html:88
+msgid "Quantity"
+msgstr "Antal"
+
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.component.js:170
 msgid "Quoted from"
 msgstr "Citerat från"
 
-#: oscommons/osfilters/flinstancestatus.filter.js:55
+#: oscommons/osfilters/flinstancestatus.filter.js:56
 msgid "REBOOT"
 msgstr "STARTA OM"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:80
+msgid "REBOOT PENDING"
+msgstr "OMSTART FÖRBEREDS"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:83
+msgid "REBOOT PENDING HARD"
+msgstr "HÅRD OMSTART FÖRBEREDS"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:81
+msgid "REBOOT STARTED"
+msgstr "OMSTART PÅBÖRJAD"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:84
+msgid "REBOOT STARTED HARD"
+msgstr "HÅD OMSTART PÅBÖRJAD"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:79
+msgid "REBOOTING"
+msgstr "STARTAR OM"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:82
+msgid "REBOOTING HARD"
+msgstr "HÅRD OMSTART"
 
 #: oscommons/osfilters/flinstancestatus.filter.js:25
 msgid "REBUILD"
 msgstr "ÅTERSKAPA"
 
-#: oscommons/osfilters/flinstancestatus.filter.js:63
+#: oscommons/osfilters/flinstancestatus.filter.js:96
+msgid "REBUILD BLOCK DEVICE MAPPING"
+msgstr "BYGGER OM BLOCK MAPPNING"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:97
+msgid "REBUILD SPAWNING"
+msgstr "BYGGER INSTANS"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:95
+msgid "REBUILDING"
+msgstr "OMSKAPAR INSTANS"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:64
 msgid "RESCUE"
 msgstr "RESCUE"
 
@@ -5421,9 +5920,41 @@ msgstr "RESCUE"
 msgid "RESCUED"
 msgstr "RESCUED"
 
+#: oscommons/osfilters/flinstancestatus.filter.js:92
+msgid "RESCUING"
+msgstr "RESCUING"
+
 #: oscommons/osfilters/flinstancestatus.filter.js:29
 msgid "RESIZE"
 msgstr "RESIZE"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:77
+msgid "RESIZE CONFIRMING"
+msgstr "VERIFIERAR RESIZE"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:76
+msgid "RESIZE FINISH"
+msgstr "RESIZE SLUTFÖRD"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:75
+msgid "RESIZE MIGRATING"
+msgstr "MIGRERAR RESIZE"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:74
+msgid "RESIZE PREP"
+msgstr "RESIZE PREP"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:78
+msgid "RESIZE REVERTING"
+msgstr "ÅTERSTÄLLER RESIZE"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:102
+msgid "RESTORING"
+msgstr "ÅTERSTÄLLER"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:89
+msgid "RESUMING"
+msgstr "ÅTERUPPTAR"
 
 #: oscommons/osfilters/flinstancestatus.filter.js:37
 msgid "REVERT RESIZE"
@@ -5438,7 +5969,7 @@ msgstr "STARTAD"
 msgid "Reactivate"
 msgstr "Återaktivera"
 
-#: site/apps/osimages/update/flimageupdate.html:136
+#: site/apps/osimages/update/flimageupdate.html:138
 msgid "Reactivate image"
 msgstr "Återaktivera image"
 
@@ -5508,8 +6039,8 @@ msgstr "Alternativ för återkommande betalningar uppdaterade."
 msgid "Recurring payment options"
 msgstr "Alternativ för automatiska betalningar"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:139
-#: site/apps/billing/invoicing/flinvoicingdetails.html:174
+#: site/apps/billing/invoicing/flinvoicingdetails.html:215
+#: site/apps/billing/invoicing/flinvoicingdetails.html:251
 msgid "Refund"
 msgstr "Återbetalning"
 
@@ -5535,7 +6066,7 @@ msgstr "Regenerera nyckel"
 #: site/apps/osimages/create/flimagecreate.html:26
 #: site/apps/osimages/flimages.html:34 site/apps/osimages/flimages.html:95
 #: site/apps/osimages/states.config.js:70
-#: site/apps/osinstances/flinstances.html:36
+#: site/apps/osinstances/flinstances.html:38
 #: site/apps/osinstances/states.config.js:65
 #: site/apps/osinstances/states.config.js:83
 #: site/apps/ossecuritygroups/flsecuritygroups.html:68
@@ -5547,8 +6078,8 @@ msgstr "Regenerera nyckel"
 msgid "Region"
 msgstr "Region"
 
-#: site/apps/osinstances/flinstances.html:69
-msgid "Region - Hipervysor"
+#: site/apps/osinstances/flinstances.html:71
+msgid "Region - Hypervisor"
 msgstr "Region - Hypervisor"
 
 #: site/apps/networks/flnetworkadd.html:29
@@ -5575,7 +6106,7 @@ msgstr "Region: {{ ::$ctrl.router.region }}"
 msgid "Region: {{ ::securityGroup.region }}<br>"
 msgstr "Region: {{ ::securityGroup.region }}<br>"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:64
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:65
 msgid "Region: {{$ctrl.clusterTemplate.region}}"
 msgstr "Region: {{$ctrl.clusterTemplate.region}}"
 
@@ -5680,15 +6211,15 @@ msgstr "Fjärrsäkerhetsgrupp"
 msgid "Remote source of traffic"
 msgstr "Fjärrkälla för trafik"
 
-#: site/apps/osinstances/flinstancedetail.component.js:34
+#: site/apps/osinstances/flinstancedetail.component.js:35
 msgid "Remove IP"
 msgstr "Ta bort IP"
 
-#: site/apps/osinstances/flinstancedetail.component.js:485
+#: site/apps/osinstances/flinstancedetail.component.js:507
 msgid "Remove IP scheduled"
 msgstr "Tar bort ip..."
 
-#: site/apps/osinstances/flinstancedetail.component.js:583
+#: site/apps/osinstances/flinstancedetail.component.js:637
 msgid "Remove port scheduled"
 msgstr "Tar bort port..."
 
@@ -5864,7 +6395,7 @@ msgstr "Återställ volym"
 msgid "Revert volume {{ $ctrl.volume.name }} to snapshot"
 msgstr "Återställ volymen {{ $ctrl.volume.name }} till snapshot"
 
-#: site/apps/osinstances/create/flinstancecreate.html:218
+#: site/apps/osinstances/create/flinstancecreate.html:219
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:93
 #: site/apps/osinstances/rescue/flinstancerescue.html:75
 #: site/apps/osinstances/rescue/flinstancerescue.html:82
@@ -5875,7 +6406,7 @@ msgstr "Root-lösenord"
 msgid "Rotation"
 msgstr "Rotation"
 
-#: site/apps/osinstances/flinstancedetail.html:583
+#: site/apps/osinstances/flinstancedetail.html:599
 msgid "Rotation / Type"
 msgstr "Rotation / Typ"
 
@@ -5916,7 +6447,7 @@ msgstr "Router {:router}"
 msgid "Routers"
 msgstr "Routrar"
 
-#: site/apps/osrouters/flrouterdetails.html:39
+#: site/apps/osrouters/flrouterdetails.html:51
 msgid "Routes:"
 msgstr "Rutter:"
 
@@ -5932,6 +6463,10 @@ msgstr "Regelprotokoll"
 msgid "Rules"
 msgstr "Regler"
 
+#: oscommons/osfilters/flinstancestatus.filter.js:66
+msgid "SCHEDULING"
+msgstr "SCHEMALÄGGER"
+
 #: oscommons/osfilters/flinstancestatus.filter.js:47
 msgid "SHELVED"
 msgstr "SHELVED"
@@ -5939,6 +6474,10 @@ msgstr "SHELVED"
 #: oscommons/osfilters/flinstancestatus.filter.js:49
 msgid "SHELVED OFFLOADED"
 msgstr "SHELVED OFFLOADED"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:103
+msgid "SHELVING"
+msgstr "SHELVING"
 
 #: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:10
 msgid "SMS authenticator"
@@ -5966,6 +6505,10 @@ msgstr ""
 msgid "SOFT DELETE"
 msgstr "SOFT DELETE"
 
+#: oscommons/osfilters/flinstancestatus.filter.js:98
+msgid "SPAWNING"
+msgstr "SPAWNAR"
+
 #: site/apps/pkm/flpkmkeys.html:1
 msgid "SSH key"
 msgstr "SSH- nyckel"
@@ -5978,8 +6521,8 @@ msgstr "SSH-nyckeln har raderats"
 msgid "SSH key updated successfully"
 msgstr "SSH-nyckeln har uppdaterats"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:37
-#: site/apps/osinstances/create/flinstancecreate.html:187
+#: site/apps/baseconfig/fleio.baseconfig.module.js:38
+#: site/apps/osinstances/create/flinstancecreate.html:188
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:73
 #: site/apps/pkm/states.config.js:42
 msgid "SSH keys"
@@ -5989,7 +6532,7 @@ msgstr "SSH-nycklar"
 msgid "STARTING"
 msgstr "STARTAR"
 
-#: oscommons/osfilters/flinstancestatus.filter.js:59
+#: oscommons/osfilters/flinstancestatus.filter.js:60
 msgid "STOPPED"
 msgstr "AVSTÄNGD"
 
@@ -6000,6 +6543,10 @@ msgstr "STÄNGER AV"
 #: oscommons/osfilters/flinstancestatus.filter.js:19
 msgid "SUSPENDED"
 msgstr "SUSENDED"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:88
+msgid "SUSPENDING"
+msgstr "SUSPENDAR"
 
 #: commons/osbackup/fl-backupschedules-create-dialog.controller.js:30
 msgid "Saturday"
@@ -6028,7 +6575,7 @@ msgstr "Spara kontakt"
 msgid "Save PTR"
 msgstr "Spara PTR"
 
-#: site/apps/osimages/update/flimageupdate.html:229
+#: site/apps/osimages/update/flimageupdate.html:231
 msgid "Save Properties"
 msgstr "Spara egenskaper"
 
@@ -6104,6 +6651,10 @@ msgstr "Sök bland nätverk"
 #: site/apps/operations/operations.component.js:28
 msgid "Search operations"
 msgstr "Sök operationer"
+
+#: site/apps/osports/flports.component.js:21
+msgid "Search ports"
+msgstr "Sök portar"
 
 #: site/apps/osrouters/flrouters.component.js:35
 msgid "Search routers"
@@ -6185,11 +6736,27 @@ msgstr "Uppdaterar säkerhetsgrupp..."
 msgid "Security group {:securityGroup}"
 msgstr "Säkerhetsgrupp {:securityGroup}"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:35
-#: site/apps/osinstances/flinstancedetail.html:495
+#: site/apps/baseconfig/fleio.baseconfig.module.js:36
+#: site/apps/osinstances/flinstancedetail.html:511
 #: site/apps/ossecuritygroups/states.config.js:32
 msgid "Security groups"
 msgstr "Säkerhetsgrupper"
+
+#: site/apps/osports/flportdetails.html:51
+msgid ""
+"Security groups: <span ng-repeat=\"groupId in $ctrl.securityGroups\">\n"
+"                    <a ui-sref=\"securityGroupDetails({'id': groupId})\" "
+"class=\"md-primary\">{{ groupId }}</a>,\n"
+"                  </span>"
+msgstr ""
+"Säkerhetsgrupper: <span ng-repeat=\"groupId in $ctrl.securityGroups\">\n"
+"                    <a ui-sref=\"securityGroupDetails({'id': groupId})\" "
+"class=\"md-primary\">{{ groupId }}</a>,\n"
+"                  </span>"
+
+#: site/apps/networks/flnetworkdetails.html:62
+msgid "See related ports"
+msgstr "Visa relaterade portar"
 
 #: site/apps/osinstances/create/flbootsourceselect.html:180
 msgid "Select"
@@ -6199,7 +6766,7 @@ msgstr "Välj"
 msgid "Select Docker storage driver"
 msgstr "Välj Docker-lagringsdrivrutin"
 
-#: site/apps/osinstances/create/flinstancecreate.html:93
+#: site/apps/osinstances/create/flinstancecreate.html:94
 msgid "Select a configuration"
 msgstr "Välj en konfiguration"
 
@@ -6208,7 +6775,7 @@ msgstr "Välj en konfiguration"
 msgid "Select a domain contact"
 msgstr "Välj domänkontakt"
 
-#: site/apps/osinstances/create/flinstancecreate.html:100
+#: site/apps/osinstances/create/flinstancecreate.html:101
 msgid "Select a flavor"
 msgstr "Välj en instanstyp"
 
@@ -6220,9 +6787,13 @@ msgstr "Välj en ny produkt nedan"
 msgid "Select a product"
 msgstr "Välj en produkt"
 
-#: site/apps/osinstances/create/flinstancecreate.html:29
+#: site/apps/osinstances/create/flinstancecreate.html:30
 msgid "Select a region"
 msgstr "Välj region"
+
+#: site/apps/osports/create/flportcreate.html:80
+msgid "Select a valid network first!"
+msgstr "Välj ett giltigt nätverk först!"
 
 #: domains/enduser/frontend/components/register_domain_form/registerdomainform.html:36
 msgid "Select additional options"
@@ -6233,7 +6804,7 @@ msgid "Select an existing value"
 msgstr "Välj ett befintligt värde"
 
 #: site/apps/osinstances/create/flbootsourceselect.html:2
-#: site/apps/osinstances/create/flinstancecreate.html:60
+#: site/apps/osinstances/create/flinstancecreate.html:61
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:28
 msgid "Select boot source"
 msgstr "Välj boot-källa"
@@ -6303,6 +6874,7 @@ msgid "Select metrics type"
 msgstr "Välj typ av metrics"
 
 #: site/apps/osinstances/addport/flinstanceaddport.html:9
+#: site/apps/osports/create/flportcreate.html:40
 msgid "Select network"
 msgstr "Välj nätverk"
 
@@ -6332,6 +6904,7 @@ msgid "Select period"
 msgstr "Välj period"
 
 #: site/apps/osinstances/addip/flinstanceaddip.html:10
+#: site/apps/osinstances/attachport/flinstanceattachport.html:20
 #: site/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:9
 msgid "Select port"
 msgstr "Välj port"
@@ -6371,6 +6944,7 @@ msgstr "Välj lagringstyp"
 #: site/apps/osinstances/addip/flinstanceaddip.html:25
 #: site/apps/osinstances/addport/flinstanceaddport.html:18
 #: site/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:19
+#: site/apps/osports/create/flportcreate.html:93
 msgid "Select subnet"
 msgstr "Välj subnät"
 
@@ -6429,7 +7003,7 @@ msgstr "Serienummer"
 msgid "Server type"
 msgstr "Servertyp"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:26
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:27
 msgid "Server type: {{$ctrl.clusterTemplate.server_type}}"
 msgstr "Servertyp: {{$ctrl.clusterTemplate.server_type}}"
 
@@ -6445,7 +7019,7 @@ msgstr "Avslut av tjänst har skickats in"
 msgid "Service details"
 msgstr "Tjänstedetaljer"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:53
+#: site/apps/baseconfig/fleio.baseconfig.module.js:54
 #: site/apps/billing/services/states.config.js:32
 #: site/apps/dashboard/fldashboard.html:127
 msgid "Services"
@@ -6481,7 +7055,7 @@ msgstr "Nytt lösenord"
 msgid "Set phone number"
 msgstr "Ställ in telefonnummer"
 
-#: site/apps/osinstances/create/flinstancecreate.html:235
+#: site/apps/osinstances/create/flinstancecreate.html:236
 msgid "Set the Administrator password on first boot through the web console."
 msgstr "Ställ in administratörslösenordet vid första start via webbkonsolen."
 
@@ -6511,8 +7085,22 @@ msgid "Shared images"
 msgstr "Delade images"
 
 #: site/apps/networks/flnetworkdetails.html:40
-msgid "Shared: {{ $ctrl.network.shared }}"
-msgstr "Delat: {{ $ctrl.network.shared }}"
+msgid ""
+"Shared:\n"
+"            <span ng-if=\"$ctrl.network.shared\">\n"
+"              true\n"
+"            </span>\n"
+"            <span ng-if=\"!$ctrl.network.shared\">\n"
+"              false\n"
+"            </span>"
+msgstr ""
+"Delat:\n"
+"            <span ng-if=\"$ctrl.network.shared\">\n"
+"              JA\n"
+"            </span>\n"
+"            <span ng-if=\"!$ctrl.network.shared\">\n"
+"              NEJ\n"
+"            </span>"
 
 #: site/apps/billing/cart/states.config.js:14
 #: site/apps/billing/cart/states.config.js:31
@@ -6612,7 +7200,7 @@ msgstr "Storlek"
 msgid "Size (GB)"
 msgstr "Storlek (GB)"
 
-#: site/apps/osinstances/flinstancedetail.component.js:175
+#: site/apps/osinstances/flinstancedetail.component.js:179
 msgid "Size info not available."
 msgstr "Storleksinformation inte tillgänglig."
 
@@ -6655,7 +7243,7 @@ msgstr "Snapshot-namn"
 msgid "Snapshot state"
 msgstr "Snapshot-tillstånd"
 
-#: site/apps/osinstances/flinstancedetail.component.js:197
+#: site/apps/osinstances/flinstancedetail.component.js:201
 msgid "Snapshot {{name}} create scheduled"
 msgstr "Skapar snapshot {{name}}..."
 
@@ -6667,8 +7255,8 @@ msgstr "Snapshots"
 msgid "Snapshots ()"
 msgstr "Snapshots ()"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:116
-#: site/apps/billing/invoicing/flinvoicingdetails.html:178
+#: site/apps/billing/invoicing/flinvoicingdetails.html:192
+#: site/apps/billing/invoicing/flinvoicingdetails.html:255
 msgid "Source"
 msgstr "Källa"
 
@@ -6710,15 +7298,17 @@ msgstr "Län"
 #: site/apps/floatingips/states.config.js:40
 #: site/apps/floatingips/states.config.js:53
 #: site/apps/operations/operations.html:14
-#: site/apps/operations/states.config.js:42
+#: site/apps/operations/states.config.js:53
+#: site/apps/operations/states.config.js:72
 #: site/apps/osclusters/flclusters.component.html:55
 #: site/apps/osclusters/states.config.js:56
 #: site/apps/osclusters/states.config.js:77 site/apps/osimages/flimages.html:93
 #: site/apps/osimages/states.config.js:57
 #: site/apps/osimages/states.config.js:78
-#: site/apps/osinstances/flinstances.html:66
+#: site/apps/osinstances/flinstances.html:68
 #: site/apps/osinstances/states.config.js:64
 #: site/apps/osinstances/states.config.js:75
+#: site/apps/osports/states.config.js:46 site/apps/osports/states.config.js:64
 #: site/apps/osrouters/flrouters.html:66
 #: site/apps/osvolumebackups/flvolumebackups.html:61
 #: site/apps/osvolumebackups/states.config.js:47
@@ -6740,7 +7330,7 @@ msgstr "Status"
 msgid "Status and due date"
 msgstr "Status och förfallodag"
 
-#: site/apps/osclusters/flclusterdetails.component.html:42
+#: site/apps/osclusters/flclusterdetails.component.html:45
 msgid "Status reason: <div ng-bind-html=\"$ctrl.cluster.status_reason\"></div>"
 msgstr "Status orsak: <div ng-bind-html=\"$ctrl.cluster.status_reason\"></div>"
 
@@ -6748,13 +7338,14 @@ msgstr "Status orsak: <div ng-bind-html=\"$ctrl.cluster.status_reason\"></div>"
 msgid "Status: {{ $ctrl.image.status }}"
 msgstr "Status: {{ $ctrl.image.status }}"
 
-#: site/apps/networks/flnetworkdetails.html:41
+#: site/apps/networks/flnetworkdetails.html:48
 msgid "Status: {{ $ctrl.network.status }}"
 msgstr "Status: {{ $ctrl.network.status }}"
 
 #: site/apps/osrouters/flrouterdetails.html:33
-msgid "Status: {{ $ctrl.router.status }}"
-msgstr "Status: {{ $ctrl.router.status }}"
+#| msgid "Status: {{ $ctrl.router.status }}"
+msgid "Status: {{ $ctrl.router.status | translate }}"
+msgstr "Status: {{ $ctrl.router.status | translate }}"
 
 #: commons/resolvehandler/errordialog.html:7
 msgid "Stay on this page"
@@ -6768,7 +7359,7 @@ msgstr ""
 "Slutförda steg:&nbsp;{{ $ctrl.operation.progress.completed_steps }}/{{ $ctrl."
 "operation.progress.total_steps }}"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:98
+#: site/apps/billing/invoicing/flinvoicingdetails.html:173
 msgid "Sub total {{::$ctrl.invoice.subtotal}} {{::$ctrl.invoice.currency}}"
 msgstr ""
 "Totalt (exkl VAT) {{::$ctrl.invoice.subtotal}} {{::$ctrl.invoice.currency}}"
@@ -6784,9 +7375,11 @@ msgid "Subdomain"
 msgstr "Subdomän"
 
 #: site/apps/networks/flnetworkadd.html:57
+#: site/apps/networks/flnetworksubnetedit.html:11
 #: site/apps/osinstances/addip/flinstanceaddip.html:27
 #: site/apps/osinstances/addport/flinstanceaddport.html:20
 #: site/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:21
+#: site/apps/osports/create/flportcreate.html:64
 #: site/apps/osrouters/flinterfaceadd.html:9
 msgid "Subnet"
 msgstr "Subnät"
@@ -6796,11 +7389,12 @@ msgstr "Subnät"
 msgid "Subnet address pool"
 msgstr "Subnät adresspool"
 
-#: site/apps/networks/flnetworkdetails.component.js:155
+#: site/apps/networks/flnetworkdetails.component.js:156
 msgid "Subnet delete scheduled"
 msgstr "Raderar subnät"
 
 #: site/apps/networks/flnetworkadd.html:171
+#: site/apps/networks/flnetworksubnetedit.html:118
 msgid "Subnet details"
 msgstr "Subnätsdetaljer"
 
@@ -6808,9 +7402,13 @@ msgstr "Subnätsdetaljer"
 msgid "Subnet name"
 msgstr "Subnätsnamn"
 
-#: site/apps/networks/flnetworkdetails.html:50
+#: site/apps/networks/flnetworkdetails.html:68
 msgid "Subnets"
 msgstr "Subnät"
+
+#: site/apps/billing/invoicing/flinvoicingdetails.html:94
+msgid "Subtotal"
+msgstr "Summa"
 
 #: site/apps/pkm/flpkmkeys.component.js:45
 msgid "Successfully added SSH key"
@@ -6986,6 +7584,11 @@ msgstr ""
 "                    {{ $ctrl.volume.related_instance_uuid }}\n"
 "                  </a>"
 
+#: site/apps/osports/edit/flportedit.html:35
+#| msgid "Dissociate security group"
+msgid "This will remove any associated security groups!"
+msgstr "Detta kommer ta bort eventuella associerade säkerhetsgrupper!"
+
 #: commons/osbackup/fl-backupschedules-create-dialog.controller.js:29
 msgid "Thursday"
 msgstr "Torsdag"
@@ -7072,7 +7675,7 @@ msgstr ""
 "              lägg till din e-post i fältet \"Kontonamn\"."
 
 #: site/apps/billing/invoicing/flinvoicing.html:43
-#: site/apps/billing/invoicing/flinvoicingdetails.html:100
+#: site/apps/billing/invoicing/flinvoicingdetails.html:176
 #: site/apps/billing/invoicing/states.config.js:77
 msgid "Total"
 msgstr "Summa"
@@ -7130,8 +7733,8 @@ msgstr "Summa: {{$ctrl.cart.total}} {{:: $ctrl.cart.currency}}"
 msgid "Total: {{::invoice.total }} {{ invoice.currency }}"
 msgstr "Summa: {{:: invoice.total}} {{invoice.currency}}"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:119
-#: site/apps/billing/invoicing/flinvoicingdetails.html:189
+#: site/apps/billing/invoicing/flinvoicingdetails.html:195
+#: site/apps/billing/invoicing/flinvoicingdetails.html:266
 msgid "Transaction"
 msgstr "Transaktion"
 
@@ -7153,8 +7756,8 @@ msgstr "Prova ett annat sätt"
 msgid "Tuesday"
 msgstr "Tisdag"
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:113
-#: site/apps/billing/invoicing/flinvoicingdetails.html:171
+#: site/apps/billing/invoicing/flinvoicingdetails.html:189
+#: site/apps/billing/invoicing/flinvoicingdetails.html:248
 #: site/apps/osimages/states.config.js:57
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:57
 #: site/apps/osvolumes/flvolumes.html:34 site/apps/osvolumes/flvolumes.html:61
@@ -7170,16 +7773,39 @@ msgstr "Typ: {{ $ctrl.volume.type }}"
 msgid "Type: {{ $ctrl.zone.type }}"
 msgstr "Typ: {{ $ctrl.zone.type }}"
 
-#: oscommons/osfilters/flinstancestatus.filter.js:57
+#: oscommons/osfilters/flinstancestatus.filter.js:58
 msgid "UNKNOWN"
 msgstr "OKÄND"
 
+#: oscommons/osfilters/flinstancestatus.filter.js:85
+msgid "UNMOUNTING ISO AND REBOOTING"
+msgstr "AVMONTERAR ISO OCH STARTAR OM"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:87
+msgid "UNPAUSING"
+msgstr "ÅTERUPPTAR"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:94
+#| msgid "RESCUE"
+msgid "UNRESCUING"
+msgstr "UNRESCUING"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:104
+msgid "UNSHELVING"
+msgstr "UNSHELVING"
+
 #: oscommons/floatingips-status-translations.js:13
+#: site/apps/osports/flports.html:128
 msgid "UP"
 msgstr "UPPE"
 
-#: site/apps/osimages/create/flimagecreate.html:168
-#: site/apps/osimages/create/flimagecreate.html:185
+#: oscommons/osfilters/flinstancestatus.filter.js:67
+#| msgid "PASSWORD"
+msgid "UPDATING PASSWORD"
+msgstr "UPPDATERAR LÖSENORD"
+
+#: site/apps/osimages/create/flimagecreate.html:170
+#: site/apps/osimages/create/flimagecreate.html:187
 msgid "URL"
 msgstr "URL"
 
@@ -7197,6 +7823,10 @@ msgid "Unable to resize the instance without any available flavors"
 msgstr ""
 "Det går inte att ändra storlek på instansen utan några tillgängliga "
 "instanstyper"
+
+#: site/apps/billing/invoicing/flinvoicingdetails.html:91
+msgid "Unit price"
+msgstr "Enhetspris"
 
 #: site/apps/osinstances/actions/flinstanceactions.html:88
 #: site/apps/osinstances/actions/flxsinstanceactions.html:90
@@ -7220,14 +7850,20 @@ msgstr "Unrescue"
 msgid "Unset"
 msgstr "Nollställ"
 
+#: site/apps/osports/create/flportcreate.html:61
+msgid "Unspecified"
+msgstr "Ospecificerad"
+
 #: site/apps/dashboard/fldashboard.html:10
 msgid "Up to date credit"
-msgstr "Uppdaterad kredit"
+msgstr "Nuvarande kredit"
 
 #: site/apps/clients/flclientedit.html:123
 #: site/apps/osimages/flimagedetails.component.js:31
 #: site/apps/osimages/flimages.component.js:36
 #: site/apps/osimages/flimages.html:218
+#: site/apps/osports/flportdetails.component.js:27
+#: site/apps/osports/flports.component.js:31 site/apps/osports/flports.html:163
 msgid "Update"
 msgstr "Uppdatera"
 
@@ -7247,9 +7883,14 @@ msgstr "Uppdatera backup {{::$ctrl.backup.name}}"
 msgid "Update changes"
 msgstr "Uppdatera ändringar"
 
-#: site/apps/osimages/update/flimageupdate.html:124
+#: site/apps/osimages/update/flimageupdate.html:126
 msgid "Update image"
 msgstr "Uppdatera image"
+
+#: site/apps/osports/edit/flportedit.html:59
+#: site/apps/osports/edit/flportedit.html:6
+msgid "Update port"
+msgstr "Uppdatera port"
 
 #: site/apps/osvolumesnapshots/update/fl-volumesnapshots-update.template.html:28
 msgid "Update snapshot"
@@ -7291,6 +7932,14 @@ msgstr "Uppdaterad: {{$ctrl.cluster.updated_at | date:'medium'}}"
 #: site/apps/osimages/flimagedetails.html:53
 msgid "Updated: {{ $ctrl.image.updated_at | date:'medium' }}"
 msgstr "Uppdaterad: {{ $ctrl.image.updated_at | date:'medium' }}"
+
+#: site/apps/billing/services/servicedetails.html:81
+msgid "Upgrade/downgrade options"
+msgstr "Upp-/nedgraderingsalternativ"
+
+#: site/apps/billing/services/servicedetails.html:84
+msgid "Upgrade/downgrade product"
+msgstr "Uppgradera/nedgradera produkt"
 
 #: site/apps/osinstances/create/flbootsourceselect.html:143
 msgid "Upload new image"
@@ -7356,7 +8005,7 @@ msgstr "Användarnamn krävs"
 msgid "Username or email"
 msgstr "Användarnamn eller e-postadress"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:61
+#: site/apps/baseconfig/fleio.baseconfig.module.js:62
 msgid "Utilities"
 msgstr "Verktyg"
 
@@ -7383,7 +8032,7 @@ msgstr "Visa alla tjänster"
 msgid "Virtual CPUs: {{$ctrl.instance.flavor.vcpus }}"
 msgstr "Virtuella CPUs: {{$ctrl.instance.flavor.vcpus }}"
 
-#: site/apps/osimages/create/flimagecreate.html:149
+#: site/apps/osimages/create/flimagecreate.html:151
 #: site/apps/osimages/states.config.js:86
 #: site/apps/osimages/update/flimageupdate.html:50
 msgid "Visibility"
@@ -7424,7 +8073,7 @@ msgstr "Volymbackupdetaljer"
 msgid "Volume backup {:volumeBackupTitle}"
 msgstr "Volymbackup {:volumeBackupTitle}"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:39
+#: site/apps/baseconfig/fleio.baseconfig.module.js:40
 #: site/apps/osvolumebackups/states.config.js:43
 msgid "Volume backups"
 msgstr "Volymbackuper"
@@ -7447,7 +8096,7 @@ msgstr "Volymdetaljer"
 msgid "Volume driver"
 msgstr "Volymdrivrutin"
 
-#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:71
+#: site/apps/osclustertemplates/flclustertemplatedetails.component.html:72
 msgid "Volume driver: {{$ctrl.clusterTemplate.volume_driver}}"
 msgstr "Volymdrivrutin: {{$ctrl.clusterTemplate.volume_driver}}"
 
@@ -7484,7 +8133,7 @@ msgstr "Skapar snapshot..."
 msgid "Volume snapshot {:volumeSnapshotTitle}"
 msgstr "Volymsnapshot {:volumeSnapshotTitle}"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:40
+#: site/apps/baseconfig/fleio.baseconfig.module.js:41
 #: site/apps/osvolumesnapshots/states.config.js:43
 msgid "Volume snapshots"
 msgstr "Volymsnapshots"
@@ -7510,7 +8159,7 @@ msgstr "Volym {:volumeTitle}"
 msgid "Volume:"
 msgstr "Volym:"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:38
+#: site/apps/baseconfig/fleio.baseconfig.module.js:39
 #: site/apps/osinstances/create/flbootsourceselect.html:100
 #: site/apps/osinstances/flinstancedetail.html:267
 #: site/apps/osvolumes/states.config.js:56
@@ -7579,7 +8228,7 @@ msgstr ""
 
 #: site/apps/floatingips/flfloatingipdetails.component.js:28
 #: site/apps/floatingips/flfloatingips.component.js:39
-#: site/apps/networks/flnetworkdetails.component.js:29
+#: site/apps/networks/flnetworkdetails.component.js:30
 #: site/apps/networks/flnetworks.component.js:40
 #: site/apps/osapiusers/flapiusers.component.js:26
 #: site/apps/osclusters/actions/flclusteractions.directive.js:28
@@ -7589,8 +8238,10 @@ msgstr ""
 #: site/apps/osimages/flimagedetails.component.js:34
 #: site/apps/osimages/flimages.component.js:37
 #: site/apps/osinstances/actions/flinstanceactions.directive.js:31
-#: site/apps/osinstances/flinstancedetail.component.js:38
+#: site/apps/osinstances/flinstancedetail.component.js:39
 #: site/apps/osinstances/flinstances.component.js:30
+#: site/apps/osports/flportdetails.component.js:28
+#: site/apps/osports/flports.component.js:32
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:36
 #: site/apps/ossecuritygroups/flsecuritygroups.component.js:45
 #: site/apps/osvolumebackups/actions/flvolumebackupactions.directive.js:27
@@ -7654,9 +8305,6 @@ msgid ""
 msgstr "Du måste fylla i följande specifika fält för att registrera domänen"
 
 #: site/apps/osimages/snapshot/flinstancesnapshot.html:14
-#| msgid ""
-#| "You will be charged up to {{ $ctrl.price_per_snapshot }} for each "
-#| "existing snapshot."
 msgid ""
 "You will be charged {{ $ctrl.price_per_snapshot }} (around {{ $ctrl."
 "price_per_snapshot_per_month }} per month) for each existing snapshot."
@@ -7740,7 +8388,7 @@ msgstr "Uppdaterar zon..."
 msgid "Zone {:zone}"
 msgstr "Zone {:zone}"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:34
+#: site/apps/baseconfig/fleio.baseconfig.module.js:35
 #: site/apps/oszones/states.config.js:35
 msgid "Zones"
 msgstr "Zoner"
@@ -7787,7 +8435,7 @@ msgstr "booted_from_iso"
 msgid "booting from iso"
 msgstr "bootar från iso"
 
-#: oscommons/osfilters/flinstancestatus.filter.js:62
+#: oscommons/osfilters/flinstancestatus.filter.js:63
 msgid "building"
 msgstr "building"
 
@@ -7800,7 +8448,7 @@ msgstr "avbryt"
 msgid "cancelled"
 msgstr "avbruten"
 
-#: site/apps/osinstances/create/flinstancecreate.html:81
+#: site/apps/osinstances/create/flinstancecreate.html:82
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:47
 msgid "change"
 msgstr "ändra"
@@ -7829,11 +8477,16 @@ msgstr "ändrade status till"
 msgid "changed title on"
 msgstr "ändrade ämne till"
 
+#: site/apps/osimages/create/flimagecreate.component.js:23
+#| msgid "Community Images"
+msgid "community"
+msgstr "community"
+
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:40
 msgid "create new volume"
 msgstr "skapa ny volym"
 
-#: site/apps/osinstances/create/flinstancecreate.html:74
+#: site/apps/osinstances/create/flinstancecreate.html:75
 msgid "create {{$ctrl.bootSource.options.volume_size}} GB volume"
 msgstr "skapa {{$ctrl.bootSource.options.volume_size}} GB stor volym"
 
@@ -7948,8 +8601,8 @@ msgstr "migrerar"
 #: commons/ui/utils/fluiutils.service.js:34
 #: domains/enduser/frontend/components/domain_details/domaindetails.html:53
 #: domains/enduser/frontend/components/domain_details/domaindetails.html:58
-#: site/apps/billing/invoicing/flinvoicingdetails.html:153
-#: site/apps/billing/invoicing/flinvoicingdetails.html:195
+#: site/apps/billing/invoicing/flinvoicingdetails.html:230
+#: site/apps/billing/invoicing/flinvoicingdetails.html:272
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:87
 msgid "n/a"
 msgstr "n/a"
@@ -8001,6 +8654,10 @@ msgstr "pausad"
 msgid "pending"
 msgstr "väntande"
 
+#: site/apps/osimages/create/flimagecreate.component.js:20
+msgid "private"
+msgstr "privat"
+
 #: site/apps/billing/cart/orderproduct.html:6
 msgid "product configuration"
 msgstr "produktkonfiguration"
@@ -8010,7 +8667,15 @@ msgstr "produktkonfiguration"
 msgid "protected"
 msgstr "skyddad"
 
-#: oscommons/osfilters/flinstancestatus.filter.js:56
+#: site/apps/osimages/create/flimagecreate.component.js:21
+msgid "public"
+msgstr "offentlig"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:55
+msgid "queued"
+msgstr "köad"
+
+#: oscommons/osfilters/flinstancestatus.filter.js:57
 msgid "reboot"
 msgstr "omstart"
 
@@ -8035,13 +8700,13 @@ msgstr "relaterad volym"
 msgid "reopened ticket because of email reply on"
 msgstr "återöppnade ärende p.g.a. e-postsvar "
 
-#: oscommons/osfilters/flinstancestatus.filter.js:64
+#: oscommons/osfilters/flinstancestatus.filter.js:65
 msgid "rescue"
 msgstr "rescue"
 
 #: oscommons/osfilters/flinstancestatus.filter.js:40
 msgid "rescued"
-msgstr "räddad"
+msgstr "rescued"
 
 #: oscommons/osfilters/flinstancestatus.filter.js:30
 msgid "resized"
@@ -8062,6 +8727,10 @@ msgstr "startad"
 #: site/apps/billing/cart/orderproduct.html:25
 msgid "setup fee: {{::cycle.setup_fee}} {{::cycle.currency}}"
 msgstr "startavgift: {{::cycle.setup_fee}} {{::cycle.currency}}"
+
+#: site/apps/osimages/create/flimagecreate.component.js:22
+msgid "shared"
+msgstr "delad"
 
 #: oscommons/osfilters/flinstancestatus.filter.js:48
 msgid "shelved"
@@ -8087,7 +8756,7 @@ msgstr "startar"
 msgid "status"
 msgstr "status"
 
-#: oscommons/osfilters/flinstancestatus.filter.js:60
+#: oscommons/osfilters/flinstancestatus.filter.js:61
 msgid "stopped"
 msgstr "stoppad"
 
@@ -8099,7 +8768,7 @@ msgstr "stoppar"
 msgid "suspended"
 msgstr "suspended"
 
-#: oscommons/osfilters/flinstancestatus.filter.js:58
+#: oscommons/osfilters/flinstancestatus.filter.js:59
 #: site/apps/osapi/flosapi.service.js:71 site/apps/osapi/flosapi.service.js:77
 msgid "unknown"
 msgstr "okänd"
@@ -8115,6 +8784,11 @@ msgstr "uppe"
 #: site/apps/billing/services/flbillingservicesdetails.component.js:24
 msgid "userrequested"
 msgstr "userrequested"
+
+#: site/apps/osports/create/flportcreate.html:129
+#: site/apps/osports/edit/flportedit.html:39
+msgid "vNIC type"
+msgstr "vNIC-typ"
 
 #: oscommons/osfilters/flinstancestatus.filter.js:36
 msgid "verify resize"
@@ -8140,14 +8814,31 @@ msgstr "{{ $ctrl.readableBytes(snapshot.size); }}"
 msgid "{{ operation.primary_object_id || 'n/a' }}"
 msgstr "{{ operation.primary_object_id || 'n/a' }}"
 
+#: site/apps/osports/flports.html:99
+msgid ""
+"{{ port.fixed_ips.length ? port.fixed_ips[0].ip_address : '' }}<span ng-if="
+"\"port.fixed_ips.length > 1\">, ...</span>"
+msgstr ""
+"{{ port.fixed_ips.length ? port.fixed_ips[0].ip_address : '' }}<span ng-if="
+"\"port.fixed_ips.length > 1\">, ...</span>"
+
+#: site/apps/osports/flports.html:108
+msgid "{{ port.mac_address }}"
+msgstr "{{ port.mac_address }}"
+
 #: commons/auth/login.html:36
-#| msgid "User name is required"
 msgid "{{ vm.customUsernameLabel }} is required"
 msgstr "{{ vm.customUsernameLabel }} krävs"
 
-#: site/apps/osvolumes/flvolumes.html:99
+#: site/apps/osvolumes/flvolumes.html:101
 msgid "{{ volume.type }}"
 msgstr "{{ volume.type }}"
+
+#: site/apps/osports/create/flportcreate.html:132
+#: site/apps/osports/edit/flportedit.html:42
+#| msgid "{{ volume.type }}"
+msgid "{{ vtype[1] }}"
+msgstr "{{ vtype[1] }}"
 
 #: site/apps/oszones/flzones.html:25
 msgid "{{ zone.status }}"
@@ -8157,11 +8848,11 @@ msgstr "{{ zone.status }}"
 msgid "{{$ctrl.bootSource.type}}"
 msgstr "{{$ctrl.bootSource.type}}"
 
-#: site/apps/osinstances/create/flinstancecreate.html:125
+#: site/apps/osinstances/create/flinstancecreate.html:126
 msgid "{{$ctrl.flavor.memory_gb}} GB memory"
 msgstr "{{$ctrl.flavor.memory_gb}} GB minne"
 
-#: site/apps/osinstances/create/flinstancecreate.html:126
+#: site/apps/osinstances/create/flinstancecreate.html:127
 msgid "{{$ctrl.flavor.vcpus}} virtual CPUs"
 msgstr "{{$ctrl.flavor.vcpus}} virtuella CPUs"
 
@@ -8173,7 +8864,7 @@ msgstr "{{$ctrl.item.display}}"
 msgid "{{'No ' + $ctrl.objectsNamePlural | translate }} found"
 msgstr "{{'Inga ' + $ctrl.objectsNamePlural | translate }} hittades"
 
-#: oscommons/flavorsascards/flavorsascards.component.html:6
+#: oscommons/flavorsascards/flavorsascards.component.html:13
 msgid "{{::$ctrl.flavorIncompatibleWarningText}}"
 msgstr "{{::$ctrl.flavorIncompatibleWarningText}}"
 
@@ -8186,12 +8877,10 @@ msgid "{{::$ctrl.serviceUpgradeOptions.display_name }} - change service"
 msgstr "{{::$ctrl.serviceUpgradeOptions.display_name }} - ändra tjänst"
 
 #: domains/enduser/frontend/components/dashboard_services_rows/dashboardservicesrows.html:7
-#| msgid "{{::$ctrl.summary.invoices_details.invoices_count}} invoices"
 msgid "{{::$ctrl.summary.domains_count}} domain"
 msgstr "{{::$ctrl.summary.domains_count}} domän"
 
 #: domains/enduser/frontend/components/dashboard_services_rows/dashboardservicesrows.html:10
-#| msgid "{{::$ctrl.summary.invoices_details.invoices_count}} invoices"
 msgid "{{::$ctrl.summary.domains_count}} domains"
 msgstr "{{::$ctrl.summary.domains_count}} domäner"
 
@@ -8249,9 +8938,38 @@ msgstr "{{hours}} timmar och {{minutes}} minuter sedan"
 msgid "{{minutes}} minutes ago"
 msgstr "{{minutes}} minuter sedan"
 
+#: site/apps/billing/invoicing/flinvoicingdetails.html:142
+msgid "{{resourceType.display_name}} resources"
+msgstr "{{resourceType.display_name}} resurser"
+
 #: site/apps/billing/cart/cart.html:109
 msgid "{{tax.tax_name}}: {{tax.amount}} {{::$ctrl.cart.currency}}"
 msgstr "{{tax.tax_name}}: {{tax.amount}} {{::$ctrl.cart.currency}}"
+
+#~ msgid "Admin state up: {{ $ctrl.network.admin_state_up }}"
+#~ msgstr "Admin state up: {{$ctrl.network.admin_state_up}}"
+
+#~ msgid "Admin state up: {{ $ctrl.router.admin_state_up }}"
+#~ msgstr "Admin state up: {{ $ctrl.router.admin_state_up }}"
+
+#~ msgid ""
+#~ "Description: {{ $ctrl.network.description\n"
+#~ "            }}"
+#~ msgstr ""
+#~ "Beskrivning: {{ $ctrl.network.description\n"
+#~ "            }}"
+
+#~ msgid "Distributed: {{ $ctrl.router.distributed }}"
+#~ msgstr "Distribuerad: {{$ctrl.router.distribution}}"
+
+#~ msgid "Enable SNAT: {{ $ctrl.router.enable_snat }}"
+#~ msgstr "Aktivera SNAT: {{ $ctrl.router.enable_snat }}"
+
+#~ msgid "High availability: {{ $ctrl.router.ha }}"
+#~ msgstr "High availability: {{ $ctrl.router.ha }}"
+
+#~ msgid "Shared: {{ $ctrl.network.shared }}"
+#~ msgstr "Delat: {{ $ctrl.network.shared }}"
 
 #~ msgid "Backup schedule rotation"
 #~ msgstr "Rotation för backupschema"
