@@ -27,12 +27,6 @@ msgstr ""
 msgid "(OUT OF STOCK)"
 msgstr ""
 
-#: staff/apps/osbilling/plans/flbillingplandetails.html:88
-#, fuzzy
-#| msgid "Tiered"
-msgid "(Tiered)"
-msgstr "Nivel"
-
 #: domains/staff/frontend/components/pricing_cycles/pricingcycles.html:5
 #: staff/apps/clientgroups/flclientgroups.html:59 staff/apps/osflavorgroups/flflavorgroups.html:59
 #: staff/apps/settings/configurations/configurations.html:72
@@ -59,7 +53,7 @@ msgstr "{{$ctrl.item.display}}"
 msgid "*abc* -> {{$ctrl.item.display}} contains \"abc\""
 msgstr "{{$ctrl.item.display}}"
 
-#: staff/apps/osbilling/plans/flbillingplandetails.html:92
+#: staff/apps/osbilling/plans/flbillingplandetails.html:91
 msgid "+ 1 modifier"
 msgid_plural "+ {{priceRule.modifiers_count}} modifiers"
 msgstr[0] "+ 1 modificator"
@@ -69,6 +63,14 @@ msgstr[2] "+ {{priceRule.modifiers_count}} de modificatori"
 #: staff/apps/settings/notifications/flnotification-templates.template.html:34
 msgid "+others"
 msgstr "+altele"
+
+#: staff/apps/osinstances/migrate/flinstancemigrate.html:21
+msgid ""
+"- Aggregates:\n"
+"                  <span ng-repeat=\"aggregate in hv.aggregates track by $index\">\n"
+"                    {{ aggregate }} <span ng-if=\"hv.aggregates[$index+1]\">, </span>\n"
+"                  </span>"
+msgstr ""
 
 #: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:273
 #, fuzzy
@@ -476,7 +478,7 @@ msgstr ""
 "                  Un utilizator OpenStack cu permisiuni administrative.<br>\n"
 "                  „admin” poate fi folosit."
 
-#: staff/apps/billing/products/flbillingproductedit.html:116
+#: staff/apps/billing/products/flbillingproductedit.html:129
 #, fuzzy
 #| msgid ""
 #| "<strong>Configure a new product</strong><br>\n"
@@ -550,7 +552,7 @@ msgid ""
 "                  When an instance gets created from fleio, config_drive param is always sent as True to nova."
 msgstr ""
 
-#: staff/apps/billing/products/flbillingproductedit.html:125
+#: staff/apps/billing/products/flbillingproductedit.html:138
 #, fuzzy
 #| msgid ""
 #| "<strong>Group & Module</strong><br>\n"
@@ -868,7 +870,7 @@ msgstr ""
 "                  Un utilizator OpenStack cu permisiuni administrative.<br>\n"
 "                  „admin” poate fi folosit."
 
-#: staff/apps/billing/products/flbillingproductedit.html:141
+#: staff/apps/billing/products/flbillingproductedit.html:154
 #, fuzzy
 #| msgid ""
 #| "<strong>Price model</strong><br>\n"
@@ -882,10 +884,14 @@ msgid ""
 "<strong>Price model</strong><br>\n"
 "                  The most important options here are <strong>Fixed plus dynamic</strong> and\n"
 "                  <strong>Dynamic but at least fixed</strong><br>\n"
-"                  A price model of <i>Fixed plus dynamic</i> will calculate the price of a service\n"
-"                  by adding any available fixed prices with dynamic prices while the <i>Dynamic but at least "
-"fixed</i>\n"
-"                  option will add the fixed prices only if the dynamic price is lower then the fixed one."
+"                  If the <strong>Fixed plus dynamic</strong> price model is used the service price will be the "
+"sum\n"
+"                  of fixed price and dynamic price.<br>\n"
+"                  If the <strong>Dynamic but at least fixed</strong> price model is used the service price "
+"will be\n"
+"                  the fixed price if the fixed price is greater than dynamic price or dynamic price if dynamic "
+"price\n"
+"                  is greater than the fixed price."
 msgstr ""
 "<strong>Model pret</strong><br>\n"
 "            Cele mai importante opțiuni sunt  <strong>Fixed plus dynamic</strong>si\n"
@@ -967,7 +973,7 @@ msgstr ""
 "            În cazul in care selectezi o imagine boot-abilă, noul volum o să fie marcat ca boot-abil <br>\n"
 "            și o să ai posibilitatea de a boota direct din acel volum. <br>"
 
-#: staff/apps/billing/products/flbillingproductedit.html:133
+#: staff/apps/billing/products/flbillingproductedit.html:146
 #, fuzzy
 #| msgid ""
 #| "<strong>Type & Status</strong>\n"
@@ -1083,7 +1089,7 @@ msgstr ""
 "              </li>\n"
 "            </ul>"
 
-#: staff/apps/settings/configurations/configurationdetails.html:668
+#: staff/apps/settings/configurations/configurationdetails.html:679
 #, fuzzy
 #| msgid ""
 #| "A <strong>Delay</strong> for client termination can be set (in hours) to postpone the actual\n"
@@ -1239,7 +1245,7 @@ msgstr "Asociază opțiune"
 msgid "Aborting an operation may result in an inconsistent state. Are you sure?"
 msgstr ""
 
-#: site/apps/osinstances/flinstances.html:69
+#: site/apps/osinstances/flinstances.html:72
 #, fuzzy
 #| msgid "Access IP"
 msgid "Acccess IP"
@@ -1291,12 +1297,12 @@ msgid "Action not allowed"
 msgstr "Operațiunea nu este permisă"
 
 #: site/apps/billing/recurring_payment_opts/recurring_payment_opts.component.html:20
-#: site/apps/billing/services/services.html:48 site/apps/networks/flnetworkdetails.html:133
+#: site/apps/billing/services/services.html:52 site/apps/networks/flnetworkdetails.html:133
 #: site/apps/networks/flnetworkdetails.html:78 site/apps/networks/flnetworks.html:64
 #: site/apps/operations/operations.html:18 site/apps/osapiusers/flapiusers.html:68
 #: site/apps/osclusters/flclusters.component.html:57
 #: site/apps/osclustertemplates/flclustertemplates.component.html:57 site/apps/osimages/flimages.html:100
-#: site/apps/osinstances/flinstancedetail.html:601 site/apps/osinstances/flinstances.html:72
+#: site/apps/osinstances/flinstancedetail.html:624 site/apps/osinstances/flinstances.html:77
 #: site/apps/osports/flports.html:76 site/apps/ossecuritygroups/flsecuritygroups.html:69
 #: site/apps/osvolumebackups/flvolumebackups.html:66 site/apps/osvolumes/flvolumes.html:62
 #: site/apps/osvolumesnapshots/flvolumesnapshots.html:62 site/apps/oszones/flzonedetails.html:54
@@ -1305,7 +1311,7 @@ msgstr "Operațiunea nu este permisă"
 #: staff/apps/billing/orders/orders.html:44 staff/apps/billing/products/productdetails.html:100
 #: staff/apps/billing/products/productdetails.html:161 staff/apps/billing/products/productdetails.html:191
 #: staff/apps/billing/products/products.html:10 staff/apps/billing/products/products.html:11
-#: staff/apps/billing/services/services.html:51 staff/apps/billing/taxrules/taxrules.html:13
+#: staff/apps/billing/services/services.html:55 staff/apps/billing/taxrules/taxrules.html:13
 #: staff/apps/billing/taxrules/taxrules.html:14 staff/apps/clientgroups/flclientgroupdetails.html:25
 #: staff/apps/clientgroups/flclientgroups.html:51 staff/apps/clients/flclients.html:83
 #: staff/apps/networks/flnetworkdetails.html:135 staff/apps/networks/flnetworkdetails.html:84
@@ -1317,7 +1323,7 @@ msgstr "Operațiunea nu este permisă"
 #: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.html:23
 #: staff/apps/osflavors/flflavors.html:80 staff/apps/osimages/flimagedetails.html:102
 #: staff/apps/osimages/flimagedetails.html:187 staff/apps/osimages/flimages.html:97
-#: staff/apps/osinstances/flinstancedetail.html:604 staff/apps/osinstances/flinstances.html:73
+#: staff/apps/osinstances/flinstancedetail.html:623 staff/apps/osinstances/flinstances.html:73
 #: staff/apps/osports/flports.html:76 staff/apps/osprojects/flprojects.html:69
 #: staff/apps/osrouters/flrouters.html:70 staff/apps/ossecuritygroups/flsecuritygroups.html:70
 #: staff/apps/osvolumebackups/flvolumebackups.html:66 staff/apps/osvolumes/flvolumes.html:59
@@ -1331,7 +1337,7 @@ msgstr "Operațiunea nu este permisă"
 #: staff/apps/settings/notifications/flnotification-templates.template.html:64
 #: staff/apps/subnetpools/flsubnetpools.html:69 staff/apps/tasklog/tasks.html:15
 #: staff/apps/usergroups/flusergroupdetails.html:28 staff/apps/usergroups/flusergroups.html:54
-#: staff/apps/users/flusers.html:66 tickets/enduser/frontend/components/tickets/tickets.html:55
+#: staff/apps/users/flusers.html:68 tickets/enduser/frontend/components/tickets/tickets.html:55
 #: tickets/staff/frontend/components/departments/departments.html:48
 #: tickets/staff/frontend/components/tickets/tickets.html:75
 #: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:229
@@ -1342,7 +1348,7 @@ msgstr "Actiuni"
 msgid "Activate"
 msgstr "Activează"
 
-#: staff/apps/clients/flclientdetails.html:536
+#: staff/apps/clients/flclientdetails.html:543
 msgid "Activated"
 msgstr "Activat"
 
@@ -1350,7 +1356,7 @@ msgstr "Activat"
 msgid "Activated at"
 msgstr "Activat la"
 
-#: site/apps/billing/services/servicedetails.html:50
+#: site/apps/billing/services/servicedetails.html:56
 msgid ""
 "Activated at: {{\n"
 "              $ctrl.serviceDetails.activated_at | date:'medium'}}"
@@ -1360,7 +1366,7 @@ msgstr ""
 
 #: domains/staff/frontend/components/states.config.js:76
 #: site/apps/billing/recurring_payment_opts/recurring_payment_opts.component.html:19
-#: site/apps/billing/services/states.config.js:78 staff/apps/billing/states.config.js:215
+#: site/apps/billing/services/states.config.js:83 staff/apps/billing/states.config.js:220
 #: staff/apps/clients/states.config.js:69
 msgid "Active"
 msgstr "Activ"
@@ -1410,16 +1416,16 @@ msgid "Add DNS name server"
 msgstr "Adăugați server DNS pentru nume"
 
 #: site/apps/osinstances/addip/flinstanceaddip.html:55 site/apps/osinstances/addip/flinstanceaddip.html:66
-#: site/apps/osinstances/flinstancedetail.html:460 site/apps/osinstances/flinstancedetail.html:491
+#: site/apps/osinstances/flinstancedetail.html:483 site/apps/osinstances/flinstancedetail.html:514
 #: staff/apps/osinstances/addip/flinstanceaddip.html:55 staff/apps/osinstances/addip/flinstanceaddip.html:66
-#: staff/apps/osinstances/flinstancedetail.html:463 staff/apps/osinstances/flinstancedetail.html:494
+#: staff/apps/osinstances/flinstancedetail.html:482 staff/apps/osinstances/flinstancedetail.html:513
 msgid "Add IP"
 msgstr "Adaugă IP"
 
 #: site/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:43
-#: site/apps/osinstances/flinstancedetail.html:467 site/apps/osinstances/flinstancedetail.html:498
+#: site/apps/osinstances/flinstancedetail.html:490 site/apps/osinstances/flinstancedetail.html:521
 #: staff/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:43
-#: staff/apps/osinstances/flinstancedetail.html:470 staff/apps/osinstances/flinstancedetail.html:501
+#: staff/apps/osinstances/flinstancedetail.html:489 staff/apps/osinstances/flinstancedetail.html:520
 msgid "Add IP automatically"
 msgstr "Adaugă IP automat"
 
@@ -1518,7 +1524,7 @@ msgstr "Adaugă grup de utilizatori"
 msgid "Add client to group"
 msgstr "Adaugă utilizator la grup"
 
-#: staff/apps/osbilling/pricing/flpricerule.html:174
+#: staff/apps/osbilling/pricing/flpricerule.html:196
 msgid "Add condition"
 msgstr "Adaugă condiție"
 
@@ -1653,7 +1659,7 @@ msgstr "Adaugă ip"
 msgid "Add ip(s)"
 msgstr "Adaugă ip(uri)"
 
-#: site/apps/pkm/flpkmkeyedit.html:42 staff/apps/pkm/flpkmkeyedit.html:41
+#: site/apps/pkm/flpkmkeyedit.html:43 staff/apps/pkm/flpkmkeyedit.html:42
 msgid "Add key"
 msgstr "Adaugă cheie"
 
@@ -1669,7 +1675,7 @@ msgstr "Adaugă măsurătoare"
 msgid "Add metric pricing rule"
 msgstr "Adaugă regulă de preț pentru măsurătoare"
 
-#: staff/apps/osbilling/pricing/flpricerule.component.js:58 staff/apps/osbilling/pricing/flpricerule.html:212
+#: staff/apps/osbilling/pricing/flpricerule.component.js:58 staff/apps/osbilling/pricing/flpricerule.html:234
 #: staff/apps/osbilling/resources/fladdresourcefield.html:9
 msgid "Add modifier"
 msgstr "Adaugă modificator"
@@ -1721,9 +1727,9 @@ msgstr "Adaugă notă"
 msgid "Add payment"
 msgstr "Adaugă plată"
 
-#: site/apps/osinstances/addport/flinstanceaddport.html:58 site/apps/osinstances/flinstancedetail.html:446
-#: site/apps/osinstances/flinstancedetail.html:484 staff/apps/osinstances/addport/flinstanceaddport.html:58
-#: staff/apps/osinstances/flinstancedetail.html:449 staff/apps/osinstances/flinstancedetail.html:487
+#: site/apps/osinstances/addport/flinstanceaddport.html:58 site/apps/osinstances/flinstancedetail.html:469
+#: site/apps/osinstances/flinstancedetail.html:507 staff/apps/osinstances/addport/flinstanceaddport.html:58
+#: staff/apps/osinstances/flinstancedetail.html:468 staff/apps/osinstances/flinstancedetail.html:506
 msgid "Add port"
 msgstr "Adaugă port"
 
@@ -1779,8 +1785,8 @@ msgstr "Adaugă regula"
 msgid "Add rule"
 msgstr "Adaugă regula"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:161
-#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:162
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:166
+#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:167
 msgid "Add rule scheduled"
 msgstr "Adăugare regula in progres"
 
@@ -1817,8 +1823,8 @@ msgstr "Adăugare subrețea in progres"
 msgid "Add subnet to network {{ $ctrl.network.name }}"
 msgstr "Adaugă subrețea la rețeaua  {{ $ctrl.network.name }}"
 
-#: staff/apps/settings/configurations/configurationdetails.html:420
-#: staff/apps/settings/configurations/configurationdetails.html:480
+#: staff/apps/settings/configurations/configurationdetails.html:431
+#: staff/apps/settings/configurations/configurationdetails.html:491
 msgid "Add tax for invoices generated for credit addition"
 msgstr ""
 
@@ -1826,7 +1832,7 @@ msgstr ""
 msgid "Add the default signature. This will be used for the departments that don't have a custom signature."
 msgstr ""
 
-#: staff/apps/osbilling/pricing/flpricerule.html:154 staff/apps/osbilling/pricing/flpricerule.html:157
+#: staff/apps/osbilling/pricing/flpricerule.html:176 staff/apps/osbilling/pricing/flpricerule.html:179
 #: staff/apps/osbilling/resources/flmetric.html:76 staff/apps/osbilling/resources/flmetric.html:79
 msgid "Add tier"
 msgstr "Adaugă nivel"
@@ -1884,7 +1890,7 @@ msgstr "Adaugă grup de utilizatori"
 msgid "Add user to group"
 msgstr "Adaugă utilizator la grup"
 
-#: staff/apps/settings/configurations/configurationdetails.html:287
+#: staff/apps/settings/configurations/configurationdetails.html:298
 msgid "Additional parameters can be set as JSON to be sent to the service module on creation."
 msgstr "Parametrii suplimentari poti fi setați ca JSON ca să fie trimiși către modulul serviciului la creare."
 
@@ -1980,6 +1986,10 @@ msgstr "ID proiect administrator"
 msgid "Administrator username"
 msgstr "Nume utilizator administrator"
 
+#: staff/apps/billing/services/enable_billing_dialog/flenablebillingdialog.controller.js:13
+msgid "After last cycle end"
+msgstr ""
+
 #: staff/apps/settings/general/tos_settings/tos-settings.component.html:55
 msgid ""
 "After this date, user won't be able to use the fleio panel anymore unless he agrees with terms\n"
@@ -1998,18 +2008,18 @@ msgstr ""
 msgid "Agree with terms of service"
 msgstr "Comandă serviciu automat"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:25
-#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:25
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:29
+#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:29
 msgid "All ICMP"
 msgstr "Tot traficul ICMP"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:23
-#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:23
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:27
+#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:27
 msgid "All TCP"
 msgstr "Tot traficul TCP"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:24
-#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:24
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:28
+#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:28
 msgid "All UDP"
 msgstr "Tot traficul UDP"
 
@@ -2077,7 +2087,7 @@ msgstr ""
 msgid "Allowed formats: {{ $ctrl.allowedFormats }}"
 msgstr "Format disc: {{ $ctrl.image.disk_format }}"
 
-#: staff/apps/settings/configurations/configurationdetails.html:472
+#: staff/apps/settings/configurations/configurationdetails.html:483
 #, fuzzy
 #| msgid "On service due date"
 msgid "Allows issuing invoices a specified number of days before service due date."
@@ -2088,11 +2098,11 @@ msgstr "La data scadentă a serviciului"
 msgid "Already created cloud resources will not be suspended based on this threshold."
 msgstr "O resursă „cloud” deja creeată nu va fi suspendată pe baza acestui prag."
 
-#: staff/apps/settings/configurations/configurationdetails.html:330
+#: staff/apps/settings/configurations/configurationdetails.html:341
 msgid "Always issue fiscal invoices with sequential numbers"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:452
+#: staff/apps/settings/configurations/configurationdetails.html:463
 msgid ""
 "Always issue fiscal invoices with sequential numbers - choose when you want all issued invoices to have "
 "consecutive numbers and it does not bother you that all invoices will be issued as fiscal, even if not paid. "
@@ -2103,8 +2113,8 @@ msgstr ""
 #: site/apps/billing/invoicing/flinvoicingdetails.html:281
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:272
 #: staff/apps/billing/invoicing/payments/paymentcreate.html:40
-#: staff/apps/clients/changecredit/flclientchangecredit.html:19 staff/apps/clients/flclientdetails.html:175
-#: staff/apps/clients/flclientdetails.html:238
+#: staff/apps/clients/changecredit/flclientchangecredit.html:19 staff/apps/clients/flclientdetails.html:182
+#: staff/apps/clients/flclientdetails.html:245
 msgid "Amount"
 msgstr "Sumă"
 
@@ -2129,7 +2139,7 @@ msgstr ""
 "A apărut o eroare\n"
 "  \t<span ng-if=\"$ctrl.error.data.detail\" class=\"fl-message\"><br>{{ $ctrl.error.data.detail }}</span>"
 
-#: staff/apps/settings/configurations/configurationdetails.html:426
+#: staff/apps/settings/configurations/configurationdetails.html:437
 msgid "An invoice will be generated for used services"
 msgstr "O factura o sa fie generata pentru serviciul utilizat"
 
@@ -2139,8 +2149,10 @@ msgstr ""
 
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:75
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:84
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:19
 #: staff/apps/ossecuritygroups/flsecuritygroupdetails.html:77
 #: staff/apps/ossecuritygroups/flsecuritygroupdetails.html:86
+#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:19
 msgid "Any"
 msgstr "Oricare"
 
@@ -2165,7 +2177,7 @@ msgstr "Aplicația e inactivă. Apasă <strong>Activează</strong> pentru a reî
 msgid "Apply & recheck configuration"
 msgstr "Aplică și verifică configurația"
 
-#: staff/apps/billing/products/flbillingproductedit.html:104
+#: staff/apps/billing/products/flbillingproductedit.html:117
 msgid "Apply taxes to this product"
 msgstr "Aplică taxe la acest produs"
 
@@ -2173,7 +2185,7 @@ msgstr "Aplică taxe la acest produs"
 msgid "Architecture: {{ $ctrl.image.architecture }}"
 msgstr "Arhitectura: {{ $ctrl.image.architecture }}"
 
-#: site/apps/billing/services/states.config.js:98 staff/apps/billing/states.config.js:235
+#: site/apps/billing/services/states.config.js:103 staff/apps/billing/states.config.js:240
 msgid "Archived"
 msgstr "Arhivat"
 
@@ -2337,8 +2349,8 @@ msgstr "Ești sigur că vrei să ștergi volumul?"
 #: staff/apps/billing/products/flbillingproductdetails.component.js:50
 #: staff/apps/billing/products/flbillingproducts.component.js:55
 #: staff/apps/billing/products/flbillingproducts.component.js:68
-#: staff/apps/billing/services/flserviceactions.component.js:30
-#: staff/apps/billing/services/flserviceactions.component.js:52
+#: staff/apps/billing/services/flserviceactions.component.js:64
+#: staff/apps/billing/services/flserviceactions.component.js:86
 #: staff/apps/billing/taxrules/flbillingtaxrules.component.js:33
 #: staff/apps/clientgroups/flclientgroupdetails.component.js:106
 #: staff/apps/clientgroups/flclientgroupsactions.component.js:51
@@ -2415,16 +2427,16 @@ msgstr "Atribuit la"
 msgid "Assigned to reseller"
 msgstr "Atribuit la serviciu ID"
 
-#: site/apps/osinstances/flinstancedetail.html:551 staff/apps/osinstances/flinstancedetail.html:555
+#: site/apps/osinstances/flinstancedetail.html:574 staff/apps/osinstances/flinstancedetail.html:574
 msgid "Associate"
 msgstr "Asociază"
 
 #: site/apps/osinstances/actions/flinstanceactions.html:122
 #: site/apps/osinstances/actions/flxsinstanceactions.html:124
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:39
-#: site/apps/osinstances/flinstancedetail.html:474 site/apps/osinstances/flinstancedetail.html:505
+#: site/apps/osinstances/flinstancedetail.html:497 site/apps/osinstances/flinstancedetail.html:528
 #: staff/apps/osinstances/associateip/flinstanceassociateip.html:39
-#: staff/apps/osinstances/flinstancedetail.html:477 staff/apps/osinstances/flinstancedetail.html:508
+#: staff/apps/osinstances/flinstancedetail.html:496 staff/apps/osinstances/flinstancedetail.html:527
 msgid "Associate IP"
 msgstr "Asociază IP"
 
@@ -2468,7 +2480,7 @@ msgstr "Adaugă regulă la grup de securitate"
 msgid "Associate security group to {{::$ctrl.instance.name }}"
 msgstr "Asociază grupul de securitate pentru instanta {{ $ctrl.instance.name }}"
 
-#: staff/apps/clients/flclientdetails.html:419
+#: staff/apps/clients/flclientdetails.html:426
 msgid "Associate user"
 msgstr "Asociază utilizator"
 
@@ -2522,9 +2534,9 @@ msgstr ""
 msgid "Attach"
 msgstr "Atașează"
 
-#: site/apps/osinstances/attachport/flinstanceattachport.html:44 site/apps/osinstances/flinstancedetail.html:453
+#: site/apps/osinstances/attachport/flinstanceattachport.html:44 site/apps/osinstances/flinstancedetail.html:476
 #: staff/apps/osinstances/attachport/flinstanceattachport.html:44
-#: staff/apps/osinstances/flinstancedetail.html:456
+#: staff/apps/osinstances/flinstancedetail.html:475
 #, fuzzy
 #| msgid "Attach"
 msgid "Attach port"
@@ -2537,8 +2549,8 @@ msgstr "Atașează"
 msgid "Attach port to instance {{ $ctrl.instance.name }}"
 msgstr "Adaugă port la instanța {{ $ctrl.instance.name }}"
 
-#: site/apps/osinstances/flinstancedetail.html:276 site/apps/osvolumes/attach/flvolumeattach.html:31
-#: staff/apps/osinstances/flinstancedetail.html:252
+#: site/apps/osinstances/flinstancedetail.html:299 site/apps/osvolumes/attach/flvolumeattach.html:31
+#: staff/apps/osinstances/flinstancedetail.html:271
 msgid "Attach volume"
 msgstr "Atașează volume"
 
@@ -2632,7 +2644,7 @@ msgstr "Adaugă fond de alocare"
 msgid "Auto calculate prices"
 msgstr "Calculează prețuri automat"
 
-#: staff/apps/settings/configurations/configurationdetails.html:237
+#: staff/apps/settings/configurations/configurationdetails.html:248
 msgid "Auto create new order on signup"
 msgstr "Crează automat o nouă comandă la înregistrare"
 
@@ -2646,36 +2658,36 @@ msgstr "Rețeaua a fost creată"
 msgid "Auto creating network..."
 msgstr "Rețeaua este în curs de creeare..."
 
-#: site/apps/osinstances/create/flbootsourceselect.html:173
-#: staff/apps/osinstances/create/flbootsourceselect.html:185
+#: site/apps/osinstances/create/flbootsourceselect.html:169
+#: staff/apps/osinstances/create/flbootsourceselect.html:181
 msgid "Auto delete volume when instance is terminated"
 msgstr "Auto șterge volum cand instanța este terminată"
 
-#: staff/apps/settings/configurations/configurationdetails.html:271
+#: staff/apps/settings/configurations/configurationdetails.html:282
 msgid "Auto order parameters as JSON"
 msgstr "Sortează automat parametrii ca JSON"
 
-#: staff/apps/settings/configurations/configurationdetails.html:240
+#: staff/apps/settings/configurations/configurationdetails.html:251
 msgid "Auto order service"
 msgstr "Comandă serviciu automat"
 
-#: staff/apps/settings/configurations/configurationdetails.html:253
+#: staff/apps/settings/configurations/configurationdetails.html:264
 msgid "Auto order service cycle"
 msgstr "Ciclul serviciului automat la comandă"
 
-#: staff/apps/settings/configurations/configurationdetails.html:320
-#: staff/apps/settings/configurations/configurationdetails.html:443
+#: staff/apps/settings/configurations/configurationdetails.html:331
+#: staff/apps/settings/configurations/configurationdetails.html:454
 msgid "Auto pay invoice only when enough credit"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:403
-#: staff/apps/settings/configurations/configurationdetails.html:475
+#: staff/apps/settings/configurations/configurationdetails.html:414
+#: staff/apps/settings/configurations/configurationdetails.html:486
 #, fuzzy
 #| msgid "Auto set tax exemption for EU customers"
 msgid "Auto set EU tax exemption on client add"
 msgstr "Setează automat scutirea de TVA pentru clienții din UE"
 
-#: staff/apps/billing/products/flbillingproductedit.html:94
+#: staff/apps/billing/products/flbillingproductedit.html:107
 msgid "Auto setup"
 msgstr "Setup automat"
 
@@ -2683,7 +2695,13 @@ msgstr "Setup automat"
 msgid "Auto setup: {{ $ctrl.productDetails.auto_setup_display }}"
 msgstr "Setup automat: {{ $ctrl.productDetails.auto_setup_display }}"
 
-#: site/apps/billing/services/servicedetails.html:55
+#: staff/apps/billing/services/details/servicedetails.html:109
+#, fuzzy
+#| msgid "Terminated at"
+msgid "Auto terminate date"
+msgstr "Terminat la"
+
+#: site/apps/billing/services/servicedetails.html:61
 msgid ""
 "Auto terminate date\n"
 "              : {{$ctrl.serviceDetails.auto_terminate_date | date:'medium'}}"
@@ -2691,7 +2709,7 @@ msgstr ""
 "Data auto terminare\n"
 "              : {{$ctrl.serviceDetails.auto_terminate_date | date:'medium'}}"
 
-#: site/apps/billing/services/servicedetails.html:57
+#: site/apps/billing/services/servicedetails.html:63
 msgid ""
 "Auto terminate reason\n"
 "              : {{$ctrl.serviceDetails.auto_terminate_reason }}"
@@ -2707,11 +2725,11 @@ msgstr "Autocompletează"
 msgid "Autofill prices from 2 to 10 years based on 1 year price"
 msgstr "Completează automat prețurile de la 2 la 10 ani bazându-te pe prețul pe un an"
 
-#: staff/apps/settings/configurations/configurationdetails.html:644
+#: staff/apps/settings/configurations/configurationdetails.html:655
 msgid "Automatically suspend a client when he reaches the credit limit."
 msgstr "Suspenda automat un client cand ajunge la limita de credit."
 
-#: staff/apps/settings/configurations/configurationdetails.html:666
+#: staff/apps/settings/configurations/configurationdetails.html:677
 #, fuzzy
 #| msgid ""
 #| "Automatically terminate a client on due date if he reached the credit limit. (disabled in this\n"
@@ -2837,7 +2855,7 @@ msgstr "Template-uri actualizate cu succes"
 msgid "Backup schedule type"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:593 staff/apps/osinstances/flinstancedetail.html:596
+#: site/apps/osinstances/flinstancedetail.html:616 staff/apps/osinstances/flinstancedetail.html:615
 #, fuzzy
 #| msgid "Plan update scheduled"
 msgid "Backup schedules"
@@ -2863,9 +2881,9 @@ msgstr "Nu există niciun serviciu OpenStack pentru acest client"
 msgid "Backup was scheduled for updating"
 msgstr "Regulă de taxare stearsă"
 
-#: site/apps/osinstances/flinstancedetail.html:558 site/apps/osinstances/flinstancedetail.html:567
-#: site/apps/osvolumes/flvolumedetails.html:38 staff/apps/osinstances/flinstancedetail.html:562
-#: staff/apps/osinstances/flinstancedetail.html:571 staff/apps/osvolumes/flvolumedetails.html:44
+#: site/apps/osinstances/flinstancedetail.html:581 site/apps/osinstances/flinstancedetail.html:590
+#: site/apps/osvolumes/flvolumedetails.html:38 staff/apps/osinstances/flinstancedetail.html:581
+#: staff/apps/osinstances/flinstancedetail.html:590 staff/apps/osvolumes/flvolumedetails.html:44
 #, fuzzy
 #| msgid "Back"
 msgid "Backups"
@@ -2911,7 +2929,7 @@ msgstr ""
 msgid "Before you continue, please fill in your information"
 msgstr "Înainte de a continua, complați vă rog informațiile"
 
-#: staff/apps/settings/configurations/configurationdetails.html:380
+#: staff/apps/settings/configurations/configurationdetails.html:391
 msgid "Billable seconds per month"
 msgstr "Secunde facturabile pe lună"
 
@@ -2926,7 +2944,7 @@ msgid "Billing cycle"
 msgstr "Ciclu de plată"
 
 #: staff/apps/settings/configurations/configurationdetails.html:129
-#: staff/apps/settings/configurations/configurationdetails.html:135
+#: staff/apps/settings/configurations/configurationdetails.html:141
 #, fuzzy
 #| msgid "Billable seconds per month"
 msgid "Billing cycle as calendar month"
@@ -2942,15 +2960,25 @@ msgstr "Ciclu de plată"
 msgid "Billing history"
 msgstr "Istoric facturare"
 
+#: site/apps/billing/services/servicedetails.html:51 staff/apps/billing/services/details/servicedetails.html:64
+msgid "Billing is disabled because last cycle state is {{ $ctrl.serviceDetails.last_service_cycle_state }}"
+msgstr ""
+
 #: staff/apps/billing/states.config.js:606
 msgid "Billing journal"
 msgstr "Jurnal"
+
+#: staff/apps/billing/products/flbillingproductedit.html:43
+#, fuzzy
+#| msgid "Billing cycle"
+msgid "Billing type"
+msgstr "Ciclu de plată"
 
 #: site/apps/osports/create/flportcreate.html:139 staff/apps/osports/create/flportcreate.html:161
 msgid "Binding: Host"
 msgstr ""
 
-#: staff/apps/osinstances/migrate/flinstancemigrate.html:35
+#: staff/apps/osinstances/migrate/flinstancemigrate.html:41
 msgid "Block migration"
 msgstr "Migrare bloc"
 
@@ -2976,7 +3004,7 @@ msgstr "Nici o instanță găsită"
 msgid "Bootable: {{ $ctrl.volume.bootable }}"
 msgstr "Tip: {{ $ctrl.volume.type }}"
 
-#: staff/apps/osinstances/create/flbootsourceselect.component.js:175
+#: staff/apps/osinstances/create/flbootsourceselect.component.js:223
 msgid "Booting from ISO only works with local storage, please select another image."
 msgstr ""
 
@@ -2989,7 +3017,7 @@ msgstr ""
 msgid "But your license includes {{$ctrl.max_cores}} cores."
 msgstr "Dar, licența ta include {{$ctrl.max_cores}} core-uri."
 
-#: site/apps/osinstances/flinstancedetail.html:202 staff/apps/osinstances/flinstancedetail.html:178
+#: site/apps/osinstances/flinstancedetail.html:225 staff/apps/osinstances/flinstancedetail.html:197
 msgid "Bytes in/out"
 msgstr "Octeți primiți/trimiși"
 
@@ -3029,17 +3057,23 @@ msgstr "Modifică client"
 msgid "COE: {{clusterTemplate.coe }}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:153 staff/apps/osinstances/flinstancedetail.html:131
+#: site/apps/osinstances/flinstancedetail.html:176 staff/apps/osinstances/flinstancedetail.html:150
 msgid "CPU metrics"
 msgstr "Măsurători CPU"
 
-#: site/apps/osinstances/flinstancedetail.html:176 staff/apps/osinstances/flinstancedetail.html:153
+#: site/apps/osinstances/flinstancedetail.html:199 staff/apps/osinstances/flinstancedetail.html:172
 msgid "CPU utilization"
 msgstr "Utilizare CPU"
 
 #: cpanel/staff/frontend/components/plugin_configuration/pluginconfiguration.html:6
 msgid "CPanel plugin configurations"
 msgstr "Configurările plugin-ului CPanel"
+
+#: staff/apps/osbilling/pricing/flpricerule.html:87 staff/apps/osbilling/pricing/flpricerule.html:88
+#, fuzzy
+#| msgid "Edit metric pricing rule"
+msgid "Calculate metrics pricing per time unit"
+msgstr "Modifică regula de stabilire preț pentru măsurătoare"
 
 #: domains/staff/frontend/components/pricing_cycles/pricingcycles.component.js:36
 msgid "Calculate prices based on default currency prices and and exchange rate."
@@ -3090,7 +3124,7 @@ msgstr "Nu se poate obtine continutul"
 #: site/apps/osinstances/attachport/flinstanceattachport.html:41
 #: site/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:40
 #: site/apps/osinstances/bootfromiso/flinstancebootfromiso.html:83
-#: site/apps/osinstances/create/flbootsourceselect.html:183
+#: site/apps/osinstances/create/flbootsourceselect.html:179
 #: site/apps/osinstances/create/flinstancecreate.html:251
 #: site/apps/osinstances/dissociateip/flinstancedissociateip.html:24
 #: site/apps/osinstances/editptr/fleditptr.html:20
@@ -3109,7 +3143,7 @@ msgstr "Nu se poate obtine continutul"
 #: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:50
 #: site/apps/osvolumesnapshots/reset_state/flvolumesnapshot-reset-state.html:25
 #: site/apps/osvolumesnapshots/update/fl-volumesnapshots-update.template.html:25
-#: site/apps/oszones/flzoneedit.html:58 site/apps/pkm/flpkmkeyedit.html:36
+#: site/apps/oszones/flzoneedit.html:58 site/apps/pkm/flpkmkeyedit.html:37
 #: staff/apps/billing/configurable_options/choices/choice.dialog.html:34
 #: staff/apps/billing/configurable_options/cycles/optioncycleedit.html:73
 #: staff/apps/billing/gateways/gatewaydetails.html:92
@@ -3118,9 +3152,10 @@ msgstr "Nu se poate obtine continutul"
 #: staff/apps/billing/invoicing/edit/flinvoiceedit.html:99 staff/apps/billing/orders/florderactions.html:13
 #: staff/apps/billing/products/associateproductoption.html:31
 #: staff/apps/billing/products/editcycle/flproductcycleedit.html:100
-#: staff/apps/billing/products/flbillingproductedit.html:168
+#: staff/apps/billing/products/flbillingproductedit.html:183
 #: staff/apps/billing/products/flbillingproductgroupedit.html:26
-#: staff/apps/billing/services/edit/flserviceedit.html:132
+#: staff/apps/billing/services/edit/flserviceedit.html:130
+#: staff/apps/billing/services/enable_billing_dialog/flenablebillingdialog.html:26
 #: staff/apps/billing/services/upgrade/flservicechangeproduct.component.html:49
 #: staff/apps/billing/services/upgrade/flservicechangeproduct.component.html:69
 #: staff/apps/billing/taxrules/flbillingtaxruleedit.html:80 staff/apps/clientgroups/flclientgroupedit.html:30
@@ -3139,7 +3174,7 @@ msgstr "Nu se poate obtine continutul"
 #: staff/apps/networks/flnetworkautocreate.html:52 staff/apps/networks/flnetworkedit.html:124
 #: staff/apps/networks/flnetworksubnetedit.html:219 staff/apps/osapiusers/flapiuseredit.html:56
 #: staff/apps/osbilling/plans/create/flplancreate.html:61 staff/apps/osbilling/plans/flbillingplandelete.html:25
-#: staff/apps/osbilling/pricing/flpricerule.html:259 staff/apps/osbilling/resources/fladdresourcefield.html:145
+#: staff/apps/osbilling/pricing/flpricerule.html:281 staff/apps/osbilling/resources/fladdresourcefield.html:145
 #: staff/apps/osbilling/resources/flmetric.html:94
 #: staff/apps/osclusters/create/flclustercreate.component.html:204
 #: staff/apps/osclusters/resize/flclusterresize.html:26
@@ -3154,10 +3189,10 @@ msgstr "Nu se poate obtine continutul"
 #: staff/apps/osinstances/attachport/flinstanceattachport.html:41
 #: staff/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:40
 #: staff/apps/osinstances/bootfromiso/flinstancebootfromiso.html:84
-#: staff/apps/osinstances/create/flbootsourceselect.html:195
+#: staff/apps/osinstances/create/flbootsourceselect.html:191
 #: staff/apps/osinstances/create/flinstancecreate.html:270
 #: staff/apps/osinstances/dissociateip/flinstancedissociateip.html:24
-#: staff/apps/osinstances/migrate/flinstancemigrate.html:56 staff/apps/osinstances/move/flinstancemove.html:34
+#: staff/apps/osinstances/migrate/flinstancemigrate.html:62 staff/apps/osinstances/move/flinstancemove.html:34
 #: staff/apps/osinstances/password/flinstancechangepassword.html:28
 #: staff/apps/osinstances/rebuild/flinstancerebuild.html:122
 #: staff/apps/osinstances/removeip/flinstanceremoveip.html:22
@@ -3177,9 +3212,9 @@ msgstr "Nu se poate obtine continutul"
 #: staff/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:56
 #: staff/apps/osvolumesnapshots/reset_state/flvolumesnapshot-reset-state.html:25
 #: staff/apps/osvolumesnapshots/update/fl-volumesnapshots-update.template.html:25
-#: staff/apps/oszones/flzoneedit.html:123 staff/apps/pkm/flpkmkeyedit.html:36
+#: staff/apps/oszones/flzoneedit.html:123 staff/apps/pkm/flpkmkeyedit.html:37
 #: staff/apps/reports/revenue_reports/generate_revenue_report.template.html:25
-#: staff/apps/settings/configurations/configurationdetails.html:722
+#: staff/apps/settings/configurations/configurationdetails.html:733
 #: staff/apps/settings/configurations/configurationedit.html:32 staff/apps/settings/flsettingserror.html:15
 #: staff/apps/settings/general/currency/flcurrencyedit.html:44
 #: staff/apps/settings/general/license/flsetlicense.html:22
@@ -3202,12 +3237,12 @@ msgstr "Nu se poate obtine continutul"
 msgid "Cancel"
 msgstr "Anulare"
 
-#: site/apps/billing/services/servicedetails.html:16 site/apps/billing/services/services.html:30
-#: site/apps/billing/services/services.html:83
+#: site/apps/billing/services/servicedetails.html:16 site/apps/billing/services/services.html:34
+#: site/apps/billing/services/services.html:92
 msgid "Cancel service"
 msgstr "Anulează serviciu"
 
-#: site/apps/billing/services/states.config.js:90 staff/apps/billing/states.config.js:227
+#: site/apps/billing/services/states.config.js:95 staff/apps/billing/states.config.js:232
 msgid "Canceled"
 msgstr "Anulat"
 
@@ -3215,11 +3250,11 @@ msgstr "Anulat"
 msgid "Cancellation reason"
 msgstr "Motivul anulării"
 
-#: staff/apps/billing/services/details/servicedetails.html:127
+#: staff/apps/billing/services/details/servicedetails.html:152
 msgid "Cancellation request ID"
 msgstr "ID-ul cereri de întrerupere"
 
-#: site/apps/billing/services/servicedetails.html:72 site/apps/billing/services/services.html:24
+#: site/apps/billing/services/servicedetails.html:80 site/apps/billing/services/services.html:27
 msgid "Cancellation requested"
 msgstr "Anulare solicitata"
 
@@ -3247,7 +3282,7 @@ msgstr ""
 msgid "Cannot add signature"
 msgstr "Modifică notă"
 
-#: staff/apps/osinstances/create/flbootsourceselect.component.js:176
+#: staff/apps/osinstances/create/flbootsourceselect.component.js:224
 msgid "Cannot boot from ISO to volume"
 msgstr ""
 
@@ -3307,7 +3342,7 @@ msgid "Change client's configuration"
 msgstr "Schimbă configurările clientului"
 
 #: staff/apps/clients/changeconfiguration/flclientchangeconfiguration.html:40
-#: staff/apps/clients/flclientdetails.html:441
+#: staff/apps/clients/flclientdetails.html:448
 msgid "Change configuration"
 msgstr "Schimbă configurarea"
 
@@ -3318,7 +3353,7 @@ msgid "Change email"
 msgstr "Creează plan"
 
 #: staff/apps/clients/change_enduser_panel_url/change_enduser_panel_url.html:2
-#: staff/apps/clients/flclientdetails.html:382
+#: staff/apps/clients/flclientdetails.html:389
 #, fuzzy
 #| msgid "Show in end user panel"
 msgid "Change enduser panel url"
@@ -3343,8 +3378,8 @@ msgstr "Opțiuni config."
 msgid "Change password"
 msgstr "Modifică parola"
 
-#: staff/apps/clients/change_pricing_plan/change_pricing_plan.html:2 staff/apps/clients/flclientdetails.html:311
-#: staff/apps/clients/flclientdetails.html:378
+#: staff/apps/clients/change_pricing_plan/change_pricing_plan.html:2 staff/apps/clients/flclientdetails.html:318
+#: staff/apps/clients/flclientdetails.html:385
 #, fuzzy
 #| msgid "Create pricing plan"
 msgid "Change pricing plan"
@@ -3400,7 +3435,7 @@ msgstr "Salvează domeniu"
 msgid "Check if domain is available"
 msgstr "Verifică daca domeniul este disponibil"
 
-#: site/apps/osinstances/flinstancedetail.component.js:40 site/apps/osinstances/flinstances.component.js:31
+#: site/apps/osinstances/flinstancedetail.component.js:40 site/apps/osinstances/flinstances.component.js:33
 #: staff/apps/osinstances/flinstancedetails.component.js:39 staff/apps/osinstances/flinstances.component.js:30
 msgid ""
 "Check if files have been successfully\n"
@@ -3469,6 +3504,10 @@ msgstr "Alege dintr-o imagine, volum, snapshot instanță sau snapshot volum exi
 msgid "Choose period"
 msgstr "Alege perioada"
 
+#: staff/apps/billing/services/enable_billing_dialog/flenablebillingdialog.html:11
+msgid "Choose the start date for the new cycle"
+msgstr ""
+
 #: commons/userprofile/fluserprofile.html:79
 #: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:88
 #: domains/enduser/frontend/components/states.config.js:196
@@ -3492,7 +3531,7 @@ msgstr "Grup utilizatori actualizat"
 msgid "Clear all filters"
 msgstr "Șterge toate filtrele"
 
-#: staff/apps/osbilling/plans/flbillingplandetails.html:90
+#: staff/apps/osbilling/plans/flbillingplandetails.html:89
 msgid "Click for details"
 msgstr "Click pentru detalii"
 
@@ -3523,8 +3562,8 @@ msgstr "Click pentru copiere"
 #: site/apps/osvolumebackups/flvolumebackups.html:65 staff/apps/billing/invoicing/flinvoicing.html:21
 #: staff/apps/billing/journal/journaldetail.html:14 staff/apps/billing/orders/orderdetails.html:27
 #: staff/apps/billing/orders/orders.html:18 staff/apps/billing/orders/orders.html:39
-#: staff/apps/billing/services/details/servicedetails.html:96 staff/apps/billing/services/services.html:19
-#: staff/apps/billing/services/services.html:47 staff/apps/billing/states.config.js:174
+#: staff/apps/billing/services/details/servicedetails.html:121 staff/apps/billing/services/services.html:19
+#: staff/apps/billing/services/services.html:51 staff/apps/billing/states.config.js:174
 #: staff/apps/billing/states.config.js:246 staff/apps/billing/states.config.js:346
 #: staff/apps/billing/states.config.js:353 staff/apps/billing/states.config.js:40
 #: staff/apps/clients/flclients.html:1 staff/apps/floatingips/flfloatingipadd.html:9
@@ -3534,7 +3573,7 @@ msgstr "Click pentru copiere"
 #: staff/apps/osclusters/states.config.js:69 staff/apps/osclustertemplates/flclustertemplates.component.html:60
 #: staff/apps/osclustertemplates/states.config.js:63 staff/apps/osimages/flimages.html:34
 #: staff/apps/osimages/flimages.html:96 staff/apps/osimages/states.config.js:74
-#: staff/apps/osinstances/flinstancedetail.html:68 staff/apps/osinstances/flinstances.html:44
+#: staff/apps/osinstances/flinstancedetail.html:87 staff/apps/osinstances/flinstances.html:44
 #: staff/apps/osinstances/states.config.js:74 staff/apps/osports/states.config.js:54
 #: staff/apps/osrouters/flrouteredit.html:11 staff/apps/ossecuritygroups/flsecuritygroupedit.html:10
 #: staff/apps/osvolumebackups/flvolumebackups.html:65
@@ -3564,7 +3603,7 @@ msgstr "Clienți"
 msgid "Client added to group"
 msgstr "Utilizatorul a fost adăugat la grup"
 
-#: staff/apps/clients/flclientdetails.html:70
+#: staff/apps/clients/flclientdetails.html:77
 msgid "Client credit"
 msgstr "Credit client"
 
@@ -3667,13 +3706,20 @@ msgstr "Imagine client"
 msgid "Client images"
 msgstr "Imagini client"
 
-#: staff/apps/settings/configurations/configurationdetails.html:278
+#: staff/apps/settings/configurations/configurationdetails.html:289
 #, fuzzy
 #| msgid "Relative prices cannot be applied to default currency."
 msgid "Client initial credit (default currency)"
 msgstr "Prețurile relative nu pot fi aplicate la moneda implicită"
 
-#: staff/apps/clients/flclientdetails.html:100
+#: staff/apps/clients/flclientdetails.html:69
+msgid ""
+"Client is on a billing agreement:\n"
+"                      <span ng-if=\"$ctrl.client.has_billing_agreement\">yes</span>\n"
+"                      <span ng-if=\"!$ctrl.client.has_billing_agreement\">no</span>"
+msgstr ""
+
+#: staff/apps/clients/flclientdetails.html:107
 msgid "Client is out of credit since"
 msgstr "Clientul a rămas fără credit de la"
 
@@ -3693,8 +3739,8 @@ msgstr "Clienți mai noi de 2 zile"
 msgid "Client removed from group"
 msgstr "Utilizator șters din grup"
 
-#: staff/apps/settings/configurations/configurationdetails.html:232
-#: staff/apps/settings/configurations/configurationdetails.html:283
+#: staff/apps/settings/configurations/configurationdetails.html:243
+#: staff/apps/settings/configurations/configurationdetails.html:294
 msgid "Client signup automation"
 msgstr "Automatizare înregistrare clienți"
 
@@ -3931,7 +3977,7 @@ msgstr "Clienți"
 msgid "Clients & users"
 msgstr "Clienți și utilizatori"
 
-#: staff/apps/settings/configurations/configurationdetails.html:478
+#: staff/apps/settings/configurations/configurationdetails.html:489
 msgid ""
 "Clients from this country are never marked as \"Tax exempt\" on sign-up. Useful for VAT purposes: clients from "
 "your home country should always be charged VAT."
@@ -3963,7 +4009,7 @@ msgstr "Închide tichet"
 msgid "Cloud"
 msgstr "Cloud"
 
-#: staff/apps/clients/flclientdetails.html:446
+#: staff/apps/clients/flclientdetails.html:453
 msgid "Cloud resources"
 msgstr "Resurse cloud"
 
@@ -4130,8 +4176,8 @@ msgstr "Comentează & Închide"
 msgid "Comment added"
 msgstr "Comentariu adăugat"
 
-#: site/apps/osinstances/create/flbootsourceselect.html:79
-#: staff/apps/osinstances/create/flbootsourceselect.html:57
+#: site/apps/osinstances/create/flbootsourceselect.html:75
+#: staff/apps/osinstances/create/flbootsourceselect.html:53
 msgid "Community Images"
 msgstr "Community Images"
 
@@ -4147,12 +4193,12 @@ msgstr "Community Images"
 msgid "Company"
 msgstr "Companie"
 
-#: staff/apps/settings/configurations/configurationdetails.html:152
-#: staff/apps/settings/configurations/configurationdetails.html:158
+#: staff/apps/settings/configurations/configurationdetails.html:163
+#: staff/apps/settings/configurations/configurationdetails.html:169
 msgid "Company info"
 msgstr "Informații companie"
 
-#: staff/apps/settings/configurations/configurationdetails.html:159
+#: staff/apps/settings/configurations/configurationdetails.html:170
 msgid "Company information like name and other billing details."
 msgstr "Informațiile companiei precum numele și alte detalii de plată."
 
@@ -4186,12 +4232,12 @@ msgstr "Opțiune configurabilă"
 msgid "Configurable option saved"
 msgstr "Opțiune configurabilă salvată"
 
-#: site/apps/billing/services/servicedetails.html:60 staff/apps/billing/services/details/servicedetails.html:115
+#: site/apps/billing/services/servicedetails.html:66 staff/apps/billing/services/details/servicedetails.html:140
 msgid "Configurable options:"
 msgstr "Opțiuni configurabile:"
 
 #: hypanel/staff/frontend/components/product_settings/productsettings.html:28
-#: staff/apps/clients/flclientdetails.html:434 staff/apps/clients/flclientedit.html:43
+#: staff/apps/clients/flclientdetails.html:441 staff/apps/clients/flclientedit.html:43
 #: staff/apps/clients/flclientedit.html:45 staff/apps/clients/flclients.html:80
 #: staff/apps/settings/configurations/configurations.html:1
 msgid "Configuration"
@@ -4220,7 +4266,7 @@ msgstr "Nume configurație"
 
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:108
 #: staff/apps/clients/changeconfiguration/flclientchangeconfiguration.html:24
-#: staff/apps/clients/flclientdetails.html:425 staff/apps/settings/states.config.js:27
+#: staff/apps/clients/flclientdetails.html:432 staff/apps/settings/states.config.js:27
 msgid "Configurations"
 msgstr "Configurări"
 
@@ -4276,7 +4322,7 @@ msgstr "Conexiunea eșuată"
 msgid "Connector"
 msgstr "Connector"
 
-#: staff/apps/settings/configurations/configurationdetails.html:136
+#: staff/apps/settings/configurations/configurationdetails.html:142
 msgid "Consider a calendar month as billing cycle."
 msgstr ""
 
@@ -4473,7 +4519,7 @@ msgstr "Țara / stat"
 #: site/apps/ossecuritygroups/flsecuritygroupedit.html:50
 #: site/apps/ossecuritygroups/flsecuritygrouprulecreate.html:134 site/apps/osvolumes/states.config.js:114
 #: site/apps/oszones/flzoneedit.html:65 staff/apps/billing/products/editcycle/flproductcycleedit.html:104
-#: staff/apps/billing/products/flbillingproductedit.html:164
+#: staff/apps/billing/products/flbillingproductedit.html:179
 #: staff/apps/billing/products/flbillingproductgroupedit.html:30
 #: staff/apps/billing/taxrules/flbillingtaxruleedit.html:84 staff/apps/clients/flclientedit.html:166
 #: staff/apps/networks/flnetworkadd.html:354 staff/apps/networks/flnetworkautocreate.html:56
@@ -4500,7 +4546,7 @@ msgstr "Creează opțiune configurabilă"
 msgid "Create DNS zone for client"
 msgstr "Creează serviciu OpenStack pentru client"
 
-#: staff/apps/clients/flclientdetails.html:320
+#: staff/apps/clients/flclientdetails.html:327
 msgid "Create OpenStack service"
 msgstr "Creează Serviciu OpenStack"
 
@@ -4512,8 +4558,8 @@ msgstr "Creează serviciu OpenStack pentru client"
 msgid "Create PTR record"
 msgstr "Creează recor PTR"
 
-#: staff/apps/settings/configurations/configurationdetails.html:311
-#: staff/apps/settings/configurations/configurationdetails.html:434
+#: staff/apps/settings/configurations/configurationdetails.html:322
+#: staff/apps/settings/configurations/configurationdetails.html:445
 #, fuzzy
 #| msgid "Refund invoice payment"
 msgid "Create TODO on invoice payment"
@@ -4651,16 +4697,16 @@ msgid "Create image"
 msgstr "Creează imagine"
 
 #: site/apps/dashboard/fldashboard.html:75 site/apps/osinstances/create/flinstancecreate.html:248
-#: site/apps/osinstances/flinstances.component.js:29 site/apps/osinstances/states.config.js:115
+#: site/apps/osinstances/flinstances.component.js:31 site/apps/osinstances/states.config.js:115
 #: staff/apps/osinstances/create/flinstancecreate.html:267 staff/apps/osinstances/states.config.js:216
 msgid "Create instance"
 msgstr "Creează instanță"
 
-#: site/apps/osinstances/flinstancedetail.html:569
+#: site/apps/osinstances/flinstancedetail.html:592
 msgid "Create instant backups for your instance."
 msgstr ""
 
-#: staff/apps/billing/invoicing/create/flinvoicecreate.html:155 staff/apps/clients/flclientdetails.html:111
+#: staff/apps/billing/invoicing/create/flinvoicecreate.html:155 staff/apps/clients/flclientdetails.html:118
 msgid "Create invoice"
 msgstr "Creează factură"
 
@@ -4680,14 +4726,14 @@ msgstr "Creează rețea"
 msgid "Create new account"
 msgstr "Creează cont nou"
 
-#: site/apps/osinstances/flinstancedetail.html:586 site/apps/osvolumes/backups/flvolumebackups.template.html:4
-#: staff/apps/osinstances/flinstancedetail.html:589 staff/apps/osvolumes/backups/flvolumebackups.template.html:4
+#: site/apps/osinstances/flinstancedetail.html:609 site/apps/osvolumes/backups/flvolumebackups.template.html:4
+#: staff/apps/osinstances/flinstancedetail.html:608 staff/apps/osvolumes/backups/flvolumebackups.template.html:4
 #, fuzzy
 #| msgid "Create new account"
 msgid "Create new backup"
 msgstr "Creează cont nou"
 
-#: site/apps/osinstances/flinstancedetail.html:626 staff/apps/osinstances/flinstancedetail.html:629
+#: site/apps/osinstances/flinstancedetail.html:649 staff/apps/osinstances/flinstancedetail.html:648
 #, fuzzy
 #| msgid "Create new account"
 msgid "Create new backup schedule"
@@ -4775,13 +4821,13 @@ msgstr "Creează server"
 
 #: staff/apps/clients/createopenstackservice/flcreateopenstackservice.html:90
 #: staff/apps/clients/createresellerservice/flcreateresellerservice.html:53
-#: staff/apps/clients/flclientdetails.html:259 staff/apps/clients/flclientdetails.html:339
+#: staff/apps/clients/flclientdetails.html:266 staff/apps/clients/flclientdetails.html:346
 msgid "Create service"
 msgstr "Creează serviciu"
 
-#: site/apps/osimages/snapshot/flinstancesnapshot.html:36 site/apps/osinstances/flinstancedetail.html:225
+#: site/apps/osimages/snapshot/flinstancesnapshot.html:36 site/apps/osinstances/flinstancedetail.html:248
 #: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:53
-#: staff/apps/osinstances/flinstancedetail.html:201 staff/apps/osinstances/snapshot/flinstancesnapshot.html:37
+#: staff/apps/osinstances/flinstancedetail.html:220 staff/apps/osinstances/snapshot/flinstancesnapshot.html:37
 #: staff/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:59
 msgid "Create snapshot"
 msgstr "Creează snapshot"
@@ -4814,7 +4860,7 @@ msgstr "Creează subrețea"
 msgid "Create tax rule"
 msgstr "Creează regula taxa"
 
-#: staff/apps/users/fluseredit.html:5 staff/apps/users/flusers.html:125
+#: staff/apps/users/fluseredit.html:5 staff/apps/users/flusers.html:129
 msgid "Create user"
 msgstr "Creează utilizator"
 
@@ -4873,7 +4919,7 @@ msgstr "Creat la"
 #: site/apps/operations/operations.html:15 site/apps/osclusters/states.config.js:59
 #: site/apps/osclustertemplates/flclustertemplates.component.html:55
 #: site/apps/osclustertemplates/states.config.js:58 site/apps/osimages/flimages.html:96
-#: site/apps/osimages/states.config.js:60 site/apps/osinstances/flinstances.html:67
+#: site/apps/osimages/states.config.js:60 site/apps/osinstances/flinstances.html:70
 #: site/apps/osports/states.config.js:45 site/apps/osports/states.config.js:49
 #: site/apps/ossecuritygroups/flsecuritygroups.html:66 site/apps/ossecuritygroups/states.config.js:36
 #: site/apps/ossecuritygroups/states.config.js:39 site/apps/osvolumebackups/states.config.js:50
@@ -4881,7 +4927,7 @@ msgstr "Creat la"
 #: site/apps/osvolumes/snapshots/flvolumesnapshots.template.html:13 site/apps/osvolumes/states.config.js:63
 #: site/apps/osvolumesnapshots/states.config.js:50 site/apps/oszones/flzones.html:64
 #: site/apps/oszones/states.config.js:42 site/apps/pkm/flpkmkeys.html:54 site/apps/pkm/states.config.js:49
-#: staff/apps/activitylog/states.config.js:66 staff/apps/billing/services/details/servicedetails.html:66
+#: staff/apps/activitylog/states.config.js:66 staff/apps/billing/services/details/servicedetails.html:72
 #: staff/apps/billing/states.config.js:175 staff/apps/billing/states.config.js:181
 #: staff/apps/clientgroups/flclientgroups.html:27 staff/apps/clientgroups/flclientgroups.html:49
 #: staff/apps/clientgroups/states.config.js:45 staff/apps/clientgroups/states.config.js:49
@@ -4947,7 +4993,7 @@ msgstr "Creat la: {{ $ctrl.image.created_at | date:'medium' }}"
 msgid "Created at: {{ $ctrl.port.created_at | date:'medium' }}"
 msgstr "Creat la: {{ ::$ctrl.zone.created_at | date:'medium' }}"
 
-#: site/apps/billing/services/servicedetails.html:49
+#: site/apps/billing/services/servicedetails.html:55
 msgid "Created at: {{ $ctrl.serviceDetails.created_at | date:'medium'}}"
 msgstr "Creat la: {{ $ctrl.serviceDetails.created_at | date:'medium' }}"
 
@@ -5030,11 +5076,11 @@ msgstr "Creat la: {{ $ctrl.image.created_at | date:'medium' }}"
 msgid "Created at: {{$ctrl.clusterTemplate.created_at | date:'medium'}}"
 msgstr "Creat la: {{ $ctrl.image.created_at | date:'medium' }}"
 
-#: site/apps/osinstances/flinstancedetail.html:96
+#: site/apps/osinstances/flinstancedetail.html:117
 msgid "Created at: {{::$ctrl.instance.created | date : 'medium' }}"
 msgstr "Creat la: {{::$ctrl.instance.created | date : 'medium' }}"
 
-#: staff/apps/osinstances/flinstancedetail.html:66
+#: staff/apps/osinstances/flinstancedetail.html:85
 msgid "Created at: {{::$ctrl.instance.created | date : 'medium'}}"
 msgstr "Creat la: {{::$ctrl.instance.created | date : 'medium'}}"
 
@@ -5063,7 +5109,7 @@ msgstr "Creat de către"
 msgid "Created by:&nbsp;{{ $ctrl.operation.initiating_user.full_name || 'n/a' }}"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:89 site/apps/osinstances/flinstances.html:40
+#: commons/userprofile/fluserprofile.html:89 site/apps/osinstances/flinstances.html:43
 #: staff/apps/clients/flclientdetails.html:62 staff/apps/osinstances/flinstances.html:42
 #: staff/apps/pkm/flpkmkeys.html:19 tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:42
 msgid "Created on"
@@ -5127,7 +5173,7 @@ msgstr "Limită credit"
 msgid "Credit limit when on agreement"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:488
+#: staff/apps/settings/configurations/configurationdetails.html:499
 msgid "Credit notifications"
 msgstr "Notificări credit"
 
@@ -5186,9 +5232,35 @@ msgstr "Detalii coș de cumpărături curent"
 msgid "Current client configuration"
 msgstr "Configuratie client curent"
 
-#: staff/apps/clients/flclientdetails.html:82
+#: staff/apps/clients/flclientdetails.html:89
 msgid "Current credit"
 msgstr "Credit curent"
+
+#: site/apps/billing/services/services.html:24 site/apps/billing/services/services.html:50
+#: staff/apps/billing/services/details/servicedetails.html:78 staff/apps/billing/services/services.html:22
+#: staff/apps/billing/services/services.html:53
+#, fuzzy
+#| msgid "Currency"
+msgid "Current cycle end"
+msgstr "Valută"
+
+#: site/apps/billing/services/servicedetails.html:72
+#, fuzzy
+#| msgid ""
+#| "Next invoice date\n"
+#| "              : {{$ctrl.serviceDetails.next_invoice_date | date:'medium'}}"
+msgid ""
+"Current cycle end\n"
+"              : {{$ctrl.serviceDetails.current_service_cycle_end | date:'medium' }}"
+msgstr ""
+"Următoarea dată de facturare\n"
+"\t\t: {{$ctrl.serviceDetails.next_invoice_date | date:'medium'}}"
+
+#: staff/apps/billing/services/edit/flserviceedit.html:103
+#, fuzzy
+#| msgid "Currency"
+msgid "Current cycle end date"
+msgstr "Valută"
 
 #: site/apps/osinstances/states.config.js:48 staff/apps/osinstances/states.config.js:52
 #, fuzzy
@@ -5209,18 +5281,18 @@ msgstr "Valută"
 msgid "Current month traffic"
 msgstr "Detalii coș de cumpărături curent"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:21
-#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:21
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:22
+#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:22
 msgid "Custom ICMP rule"
 msgstr "Regulă ICMP personalizată"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:19
-#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:19
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:20
+#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:20
 msgid "Custom TCP rule"
 msgstr "Regulă TCP personalizată"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:20
-#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:20
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:21
+#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:21
 msgid "Custom UDP rule"
 msgstr "Regulă UDP personalizată"
 
@@ -5237,7 +5309,7 @@ msgstr ""
 msgid "Customer reply"
 msgstr "Modifică răspuns"
 
-#: staff/apps/settings/configurations/configurationdetails.html:464
+#: staff/apps/settings/configurations/configurationdetails.html:475
 #, fuzzy
 #| msgid ""
 #| "Customize the next invoice number by using\n"
@@ -5252,7 +5324,7 @@ msgstr ""
 #: staff/apps/billing/configurable_options/cycles/optioncycleedit.html:11
 #: staff/apps/billing/products/editcycle/flproductcycleedit.html:24
 #: staff/apps/billing/products/productdetails.html:138 staff/apps/billing/products/productdetails.html:90
-#: staff/apps/billing/services/edit/flserviceedit.html:62 staff/apps/clients/flclientdetails.html:533
+#: staff/apps/billing/services/edit/flserviceedit.html:68 staff/apps/clients/flclientdetails.html:540
 msgid "Cycle"
 msgstr "Ciclu"
 
@@ -5318,8 +5390,8 @@ msgstr ""
 #: site/apps/billing/invoicing/flinvoicingdetails.html:244 staff/apps/activitylog/log.html:14
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:234 staff/apps/billing/journal/journal.html:8
 #: staff/apps/billing/journal/journal.html:95 staff/apps/billing/journal/journaldetail.html:28
-#: staff/apps/billing/orders/orders.html:41 staff/apps/clients/flclientdetails.html:172
-#: staff/apps/clients/flclientdetails.html:225
+#: staff/apps/billing/orders/orders.html:41 staff/apps/clients/flclientdetails.html:179
+#: staff/apps/clients/flclientdetails.html:232
 msgid "Date"
 msgstr "Data"
 
@@ -5329,13 +5401,13 @@ msgstr "Data adăugarii"
 
 #: domains/enduser/frontend/components/states.config.js:202
 #: domains/staff/frontend/components/states.config.js:377 site/apps/billing/services/services.html:22
-#: site/apps/billing/services/services.html:45 site/apps/operations/states.config.js:53
+#: site/apps/billing/services/services.html:49 site/apps/operations/states.config.js:53
 #: site/apps/operations/states.config.js:56 site/apps/osclusters/states.config.js:56
 #: site/apps/osclustertemplates/states.config.js:55 site/apps/osimages/states.config.js:57
 #: site/apps/osinstances/states.config.js:66 site/apps/osvolumebackups/states.config.js:47
 #: site/apps/osvolumes/states.config.js:60 site/apps/osvolumesnapshots/states.config.js:47
 #: site/apps/pkm/states.config.js:46 staff/apps/activitylog/states.config.js:69
-#: staff/apps/billing/services/services.html:20 staff/apps/billing/services/services.html:48
+#: staff/apps/billing/services/services.html:20 staff/apps/billing/services/services.html:52
 #: staff/apps/clients/states.config.js:46 staff/apps/clients/states.config.js:53
 #: staff/apps/operations/states.config.js:55 staff/apps/operations/states.config.js:58
 #: staff/apps/osclusters/states.config.js:56 staff/apps/osclustertemplates/states.config.js:55
@@ -5468,16 +5540,16 @@ msgstr "Template-uri actualizate cu succes"
 msgid "Defaults"
 msgstr "Implicite"
 
-#: staff/apps/settings/configurations/configurationdetails.html:284
+#: staff/apps/settings/configurations/configurationdetails.html:295
 msgid "Define what happens after a client is created from staff or signs up."
 msgstr "Definiți ce se întâmplă după ce un client se înregistrează sau este creat de către angajați."
 
-#: staff/apps/settings/configurations/configurationdetails.html:628
+#: staff/apps/settings/configurations/configurationdetails.html:639
 msgid "Delay (credit)"
 msgstr "Amână (credit)"
 
-#: staff/apps/settings/configurations/configurationdetails.html:612
-#: staff/apps/settings/configurations/configurationdetails.html:697
+#: staff/apps/settings/configurations/configurationdetails.html:623
+#: staff/apps/settings/configurations/configurationdetails.html:708
 msgid "Delay (hours)"
 msgstr "Amână (ore)"
 
@@ -5518,7 +5590,7 @@ msgstr "Amână (ore)"
 #: site/apps/pkm/flpkmkeys.component.js:27 site/apps/pkm/flpkmkeys.html:101
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:221
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:279 staff/apps/billing/products/productdetails.html:207
-#: staff/apps/billing/products/productdetails.html:23 staff/apps/billing/services/flserviceactions.html:33
+#: staff/apps/billing/products/productdetails.html:23 staff/apps/billing/services/flserviceactions.html:38
 #: staff/apps/clientgroups/flclientgroupsactions.html:24 staff/apps/clientgroups/flclientgroupsactions.html:5
 #: staff/apps/clients/delete/flclientdelete.html:25 staff/apps/floatingips/flfloatingipdetails.component.js:27
 #: staff/apps/floatingips/flfloatingips.component.js:38 staff/apps/networks/flnetworkdetails.component.js:29
@@ -5567,8 +5639,8 @@ msgstr "Amână (ore)"
 #: staff/apps/subnetpools/flsubnetpooldetails.component.js:27
 #: staff/apps/subnetpools/flsubnetpools.component.js:36 staff/apps/subnetpools/flsubnetpools.html:139
 #: staff/apps/usergroups/flusergroupsactions.html:24 staff/apps/usergroups/flusergroupsactions.html:5
-#: staff/apps/users/actions/fluseractions.component.js:53
-#: staff/apps/users/actions/flxsuseractions.component.js:53
+#: staff/apps/users/actions/fluseractions.component.js:62
+#: staff/apps/users/actions/flxsuseractions.component.js:62
 #: tickets/staff/frontend/components/departments_actions/departmentsactions.html:5
 #: tickets/staff/frontend/components/tickets_details/ticketsdetails.component.js:279
 #: todo/staff/frontend/components/todo_actions/todoactions.html:5
@@ -5930,7 +6002,7 @@ msgstr "Șterge regula"
 msgid "Delete rule {{rule}}"
 msgstr "Șterge regula {{rule}}"
 
-#: site/apps/osinstances/flinstancedetail.html:617 staff/apps/osinstances/flinstancedetail.html:620
+#: site/apps/osinstances/flinstancedetail.html:640 staff/apps/osinstances/flinstancedetail.html:639
 #, fuzzy
 #| msgid "Rule delete scheduled"
 msgid "Delete schedule"
@@ -5964,12 +6036,12 @@ msgstr "Șterge grup servere {{name}}"
 msgid "Delete server {{name}}"
 msgstr "Șterge server {{name}}"
 
-#: staff/apps/billing/services/flserviceactions.component.js:32
+#: staff/apps/billing/services/flserviceactions.component.js:66
 #: staff/apps/clients/deleteopenstackservice/fldeleteopenstackservice.html:22
 msgid "Delete service"
 msgstr "Șterge serviciu"
 
-#: staff/apps/billing/services/flserviceactions.component.js:31
+#: staff/apps/billing/services/flserviceactions.component.js:65
 msgid "Delete service {{id}}"
 msgstr "Șterge serviciu {{id}}"
 
@@ -6027,7 +6099,8 @@ msgid "Delete transaction {{transaction}}"
 msgstr "Șterge tranzacția {{transaction}}"
 
 #: site/apps/osapiusers/flapiusers.component.js:94 staff/apps/osapiusers/flapiusers.component.js:94
-#: staff/apps/users/actions/fluseractions.html:9 staff/apps/users/actions/flxsuseractions.html:21
+#: staff/apps/users/actions/fluseractions.component.js:29 staff/apps/users/actions/fluseractions.html:15
+#: staff/apps/users/actions/flxsuseractions.component.js:29 staff/apps/users/actions/flxsuseractions.html:24
 msgid "Delete user"
 msgstr "Șterge utilizator"
 
@@ -6043,8 +6116,8 @@ msgstr "Șterge grup de utilizatori {{name}}"
 msgid "Delete user {{name}}"
 msgstr "Șterge utilizator"
 
-#: staff/apps/users/actions/fluseractions.component.js:52
-#: staff/apps/users/actions/flxsuseractions.component.js:52
+#: staff/apps/users/actions/fluseractions.component.js:61
+#: staff/apps/users/actions/flxsuseractions.component.js:61
 msgid "Delete user {{username}}?"
 msgstr "Șterge utilizatorul {{username}}?"
 
@@ -6292,7 +6365,7 @@ msgstr "Descriere: {{::$ctrl.serviceDetails.product.description }}"
 #: site/apps/billing/invoicing/flinvoicingdetails.html:277
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:268 staff/apps/billing/journal/journal.html:104
 #: staff/apps/billing/journal/journaldetail.html:24 staff/apps/billing/states.config.js:648
-#: staff/apps/billing/states.config.js:710 staff/apps/clients/flclientdetails.html:234
+#: staff/apps/billing/states.config.js:710 staff/apps/clients/flclientdetails.html:241
 msgid "Destination"
 msgstr "Destinație"
 
@@ -6422,12 +6495,12 @@ msgstr "Autentificare imposibilă"
 msgid "Disable this notification"
 msgstr "Șterge notificare"
 
-#: staff/apps/clients/flclientdetails.html:293 staff/apps/osflavors/flflavordetails.html:41
+#: staff/apps/clients/flclientdetails.html:300 staff/apps/osflavors/flflavordetails.html:41
 #: staff/apps/osprojects/states.config.js:45 staff/apps/osprojects/states.config.js:62
 msgid "Disabled"
 msgstr "Dezactivat"
 
-#: staff/apps/clients/flclientdetails.html:300
+#: staff/apps/clients/flclientdetails.html:307
 msgid "Disabled reason"
 msgstr "Motivul dezactivării"
 
@@ -6486,7 +6559,7 @@ msgstr "Format disc"
 msgid "Disk format: {{ $ctrl.image.disk_format }}"
 msgstr "Format disc: {{ $ctrl.image.disk_format }}"
 
-#: staff/apps/osinstances/migrate/flinstancemigrate.html:40
+#: staff/apps/osinstances/migrate/flinstancemigrate.html:46
 msgid "Disk overcommit"
 msgstr "Overcommit disk"
 
@@ -6500,18 +6573,14 @@ msgstr "Dimensiune disc"
 msgid "Disk size (GB)"
 msgstr "Dimensiune disc (GB)"
 
-#: site/apps/osinstances/create/flbootsourceselect.html:168
-#: staff/apps/osinstances/create/flbootsourceselect.html:180
+#: site/apps/osinstances/create/flbootsourceselect.html:164
+#: staff/apps/osinstances/create/flbootsourceselect.html:176
 msgid "Disk size is determined by flavor"
 msgstr "Dimensiunea disk-ului este determinată de către flavor"
 
 #: staff/apps/osflavors/flflavordetails.html:38
 msgid "Disk space"
 msgstr "Dimensiune disc"
-
-#: site/apps/osinstances/flinstancedetail.html:42 staff/apps/osinstances/flinstancedetail.html:55
-msgid "Disk space: {{$ctrl.instance.flavor.root_gb }} GB"
-msgstr "Spatiu stocare: {{$ctrl.instance.flavor.root_gb }}GB"
 
 #: staff/apps/billing/states.config.js:173 staff/apps/billing/states.config.js:548
 msgid "Display Name"
@@ -6563,7 +6632,7 @@ msgstr "Stergere grup de securitate in progres"
 msgid "Dissociate security group {{sec_group}} from instance {{instance}}"
 msgstr "Disociază grupul de securitate {{sec_group}} de la instanța {{instance}}"
 
-#: staff/apps/clients/flclientdetails.component.js:272 staff/apps/clients/flclientdetails.html:405
+#: staff/apps/clients/flclientdetails.component.js:272 staff/apps/clients/flclientdetails.html:412
 msgid "Dissociate user"
 msgstr "Disociază ultilizator"
 
@@ -6597,8 +6666,8 @@ msgstr ""
 msgid "Do not allow sign-up for email on these domains"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:303
-#: staff/apps/settings/configurations/configurationdetails.html:427
+#: staff/apps/settings/configurations/configurationdetails.html:314
+#: staff/apps/settings/configurations/configurationdetails.html:438
 msgid "Do not invoice services with zero price"
 msgstr ""
 
@@ -6615,8 +6684,8 @@ msgstr "nepartajat"
 msgid "Do not share"
 msgstr "nepartajat"
 
-#: staff/apps/billing/services/details/servicedetails.html:102
-#: staff/apps/billing/services/edit/flserviceedit.html:88
+#: staff/apps/billing/services/details/servicedetails.html:127
+#: staff/apps/billing/services/edit/flserviceedit.html:94
 msgid "Do not suspend until"
 msgstr "Nu suspendați până la"
 
@@ -6872,7 +6941,7 @@ msgstr "Modifică client {:id}"
 msgid "Edit configuration"
 msgstr "Editeaza configurarea"
 
-#: staff/apps/clients/flclientdetails.html:91
+#: staff/apps/clients/flclientdetails.html:98
 msgid "Edit credit"
 msgstr "Modifică credit"
 
@@ -7041,7 +7110,7 @@ msgstr "Modifică grup de securitate"
 msgid "Edit server {{::$ctrl.server.name}}"
 msgstr "Modifică server {{::$ctrl.server.name}}"
 
-#: staff/apps/billing/services/details/servicedetails.html:16 staff/apps/billing/services/services.html:27
+#: staff/apps/billing/services/details/servicedetails.html:16 staff/apps/billing/services/services.html:30
 msgid "Edit service"
 msgstr "Modifică serviciu"
 
@@ -7109,7 +7178,8 @@ msgstr "Adaugă tichet"
 msgid "Edit ticket {{$ctrl.ticket.id}}"
 msgstr "Modifică {{::$ctrl.ticket.title}}"
 
-#: staff/apps/users/actions/fluseractions.html:1 staff/apps/users/actions/flxsuseractions.html:10
+#: staff/apps/users/actions/fluseractions.component.js:28
+#: staff/apps/users/actions/flxsuseractions.component.js:28 staff/apps/users/actions/flxsuseractions.html:11
 #: staff/apps/users/fluseredit.html:6
 msgid "Edit user"
 msgstr "Modifică utilizator"
@@ -7272,6 +7342,12 @@ msgstr "Șterge data scadentă"
 msgid "Empty issue date"
 msgstr "Șterge data emiterii"
 
+#: staff/apps/billing/services/enable_billing_dialog/flenablebillingdialog.html:29
+#, fuzzy
+#| msgid "Enabled"
+msgid "Enable"
+msgstr "Activat"
+
 #: site/apps/networks/flnetworkadd.html:174 site/apps/networks/flnetworksubnetedit.html:121
 #: staff/apps/networks/flnetworkadd.html:254 staff/apps/networks/flnetworksubnetedit.html:126
 msgid "Enable DHCP"
@@ -7282,7 +7358,7 @@ msgstr "Activează DHCP"
 msgid "Enable ID protection for this domain"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:201
+#: staff/apps/settings/configurations/configurationdetails.html:212
 msgid "Enable MaxMind fraud check"
 msgstr "Activează verificarea de fraudă MaxMind"
 
@@ -7308,26 +7384,36 @@ msgstr ""
 msgid "Enable admin state"
 msgstr "Stare admin"
 
-#: staff/apps/settings/configurations/configurationdetails.html:315
-#: staff/apps/settings/configurations/configurationdetails.html:438
+#: staff/apps/settings/configurations/configurationdetails.html:326
+#: staff/apps/settings/configurations/configurationdetails.html:449
 msgid "Enable automatic settlements"
 msgstr "Activează ștergerea automată"
 
-#: staff/apps/settings/configurations/configurationdetails.html:597
-#: staff/apps/settings/configurations/configurationdetails.html:643
+#: staff/apps/settings/configurations/configurationdetails.html:608
+#: staff/apps/settings/configurations/configurationdetails.html:654
 msgid "Enable automatic suspension"
 msgstr "Activează suspendarea automată"
 
-#: staff/apps/settings/configurations/configurationdetails.html:661
-#: staff/apps/settings/configurations/configurationdetails.html:665
+#: staff/apps/settings/configurations/configurationdetails.html:672
+#: staff/apps/settings/configurations/configurationdetails.html:676
 msgid "Enable automatic termination"
 msgstr "Activează ștergerea automată"
 
-#: staff/apps/settings/configurations/configurationdetails.html:498
+#: staff/apps/billing/services/flserviceactions.html:28
+#, fuzzy
+#| msgid "External billing id"
+msgid "Enable billing"
+msgstr "ID tranzacție extern"
+
+#: staff/apps/billing/services/enable_billing_dialog/flenablebillingdialog.html:3
+msgid "Enable billing for service {{ $ctrl.service.id }}"
+msgstr ""
+
+#: staff/apps/settings/configurations/configurationdetails.html:509
 msgid "Enable credit notification"
 msgstr "Activează notificările despre credit"
 
-#: staff/apps/settings/configurations/configurationdetails.html:494
+#: staff/apps/settings/configurations/configurationdetails.html:505
 msgid "Enable credit notifications"
 msgstr "Activează notificările despre credit"
 
@@ -7341,11 +7427,11 @@ msgstr "Activează TLD implicit"
 msgid "Enable default nameservers"
 msgstr "Activează nameservere implicite"
 
-#: staff/apps/settings/configurations/configurationdetails.html:603
+#: staff/apps/settings/configurations/configurationdetails.html:614
 msgid "Enable delay by hours"
 msgstr "Activeaza amanare dupa ore"
 
-#: staff/apps/settings/configurations/configurationdetails.html:619
+#: staff/apps/settings/configurations/configurationdetails.html:630
 msgid "Enable delay until credit is used"
 msgstr "Activeaza amanare pana credit-ul este utilizat"
 
@@ -7365,11 +7451,11 @@ msgstr ""
 msgid "Enable google authenticator"
 msgstr "Autentificare imposibilă"
 
-#: staff/apps/settings/configurations/configurationdetails.html:206
+#: staff/apps/settings/configurations/configurationdetails.html:217
 msgid "Enable insights results"
 msgstr "Activează rezultate statistice"
 
-#: staff/apps/settings/configurations/configurationdetails.html:226
+#: staff/apps/settings/configurations/configurationdetails.html:237
 msgid "Enable or disable MaxMind fraud checking on new orders."
 msgstr "Activează sau dezactivează verificarea de fraudă MaxMind pentru comenzi noi."
 
@@ -7483,7 +7569,7 @@ msgstr ""
 msgid "Enduser panel url"
 msgstr "Ascunde în panoul utilizatorului"
 
-#: staff/apps/clients/flclientdetails.html:370
+#: staff/apps/clients/flclientdetails.html:377
 #, fuzzy
 #| msgid "Hide in end-user panel"
 msgid "Enduser panel url:"
@@ -7652,7 +7738,7 @@ msgstr "Eroare în timpul detașări"
 msgid "Ether type"
 msgstr "Versiune IP"
 
-#: staff/apps/billing/services/edit/flserviceedit.html:64
+#: staff/apps/billing/services/edit/flserviceedit.html:70
 msgid ""
 "Every {{ cycle.cycle_multiplier }} {{ cycle.cycle | translate }}s | Fixed price: {{ cycle.fixed_price }} | "
 "Status: {{ cycle.status }}"
@@ -7669,7 +7755,7 @@ msgstr "Rate de schimb actualizate"
 msgid "Exclude"
 msgstr "Exclude"
 
-#: staff/apps/settings/configurations/configurationdetails.html:439
+#: staff/apps/settings/configurations/configurationdetails.html:450
 #, fuzzy
 #| msgid ""
 #| "Existing usage will be automatically settled using client credit. If an invoice exists it will be\n"
@@ -7857,7 +7943,7 @@ msgstr "Filtrează articole fără asociat"
 msgid "Filter items without user"
 msgstr "Filtrează articole fără utilizator"
 
-#: staff/apps/osbilling/pricing/flpricerule.html:169
+#: staff/apps/osbilling/pricing/flpricerule.html:191
 msgid "Filters"
 msgstr "Filtre"
 
@@ -7980,11 +8066,11 @@ msgstr "Adaugă subrețea"
 msgid "Fixed subnet: {{$ctrl.clusterTemplate.fixed_subnet ? $ctrl.clusterTemplate.fixed_subnet : '-'}}"
 msgstr ""
 
-#: staff/apps/osbilling/pricing/flpricerule.html:124 staff/apps/osbilling/resources/flmetric.html:46
+#: staff/apps/osbilling/pricing/flpricerule.html:146 staff/apps/osbilling/resources/flmetric.html:46
 msgid "Flat"
 msgstr "Uniform"
 
-#: site/apps/osinstances/flinstances.html:70 staff/apps/osflavors/edit/flflavoredit.html:109
+#: site/apps/osinstances/flinstances.html:73 staff/apps/osflavors/edit/flflavoredit.html:109
 #: staff/apps/osflavors/flflavors.html:1 staff/apps/osinstances/flinstances.html:71
 msgid "Flavor"
 msgstr "Configurație"
@@ -8211,9 +8297,9 @@ msgstr "Adresă IP dinamic {:floating_ip_address}"
 
 #: site/apps/baseconfig/fleio.baseconfig.module.js:37 site/apps/floatingips/states.config.js:36
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:11
-#: site/apps/osinstances/flinstancedetail.html:416 staff/apps/baseconfig/fleiostaff.baseconfig.module.js:47
+#: site/apps/osinstances/flinstancedetail.html:439 staff/apps/baseconfig/fleiostaff.baseconfig.module.js:47
 #: staff/apps/floatingips/states.config.js:32 staff/apps/osinstances/associateip/flinstanceassociateip.html:11
-#: staff/apps/osinstances/flinstancedetail.html:418
+#: staff/apps/osinstances/flinstancedetail.html:437
 msgid "Floating IPs"
 msgstr "Floating IPs"
 
@@ -8266,8 +8352,8 @@ msgstr "Versiune găsită"
 msgid "Fourth nameserver"
 msgstr "Al patrulea nameserver"
 
-#: domains/staff/frontend/components/states.config.js:88 site/apps/billing/services/states.config.js:94
-#: staff/apps/billing/states.config.js:231
+#: domains/staff/frontend/components/states.config.js:88 site/apps/billing/services/states.config.js:99
+#: staff/apps/billing/states.config.js:236
 msgid "Fraud"
 msgstr "Fraudă"
 
@@ -8275,11 +8361,11 @@ msgstr "Fraudă"
 msgid "Fraud check result"
 msgstr "Rezultat verificare fraudă"
 
-#: staff/apps/settings/configurations/configurationdetails.html:285
+#: staff/apps/settings/configurations/configurationdetails.html:296
 msgid "Fraud checking will be performed on signup if the option is enabled."
 msgstr "Verificare de fraudă se va efectua la înregistrare dacă optiunea este activată."
 
-#: staff/apps/settings/configurations/configurationdetails.html:220
+#: staff/apps/settings/configurations/configurationdetails.html:231
 msgid "Fraud score"
 msgstr "Scor fraudă"
 
@@ -8291,8 +8377,8 @@ msgstr "Gratuit"
 msgid "Friday"
 msgstr ""
 
-#: staff/apps/clients/sendmassmail/clientssendmassmail.html:72 staff/apps/osbilling/pricing/flpricerule.html:132
-#: staff/apps/osbilling/pricing/flpricerule.html:136 staff/apps/osbilling/resources/flmetric.html:54
+#: staff/apps/clients/sendmassmail/clientssendmassmail.html:72 staff/apps/osbilling/pricing/flpricerule.html:154
+#: staff/apps/osbilling/pricing/flpricerule.html:158 staff/apps/osbilling/resources/flmetric.html:54
 #: staff/apps/osbilling/resources/flmetric.html:61
 msgid "From"
 msgstr "Din"
@@ -8315,7 +8401,7 @@ msgstr ""
 msgid "Frontend updated"
 msgstr "Notă actualizată"
 
-#: staff/apps/usergroups/flusergroupdetails.html:27 staff/apps/users/flusers.html:62
+#: staff/apps/usergroups/flusergroupdetails.html:27 staff/apps/users/flusers.html:64
 msgid "Full name"
 msgstr "Nume complet"
 
@@ -8353,7 +8439,7 @@ msgstr "Gateway-uri"
 #: domains/staff/frontend/components/domain_details/domaindetails.html:24
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:107
 #: staff/apps/billing/products/flbillingproductedit.html:14 staff/apps/billing/products/productdetails.html:33
-#: staff/apps/settings/configurations/configurationdetails.html:147
+#: staff/apps/settings/configurations/configurationdetails.html:158
 #: staff/apps/settings/configurations/configurationdetails.html:21
 msgid "General"
 msgstr "General"
@@ -8362,25 +8448,25 @@ msgstr "General"
 msgid "General settings"
 msgstr "Setari generale"
 
-#: staff/apps/settings/configurations/configurationdetails.html:343
+#: staff/apps/settings/configurations/configurationdetails.html:354
 #, fuzzy
 #| msgid "Generate invoices"
 msgid "Generate detailed invoices"
 msgstr "Generează facturi"
 
-#: staff/apps/settings/configurations/configurationdetails.html:457
+#: staff/apps/settings/configurations/configurationdetails.html:468
 msgid "Generate detailed invoices - the invoices will contain detailed data about resource usage."
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:425
+#: staff/apps/settings/configurations/configurationdetails.html:436
 msgid "Generate invoice"
 msgstr "Generează cheie"
 
-#: staff/apps/settings/configurations/configurationdetails.html:299
+#: staff/apps/settings/configurations/configurationdetails.html:310
 msgid "Generate invoices"
 msgstr "Generează facturi"
 
-#: site/apps/pkm/flpkmkeyedit.html:40 staff/apps/pkm/flpkmkeyedit.html:39
+#: site/apps/pkm/flpkmkeyedit.html:41 staff/apps/pkm/flpkmkeyedit.html:40
 msgid "Generate key"
 msgstr "Generează cheie"
 
@@ -8396,13 +8482,13 @@ msgstr "Generează cheie"
 msgid "Generate revenue report"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:346
+#: staff/apps/settings/configurations/configurationdetails.html:357
 #, fuzzy
 #| msgid "Generate invoices"
 msgid "Generate simple invoices"
 msgstr "Generează facturi"
 
-#: staff/apps/settings/configurations/configurationdetails.html:458
+#: staff/apps/settings/configurations/configurationdetails.html:469
 msgid "Generate simple invoices - the invoices will contain only summary data."
 msgstr ""
 
@@ -8423,7 +8509,7 @@ msgstr ""
 msgid "Get OpenRC file for {{::$ctrl.user.name}}"
 msgstr "Modifică {{::$ctrl.user.name}}"
 
-#: site/apps/osinstances/flinstancedetail.html:55 site/apps/osinstances/flinstancedetail.html:66
+#: site/apps/osinstances/flinstancedetail.html:76 site/apps/osinstances/flinstancedetail.html:87
 msgid "Get PTR"
 msgstr "Modifică PTR"
 
@@ -8515,7 +8601,7 @@ msgstr ""
 msgid "Greater than"
 msgstr "Mai mare decât"
 
-#: staff/apps/billing/products/flbillingproductedit.html:43 staff/apps/billing/products/productdetails.html:48
+#: staff/apps/billing/products/flbillingproductedit.html:56 staff/apps/billing/products/productdetails.html:48
 #: staff/apps/clients/flclients.html:81 staff/apps/osflavors/flflavordetails.html:46
 #: staff/apps/osflavors/flflavors.html:35 staff/apps/servers/flserver-list/flserver-list.component.html:54
 #: staff/apps/servers/flservers.states.js:22
@@ -8555,7 +8641,7 @@ msgstr "Nume grup"
 msgid "Group updated"
 msgstr "Grup actualizat"
 
-#: site/apps/osinstances/flinstancedetail.html:521 staff/apps/osinstances/flinstancedetail.html:524
+#: site/apps/osinstances/flinstancedetail.html:544 staff/apps/osinstances/flinstancedetail.html:543
 #, fuzzy
 #| msgid "Project: {{ ::securityGroup.project }}<br>"
 msgid "Group: {{::security_group.name }}"
@@ -8614,7 +8700,7 @@ msgstr "1 instanță"
 msgid "Has permission"
 msgstr "Are permisiune"
 
-#: site/apps/osinstances/flinstancedetail.html:302 staff/apps/osinstances/flinstancedetail.html:276
+#: site/apps/osinstances/flinstancedetail.html:325 staff/apps/osinstances/flinstancedetail.html:295
 #, fuzzy
 #| msgid "No snapshots"
 msgid "Has snapshots"
@@ -8672,7 +8758,7 @@ msgstr "Ascunde în panoul utilizatorului"
 msgid "Hide projects and API users"
 msgstr "Ascunde proiecte și utilizatori API"
 
-#: staff/apps/billing/products/flbillingproductedit.html:111
+#: staff/apps/billing/products/flbillingproductedit.html:124
 #, fuzzy
 #| msgid "Hide in end-user panel"
 msgid "Hide services for this product in enduser panel"
@@ -8698,7 +8784,7 @@ msgstr ""
 msgid "High priority"
 msgstr "Prioritate ridicată"
 
-#: site/apps/osinstances/flinstancedetail.html:328 staff/apps/osinstances/flinstancedetail.html:305
+#: site/apps/osinstances/flinstancedetail.html:351 staff/apps/osinstances/flinstancedetail.html:324
 msgid "History log"
 msgstr "Istoric"
 
@@ -8770,17 +8856,17 @@ msgstr ""
 msgid "Hour (UTC time)"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:527
-#: staff/apps/settings/configurations/configurationdetails.html:548
-#: staff/apps/settings/configurations/configurationdetails.html:569
+#: staff/apps/settings/configurations/configurationdetails.html:538
+#: staff/apps/settings/configurations/configurationdetails.html:559
+#: staff/apps/settings/configurations/configurationdetails.html:580
 msgid "Hours remaining"
 msgstr "Ore rămase"
 
-#: staff/apps/settings/configurations/configurationdetails.html:585
+#: staff/apps/settings/configurations/configurationdetails.html:596
 msgid "Hours remaining & notification template"
 msgstr "Ore rămase și șablon notificări"
 
-#: staff/apps/settings/configurations/configurationdetails.html:586
+#: staff/apps/settings/configurations/configurationdetails.html:597
 msgid ""
 "How many hours until the client reaches the credit limit with his current usage.\n"
 "                  Select a notification template to send. Selecting the blank notification will disable it."
@@ -9066,7 +9152,7 @@ msgstr "ID"
 msgid "Idle ..."
 msgstr "Inactiv ..."
 
-#: staff/apps/settings/configurations/configurationdetails.html:430
+#: staff/apps/settings/configurations/configurationdetails.html:441
 msgid ""
 "If an invoice is generated and it not automatically settled an notification containing invoice details\n"
 "                  will be sent to the customer."
@@ -9074,11 +9160,11 @@ msgstr ""
 "Dacă o factură este generată și se achită automat o notificare cu detaliile facturii\n"
 "                  va fi trimisă clientului."
 
-#: staff/apps/settings/configurations/configurationdetails.html:435
+#: staff/apps/settings/configurations/configurationdetails.html:446
 msgid "If an user manually pays an invoice a TODO will be created to make staff users aware of the payment."
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:444
+#: staff/apps/settings/configurations/configurationdetails.html:455
 msgid ""
 "If automatic settlements are enabled the invoices will be paid only if afer paying the invoice the\n"
 "                  uptodate credit will be greater or equal than minimum up to date credit to be left after "
@@ -9145,15 +9231,15 @@ msgstr "Ștergere imagine programată"
 msgid "Image details"
 msgstr "Detalii produs"
 
-#: site/apps/osinstances/create/flbootsourceselect.component.js:44
+#: site/apps/osinstances/create/flbootsourceselect.component.js:84
 msgid ""
 "Image is not assigned\n"
 "to the selected flavor\n"
 "or flavor group"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.component.js:48
-#: staff/apps/osinstances/create/flbootsourceselect.component.js:82
+#: site/apps/osinstances/create/flbootsourceselect.component.js:88
+#: staff/apps/osinstances/create/flbootsourceselect.component.js:124
 msgid ""
 "Image is not assigned\n"
 "to the selected flavor\n"
@@ -9185,8 +9271,8 @@ msgstr ""
 msgid "Image os distro name starts with"
 msgstr "Nume configurație"
 
-#: site/apps/osinstances/create/flbootsourceselect.component.js:50
-#: staff/apps/osinstances/create/flbootsourceselect.component.js:84
+#: site/apps/osinstances/create/flbootsourceselect.component.js:90
+#: staff/apps/osinstances/create/flbootsourceselect.component.js:126
 msgid ""
 "Image requires a flavor\n"
 "with more resources."
@@ -9249,16 +9335,16 @@ msgstr "Imagini"
 msgid "Immediate"
 msgstr "Imediat"
 
-#: staff/apps/users/actions/flxsuseractions.html:16
+#: staff/apps/users/actions/flxsuseractions.html:18
 msgid "Impersonate"
 msgstr "Impersonează"
 
-#: staff/apps/clients/flclientdetails.html:409 staff/apps/users/actions/fluseractions.html:4
-#: staff/apps/users/states.config.js:136
+#: staff/apps/clients/flclientdetails.html:416 staff/apps/users/actions/fluseractions.component.js:27
+#: staff/apps/users/actions/flxsuseractions.component.js:27 staff/apps/users/states.config.js:141
 msgid "Impersonate user"
 msgstr "Impersonează utilizator"
 
-#: staff/apps/users/states.config.js:137
+#: staff/apps/users/states.config.js:142
 #, fuzzy
 #| msgid "Impersonate user"
 msgid "Impersonate user {:id}"
@@ -9340,7 +9426,7 @@ msgstr ""
 msgid "Instance"
 msgstr "Instanță"
 
-#: site/apps/osinstances/flinstancedetail.html:94 staff/apps/osinstances/flinstancedetail.html:63
+#: site/apps/osinstances/flinstancedetail.html:115 staff/apps/osinstances/flinstancedetail.html:82
 msgid "Instance UUID: {{::$ctrl.instance.uuid }}"
 msgstr "ID instanta: {{::$ctrl.instance.uuid }}"
 
@@ -9351,8 +9437,8 @@ msgstr "ID instanta: {{::$ctrl.instance.uuid }}"
 msgid "Instance boot from ISO scheduled"
 msgstr "Creare instanta in progres"
 
-#: site/apps/osinstances/create/flinstancecreate.component.js:458
-#: staff/apps/osinstances/create/flinstancecreate.component.js:577
+#: site/apps/osinstances/create/flinstancecreate.component.js:480
+#: staff/apps/osinstances/create/flinstancecreate.component.js:599
 msgid "Instance create scheduled"
 msgstr "Creare instanta in progres"
 
@@ -9370,13 +9456,13 @@ msgstr "Adăugare interfață în progres"
 msgid "Instance details"
 msgstr "Detalii instanță"
 
-#: site/apps/osinstances/flinstancedetail.html:99 staff/apps/osinstances/flinstancedetail.html:65
+#: site/apps/osinstances/flinstancedetail.html:120 staff/apps/osinstances/flinstancedetail.html:84
 #, fuzzy
 #| msgid "Instance hypervisor: {{$ctrl.instance.hostId }}"
 msgid "Instance hypervisor: {{$ctrl.instance.host_name || $ctrl.instance.hostId }}"
 msgstr "Hipervizorul de la instanță: {{::$ctrl.instance.hostId }}"
 
-#: staff/apps/osinstances/flinstancedetail.html:75
+#: staff/apps/osinstances/flinstancedetail.html:94
 #, fuzzy
 #| msgid "Instances"
 msgid "Instance is locked"
@@ -9462,7 +9548,7 @@ msgstr "Adăugare interfață în progres"
 msgid "Interfaces"
 msgstr "Interfețe"
 
-#: staff/apps/billing/services/details/servicedetails.html:69
+#: staff/apps/billing/services/details/servicedetails.html:75
 msgid "Internal id"
 msgstr "ID intern"
 
@@ -9540,8 +9626,8 @@ msgstr "Valoare invalidă pentru utilizator"
 msgid "Invalid input for user"
 msgstr "Valoare invalidă pentru utilizator"
 
-#: site/apps/osinstances/create/flbootsourceselect.html:165
-#: staff/apps/osinstances/create/flbootsourceselect.html:177
+#: site/apps/osinstances/create/flbootsourceselect.html:161
+#: staff/apps/osinstances/create/flbootsourceselect.html:173
 msgid "Invalid volume size"
 msgstr "Dimensiune volum invalidă"
 
@@ -9595,8 +9681,8 @@ msgstr "Detalii factură"
 msgid "Invoice items"
 msgstr "Elementele facturii"
 
-#: staff/apps/settings/configurations/configurationdetails.html:340
-#: staff/apps/settings/configurations/configurationdetails.html:455
+#: staff/apps/settings/configurations/configurationdetails.html:351
+#: staff/apps/settings/configurations/configurationdetails.html:466
 #, fuzzy
 #| msgid "Invoice details"
 msgid "Invoice items detail level"
@@ -9617,8 +9703,8 @@ msgstr "Status factură"
 msgid "Invoice type"
 msgstr "Tip factură"
 
-#: staff/apps/billing/journal/journal.html:46 staff/apps/clients/flclientdetails.html:193
-#: staff/apps/clients/flclientdetails.html:207
+#: staff/apps/billing/journal/journal.html:46 staff/apps/clients/flclientdetails.html:200
+#: staff/apps/clients/flclientdetails.html:214
 msgid "Invoice {{::journal.destination_info.invoice}}"
 msgstr ""
 
@@ -9626,14 +9712,20 @@ msgstr ""
 msgid "Invoice {{::journal.source_info.invoice}}"
 msgstr ""
 
+#: staff/apps/settings/configurations/configurationdetails.html:150
+msgid ""
+"Invoiced periods will be marked as paid when appropiate and client credit will be updated. This\n"
+"                  setting works when fleio is using an external billing system."
+msgstr ""
+
 #: site/apps/baseconfig/fleio.baseconfig.module.js:55 site/apps/billing/invoicing/states.config.js:32
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:140
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:65 staff/apps/billing/states.config.js:32
-#: staff/apps/clients/flclientdetails.html:107
+#: staff/apps/clients/flclientdetails.html:114
 msgid "Invoices"
 msgstr "Facturi"
 
-#: staff/apps/settings/configurations/configurationdetails.html:294
+#: staff/apps/settings/configurations/configurationdetails.html:305
 #, fuzzy
 #| msgid "Invoice"
 msgid "Invoicing"
@@ -9643,8 +9735,8 @@ msgstr "Factură"
 msgid "Invoicing feature is disabled"
 msgstr "Funcționalitatea de facturare este dezactivată"
 
-#: staff/apps/settings/configurations/configurationdetails.html:324
-#: staff/apps/settings/configurations/configurationdetails.html:449
+#: staff/apps/settings/configurations/configurationdetails.html:335
+#: staff/apps/settings/configurations/configurationdetails.html:460
 #, fuzzy
 #| msgid "No options"
 msgid "Invoicing options"
@@ -9678,6 +9770,17 @@ msgstr "Implicit: {{ $ctrl.subnetpool.is_default }}"
 #: staff/apps/osprojects/states.config.js:67
 msgid "Is domain"
 msgstr "Este domeniu"
+
+#: staff/apps/billing/services/edit/flserviceedit.html:63
+msgid "Is free"
+msgstr ""
+
+#: staff/apps/billing/services/details/servicedetails.html:102
+msgid ""
+"Is free:\n"
+"                  <span ng-if=\"$ctrl.serviceDetails.is_free\">yes</span>\n"
+"                  <span ng-if=\"!$ctrl.serviceDetails.is_free\">no</span>"
+msgstr ""
 
 #: staff/apps/osflavors/flflavors.html:79
 msgid "Is hidden"
@@ -9760,21 +9863,21 @@ msgstr "Data scadentă: {{::invoice.due_date | date }}"
 msgid "Issue invoice"
 msgstr "Adaugă factură"
 
-#: staff/apps/settings/configurations/configurationdetails.html:471
+#: staff/apps/settings/configurations/configurationdetails.html:482
 msgid "Issue invoice before next due date"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:386
+#: staff/apps/settings/configurations/configurationdetails.html:397
 #, fuzzy
 #| msgid "On service due date"
 msgid "Issue invoice before service due date"
 msgstr "La data scadentă a serviciului"
 
-#: staff/apps/settings/configurations/configurationdetails.html:327
+#: staff/apps/settings/configurations/configurationdetails.html:338
 msgid "Issue proforma invoices and make them fiscal when paid"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:451
+#: staff/apps/settings/configurations/configurationdetails.html:462
 msgid ""
 "Issue proforma invoices and make them fiscal when paid. The fiscal invoice date will be set to the date when "
 "the invoice becomes paid."
@@ -9791,7 +9894,7 @@ msgstr "Elemente"
 
 #: site/apps/billing/invoicing/flinvoicingdetails.html:180
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:63
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:180 staff/apps/clients/flclientdetails.html:158
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:180 staff/apps/clients/flclientdetails.html:165
 msgid "Journal"
 msgstr "Jurnal"
 
@@ -9874,21 +9977,27 @@ msgstr "Limba"
 msgid "Last Name"
 msgstr "Prenume"
 
+#: staff/apps/billing/services/enable_billing_dialog/flenablebillingdialog.controller.js:16
+#, fuzzy
+#| msgid "Save registrar"
+msgid "Last cycle start"
+msgstr "Salvează registrar"
+
 #: site/apps/osinstances/flinstancedetail.component.js:69
 #: staff/apps/osinstances/flinstancedetails.component.js:71
 msgid "Last hour"
 msgstr "Ultima oră"
 
-#: staff/apps/users/fluserdetails.html:36 staff/apps/users/flusers.html:64 staff/apps/users/states.config.js:42
+#: staff/apps/users/fluserdetails.html:36 staff/apps/users/flusers.html:66 staff/apps/users/states.config.js:42
 #: staff/apps/users/states.config.js:50
 msgid "Last login"
 msgstr "Ultima autentificare"
 
-#: staff/apps/users/flusers.html:29 staff/apps/users/flusers.html:93
+#: staff/apps/users/flusers.html:29 staff/apps/users/flusers.html:95
 msgid "Last login: never"
 msgstr "Ultimul login: niciodată"
 
-#: staff/apps/users/flusers.html:28 staff/apps/users/flusers.html:92
+#: staff/apps/users/flusers.html:28 staff/apps/users/flusers.html:94
 msgid "Last login: {{ ::user.last_login | date:'medium' }}"
 msgstr "Ultima autentificare: {{ ::user.last_login | date:'medium' }}"
 
@@ -9926,7 +10035,7 @@ msgstr "Modifică răspuns"
 msgid "Last reply at"
 msgstr "Ultima actualizare"
 
-#: staff/apps/billing/services/details/servicedetails.html:123
+#: staff/apps/billing/services/details/servicedetails.html:148
 msgid "Last update"
 msgstr "Ultima actualizare"
 
@@ -9953,11 +10062,11 @@ msgstr "Lansează"
 msgid "Least full"
 msgstr "Ultima oră"
 
-#: staff/apps/settings/configurations/configurationdetails.html:176
+#: staff/apps/settings/configurations/configurationdetails.html:187
 msgid "Leaving this blank will use just the <strong>Notifications sender email</strong>."
 msgstr "Dacă acest câmp va fi gol <strong>Notificări e-mail expeditor</strong> va fi folosit."
 
-#: staff/apps/settings/configurations/configurationdetails.html:192
+#: staff/apps/settings/configurations/configurationdetails.html:203
 msgid "Leaving this blank will use the Fleio DEFAULT_FROM_EMAIL setting."
 msgstr "Dacă acest câmp va fi gol setarea „Fleio PRESTABILIT_DE_LA_EMAIL” va fi folosită."
 
@@ -9998,8 +10107,8 @@ msgstr "Licență reactualizată"
 msgid "License set"
 msgstr "Licență setată"
 
-#: staff/apps/settings/configurations/configurationdetails.html:369
-#: staff/apps/settings/configurations/configurationdetails.html:466
+#: staff/apps/settings/configurations/configurationdetails.html:380
+#: staff/apps/settings/configurations/configurationdetails.html:477
 msgid "Limit billable seconds per month"
 msgstr "Limitează secundele facturabile pe lună"
 
@@ -10007,7 +10116,7 @@ msgstr "Limitează secundele facturabile pe lună"
 msgid "Limits for clients with agreements"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:130
+#: site/apps/osinstances/flinstancedetail.html:153
 msgid "Lines"
 msgstr "Linii"
 
@@ -10032,7 +10141,7 @@ msgstr "Legatură eliminată"
 msgid "List view"
 msgstr "Listă"
 
-#: staff/apps/osinstances/migrate/flinstancemigrate.html:27
+#: staff/apps/osinstances/migrate/flinstancemigrate.html:33
 msgid "Live migrate"
 msgstr "Migrare live"
 
@@ -10046,8 +10155,8 @@ msgstr "Migrare live"
 #: site/apps/osclusters/flclusters.component.html:45
 #: site/apps/osclustertemplates/flclustertemplates.component.html:104
 #: site/apps/osclustertemplates/flclustertemplates.component.html:45 site/apps/osimages/flimages.html:248
-#: site/apps/osimages/flimages.html:83 site/apps/osinstances/flinstances.html:151
-#: site/apps/osinstances/flinstances.html:55 site/apps/osports/flports.html:186 site/apps/osports/flports.html:63
+#: site/apps/osimages/flimages.html:83 site/apps/osinstances/flinstances.html:159
+#: site/apps/osinstances/flinstances.html:58 site/apps/osports/flports.html:186 site/apps/osports/flports.html:63
 #: site/apps/osrouters/flrouters.html:121 site/apps/osrouters/flrouters.html:58
 #: site/apps/ossecuritygroups/flsecuritygroups.html:125 site/apps/ossecuritygroups/flsecuritygroups.html:57
 #: site/apps/osvolumebackups/flvolumebackups.html:144 site/apps/osvolumebackups/flvolumebackups.html:51
@@ -10078,14 +10187,26 @@ msgstr "Migrare live"
 #: staff/apps/settings/configurations/configurations.html:125
 #: staff/apps/settings/configurations/configurations.html:50 staff/apps/subnetpools/flsubnetpools.html:155
 #: staff/apps/subnetpools/flsubnetpools.html:56 staff/apps/tasklog/tasks.html:56
-#: staff/apps/usergroups/flusergroups.html:94 staff/apps/users/flusers.html:120 staff/apps/users/flusers.html:53
+#: staff/apps/usergroups/flusergroups.html:94 staff/apps/users/flusers.html:124 staff/apps/users/flusers.html:55
 msgid "Load more"
 msgstr "Incarcă mai mult"
 
-#: site/apps/osinstances/create/flbootsourceselect.html:152
-#: staff/apps/osinstances/create/flbootsourceselect.html:164
+#: site/apps/osinstances/create/flbootsourceselect.html:148
+#: staff/apps/osinstances/create/flbootsourceselect.html:160
 msgid "Local compute storage"
 msgstr "Storage compute local"
+
+#: staff/apps/osinstances/flinstancedetail.html:61
+msgid ""
+"Local storage: {{ $ctrl.instance.storage_details.local_storage }} GB\n"
+"                          <span ng-if=\"$ctrl.instance.image\">(boot)</span>"
+msgstr ""
+
+#: site/apps/osinstances/flinstancedetail.html:48
+msgid ""
+"Local storage: {{ $ctrl.instance.storage_details.local_storage }} GB\n"
+"                        <span ng-if=\"$ctrl.instance.image\">(boot)</span>"
+msgstr ""
 
 #: staff/apps/osinstances/actions/flinstanceactions.directive.js:37
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:48
@@ -10162,7 +10283,7 @@ msgstr "Administrează permisiunile pentru utilizatori sau grupuri."
 msgid "Manual refund processed externally"
 msgstr "Rambursare manuala procesata extern"
 
-#: staff/apps/settings/configurations/configurationdetails.html:213
+#: staff/apps/settings/configurations/configurationdetails.html:224
 msgid "Manual review score"
 msgstr "Scor revizuire manuală"
 
@@ -10192,6 +10313,11 @@ msgstr "Marcat ca citit"
 #: tickets/staff/frontend/components/tickets_actions/ticketsactions.html:14
 msgid "Mark as unread"
 msgstr "Marcat ca necitit"
+
+#: staff/apps/settings/configurations/configurationdetails.html:136
+#: staff/apps/settings/configurations/configurationdetails.html:149
+msgid "Mark invoiced periods as paid when using external billing"
+msgstr ""
 
 #: staff/apps/oszones/flzoneedit.html:100
 msgid "Master"
@@ -10271,8 +10397,8 @@ msgstr "Număr total de clienți"
 msgid "Max prefix length"
 msgstr "Lungime max. prefix"
 
-#: staff/apps/settings/configurations/configurationdetails.html:196
-#: staff/apps/settings/configurations/configurationdetails.html:225
+#: staff/apps/settings/configurations/configurationdetails.html:207
+#: staff/apps/settings/configurations/configurationdetails.html:236
 msgid "MaxMind fraud check"
 msgstr "Verificare fraudă MaxMind"
 
@@ -10334,8 +10460,8 @@ msgstr "Măsurătoare"
 msgid "Metric unit"
 msgstr "Unitate de măsură"
 
-#: site/apps/billing/history/billinghistory.html:76 site/apps/osinstances/flinstancedetail.html:144
-#: staff/apps/osinstances/flinstancedetail.html:122
+#: site/apps/billing/history/billinghistory.html:76 site/apps/osinstances/flinstancedetail.html:167
+#: staff/apps/osinstances/flinstancedetail.html:141
 msgid "Metrics"
 msgstr "Măsurători"
 
@@ -10344,7 +10470,7 @@ msgstr "Măsurători"
 msgid "Migrate"
 msgstr "Migreaza"
 
-#: staff/apps/osinstances/migrate/flinstancemigrate.html:59
+#: staff/apps/osinstances/migrate/flinstancemigrate.html:65
 msgid "Migrate instance"
 msgstr "Migrează instanța"
 
@@ -10422,11 +10548,11 @@ msgstr ""
 msgid "Miscellaneous"
 msgstr ""
 
-#: staff/apps/billing/products/flbillingproductedit.html:52
+#: staff/apps/billing/products/flbillingproductedit.html:65
 msgid "Module"
 msgstr "Modul"
 
-#: staff/apps/billing/products/flbillingproductedit.html:152
+#: staff/apps/billing/products/flbillingproductedit.html:167
 msgid "Module Configuration"
 msgstr "Configurație Modul"
 
@@ -10569,7 +10695,7 @@ msgstr ""
 #: domains/staff/frontend/components/tlds_actions/dialogs/tld_edit/tldedit.html:10
 #: site/apps/billing/cart/cart.html:55
 #: site/apps/billing/recurring_payment_opts/recurring_payment_opts.component.html:18
-#: site/apps/billing/services/services.html:44 site/apps/billing/services/states.config.js:37
+#: site/apps/billing/services/services.html:48 site/apps/billing/services/states.config.js:37
 #: site/apps/networks/flnetworkdetails.html:117 site/apps/networks/flnetworkdetails.html:74
 #: site/apps/networks/flnetworkedit.html:11 site/apps/networks/flnetworks.html:60
 #: site/apps/networks/flnetworksubnetedit.html:13 site/apps/networks/states.config.js:37
@@ -10577,8 +10703,8 @@ msgstr ""
 #: site/apps/osclusters/flclusters.component.html:54 site/apps/osclusters/states.config.js:56
 #: site/apps/osclustertemplates/flclustertemplates.component.html:54
 #: site/apps/osclustertemplates/states.config.js:55 site/apps/osimages/flimages.html:92
-#: site/apps/osimages/states.config.js:57 site/apps/osinstances/flinstancedetail.html:598
-#: site/apps/osinstances/flinstances.html:66 site/apps/osinstances/rename/flinstancerename.html:11
+#: site/apps/osimages/states.config.js:57 site/apps/osinstances/flinstancedetail.html:621
+#: site/apps/osinstances/flinstances.html:69 site/apps/osinstances/rename/flinstancerename.html:11
 #: site/apps/osinstances/states.config.js:63 site/apps/osports/create/flportcreate.html:17
 #: site/apps/osports/edit/flportedit.html:17 site/apps/osports/flports.html:71
 #: site/apps/osports/states.config.js:45 site/apps/osrouters/flrouteredit.html:29
@@ -10596,10 +10722,10 @@ msgstr ""
 #: staff/apps/billing/gateways/gateways.html:48 staff/apps/billing/products/flbillingproductedit.html:22
 #: staff/apps/billing/products/flbillingproductgroupedit.html:10
 #: staff/apps/billing/products/productdetails.html:188 staff/apps/billing/products/products.html:5
-#: staff/apps/billing/services/services.html:46 staff/apps/billing/states.config.js:771
+#: staff/apps/billing/services/services.html:50 staff/apps/billing/states.config.js:771
 #: staff/apps/billing/taxrules/flbillingtaxruleedit.html:44 staff/apps/billing/taxrules/taxrules.html:6
 #: staff/apps/clientgroups/flclientgroupedit.html:10 staff/apps/clientgroups/flclientgroups.html:48
-#: staff/apps/clientgroups/states.config.js:44 staff/apps/clients/flclientdetails.html:530
+#: staff/apps/clientgroups/states.config.js:44 staff/apps/clients/flclientdetails.html:537
 #: staff/apps/clients/flclients.html:77 staff/apps/floatingips/flfloatingips.html:66
 #: staff/apps/networks/flnetworkdetails.html:119 staff/apps/networks/flnetworkdetails.html:80
 #: staff/apps/networks/flnetworkedit.html:39 staff/apps/networks/flnetworks.html:57
@@ -10614,7 +10740,7 @@ msgstr ""
 #: staff/apps/osflavorgroups/flflavorgroups.html:48 staff/apps/osflavorgroups/states.config.js:44
 #: staff/apps/osflavors/flflavordetails.html:35 staff/apps/osflavors/flflavors.html:73
 #: staff/apps/osflavors/states.config.js:55 staff/apps/osimages/flimages.html:89
-#: staff/apps/osimages/states.config.js:66 staff/apps/osinstances/flinstancedetail.html:601
+#: staff/apps/osimages/states.config.js:66 staff/apps/osinstances/flinstancedetail.html:620
 #: staff/apps/osinstances/flinstances.html:67 staff/apps/osinstances/states.config.js:67
 #: staff/apps/osports/create/flportcreate.html:17 staff/apps/osports/edit/flportedit.html:17
 #: staff/apps/osports/flports.html:71 staff/apps/osports/states.config.js:45
@@ -10698,7 +10824,7 @@ msgid "Network delete scheduled"
 msgstr "Stergere retea in progres"
 
 #: site/apps/billing/history/billinghistory.component.js:33 site/apps/networks/states.config.js:111
-#: site/apps/osinstances/flinstancedetail.html:45 staff/apps/networks/states.config.js:129
+#: site/apps/osinstances/flinstancedetail.html:66 staff/apps/networks/states.config.js:129
 msgid "Network details"
 msgstr "Detalii rețea"
 
@@ -10727,7 +10853,7 @@ msgstr "ID rețea: {{::$ctrl.floatingIp.floating_network.id }}"
 msgid "Network mask"
 msgstr "Mască de rețea"
 
-#: site/apps/osinstances/flinstancedetail.html:156 staff/apps/osinstances/flinstancedetail.html:134
+#: site/apps/osinstances/flinstancedetail.html:179 staff/apps/osinstances/flinstancedetail.html:153
 msgid "Network metrics"
 msgstr "Măsurători rețea"
 
@@ -10772,7 +10898,7 @@ msgstr ""
 "                    <strong class=\"md-primary\">{{$ctrl.instance.flavor.name }}</strong>\n"
 "                  </a>"
 
-#: site/apps/osinstances/flinstancedetail.html:361 staff/apps/osinstances/flinstancedetail.html:369
+#: site/apps/osinstances/flinstancedetail.html:384 staff/apps/osinstances/flinstancedetail.html:388
 msgid "Networking"
 msgstr "Rețele"
 
@@ -10838,60 +10964,46 @@ msgstr "Șterge volum {{name}}"
 msgid "Next"
 msgstr "Următorul"
 
-#: site/apps/billing/services/services.html:23 site/apps/billing/services/services.html:46
-#: staff/apps/billing/services/services.html:21 staff/apps/billing/services/services.html:49
-#: staff/apps/clients/flclientdetails.html:539
+#: staff/apps/clients/flclientdetails.html:546
 msgid "Next due"
 msgstr "Dată Scadentă"
 
-#: site/apps/billing/services/states.config.js:104 site/apps/billing/services/states.config.js:39
-#: staff/apps/billing/services/details/servicedetails.html:72
-#: staff/apps/billing/services/edit/flserviceedit.html:97 staff/apps/billing/states.config.js:176
-#: staff/apps/billing/states.config.js:241
-msgid "Next due date"
-msgstr "Următoarea dată scadentă"
+#: staff/apps/billing/services/details/servicedetails.html:115
+#: staff/apps/billing/services/edit/flserviceedit.html:115
+msgid "Next expiration date"
+msgstr "Următoarea dată a expirarii"
 
-#: site/apps/billing/services/servicedetails.html:66
+#: site/apps/billing/services/servicedetails.html:76
+#, fuzzy
+#| msgid ""
+#| "Next due date\n"
+#| "              : {{$ctrl.serviceDetails.next_expiration_date | date:'medium'}}"
 msgid ""
-"Next due date\n"
-"              : {{$ctrl.serviceDetails.next_due_date | date:'medium' }}"
-msgstr ""
-"Următoarea dată scadentă\n"
-"              : {{$ctrl.serviceDetails.next_due_date | date:'medium' }}"
-
-#: site/apps/billing/services/servicedetails.html:68
-msgid ""
-"Next due date\n"
+"Next expiration date\n"
 "              : {{$ctrl.serviceDetails.next_expiration_date | date:'medium'}}"
 msgstr ""
 "Următoarea dată scadentă\n"
 "              : {{$ctrl.serviceDetails.next_due_date | date:'medium' }}"
 
-#: staff/apps/billing/services/details/servicedetails.html:90
-#: staff/apps/billing/services/edit/flserviceedit.html:108
-msgid "Next expiration date"
-msgstr "Următoarea dată a expirarii"
-
-#: staff/apps/settings/configurations/configurationdetails.html:355
-#: staff/apps/settings/configurations/configurationdetails.html:460
+#: staff/apps/settings/configurations/configurationdetails.html:366
+#: staff/apps/settings/configurations/configurationdetails.html:471
 #, fuzzy
 #| msgid "Next paid invoice number"
 msgid "Next fiscal invoice number"
 msgstr "Următorul numar al facturii platite"
 
-#: staff/apps/settings/configurations/configurationdetails.html:363
-#: staff/apps/settings/configurations/configurationdetails.html:463
+#: staff/apps/settings/configurations/configurationdetails.html:374
+#: staff/apps/settings/configurations/configurationdetails.html:474
 #, fuzzy
 #| msgid "Next paid invoice number format"
 msgid "Next fiscal invoice number format"
 msgstr "Formatul următorului numar al facturii platite"
 
-#: staff/apps/billing/services/details/servicedetails.html:81
-#: staff/apps/billing/services/edit/flserviceedit.html:117
+#: staff/apps/billing/services/details/servicedetails.html:87
 msgid "Next invoice date"
 msgstr "Următoarea dată de facutare"
 
-#: site/apps/billing/services/servicedetails.html:70
+#: site/apps/billing/services/servicedetails.html:78
 msgid ""
 "Next invoice date\n"
 "              : {{$ctrl.serviceDetails.next_invoice_date | date:'medium'}}"
@@ -10899,7 +11011,7 @@ msgstr ""
 "Următoarea dată de facturare\n"
 "\t\t: {{$ctrl.serviceDetails.next_invoice_date | date:'medium'}}"
 
-#: staff/apps/settings/configurations/configurationdetails.html:397
+#: staff/apps/settings/configurations/configurationdetails.html:408
 #, fuzzy
 #| msgid "Next invoice date"
 msgid "Next invoice date offset"
@@ -10921,7 +11033,7 @@ msgstr "Următoarea dată de facutare"
 msgid "Next page"
 msgstr "Dată Scadentă"
 
-#: site/apps/osinstances/flinstancedetail.html:600 staff/apps/osinstances/flinstancedetail.html:603
+#: site/apps/osinstances/flinstancedetail.html:623 staff/apps/osinstances/flinstancedetail.html:622
 msgid "Next run (UTC)"
 msgstr ""
 
@@ -11065,7 +11177,7 @@ msgstr "Nici o rețea"
 msgid "No Notifications"
 msgstr "Nici o notificare"
 
-#: staff/apps/clients/flclientdetails.html:256
+#: staff/apps/clients/flclientdetails.html:263
 msgid "No OpenStack service exists for this client"
 msgstr "Nu există niciun serviciu OpenStack pentru acest client"
 
@@ -11093,7 +11205,7 @@ msgstr "Nici un proiect"
 msgid "No Registrars"
 msgstr "Registrari"
 
-#: staff/apps/clients/flclientdetails.html:336
+#: staff/apps/clients/flclientdetails.html:343
 #, fuzzy
 #| msgid "No OpenStack service exists for this client"
 msgid "No Reseller service exists for this client"
@@ -11210,17 +11322,17 @@ msgstr "Nu există opțiuni disponibile"
 msgid "No available resources"
 msgstr "Nu există resurse disponibile"
 
-#: site/apps/osinstances/flinstancedetail.html:594 staff/apps/osinstances/flinstancedetail.html:597
+#: site/apps/osinstances/flinstancedetail.html:617 staff/apps/osinstances/flinstancedetail.html:616
 #, fuzzy
 #| msgid "No OpenStack service exists for this client"
 msgid "No backup schedules for this instance"
 msgstr "Nu există niciun serviciu OpenStack pentru acest client"
 
-#: site/apps/osinstances/flinstancedetail.html:568 staff/apps/osinstances/flinstancedetail.html:572
+#: site/apps/osinstances/flinstancedetail.html:591 staff/apps/osinstances/flinstancedetail.html:591
 msgid "No backups for this instance"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:257
+#: staff/apps/settings/configurations/configurationdetails.html:268
 msgid "No billing cycle or free"
 msgstr "Fără ciclu de plată sau gratuit"
 
@@ -11268,9 +11380,9 @@ msgstr "Nici un client cu această configurație"
 msgid "No cluster templates matching \"{{$ctrl.clusterTemplateSearchText}}\" found"
 msgstr "Nu am găsit niciun utilizator care să potrivească cu \"{{$ctrl.usersSearchText}}\""
 
-#: site/apps/osinstances/flinstancedetail.html:178 site/apps/osinstances/flinstancedetail.html:195
-#: site/apps/osinstances/flinstancedetail.html:204 staff/apps/osinstances/flinstancedetail.html:155
-#: staff/apps/osinstances/flinstancedetail.html:172 staff/apps/osinstances/flinstancedetail.html:180
+#: site/apps/osinstances/flinstancedetail.html:201 site/apps/osinstances/flinstancedetail.html:218
+#: site/apps/osinstances/flinstancedetail.html:227 staff/apps/osinstances/flinstancedetail.html:174
+#: staff/apps/osinstances/flinstancedetail.html:191 staff/apps/osinstances/flinstancedetail.html:199
 msgid "No data available"
 msgstr "Nu există date disponibile"
 
@@ -11329,13 +11441,13 @@ msgstr "Nici o configurație disponibilă pentru această regiune"
 msgid "No groups matching \"{{$ctrl.entitySearchText}}\" found"
 msgstr "Nu am găsit niciun produs care să se potrivească cu \"{{$ctrl.entitySearchText}}\""
 
-#: staff/apps/osinstances/flinstancedetail.html:312
+#: staff/apps/osinstances/flinstancedetail.html:331
 msgid ""
 "No history\n"
 "                                                                                                         log"
 msgstr "Nici un istoric"
 
-#: site/apps/osinstances/flinstancedetail.html:335
+#: site/apps/osinstances/flinstancedetail.html:358
 msgid "No history log"
 msgstr "Nu există înregistrări în istoric"
 
@@ -11346,20 +11458,13 @@ msgstr "Nu există înregistrări în istoric"
 msgid "No images"
 msgstr "Nu există imagini"
 
-#: site/apps/osinstances/create/flbootsourceselect.html:36
-#: staff/apps/osinstances/create/flbootsourceselect.html:35
-#, fuzzy
-#| msgid "No images found"
-msgid "No images to display"
-msgstr "Nu există imagini găsite"
-
 #: site/apps/dashboard/fldashboard.html:70
 #, fuzzy
 #| msgid "Instances"
 msgid "No instances"
 msgstr "Instanțe"
 
-#: site/apps/dashboard/fldashboard.html:149 staff/apps/clients/flclientdetails.html:114
+#: site/apps/dashboard/fldashboard.html:149 staff/apps/clients/flclientdetails.html:121
 msgid "No invoices"
 msgstr "Nu există facturi"
 
@@ -11367,7 +11472,7 @@ msgstr "Nu există facturi"
 msgid "No items matching \"{{$ctrl.customModelSearchText}}\" found"
 msgstr "Nu am găsit niciun articol care să se potrivească cu \"{{$ctrl.customModelSearchText}}\""
 
-#: staff/apps/clients/flclientdetails.html:163
+#: staff/apps/clients/flclientdetails.html:170
 msgid "No journal entries"
 msgstr "Nici o înregistrare"
 
@@ -11541,7 +11646,7 @@ msgstr "Niciun server"
 msgid "No servers found"
 msgstr "Nu am găsit niciun server"
 
-#: site/apps/dashboard/fldashboard.html:163 staff/apps/clients/flclientdetails.html:520
+#: site/apps/dashboard/fldashboard.html:163 staff/apps/clients/flclientdetails.html:527
 msgid "No services"
 msgstr "Nici un serviciu"
 
@@ -11559,7 +11664,7 @@ msgstr "Nu exista subrețele de tipul ipv4 disponibile. Pentru a creea apăsați
 msgid "No shared IPv6 subnet pool available. Create one by pressing the add button"
 msgstr "Nu exista subrețele de tipul ipv6 disponibile. Pentru a creea apăsați adaugă"
 
-#: site/apps/osinstances/flinstancedetail.html:262 staff/apps/osinstances/flinstancedetail.html:238
+#: site/apps/osinstances/flinstancedetail.html:285 staff/apps/osinstances/flinstancedetail.html:257
 msgid "No snapshots"
 msgstr "Nu există snapshot-uri"
 
@@ -11628,7 +11733,7 @@ msgstr "Nici un tip de volum găsit."
 msgid "No volumes"
 msgstr "Nu există volume"
 
-#: site/apps/osinstances/flinstancedetail.html:322 staff/apps/osinstances/flinstancedetail.html:300
+#: site/apps/osinstances/flinstancedetail.html:345 staff/apps/osinstances/flinstancedetail.html:319
 msgid "No volumes attached"
 msgstr "Nu există volume atașate"
 
@@ -11709,7 +11814,7 @@ msgstr "Destinatari CC (separați prin virgulă)"
 msgid "None"
 msgstr "Nici unul"
 
-#: staff/apps/settings/configurations/configurationdetails.html:138
+#: staff/apps/settings/configurations/configurationdetails.html:144
 msgid ""
 "Not checking this option will use the default: each client has his own anniversary date based on\n"
 "                    the date he signed up."
@@ -11739,7 +11844,7 @@ msgstr "Notă adăugată"
 msgid "Note deleted"
 msgstr "Notă ștearsă"
 
-#: staff/apps/osinstances/migrate/flinstancemigrate.html:46
+#: staff/apps/osinstances/migrate/flinstancemigrate.html:52
 msgid ""
 "Note that migration may fail if target hypervisor does not have enough disk space.\n"
 "          Use live migration if you want to overcommit."
@@ -11778,8 +11883,8 @@ msgstr ""
 msgid "Note: password will be requested when sourcing file."
 msgstr ""
 
-#: staff/apps/billing/services/details/servicedetails.html:131
-#: staff/apps/billing/services/edit/flserviceedit.html:71
+#: staff/apps/billing/services/details/servicedetails.html:156
+#: staff/apps/billing/services/edit/flserviceedit.html:77
 msgid "Notes"
 msgstr "Note"
 
@@ -11803,11 +11908,11 @@ msgstr "Notificare"
 msgid "Notification deleted"
 msgstr "Notificare ștearsă"
 
-#: staff/apps/settings/configurations/configurationdetails.html:531
-#: staff/apps/settings/configurations/configurationdetails.html:552
-#: staff/apps/settings/configurations/configurationdetails.html:573
-#: staff/apps/settings/configurations/configurationdetails.html:632
-#: staff/apps/settings/configurations/configurationdetails.html:701
+#: staff/apps/settings/configurations/configurationdetails.html:542
+#: staff/apps/settings/configurations/configurationdetails.html:563
+#: staff/apps/settings/configurations/configurationdetails.html:584
+#: staff/apps/settings/configurations/configurationdetails.html:643
+#: staff/apps/settings/configurations/configurationdetails.html:712
 msgid "Notification template"
 msgstr "Șablon de notificări"
 
@@ -11837,13 +11942,13 @@ msgstr "Notificări schimburi"
 msgid "Notifications pool name"
 msgstr "Nume 'pool' notificări"
 
-#: staff/apps/settings/configurations/configurationdetails.html:185
-#: staff/apps/settings/configurations/configurationdetails.html:190
+#: staff/apps/settings/configurations/configurationdetails.html:196
+#: staff/apps/settings/configurations/configurationdetails.html:201
 msgid "Notifications sender email"
 msgstr "Notificări e-mail expeditor"
 
-#: staff/apps/settings/configurations/configurationdetails.html:169
-#: staff/apps/settings/configurations/configurationdetails.html:174
+#: staff/apps/settings/configurations/configurationdetails.html:180
+#: staff/apps/settings/configurations/configurationdetails.html:185
 msgid "Notifications sender name"
 msgstr "Notificări nume expeditor"
 
@@ -11884,8 +11989,8 @@ msgstr "Notifică la închiderea tichetului"
 msgid "Notify on ticket opened"
 msgstr "Notifică la deschiderea tichetului"
 
-#: staff/apps/settings/configurations/configurationdetails.html:307
-#: staff/apps/settings/configurations/configurationdetails.html:429
+#: staff/apps/settings/configurations/configurationdetails.html:318
+#: staff/apps/settings/configurations/configurationdetails.html:440
 msgid "Notify on unpaid invoices"
 msgstr "Notifică la facturi neplătite"
 
@@ -11909,8 +12014,8 @@ msgstr "Numărul de utilizatori din acest grup"
 msgid "Number of flavors in this group"
 msgstr "Numărul de utilizatori din acest grup"
 
-#: site/apps/osinstances/flinstancedetail.html:128 staff/apps/osinstances/flinstancedetail.html:105
-#: staff/apps/osinstances/flinstancedetail.html:109
+#: site/apps/osinstances/flinstancedetail.html:151 staff/apps/osinstances/flinstancedetail.html:124
+#: staff/apps/osinstances/flinstancedetail.html:128
 msgid "Number of lines to show"
 msgstr "Numărul liniilor de afișat"
 
@@ -12097,7 +12202,7 @@ msgstr "Setari OpenStack"
 msgid "Openstack"
 msgstr "Redeschide tichet"
 
-#: staff/apps/clients/flclientdetails.html:247
+#: staff/apps/clients/flclientdetails.html:254
 msgid "Openstack service"
 msgstr "Serviciu OpenStack"
 
@@ -12252,12 +12357,12 @@ msgstr "Comandă:"
 msgid "Orders"
 msgstr "Comenzi"
 
-#: site/apps/osinstances/flinstancedetail.html:93 staff/apps/osinstances/flinstancedetail.html:62
+#: site/apps/osinstances/flinstancedetail.html:114 staff/apps/osinstances/flinstancedetail.html:81
 msgid "Other details"
 msgstr "Alte detalii"
 
-#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:22
-#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:22
+#: site/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:23
+#: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.controller.js:23
 msgid "Other protocol"
 msgstr "Alt protocol"
 
@@ -12271,7 +12376,7 @@ msgstr "Fără credit de la"
 msgid "Out of credit since"
 msgstr "Fără credit de la"
 
-#: staff/apps/billing/services/edit/flserviceedit.html:80
+#: staff/apps/billing/services/edit/flserviceedit.html:86
 msgid "Override price"
 msgstr "Suprascrie prețul"
 
@@ -12321,7 +12426,7 @@ msgstr ""
 msgid "PTR"
 msgstr "PTR"
 
-#: site/apps/osinstances/flinstancedetail.html:193 staff/apps/osinstances/flinstancedetail.html:170
+#: site/apps/osinstances/flinstancedetail.html:216 staff/apps/osinstances/flinstancedetail.html:189
 msgid "Packets in/out"
 msgstr "Produse primite/trimise"
 
@@ -12333,6 +12438,24 @@ msgstr "Pagina nu există"
 #: staff/apps/dashboard/widgets/billing/flbilling.widget.html:5
 msgid "Paid"
 msgstr "Plătit"
+
+#: site/apps/billing/services/states.config.js:39 site/apps/billing/services/states.config.js:69
+#: staff/apps/billing/services/details/servicedetails.html:96 staff/apps/billing/states.config.js:176
+#: staff/apps/billing/states.config.js:206
+msgid "Paid until"
+msgstr ""
+
+#: site/apps/billing/services/servicedetails.html:74
+#, fuzzy
+#| msgid ""
+#| "Next due date\n"
+#| "              : {{$ctrl.serviceDetails.next_due_date | date:'medium' }}"
+msgid ""
+"Paid until\n"
+"              : {{$ctrl.serviceDetails.paid_until | date:'medium' }}"
+msgstr ""
+"Următoarea dată scadentă\n"
+"              : {{$ctrl.serviceDetails.next_due_date | date:'medium' }}"
 
 #: commons/auth/login.html:42 hypanel/staff/frontend/components/server_settings/serversettings.html:32
 #: site/apps/osapiusers/flapiuseredit.html:22 site/apps/osinstances/password/flinstancechangepassword.html:14
@@ -12395,7 +12518,7 @@ msgstr "Stare Plata"
 msgid "Payment: {{::$ctrl.serviceDetails.cycle.display_name}}"
 msgstr "Plata: {{::$ctrl.serviceDetails.cycle.display_name}}"
 
-#: site/apps/billing/services/states.config.js:74 staff/apps/billing/states.config.js:211
+#: site/apps/billing/services/states.config.js:79 staff/apps/billing/states.config.js:216
 #: staff/apps/billing/states.config.js:373
 msgid "Pending"
 msgstr "În curs"
@@ -12497,6 +12620,16 @@ msgstr "Plan {:name}"
 #: commons/ui/licensewarning/fllicensewarningdialog.html:9
 msgid "Please renew your Fleio license."
 msgstr "Vă rugam să vă reînnoiți licența Fleio."
+
+#: site/apps/osinstances/create/flinstancecreate.component.js:364
+#: staff/apps/osinstances/create/flinstancecreate.component.js:504
+msgid "Please reselect boot source as selected flavor cannot be used with volumes."
+msgstr ""
+
+#: site/apps/osinstances/create/flinstancecreate.component.js:373
+#: staff/apps/osinstances/create/flinstancecreate.component.js:513
+msgid "Please reselect boot source as selected flavor cannot be used without volumes."
+msgstr ""
 
 #: tickets/staff/frontend/components/signatures/signatures.component.js:44
 #, fuzzy
@@ -12675,11 +12808,11 @@ msgstr "Flavor {:name}"
 
 #: site/apps/baseconfig/fleio.baseconfig.module.js:34
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:22
-#: site/apps/osinstances/flinstancedetail.html:368 site/apps/osports/states.config.js:41
+#: site/apps/osinstances/flinstancedetail.html:391 site/apps/osports/states.config.js:41
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:59
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:43
 #: staff/apps/osinstances/associateip/flinstanceassociateip.html:22
-#: staff/apps/osinstances/flinstancedetail.html:374 staff/apps/osports/states.config.js:41
+#: staff/apps/osinstances/flinstancedetail.html:393 staff/apps/osports/states.config.js:41
 #: staff/apps/ossecuritygroups/flsecuritygroupdetails.html:61
 msgid "Ports"
 msgstr "Porturi"
@@ -12752,7 +12885,7 @@ msgstr ""
 
 #: staff/apps/billing/configurable_options/cycles/optioncycleedit.html:54
 #: staff/apps/billing/products/editcycle/flproductcycleedit.html:64
-#: staff/apps/osbilling/plans/flbillingplandetails.html:60 staff/apps/osbilling/pricing/flpricerule.html:142
+#: staff/apps/osbilling/plans/flbillingplandetails.html:60 staff/apps/osbilling/pricing/flpricerule.html:164
 #: staff/apps/osbilling/resources/flmetric.html:67 staff/apps/osbilling/resources/flmetric.html:87
 msgid "Price"
 msgstr "Preț"
@@ -12777,7 +12910,7 @@ msgstr "Preț ({{$ctrl.currency}})"
 msgid "Price is percent"
 msgstr "Tip factură"
 
-#: staff/apps/billing/products/flbillingproductedit.html:85 staff/apps/billing/products/products.html:9
+#: staff/apps/billing/products/flbillingproductedit.html:98 staff/apps/billing/products/products.html:9
 msgid "Price model"
 msgstr "Model de preț"
 
@@ -12785,13 +12918,19 @@ msgstr "Model de preț"
 msgid "Price model: {{ $ctrl.productDetails.price_model_display }}"
 msgstr "Model preț: {{ $ctrl.productDetails.price_model_display }}"
 
-#: staff/apps/osbilling/pricing/flpricerule.html:207
+#: staff/apps/osbilling/pricing/flpricerule.html:229
 msgid "Price modifiers"
 msgstr "Modificatori de preț"
 
-#: staff/apps/billing/services/details/servicedetails.html:63
+#: staff/apps/billing/services/details/servicedetails.html:69
 msgid "Price override"
 msgstr "Suprascrie prețul"
+
+#: staff/apps/osbilling/pricing/flpricerule.html:93
+#, fuzzy
+#| msgid "Select time unit"
+msgid "Price time unit"
+msgstr "Selectează unitatea de timp"
 
 #: domains/staff/frontend/components/domain_details/domaindetails.html:78
 msgid "Price: {{ $ctrl.domain.price_display}}"
@@ -12805,7 +12944,7 @@ msgstr "Prețuri salvate"
 msgid "Pricing"
 msgstr "Prețuri"
 
-#: staff/apps/osbilling/pricing/flpricerule.html:84
+#: staff/apps/osbilling/pricing/flpricerule.html:106
 msgid "Pricing attribute"
 msgstr "Atribut resursă"
 
@@ -12815,11 +12954,11 @@ msgstr "Atribut resursă"
 msgid "Pricing plan"
 msgstr "Prețuri"
 
-#: staff/apps/clients/flclientdetails.html:359
+#: staff/apps/clients/flclientdetails.html:366
 msgid "Pricing plan: {{$ctrl.reseller.resources[resellerService.id].plan.name || 'n/a'}}"
 msgstr ""
 
-#: staff/apps/clients/flclientdetails.html:278
+#: staff/apps/clients/flclientdetails.html:285
 msgid "Pricing plan: {{OSService.pricing_plan.name}}"
 msgstr ""
 
@@ -12855,7 +12994,7 @@ msgstr "Cheia privată. Copiază această cheie. Ea nu va fi salvată pe server.
 msgid "Product"
 msgstr "Produs"
 
-#: staff/apps/billing/products/flbillingproductedit.component.js:82
+#: staff/apps/billing/products/flbillingproductedit.component.js:84
 msgid "Product added"
 msgstr "Produs adăugat"
 
@@ -12872,7 +13011,7 @@ msgstr "Configurație produs"
 
 #: staff/apps/clients/createopenstackservice/flcreateopenstackservice.html:33
 #: staff/apps/clients/createresellerservice/flcreateresellerservice.html:33
-#: staff/apps/clients/flclientdetails.html:274 staff/apps/clients/flclientdetails.html:355
+#: staff/apps/clients/flclientdetails.html:281 staff/apps/clients/flclientdetails.html:362
 msgid "Product cycle"
 msgstr "Ciclu produs"
 
@@ -12901,17 +13040,17 @@ msgstr "Detalii produs"
 msgid "Product internal code"
 msgstr "Cod intern produs"
 
-#: staff/apps/billing/products/flbillingproductedit.component.js:72
+#: staff/apps/billing/products/flbillingproductedit.component.js:74
 msgid "Product modified"
 msgstr "Produs modificat"
 
 #: staff/apps/clients/createopenstackservice/flcreateopenstackservice.html:21
 #: staff/apps/clients/createresellerservice/flcreateresellerservice.html:21
-#: staff/apps/clients/flclientdetails.html:270 staff/apps/clients/flclientdetails.html:351
+#: staff/apps/clients/flclientdetails.html:277 staff/apps/clients/flclientdetails.html:358
 msgid "Product name"
 msgstr "Nume produs"
 
-#: staff/apps/billing/products/flbillingproductedit.html:64
+#: staff/apps/billing/products/flbillingproductedit.html:77
 msgid "Product type"
 msgstr "Tip produs"
 
@@ -12959,7 +13098,7 @@ msgstr "ID proiect"
 msgid "Project ID: {{ ::$ctrl.subnetpool.project_id }}"
 msgstr "ID proiect: {{ ::$ctrl.subnetpool.project_id }}"
 
-#: staff/apps/osinstances/flinstancedetail.html:64
+#: staff/apps/osinstances/flinstancedetail.html:83
 #, fuzzy
 #| msgid "Project ID: {{ ::$ctrl.subnetpool.project_id }}"
 msgid "Project ID: {{::$ctrl.instance.project }}"
@@ -12977,7 +13116,7 @@ msgstr "Proiect sters"
 msgid "Project disabled"
 msgstr "Proiect dezactivat"
 
-#: staff/apps/clients/flclientdetails.html:305
+#: staff/apps/clients/flclientdetails.html:312
 msgid "Project domain ID"
 msgstr "ID domeniu proiect"
 
@@ -13007,7 +13146,7 @@ msgstr "Nume produs: {{ ::$ctrl.subnetpool.project_name }}"
 msgid "Project updated"
 msgstr "Proiect actualizat"
 
-#: staff/apps/clients/flclientdetails.html:284
+#: staff/apps/clients/flclientdetails.html:291
 #, fuzzy
 #| msgid "Project"
 msgid "Project:"
@@ -13134,11 +13273,11 @@ msgstr "Este public"
 msgid "Public Images"
 msgstr "Imagini publice"
 
-#: site/apps/osinstances/flinstancedetail.html:109 staff/apps/osinstances/flinstancedetail.html:86
+#: site/apps/osinstances/flinstancedetail.html:132 staff/apps/osinstances/flinstancedetail.html:105
 msgid "Public traffic this billing cycle: {{::$ctrl.instance.current_cycle_traffic }} GB"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:112 staff/apps/osinstances/flinstancedetail.html:89
+#: site/apps/osinstances/flinstancedetail.html:135 staff/apps/osinstances/flinstancedetail.html:108
 msgid "Public traffic this month: {{::$ctrl.instance.current_month_traffic }} GB"
 msgstr ""
 
@@ -13488,12 +13627,6 @@ msgstr "Generează cheie"
 msgid "Region"
 msgstr "Regiune"
 
-#: site/apps/osinstances/flinstances.html:71
-#, fuzzy
-#| msgid "Hypervisor memory"
-msgid "Region - Hypervisor"
-msgstr "Memorie hipervizor"
-
 #: staff/apps/settings/openstack/openstacksettings.html:383
 msgid "Region name:"
 msgstr "Nume regiune:"
@@ -13537,7 +13670,7 @@ msgstr "Regiune: {{ ::securityGroup.region }}<br>"
 msgid "Region: {{$ctrl.clusterTemplate.region}}"
 msgstr "Regiune: {{  ::$ctrl.router.region }}"
 
-#: site/apps/osinstances/flinstancedetail.html:98 staff/apps/osinstances/flinstancedetail.html:73
+#: site/apps/osinstances/flinstancedetail.html:119 staff/apps/osinstances/flinstancedetail.html:92
 msgid "Region: {{::$ctrl.instance.flavor.region }}"
 msgstr "Regiune: {{::$ctrl.instance.flavor.region }}"
 
@@ -13553,6 +13686,10 @@ msgstr "Regiune: {{ ::$ctrl.securityGroup.region }}"
 #| msgid "Region: {{ ::securityGroup.region }}<br>"
 msgid "Region: {{::securityGroup.region }}"
 msgstr "Regiune: {{ ::securityGroup.region }}<br>"
+
+#: site/apps/osinstances/flinstances.html:74
+msgid "Region<span ng-if=\"$ctrl.features['openstack.instances.show_hypervisors']\"> - Hypervisor</span>"
+msgstr ""
 
 #: domains/staff/frontend/components/tld_details/tlddetails.html:153
 msgid "Register"
@@ -13646,8 +13783,8 @@ msgid "Related invoices"
 msgstr "Creează factură"
 
 #: staff/apps/settings/general/currency/flcurrencies.component.js:55
-#: staff/apps/users/actions/fluseractions.component.js:51
-#: staff/apps/users/actions/flxsuseractions.component.js:51
+#: staff/apps/users/actions/fluseractions.component.js:60
+#: staff/apps/users/actions/flxsuseractions.component.js:60
 msgid "Related objects will not be deleted."
 msgstr "Obiectele legate nu o sa fie șterse."
 
@@ -14002,7 +14139,7 @@ msgstr "Resetează"
 msgid "Reseller client"
 msgstr "Reia activitatea clientului"
 
-#: staff/apps/clients/flclientdetails.html:327
+#: staff/apps/clients/flclientdetails.html:334
 #, fuzzy
 #| msgid "Related service"
 msgid "Reseller service"
@@ -14251,7 +14388,7 @@ msgstr "Parola root"
 msgid "Rotation"
 msgstr "Notificare"
 
-#: site/apps/osinstances/flinstancedetail.html:599 staff/apps/osinstances/flinstancedetail.html:602
+#: site/apps/osinstances/flinstancedetail.html:622 staff/apps/osinstances/flinstancedetail.html:621
 #, fuzzy
 #| msgid "Notification"
 msgid "Rotation / Type"
@@ -14430,7 +14567,7 @@ msgstr ""
 #: staff/apps/billing/configurable_options/cycles/optioncycleedit.html:76
 #: staff/apps/billing/configurable_options/option.component.html:121
 #: staff/apps/billing/products/editcycle/flproductcycleedit.html:105
-#: staff/apps/billing/products/flbillingproductedit.html:165
+#: staff/apps/billing/products/flbillingproductedit.html:180
 #: staff/apps/billing/products/flbillingproductgroupedit.html:31
 #: staff/apps/billing/taxrules/flbillingtaxruleedit.html:85 staff/apps/networks/flnetworkautocreate.html:57
 #: staff/apps/networks/flnetworkedit.html:129 staff/apps/networks/flnetworksubnetedit.html:224
@@ -14439,7 +14576,7 @@ msgstr ""
 #: staff/apps/osrouters/flrouteredit.html:97 staff/apps/ossecuritygroups/flsecuritygroupedit.html:76
 #: staff/apps/oszones/flzoneedit.html:128 staff/apps/settings/authorization/authorization.html:144
 #: staff/apps/settings/authorization/authorization.html:260
-#: staff/apps/settings/configurations/configurationdetails.html:719
+#: staff/apps/settings/configurations/configurationdetails.html:730
 #: staff/apps/settings/configurations/configurationedit.html:36
 #: staff/apps/settings/general/auth_settings/authsettings.component.html:28
 #: staff/apps/settings/general/auth_settings/authsettings.component.html:69
@@ -14534,7 +14671,7 @@ msgstr "Salvează grup utilizatori"
 msgid "Save invoice"
 msgstr "Salvează factură"
 
-#: site/apps/pkm/flpkmkeyedit.html:43 staff/apps/pkm/flpkmkeyedit.html:42
+#: site/apps/pkm/flpkmkeyedit.html:44 staff/apps/pkm/flpkmkeyedit.html:43
 msgid "Save key"
 msgstr "Salveaza cheia"
 
@@ -14565,11 +14702,11 @@ msgstr "Salvează registrar"
 msgid "Save registrars"
 msgstr "Salvează registrari"
 
-#: staff/apps/osbilling/pricing/flpricerule.html:256
+#: staff/apps/osbilling/pricing/flpricerule.html:278
 msgid "Save rule"
 msgstr "Salvează regula"
 
-#: staff/apps/billing/services/edit/flserviceedit.html:129
+#: staff/apps/billing/services/edit/flserviceedit.html:127
 msgid "Save service"
 msgstr "Salvează serviciu"
 
@@ -14704,7 +14841,7 @@ msgstr "Căutare Gateways"
 msgid "Search images"
 msgstr "Căutare floating IP-uri"
 
-#: site/apps/osinstances/flinstances.component.js:22 staff/apps/osinstances/flinstances.component.js:21
+#: site/apps/osinstances/flinstances.component.js:24 staff/apps/osinstances/flinstances.component.js:21
 msgid "Search instances"
 msgstr "Căutare instanțe"
 
@@ -14900,9 +15037,9 @@ msgstr "Actualizare grup de securitate in progres"
 msgid "Security group {:securityGroup}"
 msgstr "Grup de securitate {:securityGroup}"
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:36 site/apps/osinstances/flinstancedetail.html:511
+#: site/apps/baseconfig/fleio.baseconfig.module.js:36 site/apps/osinstances/flinstancedetail.html:534
 #: site/apps/ossecuritygroups/states.config.js:32 staff/apps/baseconfig/fleiostaff.baseconfig.module.js:45
-#: staff/apps/osinstances/flinstancedetail.html:514 staff/apps/ossecuritygroups/states.config.js:32
+#: staff/apps/osinstances/flinstancedetail.html:533 staff/apps/ossecuritygroups/states.config.js:32
 msgid "Security groups"
 msgstr "Grupuri securitate"
 
@@ -14920,8 +15057,8 @@ msgstr ""
 msgid "See related ports"
 msgstr "Generează cheie"
 
-#: site/apps/osinstances/create/flbootsourceselect.html:180
-#: staff/apps/osinstances/create/flbootsourceselect.html:192
+#: site/apps/osinstances/create/flbootsourceselect.html:176
+#: staff/apps/osinstances/create/flbootsourceselect.html:188
 msgid "Select"
 msgstr "Selectează"
 
@@ -15186,7 +15323,7 @@ msgstr "Selectează măsurătoare"
 msgid "Select metric unit"
 msgstr "Selectează unitatea de măsură"
 
-#: site/apps/osinstances/flinstancedetail.html:150 staff/apps/osinstances/flinstancedetail.html:128
+#: site/apps/osinstances/flinstancedetail.html:173 staff/apps/osinstances/flinstancedetail.html:147
 msgid "Select metrics type"
 msgstr "Selectează tipul măsurători"
 
@@ -15326,8 +15463,8 @@ msgstr "Selectează sursă"
 msgid "Select source type"
 msgstr "Selectează tip sursă"
 
-#: site/apps/osinstances/create/flbootsourceselect.html:149
-#: staff/apps/osinstances/create/flbootsourceselect.html:161
+#: site/apps/osinstances/create/flbootsourceselect.html:145
+#: staff/apps/osinstances/create/flbootsourceselect.html:157
 msgid "Select storage type"
 msgstr "Selectează tip stocare"
 
@@ -15376,7 +15513,8 @@ msgstr ""
 msgid "Select this option to use transfer a domain from another provider."
 msgstr "Alege tranzacția de rambursat"
 
-#: staff/apps/osbilling/pricing/flpricerule.html:108 staff/apps/osbilling/resources/flmetric.html:34
+#: staff/apps/osbilling/pricing/flpricerule.html:130 staff/apps/osbilling/pricing/flpricerule.html:94
+#: staff/apps/osbilling/resources/flmetric.html:34
 msgid "Select time unit"
 msgstr "Selectează unitatea de timp"
 
@@ -15413,7 +15551,7 @@ msgstr "Selectează valoare"
 msgid "Select volume driver"
 msgstr "Șterge volum"
 
-#: staff/apps/osinstances/create/flbootsourceselect.html:118
+#: staff/apps/osinstances/create/flbootsourceselect.html:114
 #, fuzzy
 #| msgid "Delete image"
 msgid "Selected image"
@@ -15426,13 +15564,13 @@ msgstr "Șterge imagine"
 msgid "Selected subnet is not valid"
 msgstr "Selectează subrețeaua"
 
-#: staff/apps/osinstances/create/flbootsourceselect.html:133
+#: staff/apps/osinstances/create/flbootsourceselect.html:129
 #, fuzzy
 #| msgid "Delete volume"
 msgid "Selected volume"
 msgstr "Șterge volum"
 
-#: staff/apps/settings/configurations/configurationdetails.html:650
+#: staff/apps/settings/configurations/configurationdetails.html:661
 msgid ""
 "Selecting a <strong>Notification template</strong> will send a notification to the\n"
 "                  client on suspension."
@@ -15504,8 +15642,8 @@ msgstr "Trimite notificări la destinatarii cc când un tichet este închis"
 msgid "Send notifications to cc recipients when ticket is opened"
 msgstr "Trimite notificări la destinatarii cc când un tichet este deschis"
 
-#: staff/apps/settings/configurations/configurationdetails.html:507
-#: staff/apps/settings/configurations/configurationdetails.html:511
+#: staff/apps/settings/configurations/configurationdetails.html:518
+#: staff/apps/settings/configurations/configurationdetails.html:522
 #, fuzzy
 #| msgid "Send notifications to end users when a ticket is opened"
 msgid "Send notifications to customers having billing agreements"
@@ -15535,13 +15673,13 @@ msgstr "Trimite notificări la utilizatorii finali când un tichet este deschis"
 msgid "Send notifications to users when a staff user replies to ticket"
 msgstr "Trimite notificări la utilizatorii finali când un utilizator staff răspunde la tichet"
 
-#: staff/apps/settings/configurations/configurationdetails.html:512
+#: staff/apps/settings/configurations/configurationdetails.html:523
 #, fuzzy
 #| msgid "Send notifications when a client's remaining hours with his current credit is reached"
 msgid "Send notifications when a client has a billing agreement enabled"
 msgstr "Trimite notificări când clientul va atinge limita creditului actual în orele următoare"
 
-#: staff/apps/settings/configurations/configurationdetails.html:499
+#: staff/apps/settings/configurations/configurationdetails.html:510
 msgid "Send notifications when a client's remaining hours with his current credit is reached"
 msgstr "Trimite notificări când clientul va atinge limita creditului actual în orele următoare"
 
@@ -15568,7 +15706,7 @@ msgstr ""
 msgid "Serial Number"
 msgstr "Număr de serie"
 
-#: staff/apps/billing/services/details/servicedetails.html:155
+#: staff/apps/billing/services/details/servicedetails.html:180
 msgid "Server"
 msgstr "Server"
 
@@ -15671,7 +15809,7 @@ msgstr "Anulare serviciu solicitata"
 msgid "Service details"
 msgstr "Detalii serviciu"
 
-#: staff/apps/clients/flclientdetails.html:266 staff/apps/clients/flclientdetails.html:347
+#: staff/apps/clients/flclientdetails.html:273 staff/apps/clients/flclientdetails.html:354
 msgid "Service status"
 msgstr "Stare serviciu"
 
@@ -15682,7 +15820,7 @@ msgstr "Stare serviciu"
 msgid "Service updated"
 msgstr "Serviciu șters"
 
-#: staff/apps/clients/flclientdetails.html:281 staff/apps/clients/flclientdetails.html:364
+#: staff/apps/clients/flclientdetails.html:288 staff/apps/clients/flclientdetails.html:371
 #, fuzzy
 #| msgid "Service"
 msgid "Service:"
@@ -15690,7 +15828,7 @@ msgstr "Serviciu"
 
 #: site/apps/baseconfig/fleio.baseconfig.module.js:54 site/apps/billing/services/states.config.js:32
 #: site/apps/dashboard/fldashboard.html:127 staff/apps/baseconfig/fleiostaff.baseconfig.module.js:66
-#: staff/apps/billing/states.config.js:168 staff/apps/clients/flclientdetails.html:515
+#: staff/apps/billing/states.config.js:168 staff/apps/clients/flclientdetails.html:522
 #: staff/apps/reports/revenue_reports/revenue_report_details.template.html:41
 #: staff/apps/reports/revenue_reports/revenue_report_details.template.html:81
 msgid "Services"
@@ -15856,7 +15994,7 @@ msgstr "Imagini partajate"
 msgid "Shared"
 msgstr "Partajat"
 
-#: site/apps/osinstances/create/flbootsourceselect.html:58
+#: site/apps/osinstances/create/flbootsourceselect.html:54
 #, fuzzy
 #| msgid "Shared images"
 msgid "Shared Images"
@@ -15869,7 +16007,7 @@ msgstr "Imagini partajate"
 msgid "Shared images"
 msgstr "Imagini partajate"
 
-#: staff/apps/osinstances/migrate/flinstancemigrate.html:34
+#: staff/apps/osinstances/migrate/flinstancemigrate.html:40
 msgid "Shared migration"
 msgstr "Migrare partajata"
 
@@ -15892,7 +16030,7 @@ msgstr "Coș de cumpărături"
 msgid "Show actions"
 msgstr "Arată acțiuni"
 
-#: staff/apps/clients/flclientdetails.html:505 staff/apps/clients/flclientdetails.html:509
+#: staff/apps/clients/flclientdetails.html:512 staff/apps/clients/flclientdetails.html:516
 msgid "Show all"
 msgstr "Arată tot"
 
@@ -16158,7 +16296,7 @@ msgstr "Nume snapshot"
 msgid "Snapshot {{name}} create scheduled"
 msgstr "Creare snapshot in progres"
 
-#: site/apps/osinstances/flinstancedetail.html:216 staff/apps/osinstances/flinstancedetail.html:192
+#: site/apps/osinstances/flinstancedetail.html:239 staff/apps/osinstances/flinstancedetail.html:211
 msgid "Snapshots"
 msgstr "Snapshot-uri"
 
@@ -16176,7 +16314,7 @@ msgstr "Anumite funcționalități Fleio au nevoie de acest serviciu"
 #: site/apps/billing/invoicing/flinvoicingdetails.html:255
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:245 staff/apps/billing/journal/journal.html:100
 #: staff/apps/billing/journal/journaldetail.html:20 staff/apps/billing/states.config.js:617
-#: staff/apps/billing/states.config.js:709 staff/apps/clients/flclientdetails.html:230
+#: staff/apps/billing/states.config.js:709 staff/apps/clients/flclientdetails.html:237
 msgid "Source"
 msgstr "Sursa"
 
@@ -16190,7 +16328,7 @@ msgstr "Sumă sursă"
 msgid "Source code"
 msgstr "Sursa"
 
-#: staff/apps/settings/configurations/configurationdetails.html:467
+#: staff/apps/settings/configurations/configurationdetails.html:478
 msgid ""
 "Specifies the number of seconds per month that should be billed for clients.\n"
 "                  The remaining seconds after this limit is reached will not be billed."
@@ -16284,14 +16422,14 @@ msgstr "Stare"
 #: domains/staff/frontend/components/domains_actions/dialogs/domain_edit/domainedit.html:16
 #: domains/staff/frontend/components/states.config.js:46 site/apps/billing/invoicing/flinvoicing.html:40
 #: site/apps/billing/invoicing/states.config.js:38 site/apps/billing/invoicing/states.config.js:54
-#: site/apps/billing/services/services.html:47 site/apps/billing/services/states.config.js:40
-#: site/apps/billing/services/states.config.js:69 site/apps/floatingips/flfloatingips.html:60
+#: site/apps/billing/services/services.html:51 site/apps/billing/services/states.config.js:40
+#: site/apps/billing/services/states.config.js:74 site/apps/floatingips/flfloatingips.html:60
 #: site/apps/floatingips/states.config.js:40 site/apps/floatingips/states.config.js:53
 #: site/apps/operations/operations.html:14 site/apps/operations/states.config.js:53
 #: site/apps/operations/states.config.js:72 site/apps/osclusters/flclusters.component.html:55
 #: site/apps/osclusters/states.config.js:56 site/apps/osclusters/states.config.js:77
 #: site/apps/osimages/flimages.html:93 site/apps/osimages/states.config.js:57
-#: site/apps/osimages/states.config.js:78 site/apps/osinstances/flinstances.html:68
+#: site/apps/osimages/states.config.js:78 site/apps/osinstances/flinstances.html:71
 #: site/apps/osinstances/states.config.js:64 site/apps/osinstances/states.config.js:75
 #: site/apps/osports/states.config.js:46 site/apps/osports/states.config.js:64
 #: site/apps/osrouters/flrouters.html:66 site/apps/osvolumebackups/flvolumebackups.html:61
@@ -16305,12 +16443,12 @@ msgstr "Stare"
 #: staff/apps/billing/configurable_options/optionlist.component.html:56
 #: staff/apps/billing/invoicing/flinvoicing.html:52 staff/apps/billing/orders/orders.html:42
 #: staff/apps/billing/products/editcycle/flproductcycleedit.html:87
-#: staff/apps/billing/products/flbillingproductedit.html:74 staff/apps/billing/products/productdetails.html:157
+#: staff/apps/billing/products/flbillingproductedit.html:87 staff/apps/billing/products/productdetails.html:157
 #: staff/apps/billing/products/productdetails.html:99 staff/apps/billing/products/products.html:7
-#: staff/apps/billing/services/services.html:50 staff/apps/billing/states.config.js:177
-#: staff/apps/billing/states.config.js:206 staff/apps/billing/states.config.js:349
+#: staff/apps/billing/services/services.html:54 staff/apps/billing/states.config.js:177
+#: staff/apps/billing/states.config.js:211 staff/apps/billing/states.config.js:349
 #: staff/apps/billing/states.config.js:368 staff/apps/billing/states.config.js:37
-#: staff/apps/billing/states.config.js:54 staff/apps/clients/flclientdetails.html:542
+#: staff/apps/billing/states.config.js:54 staff/apps/clients/flclientdetails.html:549
 #: staff/apps/clients/flclients.html:51 staff/apps/clients/states.config.js:64
 #: staff/apps/floatingips/flfloatingips.html:65 staff/apps/floatingips/states.config.js:36
 #: staff/apps/floatingips/states.config.js:54 staff/apps/networks/flnetworkdetails.html:51
@@ -16384,6 +16522,10 @@ msgstr "Rămâi pe pagină"
 #: site/apps/operations/operationdetails.html:39 staff/apps/operations/operationdetails.html:40
 msgid ""
 "Steps completed:&nbsp;{{ $ctrl.operation.progress.completed_steps }}/{{ $ctrl.operation.progress.total_steps }}"
+msgstr ""
+
+#: site/apps/osinstances/flinstancedetail.html:45 staff/apps/osinstances/flinstancedetail.html:58
+msgid "Storage"
 msgstr ""
 
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:168
@@ -16549,12 +16691,12 @@ msgstr "Suspendă instanță"
 msgid "Suspend instance {{name}}"
 msgstr "Suspendă instanța {{name}}"
 
-#: staff/apps/billing/services/details/servicedetails.html:110
+#: staff/apps/billing/services/details/servicedetails.html:135
 msgid "Suspend reason"
 msgstr "Motivul suspendării"
 
-#: staff/apps/settings/configurations/configurationdetails.html:682
-#: staff/apps/settings/configurations/configurationdetails.html:712
+#: staff/apps/settings/configurations/configurationdetails.html:693
+#: staff/apps/settings/configurations/configurationdetails.html:723
 msgid "Suspend the client instead of termination"
 msgstr "Suspendă clientul în locul ștergerii"
 
@@ -16568,17 +16710,17 @@ msgstr ""
 "Tipul suspendării: {{\n"
 "              $ctrl.serviceDetails.suspend_type }}"
 
-#: site/apps/billing/services/states.config.js:82 staff/apps/billing/states.config.js:219
+#: site/apps/billing/services/states.config.js:87 staff/apps/billing/states.config.js:224
 #: staff/apps/clients/states.config.js:73
 msgid "Suspended"
 msgstr "Suspendat"
 
-#: site/apps/billing/services/states.config.js:59 staff/apps/billing/services/details/servicedetails.html:107
+#: site/apps/billing/services/states.config.js:59 staff/apps/billing/services/details/servicedetails.html:132
 #: staff/apps/billing/states.config.js:196
 msgid "Suspended at"
 msgstr "Suspendat la"
 
-#: staff/apps/settings/configurations/configurationdetails.html:592
+#: staff/apps/settings/configurations/configurationdetails.html:603
 msgid "Suspension"
 msgstr "Suspendare"
 
@@ -16606,7 +16748,7 @@ msgstr "Schimbă vizualizarea"
 msgid "Sync"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:120 staff/apps/osinstances/flinstancedetail.html:97
+#: site/apps/osinstances/flinstancedetail.html:143 staff/apps/osinstances/flinstancedetail.html:116
 msgid "System log"
 msgstr "Jurnal de sistem"
 
@@ -16748,21 +16890,21 @@ msgstr "Template șters"
 msgid "Templates successfully updated"
 msgstr "Template-uri actualizate cu succes"
 
-#: staff/apps/billing/services/flserviceactions.html:28
+#: staff/apps/billing/services/flserviceactions.html:33
 msgid "Terminate"
 msgstr "Terminare"
 
-#: staff/apps/billing/services/flserviceactions.component.js:54
-#: staff/apps/clients/flclientdetails.component.js:221 staff/apps/clients/flclientdetails.html:315
+#: staff/apps/billing/services/flserviceactions.component.js:88
+#: staff/apps/clients/flclientdetails.component.js:221 staff/apps/clients/flclientdetails.html:322
 msgid "Terminate service"
 msgstr "Termină serviciu"
 
-#: staff/apps/billing/services/flserviceactions.component.js:53
+#: staff/apps/billing/services/flserviceactions.component.js:87
 #: staff/apps/clients/flclientdetails.component.js:220
 msgid "Terminate service {{id}}"
 msgstr "Termină serviciul {{id}}"
 
-#: site/apps/billing/services/states.config.js:86 staff/apps/billing/states.config.js:223
+#: site/apps/billing/services/states.config.js:91 staff/apps/billing/states.config.js:228
 msgid "Terminated"
 msgstr "Terminat"
 
@@ -16770,7 +16912,7 @@ msgstr "Terminat"
 msgid "Terminated at"
 msgstr "Terminat la"
 
-#: site/apps/billing/services/servicedetails.html:53
+#: site/apps/billing/services/servicedetails.html:59
 msgid ""
 "Terminated at: {{\n"
 "              $ctrl.serviceDetails.terminated_at | date:'medium'}}"
@@ -16778,7 +16920,7 @@ msgstr ""
 "Terminat la:  {{\n"
 "              $ctrl.serviceDetails.terminated_at | date:'medium'}}"
 
-#: staff/apps/settings/configurations/configurationdetails.html:656
+#: staff/apps/settings/configurations/configurationdetails.html:667
 msgid "Termination"
 msgstr "Terminare"
 
@@ -16809,7 +16951,7 @@ msgstr "Rezultate test"
 msgid "The API user name will be prefixed with {{ $ctrl.createOptions.prefix }}"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:645
+#: staff/apps/settings/configurations/configurationdetails.html:656
 msgid ""
 "The actual suspension can be postponed by a few hours when <strong>Delay by hours</strong>\n"
 "                  is checked or until client is under the credit limit by a specified amount when\n"
@@ -16829,14 +16971,14 @@ msgid ""
 "                configurable here."
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:672
+#: staff/apps/settings/configurations/configurationdetails.html:683
 msgid ""
 "The client can be notified about the termination if a <strong>Notification template</strong> is\n"
 "                  selected."
 msgstr ""
 "Clientul poate primi notificari despre ștergere dacă un <strong>șablon de notificări</strong> este selectat."
 
-#: staff/apps/settings/configurations/configurationdetails.html:191
+#: staff/apps/settings/configurations/configurationdetails.html:202
 msgid "The e-mail address the notifications are sent from."
 msgstr "Adresa de e-mail de la care sunt trimise notificările."
 
@@ -16850,15 +16992,15 @@ msgstr "Această notă va fi ștearsă permanent"
 msgid "The name and email to send mails from.<br> e.g. Sender Name &lt;sender.name@example.com&gt;"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:175
+#: staff/apps/settings/configurations/configurationdetails.html:186
 msgid "The name to send the notifications from."
 msgstr "Numele de la care se trimit notificările."
 
-#: staff/apps/settings/configurations/configurationdetails.html:461
+#: staff/apps/settings/configurations/configurationdetails.html:472
 msgid "The next number that will be allocated for a paid invoice."
 msgstr "Următorul număr care va fi alocat pentru o factură plătită."
 
-#: staff/apps/settings/configurations/configurationdetails.html:228
+#: staff/apps/settings/configurations/configurationdetails.html:239
 msgid "The score for manual review can be set or when an order is automatically marked as fraud."
 msgstr "Scorul pentru revizuire manuală poate fi setat sau când o comandă este marcată automat ca fraudă."
 
@@ -16971,15 +17113,15 @@ msgstr ""
 msgid "This image will expire in {{$ctrl.createOptions.cleanup_days}} days and will be automatically deleted."
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:160
+#: staff/apps/settings/configurations/configurationdetails.html:171
 msgid "This information is shown on invoices."
 msgstr "Această informație este afișată pe factură."
 
-#: staff/apps/settings/configurations/configurationdetails.html:462
+#: staff/apps/settings/configurations/configurationdetails.html:473
 msgid "This option only takes effect if sequential invoice numbering is enabled."
 msgstr "Această optiune ia efect doar daca numerotarea secventiala a facturilor este activată."
 
-#: staff/apps/settings/configurations/configurationdetails.html:713
+#: staff/apps/settings/configurations/configurationdetails.html:724
 msgid ""
 "This overrides the default termination action and suspends the client and his resources\n"
 "                  instead."
@@ -16993,7 +17135,7 @@ msgstr ""
 msgid "This product has no billing cycles."
 msgstr "Acest produs nu are ciclu de facturare"
 
-#: staff/apps/billing/services/edit/flserviceedit.html:60
+#: staff/apps/billing/services/edit/flserviceedit.html:66
 msgid "This product has no cycles."
 msgstr "Acest produs nu are cicluri."
 
@@ -17001,7 +17143,7 @@ msgstr "Acest produs nu are cicluri."
 msgid "This product is free and does not require a billing cycle"
 msgstr "Acest produs este gratuit și nu necesită un ciclu de facturare"
 
-#: staff/apps/billing/products/flbillingproductedit.html:108
+#: staff/apps/billing/products/flbillingproductedit.html:121
 #, fuzzy
 #| msgid "This product is free"
 msgid "This product requires a domain"
@@ -17043,11 +17185,11 @@ msgstr ""
 "                    <strong class=\"md-primary\">{{$ctrl.instance.flavor.name }}</strong>\n"
 "                  </a>"
 
-#: staff/apps/billing/services/flserviceactions.component.js:33
+#: staff/apps/billing/services/flserviceactions.component.js:67
 msgid "This will permanently delete data (including the cost information for the ongoing billing cycle!)"
 msgstr ""
 
-#: staff/apps/billing/services/flserviceactions.component.js:55
+#: staff/apps/billing/services/flserviceactions.component.js:89
 #: staff/apps/clients/flclientdetails.component.js:222
 msgid "This will permanently delete data."
 msgstr "Aceasta va șterge defintiv datele."
@@ -17165,16 +17307,22 @@ msgstr "Setări tichet"
 msgid "Tier"
 msgstr "Nivel"
 
-#: staff/apps/osbilling/pricing/flpricerule.html:125
+#: staff/apps/osbilling/pricing/flpricerule.html:147
 msgid "Tiered"
 msgstr "Nivel"
+
+#: staff/apps/osbilling/plans/flbillingplandetails.html:87
+#, fuzzy
+#| msgid "Add pricing rule"
+msgid "Tiered pricing"
+msgstr "Adaugă regula de stabilire a prețurilor"
 
 #: site/apps/oszones/flzonedetails.html:188 site/apps/oszones/flzonedetails.html:91
 #: staff/apps/oszones/flzonedetails.html:101 staff/apps/oszones/flzonedetails.html:198
 msgid "Time to live"
 msgstr "TTL"
 
-#: staff/apps/osbilling/pricing/flpricerule.html:107 staff/apps/osbilling/resources/fladdresourcefield.html:127
+#: staff/apps/osbilling/pricing/flpricerule.html:129 staff/apps/osbilling/resources/fladdresourcefield.html:127
 #: staff/apps/osbilling/resources/fladdresourcefield.html:129 staff/apps/osbilling/resources/flmetric.html:33
 msgid "Time unit"
 msgstr "Unitate de timp"
@@ -17205,12 +17353,12 @@ msgstr "Unitate de timp"
 msgid "Title"
 msgstr "Titlu"
 
-#: staff/apps/osbilling/pricing/flpricerule.html:139 staff/apps/osbilling/resources/flmetric.html:55
+#: staff/apps/osbilling/pricing/flpricerule.html:161 staff/apps/osbilling/resources/flmetric.html:55
 #: staff/apps/osbilling/resources/flmetric.html:64
 msgid "To"
 msgstr "Spre"
 
-#: staff/apps/settings/configurations/configurationdetails.html:227
+#: staff/apps/settings/configurations/configurationdetails.html:238
 msgid ""
 "To completely enable this module, make sure you have the MAXMIND_CLIENTID and MAXMIND_LICENSE options set in "
 "settings.py"
@@ -17230,6 +17378,10 @@ msgid ""
 "              app or another compatible app on your mobile or just add the following code using the\n"
 "              \"Enter a provided key\" option in google authenticator app. If you use the last option,\n"
 "              in the \"Account name\" field add your email."
+msgstr ""
+
+#: staff/apps/billing/services/enable_billing_dialog/flenablebillingdialog.controller.js:19
+msgid "Today"
 msgstr ""
 
 #: site/apps/billing/invoicing/flinvoicing.html:43 site/apps/billing/invoicing/flinvoicingdetails.html:176
@@ -17256,11 +17408,11 @@ msgstr "Număr total de clienți"
 msgid "Total revenue"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:101 staff/apps/osinstances/flinstancedetail.html:78
+#: site/apps/osinstances/flinstancedetail.html:124 staff/apps/osinstances/flinstancedetail.html:97
 msgid "Total traffic this billing cycle: {{::$ctrl.instance.current_cycle_traffic }} GB"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:104 staff/apps/osinstances/flinstancedetail.html:81
+#: site/apps/osinstances/flinstancedetail.html:127 staff/apps/osinstances/flinstancedetail.html:100
 msgid "Total traffic this month: {{::$ctrl.instance.current_month_traffic }} GB"
 msgstr ""
 
@@ -17340,8 +17492,8 @@ msgstr "Tranzacție ștearsă"
 msgid "Transaction refund initiated."
 msgstr "Rambursare initiata."
 
-#: staff/apps/billing/journal/journal.html:50 staff/apps/clients/flclientdetails.html:197
-#: staff/apps/clients/flclientdetails.html:209
+#: staff/apps/billing/journal/journal.html:50 staff/apps/clients/flclientdetails.html:204
+#: staff/apps/clients/flclientdetails.html:216
 msgid "Transaction {{::journal.destination_info.transaction}}"
 msgstr ""
 
@@ -17445,7 +17597,7 @@ msgstr ""
 msgid "URL"
 msgstr "URL"
 
-#: staff/apps/settings/configurations/configurationdetails.html:685
+#: staff/apps/settings/configurations/configurationdetails.html:696
 msgid ""
 "Un-checking suspend instead of terminate allows clients and service termination and may cause\n"
 "                    accidental data loss. However, you can remove permissions for service/client deletion on\n"
@@ -17486,7 +17638,7 @@ msgstr "Debifează toate"
 msgid "Undefined"
 msgstr ""
 
-#: staff/apps/osbilling/pricing/flpricerule.html:95
+#: staff/apps/osbilling/pricing/flpricerule.html:117
 msgid "Unit"
 msgstr "Unitate"
 
@@ -17548,7 +17700,7 @@ msgstr ""
 msgid "Unspecified"
 msgstr "Utilizator modificat"
 
-#: site/apps/dashboard/fldashboard.html:10 staff/apps/clients/flclientdetails.html:72
+#: site/apps/dashboard/fldashboard.html:10 staff/apps/clients/flclientdetails.html:79
 #: staff/apps/clients/flclients.html:39 staff/apps/clients/flclients.html:78
 #: staff/apps/clients/states.config.js:47
 msgid "Up to date credit"
@@ -17655,7 +17807,7 @@ msgstr "Adăugare subrețea in progres"
 msgid "Update ticket"
 msgstr "Salvează tichet"
 
-#: staff/apps/clients/flclientdetails.html:77
+#: staff/apps/clients/flclientdetails.html:84
 msgid "Update usage"
 msgstr "Actualizează uz"
 
@@ -17692,7 +17844,7 @@ msgstr "Actualizat la"
 msgid "Updated at: {{ $ctrl.image.updated_at | date:'medium' }}"
 msgstr "Actualizat la: {{ $ctrl.image.updated_at | date:'medium' }}"
 
-#: site/apps/billing/services/servicedetails.html:52
+#: site/apps/billing/services/servicedetails.html:58
 msgid "Updated at: {{ $ctrl.serviceDetails.updated_at | date:'medium'}}"
 msgstr "Actualizat la: {{ $ctrl.serviceDetails.updated_at | date:'medium'}}"
 
@@ -17729,13 +17881,13 @@ msgstr "Actualizat la: {{ $ctrl.image.updated_at | date:'medium' }}"
 msgid "Upgrade options saved"
 msgstr "Opțiune configurabilă salvată"
 
-#: site/apps/billing/services/servicedetails.html:81
+#: site/apps/billing/services/servicedetails.html:89
 #, fuzzy
 #| msgid "Configurable option saved"
 msgid "Upgrade/downgrade options"
 msgstr "Opțiune configurabilă salvată"
 
-#: site/apps/billing/services/servicedetails.html:84
+#: site/apps/billing/services/servicedetails.html:92
 #, fuzzy
 #| msgid "Configure product"
 msgid "Upgrade/downgrade product"
@@ -17745,8 +17897,8 @@ msgstr "Configurează produs"
 msgid "Upgrades"
 msgstr ""
 
-#: site/apps/osinstances/create/flbootsourceselect.html:143
-#: staff/apps/osinstances/create/flbootsourceselect.html:155
+#: site/apps/osinstances/create/flbootsourceselect.html:139
+#: staff/apps/osinstances/create/flbootsourceselect.html:151
 #, fuzzy
 #| msgid "Update image"
 msgid "Upload new image"
@@ -17767,7 +17919,7 @@ msgstr "Url"
 msgid "Usage updated"
 msgstr "Uz actualizat"
 
-#: staff/apps/settings/configurations/configurationdetails.html:288
+#: staff/apps/settings/configurations/configurationdetails.html:299
 msgid ""
 "Use \"Client initial credit (default currency)\" if you wish to have newly created clients\n"
 "                  have a starting credit of the amount you define (if client has another currency than default "
@@ -17836,11 +17988,11 @@ msgstr "Înregisrează domeniu"
 msgid "Use image as a source"
 msgstr "Sursa imagine"
 
-#: staff/apps/settings/configurations/configurationdetails.html:333
+#: staff/apps/settings/configurations/configurationdetails.html:344
 msgid "Use only proforma invoices with random numbers"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:453
+#: staff/apps/settings/configurations/configurationdetails.html:464
 msgid ""
 "Use only proforma invoices with random numbers - you can choose this when your fiscal rules do not require "
 "invoices with sequential numbers."
@@ -17897,12 +18049,12 @@ msgstr "Utilizator asociat"
 msgid "User created"
 msgstr "Utilizator creat"
 
-#: staff/apps/users/actions/fluseractions.component.js:55
-#: staff/apps/users/actions/flxsuseractions.component.js:55
+#: staff/apps/users/actions/fluseractions.component.js:64
+#: staff/apps/users/actions/flxsuseractions.component.js:64
 msgid "User deleted"
 msgstr "Utilizator șters"
 
-#: staff/apps/users/states.config.js:115
+#: staff/apps/users/states.config.js:120
 msgid "User details"
 msgstr "Detalii utilizator"
 
@@ -17944,7 +18096,7 @@ msgstr "Grup utilizatori {:name}"
 msgid "User groups"
 msgstr "Grupuri utilizatori"
 
-#: commons/userprofile/fluserprofile.html:10 staff/apps/users/flusers.html:21 staff/apps/users/flusers.html:77
+#: commons/userprofile/fluserprofile.html:10 staff/apps/users/flusers.html:21 staff/apps/users/flusers.html:79
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:143
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:79
 #: tickets/staff/frontend/components/tickets_details/ticketsdetails.html:141
@@ -17952,7 +18104,7 @@ msgstr "Grupuri utilizatori"
 msgid "User image"
 msgstr "Imaginea utilizatorului"
 
-#: staff/apps/users/flusers.html:65
+#: staff/apps/users/flusers.html:67
 #, fuzzy
 #| msgid "User name"
 msgid "User labels"
@@ -17974,7 +18126,7 @@ msgstr "Permisiuni utilizator actualizate"
 msgid "User removed from group"
 msgstr "Utilizator șters din grup"
 
-#: staff/apps/users/states.config.js:116
+#: staff/apps/users/states.config.js:121
 msgid "User {:id}"
 msgstr "Utilizator {:id}"
 
@@ -17982,7 +18134,7 @@ msgstr "Utilizator {:id}"
 #: staff/apps/servers/flserver-create/flserver-create.component.html:93
 #: staff/apps/servers/flserver-detail/flserver-detail.component.html:92
 #: staff/apps/usergroups/flusergroupdetails.html:26 staff/apps/users/fluserdetails.html:33
-#: staff/apps/users/fluseredit.html:38 staff/apps/users/flusers.html:63 staff/apps/users/states.config.js:42
+#: staff/apps/users/fluseredit.html:38 staff/apps/users/flusers.html:65 staff/apps/users/states.config.js:42
 msgid "Username"
 msgstr "Nume utilizator"
 
@@ -17996,7 +18148,7 @@ msgstr "Emailul este necesar"
 msgid "Username or email"
 msgstr "Utilizator sau e-mail"
 
-#: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:28 staff/apps/clients/flclientdetails.html:389
+#: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:28 staff/apps/clients/flclientdetails.html:396
 #: staff/apps/settings/authorization/authorization.html:15 staff/apps/users/states.config.js:39
 msgid "Users"
 msgstr "Utilizatori"
@@ -18111,8 +18263,8 @@ msgstr "Volum"
 msgid "Volume Size Increments"
 msgstr "Setări mărime volum"
 
-#: site/apps/osinstances/create/flbootsourceselect.html:119
-#: staff/apps/osinstances/create/flbootsourceselect.html:97
+#: site/apps/osinstances/create/flbootsourceselect.html:115
+#: staff/apps/osinstances/create/flbootsourceselect.html:93
 msgid "Volume Snapshots"
 msgstr "Snapshot-uri volum"
 
@@ -18241,7 +18393,7 @@ msgstr "Volum {:volumeTitle}"
 msgid "Volume snapshots"
 msgstr "Snapshot-uri volum"
 
-#: site/apps/osinstances/flinstancedetail.html:256 staff/apps/osinstances/flinstancedetail.html:232
+#: site/apps/osinstances/flinstancedetail.html:279 staff/apps/osinstances/flinstancedetail.html:251
 msgid "Volume snapshots also exist! Check the volumes tab to see the volumes that have snapshots."
 msgstr ""
 
@@ -18260,6 +18412,48 @@ msgstr "Volum {:volumeTitle}"
 msgid "Volume:"
 msgstr "Volum"
 
+#: staff/apps/osinstances/flinstancedetail.html:68
+#, fuzzy
+#| msgid ""
+#| "Flavor:\n"
+#| "                  <a fl-sref=\"openstackFlavorsDetails({id: $ctrl.instance.flavor.id})\" class=\"md-primary"
+#| "\">\n"
+#| "                    <strong class=\"md-primary\">{{$ctrl.instance.flavor.name }}</strong>\n"
+#| "                  </a>"
+msgid ""
+"Volume:\n"
+"                          <a class=\"md-primary\" ui-sref=\"openstackVolumeDetails({'id': vol_att."
+"volume_id})\">\n"
+"                            {{ vol_att.volume_name || vol_att.volume_id }}\n"
+"                          </a>: {{ vol_att.size }} GB <span ng-if=\"vol_att.is_boot\">(boot)</span>"
+msgstr ""
+"Configuratie:\n"
+"                  <a fl-sref=\"openstackFlavorsDetails({id: $ctrl.instance.flavor.id})\" class=\"md-primary"
+"\">\n"
+"                    <strong class=\"md-primary\">{{$ctrl.instance.flavor.name }}</strong>\n"
+"                  </a>"
+
+#: site/apps/osinstances/flinstancedetail.html:55
+#, fuzzy
+#| msgid ""
+#| "Flavor:\n"
+#| "                  <a fl-sref=\"openstackFlavorsDetails({id: $ctrl.instance.flavor.id})\" class=\"md-primary"
+#| "\">\n"
+#| "                    <strong class=\"md-primary\">{{$ctrl.instance.flavor.name }}</strong>\n"
+#| "                  </a>"
+msgid ""
+"Volume:\n"
+"                        <a class=\"md-primary\" ui-sref=\"openstackVolumeDetails({'id': vol_att."
+"volume_id})\">\n"
+"                          {{ vol_att.volume_name || vol_att.volume_id }}\n"
+"                        </a>: {{ vol_att.size }} GB <span ng-if=\"vol_att.is_boot\">(boot)</span>"
+msgstr ""
+"Configuratie:\n"
+"                  <a fl-sref=\"openstackFlavorsDetails({id: $ctrl.instance.flavor.id})\" class=\"md-primary"
+"\">\n"
+"                    <strong class=\"md-primary\">{{$ctrl.instance.flavor.name }}</strong>\n"
+"                  </a>"
+
 #: staff/apps/osvolumebackups/flvolumebackupdetails.html:42
 msgid ""
 "Volume:\n"
@@ -18267,10 +18461,10 @@ msgid ""
 "\">{{ $ctrl.volumeBackup.related_volume_name || $ctrl.volumeBackup.volume }}</a>"
 msgstr ""
 
-#: site/apps/baseconfig/fleio.baseconfig.module.js:39 site/apps/osinstances/create/flbootsourceselect.html:100
-#: site/apps/osinstances/flinstancedetail.html:267 site/apps/osvolumes/states.config.js:56
+#: site/apps/baseconfig/fleio.baseconfig.module.js:39 site/apps/osinstances/create/flbootsourceselect.html:96
+#: site/apps/osinstances/flinstancedetail.html:290 site/apps/osvolumes/states.config.js:56
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:51
-#: staff/apps/osinstances/create/flbootsourceselect.html:78 staff/apps/osinstances/flinstancedetail.html:243
+#: staff/apps/osinstances/create/flbootsourceselect.html:74 staff/apps/osinstances/flinstancedetail.html:262
 #: staff/apps/osvolumes/states.config.js:56
 msgid "Volumes"
 msgstr "Volume"
@@ -18315,15 +18509,15 @@ msgstr "Atenționare: ștergerea datelor este permanentă."
 msgid "Wednesday"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:286
+#: staff/apps/settings/configurations/configurationdetails.html:297
 msgid "When a new Client signs up, an order will be automatically created for him."
 msgstr "La înregistrarea unui nou client, o nouă comandă va fi creată pentru el."
 
-#: staff/apps/settings/configurations/configurationdetails.html:428
+#: staff/apps/settings/configurations/configurationdetails.html:439
 msgid "When checked, invoices will not be issued for services that have a price of zero."
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:476
+#: staff/apps/settings/configurations/configurationdetails.html:487
 #, fuzzy
 #| msgid ""
 #| "With this option enabled, an European Union Client will be marked as non taxable is he has a valid EU va ID."
@@ -18371,7 +18565,7 @@ msgstr "Widget"
 msgid "Wildcard available, use asterisk symbol to use it:"
 msgstr ""
 
-#: staff/apps/settings/configurations/configurationdetails.html:481
+#: staff/apps/settings/configurations/configurationdetails.html:492
 msgid ""
 "Will add tax for invoices that are generated when a client adds credit. If the\n"
 "                  configuration is active, paying an invoice generated for a service using client credit will "
@@ -18421,7 +18615,7 @@ msgstr "Momentan utilizezi un total de {{$ctrl.cores_in_use}} core-uri de pe nod
 #: site/apps/osclustertemplates/flclustertemplates.component.js:29
 #: site/apps/osimages/flimagedetails.component.js:34 site/apps/osimages/flimages.component.js:37
 #: site/apps/osinstances/actions/flinstanceactions.directive.js:31
-#: site/apps/osinstances/flinstancedetail.component.js:39 site/apps/osinstances/flinstances.component.js:30
+#: site/apps/osinstances/flinstancedetail.component.js:39 site/apps/osinstances/flinstances.component.js:32
 #: site/apps/osports/flportdetails.component.js:28 site/apps/osports/flports.component.js:32
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:36
 #: site/apps/ossecuritygroups/flsecuritygroups.component.js:45
@@ -18459,7 +18653,8 @@ msgstr "Momentan utilizezi un total de {{$ctrl.cores_in_use}} core-uri de pe nod
 #: staff/apps/osvolumesnapshots/flvolumesnapshots.component.js:29
 #: staff/apps/oszones/flzonedetails.component.js:68 staff/apps/oszones/flzones.component.js:49
 #: staff/apps/pkm/flpkmkeys.component.js:30 staff/apps/subnetpools/flsubnetpooldetails.component.js:29
-#: staff/apps/subnetpools/flsubnetpools.component.js:39
+#: staff/apps/subnetpools/flsubnetpools.component.js:39 staff/apps/users/actions/fluseractions.component.js:30
+#: staff/apps/users/actions/flxsuseractions.component.js:30
 msgid ""
 "You are not\n"
 "allowed to do this"
@@ -18558,8 +18753,8 @@ msgstr ""
 msgid "Your form contains errors"
 msgstr "Formularul tău conține erori"
 
-#: staff/apps/settings/configurations/configurationdetails.html:407
-#: staff/apps/settings/configurations/configurationdetails.html:477
+#: staff/apps/settings/configurations/configurationdetails.html:418
+#: staff/apps/settings/configurations/configurationdetails.html:488
 #, fuzzy
 #| msgid "Your form contains errors"
 msgid "Your home country"
@@ -18921,7 +19116,7 @@ msgstr "eroare_restaurare"
 msgid "exclude"
 msgstr "exclude"
 
-#: staff/apps/osbilling/pricing/flpricerule.html:85 staff/apps/osbilling/pricing/flpricerule.html:87
+#: staff/apps/osbilling/pricing/flpricerule.html:107 staff/apps/osbilling/pricing/flpricerule.html:109
 msgid "existence"
 msgstr "existență"
 
@@ -19053,13 +19248,13 @@ msgstr "Migrare bloc"
 #: domains/staff/frontend/components/domain_details/domaindetails.html:83
 #: domains/staff/frontend/components/domain_details/domaindetails.html:88
 #: site/apps/billing/invoicing/flinvoicingdetails.html:230
-#: site/apps/billing/invoicing/flinvoicingdetails.html:272
+#: site/apps/billing/invoicing/flinvoicingdetails.html:272 site/apps/billing/services/services.html:82
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:87
 #: staff/apps/billing/invoicing/flinvoicingdetails.html:263 staff/apps/billing/journal/journaldetail.html:35
-#: staff/apps/billing/journal/journaldetail.html:42 staff/apps/billing/services/details/servicedetails.html:77
-#: staff/apps/billing/services/details/servicedetails.html:86 staff/apps/clients/flclientdetails.html:289
-#: staff/apps/clients/flclientdetails.html:296 staff/apps/clients/flclientdetails.html:307
-#: staff/apps/osbilling/plans/flbillingplandetails.html:104
+#: staff/apps/billing/journal/journaldetail.html:42 staff/apps/billing/services/details/servicedetails.html:83
+#: staff/apps/billing/services/details/servicedetails.html:92 staff/apps/billing/services/services.html:85
+#: staff/apps/clients/flclientdetails.html:296 staff/apps/clients/flclientdetails.html:303
+#: staff/apps/clients/flclientdetails.html:314 staff/apps/osbilling/plans/flbillingplandetails.html:104
 #: staff/apps/osbilling/plans/flbillingplandetails.html:116 staff/apps/osflavors/flflavordetails.html:48
 #: staff/apps/osflavors/flflavors.html:37 staff/apps/ossecuritygroups/flsecuritygroupdetails.html:89
 msgid "n/a"
@@ -19237,7 +19432,7 @@ msgstr "Unrescue"
 msgid "rescued"
 msgstr "Unrescue"
 
-#: staff/apps/users/fluserdetails.html:54 staff/apps/users/flusers.html:37 staff/apps/users/flusers.html:97
+#: staff/apps/users/fluserdetails.html:54 staff/apps/users/flusers.html:37 staff/apps/users/flusers.html:99
 msgid "reseller"
 msgstr ""
 
@@ -19287,7 +19482,7 @@ msgid "soft-delete"
 msgstr "Notă ștearsă"
 
 #: site/apps/billing/services/flbillingservicesdetails.component.js:23 staff/apps/users/fluserdetails.html:55
-#: staff/apps/users/flusers.html:38 staff/apps/users/flusers.html:98
+#: staff/apps/users/flusers.html:100 staff/apps/users/flusers.html:38
 msgid "staff"
 msgstr "staff"
 
@@ -19310,7 +19505,7 @@ msgstr ""
 msgid "stopping"
 msgstr ""
 
-#: staff/apps/users/fluserdetails.html:56 staff/apps/users/flusers.html:39 staff/apps/users/flusers.html:99
+#: staff/apps/users/fluserdetails.html:56 staff/apps/users/flusers.html:101 staff/apps/users/flusers.html:39
 msgid "superuser"
 msgstr "superutilizator"
 
@@ -19429,7 +19624,7 @@ msgstr "{{ $ctrl.productDetails.group.name }}"
 msgid "{{ $ctrl.productDetails.taxable?'yes':'no' }}"
 msgstr "{{ $ctrl.productDetails.taxable?'da':'nu' }}"
 
-#: site/apps/osinstances/flinstancedetail.html:244 staff/apps/osinstances/flinstancedetail.html:220
+#: site/apps/osinstances/flinstancedetail.html:267 staff/apps/osinstances/flinstancedetail.html:239
 msgid "{{ $ctrl.readableBytes(snapshot.size); }}"
 msgstr ""
 
@@ -19561,14 +19756,14 @@ msgstr ""
 msgid "{{::$ctrl.summary.services.length}} services"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:296 staff/apps/osinstances/flinstancedetail.html:271
+#: site/apps/osinstances/flinstancedetail.html:319 staff/apps/osinstances/flinstancedetail.html:290
 #, fuzzy
 #| msgid "ID: {{ ::$ctrl.volume.id }}"
 msgid "{{::attachment.volume.size }} GB"
 msgstr "ID: {{ ::$ctrl.volume.id }}"
 
-#: site/apps/osinstances/create/flbootsourceselect.html:49
-#: staff/apps/osinstances/create/flbootsourceselect.html:48
+#: site/apps/osinstances/create/flbootsourceselect.html:45
+#: staff/apps/osinstances/create/flbootsourceselect.html:44
 msgid "{{::image.architecture}} created on {{::image.created_at | date}}"
 msgstr "{{::image.architecture}} creat la {{::image.created_at | date}}"
 
@@ -19577,10 +19772,10 @@ msgid "{{::image.min_disk }} GB min. disk"
 msgstr ""
 
 #: site/apps/osinstances/create/flbootsourceselect.html:21
-#: site/apps/osinstances/create/flbootsourceselect.html:71
-#: site/apps/osinstances/create/flbootsourceselect.html:92
+#: site/apps/osinstances/create/flbootsourceselect.html:67
+#: site/apps/osinstances/create/flbootsourceselect.html:88
 #: staff/apps/osinstances/create/flbootsourceselect.html:22
-#: staff/apps/osinstances/create/flbootsourceselect.html:70
+#: staff/apps/osinstances/create/flbootsourceselect.html:66
 msgid "{{::image.os_distro}} {{::image.os_version}} {{::image.architecture}} {{::image.created_at | date}}"
 msgstr "{{::image.os_distro}} {{::image.os_version}} {{::image.architecture}} {{::image.created_at | date}}"
 
@@ -19596,30 +19791,30 @@ msgstr ""
 msgid "{{::option.description}}"
 msgstr "{{::option.description}}"
 
-#: staff/apps/osinstances/create/flbootsourceselect.html:125
+#: staff/apps/osinstances/create/flbootsourceselect.html:121
 #, fuzzy
 #| msgid "{{::image.os_distro}} {{::image.os_version}} {{::image.architecture}} {{::image.created_at | date}}"
 msgid ""
 "{{::reqImage.os_distro}} {{::reqImage.os_version}} {{::reqImage.architecture}} {{::reqImage.created_at | date}}"
 msgstr "{{::image.os_distro}} {{::image.os_version}} {{::image.architecture}} {{::image.created_at | date}}"
 
-#: staff/apps/osinstances/create/flbootsourceselect.html:142
+#: staff/apps/osinstances/create/flbootsourceselect.html:138
 #, fuzzy
 #| msgid "{{::volume.size}} GB created on {{::volume.created_at | date }}"
 msgid "{{::reqVolume.size}} GB created on {{::reqVolume.created_at | date }}"
 msgstr "{{::volume.size}} GB creat la {{::volume.created_at | date }}"
 
-#: staff/apps/clients/flclientdetails.html:567
+#: staff/apps/clients/flclientdetails.html:574
 msgid "{{::service.status}}"
 msgstr "{{::service.status}}"
 
-#: site/apps/osinstances/create/flbootsourceselect.html:130
-#: staff/apps/osinstances/create/flbootsourceselect.html:108
+#: site/apps/osinstances/create/flbootsourceselect.html:126
+#: staff/apps/osinstances/create/flbootsourceselect.html:104
 msgid "{{::volsnap.size}} GB created on {{::volsnap.created_at | date}}"
 msgstr "{{::volsnap.size}} GB creat la {{::volsnap.created_at | date}}"
 
-#: site/apps/osinstances/create/flbootsourceselect.html:111
-#: staff/apps/osinstances/create/flbootsourceselect.html:89
+#: site/apps/osinstances/create/flbootsourceselect.html:107
+#: staff/apps/osinstances/create/flbootsourceselect.html:85
 msgid "{{::volume.size}} GB created on {{::volume.created_at | date }}"
 msgstr "{{::volume.size}} GB creat la {{::volume.created_at | date }}"
 
@@ -19672,6 +19867,27 @@ msgstr ""
 #| msgid "{{tax.taxname}}: {{tax.amount}} {{::$ctrl.cart.currency}}"
 msgid "{{tax.tax_name}}: {{tax.amount}} {{::$ctrl.cart.currency}}"
 msgstr "{{tax.taxname}}: {{tax.amount}} {{::$ctrl.cart.currency}}"
+
+#, fuzzy
+#~| msgid "Tiered"
+#~ msgid "(Tiered)"
+#~ msgstr "Nivel"
+
+#~ msgid "Disk space: {{$ctrl.instance.flavor.root_gb }} GB"
+#~ msgstr "Spatiu stocare: {{$ctrl.instance.flavor.root_gb }}GB"
+
+#~ msgid "Next due date"
+#~ msgstr "Următoarea dată scadentă"
+
+#, fuzzy
+#~| msgid "No images found"
+#~ msgid "No images to display"
+#~ msgstr "Nu există imagini găsite"
+
+#, fuzzy
+#~| msgid "Hypervisor memory"
+#~ msgid "Region - Hypervisor"
+#~ msgstr "Memorie hipervizor"
 
 #~ msgid "Reset usage"
 #~ msgstr "Resetează utilizare"
