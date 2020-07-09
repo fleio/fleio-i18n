@@ -224,13 +224,6 @@ msgstr ""
 msgid "<br>No valid department was selected"
 msgstr ""
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:141
-msgid ""
-"<div translate>\n"
-"                  {{resourceType.display_name}} resources\n"
-"                </div>"
-msgstr ""
-
 #: site/apps/billing/recurring_payment_opts/recurring_payment_opts.component.html:1
 msgid ""
 "<h2 hide-xs class=\"fl-margin-right-small fl-grey\"><translate>No recurring payment options found</translate></h2>\n"
@@ -987,7 +980,7 @@ msgstr ""
 #: site/apps/oszones/flzonedetails.html:54
 #: site/apps/oszones/flzones.html:66
 #: site/apps/pkm/flpkmkeys.html:55
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:276
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:279
 #: staff/apps/billing/journal/journal.html:112
 #: staff/apps/billing/orders/orders.html:44
 #: staff/apps/billing/products/productdetails.html:159
@@ -1462,7 +1455,7 @@ msgstr ""
 msgid "Add note"
 msgstr ""
 
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:294
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:297
 #: staff/apps/billing/invoicing/payments/paymentcreate.html:73
 msgid "Add payment"
 msgstr ""
@@ -1860,9 +1853,11 @@ msgstr ""
 msgid "Always issue fiscal invoices with sequential numbers - choose when you want all issued invoices to have consecutive numbers and it does not bother you that all invoices will be issued as fiscal, even if not paid. The fiscal invoice date will be the same as the invoice issue date."
 msgstr ""
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:201
-#: site/apps/billing/invoicing/flinvoicingdetails.html:281
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:272
+#: site/apps/billing/invoicing/flinvoicingdetails.html:208
+#: site/apps/billing/invoicing/flinvoicingdetails.html:288
+#: site/apps/clients/flclientautoinvoicing.component.html:41
+#: site/apps/clients/flclientautoinvoicing.component.html:44
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:275
 #: staff/apps/billing/invoicing/payments/paymentcreate.html:40
 #: staff/apps/clients/changecredit/flclientchangecredit.html:19
 #: staff/apps/clients/flclientdetails.html:187
@@ -2083,7 +2078,7 @@ msgstr ""
 #: site/apps/osinstances/flinstancedetail.component.js:405
 #: site/apps/osinstances/flinstancedetail.component.js:499
 #: site/apps/osinstances/flinstancedetail.component.js:618
-#: site/apps/osinstances/flinstancedetail.component.js:634
+#: site/apps/osinstances/flinstancedetail.component.js:639
 #: site/apps/osports/flportdetails.component.js:47
 #: site/apps/osports/flports.component.js:42
 #: site/apps/osrouters/flrouterdetails.component.js:108
@@ -2135,10 +2130,10 @@ msgstr ""
 #: staff/apps/osinstances/flinstancedetails.component.js:275
 #: staff/apps/osinstances/flinstancedetails.component.js:404
 #: staff/apps/osinstances/flinstancedetails.component.js:460
-#: staff/apps/osinstances/flinstancedetails.component.js:476
-#: staff/apps/osinstances/flinstancedetails.component.js:551
-#: staff/apps/osinstances/flinstancedetails.component.js:593
-#: staff/apps/osinstances/flinstancedetails.component.js:625
+#: staff/apps/osinstances/flinstancedetails.component.js:481
+#: staff/apps/osinstances/flinstancedetails.component.js:556
+#: staff/apps/osinstances/flinstancedetails.component.js:598
+#: staff/apps/osinstances/flinstancedetails.component.js:630
 #: staff/apps/osports/flportdetails.component.js:47
 #: staff/apps/osports/flports.component.js:42
 #: staff/apps/osrouters/flrouterdetails.component.js:117
@@ -2570,7 +2565,7 @@ msgid "Backup rotation"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.component.js:413
-#: staff/apps/osinstances/flinstancedetails.component.js:633
+#: staff/apps/osinstances/flinstancedetails.component.js:638
 msgid "Backup schedule deleted"
 msgstr ""
 
@@ -2616,11 +2611,11 @@ msgstr ""
 msgid "Backups"
 msgstr ""
 
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:289
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:292
 msgid "Balance {{$ctrl.invoice.balance }} {{::$ctrl.invoice.currency }}"
 msgstr ""
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:289
+#: site/apps/billing/invoicing/flinvoicingdetails.html:296
 msgid "Balance {{$ctrl.invoice.balance}} {{::$ctrl.invoice.currency }}"
 msgstr ""
 
@@ -2714,7 +2709,7 @@ msgstr ""
 msgid "Bootable: {{ $ctrl.volume.bootable }}"
 msgstr ""
 
-#: staff/apps/osinstances/create/flbootsourceselect.component.js:223
+#: staff/apps/osinstances/create/flbootsourceselect.component.js:226
 msgid "Booting from ISO only works with local storage, please select another image."
 msgstr ""
 
@@ -2823,6 +2818,7 @@ msgstr ""
 #: site/apps/billing/services/upgrade/flservicechangeproduct.component.html:49
 #: site/apps/billing/services/upgrade/flservicechangeproduct.component.html:69
 #: site/apps/clients/clienteditdlg/clientedit.html:123
+#: site/apps/clients/flclientautoinvoicing.component.html:68
 #: site/apps/floatingips/flfloatingipadd.html:42
 #: site/apps/networks/flnetworkadd.html:268
 #: site/apps/networks/flnetworkautocreate.html:29
@@ -3032,7 +3028,7 @@ msgstr ""
 msgid "Cannot add signature"
 msgstr ""
 
-#: staff/apps/osinstances/create/flbootsourceselect.component.js:224
+#: staff/apps/osinstances/create/flbootsourceselect.component.js:227
 msgid "Cannot boot from ISO to volume"
 msgstr ""
 
@@ -3357,6 +3353,10 @@ msgstr ""
 msgid "Client credit"
 msgstr ""
 
+#: commons/userprofile/states.config.js:100
+msgid "Client credit auto invoicing"
+msgstr ""
+
 #: staff/apps/clients/changecredit/flclientchangecredit.controller.js:31
 msgid "Client credit updated"
 msgstr ""
@@ -3476,6 +3476,10 @@ msgstr ""
 
 #: staff/apps/clients/states.config.js:282
 msgid "Client {:id}"
+msgstr ""
+
+#: commons/userprofile/states.config.js:98
+msgid "Client {:id} credit auto invoicing"
 msgstr ""
 
 #: staff/apps/clients/flclientedit.component.js:136
@@ -3773,7 +3777,7 @@ msgstr ""
 
 #: site/apps/operations/states.config.js:61
 #: staff/apps/billing/states.config.js:381
-#: staff/apps/operations/states.config.js:68
+#: staff/apps/operations/states.config.js:61
 msgid "Completed"
 msgstr ""
 
@@ -3839,6 +3843,10 @@ msgstr ""
 #: staff/apps/clients/flclientdetails.html:437
 #: staff/apps/settings/states.config.js:27
 msgid "Configurations"
+msgstr ""
+
+#: commons/userprofile/fluserprofile.html:97
+msgid "Configure auto invoicing"
 msgstr ""
 
 #: staff/apps/networks/flnetworks.component.js:44
@@ -4950,10 +4958,10 @@ msgid "Data from domain contact will be used when registering the domain:"
 msgstr ""
 
 #: commons/ui/useralerts/list/fluseralerts.html:60
-#: site/apps/billing/invoicing/flinvoicingdetails.html:186
-#: site/apps/billing/invoicing/flinvoicingdetails.html:244
+#: site/apps/billing/invoicing/flinvoicingdetails.html:193
+#: site/apps/billing/invoicing/flinvoicingdetails.html:251
 #: staff/apps/activitylog/log.html:14
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:234
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:237
 #: staff/apps/billing/journal/journal.html:8
 #: staff/apps/billing/journal/journal.html:95
 #: staff/apps/billing/journal/journaldetail.html:28
@@ -4986,8 +4994,8 @@ msgstr ""
 #: staff/apps/billing/services/services.html:52
 #: staff/apps/clients/states.config.js:46
 #: staff/apps/clients/states.config.js:53
-#: staff/apps/operations/states.config.js:55
-#: staff/apps/operations/states.config.js:58
+#: staff/apps/operations/states.config.js:48
+#: staff/apps/operations/states.config.js:51
 #: staff/apps/osclusters/states.config.js:56
 #: staff/apps/osclustertemplates/states.config.js:55
 #: staff/apps/osimages/states.config.js:66
@@ -5176,8 +5184,8 @@ msgstr ""
 #: site/apps/oszones/flzones.component.js:45
 #: site/apps/pkm/flpkmkeys.component.js:27
 #: site/apps/pkm/flpkmkeys.html:101
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:221
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:279
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:224
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:282
 #: staff/apps/billing/products/productdetails.html:205
 #: staff/apps/billing/products/productdetails.html:23
 #: staff/apps/billing/services/flserviceactions.html:38
@@ -5212,7 +5220,7 @@ msgstr ""
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:194
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:23
 #: staff/apps/osinstances/actions/flxsinstanceactions.html:96
-#: staff/apps/osinstances/flinstancedetails.component.js:628
+#: staff/apps/osinstances/flinstancedetails.component.js:633
 #: staff/apps/osports/flportdetails.component.js:26
 #: staff/apps/osports/flports.component.js:30
 #: staff/apps/osports/flports.html:170
@@ -5262,12 +5270,12 @@ msgid "Delete Contact"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.component.js:501
-#: staff/apps/osinstances/flinstancedetails.component.js:553
+#: staff/apps/osinstances/flinstancedetails.component.js:558
 msgid "Delete IP"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.component.js:500
-#: staff/apps/osinstances/flinstancedetails.component.js:552
+#: staff/apps/osinstances/flinstancedetails.component.js:557
 msgid "Delete IP {{ip}}"
 msgstr ""
 
@@ -5305,7 +5313,7 @@ msgid "Delete attachment"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.component.js:406
-#: staff/apps/osinstances/flinstancedetails.component.js:626
+#: staff/apps/osinstances/flinstancedetails.component.js:631
 msgid "Delete backup schedule {{name}}"
 msgstr ""
 
@@ -5532,11 +5540,11 @@ msgid "Delete plan {{::$ctrl.plan.name }}"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.component.js:33
-#: site/apps/osinstances/flinstancedetail.component.js:636
+#: site/apps/osinstances/flinstancedetail.component.js:641
 #: site/apps/osports/flportdetails.component.js:49
 #: site/apps/osports/flports.component.js:44
 #: staff/apps/osinstances/flinstancedetails.component.js:31
-#: staff/apps/osinstances/flinstancedetails.component.js:478
+#: staff/apps/osinstances/flinstancedetails.component.js:483
 #: staff/apps/osports/flportdetails.component.js:49
 #: staff/apps/osports/flports.component.js:44
 msgid "Delete port"
@@ -5549,8 +5557,8 @@ msgstr ""
 msgid "Delete port {{name}}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:635
-#: staff/apps/osinstances/flinstancedetails.component.js:477
+#: site/apps/osinstances/flinstancedetail.component.js:640
+#: staff/apps/osinstances/flinstancedetails.component.js:482
 msgid "Delete port {{port_name}}"
 msgstr ""
 
@@ -5988,9 +5996,9 @@ msgstr ""
 msgid "Description: {{::$ctrl.serviceDetails.product.description }}"
 msgstr ""
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:198
-#: site/apps/billing/invoicing/flinvoicingdetails.html:277
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:268
+#: site/apps/billing/invoicing/flinvoicingdetails.html:205
+#: site/apps/billing/invoicing/flinvoicingdetails.html:284
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:271
 #: staff/apps/billing/journal/journal.html:104
 #: staff/apps/billing/journal/journaldetail.html:24
 #: staff/apps/billing/states.config.js:648
@@ -6017,14 +6025,14 @@ msgid "Destination: {{ route.destination }} - NextHop: {{ route.nexthop }}"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.component.js:34
-#: site/apps/osinstances/flinstancedetail.component.js:620
+#: site/apps/osinstances/flinstancedetail.component.js:621
 #: staff/apps/osinstances/flinstancedetails.component.js:32
-#: staff/apps/osinstances/flinstancedetails.component.js:462
+#: staff/apps/osinstances/flinstancedetails.component.js:463
 msgid "Detach port"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:619
-#: staff/apps/osinstances/flinstancedetails.component.js:461
+#: site/apps/osinstances/flinstancedetail.component.js:620
+#: staff/apps/osinstances/flinstancedetails.component.js:462
 msgid "Detach port {{port_name}}"
 msgstr ""
 
@@ -6232,17 +6240,17 @@ msgstr ""
 #: site/apps/osinstances/flinstancedetail.component.js:344
 #: site/apps/osinstances/flinstancedetail.component.js:38
 #: staff/apps/osinstances/flinstancedetails.component.js:35
-#: staff/apps/osinstances/flinstancedetails.component.js:596
+#: staff/apps/osinstances/flinstancedetails.component.js:601
 msgid "Dissociate security group"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.component.js:350
-#: staff/apps/osinstances/flinstancedetails.component.js:602
+#: staff/apps/osinstances/flinstancedetails.component.js:607
 msgid "Dissociate security group scheduled"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.component.js:342
-#: staff/apps/osinstances/flinstancedetails.component.js:594
+#: staff/apps/osinstances/flinstancedetails.component.js:599
 msgid "Dissociate security group {{sec_group}} from instance {{instance}}"
 msgstr ""
 
@@ -6412,8 +6420,8 @@ msgstr ""
 msgid "Download"
 msgstr ""
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:295
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:310
+#: site/apps/billing/invoicing/flinvoicingdetails.html:302
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:313
 msgid "Download PDF"
 msgstr ""
 
@@ -6556,7 +6564,7 @@ msgstr ""
 msgid "Edit choice {{::$ctrl.choice.label}}"
 msgstr ""
 
-#: commons/userprofile/fluserprofile.html:95
+#: commons/userprofile/fluserprofile.html:99
 #: commons/userprofile/states.config.js:71
 #: site/apps/clients/flclientedit.html:8
 #: staff/apps/clients/actions/flclientactions.html:1
@@ -7006,6 +7014,11 @@ msgstr ""
 msgid "Enable admin state"
 msgstr ""
 
+#: site/apps/clients/flclientautoinvoicing.component.html:23
+#: site/apps/clients/flclientautoinvoicing.component.html:24
+msgid "Enable auto invoicing"
+msgstr ""
+
 #: staff/apps/settings/configurations/configurationdetails.html:326
 #: staff/apps/settings/configurations/configurationdetails.html:449
 msgid "Enable automatic settlements"
@@ -7323,6 +7336,10 @@ msgstr ""
 msgid "Error while detaching"
 msgstr ""
 
+#: site/apps/clients/flclientautoinvoicing.component.html:32
+msgid "Estimated monthly consumption"
+msgstr ""
+
 #: site/apps/ossecuritygroups/flsecuritygrouprulecreate.html:114
 #: staff/apps/ossecuritygroups/flsecuritygrouprulecreate.html:109
 msgid "Ether type"
@@ -7598,6 +7615,10 @@ msgstr ""
 #: site/apps/osports/flports.html:25
 #: staff/apps/osports/flports.html:25
 msgid "Fixed IPs: {{  port.fixed_ips.length ? port.fixed_ips[0].ip_address : '' }}<span ng-if=\"port.fixed_ips.length > 1\">, ...</span>"
+msgstr ""
+
+#: site/apps/clients/flclientautoinvoicing.component.html:35
+msgid "Fixed amount ({{ $ctrl.client.currency }})"
 msgstr ""
 
 #: staff/apps/billing/gateways/gatewaydetails.html:66
@@ -8649,6 +8670,12 @@ msgstr ""
 msgid "Idle ..."
 msgstr ""
 
+#: site/apps/clients/flclientautoinvoicing.component.html:58
+msgid ""
+"If \"Estimated monthly consumption\" is selected, the invoiced amount will be enough to last for another\n"
+"              30 days."
+msgstr ""
+
 #: staff/apps/settings/configurations/configurationdetails.html:441
 msgid ""
 "If an invoice is generated and it not automatically settled an notification containing invoice details\n"
@@ -8664,6 +8691,10 @@ msgid ""
 "If automatic settlements are enabled the invoices will be paid only if afer paying the invoice the\n"
 "                  uptodate credit will be greater or equal than minimum up to date credit to be left after paying an\n"
 "                  invoice setting."
+msgstr ""
+
+#: site/apps/clients/flclientautoinvoicing.component.html:50
+msgid "If checked, an invoice will be issued automatically before you run out of credit."
 msgstr ""
 
 #: site/apps/oszones/flzonedetails.html:109
@@ -9111,13 +9142,13 @@ msgstr ""
 msgid "Invoice"
 msgstr ""
 
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:210
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:213
 msgid ""
 "Invoice\n"
 "                      {{::journalEntry.destination_info.invoice}}"
 msgstr ""
 
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:198
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:201
 msgid ""
 "Invoice\n"
 "                      {{::journalEntry.source_info.invoice}}"
@@ -9379,8 +9410,8 @@ msgstr ""
 msgid "Items"
 msgstr ""
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:180
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:180
+#: site/apps/billing/invoicing/flinvoicingdetails.html:187
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:183
 #: staff/apps/clients/flclientdetails.html:170
 msgid "Journal"
 msgstr ""
@@ -9465,6 +9496,10 @@ msgstr ""
 msgid "Last Name"
 msgstr ""
 
+#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.html:41
+msgid "Last collect traffic data run"
+msgstr ""
+
 #: staff/apps/billing/services/enable_billing_dialog/flenablebillingdialog.controller.js:16
 msgid "Last cycle start"
 msgstr ""
@@ -9504,8 +9539,12 @@ msgstr ""
 msgid "Last name"
 msgstr ""
 
-#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.html:29
-msgid "Last process clients cron run"
+#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.html:30
+msgid "Last process clients run"
+msgstr ""
+
+#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.html:63
+msgid "Last process scheduled backups run"
 msgstr ""
 
 #: domains/staff/frontend/components/domain_details/domaindetails.html:96
@@ -9524,6 +9563,10 @@ msgstr ""
 
 #: staff/apps/billing/services/details/servicedetails.html:148
 msgid "Last update"
+msgstr ""
+
+#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.html:52
+msgid "Last update exchange rates run"
 msgstr ""
 
 #: staff/apps/osprojects/flprojects.html:67
@@ -11337,6 +11380,11 @@ msgstr ""
 msgid "Note deleted"
 msgstr ""
 
+#: site/apps/osinstances/flinstancedetail.component.js:622
+#: staff/apps/osinstances/flinstancedetails.component.js:464
+msgid "Note that default ports (ports created automatically on instance create) are automatically deleted by OpenStack when they are detached."
+msgstr ""
+
 #: staff/apps/osinstances/migrate/flinstancemigrate.html:52
 msgid ""
 "Note that migration may fail if target hypervisor does not have enough disk space.\n"
@@ -11708,14 +11756,14 @@ msgid "Operation completed successfully."
 msgstr ""
 
 #: site/apps/operations/states.config.js:98
-#: staff/apps/operations/states.config.js:105
+#: staff/apps/operations/states.config.js:98
 msgid "Operation details"
 msgstr ""
 
 #: site/apps/operations/operations.html:16
 #: site/apps/operations/states.config.js:66
 #: staff/apps/operations/operations.html:17
-#: staff/apps/operations/states.config.js:73
+#: staff/apps/operations/states.config.js:66
 msgid "Operation type"
 msgstr ""
 
@@ -11725,7 +11773,7 @@ msgid "Operation type:&nbsp;{{ $ctrl.operation.operation_type }}"
 msgstr ""
 
 #: site/apps/operations/states.config.js:99
-#: staff/apps/operations/states.config.js:106
+#: staff/apps/operations/states.config.js:99
 msgid "Operation {:id}"
 msgstr ""
 
@@ -11737,7 +11785,7 @@ msgstr ""
 #: site/apps/operations/operations.html:1
 #: site/apps/operations/states.config.js:49
 #: staff/apps/operations/operations.html:1
-#: staff/apps/operations/states.config.js:51
+#: staff/apps/operations/states.config.js:44
 msgid "Operations"
 msgstr ""
 
@@ -11964,9 +12012,9 @@ msgstr ""
 msgid "Pay now"
 msgstr ""
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:214
-#: site/apps/billing/invoicing/flinvoicingdetails.html:250
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:240
+#: site/apps/billing/invoicing/flinvoicingdetails.html:221
+#: site/apps/billing/invoicing/flinvoicingdetails.html:257
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:243
 msgid "Payment"
 msgstr ""
 
@@ -12225,8 +12273,8 @@ msgstr ""
 msgid "Port is being attached"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:626
-#: staff/apps/osinstances/flinstancedetails.component.js:468
+#: site/apps/osinstances/flinstancedetail.component.js:631
+#: staff/apps/osinstances/flinstancedetails.component.js:473
 msgid "Port is being detached"
 msgstr ""
 
@@ -13009,10 +13057,10 @@ msgstr ""
 msgid "Refresh license"
 msgstr ""
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:215
-#: site/apps/billing/invoicing/flinvoicingdetails.html:251
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:241
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:300
+#: site/apps/billing/invoicing/flinvoicingdetails.html:222
+#: site/apps/billing/invoicing/flinvoicingdetails.html:258
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:244
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:303
 #: staff/apps/billing/invoicing/payments/paymentrefund.html:68
 msgid "Refund"
 msgstr ""
@@ -13339,7 +13387,7 @@ msgid "Remove IP from instance {{ $ctrl.instance.name }}"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.component.js:510
-#: staff/apps/osinstances/flinstancedetails.component.js:562
+#: staff/apps/osinstances/flinstancedetails.component.js:567
 msgid "Remove IP scheduled"
 msgstr ""
 
@@ -13388,8 +13436,8 @@ msgstr ""
 msgid "Remove port from instance {{ $ctrl.instance.name }}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:640
-#: staff/apps/osinstances/flinstancedetails.component.js:482
+#: site/apps/osinstances/flinstancedetail.component.js:645
+#: staff/apps/osinstances/flinstancedetails.component.js:487
 msgid "Remove port scheduled"
 msgstr ""
 
@@ -13979,6 +14027,7 @@ msgstr ""
 #: cpanel/staff/frontend/components/plugin_configuration/pluginconfiguration.html:15
 #: domains/staff/frontend/components/domain_details/domaindetails.html:111
 #: domains/staff/frontend/components/plugin_configuration/pluginconfiguration.html:114
+#: site/apps/clients/flclientautoinvoicing.component.html:67
 #: site/apps/networks/flnetworkautocreate.html:37
 #: site/apps/networks/flnetworkedit.html:53
 #: site/apps/networks/flnetworksubnetedit.html:219
@@ -15238,6 +15287,7 @@ msgstr ""
 msgid "Settings are incorrect for {{$ctrl.section}}"
 msgstr ""
 
+#: site/apps/clients/flclientautoinvoicing.component.js:28
 #: staff/apps/settings/general/auth_settings/authsettings.component.js:72
 #: staff/apps/settings/general/auth_settings/authsettings.component.js:83
 #: staff/apps/settings/general/signup_settings/signupsettings.component.js:30
@@ -15584,9 +15634,9 @@ msgstr ""
 msgid "Some Fleio functionality needs this service"
 msgstr ""
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:192
-#: site/apps/billing/invoicing/flinvoicingdetails.html:255
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:245
+#: site/apps/billing/invoicing/flinvoicingdetails.html:199
+#: site/apps/billing/invoicing/flinvoicingdetails.html:262
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:248
 #: staff/apps/billing/journal/journal.html:100
 #: staff/apps/billing/journal/journaldetail.html:20
 #: staff/apps/billing/states.config.js:617
@@ -15755,8 +15805,8 @@ msgstr ""
 #: staff/apps/floatingips/states.config.js:54
 #: staff/apps/networks/flnetworkdetails.html:51
 #: staff/apps/operations/operations.html:14
-#: staff/apps/operations/states.config.js:55
-#: staff/apps/operations/states.config.js:79
+#: staff/apps/operations/states.config.js:48
+#: staff/apps/operations/states.config.js:72
 #: staff/apps/osclusters/flclusters.component.html:58
 #: staff/apps/osclusters/states.config.js:56
 #: staff/apps/osclusters/states.config.js:82
@@ -15840,11 +15890,11 @@ msgstr ""
 msgid "Storage"
 msgstr ""
 
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:168
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:171
 msgid "Sub total"
 msgstr ""
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:173
+#: site/apps/billing/invoicing/flinvoicingdetails.html:180
 msgid "Sub total {{::$ctrl.invoice.subtotal}} {{::$ctrl.invoice.currency}}"
 msgstr ""
 
@@ -16412,6 +16462,10 @@ msgstr ""
 msgid "This information is shown on invoices."
 msgstr ""
 
+#: site/apps/clients/flclientautoinvoicing.component.html:54
+msgid "This is the credit amount on the automatically issued invoice."
+msgstr ""
+
 #: staff/apps/settings/configurations/configurationdetails.html:473
 msgid "This option only takes effect if sequential invoice numbering is enabled."
 msgstr ""
@@ -16554,7 +16608,7 @@ msgstr ""
 #: tickets/enduser/frontend/components/plugin_notifications/pluginnotifications.html:2
 #: tickets/enduser/frontend/components/plugin_notifications/pluginnotifications.html:3
 #: tickets/enduser/frontend/components/states.config.js:75
-#: tickets/staff/frontend/components/plugin_notifications/pluginnotifications.html:13
+#: tickets/staff/frontend/components/plugin_notifications/pluginnotifications.html:14
 #: tickets/staff/frontend/components/plugin_notifications/pluginnotifications.html:2
 #: tickets/staff/frontend/components/plugin_notifications/pluginnotifications.html:3
 #: tickets/staff/frontend/components/states.config.js:97
@@ -16645,11 +16699,11 @@ msgid "Today"
 msgstr ""
 
 #: site/apps/billing/invoicing/flinvoicing.html:43
-#: site/apps/billing/invoicing/flinvoicingdetails.html:176
+#: site/apps/billing/invoicing/flinvoicingdetails.html:183
 #: site/apps/billing/invoicing/states.config.js:77
 #: staff/apps/billing/invoicing/flinvoicing.html:20
 #: staff/apps/billing/invoicing/flinvoicing.html:54
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:174
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:177
 #: staff/apps/billing/states.config.js:77
 msgid "Total"
 msgstr ""
@@ -16709,9 +16763,9 @@ msgstr ""
 msgid "Traffic"
 msgstr ""
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:195
-#: site/apps/billing/invoicing/flinvoicingdetails.html:266
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:256
+#: site/apps/billing/invoicing/flinvoicingdetails.html:202
+#: site/apps/billing/invoicing/flinvoicingdetails.html:273
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:259
 #: staff/apps/billing/journal/journaldetail.html:46
 #: staff/apps/billing/states.config.js:622
 #: staff/apps/billing/states.config.js:653
@@ -16719,13 +16773,13 @@ msgstr ""
 msgid "Transaction"
 msgstr ""
 
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:212
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:215
 msgid ""
 "Transaction\n"
 "                      {{::journalEntry.destination_info.transaction}}"
 msgstr ""
 
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:200
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:203
 msgid ""
 "Transaction\n"
 "                      {{::journalEntry.source_info.transaction}}"
@@ -16789,14 +16843,14 @@ msgstr ""
 msgid "Tuesday"
 msgstr ""
 
-#: site/apps/billing/invoicing/flinvoicingdetails.html:189
-#: site/apps/billing/invoicing/flinvoicingdetails.html:248
+#: site/apps/billing/invoicing/flinvoicingdetails.html:196
+#: site/apps/billing/invoicing/flinvoicingdetails.html:255
 #: site/apps/osimages/states.config.js:57
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:57
 #: site/apps/osvolumes/flvolumes.html:34
 #: site/apps/osvolumes/flvolumes.html:61
 #: site/apps/oszones/flzonedetails.html:52
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:238
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:241
 #: staff/apps/dashboard/widgets/hypervisors/flhypervisors.widget.html:14
 #: staff/apps/osimages/states.config.js:66
 #: staff/apps/ossecuritygroups/flsecuritygroupdetails.html:59
@@ -17261,7 +17315,7 @@ msgstr ""
 #: staff/apps/billing/states.config.js:612
 #: staff/apps/clients/associateuser/flclientassociateuser.html:14
 #: staff/apps/clients/associateuser/flclientassociateuser.html:16
-#: staff/apps/operations/states.config.js:63
+#: staff/apps/operations/states.config.js:56
 #: staff/apps/pkm/states.config.js:54
 #: staff/apps/tasklog/states.config.js:50
 #: staff/apps/users/flusers.html:1
@@ -17890,7 +17944,7 @@ msgid "You can accept or reject this image."
 msgstr ""
 
 #: staff/apps/osbilling/plans/flbillingplandetails.component.js:63
-#: staff/apps/osbilling/plans/flbillingplans.component.js:53
+#: staff/apps/osbilling/plans/flbillingplans.component.js:62
 msgid "You can't delete the last plan"
 msgstr ""
 
@@ -18426,11 +18480,11 @@ msgstr ""
 #: domains/staff/frontend/components/client_info/clientinfo.html:58
 #: domains/staff/frontend/components/domain_details/domaindetails.html:83
 #: domains/staff/frontend/components/domain_details/domaindetails.html:88
-#: site/apps/billing/invoicing/flinvoicingdetails.html:230
-#: site/apps/billing/invoicing/flinvoicingdetails.html:272
+#: site/apps/billing/invoicing/flinvoicingdetails.html:237
+#: site/apps/billing/invoicing/flinvoicingdetails.html:279
 #: site/apps/billing/services/services.html:82
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:87
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:263
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:266
 #: staff/apps/billing/journal/journaldetail.html:35
 #: staff/apps/billing/journal/journaldetail.html:42
 #: staff/apps/billing/services/details/servicedetails.html:83
@@ -18447,7 +18501,10 @@ msgstr ""
 msgid "n/a"
 msgstr ""
 
-#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.html:31
+#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.html:32
+#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.html:43
+#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.html:54
+#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.html:65
 #: staff/apps/users/fluserdetails.html:38
 msgid "never"
 msgstr ""
@@ -18473,7 +18530,7 @@ msgstr ""
 msgid "not charged"
 msgstr ""
 
-#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.component.js:49
+#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.component.js:74
 msgid "not running"
 msgstr ""
 
@@ -18620,7 +18677,7 @@ msgid "revert resize"
 msgstr ""
 
 #: oscommons/osfilters/flinstancestatus.filter.js:14
-#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.component.js:50
+#: staff/apps/dashboard/widgets/system_services/flsystemservices.widget.component.js:75
 msgid "running"
 msgstr ""
 
@@ -18827,7 +18884,8 @@ msgstr ""
 msgid "{{ port.mac_address }}"
 msgstr ""
 
-#: staff/apps/billing/invoicing/flinvoicingdetails.html:135
+#: site/apps/billing/invoicing/flinvoicingdetails.html:143
+#: staff/apps/billing/invoicing/flinvoicingdetails.html:136
 msgid "{{ resourceType.display_name }} resources"
 msgstr ""
 
@@ -18996,10 +19054,6 @@ msgstr ""
 
 #: staff/apps/billing/orders/orders.html:12
 msgid "{{order.status | translate | uppercase }} - {{ order.invoice.status | translate | uppercase }}"
-msgstr ""
-
-#: site/apps/billing/invoicing/flinvoicingdetails.html:142
-msgid "{{resourceType.display_name}} resources"
 msgstr ""
 
 #: site/apps/billing/cart/cart.html:112
