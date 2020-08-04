@@ -325,12 +325,8 @@ msgstr ""
 msgid "A valid domain in required"
 msgstr ""
 
-#: oscommons/revert_volume_to_snapshot_dialog/fl-revert-volume-to-snapshot-dialog.template.html:27
-msgid "A valid snapshot is required"
-msgstr ""
-
 #: site/apps/osvolumebackups/create/fl-volumebackups-create.template.html:27
-#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:27
+#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:33
 msgid "A valid volume is required"
 msgstr ""
 
@@ -411,7 +407,7 @@ msgstr ""
 #: site/apps/osclusters/flclusters.component.html:57
 #: site/apps/osclustertemplates/flclustertemplates.component.html:57
 #: site/apps/osimages/flimages.html:100
-#: site/apps/osinstances/flinstancedetail.html:626
+#: site/apps/osinstances/flinstancedetail.html:628
 #: site/apps/osinstances/flinstances.html:77
 #: site/apps/osports/flports.html:76
 #: site/apps/ossecuritygroups/flsecuritygroups.html:69
@@ -469,14 +465,14 @@ msgstr ""
 
 #: site/apps/osinstances/addip/flinstanceaddip.html:55
 #: site/apps/osinstances/addip/flinstanceaddip.html:66
-#: site/apps/osinstances/flinstancedetail.html:485
-#: site/apps/osinstances/flinstancedetail.html:516
+#: site/apps/osinstances/flinstancedetail.html:487
+#: site/apps/osinstances/flinstancedetail.html:518
 msgid "Add IP"
 msgstr ""
 
 #: site/apps/osinstances/automaticaddips/flinstanceautomaticaddips.html:43
-#: site/apps/osinstances/flinstancedetail.html:492
-#: site/apps/osinstances/flinstancedetail.html:523
+#: site/apps/osinstances/flinstancedetail.html:494
+#: site/apps/osinstances/flinstancedetail.html:525
 msgid "Add IP automatically"
 msgstr ""
 
@@ -611,8 +607,8 @@ msgid "Add new key"
 msgstr ""
 
 #: site/apps/osinstances/addport/flinstanceaddport.html:58
-#: site/apps/osinstances/flinstancedetail.html:471
-#: site/apps/osinstances/flinstancedetail.html:509
+#: site/apps/osinstances/flinstancedetail.html:473
+#: site/apps/osinstances/flinstancedetail.html:511
 msgid "Add port"
 msgstr ""
 
@@ -897,15 +893,15 @@ msgstr ""
 msgid "Assigned to"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:576
+#: site/apps/osinstances/flinstancedetail.html:578
 msgid "Associate"
 msgstr ""
 
 #: site/apps/osinstances/actions/flinstanceactions.html:122
 #: site/apps/osinstances/actions/flxsinstanceactions.html:124
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:39
-#: site/apps/osinstances/flinstancedetail.html:499
-#: site/apps/osinstances/flinstancedetail.html:530
+#: site/apps/osinstances/flinstancedetail.html:501
+#: site/apps/osinstances/flinstancedetail.html:532
 msgid "Associate IP"
 msgstr ""
 
@@ -947,7 +943,7 @@ msgid ""
 msgstr ""
 
 #: site/apps/osinstances/attachport/flinstanceattachport.html:44
-#: site/apps/osinstances/flinstancedetail.html:478
+#: site/apps/osinstances/flinstancedetail.html:480
 msgid "Attach port"
 msgstr ""
 
@@ -1106,7 +1102,7 @@ msgstr ""
 msgid "Backup schedule type"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:618
+#: site/apps/osinstances/flinstancedetail.html:620
 msgid "Backup schedules"
 msgstr ""
 
@@ -1123,8 +1119,8 @@ msgstr ""
 msgid "Backup was scheduled for updating"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:583
-#: site/apps/osinstances/flinstancedetail.html:592
+#: site/apps/osinstances/flinstancedetail.html:585
+#: site/apps/osinstances/flinstancedetail.html:594
 #: site/apps/osvolumes/flvolumedetails.html:38
 msgid "Backups"
 msgstr ""
@@ -1222,7 +1218,7 @@ msgstr ""
 #: domains/enduser/frontend/components/contacts_actions/dialogs/contact_edit/contactedit.html:112
 #: oscommons/apiusers/getopenrcfile.dialog.html:26
 #: oscommons/change_bootable_status_dialog/fl-change-bootable-status-dialog.template.html:17
-#: oscommons/revert_volume_to_snapshot_dialog/fl-revert-volume-to-snapshot-dialog.template.html:35
+#: oscommons/revert_volume_to_snapshot_dialog/fl-revert-volume-to-snapshot-dialog.template.html:19
 #: site/apps/billing/cart/cartitem.html:65
 #: site/apps/billing/invoicing/fladdcredit.html:37
 #: site/apps/billing/services/cancellationrequest.html:30
@@ -1273,7 +1269,7 @@ msgstr ""
 #: site/apps/osvolumes/create/flvolumecreate.html:101
 #: site/apps/osvolumes/extend/flvolumeextend.html:22
 #: site/apps/osvolumes/rename/flvolumerename.html:20
-#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:50
+#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:56
 #: site/apps/osvolumesnapshots/reset_state/flvolumesnapshot-reset-state.html:25
 #: site/apps/osvolumesnapshots/update/fl-volumesnapshots-update.template.html:25
 #: site/apps/oszones/flzoneedit.html:58
@@ -1480,7 +1476,7 @@ msgstr ""
 msgid ""
 "Client:\n"
 "                  <a ui-sref=\"userprofile\" class=\"md-primary\">\n"
-"                    {{ ::$ctrl.volumeBackup.client.name }}\n"
+"                    {{ $ctrl.volumeBackup.client.name }}\n"
 "                  </a>"
 msgstr ""
 
@@ -1835,7 +1831,7 @@ msgstr ""
 msgid "Create instance"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:594
+#: site/apps/osinstances/flinstancedetail.html:596
 msgid "Create instant backups for your instance."
 msgstr ""
 
@@ -1851,12 +1847,12 @@ msgstr ""
 msgid "Create new account"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:611
+#: site/apps/osinstances/flinstancedetail.html:613
 #: site/apps/osvolumes/backups/flvolumebackups.template.html:4
 msgid "Create new backup"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:651
+#: site/apps/osinstances/flinstancedetail.html:653
 msgid "Create new backup schedule"
 msgstr ""
 
@@ -1885,7 +1881,7 @@ msgstr ""
 
 #: site/apps/osimages/snapshot/flinstancesnapshot.html:34
 #: site/apps/osinstances/flinstancedetail.html:250
-#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:53
+#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:59
 msgid "Create snapshot"
 msgstr ""
 
@@ -1979,7 +1975,7 @@ msgid "Created at: {{ $ctrl.volume.created_at | date:'mediumDate' }}"
 msgstr ""
 
 #: site/apps/osvolumebackups/flvolumebackupdetails.html:26
-msgid "Created at: {{ ::$ctrl.volumeBackup.created_at | date:'medium' }}"
+msgid "Created at: {{ $ctrl.volumeBackup.created_at | date:'medium' }}"
 msgstr ""
 
 #: site/apps/osvolumesnapshots/flvolumesnapshotdetails.html:27
@@ -2368,7 +2364,7 @@ msgstr ""
 msgid "Delete rule {{rule}}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:642
+#: site/apps/osinstances/flinstancedetail.html:644
 msgid "Delete schedule"
 msgstr ""
 
@@ -2481,16 +2477,16 @@ msgstr ""
 msgid "Description: {{ $ctrl.port.description }}"
 msgstr ""
 
+#: site/apps/osvolumebackups/flvolumebackupdetails.html:41
+msgid "Description: {{ $ctrl.volumeBackup.description }}"
+msgstr ""
+
 #: site/apps/oszones/flzonedetails.html:36
 msgid "Description: {{ $ctrl.zone.description }}"
 msgstr ""
 
 #: site/apps/osrouters/flrouterdetails.html:31
 msgid "Description: {{ ::$ctrl.router.description }}"
-msgstr ""
-
-#: site/apps/osvolumebackups/flvolumebackupdetails.html:41
-msgid "Description: {{ ::$ctrl.volumeBackup.description }}"
 msgstr ""
 
 #: site/apps/osvolumesnapshots/flvolumesnapshotdetails.html:39
@@ -3324,7 +3320,7 @@ msgstr ""
 
 #: site/apps/floatingips/states.config.js:36
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:11
-#: site/apps/osinstances/flinstancedetail.html:441
+#: site/apps/osinstances/flinstancedetail.html:443
 msgid "Floating IPs"
 msgstr ""
 
@@ -3340,7 +3336,7 @@ msgstr ""
 msgid "Force (indicates whether to backup, even if the volume is attached)"
 msgstr ""
 
-#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:38
+#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:44
 msgid "Force (indicates whether to create snapshot, even if the volume is attached)"
 msgstr ""
 
@@ -3471,7 +3467,7 @@ msgstr ""
 msgid "Greater than"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:546
+#: site/apps/osinstances/flinstancedetail.html:548
 msgid "Group: {{::security_group.name }}"
 msgstr ""
 
@@ -3492,10 +3488,10 @@ msgid "Has dependent backups"
 msgstr ""
 
 #: site/apps/osvolumebackups/flvolumebackupdetails.html:29
-msgid "Has dependent backups: {{ ::$ctrl.volumeBackup.has_dependent_backups }}"
+msgid "Has dependent backups: {{ $ctrl.volumeBackup.has_dependent_backups }}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:327
+#: site/apps/osinstances/flinstancedetail.html:329
 msgid "Has snapshots"
 msgstr ""
 
@@ -3524,7 +3520,7 @@ msgid ""
 "            <span ng-if=\"!$ctrl.router.ha\">false</span>"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:353
+#: site/apps/osinstances/flinstancedetail.html:355
 msgid "History log"
 msgstr ""
 
@@ -3605,16 +3601,16 @@ msgstr ""
 msgid "ID: {{ $ctrl.volume.id }}"
 msgstr ""
 
+#: site/apps/osvolumebackups/flvolumebackupdetails.html:24
+msgid "ID: {{ $ctrl.volumeBackup.id }}"
+msgstr ""
+
 #: site/apps/networks/flnetworkdetails.html:38
 msgid "ID: {{ ::$ctrl.network.id }}"
 msgstr ""
 
 #: site/apps/osrouters/flrouterdetails.html:28
 msgid "ID: {{ ::$ctrl.router.id }}"
-msgstr ""
-
-#: site/apps/osvolumebackups/flvolumebackupdetails.html:24
-msgid "ID: {{ ::$ctrl.volumeBackup.id }}"
 msgstr ""
 
 #: site/apps/osvolumesnapshots/flvolumesnapshotdetails.html:24
@@ -3971,7 +3967,7 @@ msgid "Is incremental"
 msgstr ""
 
 #: site/apps/osvolumebackups/flvolumebackupdetails.html:27
-msgid "Is incremental: {{ ::$ctrl.volumeBackup.is_incremental }}"
+msgid "Is incremental: {{ $ctrl.volumeBackup.is_incremental }}"
 msgstr ""
 
 #: site/apps/osimages/flimages.html:94
@@ -4056,6 +4052,10 @@ msgstr ""
 msgid "Last reply at"
 msgstr ""
 
+#: oscommons/revert_volume_to_snapshot_dialog/fl-revert-volume-to-snapshot-dialog.template.html:8
+msgid "Last snapshot(Openstack allows revert only to last snapshot):"
+msgstr ""
+
 #: site/apps/osimages/flimagedetails.html:17
 #: site/apps/osimages/flimages.html:168
 #: site/apps/osimages/flimages.html:210
@@ -4108,6 +4108,10 @@ msgstr ""
 #: site/apps/pkm/flpkmkeys.html:116
 #: site/apps/pkm/flpkmkeys.html:44
 msgid "Load more"
+msgstr ""
+
+#: oscommons/revert_volume_to_snapshot_dialog/fl-revert-volume-to-snapshot-dialog.template.html:12
+msgid "Loading snapshot ..."
 msgstr ""
 
 #: site/apps/osinstances/create/flbootsourceselect.html:148
@@ -4340,7 +4344,7 @@ msgstr ""
 #: site/apps/osclustertemplates/states.config.js:55
 #: site/apps/osimages/flimages.html:92
 #: site/apps/osimages/states.config.js:57
-#: site/apps/osinstances/flinstancedetail.html:623
+#: site/apps/osinstances/flinstancedetail.html:625
 #: site/apps/osinstances/flinstances.html:69
 #: site/apps/osinstances/rename/flinstancerename.html:11
 #: site/apps/osinstances/states.config.js:63
@@ -4466,7 +4470,7 @@ msgid ""
 "                  </a>"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:386
+#: site/apps/osinstances/flinstancedetail.html:388
 msgid "Networking"
 msgstr ""
 
@@ -4517,7 +4521,7 @@ msgstr ""
 msgid "Next page"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:625
+#: site/apps/osinstances/flinstancedetail.html:627
 msgid "Next run (UTC)"
 msgstr ""
 
@@ -4706,11 +4710,11 @@ msgstr ""
 msgid "No associated object"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:619
+#: site/apps/osinstances/flinstancedetail.html:621
 msgid "No backup schedules for this instance"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:593
+#: site/apps/osinstances/flinstancedetail.html:595
 msgid "No backups for this instance"
 msgstr ""
 
@@ -4762,7 +4766,7 @@ msgstr ""
 msgid "No flavors available in this region"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:360
+#: site/apps/osinstances/flinstancedetail.html:362
 msgid "No history log"
 msgstr ""
 
@@ -4857,6 +4861,10 @@ msgstr ""
 msgid "No services"
 msgstr ""
 
+#: oscommons/revert_volume_to_snapshot_dialog/fl-revert-volume-to-snapshot-dialog.template.html:13
+msgid "No snapshot found ..."
+msgstr ""
+
 #: site/apps/osinstances/flinstancedetail.html:287
 msgid "No snapshots"
 msgstr ""
@@ -4891,7 +4899,7 @@ msgstr ""
 msgid "No volumes"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:347
+#: site/apps/osinstances/flinstancedetail.html:349
 msgid "No volumes attached"
 msgstr ""
 
@@ -4952,6 +4960,10 @@ msgstr ""
 msgid ""
 "Not compatible with\n"
 "selected boot source"
+msgstr ""
+
+#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:6
+msgid "Note that Openstack allows you to revert only to the latest snapshot"
 msgstr ""
 
 #: site/apps/osinstances/flinstancedetail.component.js:622
@@ -5034,7 +5046,7 @@ msgid "Object count"
 msgstr ""
 
 #: site/apps/osvolumebackups/flvolumebackupdetails.html:28
-msgid "Object count: {{ ::$ctrl.volumeBackup.object_count }}"
+msgid "Object count: {{ $ctrl.volumeBackup.object_count }}"
 msgstr ""
 
 #: site/apps/billing/history/billinghistory.component.js:34
@@ -5403,7 +5415,7 @@ msgid "Port {:name}"
 msgstr ""
 
 #: site/apps/osinstances/associateip/flinstanceassociateip.html:22
-#: site/apps/osinstances/flinstancedetail.html:393
+#: site/apps/osinstances/flinstancedetail.html:395
 #: site/apps/osports/states.config.js:41
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.html:59
 msgid "Ports"
@@ -6030,7 +6042,7 @@ msgstr ""
 msgid "Revert to snapshot"
 msgstr ""
 
-#: oscommons/revert_volume_to_snapshot_dialog/fl-revert-volume-to-snapshot-dialog.template.html:36
+#: oscommons/revert_volume_to_snapshot_dialog/fl-revert-volume-to-snapshot-dialog.template.html:21
 msgid "Revert volume"
 msgstr ""
 
@@ -6049,7 +6061,7 @@ msgstr ""
 msgid "Rotation"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:624
+#: site/apps/osinstances/flinstancedetail.html:626
 msgid "Rotation / Type"
 msgstr ""
 
@@ -6375,7 +6387,7 @@ msgstr ""
 msgid "Security group {:securityGroup}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:536
+#: site/apps/osinstances/flinstancedetail.html:538
 #: site/apps/ossecuritygroups/states.config.js:32
 msgid "Security groups"
 msgstr ""
@@ -6831,11 +6843,7 @@ msgstr ""
 msgid "Size: {{ $ctrl.volumeSnapshot.size | number }} GB"
 msgstr ""
 
-#: oscommons/revert_volume_to_snapshot_dialog/fl-revert-volume-to-snapshot-dialog.template.html:22
-msgid "Snapshot"
-msgstr ""
-
-#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:42
+#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:48
 #: site/apps/osvolumesnapshots/update/fl-volumesnapshots-update.template.html:17
 msgid "Snapshot description"
 msgstr ""
@@ -6845,7 +6853,7 @@ msgid "Snapshot details"
 msgstr ""
 
 #: site/apps/osimages/snapshot/flinstancesnapshot.html:24
-#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:33
+#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:39
 #: site/apps/osvolumesnapshots/update/fl-volumesnapshots-update.template.html:11
 msgid "Snapshot name"
 msgstr ""
@@ -7600,7 +7608,7 @@ msgstr ""
 #: site/apps/osvolumebackups/restore/fl-volumebackups-restore.template.html:37
 #: site/apps/osvolumes/attach/flvolumeattach.html:9
 #: site/apps/osvolumes/flvolumes.html:1
-#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:22
+#: site/apps/osvolumesnapshots/create/fl-volumesnapshots-create.template.html:28
 #: site/apps/osvolumesnapshots/flvolumesnapshots.html:61
 msgid "Volume"
 msgstr ""
@@ -8440,7 +8448,7 @@ msgstr ""
 msgid "{{::$ctrl.summary.services.length}} services"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.html:321
+#: site/apps/osinstances/flinstancedetail.html:323
 msgid "{{::attachment.volume.size }} GB"
 msgstr ""
 
