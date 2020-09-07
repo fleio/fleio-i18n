@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4\n"
+"X-Generator: Poedit 2.4.1\n"
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: tickets/enduser/frontend/components/tickets_details/ticketsdetails.html:18
@@ -1209,6 +1209,13 @@ msgstr "Utilizator API șters"
 msgid "API user edited"
 msgstr "Utilizatori API modificat"
 
+#: site/apps/osclusters/get-certificate/flclustergetcertificate.html:10
+#: site/apps/osclusters/get-configuration/flclustergetconfiguration.html:10
+#, fuzzy
+#| msgid "Unable to authenticate"
+msgid "API user to authenticate with"
+msgstr "Autentificare imposibilă"
+
 #: site/apps/osapiusers/states.config.js:33 staff/apps/osapiusers/states.config.js:33
 msgid "API users"
 msgstr "Utilizatori API"
@@ -1259,9 +1266,13 @@ msgid "Accept"
 msgstr "Accepta"
 
 #: commons/auth/login.html:14
+#, fuzzy
+#| msgid ""
+#| "Access demo account with username\n"
+#| "              <strong>{{ vm.credentials}}</strong>,password <strong> {{ vm.credentials }}</strong>"
 msgid ""
 "Access demo account with username\n"
-"              <strong>{{ vm.credentials}}</strong>,password <strong> {{ vm.credentials }}</strong>"
+"              <strong>{{ vm.credentials}}</strong>, password <strong> {{ vm.credentials }}</strong>"
 msgstr ""
 "Accesează contul demo cu username\n"
 "              <strong>{{ vm.credentials}}</strong>,parola <strong> {{ vm.credentials }}</strong>"
@@ -2167,6 +2178,13 @@ msgstr "Oricare"
 msgid "Any hypervisor"
 msgstr "Selectează hipervizor"
 
+#: site/apps/osclusters/get-certificate/flclustergetcertificate.html:20
+#: site/apps/osclusters/get-configuration/flclustergetconfiguration.html:20
+#, fuzzy
+#| msgid "new password"
+msgid "Api user password"
+msgstr "parolă nouă"
+
 #: staff/apps/baseconfig/fleiostaff.baseconfig.module.js:46
 #, fuzzy
 #| msgid "No services"
@@ -2255,7 +2273,7 @@ msgstr "Ești sigur că vrei sa ștergi atașamentul?"
 msgid "Are you sure you want to delete the cluster template?"
 msgstr "Ești sigur că vrei să ștergi volumul?"
 
-#: site/apps/osclusters/actions/flclusteractions.directive.js:32
+#: site/apps/osclusters/actions/flclusteractions.directive.js:33
 #: site/apps/osclusters/actions/flxsclusteractions.directive.js:24
 #: staff/apps/osclusters/actions/flclusteractions.directive.js:32
 #: staff/apps/osclusters/actions/flxsclusteractions.directive.js:24
@@ -2338,13 +2356,13 @@ msgstr "Ești sigur că vrei să ștergi volumul?"
 #: site/apps/networks/flnetworkdetails.component.js:151 site/apps/networks/flnetworkdetails.component.js:72
 #: site/apps/networks/flnetworks.component.js:171 site/apps/osapiusers/flapiusers.component.js:92
 #: site/apps/osimages/flimagedetails.component.js:48 site/apps/osimages/flimages.component.js:51
-#: site/apps/osinstances/flinstancedetail.component.js:223
-#: site/apps/osinstances/flinstancedetail.component.js:341
-#: site/apps/osinstances/flinstancedetail.component.js:358
-#: site/apps/osinstances/flinstancedetail.component.js:405
-#: site/apps/osinstances/flinstancedetail.component.js:499
-#: site/apps/osinstances/flinstancedetail.component.js:618
-#: site/apps/osinstances/flinstancedetail.component.js:639 site/apps/osports/flportdetails.component.js:47
+#: site/apps/osinstances/flinstancedetail.component.js:239
+#: site/apps/osinstances/flinstancedetail.component.js:357
+#: site/apps/osinstances/flinstancedetail.component.js:374
+#: site/apps/osinstances/flinstancedetail.component.js:421
+#: site/apps/osinstances/flinstancedetail.component.js:515
+#: site/apps/osinstances/flinstancedetail.component.js:634
+#: site/apps/osinstances/flinstancedetail.component.js:655 site/apps/osports/flportdetails.component.js:47
 #: site/apps/osports/flports.component.js:42 site/apps/osrouters/flrouterdetails.component.js:108
 #: site/apps/osrouters/flrouterdetails.component.js:118 site/apps/osrouters/flrouters.component.js:116
 #: site/apps/ossecuritygroups/flsecuritygroupdetails.component.js:111
@@ -2569,7 +2587,7 @@ msgstr "Atașează volume"
 msgid "Attach volume to instance {{ $ctrl.instance.name }}"
 msgstr "Atașează volum la instanța {{ $ctrl.instance.name }}"
 
-#: site/apps/osinstances/flinstancedetail.component.js:218
+#: site/apps/osinstances/flinstancedetail.component.js:234
 #: staff/apps/osinstances/flinstancedetails.component.js:270
 msgid "Attaching volume to instance"
 msgstr "Atașează volum la instanța"
@@ -2842,7 +2860,7 @@ msgstr "Nume produs"
 msgid "Backup rotation"
 msgstr "Migrare bloc"
 
-#: site/apps/osinstances/flinstancedetail.component.js:413
+#: site/apps/osinstances/flinstancedetail.component.js:429
 #: staff/apps/osinstances/flinstancedetails.component.js:638
 #, fuzzy
 #| msgid "Tax rule deleted"
@@ -3119,8 +3137,10 @@ msgstr "Nu se poate obtine continutul"
 #: site/apps/networks/flnetworkautocreate.html:29 site/apps/networks/flnetworkedit.html:48
 #: site/apps/networks/flnetworksubnetedit.html:214 site/apps/osapiusers/flapiuseredit.html:39
 #: site/apps/osclusters/create/flclustercreate.component.html:236
+#: site/apps/osclusters/get-certificate/flclustergetcertificate.html:29
+#: site/apps/osclusters/get-configuration/flclustergetconfiguration.html:29
 #: site/apps/osclusters/resize/flclusterresize.html:26
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:419
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:404
 #: site/apps/osimages/create/flimagecreate.html:228
 #: site/apps/osimages/memberstatus/memberstatusdialog.template.html:21
 #: site/apps/osimages/snapshot/flinstancesnapshot.html:33 site/apps/osimages/update/flimageupdate.html:137
@@ -4042,7 +4062,7 @@ msgstr "Master"
 msgid "Cluster create timeout: {{$ctrl.cluster.create_timeout}}"
 msgstr "Creat la: {{ $ctrl.volume.created_at | date:'mediumDate' }}"
 
-#: site/apps/osclusters/actions/flclusteractions.directive.js:36
+#: site/apps/osclusters/actions/flclusteractions.directive.js:37
 #: site/apps/osclusters/actions/flxsclusteractions.directive.js:28
 #: staff/apps/osclusters/actions/flclusteractions.directive.js:36
 #: staff/apps/osclusters/actions/flxsclusteractions.directive.js:28
@@ -4051,7 +4071,7 @@ msgstr "Creat la: {{ $ctrl.volume.created_at | date:'mediumDate' }}"
 msgid "Cluster deleted scheduled"
 msgstr "Stergere router in progres"
 
-#: site/apps/osclusters/states.config.js:150 staff/apps/osclusters/states.config.js:155
+#: site/apps/osclusters/states.config.js:155 staff/apps/osclusters/states.config.js:155
 #, fuzzy
 #| msgid "Router details"
 msgid "Cluster details"
@@ -4134,7 +4154,7 @@ msgstr "Creat la: {{ $ctrl.volume.created_at | date:'mediumDate' }}"
 msgid "Cluster templates"
 msgstr "Șterge template"
 
-#: site/apps/osclusters/states.config.js:148 staff/apps/osclusters/states.config.js:153
+#: site/apps/osclusters/states.config.js:153 staff/apps/osclusters/states.config.js:153
 #, fuzzy
 #| msgid "Volume {:volumeTitle}"
 msgid "Cluster {:clusterTitle}"
@@ -4642,14 +4662,14 @@ msgid "Create client"
 msgstr "Creează client"
 
 #: site/apps/osclusters/create/flclustercreate.component.html:232 site/apps/osclusters/flclusters.component.js:28
-#: site/apps/osclusters/states.config.js:112 staff/apps/osclusters/create/flclustercreate.component.html:200
+#: site/apps/osclusters/states.config.js:117 staff/apps/osclusters/create/flclustercreate.component.html:200
 #: staff/apps/osclusters/flclusters.component.js:28 staff/apps/osclusters/states.config.js:117
 #, fuzzy
 #| msgid "Create user"
 msgid "Create cluster"
 msgstr "Creează utilizator"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:415
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:400
 #: site/apps/osclustertemplates/flclustertemplates.component.js:28
 #: site/apps/osclustertemplates/states.config.js:117
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:423
@@ -5560,7 +5580,7 @@ msgstr "Amână (ore)"
 #: site/apps/networks/flnetworks.component.js:37 site/apps/networks/flnetworks.html:138
 #: site/apps/osapiusers/flapiusers.component.js:23 site/apps/osapiusers/flapiusers.html:123
 #: site/apps/osclusters/actions/flclusteractions.directive.js:24
-#: site/apps/osclusters/actions/flxsclusteractions.html:25
+#: site/apps/osclusters/actions/flxsclusteractions.html:32
 #: site/apps/osclustertemplates/actions/flclustertemplateactions.directive.js:24
 #: site/apps/osclustertemplates/actions/flxsclustertemplateactions.html:11
 #: site/apps/osimages/flimagedetails.component.js:32 site/apps/osimages/flimages.component.js:34
@@ -5569,7 +5589,7 @@ msgstr "Amână (ore)"
 #: site/apps/osinstances/actions/flinstanceactions.html:136
 #: site/apps/osinstances/actions/flxsinstanceactions.html:138
 #: site/apps/osinstances/actions/flxsinstanceactions.html:49
-#: site/apps/osinstances/flinstancedetail.component.js:408 site/apps/osports/flportdetails.component.js:26
+#: site/apps/osinstances/flinstancedetail.component.js:424 site/apps/osports/flportdetails.component.js:26
 #: site/apps/osports/flports.component.js:30 site/apps/osports/flports.html:170
 #: site/apps/osrouters/flrouterdetails.html:18 site/apps/osrouters/flrouterdetails.html:83
 #: site/apps/osrouters/flrouters.html:105 site/apps/osrouters/flrouters.html:48
@@ -5651,12 +5671,12 @@ msgstr "Șterge"
 msgid "Delete Contact"
 msgstr "Șterge instanța"
 
-#: site/apps/osinstances/flinstancedetail.component.js:501
+#: site/apps/osinstances/flinstancedetail.component.js:517
 #: staff/apps/osinstances/flinstancedetails.component.js:558
 msgid "Delete IP"
 msgstr "Șterge IP"
 
-#: site/apps/osinstances/flinstancedetail.component.js:500
+#: site/apps/osinstances/flinstancedetail.component.js:516
 #: staff/apps/osinstances/flinstancedetails.component.js:557
 msgid "Delete IP {{ip}}"
 msgstr "Șterge IP {{ip}}"
@@ -5700,7 +5720,7 @@ msgstr "Șterge proiect openstack asociat"
 msgid "Delete attachment"
 msgstr "Șterge atașament"
 
-#: site/apps/osinstances/flinstancedetail.component.js:406
+#: site/apps/osinstances/flinstancedetail.component.js:422
 #: staff/apps/osinstances/flinstancedetails.component.js:631
 #, fuzzy
 #| msgid "Delete user {{name}}"
@@ -5727,7 +5747,7 @@ msgstr "Șterge grupul de securitate {{name}}"
 msgid "Delete client {{::$ctrl.client.name }}"
 msgstr "Stergere client in progres"
 
-#: site/apps/osclusters/actions/flclusteractions.directive.js:34
+#: site/apps/osclusters/actions/flclusteractions.directive.js:35
 #: site/apps/osclusters/actions/flxsclusteractions.directive.js:26
 #: staff/apps/osclusters/actions/flclusteractions.directive.js:34
 #: staff/apps/osclusters/actions/flxsclusteractions.directive.js:26
@@ -5754,7 +5774,7 @@ msgstr "Șterge template"
 msgid "Delete cluster template {{name}}"
 msgstr "Șterge utilizator"
 
-#: site/apps/osclusters/actions/flclusteractions.directive.js:33
+#: site/apps/osclusters/actions/flclusteractions.directive.js:34
 #: site/apps/osclusters/actions/flxsclusteractions.directive.js:25
 #: staff/apps/osclusters/actions/flclusteractions.directive.js:33
 #: staff/apps/osclusters/actions/flxsclusteractions.directive.js:25
@@ -5925,7 +5945,7 @@ msgstr "Șterge plan"
 msgid "Delete plan {{::$ctrl.plan.name }}"
 msgstr "Șterge plan {{::$ctrl.plan.name }}"
 
-#: site/apps/osinstances/flinstancedetail.component.js:33 site/apps/osinstances/flinstancedetail.component.js:641
+#: site/apps/osinstances/flinstancedetail.component.js:33 site/apps/osinstances/flinstancedetail.component.js:657
 #: site/apps/osports/flportdetails.component.js:49 site/apps/osports/flports.component.js:44
 #: staff/apps/osinstances/flinstancedetails.component.js:31
 #: staff/apps/osinstances/flinstancedetails.component.js:483 staff/apps/osports/flportdetails.component.js:49
@@ -5940,7 +5960,7 @@ msgstr "Sterge port"
 msgid "Delete port {{name}}"
 msgstr "Șterge port {{port_name}}"
 
-#: site/apps/osinstances/flinstancedetail.component.js:640
+#: site/apps/osinstances/flinstancedetail.component.js:656
 #: staff/apps/osinstances/flinstancedetails.component.js:482
 msgid "Delete port {{port_name}}"
 msgstr "Șterge port {{port_name}}"
@@ -6379,7 +6399,7 @@ msgstr "Sumă destinație"
 msgid "Destination: {{ route.destination }} - NextHop: {{ route.nexthop }}"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:34 site/apps/osinstances/flinstancedetail.component.js:621
+#: site/apps/osinstances/flinstancedetail.component.js:34 site/apps/osinstances/flinstancedetail.component.js:637
 #: staff/apps/osinstances/flinstancedetails.component.js:32
 #: staff/apps/osinstances/flinstancedetails.component.js:463
 #, fuzzy
@@ -6387,7 +6407,7 @@ msgstr ""
 msgid "Detach port"
 msgstr "Sterge port"
 
-#: site/apps/osinstances/flinstancedetail.component.js:620
+#: site/apps/osinstances/flinstancedetail.component.js:636
 #: staff/apps/osinstances/flinstancedetails.component.js:462
 #, fuzzy
 #| msgid "Delete port {{port_name}}"
@@ -6401,7 +6421,7 @@ msgstr "Șterge port {{port_name}}"
 msgid "Detach volume"
 msgstr "Atașează volume"
 
-#: site/apps/osinstances/flinstancedetail.component.js:224
+#: site/apps/osinstances/flinstancedetail.component.js:240
 #: staff/apps/osinstances/flinstancedetails.component.js:276
 #, fuzzy
 #| msgid "Delete volume {{name}}"
@@ -6414,7 +6434,7 @@ msgstr "Șterge volum {{name}}"
 msgid "Detached"
 msgstr "Atașează volume"
 
-#: site/apps/osinstances/flinstancedetail.component.js:225
+#: site/apps/osinstances/flinstancedetail.component.js:241
 #: staff/apps/osinstances/flinstancedetails.component.js:277
 msgid "Detaching volume from instance"
 msgstr "Detașează volum de la instanță"
@@ -6501,19 +6521,19 @@ msgstr "Dezactivat"
 msgid "Disabled reason"
 msgstr "Motivul dezactivării"
 
-#: site/apps/osinstances/flinstancedetail.component.js:366
+#: site/apps/osinstances/flinstancedetail.component.js:382
 #: staff/apps/osinstances/flinstancedetails.component.js:412
 msgid "Disassociate IP scheduled"
 msgstr "Disociere IP in progres"
 
-#: site/apps/osinstances/flinstancedetail.component.js:360
+#: site/apps/osinstances/flinstancedetail.component.js:376
 #: staff/apps/osinstances/flinstancedetails.component.js:406
 #, fuzzy
 #| msgid "Delete floating IP"
 msgid "Disassociate floating IP"
 msgstr "Șterge floating IP"
 
-#: site/apps/osinstances/flinstancedetail.component.js:359
+#: site/apps/osinstances/flinstancedetail.component.js:375
 #: staff/apps/osinstances/flinstancedetails.component.js:405
 #, fuzzy
 #| msgid "Delete floating IP {{ip_address}}"
@@ -6613,18 +6633,18 @@ msgstr "Sterge adresa IP de la instanta {{ $ctrl.instance.name }}"
 msgid "Dissociate floating IP"
 msgstr "Șterge floating IP"
 
-#: site/apps/osinstances/flinstancedetail.component.js:344 site/apps/osinstances/flinstancedetail.component.js:38
+#: site/apps/osinstances/flinstancedetail.component.js:360 site/apps/osinstances/flinstancedetail.component.js:38
 #: staff/apps/osinstances/flinstancedetails.component.js:35
 #: staff/apps/osinstances/flinstancedetails.component.js:601
 msgid "Dissociate security group"
 msgstr "Adaugă regulă la grup de securitate"
 
-#: site/apps/osinstances/flinstancedetail.component.js:350
+#: site/apps/osinstances/flinstancedetail.component.js:366
 #: staff/apps/osinstances/flinstancedetails.component.js:607
 msgid "Dissociate security group scheduled"
 msgstr "Stergere grup de securitate in progres"
 
-#: site/apps/osinstances/flinstancedetail.component.js:342
+#: site/apps/osinstances/flinstancedetail.component.js:358
 #: staff/apps/osinstances/flinstancedetails.component.js:599
 msgid "Dissociate security group {{sec_group}} from instance {{instance}}"
 msgstr "Disociază grupul de securitate {{sec_group}} de la instanța {{instance}}"
@@ -6692,7 +6712,7 @@ msgstr "Nu suspendați până la"
 msgid "Do you want to {{action}} transaction?"
 msgstr "Șterge tranzacția {{transaction}}"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:201
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:190
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:209
 msgid "Docker storage driver"
 msgstr ""
@@ -6703,7 +6723,7 @@ msgid "Docker storage driver: {{$ctrl.clusterTemplate.docker_storage_driver}}"
 msgstr ""
 
 #: site/apps/osclusters/create/flclustercreate.component.html:112
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:219
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:206
 #: staff/apps/osclusters/create/flclustercreate.component.html:80
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:227
 #, fuzzy
@@ -7733,7 +7753,7 @@ msgstr "Eroare încercând verificarea dacă un domeniu este disponibil"
 msgid "Error when trying to update profile."
 msgstr "Eroare încercând verificarea dacă un domeniu este disponibil"
 
-#: site/apps/osinstances/flinstancedetail.component.js:233
+#: site/apps/osinstances/flinstancedetail.component.js:249
 msgid "Error while detaching"
 msgstr "Eroare în timpul detașări"
 
@@ -7823,7 +7843,7 @@ msgstr "external"
 msgid "External billing id"
 msgstr "ID tranzacție extern"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:267
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:252
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:275
 #, fuzzy
 #| msgid "External network selection"
@@ -8051,7 +8071,7 @@ msgstr "Pret fix"
 msgid "Fixed ip address: {{ $ctrl.floatingIp.fixed_ip_address }}"
 msgstr "Adresă fixă IP: {{ $ctrl.floatingIp.fixed_ip_address }}"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:283
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:268
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:291
 #, fuzzy
 #| msgid "Edit network"
@@ -8068,7 +8088,7 @@ msgstr ""
 msgid "Fixed price"
 msgstr "Pret fix"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:313
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:298
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:321
 #, fuzzy
 #| msgid "Add subnet"
@@ -8270,8 +8290,8 @@ msgid "Flavors assignment"
 msgstr "Nume configurație"
 
 #: site/apps/floatingips/flfloatingips.html:1
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:387
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:388
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:372
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:373
 #: site/apps/osclustertemplates/flclustertemplatedetails.component.html:157
 #: site/apps/osclustertemplates/flclustertemplatedetails.component.html:158
 #: staff/apps/floatingips/flfloatingips.html:1
@@ -8523,13 +8543,34 @@ msgid "Get a verification code from the Google Authenticator"
 msgstr ""
 
 #: site/apps/osclusters/actions/flclusteractions.directive.js:27
-#: site/apps/osclusters/actions/flxsclusteractions.html:18
+#: site/apps/osclusters/actions/flxsclusteractions.html:25
+#: site/apps/osclusters/get-certificate/flclustergetcertificate.html:32
 #: staff/apps/osclusters/actions/flclusteractions.directive.js:27
 #: staff/apps/osclusters/actions/flxsclusteractions.html:18
 #, fuzzy
 #| msgid "Verify API SSL certificates"
 msgid "Get certificate"
 msgstr "Verifica certificatele SSL"
+
+#: site/apps/osclusters/get-certificate/flclustergetcertificate.html:3
+#, fuzzy
+#| msgid "Edit {{::$ctrl.user.name}}"
+msgid "Get certificate for {{::$ctrl.cluster.name }}"
+msgstr "Modifică {{::$ctrl.user.name}}"
+
+#: site/apps/osclusters/actions/flclusteractions.directive.js:28
+#: site/apps/osclusters/actions/flxsclusteractions.html:18
+#: site/apps/osclusters/get-configuration/flclustergetconfiguration.html:32
+#, fuzzy
+#| msgid "configuration"
+msgid "Get configuration"
+msgstr "configurație"
+
+#: site/apps/osclusters/get-configuration/flclustergetconfiguration.html:3
+#, fuzzy
+#| msgid "Edit {{::$ctrl.user.name}}"
+msgid "Get configuration for {{::$ctrl.cluster.name }}"
+msgstr "Modifică {{::$ctrl.user.name}}"
 
 #: oscommons/apiusers/getopenrcfile.dialog.html:28
 #, fuzzy
@@ -9943,7 +9984,7 @@ msgid "Key content"
 msgstr "Conținut cheie"
 
 #: site/apps/osclusters/create/flclustercreate.component.html:156
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:129
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:118
 #: staff/apps/osclusters/create/flclustercreate.component.html:124
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:137
 msgid "Keypair"
@@ -9981,8 +10022,8 @@ msgstr "Etichetă"
 #: site/apps/osclusters/create/flclustercreate.component.html:210
 #: site/apps/osclusters/create/flclustercreate.component.html:215
 #: site/apps/osclusters/flclusterdetails.component.html:96
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:393
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:398
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:378
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:383
 #: site/apps/osclustertemplates/flclustertemplatedetails.component.html:164
 #: staff/apps/osclusters/create/flclustercreate.component.html:178
 #: staff/apps/osclusters/create/flclustercreate.component.html:183
@@ -10394,8 +10435,8 @@ msgid ""
 "                    </span>"
 msgstr ""
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:379
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:380
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:364
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:365
 #: site/apps/osclustertemplates/flclustertemplatedetails.component.html:148
 #: site/apps/osclustertemplates/flclustertemplatedetails.component.html:149
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:387
@@ -10434,7 +10475,7 @@ msgid "Master flavor: {{$ctrl.clusterTemplate.master_flavor_id}}"
 msgstr ""
 
 #: site/apps/osclusters/create/flclustercreate.component.html:194
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:165
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:154
 #: staff/apps/osclusters/create/flclustercreate.component.html:162
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:173
 #, fuzzy
@@ -10852,7 +10893,7 @@ msgstr "Nameservere"
 #: site/apps/floatingips/flfloatingipadd.html:17 site/apps/floatingips/flfloatingips.html:20
 #: site/apps/floatingips/states.config.js:40 site/apps/networks/flnetworkadd.html:13
 #: site/apps/networks/flnetworks.html:1
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:245
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:232
 #: site/apps/osclustertemplates/flclustertemplatedetails.component.html:84
 #: site/apps/osinstances/addport/flinstanceaddport.html:11 site/apps/osports/states.config.js:45
 #: site/apps/osports/states.config.js:54 site/apps/osrouters/flrouterdetails.html:82
@@ -10887,7 +10928,7 @@ msgstr "Stergere retea in progres"
 msgid "Network details"
 msgstr "Detalii rețea"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:250
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:237
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:258
 #, fuzzy
 #| msgid "Network address"
@@ -11837,7 +11878,7 @@ msgid "Node count: {{$ctrl.cluster.node_count}}"
 msgstr "Proiect:{{ $ctrl.router.project_id }}"
 
 #: site/apps/osclusters/create/flclustercreate.component.html:178
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:149
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:138
 #: staff/apps/osclusters/create/flclustercreate.component.html:146
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:157
 #, fuzzy
@@ -11870,8 +11911,8 @@ msgstr ""
 msgid "Nodes to remove (comma separated IDs)"
 msgstr "Destinatari CC (separați prin virgulă)"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:135
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:289
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:124
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:274
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:143
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:297
 #: tickets/staff/frontend/components/states.config.js:63
@@ -11913,7 +11954,7 @@ msgstr "Notă ștearsă"
 msgid "Note that Openstack allows you to revert only to the latest snapshot"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:622
+#: site/apps/osinstances/flinstancedetail.component.js:638
 #: staff/apps/osinstances/flinstancedetails.component.js:464
 msgid ""
 "Note that default ports (ports created automatically on instance create) are automatically deleted by "
@@ -12273,7 +12314,7 @@ msgstr "Setari OpenStack"
 #: site/apps/osclusters/create/flclustercreate.component.html:35
 #, fuzzy
 #| msgid "Openstack service"
-msgid "OpenStack user API id"
+msgid "OpenStack user API"
 msgstr "Serviciu OpenStack"
 
 #: site/apps/osclusters/create/flclustercreate.component.html:45
@@ -12738,7 +12779,7 @@ msgstr "Te rugăm selectează un tichet mai întai."
 msgid "Please select a transaction to refund."
 msgstr "Vă rog selectati o transacție pentru rambursare."
 
-#: site/apps/osclusters/create/flclustercreate.component.js:102
+#: site/apps/osclusters/create/flclustercreate.component.js:103
 #: staff/apps/osclusters/create/flclustercreate.component.js:97
 #, fuzzy
 #| msgid "Please select a flavor"
@@ -12837,7 +12878,7 @@ msgstr "Id port: {{ $ctrl.floatingIp.port.id }}"
 msgid "Port is being attached"
 msgstr ""
 
-#: site/apps/osinstances/flinstancedetail.component.js:631
+#: site/apps/osinstances/flinstancedetail.component.js:647
 #: staff/apps/osinstances/flinstancedetails.component.js:473
 msgid "Port is being detached"
 msgstr ""
@@ -13967,7 +14008,7 @@ msgstr "Elimină IP"
 msgid "Remove IP from instance {{ $ctrl.instance.name }}"
 msgstr "Elimină IP-ul de la instanța  {{ $ctrl.instance.name }}"
 
-#: site/apps/osinstances/flinstancedetail.component.js:510
+#: site/apps/osinstances/flinstancedetail.component.js:526
 #: staff/apps/osinstances/flinstancedetails.component.js:567
 msgid "Remove IP scheduled"
 msgstr "Eliminare IP in progres"
@@ -14029,7 +14070,7 @@ msgstr "Elimină port"
 msgid "Remove port from instance {{ $ctrl.instance.name }}"
 msgstr "Elimină portul de la instanța  {{ $ctrl.instance.name }}"
 
-#: site/apps/osinstances/flinstancedetail.component.js:645
+#: site/apps/osinstances/flinstancedetail.component.js:661
 #: staff/apps/osinstances/flinstancedetails.component.js:487
 msgid "Remove port scheduled"
 msgstr "Eliminare port in progres"
@@ -15142,7 +15183,7 @@ msgstr "Generează cheie"
 msgid "Select"
 msgstr "Selectează"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:206
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:195
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:214
 #, fuzzy
 #| msgid "Select storage type"
@@ -15333,14 +15374,14 @@ msgstr "Selectează distribuție"
 msgid "Select domain"
 msgstr "Șterge domeniu"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:272
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:257
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:280
 #, fuzzy
 #| msgid "Select network"
 msgid "Select external network"
 msgstr "Selectează rețeaua"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:287
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:272
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:295
 #, fuzzy
 #| msgid "Select network"
@@ -15378,7 +15419,7 @@ msgid "Select item"
 msgstr "Selectează articol"
 
 #: site/apps/osclusters/create/flclustercreate.component.html:161
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:133
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:122
 #: staff/apps/osclusters/create/flclustercreate.component.html:129
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:141
 #, fuzzy
@@ -15387,7 +15428,7 @@ msgid "Select keypair"
 msgstr "Selectează port"
 
 #: site/apps/osclusters/create/flclustercreate.component.html:199
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:170
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:159
 #: staff/apps/osclusters/create/flclustercreate.component.html:167
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:178
 #, fuzzy
@@ -15418,7 +15459,7 @@ msgstr "Selectează port"
 msgid "Select network"
 msgstr "Selectează rețeaua"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:254
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:241
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:262
 #, fuzzy
 #| msgid "Select network"
@@ -15447,7 +15488,7 @@ msgid "Select new host"
 msgstr "Selectează server nou"
 
 #: site/apps/osclusters/create/flclustercreate.component.html:183
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:154
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:143
 #: staff/apps/osclusters/create/flclustercreate.component.html:151
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:162
 #, fuzzy
@@ -15624,7 +15665,7 @@ msgstr "Selectează grup utilizatori"
 msgid "Select value"
 msgstr "Selectează valoare"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:188
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:177
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:196
 #, fuzzy
 #| msgid "Delete volume"
@@ -15637,7 +15678,7 @@ msgstr "Șterge volum"
 msgid "Selected image"
 msgstr "Șterge imagine"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:318
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:303
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:326
 #, fuzzy
 #| msgid "Select subnet"
@@ -16295,7 +16336,7 @@ msgstr "Dimensiune"
 msgid "Size (GB)"
 msgstr "Dimensiune  (GB)"
 
-#: site/apps/osinstances/flinstancedetail.component.js:179
+#: site/apps/osinstances/flinstancedetail.component.js:195
 #: staff/apps/osinstances/flinstancedetails.component.js:231
 #, fuzzy
 #| msgid "No actions available"
@@ -16357,7 +16398,7 @@ msgstr "Nume snapshot"
 msgid "Snapshot state"
 msgstr "Nume snapshot"
 
-#: site/apps/osinstances/flinstancedetail.component.js:201
+#: site/apps/osinstances/flinstancedetail.component.js:217
 #, fuzzy
 #| msgid "Snapshot  create scheduled"
 msgid "Snapshot {{name}} create scheduled"
@@ -16717,7 +16758,7 @@ msgstr "Copiat cu succes"
 msgid "Successfully copied to clipboard"
 msgstr "Copiat in clipboard cu succes"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.js:92
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.js:98
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.js:92
 #, fuzzy
 #| msgid "Successfully connected"
@@ -18394,7 +18435,7 @@ msgstr "Stergere router in progres"
 msgid "Volume details"
 msgstr "Detalii volum"
 
-#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:184
+#: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:173
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:192
 #, fuzzy
 #| msgid "Volume details"
@@ -18688,7 +18729,7 @@ msgstr "Momentan utilizezi un total de {{$ctrl.cores_in_use}} core-uri de pe nod
 
 #: site/apps/floatingips/flfloatingipdetails.component.js:28 site/apps/floatingips/flfloatingips.component.js:41
 #: site/apps/networks/flnetworkdetails.component.js:31 site/apps/networks/flnetworks.component.js:41
-#: site/apps/osapiusers/flapiusers.component.js:26 site/apps/osclusters/actions/flclusteractions.directive.js:28
+#: site/apps/osapiusers/flapiusers.component.js:26 site/apps/osclusters/actions/flclusteractions.directive.js:29
 #: site/apps/osclusters/flclusters.component.js:29
 #: site/apps/osclustertemplates/actions/flclustertemplateactions.directive.js:26
 #: site/apps/osclustertemplates/flclustertemplates.component.js:29
@@ -20139,11 +20180,6 @@ msgstr "{{tax.taxname}}: {{tax.amount}} {{::$ctrl.cart.currency}}"
 
 #~ msgid "Snapshot {:name}"
 #~ msgstr "Snapshot {:name}"
-
-#, fuzzy
-#~| msgid "new password"
-#~ msgid "User password"
-#~ msgstr "parolă nouă"
 
 #, fuzzy
 #~| msgid "Back"
