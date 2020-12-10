@@ -9,7 +9,7 @@ msgstr ""
 msgid "#{{ $ctrl.ticket.id }} - {{ $ctrl.ticket.title }}"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:173
+#: site/apps/dashboard/fldashboard.html:167
 msgid "(All paid)"
 msgstr ""
 
@@ -24,11 +24,11 @@ msgstr ""
 msgid "(default)"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:102
+#: site/apps/dashboard/fldashboard.html:96
 msgid "({{$ctrl.openstackSummary.stopped_instances}} stopped)"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:176
+#: site/apps/dashboard/fldashboard.html:170
 msgid "({{::$ctrl.summary.invoices_details.unpaid_invoices_count}} unpaid)"
 msgstr ""
 
@@ -71,7 +71,7 @@ msgstr ""
 msgid "- {{ $ctrl.price_per_year }} {{ $ctrl.currency }} / year"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:139
+#: site/apps/dashboard/fldashboard.html:133
 msgid "1 SSH key"
 msgid_plural "{{$ctrl.openstackSummary.pkm}} SSH keys"
 msgstr[0] ""
@@ -95,19 +95,19 @@ msgid_plural "{{flavorgroup.flavor_count}} flavors in this group"
 msgstr[0] ""
 msgstr[1] ""
 
-#: site/apps/dashboard/fldashboard.html:113
+#: site/apps/dashboard/fldashboard.html:107
 msgid "1 image"
 msgid_plural "{{$ctrl.openstackSummary.images}} images"
 msgstr[0] ""
 msgstr[1] ""
 
-#: site/apps/dashboard/fldashboard.html:99
+#: site/apps/dashboard/fldashboard.html:93
 msgid "1 instance"
 msgid_plural "{{$ctrl.openstackSummary.instances}} instances"
 msgstr[0] ""
 msgstr[1] ""
 
-#: site/apps/dashboard/fldashboard.html:168
+#: site/apps/dashboard/fldashboard.html:162
 msgid "1 invoice"
 msgstr ""
 
@@ -137,7 +137,7 @@ msgid_plural "{{::flavor.vcpus}} vCPUs"
 msgstr[0] ""
 msgstr[1] ""
 
-#: site/apps/dashboard/fldashboard.html:127
+#: site/apps/dashboard/fldashboard.html:121
 msgid "1 volume"
 msgid_plural "{{$ctrl.openstackSummary.volumes}} volumes"
 msgstr[0] ""
@@ -267,7 +267,7 @@ msgid ""
 "                  <span ng-if=\"vm.customUsernameLabel\">{{ vm.customUsernameLabel | translate }}</span>"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:37
+#: site/apps/dashboard/fldashboard.html:31
 msgid ""
 "<span ng-if=\"$ctrl.creditEnoughThisCycle === true\">\n"
 "                Since you are on a billing agreement, you will be charged after the current cycle\n"
@@ -288,13 +288,9 @@ msgid ""
 "              <span ng-if=\"$ctrl.remainingDays <= 7\" class=\"fl-red-color\">\n"
 "                <span ng-if=\"$ctrl.reachedCreditLimit === false\">\n"
 "                  Your current credit will last for about {{ $ctrl.remainingDays }} days.\n"
-"                  To avoid any service interruption, you should</span>\n"
+"                  To avoid any service interruption, you should add credit to your account.</span>\n"
 "                <span ng-if=\"$ctrl.reachedCreditLimit === true\">You are out of credit.\n"
-"                  To avoid any service interruption, you should</span>\n"
-"                <a ng-if=\"!$ctrl.externalBillingUrl && $ctrl.features['billing.invoices']\" ui-sref=\"addCredit({client_id: $ctrl.userInfo.user.clients[0].id})\" class=\"md-primary\">\n"
-"                  add credit to your account</a><a ng-if=\"$ctrl.externalBillingUrl\" ng-href=\"{{$ctrl.externalBillingUrl}}\" target=\"_blank\" class=\"md-primary\">\n"
-"                  add credit to your account</a><a ng-if=\"!$ctrl.features['billing.invoices'] && !$ctrl.externalBillingUrl\">\n"
-"                  add credit to your account</a>.\n"
+"                  To avoid any service interruption, you should add credit to your account.</span>\n"
 "              </span>"
 msgstr ""
 
@@ -893,13 +889,13 @@ msgstr ""
 msgid "API timeout"
 msgstr ""
 
-#: site/apps/osapiusers/flapiusers.component.js:99
-#: staff/apps/osapiusers/flapiusers.component.js:99
+#: site/apps/osapiusers/flapiusers.component.js:97
+#: staff/apps/osapiusers/flapiusers.component.js:97
 msgid "API user deleted"
 msgstr ""
 
-#: site/apps/osapiusers/flapiusers.component.js:68
-#: staff/apps/osapiusers/flapiusers.component.js:68
+#: site/apps/osapiusers/flapiusers.component.js:66
+#: staff/apps/osapiusers/flapiusers.component.js:66
 msgid "API user edited"
 msgstr ""
 
@@ -1197,7 +1193,7 @@ msgstr ""
 msgid "Add IPv6 subnet pool"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:145
+#: site/apps/dashboard/fldashboard.html:139
 #: site/apps/pkm/flpkmkeyedit.html:4
 #: site/apps/pkm/flpkmkeys.component.js:29
 #: site/apps/pkm/flpkmkeys.html:126
@@ -1281,9 +1277,9 @@ msgstr ""
 #: site/apps/billing/invoicing/fladdcredit.html:26
 #: site/apps/billing/invoicing/fladdcredit.html:34
 #: site/apps/billing/invoicing/states.config.js:121
-#: site/apps/dashboard/fldashboard.html:53
-#: site/apps/dashboard/fldashboard.html:57
-#: site/apps/dashboard/fldashboard.html:64
+#: site/apps/dashboard/fldashboard.html:47
+#: site/apps/dashboard/fldashboard.html:51
+#: site/apps/dashboard/fldashboard.html:58
 #: staff/apps/clients/changecredit/flclientchangecredit.html:13
 #: staff/apps/clients/changecredit/flclientchangecredit.html:31
 msgid "Add credit"
@@ -2110,7 +2106,7 @@ msgstr ""
 #: site/apps/networks/flnetworkdetails.component.js:151
 #: site/apps/networks/flnetworkdetails.component.js:72
 #: site/apps/networks/flnetworks.component.js:172
-#: site/apps/osapiusers/flapiusers.component.js:92
+#: site/apps/osapiusers/flapiusers.component.js:90
 #: site/apps/osimages/flimagedetails.component.js:48
 #: site/apps/osimages/flimages.component.js:51
 #: site/apps/osinstances/flinstancedetail.component.js:239
@@ -2158,7 +2154,7 @@ msgstr ""
 #: staff/apps/networks/flnetworkdetails.component.js:154
 #: staff/apps/networks/flnetworkdetails.component.js:75
 #: staff/apps/networks/flnetworks.component.js:172
-#: staff/apps/osapiusers/flapiusers.component.js:92
+#: staff/apps/osapiusers/flapiusers.component.js:90
 #: staff/apps/osflavorgroups/flflavorgroupdetails.component.js:106
 #: staff/apps/osflavorgroups/flflavorgroupsactions.component.js:51
 #: staff/apps/osflavors/flavortoclientgroups/flavortoclientgroups.component.js:106
@@ -2166,7 +2162,7 @@ msgstr ""
 #: staff/apps/osflavors/flflavors.component.js:40
 #: staff/apps/osimages/flimagedetails.component.js:121
 #: staff/apps/osimages/flimagedetails.component.js:211
-#: staff/apps/osimages/flimagedetails.component.js:238
+#: staff/apps/osimages/flimagedetails.component.js:242
 #: staff/apps/osimages/flimages.component.js:45
 #: staff/apps/osinstances/flinstancedetails.component.js:275
 #: staff/apps/osinstances/flinstancedetails.component.js:404
@@ -2845,7 +2841,7 @@ msgstr ""
 
 #: commons/SFA/google_authenticator/fl-google-authenticator-details.template.html:71
 #: commons/SFA/sms_authenticator/fl-sms-authenticator-details.template.html:73
-#: commons/osbackup/fl-backupschedules-create-dialog.html:54
+#: commons/osbackup/fl-backupschedules-create-dialog.html:55
 #: commons/osbackup/fl-osbackups-create-dialog.html:64
 #: commons/ui/licensewarning/fllicensewarningdialog.html:55
 #: commons/ui/useralerts/detail/fluseralertdialog.html:20
@@ -2877,7 +2873,7 @@ msgstr ""
 #: site/apps/networks/flnetworkedit.html:48
 #: site/apps/networks/flnetworksubnetedit.html:214
 #: site/apps/osapiusers/flapiuseredit.html:39
-#: site/apps/osclusters/create/flclustercreate.component.html:250
+#: site/apps/osclusters/create/flclustercreate.component.html:251
 #: site/apps/osclusters/get-certificate/flclustergetcertificate.html:29
 #: site/apps/osclusters/get-configuration/flclustergetconfiguration.html:29
 #: site/apps/osclusters/resize/flclusterresize.html:26
@@ -3118,7 +3114,7 @@ msgstr ""
 msgid "Celery"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.component.js:35
+#: site/apps/billing/history/billinghistory.component.js:39
 msgid "Ceph object storage details"
 msgstr ""
 
@@ -3708,7 +3704,7 @@ msgstr ""
 msgid "Cluster deleted scheduled"
 msgstr ""
 
-#: site/apps/osclusters/states.config.js:142
+#: site/apps/osclusters/states.config.js:144
 #: staff/apps/osclusters/states.config.js:142
 msgid "Cluster details"
 msgstr ""
@@ -3767,7 +3763,7 @@ msgstr ""
 msgid "Cluster templates"
 msgstr ""
 
-#: site/apps/osclusters/states.config.js:140
+#: site/apps/osclusters/states.config.js:142
 #: staff/apps/osclusters/states.config.js:140
 msgid "Cluster {:clusterTitle}"
 msgstr ""
@@ -4031,8 +4027,8 @@ msgstr ""
 msgid "Could not connect"
 msgstr ""
 
-#: site/apps/osapiusers/flapiusers.component.js:101
-#: staff/apps/osapiusers/flapiusers.component.js:101
+#: site/apps/osapiusers/flapiusers.component.js:99
+#: staff/apps/osapiusers/flapiusers.component.js:99
 msgid "Could not delete API User"
 msgstr ""
 
@@ -4246,7 +4242,7 @@ msgstr ""
 msgid "Create backup in client's project"
 msgstr ""
 
-#: commons/osbackup/fl-backupschedules-create-dialog.html:57
+#: commons/osbackup/fl-backupschedules-create-dialog.html:58
 msgid "Create backup schedule"
 msgstr ""
 
@@ -4260,9 +4256,9 @@ msgstr ""
 msgid "Create client"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:246
+#: site/apps/osclusters/create/flclustercreate.component.html:247
 #: site/apps/osclusters/flclusters.component.js:28
-#: site/apps/osclusters/states.config.js:104
+#: site/apps/osclusters/states.config.js:106
 #: staff/apps/osclusters/create/flclustercreate.component.html:200
 #: staff/apps/osclusters/flclusters.component.js:28
 #: staff/apps/osclusters/states.config.js:104
@@ -4306,7 +4302,7 @@ msgstr ""
 msgid "Create group"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:120
+#: site/apps/dashboard/fldashboard.html:114
 #: site/apps/osimages/create/flimagecreate.html:14
 #: site/apps/osimages/create/flimagecreate.html:225
 #: site/apps/osimages/flimages.component.js:33
@@ -4318,7 +4314,7 @@ msgstr ""
 msgid "Create image"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:106
+#: site/apps/dashboard/fldashboard.html:100
 #: site/apps/osinstances/create/flinstancecreate.html:250
 #: site/apps/osinstances/flinstances.component.js:31
 #: site/apps/osinstances/states.config.js:115
@@ -4507,7 +4503,7 @@ msgstr ""
 msgid "Create virtual server"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:133
+#: site/apps/dashboard/fldashboard.html:127
 #: site/apps/osvolumes/create/flvolumecreate.html:98
 #: site/apps/osvolumes/flvolumes.component.js:29
 #: staff/apps/osvolumes/create/flvolumecreate.html:129
@@ -5086,7 +5082,7 @@ msgstr ""
 msgid "Date of creation"
 msgstr ""
 
-#: commons/osbackup/fl-backupschedules-create-dialog.html:34
+#: commons/osbackup/fl-backupschedules-create-dialog.html:35
 #: tickets/staff/frontend/components/department_create/departmentcreate.html:59
 #: tickets/staff/frontend/components/department_details/departmentdetails.html:63
 msgid "Day"
@@ -5499,14 +5495,14 @@ msgstr ""
 
 #: site/apps/osimages/flimagedetails.component.js:50
 #: site/apps/osimages/flimages.component.js:53
-#: staff/apps/osimages/flimagedetails.component.js:240
+#: staff/apps/osimages/flimagedetails.component.js:244
 #: staff/apps/osimages/flimages.component.js:47
 msgid "Delete image"
 msgstr ""
 
 #: site/apps/osimages/flimagedetails.component.js:49
 #: site/apps/osimages/flimages.component.js:52
-#: staff/apps/osimages/flimagedetails.component.js:239
+#: staff/apps/osimages/flimagedetails.component.js:243
 #: staff/apps/osimages/flimages.component.js:46
 msgid "Delete image {{name}}"
 msgstr ""
@@ -5789,8 +5785,8 @@ msgstr ""
 msgid "Delete transaction {{transaction}}"
 msgstr ""
 
-#: site/apps/osapiusers/flapiusers.component.js:94
-#: staff/apps/osapiusers/flapiusers.component.js:94
+#: site/apps/osapiusers/flapiusers.component.js:92
+#: staff/apps/osapiusers/flapiusers.component.js:92
 #: staff/apps/users/actions/fluseractions.component.js:29
 #: staff/apps/users/actions/fluseractions.html:15
 #: staff/apps/users/actions/flxsuseractions.component.js:29
@@ -5806,8 +5802,8 @@ msgstr ""
 msgid "Delete user group {{name}}"
 msgstr ""
 
-#: site/apps/osapiusers/flapiusers.component.js:93
-#: staff/apps/osapiusers/flapiusers.component.js:93
+#: site/apps/osapiusers/flapiusers.component.js:91
+#: staff/apps/osapiusers/flapiusers.component.js:91
 msgid "Delete user {{name}}"
 msgstr ""
 
@@ -6217,7 +6213,7 @@ msgstr ""
 msgid "Discovered services"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:130
+#: site/apps/osclusters/create/flclustercreate.component.html:131
 #: staff/apps/osclusters/create/flclustercreate.component.html:98
 msgid "Discovery URL"
 msgstr ""
@@ -6392,7 +6388,7 @@ msgstr ""
 msgid "Docker storage driver: {{$ctrl.clusterTemplate.docker_storage_driver}}"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:112
+#: site/apps/osclusters/create/flclustercreate.component.html:113
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:206
 #: staff/apps/osclusters/create/flclustercreate.component.html:80
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:227
@@ -7910,7 +7906,7 @@ msgstr ""
 msgid "Floating IP details"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:214
+#: site/apps/osclusters/create/flclustercreate.component.html:215
 #: site/apps/osclustertemplates/states.config.js:74
 #: staff/apps/osclustertemplates/states.config.js:79
 msgid "Floating IP enabled"
@@ -8472,7 +8468,7 @@ msgstr ""
 msgid "Hour"
 msgstr ""
 
-#: commons/osbackup/fl-backupschedules-create-dialog.html:25
+#: commons/osbackup/fl-backupschedules-create-dialog.html:26
 msgid "Hour (UTC time)"
 msgstr ""
 
@@ -8833,12 +8829,12 @@ msgstr ""
 
 #: site/apps/osimages/flimagedetails.component.js:53
 #: site/apps/osimages/flimages.component.js:55
-#: staff/apps/osimages/flimagedetails.component.js:243
+#: staff/apps/osimages/flimagedetails.component.js:247
 #: staff/apps/osimages/flimages.component.js:49
 msgid "Image delete scheduled"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.component.js:31
+#: site/apps/billing/history/billinghistory.component.js:35
 msgid "Image details"
 msgstr ""
 
@@ -9062,7 +9058,7 @@ msgstr ""
 msgid "Instance delete scheduled"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.component.js:30
+#: site/apps/billing/history/billinghistory.component.js:34
 #: site/apps/osinstances/states.config.js:151
 #: staff/apps/osinstances/states.config.js:251
 msgid "Instance details"
@@ -9125,7 +9121,7 @@ msgstr ""
 msgid "Instance state distribution"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.component.js:36
+#: site/apps/billing/history/billinghistory.component.js:40
 msgid "Instance traffic details"
 msgstr ""
 
@@ -9321,7 +9317,7 @@ msgstr ""
 msgid "Invoicing"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:62
+#: site/apps/dashboard/fldashboard.html:56
 msgid "Invoicing feature is disabled"
 msgstr ""
 
@@ -9519,7 +9515,7 @@ msgstr ""
 msgid "Key content"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:156
+#: site/apps/osclusters/create/flclustercreate.component.html:157
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:118
 #: staff/apps/osclusters/create/flclustercreate.component.html:124
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:137
@@ -9554,8 +9550,8 @@ msgstr ""
 msgid "Label"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:224
-#: site/apps/osclusters/create/flclustercreate.component.html:229
+#: site/apps/osclusters/create/flclustercreate.component.html:225
+#: site/apps/osclusters/create/flclustercreate.component.html:230
 #: site/apps/osclusters/flclusterdetails.component.html:96
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:378
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:383
@@ -9998,7 +9994,7 @@ msgid ""
 "                    </span>"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:220
+#: site/apps/osclusters/create/flclustercreate.component.html:221
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:364
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:365
 #: site/apps/osclustertemplates/flclustertemplatedetails.component.html:152
@@ -10010,7 +10006,7 @@ msgstr ""
 msgid "Master LB"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:86
+#: site/apps/osclusters/create/flclustercreate.component.html:87
 #: staff/apps/osclusters/create/flclustercreate.component.html:54
 msgid "Master count"
 msgstr ""
@@ -10030,7 +10026,7 @@ msgstr ""
 msgid "Master flavor: {{$ctrl.clusterTemplate.master_flavor_id}}"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:194
+#: site/apps/osclusters/create/flclustercreate.component.html:195
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:154
 #: staff/apps/osclusters/create/flclustercreate.component.html:162
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:173
@@ -10208,7 +10204,7 @@ msgstr ""
 msgid "Minute"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:125
+#: site/apps/osclusters/create/flclustercreate.component.html:126
 #: staff/apps/osclusters/create/flclustercreate.component.html:93
 msgid "Misc"
 msgstr ""
@@ -10245,7 +10241,7 @@ msgstr ""
 #: commons/ui/filter/flfilterdisplay.html:30
 #: domains/enduser/frontend/components/domains_actions/domainsactions.html:3
 #: domains/staff/frontend/components/domains_actions/domainsactions.html:12
-#: site/apps/dashboard/fldashboard.html:82
+#: site/apps/dashboard/fldashboard.html:76
 #: site/apps/networks/flnetworks.html:120
 #: site/apps/operations/operationactions.html:6
 #: site/apps/osapiusers/flapiusers.html:102
@@ -10574,7 +10570,7 @@ msgstr ""
 msgid "Network delete scheduled"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.component.js:33
+#: site/apps/billing/history/billinghistory.component.js:37
 #: site/apps/networks/states.config.js:111
 #: site/apps/osinstances/flinstancedetail.html:71
 #: staff/apps/networks/states.config.js:129
@@ -10910,7 +10906,7 @@ msgid "No Routers"
 msgstr ""
 
 #: commons/ui/flsubheader/flsubheader.component.js:40
-#: site/apps/dashboard/fldashboard.html:141
+#: site/apps/dashboard/fldashboard.html:135
 msgid "No SSH keys"
 msgstr ""
 
@@ -11121,15 +11117,15 @@ msgstr ""
 msgid "No history log"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:115
+#: site/apps/dashboard/fldashboard.html:109
 msgid "No images"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:101
+#: site/apps/dashboard/fldashboard.html:95
 msgid "No instances"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:180
+#: site/apps/dashboard/fldashboard.html:174
 #: staff/apps/clients/flclientdetails.html:126
 msgid "No invoices"
 msgstr ""
@@ -11142,7 +11138,7 @@ msgstr ""
 msgid "No journal entries"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:164
+#: site/apps/osclusters/create/flclustercreate.component.html:165
 #: site/apps/osinstances/create/flinstancecreate.html:193
 #: site/apps/osinstances/rebuild/flinstancerebuild.html:76
 #: staff/apps/osclusters/create/flclustercreate.component.html:132
@@ -11300,7 +11296,7 @@ msgstr ""
 msgid "No servers found"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:194
+#: site/apps/dashboard/fldashboard.html:188
 #: staff/apps/clients/flclientdetails.html:532
 msgid "No services"
 msgstr ""
@@ -11387,7 +11383,7 @@ msgstr ""
 msgid "No volume types found."
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:129
+#: site/apps/dashboard/fldashboard.html:123
 #: site/apps/osvolumes/attach/flvolumeattach.html:21
 #: staff/apps/osvolumes/attach/flvolumeattach.html:21
 msgid "No volumes"
@@ -11416,7 +11412,7 @@ msgid ""
 "                    </span>"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:99
+#: site/apps/osclusters/create/flclustercreate.component.html:100
 #: site/apps/osclusters/resize/flclusterresize.html:10
 #: staff/apps/osclusters/create/flclustercreate.component.html:67
 #: staff/apps/osclusters/resize/flclusterresize.html:10
@@ -11428,7 +11424,7 @@ msgstr ""
 msgid "Node count: {{$ctrl.cluster.node_count}}"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:178
+#: site/apps/osclusters/create/flclustercreate.component.html:179
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:138
 #: staff/apps/osclusters/create/flclustercreate.component.html:146
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:157
@@ -11655,7 +11651,7 @@ msgstr ""
 msgid "Number of backups to keep (the rest backups of type manual will be deleted)"
 msgstr ""
 
-#: commons/osbackup/fl-backupschedules-create-dialog.html:45
+#: commons/osbackup/fl-backupschedules-create-dialog.html:46
 msgid "Number of backups to keep (the rest of the selected type will be deleted)"
 msgstr ""
 
@@ -11725,7 +11721,7 @@ msgstr ""
 msgid "Object count: {{ $ctrl.volumeBackup.object_count }}"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.component.js:34
+#: site/apps/billing/history/billinghistory.component.js:38
 msgid "Object storage details"
 msgstr ""
 
@@ -11969,7 +11965,7 @@ msgstr ""
 msgid "Order new domain"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:199
+#: site/apps/dashboard/fldashboard.html:193
 msgid "Order new service"
 msgstr ""
 
@@ -12299,7 +12295,7 @@ msgstr ""
 msgid "Please select a transaction to refund."
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.js:107
+#: site/apps/osclusters/create/flclustercreate.component.js:108
 #: staff/apps/osclusters/create/flclustercreate.component.js:97
 msgid "Please select a valid cluster template"
 msgstr ""
@@ -13982,7 +13978,7 @@ msgstr ""
 msgid "Root password"
 msgstr ""
 
-#: commons/osbackup/fl-backupschedules-create-dialog.html:43
+#: commons/osbackup/fl-backupschedules-create-dialog.html:44
 msgid "Rotation"
 msgstr ""
 
@@ -14851,14 +14847,14 @@ msgstr ""
 msgid "Select item"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:161
+#: site/apps/osclusters/create/flclustercreate.component.html:162
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:122
 #: staff/apps/osclusters/create/flclustercreate.component.html:129
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:141
 msgid "Select keypair"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:199
+#: site/apps/osclusters/create/flclustercreate.component.html:200
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:159
 #: staff/apps/osclusters/create/flclustercreate.component.html:167
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:178
@@ -14912,7 +14908,7 @@ msgstr ""
 msgid "Select new host"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:183
+#: site/apps/osclusters/create/flclustercreate.component.html:184
 #: site/apps/osclustertemplates/create/flclustertemplate-create.component.html:143
 #: staff/apps/osclusters/create/flclustercreate.component.html:151
 #: staff/apps/osclustertemplates/create/flclustertemplate-create.component.html:162
@@ -15330,7 +15326,7 @@ msgid "Service:"
 msgstr ""
 
 #: site/apps/billing/services/states.config.js:32
-#: site/apps/dashboard/fldashboard.html:158
+#: site/apps/dashboard/fldashboard.html:152
 #: staff/apps/billing/states.config.js:168
 #: staff/apps/clients/flclientdetails.html:527
 #: staff/apps/reports/revenue_reports/revenue_report_details.template.html:41
@@ -15667,7 +15663,7 @@ msgstr ""
 msgid "Signatures used when responding to a ticket."
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:81
+#: site/apps/osclusters/create/flclustercreate.component.html:82
 #: site/apps/osvolumebackups/flvolumebackups.html:62
 #: site/apps/osvolumebackups/states.config.js:47
 #: site/apps/osvolumebackups/states.config.js:83
@@ -16169,7 +16165,7 @@ msgid "Successfully created cluster template."
 msgstr ""
 
 #: site/apps/billing/history/billinghistory.html:34
-#: site/apps/dashboard/fldashboard.html:90
+#: site/apps/dashboard/fldashboard.html:84
 msgid "Summary"
 msgstr ""
 
@@ -16786,7 +16782,7 @@ msgstr ""
 msgid "Time unit"
 msgstr ""
 
-#: site/apps/osclusters/create/flclustercreate.component.html:143
+#: site/apps/osclusters/create/flclustercreate.component.html:144
 #: staff/apps/osclusters/create/flclustercreate.component.html:111
 msgid "Timeout"
 msgstr ""
@@ -17138,7 +17134,7 @@ msgstr ""
 msgid "Unpaid"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:71
+#: site/apps/dashboard/fldashboard.html:65
 msgid "Unpaid usage"
 msgstr ""
 
@@ -17664,7 +17660,7 @@ msgstr ""
 msgid "Version {{ $ctrl.tos.version }}"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:83
+#: site/apps/dashboard/fldashboard.html:77
 msgid "View all services"
 msgstr ""
 
@@ -17770,7 +17766,7 @@ msgstr ""
 msgid "Volume delete scheduled"
 msgstr ""
 
-#: site/apps/billing/history/billinghistory.component.js:32
+#: site/apps/billing/history/billinghistory.component.js:36
 #: site/apps/osvolumes/states.config.js:150
 #: staff/apps/osvolumes/states.config.js:151
 msgid "Volume details"
@@ -18763,7 +18759,7 @@ msgstr ""
 
 #: site/apps/osimages/flimagedetails.component.js:51
 #: site/apps/osimages/flimages.component.js:54
-#: staff/apps/osimages/flimagedetails.component.js:241
+#: staff/apps/osimages/flimagedetails.component.js:245
 #: staff/apps/osimages/flimages.component.js:48
 msgid "pending"
 msgstr ""
@@ -19133,15 +19129,15 @@ msgstr ""
 msgid "{{::$ctrl.summary.domains_count}} domains"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:171
+#: site/apps/dashboard/fldashboard.html:165
 msgid "{{::$ctrl.summary.invoices_details.invoices_count}} invoices"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:189
+#: site/apps/dashboard/fldashboard.html:183
 msgid "{{::$ctrl.summary.services.length}} service"
 msgstr ""
 
-#: site/apps/dashboard/fldashboard.html:192
+#: site/apps/dashboard/fldashboard.html:186
 msgid "{{::$ctrl.summary.services.length}} services"
 msgstr ""
 
