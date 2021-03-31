@@ -74,6 +74,36 @@ Alternatively you can manually edit `index.html` files for staff and end-user, b
 time you update Fleio frontend to avoid losing the changes.
 
 
+### Adding a translation for a new language to the new Angular frontend
+
+From version 2021.04.0 of Fleio you can add translations for the new Angular frontend.
+
+In order to do so get the template.json file from this repo, copy it to a file named "messages.{lang}.json", where "lang" is the language code (e.g. "messages.fr.json"). Edit the strings in this file and after that we can publish those on Fleio server for each panel we want to allow translations.
+
+On deb/rpm installations of Fleio, copy the json file containing translations to `/var/webapps/fleio/frontend/enduser/assets/locale`. Do so for other panels if you want translations on each of them.
+
+If you have Fleio installed using Docker, first read this documentation on adding files: https://fleio.com/docs/developer/add-change-docker-files.html#change-docker-files. So, if we follow the linked docs, we add our "messages.{lang}.json" file to the "/home/fleio/compose/custom/" example directory and in the "/home/fleio/compose/custom/Dockerfile" file we'll make sure it is copied in the appropiate location:
+
+```
+COPY messages.fr.json "$INSTALL_PATH/frontend/enduser/assets/locale/messages.fr.json"
+```
+
+The last step is to update the `availableLanguages` list in panels' config files. On deb/rpm installations simply edit the related files (`/var/webapps/fleio/frontend/enduser/assets/config/enduser.config.json`). On docker installations on fleio, use the following command to edit the config file: `fleio edit enduser.config.json`. Add the the key if it doesn't exist, or update it. For example, it may look like this:
+
+```
+{
+  ...
+  "settings": {
+    ...
+    "availableLanguages": ["en", "fr"],
+    ...
+  }
+}
+```
+
+You can also update the `defaultLanguage` variable and login/signup pages will be changed according to that. Keep in mind that when adding a new language to available languages, or when changing default language of a panel, you need to have the related `messages.{lang}.json` file in the appropiate directory.
+
+
 ### Enabling the new language
 
 In order to enable the new language copy the `LANGUAGES` variable from '/var/webapps/fleio/project/fleio/base_settings.py'
