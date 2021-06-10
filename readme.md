@@ -61,18 +61,25 @@ After you edit the translation file with `Poedit` use `gulp translations` to gen
 Note: if you encounter any problems with the above command, make sure you have latest npm version or specify the 
 gulp.js file manually like this: `node ./node_modules/gulp/bin/gulp.js translations`.
 
-The new language file should be placed somewhere in the Fleio frontend installation directory 
-(e.g. `/var/webapps/fleio/frontend/site/translations`) and use **Frontend customization** 
-feature available in fleio staff panel at **Settings/General** section to include your `.js` file `index.html` for both
-staff and end-user:
+The new language file should be placed in the `fleio_frontend_1` container, in `/var/webapps/fleio/frontend/site/translations`.
+Additionally, you need to add the following code it to your index.html file. 
 
 `<script src="translations/ro.js"></script>`
 
-You can add it in the "Insert code at the end of the <body> tag" section.
+We have an example on how to add custom files to the fleio_frontend_1 container and how to add custom 
+code in the index.html file here: https://fleio.com/docs/developer/add-change-docker-files.html#example-change-favicon-add-custom-css-and-google-analytics
 
-Alternatively you can manually edit `index.html` files for staff and end-user, but then you will have to edit them each
-time you update Fleio frontend to avoid losing the changes.
+If we follow that example, we see that we need to add the following lines to our Dockerfile:
 
+```
+COPY ro.js /var/webapps/fleio/frontend/site/translations/ro.js
+RUN sed -i \
+'s^<!-- end of body -->^<script src="translations/ro.js"></script><!-- end of body -->^' \
+/var/webapps/fleio/frontend/site/index.html
+RUN sed -i \
+'s^<!-- end of body -->^<script src="translations/ro.js"></script><!-- end of body -->^' \
+/var/webapps/fleio/frontend/site/staff/index.html
+```
 
 ### Adding a translation for a new language to the new Angular frontend
 
