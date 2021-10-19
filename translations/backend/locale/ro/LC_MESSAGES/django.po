@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-08 06:51+0000\n"
+"POT-Creation-Date: 2021-10-06 13:20+0000\n"
 "PO-Revision-Date: 2018-10-11 16:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -34,19 +34,19 @@ msgstr ""
 "Nu se poate extrage fișierul zip. Vă rugăm să permiteți accesul pentru "
 "scriere și să reactivați licența."
 
-#: binaries/middleware.py:157 binaries/no_block_middleware.py:93
+#: binaries/middleware.py:156 binaries/no_block_middleware.py:92
 msgid "License not found"
 msgstr "Licență nu a fost găsită"
 
-#: binaries/middleware.py:162 binaries/no_block_middleware.py:98
+#: binaries/middleware.py:161 binaries/no_block_middleware.py:97
 msgid "Please contact support"
 msgstr "Vă rugăm contactati personalul"
 
-#: binaries/middleware.py:174 fleio/core/exceptions.py:31
+#: binaries/middleware.py:173 fleio/core/exceptions.py:31
 msgid "License is invalid"
 msgstr "Licența este invalidă"
 
-#: binaries/middleware.py:184
+#: binaries/middleware.py:183
 #, fuzzy
 #| msgid "Login not allowed. Please contact support"
 msgid "The panel is currently suspended. Please contact support"
@@ -65,7 +65,7 @@ msgstr ""
 msgid "OpenStack settings cannot be saved at this moment"
 msgstr ""
 
-#: binaries/openstack_utils.py:83
+#: binaries/openstack_utils.py:88
 #, fuzzy
 #| msgid "Settings successfully saved. A sync process will begin."
 msgid "Settings successfully saved. Starting sync openstack objects task."
@@ -119,32 +119,32 @@ msgstr "Subtotal ({})"
 msgid "Total ({})"
 msgstr "Total ({})"
 
-#: common_admin/billing/products/views/product.py:99
-#: common_admin/billing/products/views/product.py:104
+#: common_admin/billing/products/views/product.py:100
+#: common_admin/billing/products/views/product.py:105
 msgid "Can't delete product in use by services"
 msgstr "Nu pot șterge produs care e folosit de servicii"
 
-#: common_admin/billing/products/views/product.py:123
+#: common_admin/billing/products/views/product.py:126
 msgid "Option associated"
 msgstr "Opțiune asociată"
 
-#: common_admin/billing/products/views/product.py:131
+#: common_admin/billing/products/views/product.py:134
 msgid "No option provided"
 msgstr "Nicio o opțiune furnizată"
 
-#: common_admin/billing/products/views/product.py:135
+#: common_admin/billing/products/views/product.py:138
 msgid "Option does not exist"
 msgstr "Optiunea nu există"
 
-#: common_admin/billing/products/views/product.py:137
+#: common_admin/billing/products/views/product.py:140
 msgid "Option not associated with product"
 msgstr "Opțiunea nu este asociată cu un produs"
 
-#: common_admin/billing/products/views/product.py:139
+#: common_admin/billing/products/views/product.py:142
 msgid "Option dissociated"
 msgstr "Opțiune dezasociată"
 
-#: common_admin/billing/services/views/service.py:102
+#: common_admin/billing/services/views/service.py:104
 #, fuzzy
 #| msgid "Unable to update user in OpenStack. Check logs for more info"
 msgid "Could not remove associated resource. Check logs for more details."
@@ -152,81 +152,92 @@ msgstr ""
 "Nu se poate actualiza utilizatorul in OpenStack. Verifică log-urile pentru "
 "mai multe informații"
 
-#: common_admin/billing/services/views/service.py:104
+#: common_admin/billing/services/views/service.py:106
 #, fuzzy
 #| msgid "Unable to initialize the ceilometer client"
 msgid "Failed to remove resource from service ({}): {}"
 msgstr "Nu se poate inițializa clientul ceilometer"
 
-#: common_admin/billing/services/views/service.py:107
+#: common_admin/billing/services/views/service.py:109
 #, fuzzy
 #| msgid "Ticket {} opened"
 msgid "Successfully removed associated resource."
 msgstr "Tickete {} deschise"
 
-#: common_admin/billing/services/views/service.py:119
+#: common_admin/billing/services/views/service.py:121
 #, fuzzy
 #| msgid "Unable to initialize the ceilometer client"
 msgid "Failed to associate resource to service ({})"
 msgstr "Nu se poate inițializa clientul ceilometer"
 
-#: common_admin/billing/services/views/service.py:122
+#: common_admin/billing/services/views/service.py:124
 #, fuzzy
 #| msgid "Unable to initialize the ceilometer client"
 msgid "Failed to associate resource to service ({}): {}"
 msgstr "Nu se poate inițializa clientul ceilometer"
 
-#: common_admin/billing/services/views/service.py:126
+#: common_admin/billing/services/views/service.py:128
 #, fuzzy
 #| msgid "No token associated with user: {0} ({1})"
 msgid "Resource was associated to service."
 msgstr "Nu exista nici un token asociat cu utilizatorul: {0} ({1})"
 
 #: common_admin/billing/services/views/service.py:141
+#: common_admin/billing/services/views/service.py:172
+#: common_admin/core/clients/views/client.py:128
+#: fleiostaff/core/clients/serializers.py:292
+#: fleiostaff/core/clients/views.py:129 fleiostaff/core/clients/views.py:474
+#: fleiostaff/openstack/core/views.py:105
+#, fuzzy
+#| msgid "License file not intact. Please reactivate license"
+msgid "License client limit reached. Please check your license"
+msgstr "Fișierul de licență nu este intact. Vă rugăm să reactivați licență"
+
+#: common_admin/billing/services/views/service.py:147
 msgid ""
 "Re-activating a terminated openstack service is not supported. Create a new "
 "one from client page."
 msgstr ""
 
-#: common_admin/billing/services/views/service.py:148
+#: common_admin/billing/services/views/service.py:154
 #: fleio/openstack/models/cluster.py:75 fleio/openstack/models/heat_stack.py:45
 msgid "Create in progress"
 msgstr "Creare în progres"
 
-#: common_admin/billing/services/views/service.py:155
+#: common_admin/billing/services/views/service.py:161
 msgid "Service resources already exists."
 msgstr "Resursa serviciului există deja."
 
-#: common_admin/billing/services/views/service.py:167
+#: common_admin/billing/services/views/service.py:177
 #: fleio/openstack/models/heat_stack.py:60
 msgid "Resume in progress"
 msgstr "Reîncepere în progres"
 
-#: common_admin/billing/services/views/service.py:174
+#: common_admin/billing/services/views/service.py:184
 msgid "Service is not suspended"
 msgstr "Serviciul nu este suspendat"
 
-#: common_admin/billing/services/views/service.py:186
+#: common_admin/billing/services/views/service.py:196
 #: fleio/openstack/models/heat_stack.py:57
 msgid "Suspend in progress"
 msgstr "Serviciul în progres"
 
-#: common_admin/billing/services/views/service.py:193
+#: common_admin/billing/services/views/service.py:203
 msgid "Service is not active"
 msgstr "Serviciul nu este activ"
 
-#: common_admin/billing/services/views/service.py:204
+#: common_admin/billing/services/views/service.py:214
 msgid "Service is not active or suspended"
 msgstr "Serviciul nu este activ sau suspendat"
 
-#: common_admin/billing/services/views/service.py:220
-#: common_admin/billing/services/views/service.py:267
+#: common_admin/billing/services/views/service.py:230
+#: common_admin/billing/services/views/service.py:277
 msgid ""
 "Suspend instead of terminate is enabled for the client. Suspending service."
 msgstr ""
 "Clientul are activată suspendarea în locul terminării. Suspend serviciul."
 
-#: common_admin/billing/services/views/service.py:228
+#: common_admin/billing/services/views/service.py:238
 msgid ""
 "Suspend instead of terminate is enabled for the client and service is not "
 "active."
@@ -234,35 +245,35 @@ msgstr ""
 "Clientul are activată suspendarea în locul terminării și serviciul nu este "
 "activ."
 
-#: common_admin/billing/services/views/service.py:237
+#: common_admin/billing/services/views/service.py:247
 msgid "Terminate in progress"
 msgstr "Terminare în progres"
 
-#: common_admin/billing/services/views/service.py:250
+#: common_admin/billing/services/views/service.py:260
 msgid ""
 "Both delete associated resources and delete only from db flags were passed, "
 "you can only use one of this flags."
 msgstr ""
 
-#: common_admin/billing/services/views/service.py:273
+#: common_admin/billing/services/views/service.py:283
 msgid ""
 "Suspend instead of terminate is enabled for the client, service not deleted."
 msgstr ""
 "Clientul are activată suspendarea în locul terminării, serviciu neșters."
 
-#: common_admin/billing/services/views/service.py:316
 #: common_admin/billing/services/views/service.py:326
-#: common_admin/billing/services/views/service.py:341
+#: common_admin/billing/services/views/service.py:336
+#: common_admin/billing/services/views/service.py:351
 msgid "Delete in progress."
 msgstr "Ștergere în desfășurare"
 
-#: common_admin/billing/services/views/service.py:347
+#: common_admin/billing/services/views/service.py:357
 msgid "Cannot delete service with active resources, terminate service first."
 msgstr ""
 "Nu se poate șterge un serviciu cu resurse active, terminați serviciul prima "
 "dată."
 
-#: common_admin/billing/services/views/service.py:402
+#: common_admin/billing/services/views/service.py:412
 #, fuzzy
 #| msgid "Unable to update user in OpenStack. Check logs for more info"
 msgid "Failed to upgrade service, check logs for more details."
@@ -270,92 +281,92 @@ msgstr ""
 "Nu se poate actualiza utilizatorul in OpenStack. Verifică log-urile pentru "
 "mai multe informații"
 
-#: common_admin/billing/services/views/service.py:409
+#: common_admin/billing/services/views/service.py:419
 #, fuzzy
 #| msgid "Unable to initialize the ceilometer client"
 msgid "Cannot manually issue invoice for this service."
 msgstr "Nu se poate inițializa clientul ceilometer"
 
-#: common_admin/billing/services/views/service.py:417
+#: common_admin/billing/services/views/service.py:427
 #, fuzzy
 #| msgid "Unable to initialize the ceilometer client"
 msgid "Failed to issue invoice for service: {}"
 msgstr "Nu se poate inițializa clientul ceilometer"
 
-#: common_admin/billing/services/views/service.py:419
+#: common_admin/billing/services/views/service.py:429
 #, fuzzy
 #| msgid "Invoice deleted"
 msgid "Invoice issued"
 msgstr "Factură ștearsă"
 
-#: common_admin/billing/services/views/service.py:427
+#: common_admin/billing/services/views/service.py:437
 msgid ""
 "Billing seems to be already enabled for this service or initial cycle was "
 "not even created."
 msgstr ""
 
-#: common_admin/billing/services/views/service.py:440
+#: common_admin/billing/services/views/service.py:450
 msgid ""
 "You need to specify the start date for the new service cycle. Options are: "
 "{}, {}, {}."
 msgstr ""
 
-#: common_admin/billing/services/views/service.py:467
+#: common_admin/billing/services/views/service.py:477
 #, fuzzy
 #| msgid "Unable to initialize the ceilometer client"
 msgid "Failed to enable billing for service: {}"
 msgstr "Nu se poate inițializa clientul ceilometer"
 
-#: common_admin/billing/services/views/service.py:469
+#: common_admin/billing/services/views/service.py:479
 #, fuzzy
 #| msgid "Billing cycle"
 msgid "Billing enabled."
 msgstr "Ciclu de facturare"
 
-#: common_admin/billing/services/views/service.py:475
+#: common_admin/billing/services/views/service.py:485
 msgid "Cannot update os plan because openstack plans feature is disabled"
 msgstr ""
 
-#: common_admin/billing/services/views/service.py:482
+#: common_admin/billing/services/views/service.py:492
 #, fuzzy
 #| msgid "Cannot change OpenStack settings in demo mode"
 msgid "Cannot change pricing plan for service in this state."
 msgstr "Nu se pot salva setările OpenStack în modul demo"
 
-#: common_admin/billing/services/views/service.py:486
+#: common_admin/billing/services/views/service.py:496
 #, fuzzy
 #| msgid "Prices for {} updated"
 msgid "Pricing plan updated"
 msgstr "Prețurile pentru {} au fost actualizate"
 
-#: common_admin/billing/services/views/service.py:494
+#: common_admin/billing/services/views/service.py:504
 msgid "Invoiced periods were successfully re-set back to unpaid."
 msgstr ""
 
-#: common_admin/core/clients/views/client.py:115
+#: common_admin/core/clients/views/client.py:116
 msgid "Client already suspended"
 msgstr "Clientul este deja suspendat"
 
-#: common_admin/core/clients/views/client.py:117
+#: common_admin/core/clients/views/client.py:118
 msgid "Suspend scheduled"
 msgstr "Suspendare programată"
 
-#: common_admin/core/clients/views/client.py:127
+#: common_admin/core/clients/views/client.py:131
 msgid "Client is not suspended"
 msgstr "Clientul nu este suspendat"
 
-#: common_admin/core/clients/views/client.py:129
+#: common_admin/core/clients/views/client.py:133
 msgid "Resume scheduled"
 msgstr "Reluarea programată"
 
-#: common_admin/core/clients/views/client.py:232
+#: common_admin/core/clients/views/client.py:236
 #: fleio/core/clients/views.py:195
 #, fuzzy
 #| msgid "Option does not exist"
 msgid "Specified user is not assigned to client"
 msgstr "Optiunea nu există"
 
-#: common_admin/core/clients/views/client.py:251
+#: common_admin/core/clients/views/client.py:255
 #, fuzzy
 #| msgid "Can not migrate instance."
 msgid "Cannot remove the last owner role."
@@ -367,56 +378,48 @@ msgstr "Nu se poate migra instanța."
 msgid "At least a role should be selected"
 msgstr "Volumul nu poate fi șters acum"
 
-#: common_admin/core/users/views/user.py:57
+#: common_admin/core/users/views/user.py:56
 msgid "User {} impersonated"
 msgstr "Utilizatorul {} a fost impersonat"
 
-#: common_admin/core/users/views/user.py:66
-msgid "User is no longer impersonated"
-msgstr "Utilizatorul nu mai este impersonat"
-
-#: common_admin/core/users/views/user.py:68
-msgid "No user is impersonated"
-msgstr "Nu este nici un utilizator impersonat"
-
-#: common_admin/core/users/views/user.py:81
+#: common_admin/core/users/views/user.py:72
 #, fuzzy
 #| msgid "No token associated with user: {0} ({1})"
 msgid "Clients cannot be associated to staff users or superusers"
 msgstr "Nu exista nici un token asociat cu utilizatorul: {0} ({1})"
 
-#: common_admin/core/users/views/user.py:91
-#: common_admin/core/users/views/user.py:115
+#: common_admin/core/users/views/user.py:82
+#: common_admin/core/users/views/user.py:106
 #: fleio/billing/invoicing/views.py:75 fleio/openstack/instances/views.py:196
-#: plugins/domains/staff/views/domains.py:74
+#: plugins/domains/staff/views/domains.py:75
 msgid "Client not found"
 msgstr "Clientul nu a fost găsit"
 
-#: common_admin/core/users/views/user.py:97
+#: common_admin/core/users/views/user.py:88
 #, fuzzy
 #| msgid "No token associated with user: {0} ({1})"
 msgid "Client is already associated with this user"
 msgstr "Nu exista nici un token asociat cu utilizatorul: {0} ({1})"
 
-#: common_admin/core/users/views/user.py:98
+#: common_admin/core/users/views/user.py:89
 #, fuzzy
 #| msgid "Option associated"
 msgid "Client associated"
 msgstr "Opțiune asociată"
 
-#: common_admin/core/users/views/user.py:104
+#: common_admin/core/users/views/user.py:95
 #: common_admin/openstack/flavors/views/flavor.py:189
 #: common_admin/openstack/images/views/image.py:173
 #: common_admin/openstack/users/views/user.py:184
-#: fleiostaff/core/clients/views.py:210 fleiostaff/core/users/views.py:102
+#: fleiostaff/core/clients/views.py:229 fleiostaff/core/users/views.py:102
 #: fleiostaff/core/users/views.py:110 fleiostaff/core/users/views.py:187
-#: fleiostaff/core/views.py:434 fleiostaff/openstack/projects/views.py:123
+#: fleiostaff/core/views.py:454 fleiostaff/openstack/projects/views.py:127
 #: reseller/core/clients/views/client.py:127
 #: reseller/core/users/views/user.py:65
 msgid "Operation not allowed in demo mode"
 msgstr "Operațiunea nu este permisă in modul demo"
 
-#: common_admin/core/users/views/user.py:117
+#: common_admin/core/users/views/user.py:108
 #, fuzzy
 #| msgid "Option dissociated"
 msgid "Client dissociated"
@@ -494,7 +497,7 @@ msgstr "Lipsește id-ul grupului după care să filtrez"
 #: common_admin/openstack/flavors/views/flavor.py:269
 #: common_admin/openstack/flavors/views/flavor.py:292
 #: common_admin/openstack/flavors/views/flavor.py:312
-#: fleiostaff/core/clients/views.py:298 fleiostaff/core/clients/views.py:313
+#: fleiostaff/core/clients/views.py:317 fleiostaff/core/clients/views.py:332
 #: fleiostaff/core/users/views.py:317 fleiostaff/core/users/views.py:340
 msgid "No group to filter against"
 msgstr "Nici un grup după care sa filtrez"
@@ -657,8 +660,8 @@ msgstr "Reluarea programată"
 #: common_admin/openstack/users/views/user.py:58
 #: common_admin/openstack/users/views/user.py:68
 #: fleio/openstack/users/views.py:54 fleio/openstack/users/views.py:64
-#: fleiostaff/openstack/core/views.py:112
-#: fleiostaff/openstack/summary_views.py:131
+#: fleiostaff/openstack/core/views.py:123
+#: fleiostaff/openstack/summary_views.py:132
 msgid "Could not connect to openstack"
 msgstr "Nu mă pot conecta la OpenStack"
 
@@ -735,7 +738,7 @@ msgid "Unable to delete volume"
 msgstr "Nu pot șterge volumul"
 
 #: common_admin/openstack/volumes/views/volume.py:218
-#: fleio/openstack/instances/views.py:1970 fleio/openstack/volumes/views.py:344
+#: fleio/openstack/instances/views.py:1972 fleio/openstack/volumes/views.py:344
 #, fuzzy
 #| msgid "Router - Update"
 msgid "Cannot simulate price. Volume type not found in the database."
@@ -866,400 +869,400 @@ msgstr " (Impersonat de către {impersonator} ({impersonator_id}))"
 msgid "Unknown activity"
 msgstr "Necunoscut"
 
-#: fleio/base_settings.py:491 fleio/base_settings.py:726
-#: fleio/base_settings_openstack.py:462 fleio/base_settings_openstack.py:687
-#: fleio/base_settings_web.py:80 fleio/base_settings_web.py:202
+#: fleio/base_settings.py:494 fleio/base_settings.py:729
+#: fleio/base_settings_openstack.py:470 fleio/base_settings_openstack.py:695
+#: fleio/base_settings_web.py:75 fleio/base_settings_web.py:197
 msgid "Dashboard"
 msgstr ""
 
-#: fleio/base_settings.py:493 fleio/base_settings.py:633
-#: fleio/base_settings.py:728 fleio/base_settings_openstack.py:464
-#: fleio/base_settings_openstack.py:594 fleio/base_settings_openstack.py:689
-#: fleio/base_settings_web.py:82 fleio/base_settings_web.py:168
-#: fleio/base_settings_web.py:204
+#: fleio/base_settings.py:496 fleio/base_settings.py:636
+#: fleio/base_settings.py:731 fleio/base_settings_openstack.py:472
+#: fleio/base_settings_openstack.py:602 fleio/base_settings_openstack.py:697
+#: fleio/base_settings_web.py:77 fleio/base_settings_web.py:163
+#: fleio/base_settings_web.py:199
 #: fleio/core/models/permission_definitions.py:20
 #, fuzzy
 #| msgid "Router - Destroy"
 msgid "Clients & users"
 msgstr "Router - Distruge"
 
-#: fleio/base_settings.py:495 fleio/base_settings.py:730
-#: fleio/base_settings_openstack.py:466 fleio/base_settings_openstack.py:691
-#: fleio/base_settings_web.py:84 fleio/base_settings_web.py:206
+#: fleio/base_settings.py:498 fleio/base_settings.py:733
+#: fleio/base_settings_openstack.py:474 fleio/base_settings_openstack.py:699
+#: fleio/base_settings_web.py:79 fleio/base_settings_web.py:201
 #, fuzzy
 #| msgid "Username"
 msgid "Users"
 msgstr "Nume utilizator"
 
-#: fleio/base_settings.py:497 fleio/base_settings_openstack.py:468
-#: fleio/base_settings_web.py:86
+#: fleio/base_settings.py:500 fleio/base_settings_openstack.py:476
+#: fleio/base_settings_web.py:81
 msgid "User groups"
 msgstr ""
 
-#: fleio/base_settings.py:499 fleio/base_settings.py:638
-#: fleio/base_settings.py:732 fleio/base_settings_openstack.py:470
-#: fleio/base_settings_openstack.py:599 fleio/base_settings_openstack.py:693
-#: fleio/base_settings_web.py:88 fleio/base_settings_web.py:173
-#: fleio/base_settings_web.py:208
+#: fleio/base_settings.py:502 fleio/base_settings.py:641
+#: fleio/base_settings.py:735 fleio/base_settings_openstack.py:478
+#: fleio/base_settings_openstack.py:607 fleio/base_settings_openstack.py:701
+#: fleio/base_settings_web.py:83 fleio/base_settings_web.py:168
+#: fleio/base_settings_web.py:203
 #, fuzzy
 #| msgid "Client Credit"
 msgid "Clients"
 msgstr "Credit Client"
 
-#: fleio/base_settings.py:501 fleio/base_settings_openstack.py:472
-#: fleio/base_settings_web.py:90
+#: fleio/base_settings.py:504 fleio/base_settings_openstack.py:480
+#: fleio/base_settings_web.py:85
 #, fuzzy
 #| msgid "Client has no OpenStack project"
 msgid "Client groups"
 msgstr "Clientul nu are nici un proiect OpenStack"
 
-#: fleio/base_settings.py:503 fleio/base_settings.py:635
-#: fleio/base_settings_openstack.py:474 fleio/base_settings_openstack.py:596
-#: fleio/base_settings_web.py:92 fleio/base_settings_web.py:170
+#: fleio/base_settings.py:506 fleio/base_settings.py:638
+#: fleio/base_settings_openstack.py:482 fleio/base_settings_openstack.py:604
+#: fleio/base_settings_web.py:87 fleio/base_settings_web.py:165
 msgid "Roles"
 msgstr ""
 
-#: fleio/base_settings.py:509 fleio/base_settings.py:643
-#: fleio/base_settings.py:737 fleio/base_settings_openstack.py:480
-#: fleio/base_settings_openstack.py:604 fleio/base_settings_openstack.py:698
+#: fleio/base_settings.py:512 fleio/base_settings.py:646
+#: fleio/base_settings.py:740 fleio/base_settings_openstack.py:488
+#: fleio/base_settings_openstack.py:612 fleio/base_settings_openstack.py:706
 msgid "Cloud"
 msgstr ""
 
-#: fleio/base_settings.py:512 fleio/base_settings.py:646
-#: fleio/base_settings.py:740 fleio/base_settings_openstack.py:483
-#: fleio/base_settings_openstack.py:607 fleio/base_settings_openstack.py:701
+#: fleio/base_settings.py:515 fleio/base_settings.py:649
+#: fleio/base_settings.py:743 fleio/base_settings_openstack.py:491
+#: fleio/base_settings_openstack.py:615 fleio/base_settings_openstack.py:709
 #: fleio/openstack/billing_module.py:542
 msgid "Instances"
 msgstr "Instanțe"
 
-#: fleio/base_settings.py:514 fleio/base_settings.py:648
-#: fleio/base_settings_openstack.py:485 fleio/base_settings_openstack.py:609
+#: fleio/base_settings.py:517 fleio/base_settings.py:651
+#: fleio/base_settings_openstack.py:493 fleio/base_settings_openstack.py:617
 #, fuzzy
 #| msgid "Routers"
 msgid "Clusters"
 msgstr "Routere"
 
-#: fleio/base_settings.py:516 fleio/base_settings.py:650
-#: fleio/base_settings_openstack.py:487 fleio/base_settings_openstack.py:611
+#: fleio/base_settings.py:519 fleio/base_settings.py:653
+#: fleio/base_settings_openstack.py:495 fleio/base_settings_openstack.py:619
 #, fuzzy
 #| msgid "Router - Update"
 msgid "Cluster templates"
 msgstr "Router - Actualizare"
 
-#: fleio/base_settings.py:519 fleio/base_settings.py:653
-#: fleio/base_settings_openstack.py:490 fleio/base_settings_openstack.py:614
+#: fleio/base_settings.py:522 fleio/base_settings.py:656
+#: fleio/base_settings_openstack.py:498 fleio/base_settings_openstack.py:622
 #: fleio/openstack/billing_module.py:570
 msgid "Networks"
 msgstr "Rețele"
 
-#: fleio/base_settings.py:521 fleio/base_settings.py:655
-#: fleio/base_settings_openstack.py:492 fleio/base_settings_openstack.py:616
+#: fleio/base_settings.py:524 fleio/base_settings.py:658
+#: fleio/base_settings_openstack.py:500 fleio/base_settings_openstack.py:624
 #: fleio/openstack/billing_module.py:587
 msgid "Routers"
 msgstr "Routere"
 
-#: fleio/base_settings.py:523 fleio/base_settings.py:657
-#: fleio/base_settings_openstack.py:494 fleio/base_settings_openstack.py:618
+#: fleio/base_settings.py:526 fleio/base_settings.py:660
+#: fleio/base_settings_openstack.py:502 fleio/base_settings_openstack.py:626
 #: fleio/openstack/billing_module.py:596
 msgid "Ports"
 msgstr "Porturi"
 
-#: fleio/base_settings.py:525 fleio/base_settings.py:659
-#: fleio/base_settings_openstack.py:496 fleio/base_settings_openstack.py:620
+#: fleio/base_settings.py:528 fleio/base_settings.py:662
+#: fleio/base_settings_openstack.py:504 fleio/base_settings_openstack.py:628
 msgid "Zones"
 msgstr ""
 
-#: fleio/base_settings.py:527 fleio/base_settings.py:661
-#: fleio/base_settings_openstack.py:498 fleio/base_settings_openstack.py:622
+#: fleio/base_settings.py:530 fleio/base_settings.py:664
+#: fleio/base_settings_openstack.py:506 fleio/base_settings_openstack.py:630
 #, fuzzy
 #| msgid "Security group associated"
 msgid "Security groups"
 msgstr "Grupul de securitate a fost asociat"
 
-#: fleio/base_settings.py:530 fleio/base_settings_openstack.py:501
+#: fleio/base_settings.py:533 fleio/base_settings_openstack.py:509
 #, fuzzy
 #| msgid "Network - Update"
 msgid "Subnet pools"
 msgstr "Rețea - Actualizare"
 
-#: fleio/base_settings.py:533 fleio/base_settings.py:664
-#: fleio/base_settings_openstack.py:504 fleio/base_settings_openstack.py:625
+#: fleio/base_settings.py:536 fleio/base_settings.py:667
+#: fleio/base_settings_openstack.py:512 fleio/base_settings_openstack.py:633
 #: fleiostaff/osbilling/metrics_display_information.py:42
 #, fuzzy
 #| msgid "Floating ip associated"
 msgid "Floating IPs"
 msgstr "IP dinamic asociat"
 
-#: fleio/base_settings.py:535 fleio/base_settings_openstack.py:506
+#: fleio/base_settings.py:538 fleio/base_settings_openstack.py:514
 #, fuzzy
 #| msgid "Client has no OpenStack project"
 msgid "Flavor groups"
 msgstr "Clientul nu are nici un proiect OpenStack"
 
-#: fleio/base_settings.py:538 fleio/base_settings.py:742
-#: fleio/base_settings_openstack.py:509 fleio/base_settings_openstack.py:703
+#: fleio/base_settings.py:541 fleio/base_settings.py:745
+#: fleio/base_settings_openstack.py:517 fleio/base_settings_openstack.py:711
 #, fuzzy
 #| msgid "Flavor - Destroy"
 msgid "Flavors"
 msgstr "Configurare - Distruge"
 
-#: fleio/base_settings.py:540 fleio/base_settings.py:666
-#: fleio/base_settings.py:744 fleio/base_settings_openstack.py:511
-#: fleio/base_settings_openstack.py:627 fleio/base_settings_openstack.py:705
+#: fleio/base_settings.py:543 fleio/base_settings.py:669
+#: fleio/base_settings.py:747 fleio/base_settings_openstack.py:519
+#: fleio/base_settings_openstack.py:635 fleio/base_settings_openstack.py:713
 #: fleio/openstack/billing_module.py:559
 msgid "SSH keys"
 msgstr "Chei SSH"
 
-#: fleio/base_settings.py:542 fleio/base_settings.py:668
-#: fleio/base_settings.py:746 fleio/base_settings_openstack.py:513
-#: fleio/base_settings_openstack.py:629 fleio/base_settings_openstack.py:707
+#: fleio/base_settings.py:545 fleio/base_settings.py:671
+#: fleio/base_settings.py:749 fleio/base_settings_openstack.py:521
+#: fleio/base_settings_openstack.py:637 fleio/base_settings_openstack.py:715
 #: fleio/openstack/billing_module.py:551
 msgid "Volumes"
 msgstr "Volume"
 
-#: fleio/base_settings.py:544 fleio/base_settings.py:670
-#: fleio/base_settings_openstack.py:515 fleio/base_settings_openstack.py:631
+#: fleio/base_settings.py:547 fleio/base_settings.py:673
+#: fleio/base_settings_openstack.py:523 fleio/base_settings_openstack.py:639
 #, fuzzy
 #| msgid "Volume - Destroy"
 msgid "Volume backups"
 msgstr "Volum - Distruge"
 
-#: fleio/base_settings.py:547 fleio/base_settings.py:673
-#: fleio/base_settings_openstack.py:518 fleio/base_settings_openstack.py:634
+#: fleio/base_settings.py:550 fleio/base_settings.py:676
+#: fleio/base_settings_openstack.py:526 fleio/base_settings_openstack.py:642
 #, fuzzy
 #| msgid "Volume Snapshot"
 msgid "Volume snapshots"
 msgstr "Snapshot Volum"
 
-#: fleio/base_settings.py:550 fleio/base_settings.py:748
-#: fleio/base_settings_openstack.py:521 fleio/base_settings_openstack.py:709
+#: fleio/base_settings.py:553 fleio/base_settings.py:751
+#: fleio/base_settings_openstack.py:529 fleio/base_settings_openstack.py:717
 #: fleio/openstack/billing_module.py:578
 msgid "Images"
 msgstr "Imagini"
 
-#: fleio/base_settings.py:552 fleio/base_settings_openstack.py:523
+#: fleio/base_settings.py:555 fleio/base_settings_openstack.py:531
 #, fuzzy
 #| msgid "Project deleted"
 msgid "Projects"
 msgstr "Protectul a fost șters"
 
-#: fleio/base_settings.py:554 fleio/base_settings.py:678
-#: fleio/base_settings_openstack.py:525 fleio/base_settings_openstack.py:639
+#: fleio/base_settings.py:557 fleio/base_settings.py:681
+#: fleio/base_settings_openstack.py:533 fleio/base_settings_openstack.py:647
 #, fuzzy
 #| msgid "Bad request"
 msgid "API users"
 msgstr "Cerere invalida"
 
-#: fleio/base_settings.py:559 fleio/base_settings.py:700
-#: fleio/base_settings.py:755 fleio/base_settings_openstack.py:530
-#: fleio/base_settings_openstack.py:661 fleio/base_settings_openstack.py:716
-#: fleio/base_settings_web.py:98 fleio/base_settings_web.py:178
-#: fleio/base_settings_web.py:213
+#: fleio/base_settings.py:562 fleio/base_settings.py:703
+#: fleio/base_settings.py:758 fleio/base_settings_openstack.py:538
+#: fleio/base_settings_openstack.py:669 fleio/base_settings_openstack.py:724
+#: fleio/base_settings_web.py:93 fleio/base_settings_web.py:173
+#: fleio/base_settings_web.py:208
 #: fleio/core/models/permission_definitions.py:11
 #, fuzzy
 #| msgid "Billing cycle"
 msgid "Billing"
 msgstr "Ciclu de facturare"
 
-#: fleio/base_settings.py:562 fleio/base_settings_openstack.py:533
-#: fleio/base_settings_web.py:101
+#: fleio/base_settings.py:565 fleio/base_settings_openstack.py:541
+#: fleio/base_settings_web.py:96
 msgid "Journal"
 msgstr ""
 
-#: fleio/base_settings.py:564 fleio/base_settings_openstack.py:535
-#: fleio/base_settings_web.py:103
+#: fleio/base_settings.py:567 fleio/base_settings_openstack.py:543
+#: fleio/base_settings_web.py:98
 msgid "Gateways"
 msgstr ""
 
-#: fleio/base_settings.py:566 fleio/base_settings.py:705
-#: fleio/base_settings.py:758 fleio/base_settings_openstack.py:537
-#: fleio/base_settings_openstack.py:666 fleio/base_settings_openstack.py:719
-#: fleio/base_settings_web.py:105 fleio/base_settings_web.py:183
-#: fleio/base_settings_web.py:216
+#: fleio/base_settings.py:569 fleio/base_settings.py:708
+#: fleio/base_settings.py:761 fleio/base_settings_openstack.py:545
+#: fleio/base_settings_openstack.py:674 fleio/base_settings_openstack.py:727
+#: fleio/base_settings_web.py:100 fleio/base_settings_web.py:178
+#: fleio/base_settings_web.py:211
 #, fuzzy
 #| msgid "Invoice"
 msgid "Invoices"
 msgstr "Factură"
 
-#: fleio/base_settings.py:568 fleio/base_settings.py:703
-#: fleio/base_settings.py:760 fleio/base_settings_openstack.py:539
-#: fleio/base_settings_openstack.py:664 fleio/base_settings_openstack.py:721
-#: fleio/base_settings_web.py:107 fleio/base_settings_web.py:181
-#: fleio/base_settings_web.py:218
+#: fleio/base_settings.py:571 fleio/base_settings.py:706
+#: fleio/base_settings.py:763 fleio/base_settings_openstack.py:547
+#: fleio/base_settings_openstack.py:672 fleio/base_settings_openstack.py:729
+#: fleio/base_settings_web.py:102 fleio/base_settings_web.py:176
+#: fleio/base_settings_web.py:213
 #, fuzzy
 #| msgid "Service"
 msgid "Services"
 msgstr "Serviciu"
 
-#: fleio/base_settings.py:570 fleio/base_settings_openstack.py:541
-#: fleio/base_settings_web.py:109
+#: fleio/base_settings.py:573 fleio/base_settings_openstack.py:549
+#: fleio/base_settings_web.py:104
 msgid "Orders"
 msgstr ""
 
-#: fleio/base_settings.py:572 fleio/base_settings_openstack.py:543
-#: fleio/base_settings_web.py:111
+#: fleio/base_settings.py:575 fleio/base_settings_openstack.py:551
+#: fleio/base_settings_web.py:106
 msgid "Products"
 msgstr ""
 
-#: fleio/base_settings.py:574 fleio/base_settings_openstack.py:545
-#: fleio/base_settings_web.py:113
+#: fleio/base_settings.py:577 fleio/base_settings_openstack.py:553
+#: fleio/base_settings_web.py:108
 #, fuzzy
 #| msgid "Configuration missing"
 msgid "Config. options"
 msgstr "Configurație lipsă"
 
-#: fleio/base_settings.py:576 fleio/base_settings_openstack.py:547
-#: fleio/base_settings_web.py:115
+#: fleio/base_settings.py:579 fleio/base_settings_openstack.py:555
+#: fleio/base_settings_web.py:110
 msgid "Tax rules"
 msgstr ""
 
-#: fleio/base_settings.py:581 fleio/base_settings_web.py:120
+#: fleio/base_settings.py:584 fleio/base_settings_web.py:115
 #, fuzzy
 #| msgid "Service"
 msgid "Servers"
 msgstr "Serviciu"
 
-#: fleio/base_settings.py:584 fleio/base_settings_web.py:123
+#: fleio/base_settings.py:587 fleio/base_settings_web.py:118
 msgid "Groups"
 msgstr ""
 
-#: fleio/base_settings.py:586 fleio/base_settings_web.py:125
+#: fleio/base_settings.py:589 fleio/base_settings_web.py:120
 #, fuzzy
 #| msgid "Service locator"
 msgid "Server list"
 msgstr "Localizator serviciu"
 
-#: fleio/base_settings.py:591 fleio/base_settings.py:716
-#: fleio/base_settings_openstack.py:552 fleio/base_settings_openstack.py:677
-#: fleio/base_settings_web.py:130 fleio/base_settings_web.py:192
+#: fleio/base_settings.py:594 fleio/base_settings.py:719
+#: fleio/base_settings_openstack.py:560 fleio/base_settings_openstack.py:685
+#: fleio/base_settings_web.py:125 fleio/base_settings_web.py:187
 #: fleio/core/models/permission_definitions.py:55
 msgid "Utilities"
 msgstr ""
 
-#: fleio/base_settings.py:596 fleio/base_settings_openstack.py:557
-#: fleio/base_settings_web.py:135
+#: fleio/base_settings.py:599 fleio/base_settings_openstack.py:565
+#: fleio/base_settings_web.py:130
 msgid "Activity log"
 msgstr ""
 
-#: fleio/base_settings.py:598 fleio/base_settings.py:719
-#: fleio/base_settings_openstack.py:559 fleio/base_settings_openstack.py:680
-#: fleio/base_settings_web.py:137 fleio/base_settings_web.py:195
+#: fleio/base_settings.py:601 fleio/base_settings.py:722
+#: fleio/base_settings_openstack.py:567 fleio/base_settings_openstack.py:688
+#: fleio/base_settings_web.py:132 fleio/base_settings_web.py:190
 #, fuzzy
 #| msgid "Operation not allowed"
 msgid "Operations"
 msgstr "Operațiunea nu este permisă"
 
-#: fleio/base_settings.py:600 fleio/base_settings_openstack.py:561
-#: fleio/base_settings_web.py:139
+#: fleio/base_settings.py:603 fleio/base_settings_openstack.py:569
+#: fleio/base_settings_web.py:134
 #, fuzzy
 #| msgid "Ports"
 msgid "Reports"
 msgstr "Porturi"
 
-#: fleio/base_settings.py:602 fleio/base_settings_openstack.py:563
-#: fleio/base_settings_web.py:141
+#: fleio/base_settings.py:605 fleio/base_settings_openstack.py:571
+#: fleio/base_settings_web.py:136
 msgid "Periodic task log"
 msgstr ""
 
-#: fleio/base_settings.py:607 fleio/base_settings.py:767
-#: fleio/base_settings_openstack.py:568 fleio/base_settings_openstack.py:728
-#: fleio/base_settings_web.py:146 fleio/base_settings_web.py:225
+#: fleio/base_settings.py:610 fleio/base_settings.py:770
+#: fleio/base_settings_openstack.py:576 fleio/base_settings_openstack.py:736
+#: fleio/base_settings_web.py:141 fleio/base_settings_web.py:220
 #: fleio/core/models/permission_definitions.py:44
 #, fuzzy
 #| msgid "Settings updated"
 msgid "Settings"
 msgstr "Setări actualizate"
 
-#: fleio/base_settings.py:610 fleio/base_settings_openstack.py:571
-#: fleio/base_settings_web.py:149
+#: fleio/base_settings.py:613 fleio/base_settings_openstack.py:579
+#: fleio/base_settings_web.py:144
 #, fuzzy
 #| msgid "Generic"
 msgid "General"
 msgstr "Generic"
 
-#: fleio/base_settings.py:612 fleio/base_settings.py:772
-#: fleio/base_settings_openstack.py:573 fleio/base_settings_openstack.py:733
-#: fleio/base_settings_web.py:151 fleio/base_settings_web.py:228
+#: fleio/base_settings.py:615 fleio/base_settings.py:775
+#: fleio/base_settings_openstack.py:581 fleio/base_settings_openstack.py:741
+#: fleio/base_settings_web.py:146 fleio/base_settings_web.py:223
 #, fuzzy
 #| msgid "Configuration missing"
 msgid "Configurations"
 msgstr "Configurație lipsă"
 
-#: fleio/base_settings.py:615 fleio/base_settings_openstack.py:576
-#: fleio/base_settings_web.py:154
+#: fleio/base_settings.py:618 fleio/base_settings_openstack.py:584
+#: fleio/base_settings_web.py:149
 #, fuzzy
 #| msgid "Preauthorization"
 msgid "Authorization"
 msgstr "Preautorizare"
 
-#: fleio/base_settings.py:617 fleio/base_settings_openstack.py:578
-#: fleio/base_settings_web.py:156
+#: fleio/base_settings.py:620 fleio/base_settings_openstack.py:586
+#: fleio/base_settings_web.py:151
 #, fuzzy
 #| msgid "Notifications topic"
 msgid "Notifications"
 msgstr "Notificări subiect"
 
-#: fleio/base_settings.py:622 fleio/base_settings.py:770
-#: fleio/base_settings_openstack.py:583 fleio/base_settings_openstack.py:731
+#: fleio/base_settings.py:625 fleio/base_settings.py:773
+#: fleio/base_settings_openstack.py:591 fleio/base_settings_openstack.py:739
 #, fuzzy
 #| msgid "Openstack"
 msgid "OpenStack plans"
 msgstr "Openstack"
 
-#: fleio/base_settings.py:631 fleio/base_settings_openstack.py:592
-#: fleio/base_settings_web.py:166
+#: fleio/base_settings.py:634 fleio/base_settings_openstack.py:600
+#: fleio/base_settings_web.py:161
 msgid "Home"
 msgstr ""
 
-#: fleio/base_settings.py:676 fleio/base_settings_openstack.py:637
+#: fleio/base_settings.py:679 fleio/base_settings_openstack.py:645
 #, fuzzy
 #| msgid "Images"
 msgid "My images"
 msgstr "Imagini"
 
-#: fleio/base_settings.py:680 fleio/base_settings_openstack.py:641
+#: fleio/base_settings.py:683 fleio/base_settings_openstack.py:649
 msgid "Object store"
 msgstr ""
 
-#: fleio/base_settings.py:683 fleio/base_settings_openstack.py:644
+#: fleio/base_settings.py:686 fleio/base_settings_openstack.py:652
 #, fuzzy
 #| msgid "Openstack"
 msgid "Heat stacks"
 msgstr "Openstack"
 
-#: fleio/base_settings.py:686 fleio/base_settings_openstack.py:647
+#: fleio/base_settings.py:689 fleio/base_settings_openstack.py:655
 msgid "Heat resource types"
 msgstr ""
 
-#: fleio/base_settings.py:690 fleio/base_settings_openstack.py:651
+#: fleio/base_settings.py:693 fleio/base_settings_openstack.py:659
 msgid "Heat template versions"
 msgstr ""
 
-#: fleio/base_settings.py:694 fleio/base_settings_openstack.py:655
+#: fleio/base_settings.py:697 fleio/base_settings_openstack.py:663
 msgid "Load balancers"
 msgstr ""
 
-#: fleio/base_settings.py:707 fleio/base_settings_openstack.py:668
-#: fleio/base_settings_web.py:185
+#: fleio/base_settings.py:710 fleio/base_settings_openstack.py:676
+#: fleio/base_settings_web.py:180
 #, fuzzy
 #| msgid "Order submitted"
 msgid "Order services"
 msgstr "Comandă plasată"
 
-#: fleio/base_settings.py:709 fleio/base_settings_openstack.py:670
-#: fleio/base_settings_web.py:187
+#: fleio/base_settings.py:712 fleio/base_settings_openstack.py:678
+#: fleio/base_settings_web.py:182
 msgid "Cart"
 msgstr ""
 
-#: fleio/base_settings.py:711 fleio/base_settings.py:762
-#: fleio/base_settings_openstack.py:672 fleio/base_settings_openstack.py:723
-#: fleio/base_settings_web.py:220
+#: fleio/base_settings.py:714 fleio/base_settings.py:765
+#: fleio/base_settings_openstack.py:680 fleio/base_settings_openstack.py:731
+#: fleio/base_settings_web.py:215
 #, fuzzy
 #| msgid "Billing cycle"
 msgid "Billing history"
 msgstr "Ciclu de facturare"
 
-#: fleio/base_settings.py:750 fleio/base_settings_openstack.py:711
+#: fleio/base_settings.py:753 fleio/base_settings_openstack.py:719
 #, fuzzy
 #| msgid "Image - Update"
 msgid "API Users"
@@ -1339,60 +1342,60 @@ msgstr ""
 msgid "A refund was made for {invoice_id} using PayU RO."
 msgstr ""
 
-#: fleio/billing/cart/serializers.py:117
+#: fleio/billing/cart/serializers.py:134
 msgid "Option not available"
 msgstr "Opțiune indisponibilă"
 
-#: fleio/billing/cart/serializers.py:123
+#: fleio/billing/cart/serializers.py:140
 msgid "Invalid value provided"
 msgstr "Valoare nu este validă"
 
-#: fleio/billing/cart/serializers.py:125
+#: fleio/billing/cart/serializers.py:142
 #, fuzzy
 #| msgid "Value must be greater than 0"
 msgid "Value must be greater or equal to 0"
 msgstr "Valoarea trebuie să fie mai mare decât 0"
 
-#: fleio/billing/cart/serializers.py:281 fleio/billing/cart/serializers.py:340
+#: fleio/billing/cart/serializers.py:298 fleio/billing/cart/serializers.py:359
 #: fleio/openstack/instances/views.py:1034
 #: plugins/domains/registrars_connectors/openprovider_connector.py:156
 msgid "Invalid request"
 msgstr "Cerere invalidă"
 
-#: fleio/billing/cart/serializers.py:324 fleio/billing/cart/serializers.py:325
-#: fleio/billing/cart/serializers.py:329 fleio/billing/cart/serializers.py:330
-#: fleio/billing/cart/serializers.py:405 fleio/billing/cart/serializers.py:406
+#: fleio/billing/cart/serializers.py:343 fleio/billing/cart/serializers.py:344
+#: fleio/billing/cart/serializers.py:348 fleio/billing/cart/serializers.py:349
+#: fleio/billing/cart/serializers.py:424 fleio/billing/cart/serializers.py:425
 msgid "Product not found"
 msgstr "Produsul nu a fost găsit"
 
-#: fleio/billing/cart/serializers.py:333 fleio/billing/cart/serializers.py:334
+#: fleio/billing/cart/serializers.py:352 fleio/billing/cart/serializers.py:353
 msgid "Product cycle not found"
 msgstr "Ciclul produsului nu a fost găsit"
 
-#: fleio/billing/cart/serializers.py:347
+#: fleio/billing/cart/serializers.py:366
 msgid "Specify a product code or id"
 msgstr "Specificați un cod sau id de produs"
 
-#: fleio/billing/cart/serializers.py:354 fleio/billing/cart/serializers.py:358
-#: fleio/billing/cart/serializers.py:445
+#: fleio/billing/cart/serializers.py:373 fleio/billing/cart/serializers.py:377
+#: fleio/billing/cart/serializers.py:464
 msgid "Product not available"
 msgstr "Produsul nu este disponibil"
 
-#: fleio/billing/cart/serializers.py:438
+#: fleio/billing/cart/serializers.py:457
 msgid "A billing cycle is required"
 msgstr "Un ciclu de facturare este obligatoriu"
 
-#: fleio/billing/cart/serializers.py:465
-#: fleio/billing/services/serializers.py:234
+#: fleio/billing/cart/serializers.py:485
+#: fleio/billing/services/serializers.py:235
 #, fuzzy
 #| msgid "Valus is required for {}"
 msgid "Value is required for {}"
 msgstr "Este obligatorie o valoare pentru {}"
 
-#: fleio/billing/cart/serializers.py:470 fleio/billing/cart/serializers.py:472
-#: fleio/billing/cart/serializers.py:474
-#: fleio/billing/services/serializers.py:238
-#: fleio/billing/services/serializers.py:240
+#: fleio/billing/cart/serializers.py:491 fleio/billing/cart/serializers.py:493
+#: fleio/billing/cart/serializers.py:495
+#: fleio/billing/services/serializers.py:239
+#: fleio/billing/services/serializers.py:241
 msgid "Invalid option selected"
 msgstr "Opțiune invalidă selectată"
 
@@ -1402,8 +1405,8 @@ msgstr "Opțiune invalidă selectată"
 msgid "Failed to initialize service"
 msgstr "Nu se poate inițializa clientul ceilometer"
 
-#: fleio/billing/exchange_rate_manager.py:40
-#: fleio/billing/exchange_rate_manager.py:64
+#: fleio/billing/exchange_rate_manager.py:41
+#: fleio/billing/exchange_rate_manager.py:65
 msgid "Failed to retrieve exchange rates"
 msgstr "Nu pot obține cursurile de schimb"
 
@@ -1503,11 +1506,11 @@ msgstr ""
 #: fleio/billing/gateways/views.py:56 fleio/billing/gateways/views.py:75
 #: fleio/billing/gateways/views.py:134
 #: fleiostaff/billing/transactions/views.py:32
-#: fleiostaff/core/clients/views.py:264 fleiostaff/core/clients/views.py:477
-#: fleiostaff/openstack/core/views.py:151
+#: fleiostaff/core/clients/views.py:283 fleiostaff/core/clients/views.py:502
+#: fleiostaff/openstack/core/views.py:164
 #: reseller/billing/transactions/views/transaction.py:37
 #: reseller/core/clients/views/client.py:205
-#: reseller/openstack/core/views.py:135
+#: reseller/openstack/core/views.py:140
 msgid "Ok"
 msgstr "Ok"
 
@@ -1712,23 +1715,23 @@ msgid ""
 "related service cycles."
 msgstr ""
 
-#: fleio/billing/invoicing/tasks.py:159
+#: fleio/billing/invoicing/tasks.py:177
 #, fuzzy
 #| msgid "Invoice {} payment"
 msgid "Invoice {} payment added"
 msgstr "Plată factură {}"
 
-#: fleio/billing/invoicing/tasks.py:160
+#: fleio/billing/invoicing/tasks.py:178
 #, fuzzy
 #| msgid "A new order to transfer domain {} has been placed."
 msgid "Invoice {} for client {} has been paid."
 msgstr "O comandă nouă pentru transferarea domeniului {} a fost plasată."
 
-#: fleio/billing/invoicing/tasks.py:244 fleio/billing/invoicing/tasks.py:304
+#: fleio/billing/invoicing/tasks.py:302 fleio/billing/invoicing/tasks.py:362
 msgid "Add {} {} to credit balance"
 msgstr "Adaugă {}{} la soldul de credit"
 
-#: fleio/billing/invoicing/tasks.py:309
+#: fleio/billing/invoicing/tasks.py:367
 msgid "Validate credit card with {} {}"
 msgstr ""
 
@@ -1801,54 +1804,54 @@ msgstr "Câmp cantitate"
 msgid "Text input"
 msgstr "Câmp text"
 
-#: fleio/billing/models/configurable_option.py:38 fleio/billing/settings.py:198
+#: fleio/billing/models/configurable_option.py:38 fleio/billing/settings.py:232
 #: fleio/openstack/models/image.py:33 fleio/openstack/models/image.py:40
 #: fleio/openstack/traffic_monitoring/instance_traffic_data.py:22
 msgid "Public"
 msgstr "Public"
 
-#: fleio/billing/models/configurable_option.py:39 fleio/billing/settings.py:199
+#: fleio/billing/models/configurable_option.py:39 fleio/billing/settings.py:233
 #: fleio/openstack/models/image.py:32 fleio/openstack/models/image.py:39
 #: fleio/openstack/traffic_monitoring/instance_traffic_data.py:21
 msgid "Private"
 msgstr "Privat"
 
-#: fleio/billing/models/configurable_option.py:40 fleio/billing/settings.py:200
+#: fleio/billing/models/configurable_option.py:40 fleio/billing/settings.py:234
 msgid "Retired"
 msgstr "Retras"
 
-#: fleio/billing/models/configurable_option.py:188
+#: fleio/billing/models/configurable_option.py:215
 msgid "Apply to quantity options"
 msgstr "Aplică la opțiunile de cantitate"
 
-#: fleio/billing/models/invoice.py:33 fleio/billing/models/invoice.py:40
+#: fleio/billing/models/invoice.py:34 fleio/billing/models/invoice.py:41
 #: fleio/billing/models/service_cycle_constants.py:38
-#: fleio/billing/settings.py:231
+#: fleio/billing/settings.py:265
 msgid "Unpaid"
 msgstr "Neplătită"
 
-#: fleio/billing/models/invoice.py:34 fleio/billing/models/invoice.py:41
+#: fleio/billing/models/invoice.py:35 fleio/billing/models/invoice.py:42
 #: fleio/billing/models/service_cycle_constants.py:40
-#: fleio/billing/settings.py:232
+#: fleio/billing/settings.py:266
 msgid "Paid"
 msgstr "Plătit"
 
-#: fleio/billing/models/invoice.py:35 fleio/billing/models/invoice.py:42
-#: fleio/billing/settings.py:222 plugins/domains/models/domain.py:43
+#: fleio/billing/models/invoice.py:36 fleio/billing/models/invoice.py:43
+#: fleio/billing/settings.py:256 plugins/domains/models/domain.py:46
 msgid "Cancelled"
 msgstr "Anulat"
 
-#: fleio/billing/models/invoice.py:36 fleio/billing/models/invoice.py:43
+#: fleio/billing/models/invoice.py:37 fleio/billing/models/invoice.py:44
 #: fleio/billing/models/service_cycle_constants.py:41
-#: fleio/billing/models/transaction.py:37 fleio/billing/settings.py:234
+#: fleio/billing/models/transaction.py:37 fleio/billing/settings.py:268
 msgid "Refunded"
 msgstr "Rambursat"
 
-#: fleio/billing/models/invoice.py:193
+#: fleio/billing/models/invoice.py:195
 msgid "Invoice {}"
 msgstr "Factură {}"
 
-#: fleio/billing/models/invoice.py:195
+#: fleio/billing/models/invoice.py:197
 msgid "Proforma {}"
 msgstr ""
 
@@ -1898,21 +1901,21 @@ msgid "User who placed the order. Can be a staff user."
 msgstr "Utilizatorul care a plasat comanda. Poate fi un administator."
 
 #: fleio/billing/models/order_item.py:25 fleio/billing/models/service.py:92
-#: fleio/billing/settings.py:262
+#: fleio/billing/settings.py:296
 msgid "Service"
 msgstr "Serviciu"
 
-#: fleio/billing/models/order_item.py:26 fleio/billing/settings.py:263
+#: fleio/billing/models/order_item.py:26 fleio/billing/settings.py:297
 #, fuzzy
 #| msgid "Service created"
 msgid "Service Upgrade"
 msgstr "Serviciu creat"
 
-#: fleio/billing/models/order_item.py:27 fleio/billing/settings.py:264
+#: fleio/billing/models/order_item.py:27 fleio/billing/settings.py:298
 msgid "Credit Balance"
 msgstr "Sold Credit"
 
-#: fleio/billing/models/order_item.py:28 fleio/billing/settings.py:268
+#: fleio/billing/models/order_item.py:28 fleio/billing/settings.py:302
 msgid "Other"
 msgstr "Alte"
 
@@ -1928,7 +1931,7 @@ msgstr "Aplică la fiecare sau la toate articolele de pe comandă"
 
 #: fleio/billing/models/product_cycle_periods.py:10
 #: fleio/billing/models/product_cycle_periods.py:18
-#: fleio/osbilling/models/models.py:42
+#: fleio/osbilling/models/models.py:44
 msgid "Day"
 msgstr "ZilnicZi"
 
@@ -1991,9 +1994,9 @@ msgstr "Odată la {} ani"
 
 #: fleio/billing/models/product_cycle_periods.py:50
 #: fleio/billing/models/transaction.py:42
-#: fleio/openstack/instances/instance_status.py:32 fleiostaff/core/views.py:396
-#: fleiostaff/core/views.py:400 fleiostaff/core/views.py:408
-#: fleiostaff/core/views.py:412 fleiostaff/openstack/summary_views.py:58
+#: fleio/openstack/instances/instance_status.py:32 fleiostaff/core/views.py:416
+#: fleiostaff/core/views.py:420 fleiostaff/core/views.py:428
+#: fleiostaff/core/views.py:432 fleiostaff/openstack/summary_views.py:59
 msgid "Unknown"
 msgstr "Necunoscut"
 
@@ -2088,8 +2091,8 @@ msgstr "Succes"
 msgid "Failure"
 msgstr "Eșec"
 
-#: fleio/billing/models/transaction.py:41 fleio/billing/settings.py:152
-#: fleio/billing/settings.py:233
+#: fleio/billing/models/transaction.py:41 fleio/billing/settings.py:186
+#: fleio/billing/settings.py:267
 msgid "Canceled"
 msgstr "Anulat"
 
@@ -2104,8 +2107,8 @@ msgstr ""
 #: fleio/openstack/instances/operations/create_instance.py:201
 #: fleio/openstack/instances/operations/create_instance_from_volume.py:261
 #: fleio/openstack/models/project.py:58
-#: fleiostaff/core/clients/serializers.py:197 fleiostaff/core/views.py:398
-#: fleiostaff/core/views.py:410 fleiostaff/openstack/networks/serializers.py:44
+#: fleiostaff/core/clients/serializers.py:186 fleiostaff/core/views.py:418
+#: fleiostaff/core/views.py:430 fleiostaff/openstack/networks/serializers.py:44
 #: fleiostaff/openstack/networks/serializers.py:46
 #: fleiostaff/openstack/subnetpools/serializers.py:29
 #: fleiostaff/openstack/subnets/serializers.py:32
@@ -2153,19 +2156,19 @@ msgstr "Opțiune invalidă selectată"
 msgid "Invalid product cycle selected"
 msgstr "Opțiune invalidă selectată"
 
-#: fleio/billing/services/serializers.py:200
+#: fleio/billing/services/serializers.py:201
 #, fuzzy
 #| msgid "A cancellation request already exists for this service"
 msgid "An upgrade/downgrade invoice already exists for this service"
 msgstr "O cerere de anulare deja există pentru acest serviciu"
 
-#: fleio/billing/services/serializers.py:213
+#: fleio/billing/services/serializers.py:214
 #, fuzzy
 #| msgid "Unable to update security group"
 msgid "Unable to upgrade to the selected product"
 msgstr "Grupul de securitate nu poate fi actualizat"
 
-#: fleio/billing/services/serializers.py:217
+#: fleio/billing/services/serializers.py:218
 #, fuzzy
 #| msgid "Unable to get the client usage"
 msgid "Unable to upgrade to the selected product and cycle"
@@ -2189,33 +2192,33 @@ msgstr ""
 msgid "Failed to upgrade service. Please contact support for more info."
 msgstr "Înregistrarea nu poate fi actualizată. Vă rugăm contactati personalul"
 
-#: fleio/billing/settings.py:113 fleio/billing/settings.py:121
+#: fleio/billing/settings.py:147 fleio/billing/settings.py:155
 msgid "Generic"
 msgstr "Generic"
 
-#: fleio/billing/settings.py:114 fleio/core/models/permission_definitions.py:29
+#: fleio/billing/settings.py:148 fleio/core/models/permission_definitions.py:29
 #, fuzzy
 #| msgid "Openstack"
 msgid "OpenStack"
 msgstr "Openstack"
 
-#: fleio/billing/settings.py:115 fleio/billing/settings.py:123
+#: fleio/billing/settings.py:149 fleio/billing/settings.py:157
 msgid "Shared Hosting"
 msgstr "Gazduire Partajata"
 
-#: fleio/billing/settings.py:116 fleio/billing/settings.py:124
+#: fleio/billing/settings.py:150 fleio/billing/settings.py:158
 msgid "Domain"
 msgstr "Domeniu"
 
-#: fleio/billing/settings.py:117 fleio/billing/settings.py:125
+#: fleio/billing/settings.py:151 fleio/billing/settings.py:159
 #: fleio/core/admin.py:86 fleio/core/constants.py:11 fleio/reseller/apps.py:28
 #, fuzzy
 #| msgid "Reserve"
 msgid "Reseller"
 msgstr "Rezervă"
 
-#: fleio/billing/settings.py:148 fleio/billing/settings.py:219
-#: fleio/notifications/models.py:132 fleio/notifications/models.py:138
+#: fleio/billing/settings.py:182 fleio/billing/settings.py:253
+#: fleio/notifications/models.py:135 fleio/notifications/models.py:141
 #: fleio/openstack/dns/serializers.py:38 fleio/openstack/dns/serializers.py:83
 #: fleio/openstack/models/image_members.py:11
 #: fleiostaff/openstack/dns/serializers.py:32
@@ -2223,7 +2226,7 @@ msgstr "Rezervă"
 msgid "Pending"
 msgstr "În așteptare"
 
-#: fleio/billing/settings.py:149 fleio/core/models/models.py:231
+#: fleio/billing/settings.py:183 fleio/core/models/models.py:231
 #: fleio/core/models/models.py:238 fleio/notifications/models.py:43
 #: fleio/openstack/dns/serializers.py:39 fleio/openstack/dns/serializers.py:84
 #: fleio/openstack/instances/instance_status.py:61
@@ -2235,112 +2238,112 @@ msgstr "În așteptare"
 #: fleiostaff/openstack/dns/serializers.py:33
 #: fleiostaff/openstack/dns/serializers.py:136
 #: fleiostaff/openstack/floatingips/views.py:47
-#: fleiostaff/openstack/routers/views.py:72 plugins/domains/models/domain.py:38
+#: fleiostaff/openstack/routers/views.py:72 plugins/domains/models/domain.py:41
 msgid "Active"
 msgstr "Activ"
 
-#: fleio/billing/settings.py:150 fleio/core/models/models.py:233
+#: fleio/billing/settings.py:184 fleio/core/models/models.py:233
 #: fleio/core/models/models.py:240
 #: fleio/openstack/instances/instance_status.py:11
 #: fleio/openstack/instances/instance_status.py:64
 msgid "Suspended"
 msgstr "Suspendat"
 
-#: fleio/billing/settings.py:151
+#: fleio/billing/settings.py:185
 msgid "Terminated"
 msgstr "Terminat"
 
-#: fleio/billing/settings.py:153 plugins/domains/models/domain.py:45
+#: fleio/billing/settings.py:187 plugins/domains/models/domain.py:48
 msgid "Fraud"
 msgstr "Frauda"
 
-#: fleio/billing/settings.py:154
+#: fleio/billing/settings.py:188
 msgid "Archived"
 msgstr "Arhivat"
 
-#: fleio/billing/settings.py:172
+#: fleio/billing/settings.py:206
 #, fuzzy
 #| msgid "Create in progress"
 msgid "Change in progress"
 msgstr "Creare în progres"
 
-#: fleio/billing/settings.py:186 fleio/servers/models/server.py:16
+#: fleio/billing/settings.py:220 fleio/servers/models/server.py:16
 msgid "Disabled"
 msgstr "Dezactivat"
 
-#: fleio/billing/settings.py:187
+#: fleio/billing/settings.py:221
 msgid "When order is placed"
 msgstr "Când comanda este plasată"
 
-#: fleio/billing/settings.py:188
+#: fleio/billing/settings.py:222
 msgid "On first payment"
 msgstr "La prima plata"
 
-#: fleio/billing/settings.py:189
+#: fleio/billing/settings.py:223
 msgid "When pending order is accepted"
 msgstr "Când comanda in asteptare este acceptată"
 
-#: fleio/billing/settings.py:209
+#: fleio/billing/settings.py:243
 msgid "Free"
 msgstr "Gratis"
 
-#: fleio/billing/settings.py:210
+#: fleio/billing/settings.py:244
 msgid "Fixed plus dynamic"
 msgstr "Fix plus dinamic"
 
-#: fleio/billing/settings.py:211
+#: fleio/billing/settings.py:245
 msgid "Dynamic but at least fixed"
 msgstr "Dinamic dar minim"
 
-#: fleio/billing/settings.py:220
+#: fleio/billing/settings.py:254
 msgid "Verified"
 msgstr "Verificat"
 
-#: fleio/billing/settings.py:221
+#: fleio/billing/settings.py:255
 msgid "Completed"
 msgstr "Terminat"
 
-#: fleio/billing/settings.py:238
+#: fleio/billing/settings.py:272
 msgid "Unspecified reason"
 msgstr "Motiv nespecificat"
 
-#: fleio/billing/settings.py:239
+#: fleio/billing/settings.py:273
 msgid "Suspended by staff"
 msgstr "Suspendat de catre administrator"
 
-#: fleio/billing/settings.py:240
+#: fleio/billing/settings.py:274
 msgid "Overdue on payment"
 msgstr "In urmă cu plata"
 
-#: fleio/billing/settings.py:241
+#: fleio/billing/settings.py:275
 msgid "Requested by user"
 msgstr "Cerut de către utilizator"
 
-#: fleio/billing/settings.py:242
+#: fleio/billing/settings.py:276
 msgid "Suspend instead of terminate is enabled"
 msgstr "Suspendarea în loc de terminare este activată"
 
-#: fleio/billing/settings.py:265
+#: fleio/billing/settings.py:299
 msgid "Setup Fee"
 msgstr "Taxa Instalare"
 
-#: fleio/billing/settings.py:266
+#: fleio/billing/settings.py:300
 #, fuzzy
 #| msgid "Invalid action for domain"
 msgid "Card validation"
 msgstr "Acțiune invalidă pentru domeniu"
 
-#: fleio/billing/settings.py:267
+#: fleio/billing/settings.py:301
 msgid "Card validation that adds to credit"
 msgstr ""
 
-#: fleio/billing/settlement_manager.py:133
+#: fleio/billing/settlement_manager.py:141
 #, fuzzy
 #| msgid "Refunded"
 msgid " refunded price"
 msgstr "Rambursat"
 
-#: fleio/billing/settlement_manager.py:138
+#: fleio/billing/settlement_manager.py:146
 #, fuzzy
 #| msgid "Service created"
 msgid " new service price"
@@ -2358,35 +2361,35 @@ msgstr "Id-ul de client furnizat nu este valid: {}"
 msgid "No client found for provided id"
 msgstr "Clientul nu a fost găsit"
 
-#: fleio/common_settings.py:595 fleio/common_settings.py:609
-#: fleio/common_settings.py:623 fleio/common_settings.py:637
-#: fleio/common_settings.py:651 fleio/common_settings.py:664
+#: fleio/common_settings.py:596 fleio/common_settings.py:610
+#: fleio/common_settings.py:624 fleio/common_settings.py:638
+#: fleio/common_settings.py:652 fleio/common_settings.py:665
 #, fuzzy
 #| msgid "It should be at least 8 characters long."
 msgid "Password should be at least {} characters long"
 msgstr "Ar trebuie să conțină cel puțin 8 caractere."
 
-#: fleio/common_settings.py:597 fleio/common_settings.py:612
-#: fleio/common_settings.py:625 fleio/common_settings.py:640
-#: fleio/common_settings.py:653 fleio/common_settings.py:666
+#: fleio/common_settings.py:598 fleio/common_settings.py:613
+#: fleio/common_settings.py:626 fleio/common_settings.py:641
+#: fleio/common_settings.py:654 fleio/common_settings.py:667
 msgid ""
 "Password should have at least: one lower case letter, one upper case letter, "
 "one number and one special character ( !#$@%&'()*+?><,-./[\\\\]^_`{|}~\")"
 msgstr ""
 
-#: fleio/compiled/loginview.py:104 fleio/compiled/loginview.py:121
-#: fleio/core/views.py:113 fleiostaff/core/views.py:215
-#: fleiostaff/core/views.py:234 reseller/core/auth/views.py:64
-#: reseller/core/auth/views.py:81
+#: fleio/compiled/loginview.py:109 fleio/compiled/loginview.py:126
+#: fleio/core/views.py:113 fleiostaff/core/views.py:219
+#: fleiostaff/core/views.py:238 reseller/core/auth/views.py:66
+#: reseller/core/auth/views.py:83
 msgid "Incorrect user name or password"
 msgstr "Nume de utilizator sau parola greșit"
 
-#: fleio/compiled/loginview.py:125 fleio/core/views.py:335
-#: fleiostaff/core/views.py:238 reseller/core/auth/views.py:84
+#: fleio/compiled/loginview.py:130 fleio/core/views.py:335
+#: fleiostaff/core/views.py:242 reseller/core/auth/views.py:86
 msgid "This account is inactive"
 msgstr "Acest cont este inactiv"
 
-#: fleio/compiled/loginview.py:143
+#: fleio/compiled/loginview.py:148
 msgid "Authentication succeeded"
 msgstr "Autentificarea a reușit"
 
@@ -2674,7 +2677,7 @@ msgstr ""
 "Eroare la creerea grupului de înregistrări. Vă rugăm contactati personalul"
 
 #: fleio/core/clients/serializers.py:203
-#: fleiostaff/core/clients/serializers.py:439
+#: fleiostaff/core/clients/serializers.py:438
 #: fleiostaff/core/users/serializers.py:24
 #: reseller/core/users/serializers/reseller_associate_dissociate_serializer.py:14
 #, fuzzy
@@ -2714,8 +2717,8 @@ msgstr "Nu se pot salva setările OpenStack în modul demo"
 msgid "Only owners can dissociate users."
 msgstr ""
 
-#: fleio/core/clients/views.py:123 fleiostaff/core/clients/views.py:191
-#: fleiostaff/core/clients/views.py:226
+#: fleio/core/clients/views.py:123 fleiostaff/core/clients/views.py:210
+#: fleiostaff/core/clients/views.py:245
 #: fleiostaff/core/permissions/views.py:227
 #: fleiostaff/core/permissions/views.py:293
 #: reseller/core/clients/views/client.py:119
@@ -2724,7 +2727,7 @@ msgid "User not found"
 msgstr "Utilizatorul nu a fost găsit"
 
 #: fleio/core/clients/views.py:129 fleio/core/clients/views.py:228
-#: fleiostaff/core/clients/views.py:230
+#: fleiostaff/core/clients/views.py:249
 #: reseller/core/clients/views/client.py:147
 msgid "User dissociated"
 msgstr "Utilizatorul a fost disociat"
@@ -2804,24 +2807,24 @@ msgstr ""
 msgid "Invalid VAT ID format"
 msgstr "Format cod fiscal invalid"
 
-#: fleio/core/drf.py:145 fleio/core/drf.py:169 fleio/core/drf.py:179
+#: fleio/core/drf.py:147 fleio/core/drf.py:171 fleio/core/drf.py:181
 msgid "Unable to perform the requested action"
 msgstr "Acțiunea solicitată nu a putut fi efectuată"
 
-#: fleio/core/drf.py:243
+#: fleio/core/drf.py:245
 msgid "Invalid version in URL path"
 msgstr "Versiune invalidă în calea URL"
 
-#: fleio/core/drf.py:244
+#: fleio/core/drf.py:246
 msgid "Invalid version in \"Accept\" header"
 msgstr "Versiune invalidă în header-ul \"Accept\""
 
-#: fleio/core/drf.py:296
+#: fleio/core/drf.py:298
 #, python-brace-format
 msgid "\"{input}\" is not a valid choice."
 msgstr "\"{input}\" nu este o alegere valida."
 
-#: fleio/core/drf.py:299
+#: fleio/core/drf.py:301
 #, python-brace-format
 msgid "More than {count} items..."
 msgstr "Mai mult de {count} articole..."
@@ -6993,19 +6996,19 @@ msgstr "Redimensionare confirmată"
 msgid "You provided an incorrect password"
 msgstr ""
 
-#: fleio/core/serializers.py:142 fleio/core/serializers.py:144
+#: fleio/core/serializers.py:141 fleio/core/serializers.py:143
 #: fleiostaff/core/serializers.py:53 fleiostaff/core/serializers.py:55
 #, fuzzy
 #| msgid "License is invalid"
 msgid "Mobile phone number is invalid"
 msgstr "Licența este invalidă"
 
-#: fleio/core/serializers.py:162 fleio/core/serializers.py:166
+#: fleio/core/serializers.py:161 fleio/core/serializers.py:165
 #: fleiostaff/core/serializers.py:73 fleiostaff/core/serializers.py:77
 msgid "Email not available"
 msgstr "Emailul nu este disponibil"
 
-#: fleio/core/serializers.py:185
+#: fleio/core/serializers.py:184
 msgid "Reset password failed."
 msgstr "Resetare parolă eșuată."
 
@@ -7053,8 +7056,8 @@ msgstr ""
 msgid "You agreed with terms of service."
 msgstr ""
 
-#: fleio/core/views.py:138 fleiostaff/core/views.py:349
-#: reseller/core/auth/views.py:182
+#: fleio/core/views.py:138 fleiostaff/core/views.py:356
+#: reseller/core/auth/views.py:184
 msgid "Logged out"
 msgstr "Deconectat"
 
@@ -7110,11 +7113,11 @@ msgstr ""
 msgid "Changing password not allowed in demo mode"
 msgstr "Operațiunea nu este permisă in modul demo"
 
-#: fleio/core/views.py:437 fleiostaff/core/views.py:463
+#: fleio/core/views.py:437 fleiostaff/core/views.py:483
 msgid "Please enter the correct current password."
 msgstr "Introdu corect parola curenta"
 
-#: fleio/core/views.py:464 fleiostaff/core/views.py:474
+#: fleio/core/views.py:464 fleiostaff/core/views.py:494
 msgid "User profile updated"
 msgstr "Profilul utilizatorului actualizat"
 
@@ -7131,7 +7134,7 @@ msgstr "Câmpul este obligatoriu"
 msgid "Ensure this field has no more than {} characters"
 msgstr "Asigură-te că acest câmp nu are mai mult de {} caractere"
 
-#: fleio/fleiosettings/settings.py:451
+#: fleio/fleiosettings/settings.py:453
 msgid "This amount has to be paid to validate your card. It will be refunded."
 msgstr ""
 
@@ -7141,7 +7144,7 @@ msgid "Running"
 msgstr ""
 
 #: fleio/logger/models/periodic_task_log.py:19 fleio/notifications/models.py:44
-#: fleio/notifications/models.py:135 fleio/notifications/models.py:141
+#: fleio/notifications/models.py:138 fleio/notifications/models.py:144
 #: fleio/openstack/dns/serializers.py:40 fleio/openstack/dns/serializers.py:85
 #: fleio/openstack/instances/instance_status.py:12
 #: fleio/openstack/instances/instance_status.py:71
@@ -7204,77 +7207,149 @@ msgstr "Nu mă pot conecta"
 msgid "Account suspended"
 msgstr "Serviciu suspendat"
 
-#: fleio/notifications/formatting.py:9
+#: fleio/notifications/formatting.py:8
+#, fuzzy
+#| msgid "Service suspended"
+msgid "Account terminated"
+msgstr "Serviciu suspendat"
+
+#: fleio/notifications/formatting.py:10
+msgid "Upcoming domain renewal"
+msgstr ""
+
+#: fleio/notifications/formatting.py:11
+#, fuzzy
+#| msgid "Domain not available for registration"
+msgid "Domain registration confirmation"
+msgstr "Domeniul nu este disponibil pentru înregistrare"
+
+#: fleio/notifications/formatting.py:12
+#, fuzzy
+#| msgid "New domain transfer {} order"
+msgid "Domain transfer initiated"
+msgstr "Comandă nouă transfer domeniu {}"
+
+#: fleio/notifications/formatting.py:13
+#, fuzzy
+#| msgid "New domain transfer {} order"
+msgid "Domain transfer completed"
+msgstr "Comandă nouă transfer domeniu {}"
+
+#: fleio/notifications/formatting.py:14
+#, fuzzy
+#| msgid "New domain transfer {} order"
+msgid "Domain transfer failed"
+msgstr "Comandă nouă transfer domeniu {}"
+
+#: fleio/notifications/formatting.py:15
+#, fuzzy
+#| msgid "New domain register {} order"
+msgid "Domain expired"
+msgstr "Comandă nouă înregistrare domeniu {}"
+
+#: fleio/notifications/formatting.py:17 plugins/todo/billing_module.py:52
+msgid "Service suspended"
+msgstr "Serviciu suspendat"
+
+#: fleio/notifications/formatting.py:18 plugins/todo/billing_module.py:67
+msgid "Service resumed"
+msgstr "Serviciu repornit"
+
+#: fleio/notifications/formatting.py:20
 #, fuzzy
 #| msgid "Authentication succeeded"
 msgid "Automatic payment succeeded"
 msgstr "Autentificarea a reușit"
 
-#: fleio/notifications/formatting.py:10
+#: fleio/notifications/formatting.py:21
 #, fuzzy
 #| msgid "Invoice {} payment"
 msgid "Automatic payment failed"
 msgstr "Plată factură {}"
 
-#: fleio/notifications/formatting.py:11
+#: fleio/notifications/formatting.py:22
 #, fuzzy
 #| msgid "Billing cycle"
 msgid "Billing new invoice"
 msgstr "Ciclu de facturare"
 
-#: fleio/notifications/formatting.py:12
+#: fleio/notifications/formatting.py:23
 #, fuzzy
 #| msgid "Billing cycle"
 msgid "Billing new auto invoice"
 msgstr "Ciclu de facturare"
 
-#: fleio/notifications/formatting.py:14 fleio/notifications/formatting.py:19
+#: fleio/notifications/formatting.py:24
+#, fuzzy
+#| msgid "Invoice payment"
+msgid "Invoice payment reminder"
+msgstr "Plată factură"
+
+#: fleio/notifications/formatting.py:25
+#, fuzzy
+#| msgid "Invoice payment"
+msgid "Invoice payment overdue"
+msgstr "Plată factură"
+
+#: fleio/notifications/formatting.py:26
+#, fuzzy
+#| msgid "Invoice payment"
+msgid "Invoice payment confirmation"
+msgstr "Plată factură"
+
+#: fleio/notifications/formatting.py:27
+#, fuzzy
+#| msgid "Could not connect"
+msgid "Invoice refund confirmation"
+msgstr "Nu mă pot conecta"
+
+#: fleio/notifications/formatting.py:29 fleio/notifications/formatting.py:34
 #, fuzzy
 #| msgid "Client already suspended"
 msgid "Ticket opened"
 msgstr "Clientul este deja suspendat"
 
-#: fleio/notifications/formatting.py:15 fleio/notifications/formatting.py:20
+#: fleio/notifications/formatting.py:30 fleio/notifications/formatting.py:35
 #, fuzzy
 #| msgid "Client already suspended"
 msgid "Ticket reopened"
 msgstr "Clientul este deja suspendat"
 
-#: fleio/notifications/formatting.py:16 fleio/notifications/formatting.py:21
+#: fleio/notifications/formatting.py:31 fleio/notifications/formatting.py:36
 #, fuzzy
 #| msgid "Ticket {} updated"
 msgid "Ticket reply added"
 msgstr "Tichet {} actualizat"
 
-#: fleio/notifications/formatting.py:17 fleio/notifications/formatting.py:22
+#: fleio/notifications/formatting.py:32 fleio/notifications/formatting.py:37
 #, fuzzy
 #| msgid "Tickets"
 msgid "Ticket closed"
 msgstr "Tickete"
 
-#: fleio/notifications/formatting.py:24
+#: fleio/notifications/formatting.py:39
 #, fuzzy
 #| msgid "Openstack"
 msgid "Openstack error"
 msgstr "Openstack"
 
-#: fleio/notifications/formatting.py:25
+#: fleio/notifications/formatting.py:40
 msgid "Openstack backup or snapshot fail"
 msgstr ""
 
-#: fleio/notifications/formatting.py:27
+#: fleio/notifications/formatting.py:42
 #, fuzzy
 #| msgid "When order is placed"
 msgid "New order placed"
 msgstr "Când comanda este plasată"
 
-#: fleio/notifications/formatting.py:28
+#: fleio/notifications/formatting.py:43
 #, fuzzy
 #| msgid "Payment added"
 msgid "New payment added"
 msgstr "Plata adaugată"
 
-#: fleio/notifications/formatting.py:35
+#: fleio/notifications/formatting.py:50
 msgid ""
 "This notification template will be sent to the user if his account is "
 "running low on credit. This will inform him how much time his credit will "
@@ -7286,7 +7361,7 @@ msgstr ""
 "bazându-se pe resursele cloud pe care acesta le are. Variabilele disponibile "
 "pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:42
+#: fleio/notifications/formatting.py:57
 msgid ""
 "This notification template will be sent to the user if he requests password "
 "change for his account, in case he forgets it. Available variables to use "
@@ -7296,7 +7371,7 @@ msgstr ""
 "cere recuperarea parolei pentru contul său, în cazul in care acesta o uită. "
 "Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:48
+#: fleio/notifications/formatting.py:63
 #, fuzzy
 #| msgid ""
 #| "This notification template will be sent to the user if he requests "
@@ -7310,7 +7385,7 @@ msgstr ""
 "cere recuperarea parolei pentru contul său, în cazul in care acesta o uită. "
 "Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:54
+#: fleio/notifications/formatting.py:69
 msgid ""
 "Notification to be sent if the cloud resources related to a client have been "
 "suspended because he ran out of credit. Available variables to use are:"
@@ -7319,7 +7394,65 @@ msgstr ""
 "suspendate datorită faptului ca a rămas fără credit. Variabilele disponibile "
 "pentru utilizat sunt:"
 
-#: fleio/notifications/formatting.py:59
+#: fleio/notifications/formatting.py:74
+msgid "Notification to be sent if the client account has been terminated."
+msgstr ""
+
+#: fleio/notifications/formatting.py:79
+msgid "Notification to be sent for an upcoming domain renewal"
+msgstr ""
+
+#: fleio/notifications/formatting.py:83
+msgid "Notification to be sent on domain registration confirmation"
+msgstr ""
+
+#: fleio/notifications/formatting.py:89
+msgid "Notification to be sent on domain transfer initiation"
+msgstr ""
+
+#: fleio/notifications/formatting.py:95
+msgid "Notification to be sent on domain transfer completion"
+msgstr ""
+
+#: fleio/notifications/formatting.py:101
+#, fuzzy
+#| msgid ""
+#| "Notification that is sent when a user orders a new product and an invoice "
+#| "gets issued. Available variables to use are:"
+msgid "Notification to be sent when a domain transfer failed"
+msgstr ""
+"Notificare care este trimisă când un utilizator comandă un produs nou si o "
+"factură este generată. Variabilele disponibile pentru utilizare sunt:"
+
+#: fleio/notifications/formatting.py:107
+msgid "Notification to be sent when a domain expired"
+msgstr ""
+
+#: fleio/notifications/formatting.py:114
+#, fuzzy
+#| msgid ""
+#| "Notification that is sent when a user orders a new product and an invoice "
+#| "gets issued. Available variables to use are:"
+msgid ""
+"Notification to be sent if a client service has been suspended. Available "
+"variables to use are:"
+msgstr ""
+"Notificare care este trimisă când un utilizator comandă un produs nou si o "
+"factură este generată. Variabilele disponibile pentru utilizare sunt:"
+
+#: fleio/notifications/formatting.py:119
+#, fuzzy
+#| msgid ""
+#| "Notification that is sent when a user orders a new product and an invoice "
+#| "gets issued. Available variables to use are:"
+msgid ""
+"Notification to be sent if a client service has been resumed. Available "
+"variables to use are:"
+msgstr ""
+"Notificare care este trimisă când un utilizator comandă un produs nou si o "
+"factură este generată. Variabilele disponibile pentru utilizare sunt:"
+
+#: fleio/notifications/formatting.py:125
 #, fuzzy
 #| msgid ""
 #| "Notification that is sent when a user orders a new product and an invoice "
@@ -7331,7 +7464,7 @@ msgstr ""
 "Notificare care este trimisă când un utilizator comandă un produs nou si o "
 "factură este generată. Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:65
+#: fleio/notifications/formatting.py:131
 #, fuzzy
 #| msgid ""
 #| "Notification that is sent when a user orders a new product and an invoice "
@@ -7343,7 +7476,55 @@ msgstr ""
 "Notificare care este trimisă când un utilizator comandă un produs nou si o "
 "factură este generată. Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:72
+#: fleio/notifications/formatting.py:138
+#, fuzzy
+#| msgid ""
+#| "Notification that is sent when a user orders a new product and an invoice "
+#| "gets issued. Available variables to use are:"
+msgid ""
+"This notification will be sent for unpaid invoices. Available variables to "
+"use are:"
+msgstr ""
+"Notificare care este trimisă când un utilizator comandă un produs nou si o "
+"factură este generată. Variabilele disponibile pentru utilizare sunt:"
+
+#: fleio/notifications/formatting.py:146
+#, fuzzy
+#| msgid ""
+#| "Notification that is sent when a user orders a new product and an invoice "
+#| "gets issued. Available variables to use are:"
+msgid ""
+"This notification will be sent for overdue invoices. Available variables to "
+"use are:"
+msgstr ""
+"Notificare care este trimisă când un utilizator comandă un produs nou si o "
+"factură este generată. Variabilele disponibile pentru utilizare sunt:"
+
+#: fleio/notifications/formatting.py:154
+#, fuzzy
+#| msgid ""
+#| "Notification that is sent when a user orders a new product and an invoice "
+#| "gets issued. Available variables to use are:"
+msgid ""
+"This notification will be sent after a successful invoice payment. Available "
+"variables to use are:"
+msgstr ""
+"Notificare care este trimisă când un utilizator comandă un produs nou si o "
+"factură este generată. Variabilele disponibile pentru utilizare sunt:"
+
+#: fleio/notifications/formatting.py:162
+#, fuzzy
+#| msgid ""
+#| "Notification that is sent when a user orders a new product and an invoice "
+#| "gets issued. Available variables to use are:"
+msgid ""
+"This notification will sent after an invoice payment is refunded. Available "
+"variables to use are:"
+msgstr ""
+"Notificare care este trimisă când un utilizator comandă un produs nou si o "
+"factură este generată. Variabilele disponibile pentru utilizare sunt:"
+
+#: fleio/notifications/formatting.py:171
 msgid ""
 "Notification that is sent when a user orders a new product and an invoice "
 "gets issued. Available variables to use are:"
@@ -7351,7 +7532,7 @@ msgstr ""
 "Notificare care este trimisă când un utilizator comandă un produs nou si o "
 "factură este generată. Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:78
+#: fleio/notifications/formatting.py:177
 #, fuzzy
 #| msgid ""
 #| "Notification that is sent when a user orders a new product and an invoice "
@@ -7363,7 +7544,7 @@ msgstr ""
 "Notificare care este trimisă când un utilizator comandă un produs nou si o "
 "factură este generată. Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:83
+#: fleio/notifications/formatting.py:183
 #, fuzzy
 #| msgid ""
 #| "Notification that is sent when a user orders a new product and an invoice "
@@ -7375,7 +7556,7 @@ msgstr ""
 "Notificare care este trimisă când un utilizator comandă un produs nou si o "
 "factură este generată. Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:89
+#: fleio/notifications/formatting.py:189
 #, fuzzy
 #| msgid ""
 #| "Notification that is sent when a user orders a new product and an invoice "
@@ -7386,7 +7567,7 @@ msgstr ""
 "Notificare care este trimisă când un utilizator comandă un produs nou si o "
 "factură este generată. Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:93
+#: fleio/notifications/formatting.py:193
 #, fuzzy
 #| msgid ""
 #| "Notification that is sent when a user orders a new product and an invoice "
@@ -7399,7 +7580,7 @@ msgstr ""
 "Notificare care este trimisă când un utilizator comandă un produs nou si o "
 "factură este generată. Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:98
+#: fleio/notifications/formatting.py:198
 #, fuzzy
 #| msgid ""
 #| "This notification template will be sent to the user if he requests "
@@ -7414,7 +7595,7 @@ msgstr ""
 "cere recuperarea parolei pentru contul său, în cazul in care acesta o uită. "
 "Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:104
+#: fleio/notifications/formatting.py:204
 #, fuzzy
 #| msgid ""
 #| "This notification template will be sent to the user if he requests "
@@ -7429,7 +7610,7 @@ msgstr ""
 "cere recuperarea parolei pentru contul său, în cazul in care acesta o uită. "
 "Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:110
+#: fleio/notifications/formatting.py:210
 #, fuzzy
 #| msgid ""
 #| "This notification template will be sent to the user if he requests "
@@ -7444,7 +7625,7 @@ msgstr ""
 "cere recuperarea parolei pentru contul său, în cazul in care acesta o uită. "
 "Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:118
+#: fleio/notifications/formatting.py:218
 #, fuzzy
 #| msgid ""
 #| "Notification that is sent when a user orders a new product and an invoice "
@@ -7457,7 +7638,7 @@ msgstr ""
 "Notificare care este trimisă când un utilizator comandă un produs nou si o "
 "factură este generată. Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:123
+#: fleio/notifications/formatting.py:223
 #, fuzzy
 #| msgid ""
 #| "This notification template will be sent to the user if he requests "
@@ -7472,7 +7653,7 @@ msgstr ""
 "cere recuperarea parolei pentru contul său, în cazul in care acesta o uită. "
 "Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:129
+#: fleio/notifications/formatting.py:229
 #, fuzzy
 #| msgid ""
 #| "This notification template will be sent to the user if he requests "
@@ -7487,7 +7668,7 @@ msgstr ""
 "cere recuperarea parolei pentru contul său, în cazul in care acesta o uită. "
 "Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:135
+#: fleio/notifications/formatting.py:235
 #, fuzzy
 #| msgid ""
 #| "This notification template will be sent to the user if he requests "
@@ -7502,7 +7683,7 @@ msgstr ""
 "cere recuperarea parolei pentru contul său, în cazul in care acesta o uită. "
 "Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:142
+#: fleio/notifications/formatting.py:242
 #, fuzzy
 #| msgid ""
 #| "Notification that is sent when a user orders a new product and an invoice "
@@ -7514,7 +7695,7 @@ msgstr ""
 "Notificare care este trimisă când un utilizator comandă un produs nou si o "
 "factură este generată. Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/formatting.py:149
+#: fleio/notifications/formatting.py:249
 #, fuzzy
 #| msgid ""
 #| "Notification that is sent when a user orders a new product and an invoice "
@@ -7526,7 +7707,7 @@ msgstr ""
 "Notificare care este trimisă când un utilizator comandă un produs nou si o "
 "factură este generată. Variabilele disponibile pentru utilizare sunt:"
 
-#: fleio/notifications/models.py:45 plugins/domains/models/domain.py:41
+#: fleio/notifications/models.py:45 plugins/domains/models/domain.py:44
 msgid "Expired"
 msgstr "Expirat"
 
@@ -7546,15 +7727,15 @@ msgstr "Ridicat"
 msgid "Critical"
 msgstr "Critic"
 
-#: fleio/notifications/models.py:133 fleio/notifications/models.py:139
+#: fleio/notifications/models.py:136 fleio/notifications/models.py:142
 msgid "Sent"
 msgstr "Trimis"
 
-#: fleio/notifications/models.py:134 fleio/notifications/models.py:140
+#: fleio/notifications/models.py:137 fleio/notifications/models.py:143
 msgid "Seen"
 msgstr "Văzut"
 
-#: fleio/notifications/models.py:203
+#: fleio/notifications/models.py:206
 #, fuzzy
 #| msgid "Notification url is required"
 msgid "Notification settings for user {}"
@@ -7981,20 +8162,20 @@ msgstr "Nu poti șterge ultima notificare de felul acesta."
 msgid "Cluster upgrade started"
 msgstr "Redimensionarea instanței a început cu succes"
 
-#: fleio/openstack/common/cluster_template_base_viewset.py:86
-#: fleio/openstack/common/cluster_template_base_viewset.py:101
+#: fleio/openstack/common/cluster_template_base_viewset.py:87
+#: fleio/openstack/common/cluster_template_base_viewset.py:102
 msgid "You are not allowed to create a public cluster template"
 msgstr ""
 
-#: fleio/openstack/common/cluster_template_base_viewset.py:136
+#: fleio/openstack/common/cluster_template_base_viewset.py:137
 msgid "Error while trying to update template: {}"
 msgstr ""
 
-#: fleio/openstack/common/cluster_template_base_viewset.py:147
+#: fleio/openstack/common/cluster_template_base_viewset.py:148
 msgid "You are not allowed to delete a public cluster template."
 msgstr ""
 
-#: fleio/openstack/common/cluster_template_base_viewset.py:154
+#: fleio/openstack/common/cluster_template_base_viewset.py:155
 #, fuzzy
 #| msgid "Ticket {} opened"
 msgid "Successfully deleted cluster template"
@@ -8483,7 +8664,7 @@ msgstr ""
 #: fleio/openstack/models/image.py:21 fleio/openstack/models/image.py:71
 #: fleio/openstack/models/image.py:81
 #: fleio/openstack/models/volume_snapshot.py:45
-#: plugins/domains/models/domain.py:44
+#: plugins/domains/models/domain.py:47
 msgid "Deleted"
 msgstr "Șters"
 
@@ -9369,7 +9550,7 @@ msgid ""
 "Could not get price due to volume attachment missing related volume info."
 msgstr ""
 
-#: fleio/openstack/instances/views.py:1967
+#: fleio/openstack/instances/views.py:1969
 msgid "Cannot simulate price. Volume size provided but missing volume type."
 msgstr ""
 
@@ -11066,57 +11247,63 @@ msgstr "Resursa nu a fost găsită"
 msgid "Collector exception"
 msgstr "Excepție colector"
 
-#: fleio/osbilling/models/models.py:38
+#: fleio/osbilling/models/models.py:40
 msgid "Second"
 msgstr "Secunda"
 
-#: fleio/osbilling/models/models.py:39
+#: fleio/osbilling/models/models.py:41
 msgid "Minute"
 msgstr "Minut"
 
-#: fleio/osbilling/models/models.py:40
+#: fleio/osbilling/models/models.py:42
 msgid "Hour"
 msgstr "Oră"
 
-#: fleio/osbilling/models/models.py:41
+#: fleio/osbilling/models/models.py:43
 msgid "Billing cycle"
 msgstr "Ciclu de facturare"
 
-#: fleio/osbilling/models/models.py:49
+#: fleio/osbilling/models/models.py:51
 msgid "Equal"
 msgstr "Egal"
 
-#: fleio/osbilling/models/models.py:50
+#: fleio/osbilling/models/models.py:52
 msgid "Not equal"
 msgstr "Inegal"
 
-#: fleio/osbilling/models/models.py:51
+#: fleio/osbilling/models/models.py:53
 msgid "In list"
 msgstr ""
 
-#: fleio/osbilling/models/models.py:52
+#: fleio/osbilling/models/models.py:54
 #, fuzzy
 #| msgid "Not in"
 msgid "Not in list"
 msgstr "Nu în"
 
-#: fleio/osbilling/models/models.py:56
+#: fleio/osbilling/models/models.py:58
 msgid "Less than"
 msgstr "Mai puțin decât"
 
-#: fleio/osbilling/models/models.py:57
+#: fleio/osbilling/models/models.py:59
 msgid "Less or equal"
 msgstr "Mai mic sau egal"
 
-#: fleio/osbilling/models/models.py:58
+#: fleio/osbilling/models/models.py:60
 msgid "Greater than"
 msgstr "Mai mare ca"
 
-#: fleio/osbilling/models/models.py:59
+#: fleio/osbilling/models/models.py:61
 msgid "Greater or equal"
 msgstr "Mai mare sau egal"
 
-#: fleio/osbilling/models/models.py:366
+#: fleio/osbilling/models/models.py:182
+#, fuzzy
+#| msgid "Cannot delete invoice with associated transactions"
+msgid "Cannot delete plan used in reseller resources."
+msgstr "Nu se poate șterge o factură asociată cu tranzacții"
+
+#: fleio/osbilling/models/models.py:375
 msgid "modifier"
 msgstr ""
 
@@ -11233,13 +11420,13 @@ msgstr ""
 msgid "Task has no associated log file."
 msgstr ""
 
-#: fleiostaff/billing/configurable_options/serializers.py:25
+#: fleiostaff/billing/configurable_options/serializers.py:63
 #, fuzzy
 #| msgid "Client is required."
 msgid "Currency is required"
 msgstr "Clientul este obligatoriu."
 
-#: fleiostaff/billing/configurable_options/serializers.py:54
+#: fleiostaff/billing/configurable_options/serializers.py:92
 msgid "Unable to auto calculate prices"
 msgstr "Nu am putu calcula prețurile automat"
 
@@ -11502,19 +11689,13 @@ msgstr "Setări actualizate"
 msgid "Cannot change advanced settings in demo mode"
 msgstr "Nu se pot salva setările OpenStack în modul demo"
 
-#: fleiostaff/core/clients/serializers.py:299
-#, fuzzy
-#| msgid "License file not intact. Please reactivate license"
-msgid "License client limit reached. Please check your license"
-msgstr "Fișierul de licență nu este intact. Vă rugăm să reactivați licență"
-
-#: fleiostaff/core/clients/serializers.py:379
+#: fleiostaff/core/clients/serializers.py:372
 #, fuzzy
 #| msgid "Can't migrate to selected plan"
 msgid "Cannot assign a client that is a reseller to another reseller"
 msgstr "Nu se poate migra pe planul selectat"
 
-#: fleiostaff/core/clients/views.py:70
+#: fleiostaff/core/clients/views.py:74
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "User {username} ({user_id}) deleted a client {client_name} ({client_id})"
@@ -11525,7 +11706,7 @@ msgstr ""
 "Utilizatorul {username} ({user_id}) a șters clientul {client_name} "
 "({client_id})"
 
-#: fleiostaff/core/clients/views.py:71
+#: fleiostaff/core/clients/views.py:75
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "User {username} ({user_id}) deleted a client {client_name} ({client_id})"
@@ -11535,7 +11716,18 @@ msgstr ""
 "Utilizatorul {username} ({user_id}) a șters clientul {client_name} "
 "({client_id})"
 
-#: fleiostaff/core/clients/views.py:72
+#: fleiostaff/core/clients/views.py:76
+#, fuzzy, python-brace-format
+#| msgid ""
+#| "User {username} ({user_id}) deleted a client {client_name} ({client_id})"
+msgid ""
+"Staff user {username} ({user_id}) activated client {client_name} "
+"({object_id})."
+msgstr ""
+"Utilizatorul {username} ({user_id}) a șters clientul {client_name} "
+"({client_id})"
+
+#: fleiostaff/core/clients/views.py:77
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -11546,7 +11738,7 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/core/clients/views.py:73
+#: fleiostaff/core/clients/views.py:78
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -11557,7 +11749,7 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/core/clients/views.py:74
+#: fleiostaff/core/clients/views.py:79
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -11568,7 +11760,7 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/core/clients/views.py:75
+#: fleiostaff/core/clients/views.py:80
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -11579,7 +11771,7 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/core/clients/views.py:76
+#: fleiostaff/core/clients/views.py:81
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -11591,120 +11783,132 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/core/clients/views.py:77
+#: fleiostaff/core/clients/views.py:82
 #, fuzzy, python-brace-format
 #| msgid "Staff user {username} ({user_id}) logged out"
 msgid ""
 "Staff user {username} ({user_id}) added client ({object_id}) to a group."
 msgstr "Administratorul {username} ({user_id}) s-a deconectat"
 
-#: fleiostaff/core/clients/views.py:78
+#: fleiostaff/core/clients/views.py:83
 #, fuzzy, python-brace-format
 #| msgid "Staff user {username} ({user_id}) logged out"
 msgid ""
 "Staff user {username} ({user_id}) removed client ({object_id}) from a group."
 msgstr "Administratorul {username} ({user_id}) s-a deconectat"
 
-#: fleiostaff/core/clients/views.py:80
+#: fleiostaff/core/clients/views.py:85
 #, fuzzy, python-brace-format
 #| msgid "Staff user {username} ({user_id}) logged in"
 msgid "Staff user {username} ({user_id}) set billing agreements."
 msgstr "Administratorul {username} ({user_id}) s-a conectat"
 
-#: fleiostaff/core/clients/views.py:82
+#: fleiostaff/core/clients/views.py:87
 #, fuzzy, python-brace-format
 #| msgid "Staff user {username} ({user_id}) logged in"
 msgid "Staff user {username} ({user_id}) sent mass email to clients."
 msgstr "Administratorul {username} ({user_id}) s-a conectat"
 
-#: fleiostaff/core/clients/views.py:123 fleiostaff/core/clients/views.py:135
+#: fleiostaff/core/clients/views.py:134
+#, fuzzy
+#| msgid "Option associated"
+msgid "Client activated"
+msgstr "Opțiune asociată"
+
+#: fleiostaff/core/clients/views.py:142 fleiostaff/core/clients/views.py:154
 msgid "Usage updated"
 msgstr "Consumul a fost actualizat"
 
-#: fleiostaff/core/clients/views.py:130
+#: fleiostaff/core/clients/views.py:149
 #, fuzzy
 #| msgid "Cannot create a network without a project."
 msgid "Cannot reset usage because reset usage feature is disabled"
 msgstr "Nu se poate crea  o rețea fără un proiect."
 
-#: fleiostaff/core/clients/views.py:179
+#: fleiostaff/core/clients/views.py:198
 #: reseller/core/clients/views/client.py:237
 msgid "Client delete scheduled"
 msgstr "Ștergerea clientului a fost programată"
 
-#: fleiostaff/core/clients/views.py:194
+#: fleiostaff/core/clients/views.py:213
 #, fuzzy
 #| msgid "Cannot get or create token for inactive user"
 msgid "Cannot associate an inactive or staff user"
 msgstr "Nu se poate obține sau crea token-ul pentru utilizator inactiv"
 
-#: fleiostaff/core/clients/views.py:203
+#: fleiostaff/core/clients/views.py:222
 #, fuzzy
 #| msgid "Project already associated with a client"
 msgid "User is already associated with this client"
 msgstr "Proiect deja asociat cu un client"
 
-#: fleiostaff/core/clients/views.py:204
+#: fleiostaff/core/clients/views.py:223
 #: reseller/core/clients/views/client.py:121
 msgid "User associated"
 msgstr "Utilizatorul a fost asociat"
 
-#: fleiostaff/core/clients/views.py:259
+#: fleiostaff/core/clients/views.py:278
 #: reseller/core/clients/views/client.py:200
 msgid "Configuration does not exist"
 msgstr "Configurarea nu există"
 
-#: fleiostaff/core/clients/views.py:294 fleiostaff/core/clients/views.py:309
+#: fleiostaff/core/clients/views.py:313 fleiostaff/core/clients/views.py:328
 #, fuzzy
 #| msgid "Missing group id to filter users against it"
 msgid "Missing group id to filter clients against it"
 msgstr "Lipsește id-ul grupului după care să filtrez"
 
-#: fleiostaff/core/clients/views.py:332 fleiostaff/core/clients/views.py:350
+#: fleiostaff/core/clients/views.py:351 fleiostaff/core/clients/views.py:369
 #: fleiostaff/core/users/views.py:359 fleiostaff/core/users/views.py:377
 msgid "Missing group id"
 msgstr ""
 
-#: fleiostaff/core/clients/views.py:336 fleiostaff/core/clients/views.py:354
+#: fleiostaff/core/clients/views.py:355 fleiostaff/core/clients/views.py:373
 #: fleiostaff/core/users/views.py:363 fleiostaff/core/users/views.py:381
 msgid "No group with the provided id found"
 msgstr ""
 
-#: fleiostaff/core/clients/views.py:340
+#: fleiostaff/core/clients/views.py:359
 #, fuzzy
 #| msgid "Client has no OpenStack project"
 msgid "Client added to group"
 msgstr "Clientul nu are nici un proiect OpenStack"
 
-#: fleiostaff/core/clients/views.py:358
+#: fleiostaff/core/clients/views.py:377
 msgid "Client removed from group"
 msgstr ""
 
-#: fleiostaff/core/clients/views.py:421
+#: fleiostaff/core/clients/views.py:440
 #, fuzzy
 #| msgid "Resume scheduled"
 msgid "Mass email scheduled"
 msgstr "Reluarea programată"
 
-#: fleiostaff/core/clients/views.py:455
+#: fleiostaff/core/clients/views.py:479
 msgid ""
 "You cannot create a reseller service for a client that is assigned to a "
 "reseller."
 msgstr ""
 
-#: fleiostaff/core/clients/views.py:461
+#: fleiostaff/core/clients/views.py:485
 #, fuzzy
 #| msgid "Client has already a project"
 msgid "Client already has a reseller service"
 msgstr "Clientul are deja un proiect"
 
-#: fleiostaff/core/clients/views.py:500
+#: fleiostaff/core/clients/views.py:524
+#, fuzzy
+#| msgid "Payment not found."
+msgid "Plan cannot be changed"
+msgstr "Plata nu a fost găsita."
+
+#: fleiostaff/core/clients/views.py:528
 #, fuzzy
 #| msgid "Payment not found."
 msgid "Plan not found"
 msgstr "Plata nu a fost găsita."
 
-#: fleiostaff/core/clients/views.py:505 fleiostaff/core/clients/views.py:527
+#: fleiostaff/core/clients/views.py:533 fleiostaff/core/clients/views.py:555
 #, fuzzy
 #| msgid "Resource not found"
 msgid "Service not found"
@@ -11932,27 +12136,35 @@ msgstr "Tickete {} deschise"
 msgid "Second factor authentication disabled."
 msgstr "Autentificare OpenStack eșuată"
 
-#: fleiostaff/core/views.py:93
+#: fleiostaff/core/views.py:97
 msgid "License key cannot be changed in demo mode"
 msgstr "Cheia de licență nu poate fi schimbată in modul demo"
 
-#: fleiostaff/core/views.py:357
+#: fleiostaff/core/views.py:364 reseller/core/auth/views.py:192
+msgid "User is no longer impersonated"
+msgstr "Utilizatorul nu mai este impersonat"
+
+#: fleiostaff/core/views.py:366 reseller/core/auth/views.py:194
+msgid "No user is impersonated"
+msgstr "Nu este nici un utilizator impersonat"
+
+#: fleiostaff/core/views.py:374
 msgid "euid required"
 msgstr "euid necesar"
 
-#: fleiostaff/core/views.py:362
+#: fleiostaff/core/views.py:379
 msgid "User does not exist"
 msgstr "Utilizatorul nu exista"
 
-#: fleiostaff/core/views.py:385
+#: fleiostaff/core/views.py:405
 msgid "cores"
 msgstr ""
 
-#: fleiostaff/core/views.py:387
+#: fleiostaff/core/views.py:407
 msgid "RAM"
 msgstr ""
 
-#: fleiostaff/core/views.py:506
+#: fleiostaff/core/views.py:526
 #, fuzzy
 #| msgid "Can't delete cycle. It is referenced by another object"
 msgid "Currency cannot be deleted because it is used by other objects"
@@ -12057,31 +12269,31 @@ msgstr ""
 msgid "If you want to get config for cluster, impersonate the owner."
 msgstr ""
 
-#: fleiostaff/openstack/core/views.py:94 reseller/openstack/core/views.py:89
+#: fleiostaff/openstack/core/views.py:102 reseller/openstack/core/views.py:93
 #, fuzzy
 #| msgid "Client has already a project"
 msgid "Client already has a project"
 msgstr "Clientul are deja un proiect"
 
-#: fleiostaff/openstack/core/views.py:99 reseller/openstack/core/views.py:94
+#: fleiostaff/openstack/core/views.py:110 reseller/openstack/core/views.py:98
 msgid "Project already associated with a client"
 msgstr "Proiect deja asociat cu un client"
 
-#: fleiostaff/openstack/core/views.py:110
+#: fleiostaff/openstack/core/views.py:121
 msgid "Project not found"
 msgstr "Proiectul nu a fost găsit"
 
-#: fleiostaff/openstack/core/views.py:127 reseller/openstack/core/views.py:111
+#: fleiostaff/openstack/core/views.py:138 reseller/openstack/core/views.py:115
 #, fuzzy
 #| msgid "Unable to initialize the ceilometer client"
 msgid "Failed to create service"
 msgstr "Nu se poate inițializa clientul ceilometer"
 
-#: fleiostaff/openstack/core/views.py:130 reseller/openstack/core/views.py:114
+#: fleiostaff/openstack/core/views.py:143 reseller/openstack/core/views.py:118
 msgid "A project already exists for this client"
 msgstr "Deja există un proiect pentru acest client"
 
-#: fleiostaff/openstack/core/views.py:137 reseller/openstack/core/views.py:121
+#: fleiostaff/openstack/core/views.py:150 reseller/openstack/core/views.py:125
 #, fuzzy
 #| msgid "Role {} does not exist in Openstack"
 msgid ""
@@ -12089,7 +12301,7 @@ msgid ""
 "role."
 msgstr "Rolul {} nu exista in OpenStack"
 
-#: fleiostaff/openstack/core/views.py:140 reseller/openstack/core/views.py:124
+#: fleiostaff/openstack/core/views.py:153 reseller/openstack/core/views.py:128
 msgid ""
 "OpenStack role was not set in OpenStack settings -> defaults tab. Set an "
 "existing role as default role."
@@ -12131,8 +12343,10 @@ msgid "Unable to create zone. A zone with the same domain name already exists"
 msgstr "Nu am putut crea zona. O zonă cu același domeniu există deja."
 
 #: fleiostaff/openstack/dns/views.py:258
-msgid "Unable to create zone. Please see logs for more info"
-msgstr "Zona nu poate fi creată. Vezi log-uri pentru mai multe detalii"
+#, fuzzy
+#| msgid "Error deleting"
+msgid "Error while creating zone: {}"
+msgstr "Eroare la ștergere"
 
 #: fleiostaff/openstack/dns/views.py:291
 msgid "Unable to create record. Please see logs for more info"
@@ -12390,7 +12604,7 @@ msgstr "Obiectul există in Fleio dar nu și in OpenStack"
 msgid "Must be called with region parameter"
 msgstr "Apelul trebuie făcut cu parametrul regiune"
 
-#: fleiostaff/openstack/projects/views.py:50
+#: fleiostaff/openstack/projects/views.py:51
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -12400,23 +12614,23 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleiostaff/openstack/projects/views.py:93
+#: fleiostaff/openstack/projects/views.py:94
 #: plugins/domains/registrars_connectors/registrar_connector_base.py:86
 #: plugins/tickets/staff/tickets/views/tickets.py:83
 msgid "Not implemented"
 msgstr "Neimplementat"
 
-#: fleiostaff/openstack/projects/views.py:131
+#: fleiostaff/openstack/projects/views.py:135
 msgid "Project delete scheduled"
 msgstr "Ștergerea proiectului a fost programată"
 
-#: fleiostaff/openstack/projects/views.py:138
+#: fleiostaff/openstack/projects/views.py:145
 msgid "Project deleted"
 msgstr "Protectul a fost șters"
 
-#: fleiostaff/openstack/projects/views.py:189
-#: fleiostaff/openstack/projects/views.py:228
-#: fleiostaff/openstack/projects/views.py:260
+#: fleiostaff/openstack/projects/views.py:196
+#: fleiostaff/openstack/projects/views.py:235
+#: fleiostaff/openstack/projects/views.py:267
 #, fuzzy
 #| msgid "Operation not allowed"
 msgid "Edit quotas not allowed"
@@ -12443,23 +12657,23 @@ msgstr ""
 "Certificatul SSL pentru Keystone este invalid. Verificați certificatul "
 "pentru regiunea cu URL-ul de autentificare: {0}"
 
-#: fleiostaff/openstack/settings/serializers.py:130
+#: fleiostaff/openstack/settings/serializers.py:131
 msgid "Please set a valid set of OpenStack credentials first."
 msgstr ""
 
-#: fleiostaff/openstack/settings/serializers.py:133
+#: fleiostaff/openstack/settings/serializers.py:134
 msgid "Role {} does not exist"
 msgstr "Rolul {} nu există"
 
-#: fleiostaff/openstack/settings/serializers.py:135
+#: fleiostaff/openstack/settings/serializers.py:136
 msgid "Region {} does not exist"
 msgstr "Regiunea {} nu există"
 
-#: fleiostaff/openstack/settings/serializers.py:137
+#: fleiostaff/openstack/settings/serializers.py:138
 msgid "Domain with ID {} not found"
 msgstr "Domeniul cu ID {} nu a fost găsit"
 
-#: fleiostaff/openstack/settings/serializers.py:248
+#: fleiostaff/openstack/settings/serializers.py:249
 msgid "Notification url is required"
 msgstr "URL-ul pentru notificari este obligatoriu"
 
@@ -12553,39 +12767,39 @@ msgstr ""
 msgid "Unable to find the network."
 msgstr "Rețeaua nu poate fi gasită."
 
-#: fleiostaff/openstack/summary_views.py:79
+#: fleiostaff/openstack/summary_views.py:80
 msgid "Used vCPUs"
 msgstr ""
 
-#: fleiostaff/openstack/summary_views.py:79
+#: fleiostaff/openstack/summary_views.py:80
 msgid "Not used vCPUs"
 msgstr ""
 
-#: fleiostaff/openstack/summary_views.py:81
+#: fleiostaff/openstack/summary_views.py:82
 msgid "Used disk (GB)"
 msgstr ""
 
-#: fleiostaff/openstack/summary_views.py:81
+#: fleiostaff/openstack/summary_views.py:82
 msgid "Free disk (GB)"
 msgstr ""
 
-#: fleiostaff/openstack/summary_views.py:83
+#: fleiostaff/openstack/summary_views.py:84
 msgid "Used memory (MB)"
 msgstr ""
 
-#: fleiostaff/openstack/summary_views.py:83
+#: fleiostaff/openstack/summary_views.py:84
 msgid "Free memory (MB)"
 msgstr ""
 
-#: fleiostaff/openstack/summary_views.py:86
+#: fleiostaff/openstack/summary_views.py:87
 msgid "All Hypervisors..."
 msgstr ""
 
-#: fleiostaff/openstack/summary_views.py:98
+#: fleiostaff/openstack/summary_views.py:99
 msgid "All {} hypervisors"
 msgstr ""
 
-#: fleiostaff/openstack/summary_views.py:101
+#: fleiostaff/openstack/summary_views.py:102
 msgid "Hypervisor {} - {} - {}"
 msgstr ""
 
@@ -12770,37 +12984,37 @@ msgstr ""
 msgid "Total traffic"
 msgstr ""
 
-#: fleiostaff/osbilling/serializers.py:43
+#: fleiostaff/osbilling/serializers.py:44
 #: reseller/osbilling/pricing/serializers/pricing_plan.py:37
 msgid "Can't migrate to selected plan"
 msgstr "Nu se poate migra pe planul selectat"
 
-#: fleiostaff/osbilling/serializers.py:60
+#: fleiostaff/osbilling/serializers.py:61
 #: reseller/osbilling/pricing/serializers/price_rule_condition.py:21
 msgid "Attribute {} already present in modifiers"
 msgstr "Atributul {} deja prezent în modificatori"
 
-#: fleiostaff/osbilling/serializers.py:80
+#: fleiostaff/osbilling/serializers.py:81
 #: reseller/osbilling/pricing/serializers/price_rule_modifier.py:24
 msgid "Attribute {} already present in conditions"
 msgstr "Atributul {} deja prezent in condiții"
 
-#: fleiostaff/osbilling/serializers.py:126
+#: fleiostaff/osbilling/serializers.py:127
 #, fuzzy
 #| msgid "License is invalid"
 msgid "Negative price is invalid"
 msgstr "Licența este invalidă"
 
-#: fleiostaff/osbilling/serializers.py:128
+#: fleiostaff/osbilling/serializers.py:129
 #: reseller/osbilling/pricing/serializers/price_rule.py:40
 msgid "Multiple From values"
 msgstr "Multiplu din valori"
 
-#: fleiostaff/osbilling/serializers.py:141
+#: fleiostaff/osbilling/serializers.py:142
 msgid "Cannot set an end date that is lower than the start date."
 msgstr ""
 
-#: fleiostaff/osbilling/serializers.py:148
+#: fleiostaff/osbilling/serializers.py:149
 #: reseller/osbilling/pricing/serializers/price_rule.py:55
 msgid "Same attribute not allowed in modifiers and conditions: {}"
 msgstr "Același atribut nu este permis in modificatori și condiții: {}"
@@ -12879,9 +13093,21 @@ msgstr "Registrari"
 msgid "My domains"
 msgstr "Domenii"
 
-#: plugins/domains/billing_module.py:87
+#: plugins/domains/billing_module.py:89
 msgid "Domain {} is not active"
 msgstr "Domeniul {} nu este activ"
+
+#: plugins/domains/billing_module.py:118
+msgid ""
+"Contact associated with domain {} is missing the following fields: {}. "
+"Update fields then try again."
+msgstr ""
+
+#: plugins/domains/billing_module.py:121
+msgid ""
+"Client associated with domain {} is missing the following fields: {}. Update "
+"fields then try again."
+msgstr ""
 
 #: plugins/domains/custom_fields/config/validators.py:14
 #, fuzzy
@@ -12905,7 +13131,7 @@ msgstr ""
 msgid "Domain fields"
 msgstr "Domenii"
 
-#: plugins/domains/enduser/serializers/register_domain.py:13
+#: plugins/domains/enduser/serializers/register_domain.py:14
 #: plugins/domains/enduser/serializers/save_nameservers.py:11
 #: plugins/domains/staff/serializers/register_domain.py:12
 #: plugins/domains/staff/serializers/save_nameservers.py:10
@@ -12914,7 +13140,7 @@ msgstr "Domenii"
 msgid "Not a valid hostname"
 msgstr "Nume de domeniu invalid"
 
-#: plugins/domains/enduser/serializers/register_domain.py:83
+#: plugins/domains/enduser/serializers/register_domain.py:90
 msgid "Missing custom fields: {}. Edit client/contact."
 msgstr ""
 
@@ -12923,117 +13149,117 @@ msgstr ""
 msgid "Cannot delete contact since it is still in use."
 msgstr ""
 
-#: plugins/domains/enduser/views/domains.py:103
-#: plugins/domains/staff/views/domains.py:138
+#: plugins/domains/enduser/views/domains.py:107
+#: plugins/domains/staff/views/domains.py:141
 msgid "Action completed successfully"
 msgstr "Acțiunea a fost îndeplinită cu succes"
 
-#: plugins/domains/enduser/views/domains.py:111
-#: plugins/domains/staff/views/domains.py:146
+#: plugins/domains/enduser/views/domains.py:115
+#: plugins/domains/staff/views/domains.py:149
 msgid "Failed to execute action for domain"
 msgstr "Nu am reușit să execut acțiunea pentru domeniu"
 
-#: plugins/domains/enduser/views/domains.py:120
-#: plugins/domains/staff/views/domains.py:155
+#: plugins/domains/enduser/views/domains.py:124
+#: plugins/domains/staff/views/domains.py:158
 msgid "Invalid action for domain"
 msgstr "Acțiune invalidă pentru domeniu"
 
-#: plugins/domains/enduser/views/domains.py:128
-#: plugins/domains/staff/views/domains.py:163
+#: plugins/domains/enduser/views/domains.py:132
+#: plugins/domains/staff/views/domains.py:166
 msgid "Invalid action or registrar not found"
 msgstr "Acțiune invalidă sau registrar negăsit"
 
-#: plugins/domains/enduser/views/domains.py:172
+#: plugins/domains/enduser/views/domains.py:176
 #, fuzzy
 #| msgid "Login not allowed. Please contact support"
 msgid "This domain has no registrar associated. Please contact support."
 msgstr "Autentificarea interzisă. Va rugam contactati personalul"
 
-#: plugins/domains/enduser/views/domains.py:176
+#: plugins/domains/enduser/views/domains.py:180
 #: plugins/domains/registrars_connectors/todo_registrar_connector.py:121
-#: plugins/domains/staff/views/domains.py:211
+#: plugins/domains/staff/views/domains.py:214
 msgid "Nameservers updated successfully"
 msgstr "Nameserverele au fost actualizate cu succes"
 
-#: plugins/domains/enduser/views/domains.py:189
-#: plugins/domains/staff/views/domains.py:224
+#: plugins/domains/enduser/views/domains.py:193
+#: plugins/domains/staff/views/domains.py:227
 msgid "Domain status should be {}"
 msgstr ""
 
-#: plugins/domains/enduser/views/domains.py:199
-#: plugins/domains/staff/views/domains.py:234
+#: plugins/domains/enduser/views/domains.py:203
+#: plugins/domains/staff/views/domains.py:237
 #, fuzzy
 #| msgid "Failed to execute action for domain"
 msgid "Failed to retrieve whois data for domain"
 msgstr "Nu am reușit să execut acțiunea pentru domeniu"
 
-#: plugins/domains/enduser/views/order_domain.py:60
+#: plugins/domains/enduser/views/order_domain.py:63
 #, fuzzy
 #| msgid "Login not allowed. Please contact support"
 msgid ""
 "Error while trying to check domain, try again or please contact support."
 msgstr "Autentificarea interzisă. Va rugam contactati personalul"
 
-#: plugins/domains/enduser/views/order_domain.py:77
+#: plugins/domains/enduser/views/order_domain.py:80
 #: plugins/domains/staff/views/order_domain.py:57
 msgid "Domains {} are not available for registration"
 msgstr "Domeniile {} nu sunt disponibile pentru înregistrare"
 
-#: plugins/domains/enduser/views/order_domain.py:86
-#: plugins/domains/enduser/views/order_domain.py:287
+#: plugins/domains/enduser/views/order_domain.py:89
+#: plugins/domains/enduser/views/order_domain.py:294
 #: plugins/domains/staff/views/order_domain.py:66
 #: plugins/domains/staff/views/order_domain.py:281
 msgid "No price defined for {} domains"
 msgstr "Nici un preț definit pentru domeniile {}"
 
-#: plugins/domains/enduser/views/order_domain.py:214
+#: plugins/domains/enduser/views/order_domain.py:221
 #: plugins/domains/staff/views/order_domain.py:202
 #, fuzzy
 #| msgid "Domain not available for registration"
 msgid "Domain registration"
 msgstr "Domeniul nu este disponibil pentru înregistrare"
 
-#: plugins/domains/enduser/views/order_domain.py:278
+#: plugins/domains/enduser/views/order_domain.py:285
 #: plugins/domains/staff/views/order_domain.py:272
 msgid "Domains {} are not available for transfer"
 msgstr "Domeniile {} nu sunt disponibile pentru transfer"
 
-#: plugins/domains/enduser/views/order_domain.py:345
+#: plugins/domains/enduser/views/order_domain.py:352
 #: plugins/domains/staff/views/order_domain.py:346
 #, fuzzy
 #| msgid "Bank Transfer"
 msgid "Domain transfer"
 msgstr "Transfer Bancar"
 
-#: plugins/domains/models/domain.py:34
+#: plugins/domains/models/domain.py:37
 msgid "Undefined"
 msgstr "Nedefinit"
 
-#: plugins/domains/models/domain.py:35
+#: plugins/domains/models/domain.py:38
 msgid "Unmanaged"
 msgstr "Neadministrat"
 
-#: plugins/domains/models/domain.py:36
+#: plugins/domains/models/domain.py:39
 msgid "Registration pending"
 msgstr "Se așteaptă înregistrarea"
 
-#: plugins/domains/models/domain.py:37
+#: plugins/domains/models/domain.py:40
 msgid "Transfer pending"
 msgstr "Se așteaptă transferul"
 
-#: plugins/domains/models/domain.py:39
+#: plugins/domains/models/domain.py:42
 msgid "Grace"
 msgstr "Grație"
 
-#: plugins/domains/models/domain.py:40
+#: plugins/domains/models/domain.py:43
 msgid "Redemption"
 msgstr "Răscumparare"
 
-#: plugins/domains/models/domain.py:42
+#: plugins/domains/models/domain.py:45
 msgid "Transferred away"
 msgstr "Transferat"
 
-#: plugins/domains/models/domain.py:81
+#: plugins/domains/models/domain.py:91
 #, fuzzy
 #| msgid "Domain"
 msgid "Domain {}"
@@ -13339,7 +13565,7 @@ msgid "Service not available."
 msgstr "Serviciu Gnocchi nu este disponibil"
 
 #: plugins/domains/registrars_connectors/rotld_connector.py:186
-#: plugins/domains/utils/domain.py:163
+#: plugins/domains/utils/domain.py:166
 msgid "Domain not available for registration"
 msgstr "Domeniul nu este disponibil pentru înregistrare"
 
@@ -13563,45 +13789,45 @@ msgstr "Comandă nouă înregistrare domeniu {}"
 msgid "A new order to register domain {} has been placed."
 msgstr "O nouă comandă pentru înregistrarea domeniului {} a fost plasată."
 
-#: plugins/domains/registrars_connectors/todo_registrar_connector.py:167
+#: plugins/domains/registrars_connectors/todo_registrar_connector.py:169
 msgid "New domain transfer {} order"
 msgstr "Comandă nouă transfer domeniu {}"
 
-#: plugins/domains/registrars_connectors/todo_registrar_connector.py:168
+#: plugins/domains/registrars_connectors/todo_registrar_connector.py:170
 msgid "A new order to transfer domain {} has been placed."
 msgstr "O comandă nouă pentru transferarea domeniului {} a fost plasată."
 
-#: plugins/domains/registrars_connectors/todo_registrar_connector.py:185
+#: plugins/domains/registrars_connectors/todo_registrar_connector.py:187
 msgid "New domain renew {} order"
 msgstr "Comandă nouă reînnoire domeniu {}"
 
-#: plugins/domains/registrars_connectors/todo_registrar_connector.py:186
+#: plugins/domains/registrars_connectors/todo_registrar_connector.py:188
 msgid "A new order to renew domain {} has been placed."
 msgstr "O nouă comandă pentru reînnoirea domeniului {} a fost plasată."
 
-#: plugins/domains/registrars_connectors/todo_registrar_connector.py:202
+#: plugins/domains/registrars_connectors/todo_registrar_connector.py:204
 msgid "Registrar lock activated for domain {}"
 msgstr ""
 
-#: plugins/domains/registrars_connectors/todo_registrar_connector.py:203
+#: plugins/domains/registrars_connectors/todo_registrar_connector.py:205
 msgid "Registrar lock has been activated for domain {}."
 msgstr ""
 
-#: plugins/domains/registrars_connectors/todo_registrar_connector.py:219
+#: plugins/domains/registrars_connectors/todo_registrar_connector.py:221
 msgid "Registrar lock deactivated for domain {}"
 msgstr ""
 
-#: plugins/domains/registrars_connectors/todo_registrar_connector.py:220
+#: plugins/domains/registrars_connectors/todo_registrar_connector.py:222
 msgid "Registrar lock has been deactivated for domain {}."
 msgstr ""
 
-#: plugins/domains/registrars_connectors/todo_registrar_connector.py:230
+#: plugins/domains/registrars_connectors/todo_registrar_connector.py:232
 #, fuzzy
 #| msgid "Nameservers updated successfully"
 msgid "Nameservers updated for domain {}"
 msgstr "Nameserverele au fost actualizate cu succes"
 
-#: plugins/domains/registrars_connectors/todo_registrar_connector.py:231
+#: plugins/domains/registrars_connectors/todo_registrar_connector.py:233
 msgid "Nameservers have been updated for domain {}."
 msgstr ""
 
@@ -13637,33 +13863,33 @@ msgstr ""
 msgid "no prices available"
 msgstr "Nu exista sub-rețele disponibile"
 
-#: plugins/domains/staff/views/domains.py:109
+#: plugins/domains/staff/views/domains.py:110
 msgid "Registrar not found"
 msgstr "Registrar-ul nu a fost găsit"
 
-#: plugins/domains/staff/views/domains.py:207
+#: plugins/domains/staff/views/domains.py:210
 #, fuzzy
 #| msgid "No boot source selected"
 msgid "No registrar selected"
 msgstr "Nicio sursă de boot selectată"
 
-#: plugins/domains/staff/views/domains.py:320
+#: plugins/domains/staff/views/domains.py:323
 msgid "No price defined for this registration period. Check TLD pricing"
 msgstr ""
 "Nici un preț definit pentru această perioadă de înregistrare. Verifică "
 "costurile TLD"
 
-#: plugins/domains/staff/views/domains.py:330
+#: plugins/domains/staff/views/domains.py:333
 #, fuzzy
 #| msgid "Not a valid domain name"
 msgid "Invalid domain name"
 msgstr "Nume de domeniu invalid"
 
-#: plugins/domains/staff/views/domains.py:342
+#: plugins/domains/staff/views/domains.py:345
 msgid "New domain name should have the same TLD({})"
 msgstr ""
 
-#: plugins/domains/staff/views/domains.py:368
+#: plugins/domains/staff/views/domains.py:373
 #, fuzzy
 #| msgid ""
 #| "Suspend instead of terminate is enabled for the client, service not "
@@ -13673,7 +13899,7 @@ msgid ""
 msgstr ""
 "Clientul are activată suspendarea în locul terminării, serviciu neșters."
 
-#: plugins/domains/staff/views/domains.py:373
+#: plugins/domains/staff/views/domains.py:378
 #, fuzzy
 #| msgid ""
 #| "Suspend instead of terminate is enabled for the client, service not "
@@ -13713,21 +13939,21 @@ msgstr "O cerere de anulare deja există pentru acest serviciu"
 msgid "TLD creation failed, please check logs for details."
 msgstr "Autentificarea interzisă. Va rugam contactati personalul"
 
-#: plugins/domains/utils/domain.py:136 plugins/domains/utils/domain.py:184
+#: plugins/domains/utils/domain.py:139 plugins/domains/utils/domain.py:187
 msgid "No TLD specified and default TLD is not set."
 msgstr "Nici un TLD specificat și TLD-ul default nu este setat."
 
-#: plugins/domains/utils/domain.py:149 plugins/domains/utils/domain.py:197
+#: plugins/domains/utils/domain.py:152 plugins/domains/utils/domain.py:200
 msgid "No whois server defined for TLD."
 msgstr "Nici un server whois definit pentru TLD."
 
-#: plugins/domains/utils/domain.py:153 plugins/domains/utils/domain.py:201
+#: plugins/domains/utils/domain.py:156 plugins/domains/utils/domain.py:204
 #, fuzzy
 #| msgid "Email not available"
 msgid "Domain available"
 msgstr "Emailul nu este disponibil"
 
-#: plugins/domains/utils/domain.py:211
+#: plugins/domains/utils/domain.py:214
 msgid "Cannot transfer a unregistered domain."
 msgstr "Nu poți transfera un domeniu neînregistrat"
 
@@ -13818,10 +14044,6 @@ msgstr ""
 #| msgid "Ticket {} opened"
 msgid "Successfully regenerated key"
 msgstr "Tickete {} deschise"
-
-#: plugins/hypanel/apps.py:27
-msgid "Hypanel"
-msgstr ""
 
 #: plugins/sms_authenticator/apps.py:10 plugins/sms_authenticator/apps.py:22
 #, fuzzy
@@ -14353,17 +14575,9 @@ msgstr "Serviciu creat"
 msgid "Service {} was created"
 msgstr "Serviciul {} a fost creat"
 
-#: plugins/todo/billing_module.py:52
-msgid "Service suspended"
-msgstr "Serviciu suspendat"
-
 #: plugins/todo/billing_module.py:53
 msgid "Service {} was suspended"
 msgstr "Serviciul {} a fost suspendat"
-
-#: plugins/todo/billing_module.py:67
-msgid "Service resumed"
-msgstr "Serviciu repornit"
 
 #: plugins/todo/billing_module.py:68
 msgid "Service {} was resumed"
@@ -14495,7 +14709,7 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters o instanță {instance_name} "
 "({instance_id})"
 
-#: reseller/core/auth/views.py:89
+#: reseller/core/auth/views.py:91
 #, fuzzy
 #| msgid "Project already associated with a client"
 msgid "This account is not associated with a reseller client"
@@ -14698,6 +14912,9 @@ msgstr "Nu se poate migra pe planul selectat"
 #: reseller/osbilling/pricing/serializers/pricing_plan.py:64
 msgid "Invalid reseller for other default plan."
 msgstr ""
+
+#~ msgid "Unable to create zone. Please see logs for more info"
+#~ msgstr "Zona nu poate fi creată. Vezi log-uri pentru mai multe detalii"
 
 #, fuzzy
 #~| msgid "Unable to continue due to an error. Please contact support"
