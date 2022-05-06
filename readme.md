@@ -193,30 +193,8 @@ cd /home/fleio/compose
 docker-compose build && docker-compose up -d
 ```
 
-
-The last step is to update the `availableLanguages` list in panels config files. 
-On docker installations of Fleio, use the following command to edit the config file: 
-
-`fleio edit enduser.config.json`
-`fleio edit staff.config.json`
-`fleio edit reseller.config.json`
-
-Add the key if it doesn't exist, or update it. For example, it may look like this:
-
-```
-{
-  ...
-  "settings": {
-    ...
-    "availableLanguages": ["en", "fr"],
-    ...
-  }
-}
-```
-
 You can also update the `defaultLanguage` variable and login/signup pages will be changed according to that. 
-Keep in mind that when adding a new language to available languages, or when changing default language of a panel, you need to have the related `messages.<language_code>.json` file in the appropriate directory.
-
+Keep in mind that when changing default language of a panel, you need to have the related `messages.<language_code>.json` file in the appropriate directory.
 
 ### Enabling the new language
 
