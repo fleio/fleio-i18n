@@ -239,54 +239,6 @@ options from this variable.
 
 After all changes are done restart fleio by running `fleio restart` command.
 
-### Adding a translation for a new language to AngularJS frontend (use only if you have 2021.06.1 or older)
-
-`gulp` is needed to add a new language to fronted.
-The `template.pot` file needed is supplied in this repository 
-in `translations/frontend/po directory`.
-
-Prepare a directory where you will work on frontend translations - this directory should have the same structure and 
-contents as `https://github.com/fleio/fleio-i18n/tree/master/translations/frontend` directory. The "gulpfile.js" 
-file found in this directory contains the task definition that will generate the "language.js" file. You will need to 
-run the "gulp translations" command from here when ready.
-
-Change into this directory and install `gulp` and `gulp-angular-gettext` npm packages using the following commands:
-
-`npm install gulp`
-
-`npm install gulp-angular-gettext`
-
-If `npm` is not present on your system you should install it using yum or apt, depending on your distro.
-
-Open the latest version of `Poedit` and click on `File -> New from POT/PO File...`, selecting the `template.pot` 
-file found in this repository. Choose the language of translation (e.g.: 'en', 'ru', 'fa', ...) and you will be 
-able to start translating strings. Make sure you save your `.po` translation file.
-
-After you edit the translation file with `Poedit` use `gulp translations` to generate `.js` files from `.po` files.
-
-Note: if you encounter any problems with the above command, make sure you have latest npm version or specify the 
-gulp.js file manually like this: `node ./node_modules/gulp/bin/gulp.js translations`.
-
-The new language file should be placed in the `fleio_frontend_1` container, in `/var/webapps/fleio/frontend/site/translations`.
-Additionally, you need to add the following code it to your index.html file. 
-
-`<script src="translations/ro.js"></script>`
-
-We have an example on how to add custom files to the fleio_frontend_1 container and how to add custom 
-code in the index.html file here: https://fleio.com/docs/developer/add-change-docker-files.html#example-change-favicon-add-custom-css-and-google-analytics
-
-If we follow that example, we see that we need to add the following lines to our Dockerfile:
-
-```
-COPY ro.js /var/webapps/fleio/frontend/site/translations/ro.js
-RUN sed -i \
-'s^<!-- end of body -->^<script src="translations/ro.js"></script><!-- end of body -->^' \
-/var/webapps/fleio/frontend/site/index.html
-RUN sed -i \
-'s^<!-- end of body -->^<script src="translations/ro.js"></script><!-- end of body -->^' \
-/var/webapps/fleio/frontend/site/staff/index.html
-```
-
 
 ## License information
 
