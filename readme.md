@@ -3,7 +3,7 @@ This repository contains translations for Fleio - see http://fleio.com for detai
 
 ## How to add a new language to fleio
 
-Fleio backend is created with Django and Fleio fronted is created with Angular.
+Fleio backend is created with Django and Fleio frontend is created with Angular.
 
 ### Adding a translation for a new language to backend
 
