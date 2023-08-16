@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-07 12:57+0300\n"
+"POT-Creation-Date: 2023-08-12 14:57+0300\n"
 "PO-Revision-Date: 2018-10-11 16:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13671,7 +13671,7 @@ msgstr "Eroare la ștergere"
 msgid "Unmanaging"
 msgstr "Neadministrat"
 
-#: fleio/openstack/networking/api.py:673
+#: fleio/openstack/networking/api.py:689
 msgid ""
 "Could not add ip. Possibly subnet configuration is incorrect for automatic "
 "IP adding."
@@ -13679,7 +13679,7 @@ msgstr ""
 "IP-ul nu poate fi adaugat. Probabil configurarea sub-rețelei este incorecta "
 "pentru adăugarea automată de IP-uri."
 
-#: fleio/openstack/networking/api.py:688
+#: fleio/openstack/networking/api.py:704
 msgid ""
 "Could not add ips. Possibly subnet configuration is incorrect for automatic "
 "IP adding."
@@ -13687,7 +13687,7 @@ msgstr ""
 "IP-urile nu pot fi adaugate. Probabil configurarea sub-rețelei este "
 "incorecta pentru adăugarea automată de IP-uri."
 
-#: fleio/openstack/networking/api.py:907
+#: fleio/openstack/networking/api.py:923
 msgid "If port is given protocol must also be set"
 msgstr "Trebuie specificat si protocolul daca portul este specificat"
 
@@ -14197,39 +14197,40 @@ msgstr "URL-ul nu este disponibil"
 msgid "Unable to create port: {}"
 msgstr "Portul nu poate fi creat"
 
-#: fleio/openstack/ports/views.py:166
-#, fuzzy
-#| msgid "You do not have permissions to perform the requested action"
-msgid "You are not allowed to update port"
-msgstr "Nu sunt suficitente permisiuni pentru a efectua actiunea ceruta"
-
 #: fleio/openstack/ports/views.py:169
+msgid ""
+"You are not allowed to update this port. Updating multiple/all port fields "
+"at once may be prohibited by a Neutron policy. Try updating one port field "
+"at a time."
+msgstr ""
+
+#: fleio/openstack/ports/views.py:176
 #, fuzzy
 #| msgid "Unable to update port"
 msgid "Unable to update port: {}"
 msgstr "Portul nu poate fi actualizat"
 
-#: fleio/openstack/ports/views.py:191 fleiostaff/openstack/ports/views.py:138
+#: fleio/openstack/ports/views.py:198 fleiostaff/openstack/ports/views.py:138
 msgid "Unable to add ip"
 msgstr "IP-ul nu poate fi adăugat"
 
-#: fleio/openstack/ports/views.py:192 fleiostaff/openstack/ports/views.py:139
+#: fleio/openstack/ports/views.py:199 fleiostaff/openstack/ports/views.py:139
 msgid "IP added"
 msgstr "IP adăugat"
 
-#: fleio/openstack/ports/views.py:216 fleiostaff/openstack/ports/views.py:163
+#: fleio/openstack/ports/views.py:223 fleiostaff/openstack/ports/views.py:163
 msgid "Unable to add IP(s)"
 msgstr "Nu s-au putut adăuga IP-urile"
 
-#: fleio/openstack/ports/views.py:217 fleiostaff/openstack/ports/views.py:164
+#: fleio/openstack/ports/views.py:224 fleiostaff/openstack/ports/views.py:164
 msgid "IP(s) added"
 msgstr "IP-uri adăugate"
 
-#: fleio/openstack/ports/views.py:239 fleiostaff/openstack/ports/views.py:186
+#: fleio/openstack/ports/views.py:246 fleiostaff/openstack/ports/views.py:186
 msgid "Unable to remove ip"
 msgstr "IP-ul nu poate fi șters"
 
-#: fleio/openstack/ports/views.py:240 fleiostaff/openstack/ports/views.py:187
+#: fleio/openstack/ports/views.py:247 fleiostaff/openstack/ports/views.py:187
 msgid "IP removed"
 msgstr "IP șters"
 
@@ -21475,6 +21476,11 @@ msgstr "Nu se poate migra pe planul selectat"
 #: reseller/osbilling/pricing/serializers/pricing_plan.py:64
 msgid "Invalid reseller for other default plan."
 msgstr ""
+
+#, fuzzy
+#~| msgid "You do not have permissions to perform the requested action"
+#~ msgid "You are not allowed to update port"
+#~ msgstr "Nu sunt suficitente permisiuni pentru a efectua actiunea ceruta"
 
 #, fuzzy
 #~| msgid "Can not migrate instance."
