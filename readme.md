@@ -114,6 +114,7 @@ services:
         - FLEIO_DOCKER_HUB
         - FLEIO_RELEASE_SUFFIX
     image: fleio_backend_custom
+    pull_policy: never
 
   celery:
     build:
@@ -123,6 +124,7 @@ services:
         - FLEIO_DOCKER_HUB
         - FLEIO_RELEASE_SUFFIX
     image: fleio_celery_custom
+    pull_policy: never
     
   operations:
     build:
@@ -132,6 +134,7 @@ services:
         - FLEIO_DOCKER_HUB
         - FLEIO_RELEASE_SUFFIX
     image: fleio_updated_custom
+    pull_policy: never
 
 ```
 
@@ -184,6 +187,7 @@ Add the following code at the end of the `/home/fleio/compose/docker-compose.ove
         - FLEIO_DOCKER_HUB
         - FLEIO_RELEASE_SUFFIX
     image: fleio_frontend_custom
+    pull_policy: never
 ```
 
 Build the new images using your custom `messages.<language_code>.json` file:
