@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-08 10:18+0200\n"
+"POT-Creation-Date: 2023-11-13 16:21+0200\n"
 "PO-Revision-Date: 2018-10-11 16:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -85,8 +85,8 @@ msgstr ""
 #: fleio/billing/models/order_item_configurable_option.py:27
 #: fleio/billing/models/service_configurable_option.py:141
 #: fleio/billing/services/serializers.py:169
-#: fleio/billing/services/service_manager.py:468
-#: fleio/billing/services/service_manager.py:480
+#: fleio/billing/services/service_manager.py:458
+#: fleio/billing/services/service_manager.py:470
 #: fleio/openstack/dbaas/instances/operations/create_database_instance.py:144
 #: fleio/openstack/images/serializers.py:128
 #: fleio/openstack/images/serializers.py:129
@@ -2302,31 +2302,31 @@ msgstr ""
 "Utilizatorul {username} ({user_id}) a șters clientul {client_name} "
 "({client_id})"
 
-#: fleio/billing/cart/serializers.py:170
+#: fleio/billing/cart/serializers.py:171
 msgid "Option value is lower than minimum ({})"
 msgstr ""
 
-#: fleio/billing/cart/serializers.py:176
+#: fleio/billing/cart/serializers.py:177
 #, fuzzy
 #| msgid "Invoice total is bigger than maximum allowed"
 msgid "Option value is higher than maximum ({})"
 msgstr "Totalul facturi este mai mare decât maximul alocat"
 
-#: fleio/billing/cart/serializers.py:183
+#: fleio/billing/cart/serializers.py:184
 #, fuzzy
 #| msgid "Size must be a multiple of {}"
 msgid "Option value has to be a multiple of {}"
 msgstr "Dimensiunea trebuie sa fie un multiplu de {}"
 
-#: fleio/billing/cart/serializers.py:322
+#: fleio/billing/cart/serializers.py:323
 #: fleio/openstack/instances/views.py:1153
 #: plugins/domains/registrars_connectors/openprovider_connector.py:192
 msgid "Invalid request"
 msgstr "Cerere invalidă"
 
-#: fleio/billing/cart/serializers.py:374 fleio/billing/cart/serializers.py:375
-#: fleio/billing/cart/serializers.py:381 fleio/billing/cart/serializers.py:382
-#: fleio/billing/cart/serializers.py:444 fleio/billing/cart/serializers.py:445
+#: fleio/billing/cart/serializers.py:375 fleio/billing/cart/serializers.py:376
+#: fleio/billing/cart/serializers.py:382 fleio/billing/cart/serializers.py:383
+#: fleio/billing/cart/serializers.py:445 fleio/billing/cart/serializers.py:446
 #: fleiostaff/billing/cart/serializers.py:14
 #: fleiostaff/billing/cart/serializers.py:15
 #: fleiostaff/billing/cart/serializers.py:19
@@ -2336,60 +2336,60 @@ msgstr "Cerere invalidă"
 msgid "Product not found"
 msgstr "Produsul nu a fost găsit"
 
-#: fleio/billing/cart/serializers.py:387 fleio/billing/cart/serializers.py:388
+#: fleio/billing/cart/serializers.py:388 fleio/billing/cart/serializers.py:389
 #: fleiostaff/billing/cart/serializers.py:23
 #: fleiostaff/billing/cart/serializers.py:24
 msgid "Product cycle not found"
 msgstr "Ciclul produsului nu a fost găsit"
 
-#: fleio/billing/cart/serializers.py:394
+#: fleio/billing/cart/serializers.py:395
 #, fuzzy
 #| msgid "Router - Update"
 msgid "Missing cart data."
 msgstr "Router - Actualizare"
 
-#: fleio/billing/cart/serializers.py:402
+#: fleio/billing/cart/serializers.py:403
 msgid "Specify a product code or id"
 msgstr "Specificați un cod sau id de produs"
 
-#: fleio/billing/cart/serializers.py:411 fleio/billing/cart/serializers.py:415
-#: fleio/billing/cart/serializers.py:535
+#: fleio/billing/cart/serializers.py:412 fleio/billing/cart/serializers.py:416
+#: fleio/billing/cart/serializers.py:539
 msgid "Product not available"
 msgstr "Produsul nu este disponibil"
 
-#: fleio/billing/cart/serializers.py:467
+#: fleio/billing/cart/serializers.py:468
 msgid "plus usage"
 msgstr ""
 
-#: fleio/billing/cart/serializers.py:469
+#: fleio/billing/cart/serializers.py:470
 msgid "plus extra usage"
 msgstr ""
 
-#: fleio/billing/cart/serializers.py:500
+#: fleio/billing/cart/serializers.py:504
 msgid ""
 "Staff cannot order product without already having an order in progress for a "
 "client."
 msgstr ""
 
-#: fleio/billing/cart/serializers.py:525
+#: fleio/billing/cart/serializers.py:529
 msgid "A billing cycle is required"
 msgstr "Un ciclu de facturare este obligatoriu"
 
-#: fleio/billing/cart/serializers.py:569
+#: fleio/billing/cart/serializers.py:573
 #: fleio/billing/services/serializers.py:361
 #, fuzzy
 #| msgid "Valus is required for {}"
 msgid "Value is required for {}"
 msgstr "Este obligatorie o valoare pentru {}"
 
-#: fleio/billing/cart/serializers.py:577 fleio/billing/cart/serializers.py:579
-#: fleio/billing/cart/serializers.py:581
+#: fleio/billing/cart/serializers.py:581 fleio/billing/cart/serializers.py:583
+#: fleio/billing/cart/serializers.py:585
 #: fleio/billing/services/serializers.py:369
 #: fleio/billing/services/serializers.py:371
 msgid "Invalid option selected"
 msgstr "Opțiune invalidă selectată"
 
-#: fleio/billing/cart/serializers.py:742
+#: fleio/billing/cart/serializers.py:746
 msgid "You cannot order a service with zero price."
 msgstr ""
 
@@ -3509,8 +3509,10 @@ msgid "An upgrade/downgrade invoice already exists for this service"
 msgstr "O cerere de anulare deja există pentru acest serviciu"
 
 #: fleio/billing/services/serializers.py:305
-msgid "Unable to change one time cycle to recurring"
-msgstr ""
+#, fuzzy
+#| msgid "Cannot change OpenStack settings in demo mode"
+msgid "Cannot upgrade/downgrade service with one-time product."
+msgstr "Nu se pot salva setările OpenStack în modul demo"
 
 #: fleio/billing/services/serializers.py:307
 msgid "Unable to change recurring cycle to one time"
