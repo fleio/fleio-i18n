@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-09 12:51+0000\n"
+"POT-Creation-Date: 2024-10-15 12:31+0000\n"
 "PO-Revision-Date: 2018-10-11 16:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -4875,12 +4875,24 @@ msgstr "\"{input}\" nu este o alegere valida."
 msgid "More than {count} items..."
 msgstr "Mai mult de {count} articole..."
 
-#: fleio/core/drf_exception_handler.py:23
+#: fleio/core/drf_exception_handler.py:27
 msgid "Unable to execute task"
 msgstr "Task-ul nu se poate executa"
 
-#: fleio/core/drf_exception_handler.py:28
-msgid "Request limit exceeded, please try again in {}."
+#: fleio/core/drf_exception_handler.py:32
+#, fuzzy, python-brace-format
+#| msgid "Second"
+msgid "{wait} seconds"
+msgstr "Secunda"
+
+#: fleio/core/drf_exception_handler.py:38
+#, python-brace-format
+msgid "Exception when formatting throttle message for wait {wait}: {e}"
+msgstr ""
+
+#: fleio/core/drf_exception_handler.py:42
+#, python-brace-format
+msgid "Request limit exceeded, please try again in {duration}."
 msgstr ""
 
 #: fleio/core/exceptions.py:10 fleio/core/exceptions.py:52
@@ -22263,43 +22275,43 @@ msgstr ""
 msgid "Missing renew prices for {} TLD."
 msgstr ""
 
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:319
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:332
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:322
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:335
 #, fuzzy
 #| msgid "Cannot create a network without a project."
 msgid "Cannot create the customer account at the registrar."
 msgstr "Nu se poate crea  o rețea fără un proiect."
 
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:371
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:374
 #: plugins/domains/registrars_connectors/rotld_connector.py:146
 #, fuzzy
 #| msgid "Invalid action for domain"
 msgid "Invalid action"
 msgstr "Acțiune invalidă pentru domeniu"
 
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:543
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:554
 #, fuzzy
 #| msgid "Not implemented"
 msgid "Restore domain not implemented"
 msgstr "Neimplementat"
 
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:560
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:571
 #, fuzzy
 #| msgid "Action completed successfully"
 msgid "{} deleted successfully"
 msgstr "Acțiunea a fost îndeplinită cu succes"
 
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:715
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:726
 #, fuzzy
 #| msgid "Unable to find a client account"
 msgid "Unable to find domain order"
 msgstr "Nu am găsit un cont client"
 
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:732
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:743
 msgid "Whois data modified"
 msgstr ""
 
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:740
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:751
 #, fuzzy
 #| msgid "Invalid action or registrar not found"
 msgid "Invalid response from registrar"
