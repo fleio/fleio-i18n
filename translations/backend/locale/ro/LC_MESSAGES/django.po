@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-12 10:46+0300\n"
+"POT-Creation-Date: 2025-06-17 15:58+0300\n"
 "PO-Revision-Date: 2018-10-11 16:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -78,7 +78,7 @@ msgstr ""
 "va incepe in fundal."
 
 #: common/billing/coupons/constants.py:11
-#: common/openstack/zones/constants.py:12 fleio/billing/settings.py:223
+#: common/openstack/zones/constants.py:12 fleio/billing/settings.py:224
 #: fleio/core/models/models.py:291 fleio/core/models/models.py:298
 #: fleio/notifications/models.py:49 fleio/openstack/dns/serializers.py:41
 #: fleio/openstack/dns/serializers.py:86
@@ -128,13 +128,13 @@ msgstr "Serviciu creat"
 #: common/billing/orders/utils.py:118
 #: fleio/activitylog/utils/activity_helper.py:70
 #: fleio/billing/models/order_item.py:28 fleio/billing/models/service.py:114
-#: fleio/billing/settings.py:342
+#: fleio/billing/settings.py:343
 msgid "Service"
 msgstr "Serviciu"
 
 #: common/billing/orders/utils.py:120
-#: fleio/activitylog/utils/activity_helper.py:73 fleio/billing/settings.py:193
-#: fleio/billing/settings.py:200
+#: fleio/activitylog/utils/activity_helper.py:73 fleio/billing/settings.py:194
+#: fleio/billing/settings.py:201
 msgid "Domain"
 msgstr "Domeniu"
 
@@ -428,7 +428,7 @@ msgstr "Nu poate reporni instanța {0}"
 msgid "Unable to disable root for {}"
 msgstr "Nu poate reporni instanța {0}"
 
-#: common/openstack/dbaas/instances/views.py:216 fleio/billing/settings.py:250
+#: common/openstack/dbaas/instances/views.py:216 fleio/billing/settings.py:251
 #: fleio/openstack/models/hypervisors.py:16 fleio/servers/models/server.py:17
 msgid "Disabled"
 msgstr "Dezactivat"
@@ -899,8 +899,8 @@ msgid "{} {} time"
 msgstr ""
 
 #: common/osbilling/serializers.py:116
-#: fleio/activitylog/utils/activity_helper.py:201
-#: fleio/activitylog/utils/activity_helper.py:261
+#: fleio/activitylog/utils/activity_helper.py:212
+#: fleio/activitylog/utils/activity_helper.py:272
 #: fleio/billing/services/serializers.py:171
 #: fleio/billing/services/upgrade_manager.py:127
 #: fleio/billing/services/upgrade_manager.py:139
@@ -1054,7 +1054,7 @@ msgid "Failed to delete invoice"
 msgstr "Nu se poate crea instanța"
 
 #: common_admin/billing/invoices/views/invoice.py:198
-#: fleio/billing/invoicing/views.py:292
+#: fleio/billing/invoicing/views.py:296
 msgid "PDF invoice is still being generated"
 msgstr ""
 
@@ -1260,7 +1260,7 @@ msgstr "Nu exista nici un token asociat cu utilizatorul: {0} ({1})"
 
 #: common_admin/core/users/views/user.py:93
 #: common_admin/core/users/views/user.py:118
-#: fleio/billing/invoicing/views.py:125 fleio/billing/invoicing/views.py:153
+#: fleio/billing/invoicing/views.py:129 fleio/billing/invoicing/views.py:157
 #: fleio/openstack/instances/views.py:253
 #: fleio/openstack/instances/views.py:258
 #: plugins/domains/staff/serializers/register_domain.py:64
@@ -2038,8 +2038,8 @@ msgstr ""
 msgid "Alert"
 msgstr ""
 
-#: fleio/activitylog/utils/activity_helper.py:200
-#: fleio/activitylog/utils/activity_helper.py:260
+#: fleio/activitylog/utils/activity_helper.py:211
+#: fleio/activitylog/utils/activity_helper.py:271
 msgid "anonymous"
 msgstr ""
 
@@ -3562,7 +3562,7 @@ msgstr "Subtotal ({})"
 msgid "Total ({})"
 msgstr "Total ({})"
 
-#: fleio/billing/invoicing/views.py:62
+#: fleio/billing/invoicing/views.py:63
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "User {username} ({user_id}) failed to login because of missing license"
@@ -3571,7 +3571,7 @@ msgstr ""
 "Utilizatorul {username} ({user_id}) nu poate fi autentificat din cauză ca "
 "licența este invalidă"
 
-#: fleio/billing/invoicing/views.py:64
+#: fleio/billing/invoicing/views.py:65
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "Staff user {username} ({user_id}) deleted a volume {volume_name} "
@@ -3583,7 +3583,7 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: fleio/billing/invoicing/views.py:67
+#: fleio/billing/invoicing/views.py:68
 #, fuzzy, python-brace-format
 #| msgid ""
 #| "User {username} ({user_id}) deleted a client {client_name} ({client_id})"
@@ -3592,61 +3592,67 @@ msgstr ""
 "Utilizatorul {username} ({user_id}) a șters clientul {client_name} "
 "({client_id})"
 
-#: fleio/billing/invoicing/views.py:70
+#: fleio/billing/invoicing/views.py:71
 #, fuzzy, python-brace-format
 #| msgid "Staff user {username} ({user_id}) logged out"
 msgid "User {email} ({user_id}) validated credit card payment options."
 msgstr "Administratorul {username} ({user_id}) s-a deconectat"
 
-#: fleio/billing/invoicing/views.py:131
+#: fleio/billing/invoicing/views.py:135
 #, fuzzy
 #| msgid "Invoice total is bigger than maximum allowed"
 msgid "Amount is lower than minimum({})"
 msgstr "Totalul facturi este mai mare decât maximul alocat"
 
-#: fleio/billing/invoicing/views.py:139
+#: fleio/billing/invoicing/views.py:143
 #, fuzzy
 #| msgid "A cancellation request already exists for this service"
 msgid "An unpaid credit invoice already exists"
 msgstr "O cerere de anulare deja există pentru acest serviciu"
 
-#: fleio/billing/invoicing/views.py:196
+#: fleio/billing/invoicing/views.py:200
 msgid "Unable to pay a credit invoice with credit"
 msgstr "Nu se poate plăti o factură de adaugare credit cu credit"
 
-#: fleio/billing/invoicing/views.py:199
+#: fleio/billing/invoicing/views.py:203
 msgid "Only unpaid invoices can be paid from credit"
 msgstr "Doar facturile neplătite se pot plăti din credit"
 
-#: fleio/billing/invoicing/views.py:233
+#: fleio/billing/invoicing/views.py:237
 #, fuzzy
 #| msgid "Incorrect user name or password"
 msgid "Cannot use referee credit to pay this."
 msgstr "Nume de utilizator sau parola greșit"
 
-#: fleio/billing/invoicing/views.py:246
+#: fleio/billing/invoicing/views.py:250
 #, fuzzy
 #| msgid "Unable to pay a credit invoice with credit"
 msgid "Unable to pay invoice with credit"
 msgstr "Nu se poate plăti o factură de adaugare credit cu credit"
 
-#: fleio/billing/invoicing/views.py:268
+#: fleio/billing/invoicing/views.py:272
 #, fuzzy
 #| msgid "Adding {} {} to invoice"
 msgid "Adding {} to invoice"
 msgstr "Adaugare {}{} la factură"
 
-#: fleio/billing/invoicing/views.py:294
+#: fleio/billing/invoicing/views.py:298
 #, fuzzy
 #| msgid "Login not allowed. Please contact support"
 msgid "There was an error generating PDF invoice, please contact support"
 msgstr "Autentificarea interzisă. Va rugam contactati personalul"
 
-#: fleio/billing/invoicing/views.py:299
+#: fleio/billing/invoicing/views.py:303
 #, fuzzy
 #| msgid "Login not allowed. Please contact support"
 msgid "Error when downloading invoice, please contact support"
 msgstr "Autentificarea interzisă. Va rugam contactati personalul"
+
+#: fleio/billing/invoicing/views.py:309
+#, fuzzy
+#| msgid "Operation not allowed"
+msgid "Operation not permitted."
+msgstr "Operațiunea nu este permisă"
 
 #: fleio/billing/models/alert.py:25
 #, fuzzy
@@ -3690,19 +3696,19 @@ msgstr "Da/Nu"
 msgid "Quantity input"
 msgstr "Câmp cantitate"
 
-#: fleio/billing/models/configurable_option.py:41 fleio/billing/settings.py:262
+#: fleio/billing/models/configurable_option.py:41 fleio/billing/settings.py:263
 #: fleio/openstack/models/image.py:33 fleio/openstack/models/image.py:40
 #: fleio/openstack/traffic_monitoring/instance_traffic_data.py:22
 msgid "Public"
 msgstr "Public"
 
-#: fleio/billing/models/configurable_option.py:42 fleio/billing/settings.py:263
+#: fleio/billing/models/configurable_option.py:42 fleio/billing/settings.py:264
 #: fleio/openstack/models/image.py:32 fleio/openstack/models/image.py:39
 #: fleio/openstack/traffic_monitoring/instance_traffic_data.py:21
 msgid "Private"
 msgstr "Privat"
 
-#: fleio/billing/models/configurable_option.py:43 fleio/billing/settings.py:264
+#: fleio/billing/models/configurable_option.py:43 fleio/billing/settings.py:265
 msgid "Retired"
 msgstr "Retras"
 
@@ -3733,20 +3739,20 @@ msgstr "Aplică la opțiunile de cantitate"
 
 #: fleio/billing/models/invoice.py:46 fleio/billing/models/invoice.py:54
 #: fleio/billing/models/service_cycle_constants.py:41
-#: fleio/billing/settings.py:308
+#: fleio/billing/settings.py:309
 msgid "Unpaid"
 msgstr "Neplătită"
 
 #: fleio/billing/models/invoice.py:47 fleio/billing/models/invoice.py:55
 #: fleio/billing/models/service_cycle_constants.py:43
-#: fleio/billing/settings.py:309
+#: fleio/billing/settings.py:310
 msgid "Paid"
 msgstr "Plătit"
 
 #: fleio/billing/models/invoice.py:48 fleio/billing/models/invoice.py:56
-#: fleio/billing/models/transaction.py:41 fleio/billing/settings.py:227
-#: fleio/billing/settings.py:292 fleio/billing/settings.py:299
-#: fleio/billing/settings.py:310 fleio/core/models/referral_to_client.py:27
+#: fleio/billing/models/transaction.py:41 fleio/billing/settings.py:228
+#: fleio/billing/settings.py:293 fleio/billing/settings.py:300
+#: fleio/billing/settings.py:311 fleio/core/models/referral_to_client.py:27
 #: fleio/core/models/referral_to_client.py:36
 #: plugins/domains/models/domain.py:52
 msgid "Canceled"
@@ -3754,7 +3760,7 @@ msgstr "Anulat"
 
 #: fleio/billing/models/invoice.py:49 fleio/billing/models/invoice.py:57
 #: fleio/billing/models/service_cycle_constants.py:44
-#: fleio/billing/models/transaction.py:37 fleio/billing/settings.py:311
+#: fleio/billing/models/transaction.py:37 fleio/billing/settings.py:312
 msgid "Refunded"
 msgstr "Rambursat"
 
@@ -3843,17 +3849,17 @@ msgstr "Utilizatorul care a plasat comanda. Poate fi un administator."
 msgid "Service Upgrade Refund"
 msgstr "Serviciu creat"
 
-#: fleio/billing/models/order_item.py:30 fleio/billing/settings.py:343
+#: fleio/billing/models/order_item.py:30 fleio/billing/settings.py:344
 #, fuzzy
 #| msgid "Service created"
 msgid "Service Upgrade"
 msgstr "Serviciu creat"
 
-#: fleio/billing/models/order_item.py:31 fleio/billing/settings.py:344
+#: fleio/billing/models/order_item.py:31 fleio/billing/settings.py:345
 msgid "Credit Balance"
 msgstr "Sold Credit"
 
-#: fleio/billing/models/order_item.py:32 fleio/billing/settings.py:347
+#: fleio/billing/models/order_item.py:32 fleio/billing/settings.py:348
 msgid "Other"
 msgstr "Alte"
 
@@ -4276,23 +4282,23 @@ msgstr "Nu se poate inițializa clientul ceilometer"
 msgid "Invoice issued"
 msgstr "Factură ștearsă"
 
-#: fleio/billing/settings.py:190 fleio/billing/settings.py:197
+#: fleio/billing/settings.py:191 fleio/billing/settings.py:198
 msgid "Generic"
 msgstr "Generic"
 
-#: fleio/billing/settings.py:191 fleio/core/models/permission_definitions.py:36
+#: fleio/billing/settings.py:192 fleio/core/models/permission_definitions.py:36
 #: fleio/openstack/apps.py:68
 #, fuzzy
 #| msgid "Openstack"
 msgid "OpenStack"
 msgstr "Openstack"
 
-#: fleio/billing/settings.py:192 fleio/billing/settings.py:199
+#: fleio/billing/settings.py:193 fleio/billing/settings.py:200
 msgid "Shared Hosting"
 msgstr "Gazduire Partajata"
 
-#: fleio/billing/settings.py:222 fleio/billing/settings.py:289
-#: fleio/billing/settings.py:296 fleio/core/models/referral_to_client.py:25
+#: fleio/billing/settings.py:223 fleio/billing/settings.py:290
+#: fleio/billing/settings.py:297 fleio/core/models/referral_to_client.py:25
 #: fleio/core/models/referral_to_client.py:32 fleio/notifications/models.py:186
 #: fleio/notifications/models.py:192 fleio/openstack/dns/serializers.py:40
 #: fleio/openstack/dns/serializers.py:85
@@ -4303,14 +4309,14 @@ msgstr "Gazduire Partajata"
 msgid "Pending"
 msgstr "În așteptare"
 
-#: fleio/billing/settings.py:224 fleio/core/models/models.py:293
+#: fleio/billing/settings.py:225 fleio/core/models/models.py:293
 #: fleio/openstack/instances/instance_status.py:200
 #, fuzzy
 #| msgid "Suspended"
 msgid "Suspending"
 msgstr "Suspendat"
 
-#: fleio/billing/settings.py:225 fleio/core/models/models.py:294
+#: fleio/billing/settings.py:226 fleio/core/models/models.py:294
 #: fleio/core/models/models.py:300
 #: fleio/openstack/instances/instance_status.py:11
 #: fleio/openstack/instances/instance_status.py:64
@@ -4319,80 +4325,80 @@ msgstr "Suspendat"
 msgid "Suspended"
 msgstr "Suspendat"
 
-#: fleio/billing/settings.py:226
+#: fleio/billing/settings.py:227
 msgid "Terminated"
 msgstr "Terminat"
 
-#: fleio/billing/settings.py:228 fleio/billing/settings.py:293
+#: fleio/billing/settings.py:229 fleio/billing/settings.py:294
 #: plugins/domains/models/domain.py:54
 msgid "Fraud"
 msgstr "Frauda"
 
-#: fleio/billing/settings.py:236
+#: fleio/billing/settings.py:237
 #, fuzzy
 #| msgid "Create in progress"
 msgid "Change in progress"
 msgstr "Creare în progres"
 
-#: fleio/billing/settings.py:251
+#: fleio/billing/settings.py:252
 msgid "When order is placed"
 msgstr "Când comanda este plasată"
 
-#: fleio/billing/settings.py:252
+#: fleio/billing/settings.py:253
 msgid "On first payment"
 msgstr "La prima plata"
 
-#: fleio/billing/settings.py:253
+#: fleio/billing/settings.py:254
 msgid "When pending order is accepted"
 msgstr "Când comanda in asteptare este acceptată"
 
-#: fleio/billing/settings.py:273
+#: fleio/billing/settings.py:274
 msgid "Free"
 msgstr "Gratis"
 
-#: fleio/billing/settings.py:274
+#: fleio/billing/settings.py:275
 msgid "Fixed plus dynamic"
 msgstr "Fix plus dinamic"
 
-#: fleio/billing/settings.py:275
+#: fleio/billing/settings.py:276
 msgid "Dynamic but at least fixed"
 msgstr "Dinamic dar minim"
 
-#: fleio/billing/settings.py:276
+#: fleio/billing/settings.py:277
 msgid "Fixed"
 msgstr ""
 
-#: fleio/billing/settings.py:290 fleio/billing/settings.py:297
+#: fleio/billing/settings.py:291 fleio/billing/settings.py:298
 msgid "Verified"
 msgstr "Verificat"
 
-#: fleio/billing/settings.py:291 fleio/billing/settings.py:298
+#: fleio/billing/settings.py:292 fleio/billing/settings.py:299
 msgid "Completed"
 msgstr "Terminat"
 
-#: fleio/billing/settings.py:321 fleio/billing/settings.py:331
+#: fleio/billing/settings.py:322 fleio/billing/settings.py:332
 msgid "Unspecified reason"
 msgstr "Motiv nespecificat"
 
-#: fleio/billing/settings.py:325
+#: fleio/billing/settings.py:326
 msgid "Suspend instead of terminate is enabled"
 msgstr "Suspendarea în loc de terminare este activată"
 
-#: fleio/billing/settings.py:327
+#: fleio/billing/settings.py:328
 msgid "Suspended by staff"
 msgstr "Suspendat de catre administrator"
 
-#: fleio/billing/settings.py:329
+#: fleio/billing/settings.py:330
 msgid "Overdue on payment"
 msgstr "In urmă cu plata"
 
-#: fleio/billing/settings.py:345
+#: fleio/billing/settings.py:346
 #, fuzzy
 #| msgid "Invalid action for domain"
 msgid "Card validation"
 msgstr "Acțiune invalidă pentru domeniu"
 
-#: fleio/billing/settings.py:346
+#: fleio/billing/settings.py:347
 msgid "Card validation that adds to credit"
 msgstr ""
 
