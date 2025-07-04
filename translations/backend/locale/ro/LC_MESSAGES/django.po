@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-17 15:58+0300\n"
+"POT-Creation-Date: 2025-07-02 13:58+0000\n"
 "PO-Revision-Date: 2018-10-11 16:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -78,7 +78,7 @@ msgstr ""
 "va incepe in fundal."
 
 #: common/billing/coupons/constants.py:11
-#: common/openstack/zones/constants.py:12 fleio/billing/settings.py:224
+#: common/openstack/zones/constants.py:12 fleio/billing/settings.py:227
 #: fleio/core/models/models.py:291 fleio/core/models/models.py:298
 #: fleio/notifications/models.py:49 fleio/openstack/dns/serializers.py:41
 #: fleio/openstack/dns/serializers.py:86
@@ -128,13 +128,13 @@ msgstr "Serviciu creat"
 #: common/billing/orders/utils.py:118
 #: fleio/activitylog/utils/activity_helper.py:70
 #: fleio/billing/models/order_item.py:28 fleio/billing/models/service.py:114
-#: fleio/billing/settings.py:343
+#: fleio/billing/settings.py:346
 msgid "Service"
 msgstr "Serviciu"
 
 #: common/billing/orders/utils.py:120
-#: fleio/activitylog/utils/activity_helper.py:73 fleio/billing/settings.py:194
-#: fleio/billing/settings.py:201
+#: fleio/activitylog/utils/activity_helper.py:73 fleio/billing/settings.py:197
+#: fleio/billing/settings.py:204
 msgid "Domain"
 msgstr "Domeniu"
 
@@ -428,7 +428,7 @@ msgstr "Nu poate reporni instanța {0}"
 msgid "Unable to disable root for {}"
 msgstr "Nu poate reporni instanța {0}"
 
-#: common/openstack/dbaas/instances/views.py:216 fleio/billing/settings.py:251
+#: common/openstack/dbaas/instances/views.py:216 fleio/billing/settings.py:254
 #: fleio/openstack/models/hypervisors.py:16 fleio/servers/models/server.py:17
 msgid "Disabled"
 msgstr "Dezactivat"
@@ -893,8 +893,8 @@ msgstr ""
 #: fleio/billing/services/serializers.py:209
 #: fleiostaff/billing/service_cycles/serializers.py:45
 #: fleiostaff/billing/service_cycles/serializers.py:51
-#: fleiostaff/billing/services/serializers.py:217
-#: fleiostaff/billing/services/serializers.py:224
+#: fleiostaff/billing/services/serializers.py:221
+#: fleiostaff/billing/services/serializers.py:228
 msgid "{} {} time"
 msgstr ""
 
@@ -957,51 +957,55 @@ msgstr "n/a"
 msgid "Service {} - {}"
 msgstr "Serviciul {} a fost creat"
 
-#: common/rest_framework/authentication/token_authentication.py:130
+#: common/recaptcha_utils.py:16 fleio/notifications/models.py:133
+msgid "Custom"
+msgstr ""
+
+#: common/rest_framework/authentication/token_authentication.py:131
 #, fuzzy
 #| msgid "You don't have permission to update"
 msgid "Cannot extend session for non-frontend token."
 msgstr "Nu aveți perimisiun pentru a actualiza"
 
-#: common/rest_framework/authentication/token_authentication.py:270
+#: common/rest_framework/authentication/token_authentication.py:273
 msgid "Invalid token header. No credentials provided."
 msgstr ""
 
-#: common/rest_framework/authentication/token_authentication.py:276
+#: common/rest_framework/authentication/token_authentication.py:279
 msgid "Invalid token header. Token string should not contain spaces."
 msgstr ""
 
-#: common/rest_framework/authentication/token_authentication.py:285
+#: common/rest_framework/authentication/token_authentication.py:288
 msgid ""
 "Invalid token header. Token string should not contain invalid characters."
 msgstr ""
 
-#: common/rest_framework/authentication/token_authentication.py:293
-#: common/rest_framework/authentication/token_authentication.py:302
-#: common/rest_framework/authentication/token_authentication.py:322
+#: common/rest_framework/authentication/token_authentication.py:296
+#: common/rest_framework/authentication/token_authentication.py:305
 #: common/rest_framework/authentication/token_authentication.py:325
-#: common/rest_framework/authentication/token_authentication.py:327
-#: common/rest_framework/authentication/token_authentication.py:355
+#: common/rest_framework/authentication/token_authentication.py:328
+#: common/rest_framework/authentication/token_authentication.py:330
+#: common/rest_framework/authentication/token_authentication.py:358
 #, fuzzy
 #| msgid "Invalid action for domain"
 msgid "Invalid token."
 msgstr "Acțiune invalidă pentru domeniu"
 
-#: common/rest_framework/authentication/token_authentication.py:343
-#: common/rest_framework/authentication/token_authentication.py:368
+#: common/rest_framework/authentication/token_authentication.py:346
+#: common/rest_framework/authentication/token_authentication.py:371
 #, fuzzy
 #| msgid "Expired"
 msgid "Expired token."
 msgstr "Expirat"
 
-#: common/rest_framework/authentication/token_authentication.py:374
+#: common/rest_framework/authentication/token_authentication.py:377
 #, fuzzy
 #| msgid "Service deleted"
 msgid "User inactive or deleted."
 msgstr "Serviciu șters"
 
-#: common/rest_framework/authentication/token_authentication.py:396
-#: common/rest_framework/authentication/token_authentication.py:401
+#: common/rest_framework/authentication/token_authentication.py:399
+#: common/rest_framework/authentication/token_authentication.py:404
 #, fuzzy
 #| msgid "Expired"
 msgid "Mismatched token."
@@ -1054,7 +1058,7 @@ msgid "Failed to delete invoice"
 msgstr "Nu se poate crea instanța"
 
 #: common_admin/billing/invoices/views/invoice.py:198
-#: fleio/billing/invoicing/views.py:296
+#: fleio/billing/invoicing/views.py:304
 msgid "PDF invoice is still being generated"
 msgstr ""
 
@@ -1242,7 +1246,7 @@ msgid "At least a role should be selected"
 msgstr "Volumul nu poate fi șters acum"
 
 #: common_admin/core/users/serializer/user.py:139
-#: fleio/core/signup/serializers.py:79
+#: fleio/core/signup/serializers.py:82
 #, fuzzy
 #| msgid "Incorrect user name or password"
 msgid "Cannot use email in password."
@@ -1260,7 +1264,7 @@ msgstr "Nu exista nici un token asociat cu utilizatorul: {0} ({1})"
 
 #: common_admin/core/users/views/user.py:93
 #: common_admin/core/users/views/user.py:118
-#: fleio/billing/invoicing/views.py:129 fleio/billing/invoicing/views.py:157
+#: fleio/billing/invoicing/views.py:129 fleio/billing/invoicing/views.py:165
 #: fleio/openstack/instances/views.py:253
 #: fleio/openstack/instances/views.py:258
 #: plugins/domains/staff/serializers/register_domain.py:64
@@ -2807,23 +2811,27 @@ msgstr "Este obligatorie o valoare pentru {}"
 msgid "Invalid option selected"
 msgstr "Opțiune invalidă selectată"
 
-#: fleio/billing/cart/serializers.py:648 fleio/billing/cart/serializers.py:651
+#: fleio/billing/cart/serializers.py:651
 #, fuzzy
 #| msgid "Invalid option selected"
 msgid "Invalid coupon code"
 msgstr "Opțiune invalidă selectată"
 
-#: fleio/billing/cart/serializers.py:794
+#: fleio/billing/cart/serializers.py:653 fleio/core/signup/serializers.py:72
+msgid "This coupon has reached its usage limit."
+msgstr ""
+
+#: fleio/billing/cart/serializers.py:796
 msgid "You cannot order a service with zero price."
 msgstr ""
 
-#: fleio/billing/cart/serializers.py:808
+#: fleio/billing/cart/serializers.py:810
 msgid ""
 "Client already has an OpenStack service. Only one OpenStack service is "
 "supported per client."
 msgstr ""
 
-#: fleio/billing/cart/serializers.py:811
+#: fleio/billing/cart/serializers.py:813
 msgid "Only one OpenStack service is supported per client."
 msgstr ""
 
@@ -2909,7 +2917,7 @@ msgstr "Plata adaugată"
 
 #: fleio/billing/gateways/ipay/ipay.py:54
 #: fleio/billing/gateways/payuro/payuro.py:88
-#: fleio/billing/gateways/stripe/stripe.py:110
+#: fleio/billing/gateways/stripe/stripe.py:161
 #, fuzzy
 #| msgid "Could not connect"
 msgid "Could not find payment method."
@@ -2920,15 +2928,15 @@ msgstr "Nu mă pot conecta"
 #: fleio/billing/gateways/payuro/payuro.py:92
 #: fleio/billing/gateways/payuro/payuro.py:100
 #: fleio/billing/gateways/romcard/romcard.py:62
-#: fleio/billing/gateways/stripe/stripe.py:114
-#: fleio/billing/gateways/stripe/stripe.py:119
+#: fleio/billing/gateways/stripe/stripe.py:165
+#: fleio/billing/gateways/stripe/stripe.py:170
 msgid "Card validation related invoice is required to be paid first."
 msgstr ""
 
 #: fleio/billing/gateways/ipay/ipay.py:65
 #: fleio/billing/gateways/payuro/payuro.py:96
 #: fleio/billing/gateways/romcard/romcard.py:58
-#: fleio/billing/gateways/stripe/stripe.py:124
+#: fleio/billing/gateways/stripe/stripe.py:175
 #, fuzzy
 #| msgid "OpenStack authentication failed"
 msgid "Recurrent payments activation is required."
@@ -3023,7 +3031,7 @@ msgstr "Tranzacție"
 #: fleio/billing/gateways/payu/payu.py:278
 #: fleio/billing/gateways/payuro/payuro.py:334
 #: fleio/billing/gateways/romcard/operations.py:174
-#: fleio/billing/gateways/stripe/stripe.py:370
+#: fleio/billing/gateways/stripe/stripe.py:423
 #, fuzzy
 #| msgid "Unable to update user in OpenStack. Check logs for more info"
 msgid "Failed to mark transaction as refunded. Check logs for more details."
@@ -3223,31 +3231,37 @@ msgstr "Fraudulos"
 msgid "Requested by customer"
 msgstr "Cerut de către client"
 
-#: fleio/billing/gateways/stripe/stripe.py:94
+#: fleio/billing/gateways/stripe/stripe.py:124
+#, fuzzy
+#| msgid "Unable to start the instance %s"
+msgid "Unable to start payment process."
+msgstr "Nu pot porni instanța %s"
+
+#: fleio/billing/gateways/stripe/stripe.py:145
 #, fuzzy
 #| msgid "Pay {} {} for invoice {}"
 msgid "Pay {} for invoice {}"
 msgstr "Plateste {}{} pentru factura {}"
 
-#: fleio/billing/gateways/stripe/stripe.py:184
+#: fleio/billing/gateways/stripe/stripe.py:237
 msgid "Could not process request. Please try again."
 msgstr ""
 
-#: fleio/billing/gateways/stripe/stripe.py:266
-#: fleio/billing/gateways/stripe/stripe.py:391
+#: fleio/billing/gateways/stripe/stripe.py:319
+#: fleio/billing/gateways/stripe/stripe.py:516
 msgid ""
 "Cannot process request without enough details. Missing Stripe payment method "
 "id."
 msgstr ""
 
-#: fleio/billing/gateways/stripe/stripe.py:269
-#: fleio/billing/gateways/stripe/stripe.py:394
+#: fleio/billing/gateways/stripe/stripe.py:322
+#: fleio/billing/gateways/stripe/stripe.py:519
 #, fuzzy
 #| msgid "Billing cycle"
 msgid "Missing invoice id."
 msgstr "Ciclu de facturare"
 
-#: fleio/billing/gateways/stripe/stripe.py:312
+#: fleio/billing/gateways/stripe/stripe.py:365
 #, fuzzy
 #| msgid "Cannot delete refunded transaction, delete refund transaction first"
 msgid ""
@@ -3256,15 +3270,15 @@ msgstr ""
 "Tranzacția rambursată nu poate fi ștearsă. Șterge intai tranzacția de "
 "rambursare"
 
-#: fleio/billing/gateways/stripe/stripe.py:357
+#: fleio/billing/gateways/stripe/stripe.py:410
 msgid "Refund failed"
 msgstr "Rambursare eusată"
 
-#: fleio/billing/gateways/stripe/stripe.py:412
+#: fleio/billing/gateways/stripe/stripe.py:451
 msgid "Could not attach payment method to customer in Stripe: {}"
 msgstr ""
 
-#: fleio/billing/gateways/stripe/stripe.py:436
+#: fleio/billing/gateways/stripe/stripe.py:482
 msgid "Could not create customer in Stripe: {}"
 msgstr ""
 
@@ -3606,49 +3620,55 @@ msgstr "Totalul facturi este mai mare decât maximul alocat"
 
 #: fleio/billing/invoicing/views.py:143
 #, fuzzy
+#| msgid "Invoice total is bigger than maximum allowed"
+msgid "Amount is greater than limit({})"
+msgstr "Totalul facturi este mai mare decât maximul alocat"
+
+#: fleio/billing/invoicing/views.py:151
+#, fuzzy
 #| msgid "A cancellation request already exists for this service"
 msgid "An unpaid credit invoice already exists"
 msgstr "O cerere de anulare deja există pentru acest serviciu"
 
-#: fleio/billing/invoicing/views.py:200
+#: fleio/billing/invoicing/views.py:208
 msgid "Unable to pay a credit invoice with credit"
 msgstr "Nu se poate plăti o factură de adaugare credit cu credit"
 
-#: fleio/billing/invoicing/views.py:203
+#: fleio/billing/invoicing/views.py:211
 msgid "Only unpaid invoices can be paid from credit"
 msgstr "Doar facturile neplătite se pot plăti din credit"
 
-#: fleio/billing/invoicing/views.py:237
+#: fleio/billing/invoicing/views.py:245
 #, fuzzy
 #| msgid "Incorrect user name or password"
 msgid "Cannot use referee credit to pay this."
 msgstr "Nume de utilizator sau parola greșit"
 
-#: fleio/billing/invoicing/views.py:250
+#: fleio/billing/invoicing/views.py:258
 #, fuzzy
 #| msgid "Unable to pay a credit invoice with credit"
 msgid "Unable to pay invoice with credit"
 msgstr "Nu se poate plăti o factură de adaugare credit cu credit"
 
-#: fleio/billing/invoicing/views.py:272
+#: fleio/billing/invoicing/views.py:280
 #, fuzzy
 #| msgid "Adding {} {} to invoice"
 msgid "Adding {} to invoice"
 msgstr "Adaugare {}{} la factură"
 
-#: fleio/billing/invoicing/views.py:298
+#: fleio/billing/invoicing/views.py:306
 #, fuzzy
 #| msgid "Login not allowed. Please contact support"
 msgid "There was an error generating PDF invoice, please contact support"
 msgstr "Autentificarea interzisă. Va rugam contactati personalul"
 
-#: fleio/billing/invoicing/views.py:303
+#: fleio/billing/invoicing/views.py:311
 #, fuzzy
 #| msgid "Login not allowed. Please contact support"
 msgid "Error when downloading invoice, please contact support"
 msgstr "Autentificarea interzisă. Va rugam contactati personalul"
 
-#: fleio/billing/invoicing/views.py:309
+#: fleio/billing/invoicing/views.py:317
 #, fuzzy
 #| msgid "Operation not allowed"
 msgid "Operation not permitted."
@@ -3696,19 +3716,19 @@ msgstr "Da/Nu"
 msgid "Quantity input"
 msgstr "Câmp cantitate"
 
-#: fleio/billing/models/configurable_option.py:41 fleio/billing/settings.py:263
+#: fleio/billing/models/configurable_option.py:41 fleio/billing/settings.py:266
 #: fleio/openstack/models/image.py:33 fleio/openstack/models/image.py:40
 #: fleio/openstack/traffic_monitoring/instance_traffic_data.py:22
 msgid "Public"
 msgstr "Public"
 
-#: fleio/billing/models/configurable_option.py:42 fleio/billing/settings.py:264
+#: fleio/billing/models/configurable_option.py:42 fleio/billing/settings.py:267
 #: fleio/openstack/models/image.py:32 fleio/openstack/models/image.py:39
 #: fleio/openstack/traffic_monitoring/instance_traffic_data.py:21
 msgid "Private"
 msgstr "Privat"
 
-#: fleio/billing/models/configurable_option.py:43 fleio/billing/settings.py:265
+#: fleio/billing/models/configurable_option.py:43 fleio/billing/settings.py:268
 msgid "Retired"
 msgstr "Retras"
 
@@ -3739,20 +3759,20 @@ msgstr "Aplică la opțiunile de cantitate"
 
 #: fleio/billing/models/invoice.py:46 fleio/billing/models/invoice.py:54
 #: fleio/billing/models/service_cycle_constants.py:41
-#: fleio/billing/settings.py:309
+#: fleio/billing/settings.py:312
 msgid "Unpaid"
 msgstr "Neplătită"
 
 #: fleio/billing/models/invoice.py:47 fleio/billing/models/invoice.py:55
 #: fleio/billing/models/service_cycle_constants.py:43
-#: fleio/billing/settings.py:310
+#: fleio/billing/settings.py:313
 msgid "Paid"
 msgstr "Plătit"
 
 #: fleio/billing/models/invoice.py:48 fleio/billing/models/invoice.py:56
-#: fleio/billing/models/transaction.py:41 fleio/billing/settings.py:228
-#: fleio/billing/settings.py:293 fleio/billing/settings.py:300
-#: fleio/billing/settings.py:311 fleio/core/models/referral_to_client.py:27
+#: fleio/billing/models/transaction.py:41 fleio/billing/settings.py:231
+#: fleio/billing/settings.py:296 fleio/billing/settings.py:303
+#: fleio/billing/settings.py:314 fleio/core/models/referral_to_client.py:27
 #: fleio/core/models/referral_to_client.py:36
 #: plugins/domains/models/domain.py:52
 msgid "Canceled"
@@ -3760,7 +3780,7 @@ msgstr "Anulat"
 
 #: fleio/billing/models/invoice.py:49 fleio/billing/models/invoice.py:57
 #: fleio/billing/models/service_cycle_constants.py:44
-#: fleio/billing/models/transaction.py:37 fleio/billing/settings.py:312
+#: fleio/billing/models/transaction.py:37 fleio/billing/settings.py:315
 msgid "Refunded"
 msgstr "Rambursat"
 
@@ -3849,17 +3869,17 @@ msgstr "Utilizatorul care a plasat comanda. Poate fi un administator."
 msgid "Service Upgrade Refund"
 msgstr "Serviciu creat"
 
-#: fleio/billing/models/order_item.py:30 fleio/billing/settings.py:344
+#: fleio/billing/models/order_item.py:30 fleio/billing/settings.py:347
 #, fuzzy
 #| msgid "Service created"
 msgid "Service Upgrade"
 msgstr "Serviciu creat"
 
-#: fleio/billing/models/order_item.py:31 fleio/billing/settings.py:345
+#: fleio/billing/models/order_item.py:31 fleio/billing/settings.py:348
 msgid "Credit Balance"
 msgstr "Sold Credit"
 
-#: fleio/billing/models/order_item.py:32 fleio/billing/settings.py:348
+#: fleio/billing/models/order_item.py:32 fleio/billing/settings.py:351
 msgid "Other"
 msgstr "Alte"
 
@@ -4111,8 +4131,8 @@ msgstr "Rambursat partial"
 
 #: fleio/billing/models/transaction.py:39
 #: fleio/logger/models/periodic_task_log.py:22
-#: plugins/domains/registrars_connectors/rotld_connector.py:462
-#: plugins/domains/registrars_connectors/rotld_connector.py:529
+#: plugins/domains/registrars_connectors/rotld_connector.py:465
+#: plugins/domains/registrars_connectors/rotld_connector.py:532
 msgid "Success"
 msgstr "Succes"
 
@@ -4282,23 +4302,23 @@ msgstr "Nu se poate inițializa clientul ceilometer"
 msgid "Invoice issued"
 msgstr "Factură ștearsă"
 
-#: fleio/billing/settings.py:191 fleio/billing/settings.py:198
+#: fleio/billing/settings.py:194 fleio/billing/settings.py:201
 msgid "Generic"
 msgstr "Generic"
 
-#: fleio/billing/settings.py:192 fleio/core/models/permission_definitions.py:36
+#: fleio/billing/settings.py:195 fleio/core/models/permission_definitions.py:36
 #: fleio/openstack/apps.py:68
 #, fuzzy
 #| msgid "Openstack"
 msgid "OpenStack"
 msgstr "Openstack"
 
-#: fleio/billing/settings.py:193 fleio/billing/settings.py:200
+#: fleio/billing/settings.py:196 fleio/billing/settings.py:203
 msgid "Shared Hosting"
 msgstr "Gazduire Partajata"
 
-#: fleio/billing/settings.py:223 fleio/billing/settings.py:290
-#: fleio/billing/settings.py:297 fleio/core/models/referral_to_client.py:25
+#: fleio/billing/settings.py:226 fleio/billing/settings.py:293
+#: fleio/billing/settings.py:300 fleio/core/models/referral_to_client.py:25
 #: fleio/core/models/referral_to_client.py:32 fleio/notifications/models.py:186
 #: fleio/notifications/models.py:192 fleio/openstack/dns/serializers.py:40
 #: fleio/openstack/dns/serializers.py:85
@@ -4309,14 +4329,14 @@ msgstr "Gazduire Partajata"
 msgid "Pending"
 msgstr "În așteptare"
 
-#: fleio/billing/settings.py:225 fleio/core/models/models.py:293
+#: fleio/billing/settings.py:228 fleio/core/models/models.py:293
 #: fleio/openstack/instances/instance_status.py:200
 #, fuzzy
 #| msgid "Suspended"
 msgid "Suspending"
 msgstr "Suspendat"
 
-#: fleio/billing/settings.py:226 fleio/core/models/models.py:294
+#: fleio/billing/settings.py:229 fleio/core/models/models.py:294
 #: fleio/core/models/models.py:300
 #: fleio/openstack/instances/instance_status.py:11
 #: fleio/openstack/instances/instance_status.py:64
@@ -4325,80 +4345,80 @@ msgstr "Suspendat"
 msgid "Suspended"
 msgstr "Suspendat"
 
-#: fleio/billing/settings.py:227
+#: fleio/billing/settings.py:230
 msgid "Terminated"
 msgstr "Terminat"
 
-#: fleio/billing/settings.py:229 fleio/billing/settings.py:294
+#: fleio/billing/settings.py:232 fleio/billing/settings.py:297
 #: plugins/domains/models/domain.py:54
 msgid "Fraud"
 msgstr "Frauda"
 
-#: fleio/billing/settings.py:237
+#: fleio/billing/settings.py:240
 #, fuzzy
 #| msgid "Create in progress"
 msgid "Change in progress"
 msgstr "Creare în progres"
 
-#: fleio/billing/settings.py:252
+#: fleio/billing/settings.py:255
 msgid "When order is placed"
 msgstr "Când comanda este plasată"
 
-#: fleio/billing/settings.py:253
+#: fleio/billing/settings.py:256
 msgid "On first payment"
 msgstr "La prima plata"
 
-#: fleio/billing/settings.py:254
+#: fleio/billing/settings.py:257
 msgid "When pending order is accepted"
 msgstr "Când comanda in asteptare este acceptată"
 
-#: fleio/billing/settings.py:274
+#: fleio/billing/settings.py:277
 msgid "Free"
 msgstr "Gratis"
 
-#: fleio/billing/settings.py:275
+#: fleio/billing/settings.py:278
 msgid "Fixed plus dynamic"
 msgstr "Fix plus dinamic"
 
-#: fleio/billing/settings.py:276
+#: fleio/billing/settings.py:279
 msgid "Dynamic but at least fixed"
 msgstr "Dinamic dar minim"
 
-#: fleio/billing/settings.py:277
+#: fleio/billing/settings.py:280
 msgid "Fixed"
 msgstr ""
 
-#: fleio/billing/settings.py:291 fleio/billing/settings.py:298
+#: fleio/billing/settings.py:294 fleio/billing/settings.py:301
 msgid "Verified"
 msgstr "Verificat"
 
-#: fleio/billing/settings.py:292 fleio/billing/settings.py:299
+#: fleio/billing/settings.py:295 fleio/billing/settings.py:302
 msgid "Completed"
 msgstr "Terminat"
 
-#: fleio/billing/settings.py:322 fleio/billing/settings.py:332
+#: fleio/billing/settings.py:325 fleio/billing/settings.py:335
 msgid "Unspecified reason"
 msgstr "Motiv nespecificat"
 
-#: fleio/billing/settings.py:326
+#: fleio/billing/settings.py:329
 msgid "Suspend instead of terminate is enabled"
 msgstr "Suspendarea în loc de terminare este activată"
 
-#: fleio/billing/settings.py:328
+#: fleio/billing/settings.py:331
 msgid "Suspended by staff"
 msgstr "Suspendat de catre administrator"
 
-#: fleio/billing/settings.py:330
+#: fleio/billing/settings.py:333
 msgid "Overdue on payment"
 msgstr "In urmă cu plata"
 
-#: fleio/billing/settings.py:346
+#: fleio/billing/settings.py:349
 #, fuzzy
 #| msgid "Invalid action for domain"
 msgid "Card validation"
 msgstr "Acțiune invalidă pentru domeniu"
 
-#: fleio/billing/settings.py:347
+#: fleio/billing/settings.py:350
 msgid "Card validation that adds to credit"
 msgstr ""
 
@@ -4435,6 +4455,7 @@ msgstr "Clientul nu a fost găsit"
 
 #: fleio/common_settings.py:650 fleio/common_settings.py:667
 #: fleio/common_settings.py:684 fleio/common_settings.py:701
+#: fleio/fleiosettings/settings.py:442
 #, fuzzy
 #| msgid "It should be at least 8 characters long."
 msgid "Password should be at least {} characters long"
@@ -4762,25 +4783,25 @@ msgstr ""
 msgid "Token generated."
 msgstr "Task-ul a fost recreat"
 
-#: fleio/core/api_tokens/views.py:78 fleiostaff/core/api_tokens/views.py:81
+#: fleio/core/api_tokens/views.py:80 fleiostaff/core/api_tokens/views.py:83
 #, fuzzy
 #| msgid "Option does not exist"
 msgid "Token does not exist."
 msgstr "Optiunea nu există"
 
-#: fleio/core/api_tokens/views.py:90 fleiostaff/core/api_tokens/views.py:93
+#: fleio/core/api_tokens/views.py:92 fleiostaff/core/api_tokens/views.py:95
 #, fuzzy
 #| msgid "Zone deleted"
 msgid "Token updated."
 msgstr "Zona a fost ștearsă"
 
-#: fleio/core/api_tokens/views.py:97 fleiostaff/core/api_tokens/views.py:100
+#: fleio/core/api_tokens/views.py:99 fleiostaff/core/api_tokens/views.py:102
 #, fuzzy
 #| msgid "Router - Update"
 msgid "Missing token to delete."
 msgstr "Router - Actualizare"
 
-#: fleio/core/api_tokens/views.py:101 fleiostaff/core/api_tokens/views.py:104
+#: fleio/core/api_tokens/views.py:103 fleiostaff/core/api_tokens/views.py:106
 #, fuzzy
 #| msgid "Zone deleted"
 msgid "Token deleted."
@@ -12157,6 +12178,7 @@ msgid "Permissions updated"
 msgstr "Acces respins"
 
 #: fleio/core/referrals/views.py:50 fleiostaff/core/clients/views.py:407
+#: fleiostaff/core/referral/views.py:57
 #, fuzzy
 #| msgid "Cannot create a network without a project."
 msgid "Referral system is disabled"
@@ -12225,54 +12247,54 @@ msgid "User {email} ({user_id}) confirmed password for managing SFA types."
 msgstr "Administratorul {username} ({user_id}) s-a conectat"
 
 #: fleio/core/second_factor_auth/views.py:129
-#: fleiostaff/core/second_factor_auth/views.py:103
+#: fleiostaff/core/second_factor_auth/views.py:104
 #, fuzzy
 #| msgid "Resize confirmed"
 msgid "Password confirmed"
 msgstr "Redimensionare confirmată"
 
 #: fleio/core/second_factor_auth/views.py:130
-#: fleiostaff/core/second_factor_auth/views.py:104
+#: fleiostaff/core/second_factor_auth/views.py:105
 msgid "You provided an incorrect password"
 msgstr ""
 
-#: fleio/core/serializers.py:166 fleio/core/serializers.py:168
-#: fleio/core/signup/serializers.py:99 fleio/core/signup/serializers.py:101
+#: fleio/core/serializers.py:163 fleio/core/serializers.py:165
+#: fleio/core/signup/serializers.py:102 fleio/core/signup/serializers.py:104
 #, fuzzy
 #| msgid "Volume size is not valid"
 msgid "reCAPTCHA not validated"
 msgstr "Dimensiunea volumului nu este validă."
 
-#: fleio/core/serializers.py:196 fleio/core/serializers.py:198
-#: fleiostaff/core/serializers.py:79 fleiostaff/core/serializers.py:81
+#: fleio/core/serializers.py:193 fleio/core/serializers.py:195
+#: fleiostaff/core/serializers.py:83 fleiostaff/core/serializers.py:85
 #, fuzzy
 #| msgid "License is invalid"
 msgid "Mobile phone number is invalid"
 msgstr "Licența este invalidă"
 
-#: fleio/core/serializers.py:214 fleiostaff/core/serializers.py:98
+#: fleio/core/serializers.py:211 fleiostaff/core/serializers.py:102
 msgid "Email not available"
 msgstr "Emailul nu este disponibil"
 
-#: fleio/core/signup/serializers.py:69
+#: fleio/core/signup/serializers.py:70
 #, fuzzy
 #| msgid "Invalid option selected"
 msgid "Invalid coupon code."
 msgstr "Opțiune invalidă selectată"
 
-#: fleio/core/signup/serializers.py:129
+#: fleio/core/signup/serializers.py:132
 msgid "You cannot register using an email address from free email services"
 msgstr ""
 
-#: fleio/core/signup/serializers.py:133
+#: fleio/core/signup/serializers.py:136
 msgid "You cannot register using this kind of email address"
 msgstr ""
 
-#: fleio/core/signup/serializers.py:149 fleio/core/signup/views.py:68
+#: fleio/core/signup/serializers.py:152 fleio/core/signup/views.py:68
 msgid "Email address already in use"
 msgstr "Adresa de email este deja folosita"
 
-#: fleio/core/signup/serializers.py:160
+#: fleio/core/signup/serializers.py:163
 msgid "You need to agree with terms of service before creating an account."
 msgstr ""
 
@@ -13226,10 +13248,6 @@ msgstr "Nu pot șterge interfața"
 
 #: fleio/notifications/models.py:132
 msgid "System"
-msgstr ""
-
-#: fleio/notifications/models.py:133
-msgid "Custom"
 msgstr ""
 
 #: fleio/notifications/models.py:188 fleio/notifications/models.py:194
@@ -18558,14 +18576,14 @@ msgstr "Nu poți șterge template-ul default pentru această notificare."
 msgid "Cannot delete cycle: {}"
 msgstr "Nu se poate migra instanța."
 
-#: fleiostaff/billing/coupons/serializers.py:40
+#: fleiostaff/billing/coupons/serializers.py:41
 #, fuzzy
 #| msgid "Invoice must have at least one item"
 msgid "You must define at least one client for this coupon."
 msgstr "Factura trebuie să conțină cel puțin un articol"
 
-#: fleiostaff/billing/coupons/serializers.py:47
-#: fleiostaff/billing/coupons/serializers.py:50
+#: fleiostaff/billing/coupons/serializers.py:48
+#: fleiostaff/billing/coupons/serializers.py:51
 #, fuzzy
 #| msgid "A cancellation request already exists for this service"
 msgid "An active coupon with this code already exists."
@@ -19063,26 +19081,26 @@ msgstr ""
 msgid "Cannot remove intermediate cycles."
 msgstr "Nu se poate migra instanța."
 
-#: fleiostaff/billing/services/serializers.py:280
+#: fleiostaff/billing/services/serializers.py:284
 msgid ""
 "For configurable option {} quantity and option value has to be the same."
 msgstr ""
 
-#: fleiostaff/billing/services/serializers.py:289
+#: fleiostaff/billing/services/serializers.py:293
 msgid "Cannot save configurable option {}: {}."
 msgstr ""
 
-#: fleiostaff/billing/services/serializers.py:332
+#: fleiostaff/billing/services/serializers.py:336
 msgid "You cannot change cycle for a service with unpaid invoices"
 msgstr ""
 
-#: fleiostaff/billing/services/serializers.py:343
+#: fleiostaff/billing/services/serializers.py:347
 msgid ""
 "Cannot change cycle, service configurable options cycles do not match "
 "service related product cycles."
 msgstr ""
 
-#: fleiostaff/billing/services/serializers.py:354
+#: fleiostaff/billing/services/serializers.py:358
 msgid ""
 "Cannot change cycle because related configurable options have no matching "
 "cycle."
@@ -19957,12 +19975,6 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters o rețea {network_name} "
 "({network_id})"
 
-#: fleiostaff/core/referral/views.py:57
-#, fuzzy
-#| msgid "Cannot create a network without a project."
-msgid "Referral review system is disabled"
-msgstr "Nu se poate crea  o rețea fără un proiect."
-
 #: fleiostaff/core/referral/views.py:69
 #, fuzzy
 #| msgid "Client already suspended"
@@ -20049,76 +20061,76 @@ msgstr ""
 msgid "An identity provider with the same entity id already exists"
 msgstr "O cerere de anulare deja există pentru acest serviciu"
 
-#: fleiostaff/core/second_factor_auth/views.py:36
+#: fleiostaff/core/second_factor_auth/views.py:37
 #, fuzzy, python-brace-format
 #| msgid "Staff user {username} ({user_id}) logged in"
 msgid ""
 "Staff user {email} ({user_id}) confirmed password for managing SFA types."
 msgstr "Administratorul {username} ({user_id}) s-a conectat"
 
-#: fleiostaff/core/second_factor_auth/views.py:65
+#: fleiostaff/core/second_factor_auth/views.py:66
 msgid ""
 "Second factor authentication is required and users have no other option than "
 "the one you want to disable."
 msgstr ""
 
-#: fleiostaff/core/second_factor_auth/views.py:126
+#: fleiostaff/core/second_factor_auth/views.py:127
 #, fuzzy, python-brace-format
 #| msgid "Staff user {username} ({user_id}) logged out"
 msgid "Staff user {email} ({user_id}) updated authentication settings."
 msgstr "Administratorul {username} ({user_id}) s-a deconectat"
 
-#: fleiostaff/core/second_factor_auth/views.py:158
+#: fleiostaff/core/second_factor_auth/views.py:159
 #, fuzzy
 #| msgid "Cannot change OpenStack settings in demo mode"
 msgid "Cannot change second factor authentication settings in demo mode"
 msgstr "Nu se pot salva setările OpenStack în modul demo"
 
-#: fleiostaff/core/second_factor_auth/views.py:161
+#: fleiostaff/core/second_factor_auth/views.py:162
 msgid ""
 "Cannot enable this setting because no second factor authentication method is "
 "enabled"
 msgstr ""
 
-#: fleiostaff/core/second_factor_auth/views.py:174
+#: fleiostaff/core/second_factor_auth/views.py:175
 msgid ""
 "Cannot disable Fleio authentication for staff if there is no SAML or OAuth "
 "alternative."
 msgstr ""
 
-#: fleiostaff/core/second_factor_auth/views.py:179
+#: fleiostaff/core/second_factor_auth/views.py:180
 msgid ""
 "Cannot disable Fleio authentication for end-user if there is no SAML or "
 "OAuth alternative."
 msgstr ""
 
-#: fleiostaff/core/signup_settings/serializers.py:21
+#: fleiostaff/core/signup_settings/serializers.py:29
 #, fuzzy
 #| msgid "Invalid list of emails"
 msgid "Invalid list of domains"
 msgstr "Lista de emailuri invalidă"
 
-#: fleiostaff/core/signup_settings/serializers.py:25
+#: fleiostaff/core/signup_settings/serializers.py:33
 #, fuzzy
 #| msgid "No email after the last comma"
 msgid "No domain after the last comma"
 msgstr "Niciun email după ultima virgulă"
 
-#: fleiostaff/core/signup_settings/serializers.py:50
+#: fleiostaff/core/signup_settings/serializers.py:58
 msgid "No email confirmation template set"
 msgstr ""
 
-#: fleiostaff/core/signup_settings/serializers.py:54
+#: fleiostaff/core/signup_settings/serializers.py:62
 msgid "No message template with the specified name found"
 msgstr ""
 
-#: fleiostaff/core/signup_settings/views.py:24
+#: fleiostaff/core/signup_settings/views.py:25
 #, fuzzy, python-brace-format
 #| msgid "Staff user {username} ({user_id}) logged out"
 msgid "Staff user {email} ({user_id}) updated signup settings."
 msgstr "Administratorul {username} ({user_id}) s-a deconectat"
 
-#: fleiostaff/core/signup_settings/views.py:62
+#: fleiostaff/core/signup_settings/views.py:63
 #, fuzzy
 #| msgid "Cannot change OpenStack settings in demo mode"
 msgid "Cannot change sign up settings in demo mode"
@@ -22769,19 +22781,19 @@ msgstr "Registrari"
 msgid "My domains"
 msgstr "Domenii"
 
-#: plugins/domains/billing_module.py:65
+#: plugins/domains/billing_module.py:64
 msgid ""
 "Contact associated with domain {} is missing the following fields: {}. "
 "Update fields then try again."
 msgstr ""
 
-#: plugins/domains/billing_module.py:70
+#: plugins/domains/billing_module.py:69
 msgid ""
 "Client associated with domain {} is missing the following fields: {}. Update "
 "fields then try again."
 msgstr ""
 
-#: plugins/domains/billing_module.py:179
+#: plugins/domains/billing_module.py:178
 msgid "Domain {} is not active"
 msgstr "Domeniul {} nu este activ"
 
@@ -22834,15 +22846,15 @@ msgstr ""
 "Nu se poate continua din cauza unei erori. Contactați personalul pentru "
 "asistență"
 
-#: plugins/domains/enduser/views/contacts.py:151
-#: plugins/domains/staff/views/contacts.py:162
+#: plugins/domains/enduser/views/contacts.py:165
+#: plugins/domains/staff/views/contacts.py:176
 #, fuzzy
 #| msgid "Can't delete cycle. It is referenced by another object"
 msgid "Cannot delete contact because it is linked to domains."
 msgstr "Ciclul nu poate fi sters. Este referențiat de un alt obiect"
 
-#: plugins/domains/enduser/views/contacts.py:158
-#: plugins/domains/staff/views/contacts.py:169
+#: plugins/domains/enduser/views/contacts.py:172
+#: plugins/domains/staff/views/contacts.py:183
 msgid "Cannot delete contact since it is still in use."
 msgstr ""
 
@@ -23248,59 +23260,59 @@ msgstr "Restaurarea instanței a început cu succes"
 msgid "Domain restore failed"
 msgstr "Comandă nouă transfer domeniu {}"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:529
+#: plugins/domains/registrars_connectors/openprovider_connector.py:530
 #, fuzzy
 #| msgid "Action completed successfully"
 msgid "Domain renew successfully"
 msgstr "Acțiunea a fost îndeplinită cu succes"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:536
+#: plugins/domains/registrars_connectors/openprovider_connector.py:537
 #, fuzzy
 #| msgid "Action completed successfully"
 msgid "Domain locked successfully"
 msgstr "Acțiunea a fost îndeplinită cu succes"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:543
+#: plugins/domains/registrars_connectors/openprovider_connector.py:544
 #, fuzzy
 #| msgid "Action completed successfully"
 msgid "Domain unlocked successfully"
 msgstr "Acțiunea a fost îndeplinită cu succes"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:548
+#: plugins/domains/registrars_connectors/openprovider_connector.py:549
 #, fuzzy
 #| msgid "Setting does not support autodiscovery"
 msgid "Domain does not support this action."
 msgstr "Setarea nu suportă serviciul de descoperire automată"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:551
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:911
+#: plugins/domains/registrars_connectors/openprovider_connector.py:552
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:914
 #, fuzzy
 #| msgid "Client already suspended"
 msgid "Domain ID protection already enabled."
 msgstr "Clientul este deja suspendat"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:556
+#: plugins/domains/registrars_connectors/openprovider_connector.py:557
 #, fuzzy
 #| msgid "Action completed successfully"
 msgid "Domain ID protection enabled successfully"
 msgstr "Acțiunea a fost îndeplinită cu succes"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:562
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:929
+#: plugins/domains/registrars_connectors/openprovider_connector.py:563
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:932
 #, fuzzy
 #| msgid "Ticket {} closed"
 msgid "Domain ID protection already disabled."
 msgstr "Tickete {} închise"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:567
+#: plugins/domains/registrars_connectors/openprovider_connector.py:568
 #, fuzzy
 #| msgid "Instance rescue started successfully"
 msgid "Domain ID protection disabled successfully"
 msgstr "Restaurarea instanței a început cu succes"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:605
-#: plugins/domains/registrars_connectors/openprovider_connector.py:616
-#: plugins/domains/registrars_connectors/openprovider_connector.py:631
+#: plugins/domains/registrars_connectors/openprovider_connector.py:606
+#: plugins/domains/registrars_connectors/openprovider_connector.py:617
+#: plugins/domains/registrars_connectors/openprovider_connector.py:632
 #: plugins/domains/registrars_connectors/resellerclub_connector.py:793
 #: plugins/domains/registrars_connectors/resellerclub_connector.py:806
 #, fuzzy
@@ -23308,24 +23320,24 @@ msgstr "Restaurarea instanței a început cu succes"
 msgid "Domain refreshed"
 msgstr "Comandă nouă înregistrare domeniu {}"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:607
+#: plugins/domains/registrars_connectors/openprovider_connector.py:608
 #: plugins/domains/registrars_connectors/resellerclub_connector.py:784
 msgid "Domain could not be retrieved in order to be refreshed: {}"
 msgstr ""
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:684
+#: plugins/domains/registrars_connectors/openprovider_connector.py:685
 #, fuzzy
 #| msgid "Company"
 msgid "Company name"
 msgstr "Companie"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:685
+#: plugins/domains/registrars_connectors/openprovider_connector.py:686
 #, fuzzy
 #| msgid "VAT ID"
 msgid "VAT"
 msgstr "Cod fiscal"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:686
+#: plugins/domains/registrars_connectors/openprovider_connector.py:687
 #: plugins/domains/registrars_connectors/test_connector.py:42
 #: plugins/domains/registrars_connectors/todo_registrar_connector.py:37
 #, fuzzy
@@ -23333,80 +23345,80 @@ msgstr "Cod fiscal"
 msgid "Email address"
 msgstr "Adresa de email este deja folosita"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:687
+#: plugins/domains/registrars_connectors/openprovider_connector.py:688
 msgid "Full name"
 msgstr ""
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:688
+#: plugins/domains/registrars_connectors/openprovider_connector.py:689
 msgid "Initials"
 msgstr ""
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:689
+#: plugins/domains/registrars_connectors/openprovider_connector.py:690
 #, fuzzy
 #| msgid "First Name"
 msgid "First name"
 msgstr "Nume"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:690
+#: plugins/domains/registrars_connectors/openprovider_connector.py:691
 msgid "Prefix"
 msgstr ""
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:691
+#: plugins/domains/registrars_connectors/openprovider_connector.py:692
 #, fuzzy
 #| msgid "Last Name"
 msgid "Last name"
 msgstr "Prenume"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:692
+#: plugins/domains/registrars_connectors/openprovider_connector.py:693
 #, fuzzy
 #| msgid "Unknown country code"
 msgid "Phone country code"
 msgstr "Cod de țară necunoscut"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:693
+#: plugins/domains/registrars_connectors/openprovider_connector.py:694
 msgid "Phone area code"
 msgstr ""
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:694
+#: plugins/domains/registrars_connectors/openprovider_connector.py:695
 #: plugins/domains/registrars_connectors/rotld_connector.py:416
 msgid "Phone"
 msgstr "Telefon"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:695
+#: plugins/domains/registrars_connectors/openprovider_connector.py:696
 msgid "Street"
 msgstr ""
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:696
+#: plugins/domains/registrars_connectors/openprovider_connector.py:697
 msgid "Street number"
 msgstr ""
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:697
+#: plugins/domains/registrars_connectors/openprovider_connector.py:698
 msgid "Zip code"
 msgstr "Cod poștal"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:698
+#: plugins/domains/registrars_connectors/openprovider_connector.py:699
 #: plugins/domains/registrars_connectors/rotld_connector.py:412
 msgid "City"
 msgstr "Oraș"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:699
+#: plugins/domains/registrars_connectors/openprovider_connector.py:700
 msgid "Country"
 msgstr "Țara"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:700
+#: plugins/domains/registrars_connectors/openprovider_connector.py:701
 #, fuzzy
 #| msgid "Status"
 msgid "State"
 msgstr "Stare"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:807
-#: plugins/domains/registrars_connectors/openprovider_connector.py:826
+#: plugins/domains/registrars_connectors/openprovider_connector.py:808
+#: plugins/domains/registrars_connectors/openprovider_connector.py:827
 #, fuzzy
 #| msgid "Allows users to update a router"
 msgid "Failed to save whois data."
 msgstr "Permite utilizatorilor să șteargă actualizeze un router"
 
-#: plugins/domains/registrars_connectors/openprovider_connector.py:827
+#: plugins/domains/registrars_connectors/openprovider_connector.py:828
 #, fuzzy
 #| msgid "Usage updated"
 msgid "Whois data updated."
@@ -23529,28 +23541,28 @@ msgstr "Nameserverele au fost actualizate cu succes"
 msgid "{} deleted successfully"
 msgstr "Acțiunea a fost îndeplinită cu succes"
 
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:908
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:926
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:911
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:929
 #, fuzzy
 #| msgid "Domain not available for registration"
 msgid "Domain not found in registrar"
 msgstr "Domeniul nu este disponibil pentru înregistrare"
 
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:944
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:947
 msgid "Cannot request delete for suspended domain. Unsuspend domain first."
 msgstr ""
 
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:1061
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:1064
 #, fuzzy
 #| msgid "Unable to find a client account"
 msgid "Unable to find domain order"
 msgstr "Nu am găsit un cont client"
 
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:1080
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:1083
 msgid "Whois data modified"
 msgstr ""
 
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:1088
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:1091
 #, fuzzy
 #| msgid "Invalid action or registrar not found"
 msgid "Invalid response from registrar"
@@ -23673,21 +23685,21 @@ msgstr "Comision"
 msgid "Name"
 msgstr "Prenume"
 
-#: plugins/domains/registrars_connectors/rotld_connector.py:471
+#: plugins/domains/registrars_connectors/rotld_connector.py:474
 msgid "Cannot update nameservers for domain that is pending registration"
 msgstr ""
 
-#: plugins/domains/registrars_connectors/rotld_connector.py:485
+#: plugins/domains/registrars_connectors/rotld_connector.py:488
 #, fuzzy
 #| msgid "Nameservers updated successfully"
 msgid "Nameservers updated"
 msgstr "Nameserverele au fost actualizate cu succes"
 
-#: plugins/domains/registrars_connectors/rotld_connector.py:489
+#: plugins/domains/registrars_connectors/rotld_connector.py:492
 msgid "RoTLD supports only .ro TLDs"
 msgstr ""
 
-#: plugins/domains/registrars_connectors/rotld_connector.py:495
+#: plugins/domains/registrars_connectors/rotld_connector.py:498
 msgid "RoTLD prices {} setting was not set"
 msgstr ""
 
@@ -24543,42 +24555,42 @@ msgstr ""
 "({client_id})"
 
 #: plugins/tickets/enduser/tickets/views/tickets.py:95
-#: plugins/tickets/staff/tickets/views/tickets.py:312
+#: plugins/tickets/staff/tickets/views/tickets.py:308
 #, fuzzy
 #| msgid "Missing ticket id to filter against."
 msgid "Missing client ID to get recipients for."
 msgstr "Lipsește id-ul de ticket după care să filtrez"
 
 #: plugins/tickets/enduser/tickets/views/tickets.py:139
-#: plugins/tickets/staff/tickets/views/tickets.py:507
+#: plugins/tickets/staff/tickets/views/tickets.py:503
 #, fuzzy
 #| msgid "Client already suspended"
 msgid "Ticket is already opened."
 msgstr "Clientul este deja suspendat"
 
 #: plugins/tickets/enduser/tickets/views/tickets.py:150
-#: plugins/tickets/staff/tickets/views/tickets.py:518
+#: plugins/tickets/staff/tickets/views/tickets.py:514
 #, fuzzy
 #| msgid "Ticket {} opened"
 msgid "Ticket successfully reopened."
 msgstr "Tickete {} deschise"
 
 #: plugins/tickets/enduser/tickets/views/tickets.py:160
-#: plugins/tickets/staff/tickets/views/tickets.py:618
+#: plugins/tickets/staff/tickets/views/tickets.py:614
 #, fuzzy
 #| msgid "Ticket {} closed"
 msgid "Ticket is already closed."
 msgstr "Tickete {} închise"
 
 #: plugins/tickets/enduser/tickets/views/tickets.py:172
-#: plugins/tickets/staff/tickets/views/tickets.py:636
+#: plugins/tickets/staff/tickets/views/tickets.py:632
 #, fuzzy
 #| msgid "Ticket {} closed"
 msgid "Ticket successfully closed."
 msgstr "Tickete {} închise"
 
 #: plugins/tickets/enduser/tickets/views/tickets.py:194
-#: plugins/tickets/staff/tickets/views/tickets.py:655
+#: plugins/tickets/staff/tickets/views/tickets.py:651
 #, fuzzy
 #| msgid "Ensure this field has no more than {} characters"
 msgid "Ensure the reply message has no more than {} characters."
@@ -25103,136 +25115,136 @@ msgstr ""
 "Administratorul {username} ({user_id}) a șters un volum {volume_name} "
 "({volume_id})"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:334
-#: plugins/tickets/staff/tickets/views/tickets.py:356
+#: plugins/tickets/staff/tickets/views/tickets.py:330
+#: plugins/tickets/staff/tickets/views/tickets.py:352
 msgid "Missing ticket id to filter against."
 msgstr "Lipsește id-ul de ticket după care să filtrez"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:360
+#: plugins/tickets/staff/tickets/views/tickets.py:356
 #, fuzzy
 #| msgid "Domain with ID {} not found"
 msgid "Ticket to filter against not found."
 msgstr "Domeniul cu ID {} nu a fost găsit"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:400
+#: plugins/tickets/staff/tickets/views/tickets.py:396
 #, fuzzy
 #| msgid "Billing cycle"
 msgid "Missing source ticket id."
 msgstr "Ciclu de facturare"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:404
+#: plugins/tickets/staff/tickets/views/tickets.py:400
 #, fuzzy
 #| msgid "Domain with ID {} not found"
 msgid "Ticket to merge not found."
 msgstr "Domeniul cu ID {} nu a fost găsit"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:407
+#: plugins/tickets/staff/tickets/views/tickets.py:403
 #, fuzzy
 #| msgid "It should be at least 8 characters long."
 msgid "You need to merge a different ticket."
 msgstr "Ar trebuie să conțină cel puțin 8 caractere."
 
-#: plugins/tickets/staff/tickets/views/tickets.py:410
+#: plugins/tickets/staff/tickets/views/tickets.py:406
 msgid "Source or target ticket was already merged."
 msgstr ""
 
-#: plugins/tickets/staff/tickets/views/tickets.py:413
+#: plugins/tickets/staff/tickets/views/tickets.py:409
 msgid "You can only merge tickets with the same client."
 msgstr ""
 
-#: plugins/tickets/staff/tickets/views/tickets.py:494
+#: plugins/tickets/staff/tickets/views/tickets.py:490
 msgid "Merged from ticket #{} by {} at {}"
 msgstr ""
 
-#: plugins/tickets/staff/tickets/views/tickets.py:526
+#: plugins/tickets/staff/tickets/views/tickets.py:522
 #, fuzzy
 #| msgid "Ticket {} closed"
 msgid "Ticket marked as read."
 msgstr "Tickete {} închise"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:534
+#: plugins/tickets/staff/tickets/views/tickets.py:530
 #, fuzzy
 #| msgid "Client already suspended"
 msgid "Ticket marked as unread."
 msgstr "Clientul este deja suspendat"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:542
+#: plugins/tickets/staff/tickets/views/tickets.py:538
 #, fuzzy
 #| msgid "Client already suspended"
 msgid "Ticket marked as pinned."
 msgstr "Clientul este deja suspendat"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:550
+#: plugins/tickets/staff/tickets/views/tickets.py:546
 #, fuzzy
 #| msgid "Client already suspended"
 msgid "Ticket unpinned."
 msgstr "Clientul este deja suspendat"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:558
+#: plugins/tickets/staff/tickets/views/tickets.py:554
 #, fuzzy
 #| msgid "Client already suspended"
 msgid "Ticket is already on hold."
 msgstr "Clientul este deja suspendat"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:568
+#: plugins/tickets/staff/tickets/views/tickets.py:564
 #, fuzzy
 #| msgid "Client already suspended"
 msgid "Ticket set on hold."
 msgstr "Clientul este deja suspendat"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:576
+#: plugins/tickets/staff/tickets/views/tickets.py:572
 #, fuzzy
 #| msgid "Client already suspended"
 msgid "Ticket is already in progress."
 msgstr "Clientul este deja suspendat"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:586
+#: plugins/tickets/staff/tickets/views/tickets.py:582
 #, fuzzy
 #| msgid "Delete in progress."
 msgid "Ticket set in progress."
 msgstr "Ștergere în desfășurare"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:697
+#: plugins/tickets/staff/tickets/views/tickets.py:693
 msgid ""
 "Cannot associate the attachment to the newly created reply because it is "
 "already linked to another object."
 msgstr ""
 
-#: plugins/tickets/staff/tickets/views/tickets.py:727
+#: plugins/tickets/staff/tickets/views/tickets.py:723
 #, fuzzy
 #| msgid "Ensure this field has no more than {} characters"
 msgid "Ensure the note message has no more than {} characters."
 msgstr "Asigură-te că acest câmp nu are mai mult de {} caractere"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:754
+#: plugins/tickets/staff/tickets/views/tickets.py:750
 msgid ""
 "Cannot associate the attachment to the note because it is already linked to "
 "another object."
 msgstr ""
 
-#: plugins/tickets/staff/tickets/views/tickets.py:811
+#: plugins/tickets/staff/tickets/views/tickets.py:807
 msgid ""
 "Cannot add the attachment you tried to associate to the ticket because it is "
 "already linked to an object."
 msgstr ""
 
-#: plugins/tickets/staff/tickets/views/tickets.py:876
+#: plugins/tickets/staff/tickets/views/tickets.py:872
 #, fuzzy
 #| msgid "Domain with ID {} not found"
 msgid "Ticket with id {} not found."
 msgstr "Domeniul cu ID {} nu a fost găsit"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:917
+#: plugins/tickets/staff/tickets/views/tickets.py:913
 #, fuzzy
 #| msgid "Client not found"
 msgid "Client not found for getting tickets"
 msgstr "Clientul nu a fost găsit"
 
-#: plugins/tickets/staff/tickets/views/tickets.py:940
+#: plugins/tickets/staff/tickets/views/tickets.py:936
 msgid "User not found when getting related tickets"
 msgstr ""
 
-#: plugins/tickets/staff/tickets/views/tickets.py:960
+#: plugins/tickets/staff/tickets/views/tickets.py:956
 #, fuzzy
 #| msgid "Settings saved successfully."
 msgid "Ticket department changed successfully."
@@ -25321,6 +25333,11 @@ msgstr "Un TODO asignat dumneavoastră a fost schimbat"
 #: plugins/todo/tasks.py:59
 msgid "The TODO {} assigned to you has been changed"
 msgstr "TODO-ul {} asignat dumneavoastră a fost schimbat"
+
+#, fuzzy
+#~| msgid "Cannot create a network without a project."
+#~ msgid "Referral review system is disabled"
+#~ msgstr "Nu se poate crea  o rețea fără un proiect."
 
 #, fuzzy, python-brace-format
 #~| msgid "Second"
