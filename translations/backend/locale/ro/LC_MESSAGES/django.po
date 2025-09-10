@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-02 12:25+0300\n"
+"POT-Creation-Date: 2025-09-04 15:15+0300\n"
 "PO-Revision-Date: 2018-10-11 16:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -23323,47 +23323,47 @@ msgid "User {email} ({user_id}) disabled auto-renewal for domain {object_id}."
 msgstr "Administratorul {username} ({user_id}) s-a conectat"
 
 #: plugins/domains/enduser/views/domains.py:98
-#: plugins/domains/staff/views/domains.py:298
+#: plugins/domains/staff/views/domains.py:296
 #, fuzzy
 #| msgid "Cannot transfer a unregistered domain."
 msgid "Cannot enable auto-renewal for domain."
 msgstr "Nu poți transfera un domeniu neînregistrat"
 
 #: plugins/domains/enduser/views/domains.py:103
-#: plugins/domains/staff/views/domains.py:303
+#: plugins/domains/staff/views/domains.py:301
 msgid "Cannot enable auto-renewal for a domain with status: {}."
 msgstr ""
 
 #: plugins/domains/enduser/views/domains.py:107
-#: plugins/domains/staff/views/domains.py:307
+#: plugins/domains/staff/views/domains.py:305
 #, fuzzy
 #| msgid "Client already suspended"
 msgid "Domain auto-renewal already enabled"
 msgstr "Clientul este deja suspendat"
 
 #: plugins/domains/enduser/views/domains.py:110
-#: plugins/domains/staff/views/domains.py:310
+#: plugins/domains/staff/views/domains.py:308
 #, fuzzy
 #| msgid "New domain transfer {} order"
 msgid "Domain auto-renewal enabled"
 msgstr "Comandă nouă transfer domeniu {}"
 
 #: plugins/domains/enduser/views/domains.py:117
-#: plugins/domains/staff/views/domains.py:317
+#: plugins/domains/staff/views/domains.py:315
 #, fuzzy
 #| msgid "Cannot transfer a unregistered domain."
 msgid "Cannot disable auto-renewal for domain."
 msgstr "Nu poți transfera un domeniu neînregistrat"
 
 #: plugins/domains/enduser/views/domains.py:121
-#: plugins/domains/staff/views/domains.py:321
+#: plugins/domains/staff/views/domains.py:319
 #, fuzzy
 #| msgid "Ticket {} closed"
 msgid "Domain auto-renewal already disabled"
 msgstr "Tickete {} închise"
 
 #: plugins/domains/enduser/views/domains.py:124
-#: plugins/domains/staff/views/domains.py:324
+#: plugins/domains/staff/views/domains.py:322
 #, fuzzy
 #| msgid "New domain transfer {} order"
 msgid "Domain auto-renewal disabled"
@@ -23397,25 +23397,26 @@ msgstr "Acțiune invalidă pentru domeniu"
 msgid "Invalid action or registrar not found"
 msgstr "Acțiune invalidă sau registrar negăsit"
 
-#: plugins/domains/enduser/views/domains.py:225
-#, fuzzy
-#| msgid "Login not allowed. Please contact support"
-msgid "This domain has no registrar associated. Please contact support."
-msgstr "Autentificarea interzisă. Va rugam contactati personalul"
-
-#: plugins/domains/enduser/views/domains.py:230
-#, fuzzy
-#| msgid "Nameservers updated successfully"
-msgid "Nameservers updated successfully."
+#: plugins/domains/enduser/views/domains.py:206
+#: plugins/domains/registrars_connectors/resellerclub_connector.py:761
+#: plugins/domains/registrars_connectors/test_connector.py:118
+#: plugins/domains/registrars_connectors/todo_registrar_connector.py:130
+#: plugins/domains/staff/views/domains.py:210
+msgid "Nameservers updated successfully"
 msgstr "Nameserverele au fost actualizate cu succes"
 
-#: plugins/domains/enduser/views/domains.py:244
+#: plugins/domains/enduser/views/domains.py:231
+#: plugins/domains/staff/views/domains.py:233
+msgid "Nameservers could not be saved in registrar."
+msgstr ""
+
+#: plugins/domains/enduser/views/domains.py:242
 #, fuzzy
 #| msgid "Login not allowed. Please contact support"
 msgid "Domain status should be {}. Please contact support."
 msgstr "Autentificarea interzisă. Va rugam contactati personalul"
 
-#: plugins/domains/enduser/views/domains.py:255
+#: plugins/domains/enduser/views/domains.py:253
 #, fuzzy
 #| msgid "Unable to continue due to an error. Please contact support"
 msgid "Failed to retrieve whois data for domain. Please contact support."
@@ -23423,7 +23424,7 @@ msgstr ""
 "Nu se poate continua din cauza unei erori. Contactați personalul pentru "
 "asistență"
 
-#: plugins/domains/enduser/views/domains.py:321
+#: plugins/domains/enduser/views/domains.py:319
 #, fuzzy
 #| msgid "Unable to get or create zone. Please contact support for more info"
 msgid "Failed to save whois data. Please contact support."
@@ -23643,7 +23644,7 @@ msgid ""
 msgstr ""
 
 #: plugins/domains/operations/initiate_domains_transfer.py:202
-#: plugins/domains/staff/views/domains.py:389
+#: plugins/domains/staff/views/domains.py:387
 #: plugins/domains/utils/domain.py:131
 #, fuzzy
 #| msgid "Not a valid domain name"
@@ -24084,13 +24085,6 @@ msgstr ""
 #| msgid "Failed to execute action for domain"
 msgid "Failed to transfer domain"
 msgstr "Nu am reușit să execut acțiunea pentru domeniu"
-
-#: plugins/domains/registrars_connectors/resellerclub_connector.py:761
-#: plugins/domains/registrars_connectors/test_connector.py:118
-#: plugins/domains/registrars_connectors/todo_registrar_connector.py:130
-#: plugins/domains/staff/views/domains.py:232
-msgid "Nameservers updated successfully"
-msgstr "Nameserverele au fost actualizate cu succes"
 
 #: plugins/domains/registrars_connectors/resellerclub_connector.py:927
 #, fuzzy
@@ -24592,33 +24586,27 @@ msgstr "Administratorul {username} ({user_id}) s-a conectat"
 msgid "Registrar not found"
 msgstr "Registrar-ul nu a fost găsit"
 
-#: plugins/domains/staff/views/domains.py:228
-#, fuzzy
-#| msgid "No boot source selected"
-msgid "No registrar selected"
-msgstr "Nicio sursă de boot selectată"
-
-#: plugins/domains/staff/views/domains.py:245
+#: plugins/domains/staff/views/domains.py:243
 msgid "Domain status should be {}"
 msgstr ""
 
-#: plugins/domains/staff/views/domains.py:255
+#: plugins/domains/staff/views/domains.py:253
 #, fuzzy
 #| msgid "Failed to execute action for domain"
 msgid "Failed to retrieve whois data for domain"
 msgstr "Nu am reușit să execut acțiunea pentru domeniu"
 
-#: plugins/domains/staff/views/domains.py:379
+#: plugins/domains/staff/views/domains.py:377
 msgid "No price defined for this registration period. Check TLD pricing"
 msgstr ""
 "Nici un preț definit pentru această perioadă de înregistrare. Verifică "
 "costurile TLD"
 
-#: plugins/domains/staff/views/domains.py:401
+#: plugins/domains/staff/views/domains.py:399
 msgid "New domain name should have the same TLD({})"
 msgstr ""
 
-#: plugins/domains/staff/views/domains.py:433
+#: plugins/domains/staff/views/domains.py:431
 #, fuzzy
 #| msgid ""
 #| "Suspend instead of terminate is enabled for the client, service not "
@@ -24628,7 +24616,7 @@ msgid ""
 msgstr ""
 "Clientul are activată suspendarea în locul terminării, serviciu neșters."
 
-#: plugins/domains/staff/views/domains.py:438
+#: plugins/domains/staff/views/domains.py:436
 #, fuzzy
 #| msgid ""
 #| "Suspend instead of terminate is enabled for the client, service not "
@@ -25956,6 +25944,21 @@ msgstr "Un TODO asignat dumneavoastră a fost schimbat"
 #: plugins/todo/tasks.py:59
 msgid "The TODO {} assigned to you has been changed"
 msgstr "TODO-ul {} asignat dumneavoastră a fost schimbat"
+
+#, fuzzy
+#~| msgid "Login not allowed. Please contact support"
+#~ msgid "This domain has no registrar associated. Please contact support."
+#~ msgstr "Autentificarea interzisă. Va rugam contactati personalul"
+
+#, fuzzy
+#~| msgid "Nameservers updated successfully"
+#~ msgid "Nameservers updated successfully."
+#~ msgstr "Nameserverele au fost actualizate cu succes"
+
+#, fuzzy
+#~| msgid "No boot source selected"
+#~ msgid "No registrar selected"
+#~ msgstr "Nicio sursă de boot selectată"
 
 #~ msgid "Unable to add ip"
 #~ msgstr "IP-ul nu poate fi adăugat"
