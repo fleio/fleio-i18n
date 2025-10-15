@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-02 15:04+0300\n"
+"POT-Creation-Date: 2025-10-10 15:27+0300\n"
 "PO-Revision-Date: 2018-10-11 16:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -19,15 +19,15 @@ msgstr ""
 "2:1));\n"
 "X-Generator: Poedit 2.0.6\n"
 
-#: binaries/core_utils.py:193
+#: binaries/core_utils.py:194
 msgid "Your operating system information could not be found"
 msgstr "Informațiile sistemului tău de operare nu au putut fi găsite"
 
-#: binaries/core_utils.py:208
+#: binaries/core_utils.py:209
 msgid "License file not intact. Please reactivate license"
 msgstr "Fișierul de licență nu este intact. Vă rugăm să reactivați licență"
 
-#: binaries/core_utils.py:212
+#: binaries/core_utils.py:213
 msgid ""
 "Can't extract zip file. Please allow write access and reactivate license."
 msgstr ""
@@ -76,6 +76,63 @@ msgid "Settings successfully saved. Starting sync OpenStack objects task."
 msgstr ""
 "Configurarile au fost salvate cu succes. Un proces de actualizare a datelor "
 "va incepe in fundal."
+
+#: common/billing/configurable_options/utils.py:16
+#: common/billing/configurable_options/utils.py:28
+#: common/osbilling/serializers.py:116
+#: fleio/activitylog/utils/activity_helper.py:212
+#: fleio/activitylog/utils/activity_helper.py:272
+#: fleio/billing/models/order_item_configurable_option.py:27
+#: fleio/billing/models/service_configurable_option.py:140
+#: fleio/billing/services/serializers.py:171
+#: fleio/billing/services/upgrade_manager.py:127
+#: fleio/billing/services/upgrade_manager.py:139
+#: fleio/openstack/dbaas/instances/operations/create_database_instance.py:175
+#: fleio/openstack/dbaas/instances/operations/create_database_instance_from_backup.py:101
+#: fleio/openstack/images/serializers.py:127
+#: fleio/openstack/images/serializers.py:128
+#: fleio/openstack/instances/operations/create_instance_from_volume.py:274
+#: fleio/openstack/instances/views.py:1353 fleio/openstack/models/project.py:55
+#: fleiostaff/core/clients/serializers.py:207
+#: fleiostaff/core/saml2_identity_providers/views.py:66
+#: fleiostaff/core/views.py:494 fleiostaff/core/views.py:506
+#: fleiostaff/openstack/instances/views.py:514
+#: fleiostaff/openstack/networks/serializers.py:55
+#: fleiostaff/openstack/networks/serializers.py:57
+#: fleiostaff/openstack/subnetpools/serializers.py:29
+#: fleiostaff/openstack/subnets/serializers.py:33
+#: fleiostaff/osbilling/views.py:385 fleiostaff/servers/serializers.py:54
+#: plugins/domains/enduser/serializers/domain.py:71
+#: plugins/domains/staff/serializers/domain.py:95
+#: plugins/domains/staff/serializers/domain.py:110
+#: plugins/tickets/common/replies_and_notes_serializer.py:188
+#: plugins/tickets/enduser/tickets/serializers.py:53
+#: plugins/tickets/enduser/tickets/serializers.py:135
+#: plugins/tickets/enduser/tickets/serializers.py:195
+#: plugins/tickets/enduser/tickets/serializers.py:199
+#: plugins/tickets/enduser/tickets/serializers.py:207
+#: plugins/tickets/enduser/tickets/serializers.py:237
+#: plugins/tickets/enduser/tickets/serializers.py:241
+#: plugins/tickets/enduser/tickets/serializers.py:245
+#: plugins/tickets/staff/tickets/serializers.py:321
+#: plugins/tickets/staff/tickets/serializers.py:325
+#: plugins/tickets/staff/tickets/serializers.py:329
+#: plugins/tickets/staff/tickets/serializers.py:333
+#: plugins/tickets/staff/tickets/serializers.py:344
+#: plugins/tickets/staff/tickets/serializers.py:394
+#: plugins/tickets/staff/tickets/serializers.py:442
+#: plugins/tickets/staff/tickets/serializers.py:446
+#: plugins/tickets/staff/tickets/serializers.py:450
+#: plugins/tickets/staff/tickets/serializers.py:454
+#: plugins/tickets/staff/tickets/serializers.py:458
+#: plugins/todo/staff/todos/serializers.py:34
+#: plugins/todo/staff/todos/serializers.py:38
+#: plugins/todo/staff/todos/serializers.py:42
+#: plugins/todo/staff/todos/serializers.py:78
+#: plugins/todo/staff/todos/serializers.py:82
+#: plugins/todo/staff/todos/serializers.py:86
+msgid "n/a"
+msgstr "n/a"
 
 #: common/billing/coupons/constants.py:11
 #: common/openstack/zones/constants.py:12 fleio/billing/settings.py:230
@@ -963,59 +1020,6 @@ msgstr ""
 msgid "{} {} time"
 msgstr ""
 
-#: common/osbilling/serializers.py:116
-#: fleio/activitylog/utils/activity_helper.py:212
-#: fleio/activitylog/utils/activity_helper.py:272
-#: fleio/billing/services/serializers.py:171
-#: fleio/billing/services/upgrade_manager.py:127
-#: fleio/billing/services/upgrade_manager.py:139
-#: fleio/openstack/dbaas/instances/operations/create_database_instance.py:175
-#: fleio/openstack/dbaas/instances/operations/create_database_instance_from_backup.py:101
-#: fleio/openstack/images/serializers.py:127
-#: fleio/openstack/images/serializers.py:128
-#: fleio/openstack/instances/operations/create_instance_from_volume.py:274
-#: fleio/openstack/instances/views.py:1353 fleio/openstack/models/project.py:55
-#: fleiostaff/core/clients/serializers.py:207
-#: fleiostaff/core/saml2_identity_providers/views.py:66
-#: fleiostaff/core/views.py:494 fleiostaff/core/views.py:506
-#: fleiostaff/openstack/instances/views.py:514
-#: fleiostaff/openstack/networks/serializers.py:55
-#: fleiostaff/openstack/networks/serializers.py:57
-#: fleiostaff/openstack/subnetpools/serializers.py:29
-#: fleiostaff/openstack/subnets/serializers.py:33
-#: fleiostaff/osbilling/views.py:385 fleiostaff/servers/serializers.py:54
-#: plugins/domains/enduser/serializers/domain.py:71
-#: plugins/domains/staff/serializers/domain.py:95
-#: plugins/domains/staff/serializers/domain.py:110
-#: plugins/tickets/common/replies_and_notes_serializer.py:188
-#: plugins/tickets/enduser/tickets/serializers.py:53
-#: plugins/tickets/enduser/tickets/serializers.py:135
-#: plugins/tickets/enduser/tickets/serializers.py:195
-#: plugins/tickets/enduser/tickets/serializers.py:199
-#: plugins/tickets/enduser/tickets/serializers.py:207
-#: plugins/tickets/enduser/tickets/serializers.py:237
-#: plugins/tickets/enduser/tickets/serializers.py:241
-#: plugins/tickets/enduser/tickets/serializers.py:245
-#: plugins/tickets/staff/tickets/serializers.py:321
-#: plugins/tickets/staff/tickets/serializers.py:325
-#: plugins/tickets/staff/tickets/serializers.py:329
-#: plugins/tickets/staff/tickets/serializers.py:333
-#: plugins/tickets/staff/tickets/serializers.py:344
-#: plugins/tickets/staff/tickets/serializers.py:394
-#: plugins/tickets/staff/tickets/serializers.py:442
-#: plugins/tickets/staff/tickets/serializers.py:446
-#: plugins/tickets/staff/tickets/serializers.py:450
-#: plugins/tickets/staff/tickets/serializers.py:454
-#: plugins/tickets/staff/tickets/serializers.py:458
-#: plugins/todo/staff/todos/serializers.py:34
-#: plugins/todo/staff/todos/serializers.py:38
-#: plugins/todo/staff/todos/serializers.py:42
-#: plugins/todo/staff/todos/serializers.py:78
-#: plugins/todo/staff/todos/serializers.py:82
-#: plugins/todo/staff/todos/serializers.py:86
-msgid "n/a"
-msgstr "n/a"
-
 #: common/osbilling/serializers.py:121
 #, fuzzy
 #| msgid "Service {} was created"
@@ -1417,22 +1421,6 @@ msgid "Unable to delete the user from OpenStack. Check logs for more info"
 msgstr ""
 "Nu se poate șterge utilizatorul din OpenStack. Verifică log-urile pentru mai "
 "multe informații"
-
-#: common_admin/openstack/volumes/views/volume.py:165
-#: fleio/openstack/volumes/views.py:211
-#, python-brace-format
-msgid ""
-"The selected volume size less than minimum size, it should be at least "
-"{minimum_size} GB"
-msgstr ""
-
-#: common_admin/openstack/volumes/views/volume.py:172
-#: fleio/openstack/volumes/views.py:218
-#, python-brace-format
-msgid ""
-"The selected volume size is less than image size, it should be at least "
-"{image_size} GB"
-msgstr ""
 
 #: common_admin/openstack/volumes/views/volume.py:188
 #, fuzzy
@@ -2681,7 +2669,7 @@ msgstr "Nu în"
 msgid "Order {} placed"
 msgstr "Comanda {} respinsă"
 
-#: fleio/billing/client_operations.py:1397
+#: fleio/billing/client_operations.py:1406
 msgid "initial"
 msgstr ""
 
@@ -3968,18 +3956,6 @@ msgstr ""
 #: fleio/billing/models/tax_rule.py:107
 msgid "Level 2"
 msgstr ""
-
-#: fleio/billing/models/tax_rule.py:162
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Tax rule {} start and/or end date are conflicting with existing tax "
-#| "rules: {}"
-msgid ""
-"Tax rule {self} start and/or end date are conflicting with existing tax "
-"rules: "
-msgstr ""
-"Data de inceput sau de final a regulei de taxare {} e in conflict cu "
-"regulile existente: {}"
 
 #: fleio/billing/models/transaction.py:33
 msgid "Waiting"
@@ -14804,18 +14780,6 @@ msgstr "Zona nu a fost găsit"
 msgid "Unable to list records. Please contact support for more info"
 msgstr "Înregistrările nu pot fi obținute. Vă rugăm contactati personalul"
 
-#: fleio/openstack/dns/views.py:281 fleiostaff/openstack/dns/views.py:241
-#, fuzzy
-#| msgid ""
-#| "More than one recordset exists with the same subdomain {subd} and type "
-#| "{type} exist"
-msgid ""
-"More than one recordset exists with the same subdomain "
-"{recordset_i[\"name\"]} and "
-msgstr ""
-"Exista mai mult de un grup de înregistrări cu acelasi subdomeniu {subd} și "
-"tip {type}"
-
 #: fleio/openstack/dns/views.py:350 fleiostaff/openstack/dns/views.py:309
 msgid "Recordsets update scheduled"
 msgstr "Actualizarea grupurilor de înregistrări a fost programată"
@@ -16708,25 +16672,29 @@ msgstr "Permite utilizatorilor să redenumească un volum"
 msgid "Load balancer deleted"
 msgstr "Zona a fost ștearsă"
 
-#: fleio/openstack/load_balancing/views/load_balancers.py:259
+#: fleio/openstack/load_balancing/views/load_balancers.py:253
+msgid "Cannot assign floating IP to load balancer with {} status"
+msgstr ""
+
+#: fleio/openstack/load_balancing/views/load_balancers.py:269
 #, fuzzy
 #| msgid "Allows users to update a flavor"
 msgid "Error when associating floating IP"
 msgstr "Permite utilizatorilor să șteargă o configurație"
 
-#: fleio/openstack/load_balancing/views/load_balancers.py:265
+#: fleio/openstack/load_balancing/views/load_balancers.py:275
 #, fuzzy
 #| msgid "Floating ip associated"
 msgid "Floating IP associated"
 msgstr "IP dinamic asociat"
 
-#: fleio/openstack/load_balancing/views/load_balancers.py:286
+#: fleio/openstack/load_balancing/views/load_balancers.py:296
 #, fuzzy
 #| msgid "Allows users to update a flavor"
 msgid "Error when dissociating floating IP"
 msgstr "Permite utilizatorilor să șteargă o configurație"
 
-#: fleio/openstack/load_balancing/views/load_balancers.py:292
+#: fleio/openstack/load_balancing/views/load_balancers.py:302
 #, fuzzy
 #| msgid "Floating ip dissociated"
 msgid "Floating IP dissociated"
@@ -20291,7 +20259,7 @@ msgstr "Reluarea programată"
 #: fleiostaff/core/clients/views.py:586
 #, fuzzy
 #| msgid "No client found with an OpenStack project associated"
-msgid "Client does not have any services that can be terminated"
+msgid "Client does not have any suspended services to terminate"
 msgstr "Nici un client cu un proiect asociat OpenStack găsit"
 
 #: fleiostaff/core/clients/views.py:588
@@ -22795,19 +22763,19 @@ msgstr "Regiunea {} nu există"
 msgid "Domain with ID {} not found"
 msgstr "Domeniul cu ID {} nu a fost găsit"
 
-#: fleiostaff/openstack/settings/utils.py:64
+#: fleiostaff/openstack/settings/utils.py:65
 #, fuzzy
 #| msgid "Url not reachable"
 msgid "Url not reachable: {}"
 msgstr "URL-ul nu este disponibil"
 
-#: fleiostaff/openstack/settings/utils.py:66
+#: fleiostaff/openstack/settings/utils.py:67
 #, fuzzy
 #| msgid "Credentials incorrect"
 msgid "Credentials incorrect: {}"
 msgstr "Datele de autentificare incorecte"
 
-#: fleiostaff/openstack/settings/utils.py:97
+#: fleiostaff/openstack/settings/utils.py:98
 msgid "Url not reachable"
 msgstr "URL-ul nu este disponibil"
 
@@ -23609,12 +23577,6 @@ msgid ""
 "Error while trying to check domain, try again or please contact support."
 msgstr "Autentificarea interzisă. Va rugam contactati personalul"
 
-#: plugins/domains/enduser/views/order_domain.py:128
-#, fuzzy, python-brace-format
-#| msgid "No price defined for {} domains"
-msgid "No price defined for {tld.name} domains"
-msgstr "Nici un preț definit pentru domeniile {}"
-
 #: plugins/domains/enduser/views/order_domain.py:164
 #: plugins/domains/enduser/views/order_domain.py:244
 #: plugins/domains/enduser/views/order_domain.py:278
@@ -23659,15 +23621,6 @@ msgstr "Tickete {} închise"
 #: plugins/domains/enduser/views/order_domain.py:375
 msgid "Domain {} cannot be ordered since it already exists in the database."
 msgstr ""
-
-#: plugins/domains/enduser/views/order_domain.py:404
-#: plugins/domains/staff/views/order_domain.py:388
-#, fuzzy
-#| msgid "Domains {} are not available for transfer"
-msgid ""
-"{DomainUtils.get_tld_name(domain_name)} domains are not available for "
-"transfer"
-msgstr "Domeniile {} nu sunt disponibile pentru transfer"
 
 #: plugins/domains/enduser/views/order_domain.py:413
 #: plugins/domains/staff/views/order_domain.py:91
@@ -25462,22 +25415,11 @@ msgstr "Ar trebuie să conțină cel puțin 8 caractere."
 msgid "Valid format"
 msgstr "Format cod fiscal invalid"
 
-#: plugins/tickets/staff/tickets/departments_serializers.py:102
-#, python-brace-format
-msgid "Email {additional_email} is already used in departament "
-msgstr ""
-
-#: plugins/tickets/staff/tickets/departments_serializers.py:110
-#, python-brace-format
-msgid "Email {department.email} is already used as departament "
-msgstr ""
-
-#: plugins/tickets/staff/tickets/departments_serializers.py:118
-#, python-brace-format
-msgid ""
-"Email {email} is already used in departament {department.name}({department."
-"id}) "
-msgstr ""
+#: plugins/tickets/staff/tickets/departments_serializers.py:119
+#, fuzzy
+#| msgid "Invalid list of emails"
+msgid "additional emails"
+msgstr "Lista de emailuri invalidă"
 
 #: plugins/tickets/staff/tickets/serializers.py:152
 #, fuzzy
@@ -26100,6 +26042,40 @@ msgstr "Un TODO asignat dumneavoastră a fost schimbat"
 #: plugins/todo/tasks.py:59
 msgid "The TODO {} assigned to you has been changed"
 msgstr "TODO-ul {} asignat dumneavoastră a fost schimbat"
+
+#, fuzzy, python-brace-format
+#~| msgid ""
+#~| "Tax rule {} start and/or end date are conflicting with existing tax "
+#~| "rules: {}"
+#~ msgid ""
+#~ "Tax rule {self} start and/or end date are conflicting with existing tax "
+#~ "rules: "
+#~ msgstr ""
+#~ "Data de inceput sau de final a regulei de taxare {} e in conflict cu "
+#~ "regulile existente: {}"
+
+#, fuzzy
+#~| msgid ""
+#~| "More than one recordset exists with the same subdomain {subd} and type "
+#~| "{type} exist"
+#~ msgid ""
+#~ "More than one recordset exists with the same subdomain "
+#~ "{recordset_i[\"name\"]} and "
+#~ msgstr ""
+#~ "Exista mai mult de un grup de înregistrări cu acelasi subdomeniu {subd} "
+#~ "și tip {type}"
+
+#, fuzzy, python-brace-format
+#~| msgid "No price defined for {} domains"
+#~ msgid "No price defined for {tld.name} domains"
+#~ msgstr "Nici un preț definit pentru domeniile {}"
+
+#, fuzzy
+#~| msgid "Domains {} are not available for transfer"
+#~ msgid ""
+#~ "{DomainUtils.get_tld_name(domain_name)} domains are not available for "
+#~ "transfer"
+#~ msgstr "Domeniile {} nu sunt disponibile pentru transfer"
 
 #, fuzzy
 #~| msgid "Volume cannot be deleted now"
