@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-26 12:20+0000\n"
+"POT-Creation-Date: 2026-07-02 13:39+0000\n"
 "PO-Revision-Date: 2018-10-11 16:37+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -76,6 +76,64 @@ msgid "Settings successfully saved. Starting sync OpenStack objects task."
 msgstr ""
 "Configurarile au fost salvate cu succes. Un proces de actualizare a datelor "
 "va incepe in fundal."
+
+#: common/billing/configurable_options/utils.py:16
+#: common/billing/configurable_options/utils.py:28
+#: common/osbilling/serializers.py:116
+#: fleio/activitylog/utils/activity_helper.py:216
+#: fleio/activitylog/utils/activity_helper.py:276
+#: fleio/billing/models/order_item_configurable_option.py:27
+#: fleio/billing/models/service_configurable_option.py:140
+#: fleio/billing/services/serializers.py:178
+#: fleio/billing/services/upgrade_manager.py:126
+#: fleio/billing/services/upgrade_manager.py:138
+#: fleio/openstack/dbaas/instances/operations/create_database_instance.py:172
+#: fleio/openstack/dbaas/instances/operations/create_database_instance_from_backup.py:99
+#: fleio/openstack/images/serializers.py:141
+#: fleio/openstack/images/serializers.py:142
+#: fleio/openstack/instances/operations/create_instance_from_volume.py:287
+#: fleio/openstack/instances/views.py:1474 fleio/openstack/models/project.py:57
+#: fleiostaff/core/clients/serializers.py:194
+#: fleiostaff/core/saml2_identity_providers/views.py:66
+#: fleiostaff/core/views.py:494 fleiostaff/core/views.py:506
+#: fleiostaff/openstack/flavors/views.py:294
+#: fleiostaff/openstack/instances/views.py:590
+#: fleiostaff/openstack/networks/serializers.py:58
+#: fleiostaff/openstack/networks/serializers.py:60
+#: fleiostaff/openstack/subnetpools/serializers.py:30
+#: fleiostaff/openstack/subnets/serializers.py:33
+#: fleiostaff/osbilling/views.py:509 fleiostaff/servers/serializers.py:54
+#: plugins/domains/enduser/serializers/domain.py:71
+#: plugins/domains/staff/serializers/domain.py:102
+#: plugins/domains/staff/serializers/domain.py:117
+#: plugins/tickets/common/replies_and_notes_serializer.py:188
+#: plugins/tickets/enduser/tickets/serializers.py:53
+#: plugins/tickets/enduser/tickets/serializers.py:135
+#: plugins/tickets/enduser/tickets/serializers.py:195
+#: plugins/tickets/enduser/tickets/serializers.py:199
+#: plugins/tickets/enduser/tickets/serializers.py:207
+#: plugins/tickets/enduser/tickets/serializers.py:237
+#: plugins/tickets/enduser/tickets/serializers.py:241
+#: plugins/tickets/enduser/tickets/serializers.py:245
+#: plugins/tickets/staff/tickets/serializers.py:321
+#: plugins/tickets/staff/tickets/serializers.py:325
+#: plugins/tickets/staff/tickets/serializers.py:329
+#: plugins/tickets/staff/tickets/serializers.py:333
+#: plugins/tickets/staff/tickets/serializers.py:344
+#: plugins/tickets/staff/tickets/serializers.py:394
+#: plugins/tickets/staff/tickets/serializers.py:442
+#: plugins/tickets/staff/tickets/serializers.py:446
+#: plugins/tickets/staff/tickets/serializers.py:450
+#: plugins/tickets/staff/tickets/serializers.py:454
+#: plugins/tickets/staff/tickets/serializers.py:458
+#: plugins/todo/staff/todos/serializers.py:34
+#: plugins/todo/staff/todos/serializers.py:38
+#: plugins/todo/staff/todos/serializers.py:42
+#: plugins/todo/staff/todos/serializers.py:78
+#: plugins/todo/staff/todos/serializers.py:82
+#: plugins/todo/staff/todos/serializers.py:86
+msgid "n/a"
+msgstr "n/a"
 
 #: common/billing/coupons/constants.py:11
 #: common/openstack/zones/constants.py:13 fleio/billing/settings.py:229
@@ -353,53 +411,53 @@ msgstr ""
 msgid "Successfully executed {} database instance backups of {}"
 msgstr "Tickete {} deschise"
 
-#: common/openstack/dbaas/instances/serializers.py:31
+#: common/openstack/dbaas/instances/serializers.py:32
 msgid "{} is not a valid IPv4 or IPv6 or mix of both CIDRs"
 msgstr ""
 
-#: common/openstack/dbaas/instances/serializers.py:128
+#: common/openstack/dbaas/instances/serializers.py:140
 msgid "Provided initial user username does not match '^.*[0-9a-zA-Z]+.*$'"
 msgstr ""
 
-#: common/openstack/dbaas/instances/serializers.py:139
+#: common/openstack/dbaas/instances/serializers.py:151
 msgid "Provided initial user password does not match '^.*[0-9a-zA-Z]+.*$'"
 msgstr ""
 
-#: common/openstack/dbaas/instances/serializers.py:152
-#: common/openstack/dbaas/instances/serializers.py:212
+#: common/openstack/dbaas/instances/serializers.py:164
+#: common/openstack/dbaas/instances/serializers.py:224
 #, fuzzy
 #| msgid "Invoice must have at least one item"
 msgid "You must specify a valid network."
 msgstr "Factura trebuie să conțină cel puțin un articol"
 
-#: common/openstack/dbaas/instances/serializers.py:161
+#: common/openstack/dbaas/instances/serializers.py:173
 msgid "Database {} name does not match '^.*[0-9a-zA-Z]+.*$'"
 msgstr ""
 
-#: common/openstack/dbaas/instances/serializers.py:167
+#: common/openstack/dbaas/instances/serializers.py:179
 msgid "You cannot have more than one database with the same name ({})."
 msgstr ""
 
-#: common/openstack/dbaas/instances/serializers.py:177
-#: common/openstack/dbaas/instances/serializers.py:199
+#: common/openstack/dbaas/instances/serializers.py:189
+#: common/openstack/dbaas/instances/serializers.py:211
 #, fuzzy
 #| msgid "Image does not exist in the selected region"
 msgid "Flavor region does not match selected region."
 msgstr "Imaginea nu există în regiunea selectată"
 
-#: common/openstack/dbaas/instances/serializers.py:196
+#: common/openstack/dbaas/instances/serializers.py:208
 #, fuzzy
 #| msgid "Invalid action for domain"
 msgid "Invalid flavor."
 msgstr "Acțiune invalidă pentru domeniu"
 
-#: common/openstack/dbaas/instances/serializers.py:218
+#: common/openstack/dbaas/instances/serializers.py:230
 #, fuzzy
 #| msgid "Invalid request"
 msgid "Invalid volume type."
 msgstr "Cerere invalidă"
 
-#: common/openstack/dbaas/instances/serializers.py:268
+#: common/openstack/dbaas/instances/serializers.py:280
 #: fleio/openstack/instances/views.py:1478
 #: fleio/openstack/instances/views.py:1486
 #, fuzzy
@@ -407,12 +465,12 @@ msgstr "Cerere invalidă"
 msgid "Flavor not found."
 msgstr "Plata nu a fost găsita."
 
-#: common/openstack/dbaas/instances/serializers.py:305
-#: common/openstack/dbaas/instances/serializers.py:327
+#: common/openstack/dbaas/instances/serializers.py:317
+#: common/openstack/dbaas/instances/serializers.py:339
 msgid "Provided name does not match '^.*[0-9a-zA-Z]+.*$'"
 msgstr ""
 
-#: common/openstack/dbaas/instances/serializers.py:336
+#: common/openstack/dbaas/instances/serializers.py:348
 msgid "Provided password does not match '^.*[0-9a-zA-Z]+.*$'"
 msgstr ""
 
@@ -852,7 +910,7 @@ msgstr ""
 
 #: common/openstack/ipam/exceptions.py:5
 #: common/openstack/load_balancing/views/lb_view_mixin.py:401
-#: fleio/openstack/instances/serializers.py:787
+#: fleio/openstack/instances/serializers.py:794
 #, fuzzy
 #| msgid "No available regions found"
 msgid "No available public network found."
@@ -1235,6 +1293,12 @@ msgstr ""
 msgid "Unable to find the network."
 msgstr "Rețeaua nu poate fi gasită."
 
+#: common/openstack/validation.py:13
+#, fuzzy
+#| msgid "Name contains unsafe characters"
+msgid "Instance name contains invalid characters"
+msgstr "Numele conține caractere nesigure"
+
 #: common/openstack/zones/constants.py:12
 #: fleio/openstack/load_balancing/constants.py:43
 #, fuzzy
@@ -1310,60 +1374,6 @@ msgstr ""
 #: fleiostaff/billing/services/serializers.py:250
 msgid "{} {} time"
 msgstr ""
-
-#: common/osbilling/serializers.py:116
-#: fleio/activitylog/utils/activity_helper.py:216
-#: fleio/activitylog/utils/activity_helper.py:276
-#: fleio/billing/services/serializers.py:178
-#: fleio/billing/services/upgrade_manager.py:126
-#: fleio/billing/services/upgrade_manager.py:138
-#: fleio/openstack/dbaas/instances/operations/create_database_instance.py:172
-#: fleio/openstack/dbaas/instances/operations/create_database_instance_from_backup.py:99
-#: fleio/openstack/images/serializers.py:141
-#: fleio/openstack/images/serializers.py:142
-#: fleio/openstack/instances/operations/create_instance_from_volume.py:287
-#: fleio/openstack/instances/views.py:1474 fleio/openstack/models/project.py:57
-#: fleiostaff/core/clients/serializers.py:194
-#: fleiostaff/core/saml2_identity_providers/views.py:66
-#: fleiostaff/core/views.py:494 fleiostaff/core/views.py:506
-#: fleiostaff/openstack/flavors/views.py:294
-#: fleiostaff/openstack/instances/views.py:590
-#: fleiostaff/openstack/networks/serializers.py:58
-#: fleiostaff/openstack/networks/serializers.py:60
-#: fleiostaff/openstack/subnetpools/serializers.py:30
-#: fleiostaff/openstack/subnets/serializers.py:33
-#: fleiostaff/osbilling/views.py:509 fleiostaff/servers/serializers.py:54
-#: plugins/domains/enduser/serializers/domain.py:71
-#: plugins/domains/staff/serializers/domain.py:102
-#: plugins/domains/staff/serializers/domain.py:117
-#: plugins/tickets/common/replies_and_notes_serializer.py:188
-#: plugins/tickets/enduser/tickets/serializers.py:53
-#: plugins/tickets/enduser/tickets/serializers.py:135
-#: plugins/tickets/enduser/tickets/serializers.py:195
-#: plugins/tickets/enduser/tickets/serializers.py:199
-#: plugins/tickets/enduser/tickets/serializers.py:207
-#: plugins/tickets/enduser/tickets/serializers.py:237
-#: plugins/tickets/enduser/tickets/serializers.py:241
-#: plugins/tickets/enduser/tickets/serializers.py:245
-#: plugins/tickets/staff/tickets/serializers.py:321
-#: plugins/tickets/staff/tickets/serializers.py:325
-#: plugins/tickets/staff/tickets/serializers.py:329
-#: plugins/tickets/staff/tickets/serializers.py:333
-#: plugins/tickets/staff/tickets/serializers.py:344
-#: plugins/tickets/staff/tickets/serializers.py:394
-#: plugins/tickets/staff/tickets/serializers.py:442
-#: plugins/tickets/staff/tickets/serializers.py:446
-#: plugins/tickets/staff/tickets/serializers.py:450
-#: plugins/tickets/staff/tickets/serializers.py:454
-#: plugins/tickets/staff/tickets/serializers.py:458
-#: plugins/todo/staff/todos/serializers.py:34
-#: plugins/todo/staff/todos/serializers.py:38
-#: plugins/todo/staff/todos/serializers.py:42
-#: plugins/todo/staff/todos/serializers.py:78
-#: plugins/todo/staff/todos/serializers.py:82
-#: plugins/todo/staff/todos/serializers.py:86
-msgid "n/a"
-msgstr "n/a"
 
 #: common/osbilling/serializers.py:123
 #, fuzzy
@@ -1675,7 +1685,7 @@ msgid "Flavor"
 msgstr "Configurare - Distruge"
 
 #: fleio/activitylog/utils/activity_helper.py:86
-#: fleio/openstack/instances/serializers.py:408
+#: fleio/openstack/instances/serializers.py:409
 #: fleio/openstack/models/openstack_service_types.py:26
 #: fleio/openstack/volumes/serializers.py:81
 #: fleiostaff/openstack/volumes/serializers.py:50
@@ -1750,7 +1760,7 @@ msgid "Volume snapshot"
 msgstr "Snapshot Volum"
 
 #: fleio/activitylog/utils/activity_helper.py:97
-#: fleio/openstack/instances/serializers.py:412
+#: fleio/openstack/instances/serializers.py:413
 #: fleio/openstack/volumes/serializers.py:82
 #: fleiostaff/openstack/volumes/serializers.py:51
 msgid "Volume"
@@ -4070,18 +4080,6 @@ msgstr ""
 msgid "Level 2"
 msgstr ""
 
-#: fleio/billing/models/tax_rule.py:162
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Tax rule {} start and/or end date are conflicting with existing tax "
-#| "rules: {}"
-msgid ""
-"Tax rule {self} start and/or end date are conflicting with existing tax "
-"rules: "
-msgstr ""
-"Data de inceput sau de final a regulei de taxare {} e in conflict cu "
-"regulile existente: {}"
-
 #: fleio/billing/models/transaction.py:33
 msgid "Waiting"
 msgstr "Avertizare"
@@ -4481,7 +4479,7 @@ msgstr "Clientul nu a fost găsit"
 
 #: fleio/common_settings.py:664 fleio/common_settings.py:681
 #: fleio/common_settings.py:698 fleio/common_settings.py:715
-#: fleio/fleiosettings/settings.py:434
+#: fleio/fleiosettings/settings.py:436
 #, fuzzy
 #| msgid "It should be at least 8 characters long."
 msgid "Password should be at least {} characters long"
@@ -14530,23 +14528,6 @@ msgstr ""
 msgid "No value passed for required parameter {parameter_name}"
 msgstr ""
 
-#: fleio/openstack/applications/application_template_helper.py:94
-#, python-brace-format
-msgid "Required parameter {parameter_name} is empty"
-msgstr ""
-
-#: fleio/openstack/applications/application_template_helper.py:101
-#, python-brace-format
-msgid "Numeric parameter {parameter_name} is not a number"
-msgstr ""
-
-#: fleio/openstack/applications/application_template_helper.py:107
-#, python-brace-format
-msgid ""
-"Choice parameter {parameter_name} is not one of the available choices: "
-"{choices}"
-msgstr ""
-
 #: fleio/openstack/applications/application_template_helper.py:131
 msgid "Work directory {} is not a directory"
 msgstr ""
@@ -15505,18 +15486,6 @@ msgstr "Zona nu a fost găsit"
 msgid "Unable to list records. Please contact support for more info"
 msgstr "Înregistrările nu pot fi obținute. Vă rugăm contactati personalul"
 
-#: fleio/openstack/dns/views.py:300 fleiostaff/openstack/dns/views.py:243
-#, fuzzy
-#| msgid ""
-#| "More than one recordset exists with the same subdomain {subd} and type "
-#| "{type} exist"
-msgid ""
-"More than one recordset exists with the same subdomain "
-"{recordset_i[\"name\"]} and "
-msgstr ""
-"Exista mai mult de un grup de înregistrări cu acelasi subdomeniu {subd} și "
-"tip {type}"
-
 #: fleio/openstack/dns/views.py:369 fleiostaff/openstack/dns/views.py:311
 msgid "Recordsets update scheduled"
 msgstr "Actualizarea grupurilor de înregistrări a fost programată"
@@ -16223,157 +16192,157 @@ msgstr "Imagine"
 msgid "Instance create operations"
 msgstr "Creerea regulei a fost programată"
 
-#: fleio/openstack/instances/serializers.py:409
+#: fleio/openstack/instances/serializers.py:410
 #, fuzzy
 #| msgid "Standard Images"
 msgid "Owned Image"
 msgstr "Imagine standard"
 
-#: fleio/openstack/instances/serializers.py:410
+#: fleio/openstack/instances/serializers.py:411
 #, fuzzy
 #| msgid "Standard Images"
 msgid "Shared Image"
 msgstr "Imagine standard"
 
-#: fleio/openstack/instances/serializers.py:411
+#: fleio/openstack/instances/serializers.py:412
 msgid "Community Image"
 msgstr "Community Image"
 
-#: fleio/openstack/instances/serializers.py:413
+#: fleio/openstack/instances/serializers.py:414
 msgid "Volume Snapshot"
 msgstr "Snapshot Volum"
 
-#: fleio/openstack/instances/serializers.py:414
+#: fleio/openstack/instances/serializers.py:415
 #, fuzzy
 #| msgid "Requested by user"
 msgid "Requested Image"
 msgstr "Cerut de către utilizator"
 
-#: fleio/openstack/instances/serializers.py:415
+#: fleio/openstack/instances/serializers.py:416
 #, fuzzy
 #| msgid "Requested by user"
 msgid "Requested Volume"
 msgstr "Cerut de către utilizator"
 
-#: fleio/openstack/instances/serializers.py:437
+#: fleio/openstack/instances/serializers.py:438
 #: fleio/openstack/instances/views.py:676
 #: fleiostaff/openstack/instances/views.py:221
 msgid "Volume not found"
 msgstr "Volumul nu a fost găsit"
 
-#: fleio/openstack/instances/serializers.py:439
+#: fleio/openstack/instances/serializers.py:440
 #, fuzzy
 #| msgid "Volume not found"
 msgid "Volume snapshot not found"
 msgstr "Volumul nu a fost găsit"
 
-#: fleio/openstack/instances/serializers.py:460
+#: fleio/openstack/instances/serializers.py:461
 msgid "Booting from a volume is disabled"
 msgstr ""
 
-#: fleio/openstack/instances/serializers.py:480
+#: fleio/openstack/instances/serializers.py:481
 #: fleio/openstack/instances/views.py:658
 #: fleiostaff/openstack/instances/views.py:210
 msgid "Image not found"
 msgstr "Imaginea nu a fost găsită"
 
-#: fleio/openstack/instances/serializers.py:483
+#: fleio/openstack/instances/serializers.py:484
 #, fuzzy
 #| msgid "Client is required."
 msgid "Volume size is required."
 msgstr "Clientul este obligatoriu."
 
-#: fleio/openstack/instances/serializers.py:485
+#: fleio/openstack/instances/serializers.py:486
 #, fuzzy
 #| msgid "Volume cannot be deleted now"
 msgid "Volume size cannot be less than image min_disk."
 msgstr "Volumul nu poate fi șters acum"
 
-#: fleio/openstack/instances/serializers.py:490
+#: fleio/openstack/instances/serializers.py:491
 #, fuzzy
 #| msgid "Client is required."
 msgid "Region is required."
 msgstr "Clientul este obligatoriu."
 
-#: fleio/openstack/instances/serializers.py:507
+#: fleio/openstack/instances/serializers.py:508
 #, fuzzy
 #| msgid "Size must be a multiple of {}"
 msgid "Volume size must be a multiple of {}"
 msgstr "Dimensiunea trebuie sa fie un multiplu de {}"
 
-#: fleio/openstack/instances/serializers.py:512
+#: fleio/openstack/instances/serializers.py:513
 #, fuzzy
 #| msgid "Size must be a multiple of {}"
 msgid "Volume size must be greater than minimum size {}"
 msgstr "Dimensiunea trebuie sa fie un multiplu de {}"
 
-#: fleio/openstack/instances/serializers.py:528
+#: fleio/openstack/instances/serializers.py:529
 msgid "Volume size is not valid"
 msgstr "Dimensiunea volumului nu este validă."
 
-#: fleio/openstack/instances/serializers.py:630
+#: fleio/openstack/instances/serializers.py:637
 #: fleiostaff/openstack/instances/serializers.py:192
 #, fuzzy
 #| msgid "Size must be a multiple of {}"
 msgid "The number of instances must be greater than 0"
 msgstr "Dimensiunea trebuie sa fie un multiplu de {}"
 
-#: fleio/openstack/instances/serializers.py:660
+#: fleio/openstack/instances/serializers.py:667
 msgid "Cannot choose from public networks."
 msgstr ""
 
-#: fleio/openstack/instances/serializers.py:695
+#: fleio/openstack/instances/serializers.py:702
 #: fleiostaff/openstack/instances/serializers.py:255
 msgid "This field may not be null."
 msgstr ""
 
-#: fleio/openstack/instances/serializers.py:697
+#: fleio/openstack/instances/serializers.py:704
 #: fleiostaff/openstack/instances/serializers.py:257
 msgid "Flavor not in {}"
 msgstr "Flavor-ul nu este in {}"
 
-#: fleio/openstack/instances/serializers.py:706
+#: fleio/openstack/instances/serializers.py:713
 msgid "Boot source image not found"
 msgstr "Imaginea sursă de boot nu a fost găsită"
 
-#: fleio/openstack/instances/serializers.py:763
+#: fleio/openstack/instances/serializers.py:770
 msgid "Boot source volume not found"
 msgstr "Volumul sursă de boot nu a fost găsită"
 
-#: fleio/openstack/instances/serializers.py:765
+#: fleio/openstack/instances/serializers.py:772
 #, fuzzy
 #| msgid "Boot source volume not found"
 msgid "Boot source volume snapshot not found"
 msgstr "Volumul sursă de boot nu a fost găsită"
 
-#: fleio/openstack/instances/serializers.py:803
-#: fleio/openstack/instances/serializers.py:877
-#: fleio/openstack/instances/serializers.py:889
+#: fleio/openstack/instances/serializers.py:810
+#: fleio/openstack/instances/serializers.py:884
+#: fleio/openstack/instances/serializers.py:896
 #: fleiostaff/openstack/instances/serializers.py:358
 #, fuzzy
 #| msgid "Zone not found"
 msgid "SSH Key not found"
 msgstr "Zona nu a fost găsit"
 
-#: fleio/openstack/instances/serializers.py:826
+#: fleio/openstack/instances/serializers.py:833
 #: fleiostaff/openstack/instances/serializers.py:388
 #, fuzzy
 #| msgid "Invalid action for domain"
 msgid "Invalid network."
 msgstr "Acțiune invalidă pentru domeniu"
 
-#: fleio/openstack/instances/serializers.py:828
+#: fleio/openstack/instances/serializers.py:835
 #: fleiostaff/openstack/instances/serializers.py:390
 #, fuzzy
 #| msgid "Invoice must have at least one item"
 msgid "You must select a network for the floating IP."
 msgstr "Factura trebuie să conțină cel puțin un articol"
 
-#: fleio/openstack/instances/serializers.py:1011
+#: fleio/openstack/instances/serializers.py:1018
 msgid "Not a valid status"
 msgstr "Status invalid"
 
-#: fleio/openstack/instances/serializers.py:1024
+#: fleio/openstack/instances/serializers.py:1031
 msgid "Must select hypervisor with live migration"
 msgstr "Trebuie sa selectați un hypervisor pentru a efectua migrarea"
 
@@ -18952,22 +18921,6 @@ msgid "User {email} ({user_id}) changed bootable status of volume {object_id}."
 msgstr ""
 "Utilizatorul {username} ({user_id}) a șters clientul {client_name} "
 "({client_id})"
-
-#: fleio/openstack/volumes/views.py:230
-#: fleiostaff/openstack/volumes/views.py:192
-#, python-brace-format
-msgid ""
-"The selected volume size less than minimum size, it should be at least "
-"{minimum_size} GB"
-msgstr ""
-
-#: fleio/openstack/volumes/views.py:237
-#: fleiostaff/openstack/volumes/views.py:199
-#, python-brace-format
-msgid ""
-"The selected volume size is less than image size, it should be at least "
-"{image_size} GB"
-msgstr ""
 
 #: fleio/openstack/volumes/views.py:253
 #, fuzzy
@@ -25137,12 +25090,6 @@ msgid ""
 "Error while trying to check domain, try again or please contact support."
 msgstr "Autentificarea interzisă. Va rugam contactati personalul"
 
-#: plugins/domains/enduser/views/order_domain.py:128
-#, fuzzy, python-brace-format
-#| msgid "No price defined for {} domains"
-msgid "No price defined for {tld.name} domains"
-msgstr "Nici un preț definit pentru domeniile {}"
-
 #: plugins/domains/enduser/views/order_domain.py:164
 #: plugins/domains/enduser/views/order_domain.py:244
 #: plugins/domains/enduser/views/order_domain.py:278
@@ -25187,15 +25134,6 @@ msgstr "Tickete {} închise"
 #: plugins/domains/enduser/views/order_domain.py:375
 msgid "Domain {} cannot be ordered since it already exists in the database."
 msgstr ""
-
-#: plugins/domains/enduser/views/order_domain.py:404
-#: plugins/domains/staff/views/order_domain.py:388
-#, fuzzy
-#| msgid "Domains {} are not available for transfer"
-msgid ""
-"{DomainUtils.get_tld_name(domain_name)} domains are not available for "
-"transfer"
-msgstr "Domeniile {} nu sunt disponibile pentru transfer"
 
 #: plugins/domains/enduser/views/order_domain.py:413
 #: plugins/domains/staff/views/order_domain.py:91
@@ -26992,22 +26930,11 @@ msgstr "Ar trebuie să conțină cel puțin 8 caractere."
 msgid "Valid format"
 msgstr "Format cod fiscal invalid"
 
-#: plugins/tickets/staff/tickets/departments_serializers.py:102
-#, python-brace-format
-msgid "Email {additional_email} is already used in departament "
-msgstr ""
-
-#: plugins/tickets/staff/tickets/departments_serializers.py:110
-#, python-brace-format
-msgid "Email {department.email} is already used as departament "
-msgstr ""
-
-#: plugins/tickets/staff/tickets/departments_serializers.py:118
-#, python-brace-format
-msgid ""
-"Email {email} is already used in departament {department.name}({department."
-"id}) "
-msgstr ""
+#: plugins/tickets/staff/tickets/departments_serializers.py:119
+#, fuzzy
+#| msgid "Invalid list of emails"
+msgid "additional emails"
+msgstr "Lista de emailuri invalidă"
 
 #: plugins/tickets/staff/tickets/serializers.py:152
 #, fuzzy
@@ -27627,13 +27554,42 @@ msgstr "Un TODO asignat dumneavoastră a fost schimbat"
 msgid "The TODO {} assigned to you has been changed"
 msgstr "TODO-ul {} asignat dumneavoastră a fost schimbat"
 
-#~ msgid "Region required in request"
-#~ msgstr "Campul region este obligatoriu in cerere"
+#, fuzzy, python-brace-format
+#~| msgid ""
+#~| "Tax rule {} start and/or end date are conflicting with existing tax "
+#~| "rules: {}"
+#~ msgid ""
+#~ "Tax rule {self} start and/or end date are conflicting with existing tax "
+#~ "rules: "
+#~ msgstr ""
+#~ "Data de inceput sau de final a regulei de taxare {} e in conflict cu "
+#~ "regulile existente: {}"
 
 #, fuzzy
-#~| msgid "Invalid list of emails"
-#~ msgid "additional emails"
-#~ msgstr "Lista de emailuri invalidă"
+#~| msgid ""
+#~| "More than one recordset exists with the same subdomain {subd} and type "
+#~| "{type} exist"
+#~ msgid ""
+#~ "More than one recordset exists with the same subdomain "
+#~ "{recordset_i[\"name\"]} and "
+#~ msgstr ""
+#~ "Exista mai mult de un grup de înregistrări cu acelasi subdomeniu {subd} "
+#~ "și tip {type}"
+
+#, fuzzy, python-brace-format
+#~| msgid "No price defined for {} domains"
+#~ msgid "No price defined for {tld.name} domains"
+#~ msgstr "Nici un preț definit pentru domeniile {}"
+
+#, fuzzy
+#~| msgid "Domains {} are not available for transfer"
+#~ msgid ""
+#~ "{DomainUtils.get_tld_name(domain_name)} domains are not available for "
+#~ "transfer"
+#~ msgstr "Domeniile {} nu sunt disponibile pentru transfer"
+
+#~ msgid "Region required in request"
+#~ msgstr "Campul region este obligatoriu in cerere"
 
 #, fuzzy
 #~| msgid "Create in progress"
